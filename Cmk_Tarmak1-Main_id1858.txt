@@ -1,0 +1,45 @@
+Newsflash: Proposals for an even more gradual model (or not, because any steps may be omitted at will!) have been made, at first in [url=http://forum.colemak.com/viewtopic.php?pid=8777#p8777]this new forum topic[/url]. In addition to one hand at a time, it's possible to do the "most effective" key movements 3-4 keys at a time, each step bringing an important key or two to the Colemak home position while moving less central keys out of the way to [i]their[/i] proper positions:
+
+   This image illustrates the four proposed steps:
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_SpectralSteps_ETOI.png[/img]
+   Fig.: The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).
+   Not shown above is how the J and ; keys are forced into temporary positions (QWERTY E and G), but this should be readily deductible.
+
+
+[quote=DreymaR(edited)]This, then, is a [url=http://forum.colemak.com/viewtopic.php?pid=8786#p8786]Tarmak (Colemak Transitional Layout)[/url] in sorted "lumps" for learning Colemak in 2-5 steps as desired:
+
+1) The [b]E[/b]>K>N>J "most essential" loop, fixing the important E (and N) and just messing up the infrequently used J
+[code] q  w {J} r  t  y  u  i  o  p 
+   a  s  d  f  g  h {N}{E} l  ;     The "Tarmak1(E)" transitional layout (E>K>N>J)
+     z  x  c  v  b {K} m [/code]
+2) The G>[b]T[/b]>F>(J) loop, bringing the important T into place
+[code] q  w {F} r {G} y  u  i  o  p 
+   a  s  d {T}{J} h  N  E  l  ;     The "Tarmak2(ET)" transitional layout (G>T>F>E>K>N>J)
+     z  x  c  v  b  K  m [/code]
+3) The (J)>Y>[b]O[/b]>; loop, getting the O in place at the small cost of the semicolon
+[code] q  w  F  r  G {J} u  i {Y} p 
+   a  s  d  T {;} h  N  E  l {O}    The "Tarmak3(ETO)" transitional layout (G>T>F>E>K>N>J>Y>O>;)
+     z  x  c  v  b  K  m [/code]
+4) The L>U>[b]I[/b] self-contained loop for a better I placement
+[code] q  w  F  r  G  J {L}{U} Y  p 
+   a  s  d  T  ;  h  N  E {I} O     The "Tarmak4(ETOI)" transitional layout (G>T>F>E>K>N>J>Y>O>; & L>U>I)
+     z  x  c  v  b  K  m [/code]
+5) The P>R>S>D>(;) loop, or rather - finally the Colemak layout!
+[code] q  w  F {P} G  J  L  U  Y {;}
+   a {R}{S} T {D} h  N  E  I  O     The Colemak layout (P>R>S>D>G>T>F>E>K>N>J>Y>O>; & L>U>I)
+     z  x  c  v  b  K  m [/code]
+
+For implementing this incrementally, a sequence of loops has to be decided and the above looks most promising to me (and the Codesharp analysis). With the four layouts above available, anyone preferring smaller "tar lumps" can go one step at a time while more ambitious learners may use for instance #2 and then #4 or just #3 before moving to Colemak.[/quote]
+
+[h]UPDATE: The steps have been rearranged from the original post because the G>T>F loop is so beneficial.
+(Thanks to cevgar for the [url=http://forum.colemak.com/viewtopic.php?pid=8801#p8801]Codesharp analyses[/url]!)[/h]
+
+Here's a graphic showing the number of keys that each layout step changes, with the Workman and Dvorak layouts included for comparison since they change 21 and 33 of the 35 "letter block" keys. The line in the graph represents how much Codesharp "overall effort" percentage you gain by moving more keys, divided by the number of extra keys moved from the previous layout (4-3-3-3-4-4-12 keys):
+
+[img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_KeyChangesVsModelGain.png[/img]
+
+The "effort" parameter increases the most for the first Tarmak steps. After the last Tarmak, the final 4-key change to Colemak doesn't produce much modeled benefit compared to the previous changes. Since the mini-loops of Tarmak have been sorted using this model that may be expected; also, I personally believe that the Colemak has benefits that the model are blind to but that are nevertheless important! The full Colemak has a lot less same-finger and other benefits compared to the last Tarmak step. The Workman layout moves 4 more keys but doesn't do significantly better in the model for that trouble unless it too has further benefits that are transparent to the Codesharp model (21.8% vs 21.3% for Colemak), whereas the Dvorak UI plummets because it changes nearly twice as many keys as Colemak without doing better in the analysis at all. In the name of good sportsmanship, I show the Dvorak UI which scored better (21.4%) than the garden-variety Dvorak (18.9%, comparable to Tarmak3).
+
+[b]Download:[/b]
+• For PKL under Windows, you can download some [url=https://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/Tarmak_PKL-virtualkey.zip]virtualkey files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url]. Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file.
+• For Linux/XKB, see my [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url] topic. Search for 'English Colemak'.

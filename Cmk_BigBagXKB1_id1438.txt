@@ -1,0 +1,204 @@
+[h]DREYMAR'S (XKB): DreymaR's Extensive Yet Modular AR'Senal (for X KeyBoarding)[/h]
+
+[i][CAVEAT EMPTOR: This work is still under some construction due to its complexity. 
+It's got mostly nice domitable areas but a few hard-hat areas. 
+I'll be updating this topic and its siblings as I get around to it!][/i]
+
+
+Since I started using Colemak I've been fiddling with it, trying out ideas from the forum and adding a few of my own. Colemak [i]per se[/i] is to me only the letter block mappings including the semicolon, including the shifted keys (modifier lv 1-2 if you wish). I always ended up with that intact and it has stood the test of time since 2007 for me.
+
+My personal Colemak arsenal now includes several other enhancements:
+• My [b]AltGr mappings[/b] (lv 3-4; "Colemak[eD]") putting dead keys on AltGr+symbol keys and reworking other mappings
+• An [b]Angle/Wide[/b] modification ("AWide-35") to improve wrist angles, hand spacing and right pinky stretch/load effort
+• An [b]Extend layer[/b] using Caps Lock for its modifier (lv 5-8; "Extend") for navigation from the home position and more
+• For several [b]locales[/b], a '[b]Unified Symbols[/b]' layout with only a few necessary locale changes from the standard Colemak[eD];
+• Also, a layout to '[b]Keep Local Symbols[/b]' like their default (QWERTY-type) counterparts and key cap markings for that locale
+• Access to [b]Greek and Hebrew[/b] letters (and soon other scripts I hope) using layout toggling to a phonetic Colemak layout
+• Access to a [b]mirrored Colemak[/b] that allows one-handed typing (I don't use it much - but if I ever break an arm...!)
+• Access to an enhanced set of useful characters via [b]dead key additions[/b] (not yet implemented)
+• The 4 [b]Tarmak transitional Colemak[/b] layouts for learning Colemak in smaller steps if desired (I didn't use them myself)
+
+I use Farkas Máté's excellent Portable Keyboard Layout ('PKL') to achieve most of the above for Windows but over the last year I've been using Ubuntu Linux more and more. So I hacked up a bunch of modifications to the X.Org XKB files. I'm pretty proud of it, I must say! :)
+
+I'll be posting topics for discussing some of the modifications on their own, but here is the whole shebang in one place for Linux users! An advantage with my implementation is that you can pick and choose most of the enhancements as modules: The Wide mod is a keyboard model so it works with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user; the Extend layer and its switch key are Options and should work with any existing layout except a couple of 8-level ones; the locale, Greek/Hebrew, Mirrored and Tarmak options are separate layouts that may use various chooser keys as desired. Freedom of choice through modularity is an ideal in the Linux world.
+
+
+[h]COLEMAK - EDITION DREYMAR[/h]
+
+(See [url=http://forum.colemak.com/viewtopic.php?id=1280]this forum topic by me[/url])
+
+[i]Warning: I've just changed this layout slightly (the 2 3 4 V K H J L ' keys). See the main Colemak[eD] topic.[/i]
+
+This is my own preferred AltGr mappings (modifier lv3-4 in Linux terminology) for the Colemak layout. I've tried to add much functionality while keeping it intuitive. In particular, I want to be able to write different scripts and simple IPA phonetics (for dictionary English at least).
+
+See the xkb/symbols/colemak file for comments and explanations, in addition to these design goals:
+ - Keeping level 1-2 of Colemak intact! This is what I think of as the Colemak layout per se.
+ - Dead keys easily accessible as unshifted AltGr+symbol keys; common ones in good positions.
+ - Added letters/quotes allowing many of the major latin scripts to be written correctly.
+ - Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.
+ - The positions of added letters and symbols should as far as possible be easy to remember!
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-Angle_90d-FingerShui.png[/img]
+   The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak. 
+   Shown with the ZXCVB_ 'Angle' ergonomic mod (see below), dead key emphasis and color-coded proposed fingering.
+
+
+[h]THE ANGLE/WIDE KEYBOARD MODEL MODS[/h]
+
+(See for instance [url=http://forum.colemak.com/viewtopic.php?id=839&p=2]this topic by cevgar on Wide mods[/url], and [url=http://forum.colemak.com/viewtopic.php?pid=1685#p1685]this topic by DreymaR on Angle mods[/url])
+
+These are ergonomic mods, moving some keys around to achieve straight wrists (the Angle mods), as well as better hand separation and right pinky load (the Wide mods).
+
+When I use these I like to move the key caps around and make the change global - my family actually don't seem to mind as the changes are fairly intuitive and unintrusive, leastways for the run-of-the-mill keyboard user who looks at symbol key caps to find them. I got used to the changes quickly, too, and I recommend at least an Angle shift if you have an ISO (102/105-key) keyboard! But you can implement the change on a per-user basis if you wish (if you do, take care with your logon dialogs and passwords!).
+
+The Angle/Wide mods are implemented as keyboard models! This means that you can use them with [i]any[/i] layout including the QWERTY and Dvorak ones. Modularity at your fingertips, again.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-AWide35_90d-FingerShui.png[/img]
+   The AngleWide-Slash ('AWide-35') wide keyboard mod for a PC105/ISO keyboard.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-AWide35_90d-FingerShui.png[/img]
+   The Colemak [edition DreymaR] layout, shown with the 'AngleWide-Slash' ergonomic mod.
+
+I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide-Slash wide mod (or 'AWide-35', so named because it puts the Slash key with scan code 35 at the Right Bracket position) that I use myself. For ANSI boards there are less perfect options but I've made an implementation of the ZXCVB shift (moving the Z key to the middle) that someone asked for a while back. If you need an A-Frame or something else, let me know and I'll consider it!
+
+
+[h]EXTEND LAYERS AND THE CAPS SWITCH[/h]
+
+From my source file:
+[code]// 2012-01-01 Øystein Bech "DreymaR" Gadmar
+// A modular Extend mapping layer like the one I have in Portable Keyboard Layout for Windows
+// - I've used the xkb/symbols/typo 'typographic keyboard' partial mappings as a method template
+// - Key names are from keysymdef.h and XF86keysym.h in /usr/include/X11/ (Removing the XK_ prefix)
+// - These multimedia F keys are defined (the shifted versions are not implemented in WinPKL):
+// These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Esc + |F1 <> |F2 << |F3 >> |F4 <> |F5 <> |F6 << |F7 >> |F8 <> |F9 <> |F10<> |F11<> |F12<> |
+// |      | Pause| Rew  | Fwd  | Eject| Sleep| Bri- | Bri+ | Term | Home | Mail | App3 | App4 |
+// | Caps | Play | Prev | Next | Stop | Mute | Vol- | Vol+ | Media| WWW  | Srch | App1 | App2 |
+// +======+======+======+======+======+======+======+======+======+======+======+======+======+
+// |` €€€ |1     |2     |3     |4     |5     |6     |7     |8     |9     |0     |-     |=     |
+// | Del  | F1   | F2   | F3   | F4   | F5   | F6   | F7   | F8   | F9   | F10  | F11  | F12  |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Tab   |Q €€€ |W *** |F <<> |P <>> |G *** |J ### |L ### |U ### |Y ### |; €€€ |[ €€€ |] €€€ |
+// |      | Esc  | *WhUp| BrBck| BrFwd| *MUp | PgUp | Home | Up   | End  | Del  | Esc  | Ins  |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Caps+ |A +++ |R *** |S +++ |T +++ |D *** |H ### |N ### |E ### |I ### |O €€€ |' €€€ |\ ><> |
+// | ++++ | Alt  | *WhDn| Shift| Ctrl | *MDn | PgDn | Left | Down | Right| Back | Menu | BrFav|
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Z €€€ |X === |C === |V === |B *** |_ *** |K *** |M *** |, *** |. *** |/ *** |Spc € |Entr€ |
+// | Undo | Cut  | Copy | Paste| *Bt1 | *MOn | *Bt2 | *Bt3 | *MLe | *MRi | *MOn | Enter| Break|
+// +------+------+------+------+------+------+------+------+------+------+------+-------------+
+// Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; € Various commands.[/code]
+
+I've not yet managed to make the XKB understand the modifier keys (Alt/Shift/Ctrl on the AST keys) fully; the original modifiers should work with the extend-mapped arrows and other keys though.
+
+As for the multimedia keys, they are mapped to the F keys as intended but XKB/Ubuntu doesn't currently link any actions to their key presses... I think. You could install a program that does whatever you want to when multimedia keys are pressed. Fiddling with the Settings > Keyboard panel didn't work for me and only registered a 'Level 5 shift' keypress but I think that's because the panel is buggy. I'll look further into it at some point.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-Extend_90d.png[/img]
+   A symbolic chart of my Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.
+
+
+[h]LOCALE COLEMAK[eD] VARIANTS AND PHONETIC COLEMAK LAYOUTS[/h]
+
+(See [url=http://forum.colemak.com/viewtopic.php?id=1458]this forum topic by me[/url])
+
+I took off a bit and made quite a bunch of these, heh! I can make more on request or if I'm bored at some point. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.
+
+Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' variants
+(On a side note, there are but 11 Dvorak layouts!):
+[b]be br ca cz de dk es fi fr gb gr il is it latam nl no pl pt se us[/b]
+
+ - The brackets (lvl3-4) and the LSGT key may hold the most common locale-specific keys.
+     * The oe/aring special letters may well be replaced; these should also be on dead keys.
+     * Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.
+     * See the colemak_template symbols file for more info on local Colemak[eD] variants.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_mask.png[/img]
+   The Colemak [edition DreymaR] layout (the standard variant, found in the 'us'/'English' locale).
+   Shown with the 'AngleWide-Slash' ergonomic mod (see the 'Angle/Wide' heading).
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-no-usym+dk-awide-sl_crop.png[/img]
+   The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant (mostly like the standard Colemak).
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-no-lsym-awide-sl_mask.png[/img]
+   The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings). 
+
+Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
+
+For the phonetic variants (Greek and Hebrew for now) I merely moved the keys of their default layouts to a Colemak setup, not changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-gr-phon-awide-sl_mask.png[/img]
+   The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout. 
+
+
+[h]ENHANCED DEAD KEY MAPPINGS [TODO][/h]
+
+For some reason, the Stroke dead key is still broken in XKB. Gotta get that fixed soon (maybe it'll be my first Linux bugfix unless someone beats me to it). Furthermore, I'd like to add more mappings that feel intuitive to me such as superscripts on the acute accent key and subscripts on the grave accent key.
+
+
+[h]MIRRORED COLEMAK[/h]
+
+Advanced typing is possible with only one hand given a modicum of familiarity with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.
+
+I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger digraph avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger digraphs when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand variants but then you'd have to learn a new layout).
+
+NOTE: Some adventurous souls might want to try the mirrored Colemak as a main layout?
+     (They say it's more similar to Dvorak that way.) However, it's meant for one-handed typing.
+     To use it as a standalone layout, you'll want to take out the remapping of special keys.
+
+On XKB: Using a Group setup, add the mirrored Colemak[eD] as your next layout group.
+     Then you may choose between a slew of "key(s) to change layout (while pressed)" options!
+     This does compromise your group options a bit (if you need to use non-latin layouts etc).
+     If that bothers you, consider using both 'next' and 'last' layout groups with chooser keys.
+     Use Ubuntu: 'Keyboard Layout'->'Options'->'key(s) to change layout (while pressed)'.
+
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png[/img]
+   The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)
+
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png[/img]
+   The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing
+
+
+[h]THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
+
+There's [url=http://forum.colemak.com/viewtopic.php?pid=8786#p8786]a forum topic[/url] or two on this already. Basically, I've added four Tarmak layouts that provide stepping stones from the standard (US) English QWERTY layout to the Colemak[eD] layout by moving only 3-4 keys per step. Each step brings at least one important key to the home row and only uncommon keys like J and the semicolon are misplaced in the process.
+
+Similar transitional layouts have been [url=http://forum.colemak.com/viewtopic.php?id=480]reported successful in easing the conversion to Colemak typing[/url] and although this evidence is anecdotal at best I find the [url=http://forum.colemak.com/viewtopic.php?id=358]proposed hypothesis[/url] that gradual changes should be easier to learn for many a plausible one.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_SpectralSteps_ETOI.png[/img]
+   The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).
+
+Because the XKB doesn't support full modularity practically, these are all based on my standard Colemak[eD](US English) layout with no options for other lv3-4 mappings. They are learning aids anyway, so this shouldn't be much of a problem for most.
+
+
+[h]DOWNLOAD AND INSTALL[/h]
+
+Files for the X.Org xkb can be found here: [url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/xkb/drey-xkb_patches_ub1204.zip]My Dropbox Public Folder[/url] (currently made on Ubuntu 12.04)
+
+The provided files were created using Ubuntu Linux. A zipped archive for the current Ubuntu version and a few older ones (possibly not updated!) should be available.
+
+I've provided a shell script that uses the patch command, so you'll need that installed. Then, to install the patch to a fresh XKB folder (back it up first just in case!), start a terminal window and run 'sudo sh instdiff.sh' with the 'mmdd' date tag of the file you want to use (e.g., '0502'). Then you usually need to restart your system unless you know a more advanced way. If you want to use a keyboard model mod you'll have to edit /etc/default/keyboards manually for now I'm afraid.
+
+If you go to the Layout settings on Ubuntu, hit '+' to add a layout and type in 'Colemak' you should see a bunch of additions. The Extend option is found under Options -> Miscellaneous Compatibility Options, and you should choose an appropriate lv5 switch for it (I've added a Caps Lock option).
+
+The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shift (named 'pc105angle-lg'), the Angle/Wide-Slash mod described above ('pc105awide-sl') and the US/ANSI/PC-104 board ZXCVB shift ('pc104angle-z'). Unfortunately, the current Ubuntu versions have lost the GUI Settings option to switch keyboard models (which I find very very odd). To use an Angle/Wide keyboard model on Ubuntu you therefore have to edit the /etc/default/keyboard file, like this:
+[code]#XKBMODEL="pc105"
+XKBMODEL="pc105awide-sl"[/code]
+
+If you have a non-PC105-compatible keyboard you might have to do it differently; let me know if you run into trouble.
+
+
+[h]TODO:[/h]
+• More Extend layers would be nice if I can figure out how to make them (fancy NumPad, accelerated NavPad, CodePad?). 
+   Modifier chords would be necessary.
+• Make the Extend layer modifiers (A/S/T for Alt/Shift/Ctrl) work with the other keys like they do in my PKL implementation under Windows!
+• Dead keys need fixing (slash/stroke, currency, IPA, super/subscripts etc); 
+   my plan is to make dead keys with currency++ on AltGr+4 and IPA/tech/math stuff on AltGr+5
+• Make the phonetic key remappings work (is there something wrong with the XKB or just my way of using it?)
+• Planned locale variants: [b]hu ro ru tr[/b]
+
+
+[b]Happy tapping!
+2012-07, Øystein Bech "DreymaR" Gadmar[/b]

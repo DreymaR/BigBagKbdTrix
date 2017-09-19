@@ -1,0 +1,137 @@
+[h]DREYMAR'S (PKL Win): DreymaR's Extensive Yet Modular AR'Senal (for Portable Keyboard Layout on Windows)[/h]
+
+This is the sister topic to my main [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url] topic where I discuss the modifications below in detail along with their implementation into Linux (XKB for the X.Org server). In this topic the focus is on PKL implementations of the same "tricks". For a more detailed presentation of any of the topics below, go to the main [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag[/url] topic, okay? And bear with me for making the Linux topic more important than the Windows one - it's really not about turf wars but about what I'm using most these days! (Also, I'm not using Mac - sorry.)
+
+My personal Colemak arsenal includes several other enhancements (again, see the main topic linked to above):
+• My [b]AltGr mappings[/b] (lv 3-4; "Colemak[eD]") putting dead keys on AltGr+symbol keys and reworking other mappings
+• An [b]Angle/Wide[/b] modification ("AWide-35") to improve wrist angles, hand spacing and right pinky stretch/load effort
+• An [b]Extend layer[/b] using Caps Lock for its modifier (lv 5-8; "Extend") for navigation from the home position and more
+• For several [b]locales[/b], a '[b]Unified Symbols[/b]' layout with only a few necessary locale changes from the standard Colemak[eD]
+• Access to a [b]mirrored Colemak[/b] that allows one-handed typing
+• Access to an enhanced set of useful characters via [b]dead key additions[/b]
+• The 4 [b]Tarmak transitional Colemak[/b] layouts for learning Colemak in smaller steps if desired
+
+I use Farkas Máté's excellent [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[/url] ('PKL') to achieve most of the above for Windows.
+
+
+[h]COLEMAK - EDITION DREYMAR[/h]
+
+I've updated my PKL layout.ini file (see links to downloads below) to largely correspond to its XKB counterpart when it comes to the lv3-4(AltGr) mappings. Note that since the Angle/Wide mods aren't modular in PKL what I'm delivering is what I use - that is, both the Colemak[eD] mappings and the AngleWide-Slash/35 mod rolled into one layout definition. Feel free to mod your own, or ask if you need help...
+
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-AWide35_90d-FingerShui.png[/img]
+   The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak. 
+   Shown with the 'AngleWide-35/Slash' ergonomic mod (see below), dead key emphasis and color-coded proposed fingering.
+
+Sorry, but the help images (state6.png and state7.png) aren't updated. :(
+PKL has a perl script you could use to make new state images, but I haven't used that (yet).
+
+
+[h]THE ANGLE/WIDE KEYBOARD MODEL MODS[/h]
+
+The Angle/Wide ergonomic mods have to be shoehorned into PKL, I'm afraid, as it has no modularity when it comes to separating key codes from symbols. So I've made edits in the layout.ini file for my Wide mode and also had to make corresponding edits in the pkl.ini [extend] section to make it come together. You could then install both Wide and nonWide layouts and switch between them, but the Extend mappings would only be right for one or the other. And changing stuff is a bit hard. Maybe that's okay with you though.
+
+
+[h]EXTEND LAYERS AND THE CAPS SWITCH[/h]
+
+The Extend mappings using CapsLock (or another key of your choice, set in pkl.ini) as a modifier for all sorts of cool moving-keys-around, originated with autohotkey and PKL. I'm very happy with it and consider it a Life Hack on par with Colemak itself! This is one heavy reason I want a PKL implementation of my layout on any Windows PC I work on instead of settling for just a Windows install.
+
+From my pkl.ini file:
+[code]; These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
+;+------+------+------+------+------+------+------+------+------+------+------+------+------+
+;|Esc + |F1 <> |F2 << |F3 >> |F4 <> |F5 <> |F6 << |F7 >> |F8 <> |F9 <> |F10<> |F11<> |F12<> |
+;| Caps | Play | Prev | Next | Stop | Mute | Vol- | Vol+ | Media| BrHom| Mail | App1 | App2 |
+;+======+======+======+======+======+======+======+======+======+======+======+======+======+
+;|` ¤¤¤ |1     |2     |3     |4     |5     |6     |7     |8     |9     |0     |-     |=     |
+;| Del  | F1   | F2   | F3   | F4   | F5   | F6   | F7   | F8   | F9   | F10  | F11  | F12  |
+;+------+------+------+------+------+------+------+------+------+------+------+------+------+
+;|Tab   |Q ¤¤¤ |W *** |F <<> |P <>> |G *** |J ### |L ### |U ### |Y ### |; ¤¤¤ |[ ¤¤¤ |] ¤¤¤ |
+;|      | Esc  | *WhUp| BrBck| BrFwd| *Up17| PgUp | Home | Up   | End  | Del  | Esc  | Ins  |
+;+------+------+------+------+------+------+------+------+------+------+------+------+------+
+;|Caps+ |A +++ |R *** |S +++ |T +++ |D *** |H ### |N ### |E ### |I ### |O ¤¤¤ |' ¤¤¤ |\ ><> |
+;| ++++ | Alt  | *WhDn| Shift| Ctrl | *Dn17| PgDn | Left | Down | Right| Back | Apps | BrFav|
+;+------+------+------+------+------+------+------+------+------+------+------+------+------+
+;|< *** |Z ¤¤¤ |X === |C === |V === |B *** |K *** |M *** |, *** |. *** |/ *** |Spc ¤ |Entr¤ |
+;| *WhLe| Undo | Cut  | Copy | Paste| *BtnL| BtnM | *BtnR| *Le17| *Ri17| *WhRi| Enter| Break|
+;+------+------+------+------+------+------+------+------+------+------+------+-------------+
+;Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; ¤ Various commands.[/code]
+
+PKL has one-up on the XKB implementation when it comes to the Extend layer itself: Modifiers on AST are working, as is the keymousing mode (on GD ,. BKM) and the multimedia keys on the F keys.
+
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-Extend_90d.png[/img]
+   A symbolic chart of my Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.
+
+
+[h]LOCALE COLEMAK[eD] VARIANTS AND PHONETIC COLEMAK LAYOUTS [TODO][/h]
+
+See [url=http://forum.colemak.com/viewtopic.php?id=1458]my Locale Variants forum topic[/url] for the various locale solutions!
+(But you'll have to change the PKL files yourself, or ask for help...)
+
+The layouts I've provided (see below) are for the most part only the Norwegian setup. I hope they work for a US keyboard too, but there could be snags with some OEM_ keys (semicolon, slash, tilde, that sort of key) on ISO versus ANSI boards. To make your own locale variant you'll want to copy the layout folder for my eD layout over to a new one, renaming it (and putting that new name into your pkl.ini file so the program can choose it!) and then editing the layout.ini file in there.
+
+Examples from my layout file:
+[code]SC010 = Q    5    q    Q    --    ‚    „    ; QWERTY qQ
+SC011 = W    5    w    W    --    ‘    “    ; QWERTY wW
+SC012 = F    5    f    F    --    ’    ”    ; QWERTY eE
+SC013 = P    5    p    P    --    π    ¶    ; QWERTY rR
+SC014 = G    1    g    G    --    ŋ    Ŋ    ; QWERTY tT
+SC015 = OEM_4    4    å    Å    *{Esc}    [    {    ; QWERTY [{
+SC016 = J    5    j    J    --    ʃ    Ʃ    ; QWERTY yY
+SC017 = L    5    l    L    --    ł    Ł    ; QWERTY uU
+SC018 = U    5    u    U    --    ‹    «    ; QWERTY iI
+SC019 = Y    5    y    Y    --    ›    »    ; QWERTY oO
+SC01a = OEM_1    0    ;    :    --    dk1    …    ; QWERTY pP - dk_umlaut[/code]
+Here's my upper row; note the following:
+• The OEM_4 (Left Bracket) key has scan code SC015 so it's in the middle now; this is my Wide(35/Slash) ergonomic mod in action
+• The Norwegian Åå letter on LBr is on lv1-2 mappings due to this being my Norwegian locale layout;
+   the only keys that deviate from the standard setup are LBr(OEM_4), RBr(OEM_6) and LSGT(OEM_102).
+   (Oh, and the lv3-4 of A because I moved the Ææ to RBr, but that's no biggie)
+• On your keyboard these OEM_# numbers might just be different; try it out... :o
+
+Again, the help images aren't updated I'm afraid.
+
+
+[h]ENHANCED DEAD KEY MAPPINGS[/h]
+
+There are some 17-odd dead keys in my pkl layout right now. Some are still placeholders I'm afraid, but the common accents should all be there and even the currency dead key on AltGr+4 should be working. The help images that pop up when a dead key is hit should be fairly accurate even if the main help images aren't (but the currency one is wrongly sorted).
+
+
+[h]MIRRORED COLEMAK[/h]
+
+I wish for PKL to support multiple Extend modes at some point in the future. For now, I made Mirrored Colemak by replacing the Extend mappings so you can't have both at the same time unfortunately. And that's too bad since it'd be a damn handy thing for one-handed typers!
+
+If you look into the 'Other' folder of my full PKL folder (see link below), there's a partial pkl.ini file there named pkl_mirror.ini; you'll need to copy over the [extend] part of that to your pkl.ini file's corresponding [extend] section. I'm not sure whether the pkl_mirror.ini file is properly updated - let me know if you encounter something odd.
+
+
+[h]THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
+
+See below for a download of all four steps plus "Tarmak0" (a.k.a. QWERTY) and "Tarmak5" (a.k.a. Colemak).
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_SpectralSteps_ETOI.png[/img]
+   The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).
+
+These transitional layouts were implemented as VirtualKey ones, so the lv3-4 (AltGr) and dead key mappings you'll get will be the same as on your installed keyboard layout in Windows. The layouts should support Extend mode fully. If you define several of them in your pkl.ini file, you can swiftly change between them should you wish to.
+
+Help images aren't available now/yet, but you could scale the enclosed .png image like you want to and use that: Rename it to state0.png (maybe copy it to state1.png as well so it doesn't go away when you hit Shift!) and put it in the layout folder(s) of choice! If you produce something good, let us know! ;)
+
+
+[h]DOWNLOAD AND INSTALL[/h]
+
+Files for Portable Keyboard Layout (PKL) by Farkas Máté can be found here:
+[url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/DreymaR_PortableKeyboardLayout.zip]My whole PKL install with all layouts and stuff[/url]
+[url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/Colemak-eD_Wide(35)ISO-no_PKL.zip]Just the Colemak[eD] layout[/url]
+[url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/Tarmak_PKL-virtualkey.zip]The Tarmak transitional layouts as VirtualKey layouts[/url]
+
+I usually just plop the PortableKeyboardLayout folder into a C:\PortableApps folder (but it could go anywhere really, including USB or cloud drives). Then I put a shortcut (Alt-drag the icon) in the All Programs -> Startup menu folder and I'm good to go. It won't be running at first logon but will be if you lock your machine, so I do recommend getting a layout-independent password or learning your password on all layouts you're using!
+
+
+[h]TODO:[/h]
+• Whatever I want to do with the layouts and stuff themselves, I'll discuss it in the main topic (link above)
+• There's quite a lot that could be done with these files. New help images, more locales, both wide and nonwide file sets...
+• However, I'll only do any of that if someone really needs it and asks nicely. ;)
+• The main problem is that since PKL definitions aren't as modular as the XKB ones I'd have to make any changes in multiple file sets at once. Ugh.
+
+
+[b]Happy tapping!
+2012-08, Øystein Bech "DreymaR" Gadmar[/b]
