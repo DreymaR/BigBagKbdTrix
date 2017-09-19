@@ -1,0 +1,198 @@
+[h]LOCALE COLEMAK[eD] VARIANTS[/h]
+
+In the following I've described how to make a set of locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "lesser/greater" key (LSGT) also known as VK_102. If more keys than these are needed, the KLJH keys with AltGr (lv3-4 mappings) are also available in my layout since they hold unessential mappings beforehand and are placed together.
+
+There's quite a bunch of these! I can make more on request or whim. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.
+
+Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' variants
+(On a side note, there are but 11 Dvorak layouts so now Colemak really has wind in its locale sails!):
+[b]be br ca cz de dk es fi fr gb gr il is it latam nl no pl pt se us[/b]
+
+
+[h][be ca fr] FRENCH (BELGIUM, CANADA and FRANCE)[/h]
+
+The Belgian, Canadian (international) and French default QWERTY layouts are similar enough that a harmonized 'unified' variant was made for these locales.
+This variant should be good for all users of the French and similar languages. One layout to rule them all...
+
+The needed letters for French-type locales are Éé, ÀàÈèÙù, Çç, Œœ. The LBr key has cirkumflex (âêîôû) and umlaut (ëï).
+Some [url=http://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_other_languages]letter frequencies[/url] for French: é 1.90%; à 0.49%; àèù 0.82%; ê 0.23%; ç 0.09% (which is still more than k at 0.05%); œ 0.02%.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-be-lsym-awide-sl_mask.png[/img]
+    Belgian 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-ca-lsym-awide-sl_mask.png[/img]
+    Canadian(Intl) 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-fr-lsym-awide-sl_mask.png[/img]
+    French 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]be+ca+fr[/b]:
+• Judging by the letter frequencies, é and grave merit their own keys; the other accents are of less critical importance.
+• Éé gets its own key (LSGT) instead of an acute dead key since it's quite frequent and only one letter.
+• A Çç key is preferable to the cedilla dead key since there's only one letter needed, but lv3-4 is acceptable since it's a rare letter.
+• For supporting various other accent needs, dead keys are the best option; some are common enough to merit a lv1-2 placement.
+• LBr keeps its dead keys as in the default layout for easier access to the cirkumflex/umlaut letters even though these aren't very common.
+• RBr gets the grave dead key on lv1 since àèù together are somewhat frequent.
+• The numerosign (RBr lv2) is hardly in use generally (some use an N and the masculine ordinal to produce 'Nº') but in French locales it's used.
+• The letter K is very rare in French, but lv1-2 mappings should not be changed unless absolutely necessary!
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-be-usym+ca+fr-awide-sl_crop.png[/img]
+    Belgian+Canadian(Intl)+French 'Unified Symbols' Colemak[eD]
+
+
+[h][br pt] PORTUGUESE (BRAZIL and PORTUGAL)[/h]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-br-lsym-awide-sl_mask.png[/img]
+    Portuguese (Brazil) 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-pt-lsym-awide-sl_mask.png[/img]
+    Portuguese (Portugal) 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]br+pt[/b]:
+• The two Portuguese locales' default layouts have the acute/grave key on LBr (br) and RBr (pt); that's too bad.
+• I think that the acute is the more common accent? At any rate, it feels logical to place it on the LBr I feel.
+• Tilde is also important and used for more than just ñ in Portuguese (ã and õ at least), and cirkumflex is also provided.
+• The Çç has a prominent placement in the default locale layouts so it gets its own key (not really sure if that's necessary though?).
+• The Brazilian ABNT-2 keyboard's extra key gets the ordinal markers º/ª. These are also placed on AltGr+o/O.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-br-usym+pt-awide-sl_crop.png[/img]
+    Portuguese (Brazil and Portugal) 'Unified Symbols' Colemak[eD]
+
+
+[h][cz pl] CZECH (CZECH REPUBLIC) and POLISH (POLAND)[/h]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-cz-lsym-awide-sl_mask.png[/img]
+    Czech 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-pl-lsym-awide-sl_mask.png[/img]
+    Polish 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]cz[/b] and [b]pl[/b]:
+• These two locales ended up very similar, with one acute key and one other accent (hacek for cz, ogonek for pl) for commonly accented letters.
+• The ů in Czech is hardly ever capitalized in normal text but the Ů is sometimes needed for caps and letter referrals so it's provided (also for consistency).
+• The ż in Polish is the only letter using the dot-above accent so it gets a key for itself. I think the AltGr+period dead key is quite easy to hit though...
+• The ł in Polish is only available on lv3-4 but I think AltGr+L is an easy reach.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-cz-usym-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-pl-usym-awide-sl_crop.png[/img]
+    Czech (middle) and Polish (right) 'Unified Symbols' Colemak[eD]
+
+
+[h][de] GERMAN (DEUTSCHLAND/GERMANY)[/h]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-de-lsym-awide-sl_mask.png[/img]
+    German 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]de[/b]:
+• The German layout conserves the Üü position from the default layout.
+• Ää and Öö are harmonized with the Scandinavian layouts.
+• For ß only AltGr+s is provided; I think that's very easy to hit. The capitalized version isn't there but it's hardly ever used!?
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-de-usym-awide-sl_crop.png[/img]
+    German 'Unified Symbols' Colemak[eD]
+
+
+[h][dk fi no se] DANISH (DENMARK), NORWEGIAN (NORWAY), FINNISH (FINLAND) and SWEDISH (SWEDEN)[/h]
+
+The Scandinavian languages use the same special letters albeit written differently: Åå Ææ Øø for Danish and Norwegian, and Åå Ää Öö for Finnish and Swedish. Their default layouts are quite similar too, apart from stupid differences in punctuation placement which fortunately won't cause us trouble.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-dk-lsym-awide-sl_mask.png[/img]
+    Danish 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-no-lsym-awide-sl_mask.png[/img]
+    Norwegian 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-fi-lsym-awide-sl_mask.png[/img]
+    Finnish 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-se-lsym-awide-sl_mask.png[/img]
+    Swedish 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]dk+no[/b] and [b]fi+se[/b]:
+• These locales use the same special letters. The Åå is kept in place (it's in the same position for all the Scandinavian default layouts).
+• The Ææ is somewhat more common in Danish and the Øø in Norwegian, but that shouldn't matter much here! Both positions are decent enough.
+• The Ää and Öö are placed in harmony with the other Scandinavian (and German!) layouts.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-dk-usym+no-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-fi-usym+se-awide-sl_crop.png[/img]
+    Danish-Norwegian (middle) and Finnish-Swedish (right) 'Unified Symbols' Colemak[eD]
+
+
+[h][es latam] SPANISH (SPAIN and most of LATIN AMERICA)[/h]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-es-lsym-awide-sl_mask.png[/img]
+    Spanish (Spain) 'Keep Local Symbols' Colemak[eD]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-latam-lsym-awide-sl_mask.png[/img]
+    Spanish (Latin America) 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]es+latam[/b]:
+• For the Spanish-speaking countries, the tilde is important but only used for Ññ so that letter gets a key for itself.
+• The acute and grave are important accents so they get lv1 placement in a logical fashion on the brackets ("up then down").
+• Unfortunately, the Spain and LatAm default layouts have different placement of the acute accent key. That's silly I think?!
+• The necessary but less common umlaut and cirkumflex accents are given lv2 placements.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-es-usym+latam-awide-sl_crop.png[/img]
+    Spanish (Spain and Latin America) 'Unified Symbols' Colemak[eD]
+
+
+[h][gb] ENGLISH (GREAT BRITAIN aka UNITED KINGDOM)[/h]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-gb-lsym-awide-sl_mask.png[/img]
+    English (UK) 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]gb[/b]:
+• There is none! The US (English) layout serves the needs of all English-speaking locales to my knowledge (the £ sign is there).
+• Using the 'Keep Local Symbols' layout the Brits get to find all symbols where they're accustomed to – at the cost of dead keys etc.
+
+
+[h][is] ICELANDIC (ICELAND)[/h]
+
+Iceland managed to stick with the Þþ and Ðð letters when for instance English lost them and stupidly started writing 'th' instead. ;)
+Other than that, they need the Ææ and Öö letters like the other Nordic countries do, but make do without the Åå (as they use Áá instead).
+Icelandic uses the acute accent far more than the other Nordic countries.
+Some [url=http://en.wikipedia.org/wiki/Icelandic_alphabet#Letter_frequencies]letter frequencies for Icelandic[/url] are: ð 5.01%; þ 1.59%; á 1.55%; í 1.34%.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-is-lsym-awide-sl_mask.png[/img]
+    Icelandic 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]is[/b]:
+• As the letter frequencies show, the Þþ and Ðð are so common that they shouldn't be kept on lv3-4 mappings for this locale.
+• Ææ and Öö however, are less common and hopefully AltGr+a and AltGr+k respectively are easy enough to hit.
+• There are several accented letters (Áá Éé Íí Óó Úú Ýý) and some are quite frequent, so a good acute dead key is needed.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-is-usym-awide-sl_crop.png[/img]
+    Icelandic 'Unified Symbols' Colemak[eD]
+
+
+[h][it] ITALIAN (ITALY)[/h]
+
+Some [url=http://www.sttmedia.com/characterfrequency-italian]letter frequencies[/url] for Italian: àèìòù 0.89% (è 0.42%; à 0.15%; ù 0.12%; ò 0.11%; ì 0.09%); é 0.06%.
+If this is accurate, the accented letters are quite rare all in all.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-it-lsym-awide-sl_mask.png[/img]
+    Italian 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]it[/b]:
+• For the Italian layout, several different accented letters are needed but capitalized letters weren't in the default layout.
+• Thus, the letters were provided directly as in the default layout. The éè key was kept on LBr and the rest put together.
+• The ìù were placed fairly logically on the phonetically related J, but had to go on lv3-4 mappings.
+• If this approach doesn't suit you, I recommend using the Spanish layout instead! It does the same using dead keys.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-it-usym-awide-sl_crop.png[/img]
+    Italian 'Unified Symbols' Colemak[eD]
+
+
+[h][nl] DUTCH (NETHERLAND)[/h]
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-nl-lsym-awide-sl_mask.png[/img]
+    Dutch 'Keep Local Symbols' Colemak[eD]
+
+The '[eD] unified' solution for [b]nl[/b]:
+• The Dutch layout is similar to Belgian and other French-type ones but has more use of the umlaut than the cirkumflex.
+• Therefore I didn't harmonize it fully with the French-type layouts but kept the LBr key the was it is in the default layout.
+• The acute letter Éé is somewhat common as is Óó; the acute dead key on RBr should be good enough for that.
+• The IJ ligature isn't provided in the default layout so it isn't here either; I think it's fallen into disuse. The Compose method has it.
+
+    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_crop.png[/img]    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-nl-usym-awide-sl_crop.png[/img]
+    Dutch 'Unified Symbols' Colemak[eD]
+
+[b][i][¡ WARNING: THE ABOVE MAY STILL BE SUBJECT TO (HOPEFULLY SMALL) CHANGES !][/i][/b]

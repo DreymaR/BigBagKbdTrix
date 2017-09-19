@@ -1,0 +1,95 @@
+[h]NAMING TARMAK[/h]
+
+The name 'Tarmak' is obviously inspired by 'Colemak'. Thus I quipped when I though this up:
+[quote=DreymaR]- Tar is to coal as Tarmak is to Colemak: Kinda halfway there (not quite, as any chemist worth his carbon will tell you - but I'm mostly fine with that I guess)
+- A tarmac is an attempt to pave the way!
+- I'm pretty sure someone will find it sticky, smelly, unhealthy etc etc  ;)[/quote]
+
+To separate the Tarmak variants, I use a naming scheme that refers to the most important letter brought to its Colemak home row position by each step. Of the most common letters in English ([url=http://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language]ETAOINSHR, sorted by frequency[/url]), QWERTY only has A, S and H on the home row! So the first standard Tarmak step is Tarmak1(E) which brings the E to the home row (and N as well, but E is a lot more common!), then comes Tarmak2(ET) which adds T and so on. The whole progression to Colemak is Tarmak(ETROI). It's a bit of a toss-up between R and S frequencywise and they're both sorted in the same step but 'R' is brought to the home row while 'S' is only shuffled about. (Note that I've used both the R and S in names in earlier posts – sorry about that confusion.)
+
+
+[h]THE HISTORY OF TARMAK[/h]
+For those interested in how this came about, or who want to know more about the former Tarmak variants, here's a run-through.
+
+[b]2008: Tarmac(I-EO-TR)[/b]
+Back in 2008, there was [url=http://forum.colemak.com/viewtopic.php?id=337]a forum discussion[/url] about how any layout change will break our "gestalt" feeling and typing flow but then the flow is regained at a speed which depends on the complexity of the changes made. That made me think about learning Colemak in steps, and then I realized that the Colemak layout has some interesting properties because of Shai Coleman's design philosophies: Only two keys switch hands (P and E), and the L>U>I keys form a closed loop of changes. Also, the large loop of changes can be split fairly down the middle (P>R>S>D>G>T>F and E>K>N>J>Y>O>;). Even if I knew Colemak myself by then I set about devising a stepwise learning approach.
+
+There is [url=http://forum.colemak.com/viewtopic.php?pid=8786#p8786]an older Tarmak topic[/url], in which it started out as a 3-step approach starting with the LUI loop as  a "warm-up exercise" and then a larger one for each hand. This 'Tarmac' (as I spelt it then) was [url=http://forum.colemak.com/viewtopic.php?pid=4245#p4245]successfully tried out by user Ezuk[/url] who was [url=http://www.makeuseof.com/tag/how-i-quickly-mastered-a-superior-keyboard-layout-without-losing-productivity/]very happy with it[/url], and there was much rejoicing.
+
+[b]2011: Tarmak(E-T-O-I-R)[/b]
+Then in 2011, some useful [url=http://forum.colemak.com/viewtopic.php?pid=8799#p8799]model analysis by user Cevgar[/url] (using the "CodeSharp" layout analyzer) on smaller loop chunks made me change the recommended loop progression to maximize the gain in typing model efficiency for each short step of 3–4 moved keys. Getting the G>T>F loop in place sailed up as much more important than fixing one hand at a time, since QWERTY puts the T in a needlessly poor position. This led to the 5–step Tarmak(ETOIR) (earlier called 'ETOIS') progression that split each hand loop in half and demoted the LUI loop to the next-to-last step.
+
+[quote=DreymaR(edited)]It's possible to do the "most effective" key movements 3-4 keys at a time, each step bringing an important key or two to the Colemak home position while moving less central keys out of the way to [i]their[/i] proper positions. Here are the Tarmak(ETOIR) Transitional Colemak Layout in sorted "lumps" for learning Colemak in 2-5 steps as desired:
+
+1) The [b]E[/b]>K>N>(J) "most essential" loop, fixing the important E (and N) and just messing up the infrequently used J
+[code] q  w {J} r  t  y  u  i  o  p 
+   a  s  d  f  g  h {N}{E} l  ;     The "Tarmak1(E)" transitional layout (E>K>N>J)
+     z  x  c  v  b {K} m [/code]
+2) The (J)>G>[b]T[/b]>F loop, bringing the important T into place
+[code] q  w {F} r {G} y  u  i  o  p 
+   a  s  d {T}{J} h  N  E  l  ;     The "Tarmak2(ET)" transitional layout (G>T>F>E>K>N>J)
+     z  x  c  v  b  K  m [/code]
+3) The J>Y>[b]O[/b]>(;) loop, getting the O in place at the small cost of the semicolon
+[code] q  w  F  r  G {J} u  i {Y} p 
+   a  s  d  T {;} h  N  E  l {O}    The "Tarmak3(ETO)" transitional layout (G>T>F>E>K>N>J>Y>O>;)
+     z  x  c  v  b  K  m [/code]
+4) The L>U>[b]I[/b] self-contained loop for a better I placement
+[code] q  w  F  r  G  J {L}{U} Y  p 
+   a  s  d  T  ;  h  N  E {I} O     The "Tarmak4(ETOI)" transitional layout (G>T>F>E>K>N>J>Y>O>; & L>U>I)
+     z  x  c  v  b  K  m [/code]
+5) The ;>P>[b]R[/b]>S>D loop, or rather - finally the Colemak layout!
+[code] q  w  F {P} G  J  L  U  Y {;}
+   a {R}{S} T {D} h  N  E  I  O     The Colemak layout (P>R>S>D>G>T>F>E>K>N>J>Y>O>; & L>U>I)
+     z  x  c  v  b  K  m [/code]
+
+The above sequence of loops looks most promising to me (and the Codesharp analysis). With the four layouts above available, anyone preferring smaller "tar lumps" can go one step at a time while more ambitious learners may use for instance #2 and then #4 or just #3 before moving to Colemak.[/quote]
+
+The Tarmak(ETOIR) layouts have been tried successfully by several people, including forum reports by users [url=http://forum.colemak.com/viewtopic.php?id=1684]ghaz[/url], [url=http://forum.colemak.com/viewtopic.php?id=1708]bph[/url] and [url=http://forum.colemak.com/viewtopic.php?id=1710]Coldmak[/url]. The reports suggest that if you give each step a little time to settle in, you can keep your productivity while learning Colemak.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral_ETOIR.png[/img]
+        The older Tarmak(ETOIR) transitional Colemak layouts
+        The steps are spectrally color-coded from red (Tarmak1) to violet (Colemak)
+        Not shown in this figure is how the J and ; keys are forced into temporary positions (QWERTY E and G)
+
+[b]2014: Tarmak(E-T-R-O-I)[/b]
+Now, in April 2014 Karl Nordstrom (user karl) presented a new Tarmak variant in [url=http://forum.colemak.com/viewtopic.php?pid=14542]an excellent forum topic[/url]. He was loath to move the semicolon to the middle of the board because he's typing a lot of code. Also, he wanted the LUI loop last so that the misplaced keys would be resolved as soon as possible to keep confusion to a minimum.
+
+Thus came about the new Tarmak(ETROI) progression, with a (J)>R>S>D loop in step 3 that lets us finish the big loop before the LUI loop and only move the J key to wrong positions. Another suggested name for this progression is the "J-Hopper". :)
+
+[quote=DreymaR]
+1) The [b]E[/b]>K>N>(J) "most essential" loop, fixing the important E (and N)
+[code] q  w {J} r  t  y  u  i  o  p 
+   a  s  d  f  g  h {N}{E} l  ;     The "Tarmak1(E)" transitional layout (E>K>N>J)
+     z  x  c  v  b {K} m [/code]
+2) The (J)>G>[b]T[/b]>F loop, bringing the important T into place
+[code] q  w {F} r {G} y  u  i  o  p 
+   a  s  d {T}{J} h  N  E  l  ;     The "Tarmak2(ET)" transitional layout (G>T>F>E>K>N>J)
+     z  x  c  v  b  K  m [/code]
+3) The (J)>[b]R[/b]>S>D loop, getting RSD into place – all of which are relatively frequent!
+[code] q  w  F {J} G  y  u  i  o  p 
+   a {R}{S} T {D} h  N  E  l  ;     The "Tarmak3(ETR)" transitional layout (R>S>D>G>T>F>E>K>N>J)
+     z  x  c  v  b  K  m [/code]
+4) The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
+[code] q  w  F {P} G {J} u  i {Y}{;}
+   a  R  S  T  D  h  N  E  l {O}    The "Tarmak4(ETRO)" transitional layout (Y>O>;>P>R>S>D>G>T>F>E>K>N>J)
+     z  x  c  v  b  K  m [/code]
+5) The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
+[code] q  w  F  P  G  J {L}{U} Y  ; 
+   a  R  S  T  D  h  N  E {I} O     The Colemak layout (Y>O>;>P>R>S>D>G>T>F>E>K>N>J & L>U>I)
+     z  x  c  v  b  K  m [/code][/quote]
+
+This progression evens out the efficiency gain per moved key a little between the steps, depending on the analyzer used. As karl points out though, that isn't so important to a learner as you won't be all that efficient while struggling with placements anyway. Unless you're planning on staying with a Tarmak step for a very long time it shouldn't matter at all.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral_ETROI.png[/img]
+        The new Tarmak(ETROI) transitional Colemak layouts
+        The steps are spectrally color-coded from red (Tarmak1) to violet (Colemak)
+        Not shown in this figure is how the J key is forced into temporary positions (QWERTY E, G and R)
+
+It's still entirely possible to use Tarmak(ETOIR) to learn Colemak, but nowadays I recommend the new Tarmak(ETROI). The two progressions are both good and provide relatively similar benefits I think. It's partially about preferences.
+
+Some arguments for the Tarmak(ETROI) vs Tarmak(ETOIR) progressions:
+• Moving only the J (the rarest letter moved in Colemak) feels more consistent than moving first that and then the semicolon.
+• J is actually less frequent than the semicolon/colon, not only in code but in English text as well!
+• Moving R and S into place earlier and in a separate step should be beneficial: These two letters often cause Colemak learners trouble since they "castle" past each other from their QWERTY positions. In Tarmak3(ETR) you get to learn their positions without having to focus on so much else at the same time.
+• [url=http://forum.colemak.com/viewtopic.php?pid=14755#p14755]User jpeg729 informs[/url] that the same-finger 'PO/OP' bigrams of the old Tarmak3(ETO) and Tarmak4(ETOI) steps felt bad. The new Tarmak3(ETR) step keeps O and P in their QWERTY positions where everyone is used to them, and in the next step both letters are moved into place.
+• Moving the L>U>I loop to the end lets you finish the big loop so as to resolve the temporarily misplaced letter (J) earlier.

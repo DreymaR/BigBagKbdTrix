@@ -1,45 +1,156 @@
-Newsflash: Proposals for an even more gradual model (or not, because any steps may be omitted at will!) have been made, at first in [url=http://forum.colemak.com/viewtopic.php?pid=8777#p8777]this new forum topic[/url]. In addition to one hand at a time, it's possible to do the "most effective" key movements 3-4 keys at a time, each step bringing an important key or two to the Colemak home position while moving less central keys out of the way to [i]their[/i] proper positions:
-
-   This image illustrates the four proposed steps:
-   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_SpectralSteps_ETOI.png[/img]
-   Fig.: The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).
-   Not shown above is how the J and ; keys are forced into temporary positions (QWERTY E and G), but this should be readily deductible.
+[h]THE TARMAK (TRANSITIONAL COLEMAK) LEARNING LAYOUTS[/h]
 
 
-[quote=DreymaR(edited)]This, then, is a [url=http://forum.colemak.com/viewtopic.php?pid=8786#p8786]Tarmak (Colemak Transitional Layout)[/url] in sorted "lumps" for learning Colemak in 2-5 steps as desired:
+[i]"Tarmak may well be the best transitioning mechanism not only in the Colemak universe, but in layouts period"
+ ~ user [url=http://www.reddit.com/r/Colemak/comments/1dupw9/tarmak_transitional_layouts_for_learning_qwerty/]Lalop[/url][/i]
 
-1) The [b]E[/b]>K>N>J "most essential" loop, fixing the important E (and N) and just messing up the infrequently used J
-[code] q  w {J} r  t  y  u  i  o  p 
-   a  s  d  f  g  h {N}{E} l  ;     The "Tarmak1(E)" transitional layout (E>K>N>J)
-     z  x  c  v  b {K} m [/code]
-2) The G>[b]T[/b]>F>(J) loop, bringing the important T into place
-[code] q  w {F} r {G} y  u  i  o  p 
-   a  s  d {T}{J} h  N  E  l  ;     The "Tarmak2(ET)" transitional layout (G>T>F>E>K>N>J)
-     z  x  c  v  b  K  m [/code]
-3) The (J)>Y>[b]O[/b]>; loop, getting the O in place at the small cost of the semicolon
-[code] q  w  F  r  G {J} u  i {Y} p 
-   a  s  d  T {;} h  N  E  l {O}    The "Tarmak3(ETO)" transitional layout (G>T>F>E>K>N>J>Y>O>;)
-     z  x  c  v  b  K  m [/code]
-4) The L>U>[b]I[/b] self-contained loop for a better I placement
-[code] q  w  F  r  G  J {L}{U} Y  p 
-   a  s  d  T  ;  h  N  E {I} O     The "Tarmak4(ETOI)" transitional layout (G>T>F>E>K>N>J>Y>O>; & L>U>I)
-     z  x  c  v  b  K  m [/code]
-5) The P>R>S>D>(;) loop, or rather - finally the Colemak layout!
-[code] q  w  F {P} G  J  L  U  Y {;}
-   a {R}{S} T {D} h  N  E  I  O     The Colemak layout (P>R>S>D>G>T>F>E>K>N>J>Y>O>; & L>U>I)
-     z  x  c  v  b  K  m [/code]
 
-For implementing this incrementally, a sequence of loops has to be decided and the above looks most promising to me (and the Codesharp analysis). With the four layouts above available, anyone preferring smaller "tar lumps" can go one step at a time while more ambitious learners may use for instance #2 and then #4 or just #3 before moving to Colemak.[/quote]
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_SpectralAnimation-45d.gif[/img]
 
-[h]UPDATE: The steps have been rearranged from the original post because the G>T>F loop is so beneficial.
-(Thanks to cevgar for the [url=http://forum.colemak.com/viewtopic.php?pid=8801#p8801]Codesharp analyses[/url]!)[/h]
 
-Here's a graphic showing the number of keys that each layout step changes, with the Workman and Dvorak layouts included for comparison since they change 21 and 33 of the 35 "letter block" keys. The line in the graph represents how much Codesharp "overall effort" percentage you gain by moving more keys, divided by the number of extra keys moved from the previous layout (4-3-3-3-4-4-12 keys):
+The Colemak optimized layout changes 17 keys from QWERTY. This is far less drastic than the well-known Dvorak layout with up to 33 changed keys but no benefit over Colemak (although that's hard to prove either way!). Some people feel that it's okay to change everything and that knowing each layout is like knowing a separate language, but at the same time it's a lot more work for an English speaker to learn Japanese than, say, German!
 
-[img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_KeyChangesVsModelGain.png[/img]
+But even 17 key positions aren't learnt in a jiffy and not everyone has the time or stamina to make a switch that may hit your work efficiency for weeks. Therefore, some have made more minimalistic layout changes such as [url=http://www.minimak.org/]the Minimak layouts[/url] that let you change only 4, 8 or 12 keys and still gain decent benefits. But those don't have the effectiveness of a properly optimized layout like Colemak so it's still a tough choice for the weary traveller.
 
-The "effort" parameter increases the most for the first Tarmak steps. After the last Tarmak, the final 4-key change to Colemak doesn't produce much modeled benefit compared to the previous changes. Since the mini-loops of Tarmak have been sorted using this model that may be expected; also, I personally believe that the Colemak has benefits that the model are blind to but that are nevertheless important! The full Colemak has a lot less same-finger and other benefits compared to the last Tarmak step. The Workman layout moves 4 more keys but doesn't do significantly better in the model for that trouble unless it too has further benefits that are transparent to the Codesharp model (21.8% vs 21.3% for Colemak), whereas the Dvorak UI plummets because it changes nearly twice as many keys as Colemak without doing better in the analysis at all. In the name of good sportsmanship, I show the Dvorak UI which scored better (21.4%) than the garden-variety Dvorak (18.9%, comparable to Tarmak3).
+What if you could change only 4, 7, 10 or 14 keys, each step a progression from the former, gain incrementally better key positions as you go and end up with the typing power of a fully operational Colemak? Using the Tarmak layouts, you can! Please read on, and I'll show you how.
 
-[b]Download:[/b]
-• For PKL under Windows, you can download some [url=https://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/Tarmak_PKL-virtualkey.zip]virtualkey files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url]. Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file.
-• For Linux/XKB, see my [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url] topic. Search for 'English Colemak'.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_KeyChanges.png[/img]
+
+
+[b]NOTE:[/b] This may not be the perfect way for everyone. Some people prefer learning Colemak by diving straight in, the "cold turkey" approach. Some like to do "QWERTY by day, Colemak by night" for a while before making the jump. But some have used Tarmak to get a more gradual learning experience and have liked it a lot. So if you think this might be for you, read on!
+
+
+[h]HOW DOES IT WORK?[/h]
+
+Each of the 4 Tarmak layouts changes 3–4 new keys from the previous step until you've made the full transition to Colemak. This is done by breaking up the loop of keys that move into each others' positions, misplacing only the very infrequently used J in the process. There is one big loop of 14 changed keys (Y>O>;>P>R>S>D>G>T>F>E>K>N>J) that you can learn in up to four steps, and one small self-contained loop of 3 keys (L>U>I). Each Tarmak step brings at least one of the most common letters in English (ETAOINSHR) to the home row where it belongs, right under your fingertips.
+
+This animated image, like the one at the top of this topic, shows the full Tarmak transition from QWERTY to Colemak. The keys moved into place for each Tarmak step are shown in a different color following the rainbow from red via orange, green and blue to violet.
+
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_SpectralAnimation-90d.gif[/img]
+
+
+Here I've explained each of the Tarmak "tar lumps" in more detail:
+[quote=DreymaR]
+
+[b]1)[/b] The (J)>[b]E[/b]>K>N "most essential" loop, fixing the important E (and N)
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral-45d/Tarmak1_Spectral_E.png[/img]    Tarmak1(E)
+
+
+[b]2)[/b] The (J)>G>[b]T[/b]>F loop, bringing the important T into place
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral-45d/Tarmak2_Spectral_ET.png[/img]    Tarmak2(ET)
+
+
+[b]3)[/b] The (J)>[b]R[/b]>S>D loop, getting RSD into place – all of which are relatively frequent!
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral-45d/Tarmak3_Spectral_ETR.png[/img]    Tarmak3(ETR)
+
+
+[b]4)[/b] The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral-45d/Tarmak4_Spectral_ETRO.png[/img]    Tarmak4(ETRO)
+
+
+[b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral-45d/Tarmak5_Spectral_ETROI.png[/img]    Tarmak5 = Colemak
+[/quote]
+
+
+Here are the spectrally coded Tarmak steps again, together in one Colemak image. Not shown in this figure is how the J hops between temporary positions (QWERTY E, G and R) before finding its place; that's explained above.
+
+    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral_ETROI.png[/img]
+
+
+[h]USER FEEDBACK[/h]
+
+There have been several positive reports about Tarmak.
+
+The very first Tarmak user was Ezuk. Working as a writer, he gave up going cold turkey because he needed his fingers with him at all times. He used the 3-step 2008 version of Tarmak over a period of several months to ensure full typing fluency and wrote [url=http://www.makeuseof.com/tag/how-i-quickly-mastered-a-superior-keyboard-layout-without-losing-productivity/]a very positive blog review[/url] that got some attention. More recently he's written [url=http://www.makeuseof.com/tag/curious-about-colemak-learn-the-best-keyboard-layout-easily/]an excellent promotion post for the updated Tarmak[/url] with notes on using PortableKeyboardLayout to learn and use the layouts. Highly recommended reading!
+[quote=ezuk][h]It’s Free, Easy To Use, And Won’t Kill Your Productivity[/h]
+
+    [img]http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2014/05/tarmak-switch.png?ec7b17[/img]
+
+Here is why Tarmak is the best way to learn a superior keyboard layout:
+
+• It’s free: Won’t cost you a dime.
+• It comes as a portable app: No coding; no registry hacks; you don’t even have to install anything or be an Administrator. You can even put it on a USB stick and use it on any computer you get to.
+        It’s based on AutoHotkey, one of our favorite automation tools, and it’s open-source.
+• It won’t kill your productivity: Throughout your learning process, you’ll still be able to type. If you’re patient and don’t rush ahead, there won’t be a single moment where you’ll feel you just can’t type.
+• It’s easy to move between stages: Want to move on to the next step? It’s as easy as a right-click on a system tray icon. Too hard for you? No problem, step back.
+• Comes with keyboard images: It’s sometimes hard to visualize where the new keys are, especially since your keyboard is now “wrong” (shows you the old keys). Tarmak comes with helpful images that show you the different stages.[/quote]
+
+
+Here's [url=http://forum.colemak.com/viewtopic.php?pid=12243#p12243]what user Ghaz had to say[/url]:
+[quote=ghaz]The transitional layouts worked really well for me because of the following:
+
+• High bang for buck in the initial stages
+• Low risk - still a worthwhile endeavor if I get stuck at a stage for a year
+• Allowed me to concentrate only on a few keys at a time, and mostly master them before moving on
+• Low productivity loss
+• The only keys that are moved twice are infrequently used [i][Note: Both J and semicolon were moved more than once at that time][/i]
+• By moving on to the later stages after a shortish time, their new position had barely been set in my mind[/quote]
+
+
+As shown in the graph below from the Amphetype program, [url=http://forum.colemak.com/viewtopic.php?id=1710]user Coldmak had a smooth 9-day transition to Colemak[/url]. He obviously worked quite hard for it as shown by the many test points on the graph, but kept his typing speed above 20 words per minute (although he probably rushed the last step a little) and reported a pleasant experience. After that transition, his Colemak typing speed kept rising as you can see in his topic.
+
+    [img]https://dl.dropboxusercontent.com/u/12661643/AmphetypeAverage.jpg[/img]
+        A speed graph showing typing tests in Amphetype over a 10-day period
+        During the 9 first days, the four Tarmak(ETOIR) steps were learnt successively as shown
+
+
+Similarly, [url=http://forum.colemak.com/viewtopic.php?pid=12558#p12558]user bph found Tarmak very useful[/url]:
+[quote=bph]My approach has been to stick with a stage until I exceed 30 wpm then move to the next [each stage took about 3 days]. Predominantly I have just forced myself to use tarmak at work for everything (mainly emacs) but with a bit of typeracer thrown in for fun
+[...]
+I think these stages are a really good way of breaking down a very tough task,
+there is no way i could do this cold turkey direct to colemak
+[...]
+So all in, I think going qwerty to colemak via tarmak will take half the effort as learning to touch type qwerty from scratch
+[/quote]
+
+
+[url=http://forum.colemak.com/viewtopic.php?pid=15390#p15390]Another recent one[/url]:
+[quote=RavenLoon]I started my Tarmak project [...] with a plan to step up each Friday after work.  I made the final transition [in a month]. It's been just over a week and I've timed out in Amphetype twice at over 50 wpm / 97% accuracy, though my average is still only in the 40's.  Each week I was able to fairly easily climb back from the instant "hit" to reliably over 40 wpm / 97% accuracy before the next step.
+
+I typed on Qwerty for over 30 years.  DreymaR's Tarmak method finally gave me the gradual methodology I needed to move to a better keyboard layout [...] and (for me the final piece of the puzzle) the Tarmak transition method puts [Colemak] truly within reach of people who actually have to keep getting work done while working on the transition.[/quote]
+
+
+[h]MINI-FAQ[/h]
+
+[b]Q:[/b] [i]What about that J key jumping all over the place – won't that be both confusticating and bebothering?[/i]
+[b]A:[/b] Don't worry! As seen in [url=http://forum.colemak.com/viewtopic.php?pid=14801#p14801]the 'analysis' section below[/url], the J is the rarest key not moved from its QWERTY position. As such, it won't get too ingrained during the transitions. You'll be more preoccupied with the frequently used keys that move to better places, and those will be learnt faster.
+
+[b]Q:[/b] [i]I'm put off by doing so many steps to get there!?[/i]
+[b]A:[/b] Feel free to skip one or more steps. The transition can be made to suit your preferences. I think Tarmak2(ET) is really good in terms of gain, and it moves a few keys on each hand if you want to train both hands at the same time. That's probably where I'd start if I were feeling impatient and bold. After that, one possibility would be to do the important but tricky RSD loop before moving to full Colemak.
+
+[b]Q:[/b] [i]When should I switch to the next step?[/i]
+[b]A:[/b] When you feel ready and up to it! It has been suggested that you should aim for about [url=http://forum.colemak.com/viewtopic.php?pid=12658#p12658]97% accuracy at 40 WPM before you move on to the next step[/url]. That sounds about right to me, but to each their own. You definitely shouldn't rush it but then again you may not want to get too cozy with each temporary step either. Finally, if you need to be fully productive right now you can take the next step later when you have more time. It would probably make more sense to advance on Friday night than in the middle of your workweek, for example.
+
+[b]Q:[/b] [i]Argh! R and S are so annoying! How could Shai Coleman do this to me?[/i]
+[b]A:[/b] Colemak R and S are odd to most beginners. The predecessors of Colemak had the S in its QWERTY place but it didn't prove possible to make a good enough layout that way so the S had to move over to the next finger. Because of this, many learners struggle with the S. In Tarmak step 3 you get to move only R S D which are all fairly important keys, and you get to learn the new S placement without too much else to think of.
+
+[b]Q:[/b] [i]What on earth is Tarmak(ETROI) versus Tarmak(ETOIR) versus Tarmak(#@¡€%)?[/i]
+[b]A:[/b] There have been a couple of earlier variants of Tarmak. ETOIR is the previous Tarmak progression from 2011, and ETROI the new one from 2014. They're named after which important letter each step brings to the Colemak home row; see the '[url=http://forum.colemak.com/viewtopic.php?pid=14803#p14803]naming and history[/url]' section below if you're interested.
+
+[b]Q:[/b] [i]Can I learn the L>U>I loop earlier? It's so cute and I want to do it as a warm-up for things to come.[/i]
+[b]A:[/b] The first "Tarmac" layouts had the LUI loop as the first step, but that didn't give enough benefit for the effort and led to some nasty same-finger bigrams (when you have to use the same finger for two consecutive strokes – I hate that). Depending on your OS/platform, you may move the LUI loop if you wish. It may give a little extra benefit in step 3 or 4, and it's small and quite easy to learn – but on the other hand you may want to finish the big loop as soon as possible. Ask me for how to do this if you're interested. But beware that if you do the LUI loop before the O is in place you may incur bad OI/IO bigrams.
+
+
+[h]THANKS[/h]
+I'd like to say thanks to all the wonderful people of the Colemak forums who have contributed in various ways, with testing, analysis and/or discussions. Many of them are mentioned above, but if anyone is left out it's an oversight and nothing else. In particular, thanks (again!) to Shai Coleman for making Colemak in the first place!
+
+
+[h]DOWNLOAD[/h]
+
+[b]Materials:[/b]
+• Feel free to use any images from this topic or my PKL files for learning aids.
+• If you need a set of printable/hires images like the ones in this post, you may use [url=https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/tarmak/Tarmak_Spectral-180d.zip]these that I've rendered at twice the normal resolution[/url].
+
+[b]Windows:[/b]
+• You can download some [url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/PKL_vk_Tarmak.zip]virtualkey files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url] for Farkas Máté's excellent PortableKeyboardLayout (PKL). Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file.
+• If you don't have PKL already, here's [url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/PortableKeyboardLayout_DreymaR.zip]my whole PKL package[/url] as described in the [url=http://forum.colemak.com/viewtopic.php?id=1467]Big Bag Of Tricks (for PKL)[/url] topic. It should run portably without any fuss.
+
+[b]Linux [i]et al[/i]:[/b]
+• For XKB, see the [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks (Linux/XKB)[/url] topic. After installing, search for 'English Colemak' in the layout chooser.
+• [url=http://forum.colemak.com/viewtopic.php?pid=15367#p15367]User olemartinorg[/url] has provided [url=https://github.com/olemartinorg/tarmak-xmodmap]an Xmodmap makefile that'll generate Tarmak steps from your existing layout[/url]. Very clever, and useful if you prefer Xmodmap over messing with the XKB files.
+
+[b]Mac:[/b]
+• User BradWright made [url=https://gist.github.com/bradleywright/11123852/revisions]all the Tarmak steps available as a private.xml file[/url] for usage with [url=https://pqrs.org/osx/karabiner/index.html.en]KeyRemap4MacBook aka Karabiner[/url]. Thanks, Brad!
+• User ghaz also made [url=http://forum.colemak.com/viewtopic.php?id=1684]Mac Tarmak steps (for the old ETOIR progression only)[/url]. Instructions for these can be found [url=http://www.languagegeek.com/keyboard_general/mac_installation1.html]over at the LanguageGeek pages[/url].

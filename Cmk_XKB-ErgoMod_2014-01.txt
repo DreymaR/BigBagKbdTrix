@@ -1,0 +1,274 @@
+[h]DREYMAR MAKES THE ERGONOMIC ANGLE+WIDE MOD WORK IN LINUX (for all layouts!):[/h]
+The task at hand is to make the ergonomic mod a keycode/geometry definition rather than a symbolic layout one.
+Doing so, we allow it to be selected as a keyboard model (based on the generic pc105 International keyboard).
+Thus it becomes independent of which layout (QWERTY/Dvorak/Colemak etc) we've chosen which is nice!
+This is especially important since I think it's a good idea to move the physical key caps around for this mod if you can.
+The minor downsides to this are:
+	* For keyboard models that can't use the pc105 codes (like mac or sgi ones) you'll have to edit the relevant files
+	* The symbolic names of key codes no longer remain in an intuitive sequence (e.g., <AE12> is now left of <AE07>)
+
+
+[h]1) DEFINING THE NEW MOD AS A KEYBOARD MODEL[/h]
+To make the system see our new keyboard definition, we need to add the following rules entry to two files, evdev and base:
+[It used to be xorg.xml, but now that's usually just an alias. Evdev is the one in use by Debian-based Linux today.]
+====== In /usr/share/X11/xkb/rules/evdev.xml ==========
+====== In /usr/share/X11/xkb/rules/base.xml ===========[code]
+    <model>
+      <configItem>
+        <name>pc105wide</name>
+        <description>Generic 105-key (Intl) PC WideErgoMod</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+[/code]=======================================================
+
+We also need to describe the keyboard model in evdev/base.lst:
+====== In /usr/share/X11/xkb/rules/evdev.lst ==========
+====== In /usr/share/X11/xkb/rules/base.lst ===========[code]
+  pc105wide       Generic 105-key (Intl) PC WideErgoMod
+[/code]=======================================================
+
+Now, the main evdev/base files (without .lst and .xml extensions) should've been recompiled based on these changes!
+However, restarting my X Server (Ctrl+Alt+Back if you have that hotkey, or a system restart) didn't make that happen.
+[I hear that from the console, you could remove '/tmp/.X0-lock' followed by a 'startx' command? I couldn't do that.]
+Hence, we'll edit those files manually (because although you're warned not to do that, I didn't see another way).
+
+
+[h]2) DEFINING THE NEW KEYBOARD GEOMETRY (so that it shows up right in images)[/h]
+This component, apparently, isn't used by the X.Org server itself but by any app which wants to show a keyboard image.
+As such, it's not crucial for keyboard function but it should be taken care of to provide function and avoid confusion.
+
+The geometry/pc file gets a new entry at the end:
+====== In /usr/share/X11/xkb/geometry/pc ==============[code]
+
+// Addition to the /xkb/geometry/pc file: 
+// AngleWide ergonomic mod (by DreymaR, 2011)
+xkb_geometry "pc105wide" {
+
+    description= "Generic 105 - WideErgoMod";
+
+{NB: STICK IN A COPY OF THE PC(105) GEOMETRY HERE, THEN DELETE THE DESCRIPTION AND FINALLY 
+REPLACE THE ALPHA SECTION WITH THE ONE BELOW!!! It's a bit long to quote (I'll also have a proper patch file available)}
+
+    section "Alpha" {
+	top= 61;
+	row {
+	    top= 1;
+	    keys { <TLDE>, <AE01>, <AE02>, <AE03>, <AE04>,
+		   <AE05>, <AE06>, <AE12>, <AE07>, <AE08>,
+		   <AE09>, <AE10>, <AE11>,
+		   { <BKSP>, "BKSP", color="grey20" }
+	    };
+	};
+	row {
+	    top= 20;
+	    keys { { <TAB>, "TABK", color="grey20" },
+		   <AD01>, <AD02>, <AD03>, <AD04>, <AD05>, 
+		   <AD12>, <AD06>, <AD07>, <AD08>, <AD09>, 
+		   <AD10>, <AD11>, { <RTRN>, "RTRN", color="grey20" }
+	    };
+	};
+	row {
+	    top= 39;
+	    keys { { <CAPS>, "CAPS", color="grey20" },
+		   <AC01>, <AC02>, <AC03>, <AC04>, <AC05>, 
+		   <BKSL>, <AC06>, <AC07>, <AC08>, <AC09>, 
+		   <AC10>, <AC11>
+	    };
+	};
+	row {
+	    top= 58;
+	    keys { { <LFSH>, "LFSH", color="grey20" },
+		    <AB01>, <AB02>, <AB03>, <AB04>, <AB05>, <LSGT>, 
+		    <AB10>, <AB06>, <AB07>, <AB08>, <AB09>, 
+		    { <RTSH>, "RTSH", color="grey20" }
+	    };
+	};
+	row {
+	    top= 77;
+	    key.shape= "SMOD";
+	    key.color= "grey20";
+	    keys { { <LCTL>, "MODK" }, <LWIN>, <LALT>,
+		   { <SPCE>, "SPCE", color="white" },
+		   <RALT>, <RWIN>, <MENU>, <RCTL>
+	    };
+	};
+    }; // End of "Alpha" section
+
+// Don't think I can get augment or include to work well with a Geometry component...
+//    augment "pc(pc105)"
+// So instead, I've copy-pasted the whole pc105 def and just edited the Alpha section
+
+}; // End of "pc105wide" geometry (by DreymaR 2011)
+
+[/code]=======================================================
+[I first tried include pc(pc105) but that was problematic and led to multiple definitions. 
+Augmenting may be safer, but I doubt that works well on a geometry file?
+So the last resort is that the full pc(pc105) definition is copied over and the alpha section edited.]
+
+So, after all this now we can see the right look in "Show layout" tools, but the keys still act like before!
+
+
+[h]3) DEFINING THE CHANGED KEYCODES (so that the keys actually move around)[/h]
+The keycodes themselves are by default taken from evdev (default now?) or xfree86 (which links to "base").
+If you're using some other keyboard model you'll have to build your own modded key codes for that model.
+For instance, in the digital_vndr/pc and sgi_vndr/indy codes there are pc105 models with different codes!
+
+In the base and evdev files you find entries like this one (which was under 'geometry'):
+$pcmodels	=	pc(%m)
+Thus, if pc105wide is listed as a pcmodel the geometry component will be in the pc file, entry pc105wide
+
+So here's where I start my 'heretical' direct editing of the compiled rules files (CAVEAT EMPTOR):
+====== In /usr/share/X11/xkb/rules/evdev ==============
+====== In /usr/share/X11/xkb/rules/base ===============
+========== Adding to "! $pcmodels = " =================[code]
+! $pcmodels = pc101 pc102 pc104 pc105 pc105wide
+[/code]=======================================================
+
+Not sure if we need $inetkbds (it lists "internet keyboards" that use special keys, I think) but here goes:
+====== In /usr/share/X11/xkb/rules/evdev ==============
+====== In /usr/share/X11/xkb/rules/base ===============
+========== Under "! $inetkbds = " =====================[code]
+              pc105wide \
+[/code]=======================================================
+[The $inetkbds section used to have a line similar to the one in $pcmodels but it changed to this format]
+
+In the evdev file under "! model = keycodes" only pc98 is listed and the value " * = evdev" is the default.
+For the base file, similarly no pc models are mentioned and it ends with " * = xfree86".
+Since our pc105wide model doesn't use standard xfree86/evdev codes we must introduce a new specific entry:
+====== In /usr/share/X11/xkb/rules/evdev ==============
+========== Under "! model  =  keycodes" ===============[code]
+  pc105wide	=	evdev(pc105wide)
+[/code]=======================================================
+
+====== In /usr/share/X11/xkb/rules/base ===============
+========== Under "! model  =  keycodes" ===============[code]
+  pc105wide	=	xfree86(pc105wide)
+[/code]=======================================================
+
+The following two new entries in the keycodes.dir file list the pv105wide definitions.
+This probably isn't necessary now! In newer files, the pc models aren't listed explicitly.
+====== In /usr/share/X11/xkb/keycodes.dir =============
+========== Under the relevant files ===================[code]
+-------- a------- evdev(pc105wide)
+-------- a------- xfree86(pc105wide)
+[/code]=======================================================
+(The top line for each file has a letter 'd' in it; this means that that it the default for this file. 
+The letter 'a' means that it's an alphabetic definition.)
+
+Now, at the end of the keycodes file itself add this:
+====== In /usr/share/X11/xkb/keycodes/evdev ===========[code]
+
+// Addition to the /xkb/keycodes/evdev file: 
+// AngleWide ergonomic mod (by DreymaR, 2011)
+xkb_keycodes "pc105wide" {
+
+    <AE12> =  16;
+    <AE07> =  17;
+    <AE08> =  18;
+    <AE09> =  19;
+    <AE10> =  20;
+    <AE11> =  21;
+
+    <AD12> =  29;
+    <AD06> =  30;
+    <AD07> =  31;
+    <AD08> =  32;
+    <AD09> =  33;
+    <AD10> =  34;
+    <AD11> =  35;
+
+    <BKSL> =  43;
+    alias <AC12> = <BKSL>;
+    <AC06> =  44;
+    <AC07> =  45;
+    <AC08> =  46;
+    <AC09> =  47;
+    <AC10> =  48;
+    <AC11> =  51;
+
+    <AB01> =  94;
+    <AB02> =  52;
+    <AB03> =  53;
+    <AB04> =  54;
+    <AB05> =  55;
+    <LSGT> =  56;
+    <AB10> =  57;
+    <AB06> =  58;
+    <AB07> =  59;
+    <AB08> =  60;
+    <AB09> =  61;
+
+    augment "evdev(evdev)"
+};
+
+[/code]=======================================================
+
+I think that only evdev is strictly necessary, but the proper thing to do is to change xfree86 as well.
+(I tried to point to the xfree86(pc105wide) definition in the evdev file using 'include', but then
+the chain of includes or something broke so that the keyboard only got partially defined.)
+
+If you include and then define, the xkbcomp will complain that you're defining the same variable twice.
+Thus, the better way is to define your variables and then augment with the pc105-relevant component.
+
+====== In /usr/share/X11/xkb/keycodes/xfree86 =========[code]
+
+// Addition to the /xkb/keycodes/xfree86 file: 
+// AngleWide ergonomic mod (by DreymaR, 2011)
+xkb_keycodes "pc105wide" {
+
+    <AE12> =  16;
+    <AE07> =  17;
+    <AE08> =  18;
+    <AE09> =  19;
+    <AE10> =  20;
+    <AE11> =  21;
+
+    <AD12> =  29;
+    <AD06> =  30;
+    <AD07> =  31;
+    <AD08> =  32;
+    <AD09> =  33;
+    <AD10> =  34;
+    <AD11> =  35;
+
+    <BKSL> =  43;
+    alias <AC12> = <BKSL>;
+    <AC06> =  44;
+    <AC07> =  45;
+    <AC08> =  46;
+    <AC09> =  47;
+    <AC10> =  48;
+    <AC11> =  51;
+
+    <AB01> =  94;
+    <AB02> =  52;
+    <AB03> =  53;
+    <AB04> =  54;
+    <AB05> =  55;
+    <LSGT> =  56;
+    <AB10> =  57;
+    <AB06> =  58;
+    <AB07> =  59;
+    <AB08> =  60;
+    <AB09> =  61;
+
+    augment "xfree86(basic)"
+};
+
+[/code]=======================================================
+
+The default xfree86 pc105 definition is (xfree86) but that just includes (basic) adding <BKSL> and <LSGT>.
+So I think it's smoother to work with the 'basic' component of xfree86 directly for pc105wide as well.
+
+
+[h]4) GETTING IT UP AND RUNNING[/h]
+- I (and erw on the Colemak forum) found that changing layout files isn't enough; you also need to flush the "cache".
+    * Otherwise, I have seen keys lose repeat, the geometry images get weird and whatnot.
+    * So at this point, delete all the files in /var/lib/xkb/ (the X server makes new ones as necessary).
+
+- Now restart the X Server (Ctrl+Alt+Backspace or a restart).
+
+- You should now be able to select, view and use the "PC105 (Wide)" keyboard model with your preferred symbol layout!
+
+- If troubleshooting is needed, the console command 'setxkbmap -print -verbose 8' may give you an idea what's going on.

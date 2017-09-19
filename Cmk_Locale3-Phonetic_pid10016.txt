@@ -1,0 +1,23 @@
+[h]PHONETIC COLEMAK LAYOUTS[/h]
+
+For the phonetic variants of Greek and Hebrew script I merely moved the keys of their default layouts to a Colemak setup, not changing anything else. This type of layout already exists in QWERTY form, so making Colemak versions isn't hard.
+
+Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now.
+
+For the Kyrillic layouts it's slightly more tricky since Kyrillic script has more letters; user ghen has made a nice solution named Rulemak. There are other proposals as well; see the topics linked to above.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-phon-gr-awide-sl_mask.png[/img]
+   The Colemak phonetic layout for Greek script, simply moving around the keys of the default (here xkb) Greek layout. 
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-phon-il-awide-sl_mask.png[/img]
+   The Colemak phonetic layout for Hebrew script, simply moving around the keys of the default (here xkb) Israeli layout.
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-phon-ru.png[/img]
+   The Colemak phonetic layout for Russian Kyrillic script – 'Rulemak' by user Ghen.
+   Based on KOI-8R, with the notable exception of ч for H because it's quite common and used in existing phonetic Russian layouts.
+   [Note: Rulemak is implemented in xkb and PKL (Win) by ghen himself and ported to my implementations – see the post below!]
+
+   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-phon-bg.png[/img]
+   The Colemak phonetic layout for Bulgarian Kyrillic script.
+   In the [url=http://forum.colemak.com/viewtopic.php?pid=13877#p13877]Rulemak topic[/url] I discussed this layout. Notably, ы and ё aren't used but ъ is more common than ю.
+   NOTE: In Rulemak, the VK_102/LSGT key is combining acute; in Bulgarian Colemak it's combining grave. Makes some accented letters easy to type.
