@@ -31,7 +31,7 @@ This animated image, like the one at the top of this topic, shows the full Tarma
 
 
 Here I've explained each of the Tarmak "tar lumps" in more detail:
-[quote=DreymaR]
+[quote=The Tarmak (Transitional Colemak) layouts:]
 
 [b]1)[/b] The (J)>[b]E[/b]>K>N "most essential" loop, fixing the important E (and N)
     [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral-45d/Tarmak1_Spectral_E.png[/img]    Tarmak1(E)
@@ -58,10 +58,14 @@ Here are the spectrally coded Tarmak steps again, together in one Colemak image.
 
     [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Tarmak/Tarmak_Spectral_ETROI.png[/img]
 
+The next image shows the Tarmak steps leading to the ANSI A-Wing Curl(DbgHk)Angle ergo modded Colemak variant, should you be interested in that. If so, see below.
+
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/tarmak/Tarmak_Spectral_ETROI-Curl%28DbgHk%29AWing.png[/img]
+
 
 [h]USER FEEDBACK[/h]
 
-There have been several positive reports about Tarmak.
+There have been several positive reports from satisfied Tarmak users.
 
 The very first Tarmak user was Ezuk. Working as a writer, he gave up going cold turkey because he needed his fingers with him at all times. He used the 3-step 2008 version of Tarmak over a period of several months to ensure full typing fluency and wrote [url=http://www.makeuseof.com/tag/how-i-quickly-mastered-a-superior-keyboard-layout-without-losing-productivity/]a very positive blog review[/url] that got some attention. More recently he's written [url=http://www.makeuseof.com/tag/curious-about-colemak-learn-the-best-keyboard-layout-easily/]an excellent promotion post for the updated Tarmak[/url] with notes on using PortableKeyboardLayout to learn and use the layouts. Highly recommended reading!
 [quote=ezuk][h]It’s Free, Easy To Use, And Won’t Kill Your Productivity[/h]
@@ -71,11 +75,15 @@ The very first Tarmak user was Ezuk. Working as a writer, he gave up going cold 
 Here is why Tarmak is the best way to learn a superior keyboard layout:
 
 • It’s free: Won’t cost you a dime.
-• It comes as a portable app: No coding; no registry hacks; you don’t even have to install anything or be an Administrator. You can even put it on a USB stick and use it on any computer you get to.
-        It’s based on AutoHotkey, one of our favorite automation tools, and it’s open-source.
-• It won’t kill your productivity: Throughout your learning process, you’ll still be able to type. If you’re patient and don’t rush ahead, there won’t be a single moment where you’ll feel you just can’t type.
-• It’s easy to move between stages: Want to move on to the next step? It’s as easy as a right-click on a system tray icon. Too hard for you? No problem, step back.
-• Comes with keyboard images: It’s sometimes hard to visualize where the new keys are, especially since your keyboard is now “wrong” (shows you the old keys). Tarmak comes with helpful images that show you the different stages.[/quote]
+• It comes as a portable app: No coding; no registry hacks; you don’t even have to install anything or be an Administrator. 
+   You can even put it on a USB stick and use it on any computer you get to.
+• It’s based on AutoHotkey, one of our favorite automation tools, and it’s open-source.
+• It won’t kill your productivity: Throughout your learning process, you’ll still be able to type. 
+   If you’re patient and don’t rush ahead, there won’t be a single moment where you’ll feel you just can’t type.
+• It’s easy to move between stages: Want to move on to the next step? It’s as easy as a right-click on a system tray icon. 
+   Too hard for you? No problem, step back.
+• Comes with keyboard images: It’s sometimes hard to visualize where the new keys are, especially since your keyboard is now “wrong” (shows you the old keys). 
+   Tarmak comes with helpful images that show you the different stages.[/quote]
 
 
 Here's [url=http://forum.colemak.com/viewtopic.php?pid=12243#p12243]what user Ghaz had to say[/url]:
@@ -92,8 +100,8 @@ Here's [url=http://forum.colemak.com/viewtopic.php?pid=12243#p12243]what user Gh
 As shown in the graph below from the Amphetype program, [url=http://forum.colemak.com/viewtopic.php?id=1710]user Coldmak had a smooth 9-day transition to Colemak[/url]. He obviously worked quite hard for it as shown by the many test points on the graph, but kept his typing speed above 20 words per minute (although he probably rushed the last step a little) and reported a pleasant experience. After that transition, his Colemak typing speed kept rising as you can see in his topic.
 
     [img]https://dl.dropboxusercontent.com/u/12661643/AmphetypeAverage.jpg[/img]
-        A speed graph showing typing tests in Amphetype over a 10-day period
-        During the 9 first days, the four Tarmak(ETOIR) steps were learnt successively as shown
+        [i]A speed graph showing typing tests in Amphetype over a 10-day period
+        During the 9 first days, the four Tarmak(ETOIR) steps were learnt successively as shown[/i]
 
 
 Similarly, [url=http://forum.colemak.com/viewtopic.php?pid=12558#p12558]user bph found Tarmak very useful[/url]:
@@ -127,30 +135,48 @@ I typed on Qwerty for over 30 years.  DreymaR's Tarmak method finally gave me th
 [b]A:[/b] Colemak R and S are odd to most beginners. The predecessors of Colemak had the S in its QWERTY place but it didn't prove possible to make a good enough layout that way so the S had to move over to the next finger. Because of this, many learners struggle with the S. In Tarmak step 3 you get to move only R S D which are all fairly important keys, and you get to learn the new S placement without too much else to think of.
 
 [b]Q:[/b] [i]What on earth is Tarmak(ETROI) versus Tarmak(ETOIR) versus Tarmak(#@¡€%)?[/i]
-[b]A:[/b] There have been a couple of earlier variants of Tarmak. ETOIR is the previous Tarmak progression from 2011, and ETROI the new one from 2014. They're named after which important letter each step brings to the Colemak home row; see the '[url=http://forum.colemak.com/viewtopic.php?pid=14803#p14803]naming and history[/url]' section below if you're interested.
+[b]A:[/b] There have been a couple of earlier variants of Tarmak. ETOIR is the previous Tarmak progression from 2011, and ETROI the new one from 2014. They're named after which important letter each step brings to the Colemak home row; see the '[url=http://forum.colemak.com/viewtopic.php?pid=14803#p14803]naming and history[/url]' section below if you're interested. If not, nevermind! :-)
 
 [b]Q:[/b] [i]Can I learn the L>U>I loop earlier? It's so cute and I want to do it as a warm-up for things to come.[/i]
 [b]A:[/b] The first "Tarmac" layouts had the LUI loop as the first step, but that didn't give enough benefit for the effort and led to some nasty same-finger bigrams (when you have to use the same finger for two consecutive strokes – I hate that). Depending on your OS/platform, you may move the LUI loop if you wish. It may give a little extra benefit in step 3 or 4, and it's small and quite easy to learn – but on the other hand you may want to finish the big loop as soon as possible. Ask me for how to do this if you're interested. But beware that if you do the LUI loop before the O is in place you may incur bad OI/IO bigrams.
 
 
+[h]DREYMAR'S BIG(!) BAG OF TRICKS?!? HALP, I'M NEW HERE![/h]
+– If you check out my sig topics, you'll see that there's a [i]lot[/i] you can do in addition to learning Colemak! Some of it doesn't even require Colemak.
+– So, I'd like to make a little beginner's introduction to the wonders of layout modding. What are your main options, and what's good to begin with?
+– If any of this interests you right away, read more about it in my [url=http://goo.gl/IKR3j][b]Big Bag of Tricks[/b] topics[/url] (especially the XKB one).
+
+[b]1) Extend:[/b] This mod is as brilliant as Colemak itself, and independent of your typing layout! It lets you navigate, edit and more without moving your hands.
+    • You could learn to Extend before you learn a new layout, during, or after; both PKL(Win) and XKB(Linux) let you do that.
+    • See the [url=http://forum.colemak.com/viewtopic.php?id=2014][b]Extend[/b] Extra Extreme topic[/url] if you need convincing.
+[b]2) Angle/Wide ergo mods:[/b] These are also basically layout independent. QWERTY-AngleWide is definitely possible.
+    • The [b]Angle[/b] mod is simple, especially on a PC105/ISO keyboard: Slide ZXCVB one step to the left, keep your fingering but straighten your left wrist. Comfy!
+    • If you have an ANSI keyboard, you'll have to make a tradeoff: Either move the Z key back to the middle, or move the middle/upper rows to the right ("A-Wing").
+    • The [b]Wide[/b] mod is quite simple on any keyboard: Slide the right-hand keys one step to the right, improving hand distance and thumb/pinky reaches. I like it!
+    • These could be "hard" implemented, even changing the physical key caps to Angle/Wide positions if you can. My wife typed QWERTY-AngleWide without trouble.
+[b]3) Curl ergo mods:[/b] A Colemak-specific mod, as it stands. Moving the common D and H down may make them easier to reach with lightly curled, relaxed fingers!
+    • Some typists dislike the Colemak DH (QWERTY GH) positions as inward straight-row reaches aren't so nice after all.
+    • Keep your hands at home position (QWE ASDF/JKL;) and stretch inwards (QWE GH). Then down (QWE VN or CM). Which is more comfortable?
+        – If you like the inwards stretches (QWE GH) best, ignore Curl. (Or, try again while keeping your wrists straight as they should ideally be!)
+        – If you like the down-and-out stretches (QWE CM) best, consider Stevep99's [b]Curl-DvbgHm[/b] mod! See, e.g., [url=http://colemakmods.github.io/mod-dh/]his DH-mod pages on GitHub[/url].
+        – If you like the down-and-in stretches (QWE VN), consider my [b]Curl-DbgHk[/b] mod! It moves one less key, and keeps V next to C.
+        – (If you have a matrix board without the normal row stagger, you'll need the Curl-DvbgHm mod as mine won't work well with those.)
+    • Both Curl-DH mods require an Angle mod (see above) to work.
+    • [b]NOTE:[/b] There is a tweaked [b]Tarmak for Curl[/b] modders! See the [url=http://forum.colemak.com/viewtopic.php?pid=14803#p14803]history post[/url] and [url=http://forum.colemak.com/viewtopic.php?pid=16393#p16393]the one further down[/url] for more info.
+[b]4) Colemak[eD]:[/b] This only affects you if you'll be using the AltGr key, as it's about the extra mappings on each key.
+    • Vanilla Colemak has several nice AltGr mappings, but they seem somewhat unintuitive and not really practical to me.
+    • My "[b][url=http://forum.colemak.com/viewtopic.php?id=1280][edition DreymaR][/url][/b]" mappings place useful symbols and letters quite intuitively.
+    • Further symbols/letters are on dead keys that all reside on symbol keys (with AltGr). In PKL(Win) at least, there's a huge(!) bunch of nice symbols!
+    • Vanilla Colemak is more broadly implemented in general. But if you use my Big Bag files you'll mostly get Colemak[eD].
+[b]5) Locale layouts:[/b] If you use other languages than US English, you'll want some special letters, accents and symbols readily available.
+    • I've devised lots of [url=http://forum.colemak.com/viewtopic.php?id=1458][b]Localized Colemak[/b] variants[/url].
+    • Using XKB(Linux), you'll have access to all these once you're done with Tarmak. With PKL(Win), you may have to make yours or ask me.
+
+
 [h]THANKS[/h]
-I'd like to say thanks to all the wonderful people of the Colemak forums who have contributed in various ways, with testing, analysis and/or discussions. Many of them are mentioned above, but if anyone is left out it's an oversight and nothing else. In particular, thanks (again!) to Shai Coleman for making Colemak in the first place!
+I'd like to say thanks to all the wonderful people of the Colemak forums who have contributed in various ways, with testing, analysis and/or discussions. Many of them are mentioned above, but if anyone is left out it's an oversight and nothing else. In particular, I have to mention Ezuk, Cevgar, Karl and Lalop who made such valuable contributions all bringing this idea forwards. Also, thanks (again!) to Shai Coleman for making Colemak in the first place of course!
 
 
-[h]DOWNLOAD[/h]
+[h]DOWNLOADS[/h]
 
-[b]Materials:[/b]
-• Feel free to use any images from this topic or my PKL files for learning aids.
-• If you need a set of printable/hires images like the ones in this post, you may use [url=https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/tarmak/Tarmak_Spectral-180d.zip]these that I've rendered at twice the normal resolution[/url].
-
-[b]Windows:[/b]
-• You can download some [url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/PKL_vk_Tarmak.zip]virtualkey files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url] for Farkas Máté's excellent PortableKeyboardLayout (PKL). Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file.
-• If you don't have PKL already, here's [url=http://dl.dropbox.com/u/14504410/Keyboards/dreymar/pkl/PortableKeyboardLayout_DreymaR.zip]my whole PKL package[/url] as described in the [url=http://forum.colemak.com/viewtopic.php?id=1467]Big Bag Of Tricks (for PKL)[/url] topic. It should run portably without any fuss.
-
-[b]Linux [i]et al[/i]:[/b]
-• For XKB, see the [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks (Linux/XKB)[/url] topic. After installing, search for 'English Colemak' in the layout chooser.
-• [url=http://forum.colemak.com/viewtopic.php?pid=15367#p15367]User olemartinorg[/url] has provided [url=https://github.com/olemartinorg/tarmak-xmodmap]an Xmodmap makefile that'll generate Tarmak steps from your existing layout[/url]. Very clever, and useful if you prefer Xmodmap over messing with the XKB files.
-
-[b]Mac:[/b]
-• User BradWright made [url=https://gist.github.com/bradleywright/11123852/revisions]all the Tarmak steps available as a private.xml file[/url] for usage with [url=https://pqrs.org/osx/karabiner/index.html.en]KeyRemap4MacBook aka Karabiner[/url]. Thanks, Brad!
-• User ghaz also made [url=http://forum.colemak.com/viewtopic.php?id=1684]Mac Tarmak steps (for the old ETOIR progression only)[/url]. Instructions for these can be found [url=http://www.languagegeek.com/keyboard_general/mac_installation1.html]over at the LanguageGeek pages[/url].
+[i](See [b][url=http://forum.colemak.com/viewtopic.php?pid=14801#p14801]the next post[/url][/b]. That way, the downloads may be linked to directly.)[/i]

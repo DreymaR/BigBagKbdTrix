@@ -19,5 +19,5 @@ For the Kyrillic layouts it's slightly more tricky since Kyrillic script has mor
 
    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-phon-bg.png[/img]
    The Colemak phonetic layout for Bulgarian Kyrillic script.
-   In the [url=http://forum.colemak.com/viewtopic.php?pid=13877#p13877]Rulemak topic[/url] I discussed this layout. Notably, ы and ё aren't used but ъ is more common than ю.
+   This layout was discussed in the [url=http://forum.colemak.com/viewtopic.php?pid=13877#p13877]Rulemak topic[/url]. Notably, ы and ё aren't used but ъ is more common than ю.
    NOTE: In Rulemak, the VK_102/LSGT key is combining acute; in Bulgarian Colemak it's combining grave. Makes some accented letters easy to type.

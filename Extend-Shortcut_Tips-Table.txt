@@ -1,0 +1,101 @@
+DREYMAR'S EXTEND LAYER SHORTCUT TIPS:
++===================+================+=================================+
+| Shortcut          | Extend-...     | Effect                          |
++===================+================+=================================+
+| ################# |   GENERAL:     | ############################### |
++-------------------+----------------+---------------------------------+
+| Ctrl+(Sh+)Z       | (S+)Z          | Undo(Redo)                      |
+| Ctrl+X/C/V        | X/C/V          | Cut/Copy/Paste                  |
+| (Ctrl+)Enter, Esc | (T+)Spc, Q [   | Activate (Send mail...), Cancel |
+| (Sh/Alt+)PrintScr | (S/A+)Enter    | Screenshot (Area/Window)        |
+| (Sh+)F1           | (S+)1          | (Context) Help                  |
+| (Sh+)F3           | (S+)3          | Find Next(Prev)                 |
+| F4 or (Alt+)↓     | 4 or (A+)E     | Display drop-down list items    |
+| Ctrl+WhUp/WhDn    | T+W/R          | Zoom In/Out                     |
+| Mouse ←↑↓→, Btn1  | G,D. then B    | Set focus using mouse pointer   |
++-------------------+----------------+---------------------------------+
+| ################# |   EDITING:     | ############################### |
++-------------------+----------------+---------------------------------+
+| Ctrl+(Sh+)X/C/V   | (S+)X/C/V      | (Line) Cut/Copy/Paste           |
+| (Sh+)Enter        | (S+)Spc        | Insert (Soft) Linebreak         |
+| Ctrl+(Sh+)←/→     | T+(S+)N/I      | GoTo/Select  Word ←/→           |
+| (Ctrl+)(Sh+)↑/↓   | (T+)(S+)U/E    | Go/Sel Line(Paragraph) ↑/↓      |
+| (Ctrl/Sh+)Home/End| (T+)(S+)L/Y    | Go/Sel Line(Doc) Start/End      |
+| (Sh+)PgUp/PgDn    | (S+)J/H        | Go/Sel Page Up/Down             |
+| (Ctrl+)Back/Del   | (T+)O/;        | Delete (Word) ←/→               |
++-------------------+----------------+---------------------------------+
+| ################# |   WINDOWS:     | ############################### |
++-------------------+----------------+---------------------------------+
+| Alt+(Sh+)Esc      | A+(S+)Q/[      | Next(Prev) Window/App           |
+| Ctrl+(Sh+)Esc     | T+(S+)Q/[      | Start Menu (Task Manager)       |
+| Ctrl+PgUp/Dn      | T+J/H          | Next/Prev Tab                   |
+| Alt+F2 <...>      | A+2 <...>      | Run App <...>           {Linux} |
+| [Alt/Ctrl]+F4     | [A/T]+4        | Close App/Tab (or Window)       |
+| F5                | 5              | Refresh                         |
+| (Sh+)(Alt+)F6     | (S+)(A+)6      | Switch Pane/Element (Subwindow) |
+| Alt+F8 ←↑↓→ Enter | A+8 UNEI Spc   | Resize Window           {GNOME} |
+| F10 or Alt        | 0 or A         | Focus on App Menu (or Tips)     |
+| Sh+F10            | S+0 or ' (M)   | Context Menu; (R-Click)         |
+| F11               | -              | Fullscreen On/Off               |
+| F12               | =              | Sometimes 'Save As...'          |
++-------------------+----------------+---------------------------------+
+| ################# |   BROWSING:    | ############################### |
++-------------------+----------------+---------------------------------+
+| Alt+←/→           | A+N/I (or F/P) | Browse Back/Forward             |
+| (Sh+)Enter        | (S+)Spc        | Open link (in new window)       |
+| (Sh+)Ctrl+Enter   | (S+)T+Spc      | Open in new tab (switch focus)  |
+| Alt+Enter         | A+Spc          | Open address in new tab         |
+| [Ctrl/+Sh+]Enter  | [T/+S+]Spc     | Complete URL, with com/net/org  |
+| [Alt|Ctrl]+Home   | [A or T]+L     | Go to Browser Home Page         |
+| Ctrl+(Sh+)PgUp/Dn | T+(S+)J/H      | Switch(Move) Tab                |
+| (Ctrl/Sh+)F5      | (T/S+)5        | (Hard) Refresh                  |
+| F6                | 6              | Go to address bar and back      |
+| F7                | 7              | Caret Browsing On/Off           |
++-------------------+----------------+---------------------------------+
+| ################# |   EXPLORING:   | ############################### |
++-------------------+----------------+---------------------------------+
+| ←/→               | N/I            | Expand/Collapse Item (or move)  |
+| Alt+←/→/↑         | A+N/I/U(F/P/O) | Go Back/Forward/Up              |
+| (Ctrl+)↑/↓ etc    | (T+)U/E/L/Y... | Select(Focus) ↑/↓/↑↑/↓↓         |
+| Alt+Enter         | A+Spc          | Item Properties                 |
+| (Shift+)Del       | (S+);          | Delete Item (directly)          |
+| F2                | 2              | Rename Item                     |
+| F4                | 4              | Explorer Address bar            |
++===================+================+=================================+
+
+NON-EXTEND HONORABLE MENTIONS:
++===================+==================================================+
+| (Ctrl/Alt+Sh+)Tab | Next/Prev Item/Tab/App (Ext: All but Alt work)   |
+| Space             | Toggle state of buttons/items in dialogues etc   |
+| Alt+Space         | Popup window menu (then press letter or 2*Esc)   |
+|                   |   - Restore/Move/Size/miNimize/maXimize/Close    |
+|                   |   - (Cmd window: Edit.../Defaults/Properties)    |
+|                   |   - Then Ext Arrows/Enter to resize/move window  |
+| Win+T             | Open Windows Taskbar (Ext: Alt+Sh+Esc won't do!) |
+|                   |   - Then Ext ←↑↓→ to navigate open apps          |
+|                   |   - Then (Ctrl+/Sh+)Enter to open (admin/new)    |
+|                   |   - Or the Menu key or Sh+F10 for the app's menu |
+| Win+(Sh+)↑/↓      | Max/Reduce (Vertical) Window Size        {Win7+} |
+| Win+(Sh+)←/→      | Send Window to ←/→ Halfscreen (Monitor)  {Win7+} |
++-------------------+--------------------------------------------------+
+| / or '            | QuickFind text or links on page        {Firefox} |
+|                   |   - Ext (Sh+)F3 and Tab as necessary to navigate |
+|                   |   - Then Ext (Ctrl+)(Sh+)Enter to open links     |
+|                   |   - Very nice! Addons exist for most browsers.   |
+| Ctrl+(Sh+)T       | (Re-)Open Tab (Ext: No true replacement!?)       |
+|                   |   - Ext: F6 → enter address/search → Alt+Enter   |
+| Ctrl+[K/E]        | Browser search field (Ext: Use F6 then Tab)      |
+|   (Ctrl+)↑/↓      |   - Ext: Then Browse search history (engines)    |
+| ?                 | In address bar: Search with default engine       |
+| Ctrl+[+/-/0]      | Zoom In/Out/Reset (Ext: Use Ctrl+MouseWheel)     |
++===================+==================================================+
+
+SOME SHORTCUT LINKS:
+http://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts
+http://www.computerhope.com/shortcut.htm
+http://support.microsoft.com/kb/126449
+http://windows.microsoft.com/en-us/windows/keyboard-shortcuts#keyboard-shortcuts=windows-7
+
+NOTE:
+• Most of these work in most apps under both Windows and Linux.
+• This Extend layer doesn't support letter combos nor the Win/GUI key.

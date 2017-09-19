@@ -1,5 +1,7 @@
 [h]Colemak - Edition DreymaR![/h]
 
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Cmk-ANSI-eD_90d_FShui.png[/img]
+
 To me, it's the letter block that's the true masterstroke of Colemak and, as it were, Colemak [i]per se[/i]:
 • The Caps-to-Backspace is a good idea but that can be used with other layouts too! Or substituted for, e.g., an Extend layer; 
    much as the wide/angle ergonomic mods are nice for some users and they don't make a Colemak layout a non-Colemak layout!
@@ -8,26 +10,24 @@ To me, it's the letter block that's the true masterstroke of Colemak and, as it 
 • When it comes to level 3-4 of the layout (AltGr mappings) they don't do it for me!
    I look in horror at the "tilde mappings" of missed opportunities, and many letters are in unintuitive places.
 
-I have a different way of thinking it seems: I want to
-- use dead key accents that mostly conform to the Compose sequences in Linux because they make a LOT of sense
-- improve on a few of them (e.g., typing " to compose umlaut is über-silly - it's a very common accent and shouldn't require a Shift!)
+I want more. I want to
+- use dead key accents that mostly conform to the Compose sequences in Linux because they make a [i]lot[/i] of sense
+- improve on a few of them; e.g., typing " to compose umlaut is über-silly - it's a very common accent and shouldn't require a Shift!
 - be able to type the accent characters `~^ directly as in the normal layout; the dead keys should be on additional AltGr mappings
 - keep the letter keys free of dead keys for consistency/clarity and to keep from triggering them while typing normally
-- have the most needed special non-accent letters (like ß, þ/ð and ŋ/ʒ) and symbols (°, †, ©, …) readily available on AltGr mappings
+- have useful special non-accent letters (like æ/œ, ß, þ/ð and ŋ/ʒ) and symbols (°, †, ©, …) readily available on AltGr mappings
 - make mappings easy to remember based on similarity to existing letters/symbols, or failing that, shape/position
 - use my locale special letters (in my case, øåæ in decreasing order of importance) easily without breaking the main Colemak setup
 
-See below for a figure showing my proposed mappings!
+Above and below you can see images of my proposed mappings!
 
-I added a few of the most needed Greek letters (the first ones, π and µ), and some symbol mappings should be familiar to Macintosh users but I've considered how useful and common different symbols really are. It's not a full latin-script layout as it stands; for that I'll need more layers and I haven't yet gotten around to that. I'd like to eventually have the most common IPA phonetic symbols available for instance, like the Neo layout has.
+I added a few of the most needed Greek letters (the first ones, π and µ), and some symbol mappings should be familiar to Macintosh users but I've considered how useful and common different symbols really are. It's not a full latin-script layout as it stands; for that I'll need more layers and I haven't yet gotten around to that. I'd like to eventually have the most common IPA phonetic symbols available for instance, like the Neo layout has. I have some nifty ideas.
 
-Some latin letters are really very uncommon or even deprecated, like the Kra which is only used in some Inuktitut scripts today from what I gather. Keep in mind that the three locations I've used for øåæ are up for grabs for people who need their own characters (ø and å should also be available as dead key combinations with the slash and ring accents respectively – although the slash dead key doesn't always work as expected under Linux for instance). This and a few AltGr mappings should ideally be the only modification necessary to produce different nationalized layouts! 
+Some latin letters are really very uncommon or even deprecated, like the Kra which was discontinued in 1973. Keep in mind that the three key locations I've used for øåæ are up for grabs for people who need their own characters (ø and å are also available as dead key combinations with the slash and ring accents respectively – although the slash dead key doesn't always work as expected under Linux). This and a few AltGr mappings should ideally be the only modifications necessary to produce a slew of different nationalized layouts! (See my Locale topic.)
 
-The Greek letters might have their own layer so that the whole Greek alphabet would be accessible – or it can be done simply by layout switching. Greek is much more commonly needed for symbols and short quotes than the other non-latin scripts are. If that becomes possible, some more keys will be freed for other symbols.
+The Greek letters could have their own layer so that the whole Greek alphabet would be accessible – or it can be done simply by layout switching to a phonetic Greek Colemak layout. Greek is much more commonly needed for symbols and short quotes than the other non-latin scripts are, so having a Greek dead key also makes sense for that purpose.
 
-In the future, I want extra overlay/extend layers like the one I have in PKL with arrows+++ and a numeric keypad. I want the CapsLock key to select those. There should also be a few more dead keys, for math/science, ligatures (taking care of some non-accent Compose sequences) and currency etc.
-
-I'd love some feedback on this!
+In the future, I may want extra overlay/extend layers like the one I already have with navigation/editing and numeric keypad. I may want the CapsLock key with modifiers to select those. There should also be a few more dead keys in addition to accents, currency and math/science; maybe for ligatures, latin scripts (such as the many African ones), and IPA phonetics.
 
 
 [h]UPDATE 2012-07-08:[/h]
@@ -69,12 +69,21 @@ The keys I recommend using for variants are primarily K H L and J, in that order
 So, I switched AltGr and AltGr+Shift positions for the H V B M keys, bringing the Greek a little more to the background. The ε and ə didn't have to swap places but I did it because it seems more consistent. The π is still on unshifted AltGr+p and αδ are on the same key as before, so it's not entirely consistent no matter what – but given how rarely these oddball Greek letters are needed (by me at least) it's okay. Again, you can always keep a proper Greek layout handy; the phonetic Colemak layouts are like add-on mapping layers really.
 
 
-As also seen in my [url=http://forum.colemak.com/viewtopic.php?pid=9918]Big Bag Of Tricks Topic[/url], this is the current state of Colemak[eD]:
+[h]UPDATE 2014-10-26[/h]
 
-   [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-Angle_90d-FingerShui.png[/img]
-   Fig.: The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak. 
-   Shown with the ZXCVB_ Angle ergonomic mod (see my sig topic), dead key emphasis and color-coded proposed fingering.
+• € added on the E key in response to popular demand
+• ↓ moved to the M key for shift layer consistency with the other arrows
+• the "orphan" schwa/epsilon on the "up-for-grabs" H key replaced by Ħħ (more consistent)
+• Win/PKL: µ on the 5 key as a Greek dead key; AltGr+'=' doubles as doubleacute+math/science dead key; other dead key additions
 
-As you can see many parts of the setup are intuitive. Among the fuzzier points are the J L K H and bracket keys, which I consider "up for grabs" when making locale layouts so I can't keep anything terribly important there. I've settled on some Greek and signs that are available otherwise; for proper Greek typing you'll need a full layout anyway – I recommend a phonetic layout accessible by switch key.
 
-When I get around to making currency and miscellaneous dead keys on the 4 and 5 keys there will obviously be some changes in that area and it'll end up more powerful and consistent than today.
+As also seen in my [url=http://forum.colemak.com/viewtopic.php?pid=9918]Big Bag Of Tricks Topic[/url] and above, this is the current state of Colemak[eD]:
+
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-Angle_90d_FShui.png[/img]
+    [i]Fig.: The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak. 
+    Shown with the ZXCVB_ Angle ergonomic mod (see my sig topic), dead key emphasis and color-coded proposed fingering.[/i]
+
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-CurlAWide_90d_FShui.png[/img]
+    [i]Fig.: Colemak [edition DreymaR], this time with the Curl(DbgHk), Angle and Wide(Slash) ergonomic mods (see my sig topic).[/i]
+
+As you can see many parts of the setup are intuitive. Among the fuzzier points are the J L K H and bracket keys, which I consider "up for grabs" when making locale layouts so I can't keep anything terribly important there. I've settled on some Greek and signs that are available otherwise; for proper Greek typing you'll need a full layout anyway – I recommend a phonetic layout accessible by switch key. For hit-and-run Greek symbols there's now a Greek dead key on AltGr+5 (Windows/PKL only for now).

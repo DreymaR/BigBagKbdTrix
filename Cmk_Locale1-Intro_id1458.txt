@@ -2,20 +2,24 @@
 
 My [url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks topic[/url] mentions how I made locale variants for a bunch of countries. This topic lists and discusses them in more detail.
 
-Note that for most of these you really should use a 102/105-key (ISO) keyboard! The 'US' 101/104 (ANSI) boards lack the lower left-hand <LSGT> key next to LShift and that one's very useful for adding extra symbols to the standard layout in a sufficiently accessible way.
+Note that for most of these you really should use an "Euro/World" 102/105-key (ISO) keyboard! The "US" 101/104-key (ANSI) boards lack the lower left-hand <LSGT> key next to LShift and that one's very useful for adding extra symbols to the standard layout in a sufficiently accessible way.
 
 The basis for these layouts is 'Colemak [edition DreymaR]', using my own preferred AltGr mappings (modifier lv3-4 in Linux terminology) for the Colemak layout. This is also on display in the [url=http://forum.colemak.com/viewtopic.php?id=1438]'Big Bag' topic[/url]. It makes several letters sufficiently accessible as long as they're rarely used: ʒƷ, ß (German 'ss'), øØ, œŒ, æÆ, þÞ, ðÐ, ʃƩ, ŋŊ, åÅ. Also quote marks: ‚‘’ „“” ‹› «». All the common dead keys are on symbol keys with AltGr (i.e., lv3). Common accents like the umlaut are in good positions. For rarely used accented letters, this should prove sufficient.
 
 
-    [img]http://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-Angle_90d-FingerShui.png[/img]
-    The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak.
-    Shown with the ZXCVB_ 'Angle' ergonomic mod (see below), dead key emphasis and color-coded proposed fingering.
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/Cmk-ISO-eD-Angle_90d_FShui.png[/img]
+    [i]The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak.
+    Shown with the ZXCVB_ 'Angle' ergonomic mod (see below), dead key emphasis and color-coded proposed fingering.[/i]
 
-The trick here is separating the main letter block from the symbol keys in the layout definitions. (The semicolon is an in-between key since it's a symbol key that sits in the letter block; QWERTY is to blame for this inconsistency.) Doing this, I can with relative ease substitute the standard symbols for the ones used on locale QWERTY keyboard layout variants. This produces a range of 'Keep Local Symbols' locale variants, that should be in correspondence with what people from those locales are used to and what's printed on their key caps.
 
-Please note: The letter block keys have Colemak[eD] mappings in these layouts! This could lead to redundancies or lack of a lv3-4 symbol (if it's defined on a letter key in the default locale layout and not in Cmk[eD]). If that happens and it's a problem, let me know. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
+[h]'KEEP LOCAL SYMBOLS' VARIANTS[/h]
+The trick here is separating the main letter block from the symbol keys in the layout definitions. (The semicolon is an in-between key since it's a symbol key that sits in the letter block; QWERTY is to blame for this inconsistency.) Doing this, we can with relative ease substitute the standard symbols for the ones used on locale QWERTY keyboard layout variants. This produces a range of 'Keep Local Symbols' locale variants, that should be in correspondence with what people from those locales are used to and what's printed on their key caps.
 
-However, I've abandoned the way of the locale symbols for myself. I found that the locale QWERTY layout for Norway where I live was messy. Furthermore, it made some symbols hard to produce. For instance: For a tilde which is often used in coding and stuff in the computing world you would have to press AltGr and Right Bracket; then since that's a dead key you'd have to type an additional space to release the tilde. Moreover, that won't even always work in apps (especially Java or Flash). Ugh. Other locale layouts aren't much better. Not that the US layout is perfect or anything, but at least it's what many know and expect - symbols that are easily reachable like said tilde or the caret are used in script languages for instance.
+Please note: The letter block keys have for the most part Colemak[eD] mappings in these layouts! This could lead to redundancies or lack of a lv3-4 symbol (if it's defined on a letter key in the default locale layout and not in Cmk[eD]). If that happens and it's a problem, let me know. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
+
+
+[h]'UNIFIED SYMBOLS' VARIANTS[/h]
+However, I've abandoned the way of the locale symbols for myself. I found that the locale QWERTY layout for Norway where I live was messy. Furthermore, it made some symbols hard to produce. For instance: For a tilde which is often used in coding and more in the computing world you would have to press AltGr and Right Bracket; then since that's a dead key you'd have to type an additional space to release the tilde. Moreover, that won't even always work in apps (especially Java or Flash). Ugh. Other locale layouts aren't much better. Not that the US layout is perfect or anything, but at least it's what many know and expect - symbols that are easily reachable like said tilde or the caret are often used in script languages for instance.
 
 So I set out to make a simple and consistent way of providing the necessary locale symbols while keeping the main setup intact.
 
@@ -25,35 +29,40 @@ Here's what Shai has to say about making locale Colemak variants, on the [url=ht
 I fully agree, and so that's what I've done!
 
  - The LSGT and bracket keys may hold the most common locale-specific symbols.
-    • The oe/oslash/aring special letters may well be replaced; these should also be on dead keys.
-        (Also, the œ is rightly a ligature which fits the Compose method well.)
+    • The œ/ø/å (oe/oslash/aring) special letters may well be replaced; these should also be on dead keys.
+        (The œ is rightly a ligature which fits the Compose method well for Linux users at least.)
 
 - Furthermore, a set of keys with non-essential lv3-4 mappings (like h/j/k/l) are up for grabs if need be.
     • The K key is quite easily reached with AltGr and in the Colemak[eD] it holds non-essential mappings.
-    • The H key, similarly, is well placed and holds nothing really important.
-    • The L key, same.
-    • The J key is a bit of a reach with the AltGr key held down so I hope it won't be necessary.
+    • The H key, similarly, is well placed and holds nothing important for most.
+    • The L key, same but a bit less comfortable with AltGr in my opinion.
+    • The J key is a bit of a reach with the AltGr key held down so I hope it won't be necessary most of the time.
 
 - If there are many letters using one accent, a well placed dead key (on lv1-2) may be preferable.
     • The AltGr dead keys will still be available and some of these (like umlaut and acute) are quite easily reachable too
     • Using a lv1 dead key may be preferable for speed typing (Sean Wrona, apparently, uses a sticky Shift for this reason!)
 
-The layouts presented herein will be shown with the AngleWide-Slash ('AWide-35') wide keyboard mod (again, see the 'Big Bag' topic). What this means is that the brackets are moved to the middle on the upper and home row, the VK_102/<LSGT> and Backslash/<BKSL> keys to the middle lower row, the += key to the middle upper row and finally the ?/ key to the upper right. I'm sorry if this confuses anyone, but when I made these images I didn't know of an easy way of changing back and forth between Wide and unmodded setups (I have now learnt to use 'setxkbmap -model' but too late for now...).
 
-    [img]https://dl.dropbox.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-X-eD-us-awide-sl_mask.png[/img]
-    The standard "US English" Colemak [edition DreymaR] layout, shown with the 'AngleWide-35' ergonomic mod I use.
+[h]THE ANGLE-WIDE MOD AND LOCALE VARIANTS[/h]
+The 'unified' layouts presented herein will be shown with the AngleWide-Slash ('AWide-35') wide keyboard mod (again, see the '[url=http://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url]' topic). What this means is that the brackets are moved to the middle on the upper and home row, the VK_102/<LSGT> and Backslash/<BKSL> keys to the middle lower row, the += key to the middle upper row and finally the ?/ key to the upper right. I'm sorry if this confuses anyone, but the AngleWide mod brings the LSGT/102 key and brackets together right in the middle with the other moddable keys so they can all be shown in a partial keyboard image without everything else in between them! I'm now used to having all special letters in the middle of the keyboard and it feels good. :)
+
+    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/locale/Cmk-eD-usym-aw_Xm.png[/img]
+    [i]The standard "US English" Colemak [edition DreymaR] layout, shown with the 'AngleWide-35' ergonomic mod I use.[/i]
 
 [b]DISCLAIMER:[/b] If you study the layout images, don't pay too much heed to the grayed-out keys. The "edition DreymaR" mappings for AltGr (lv3-4) may have been tweaked slightly since they were created. The Colemak[eD] color image above should be correct.
 
 
-[b][i]See [url=http://forum.colemak.com/viewtopic.php?pid=10015#p10015]the next post[/url] for the list of locale layouts[/i][/b]
+[h]LOCALE VARIANTS LISTED[/h]
 
-[b][i]See [url=http://forum.colemak.com/viewtopic.php?pid=10016#p10016]the third post[/url] for the list of phonetic script layouts[/i][/b]
+[b][i][url=http://forum.colemak.com/viewtopic.php?pid=10015#p10015]• Next post: Locale layouts listed[/url][/i][/b]
+
+[b][i][url=http://forum.colemak.com/viewtopic.php?pid=10016#p10016]• Third post: Phonetic script layouts[/url][/i][/b]
 
 
 [h]OTHER FORUM TOPICS ON LOCALE COLEMAK VARIANTS[/h]
 
 Some topics on the forum regarding different locale Colemak variants (let me know if I missed any):
+[url=http://forum.colemak.com/viewtopic.php?id=1934]Bulgarian (Cyrillic) Colemak-like layout, by stassev[/url]
 [url=http://forum.colemak.com/viewtopic.php?id=1447]Czech Colemak, by davkol[/url]
 [url=http://forum.colemak.com/viewtopic.php?id=1607]Spanish Colemak discussion (Colemak en Español), by javix[/url]
 [url=http://forum.colemak.com/viewtopic.php?id=1446]Spanish Colemak, by martinrinconbotero[/url]
