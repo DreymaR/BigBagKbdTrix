@@ -1,0 +1,175 @@
+[h]I'm Gonna Be...[/h]
+
+[b]When I wake up, well, I know I'm gonna be[/b]
+[b]I'm gonna be the man who types a lot today[/b]
+[b]When I go out, yeah, I know I'm gonna be[/b]
+[b]I'm gonna be the man who goes the Colemak way![/b]
+
+[b]When I get time, well, I know I'm gonna be[/b]
+[b]I'm gonna be the man who hones my skills today[/b]
+[b]And when I'm home, hey, I know I'm gonna be[/b]
+[b]I'm gonna be the man who has some fun today![/b]
+
+[b]    But I would type five thousand words[/b]
+[b]    And I would type five thousand more[/b]
+[b]    Just to be the man who typed ten thousand words[/b]
+[b]    Much better than before![/b]
+
+[b][i]~ DreymaR, 2017-02[/i][/b]
+
+
+    [img]https://www.dropbox.com/s/a1oqfswccypfd5l/Amphetype_3-Performance.png?dl=1[/img]
+    [i]Amphetype's Performance tab, not sugar-coating my lack of progress. ;-)[/i]
+
+
+[h]Typing training with Tristesse's Amphetype[/h]
+
+I've noticed that I kept reposting this tip over the years, so here's a topic on it. :-)
+
+[b][url=https://github.com/webiest/amphetype]Amphetype by Tristesse[/url][/b] is a brilliant cross-platform typing trainer. It can be used for leisurely typing texts or for intensive focused training sessions, as you like. It's flexible and informative – especially for a one-man project – and it's free. I have its database in my Dropbox so I can use it from anywhere.
+
+Amphetype hasn't been developed in a long time, but it works without any problems and many people use it to this day.
+
+I like using a largish font (Cambria Italic 22) and subtle colors that don't annoy the hell out of me:
+[code]
+• Correct   text – #000000 (RGB   0,  0,  0)
+• Correct   back – #eeeeee (RGB 238,238,238)
+• Incorrect text – #660000 (RGB 102,  0,  0)
+• Incorrect back – #aaaaaa (RGB 170,170,170)
+[/code]
+
+When opening Amphetype in Windows, I usually press Alt+Space then X to maximize its window (or use the mouse like a muggle if you wish).
+
+
+[h]“Type-reading”[/h]
+I usually get a book as a text file from [b][url=https://www.gutenberg.org/]Project Gutenberg[/url][/b] or similar, and put it into Amphetype. Experiment a little with how large text chunks you want to use (I like between 300 and 900 characters). This is brilliant for getting a lot of typing mileage. I've "read" Machiavelli that way, as well as Alice Through The Looking Glass, some Lovecraft and a 19th century lewd English book! ;-)
+
+For racking up mileage by type-reading books, I recommend not using too strict parameters so you won't have to type the same page again very often. Your average speed -10 WPM and 97% accuracy is a good starting point. You set the limits on the Sources tab, while selecting what text/lesson to type next. I turn off the need to press SPACE before each lesson, so I can type fluently. The timer doesn't start until you start typing a page, so take your time before diving in if you want to.
+
+Further inspiration: Maybe you want to learn lyrics or poems by heart? Of course, type-reading isn't the optimal way of enjoying poetry but can be a hard-hitting combo if you want to repeat a verse many times anyway! Maybe Kipling's "If" will sort out both your wisdom and typing skills at the same time!? Or maybe something motivational is to your tastes? Feel free to use the song I made at the top of this post... ;-)
+
+A slight caveat: If your layout doesn't support special glyphs, make sure your text doesn't have them. The book I'm currently typing about Greek and Roman mythology, has some old-fashioned spellings like [i]Æsculap[/i] and [i]Aïdes[/i]. For my Colemak[eD] that's no problem at all of course, but beware if you aren't used to it. The Amphetype fork has an option to clean out anything non-trivial I think, but I haven't used it.
+
+    [img]https://www.dropbox.com/s/vl81fnybu2ehj0d/Amphetype_1-Typer.png?dl=1[/img]
+    [i]Amphetype about to start a book text session (from [url=https://www.gutenberg.org/files/22381/22381-h/22381-h.htm]Berens' Greek/Roman mythology[/url])[/i]
+
+
+[h]Focused lessons[/h]
+Below is a brilliant post that I've quoted several times [with an edit or two by me], on generating Amphetype training lessons to focus on hard or common words. It's from a topic called [b][url=https://forum.colemak.com/topic/1047-lessons-for-colemak-beginners/]Lessons For Colemak Beginners[/url][/b], in which there are lots of other lessons you can use as well.
+
+[quote=Nimbostratue (2011)]
+
+[b]Generating typing training lessons in Amphetype[/b]
+
+Here is how to practice the 1000 most common words lesson in an effective way.
+
+I place the 1000 words in Amphetype and use settings that will generate lines of text like this:
+   the of to the of to the of to and a in and a in and a in is it you is it
+   you is it you that he was that he was that he was
+
+I set the program to allow me to keep practicing until I reach a certain desired accuracy and speed (see below).
+When I pass this threshold I am allowed to continue to type the next 2 lines from the 1000 words.
+In this way I learn the layout and practice the common words and bigrams (th,st,nt,ou,io,ea, etc) at the same time.
+
+In fact I do not type the 1000 words most of the time. What I type is the first 130 to 150 words [or whatever suits you].
+Then I start again from the beginning and increase the threshold by an extra +10 WPM.
+
+In theory and my practice (I have tried this method with over 20 layouts) you should be able to advance every day by 6-10 WPM until 50 WPM. Once I practiced for only 2 hours every day using this method, and I was advancing 6+ WPM each day. So you do not need to spend too much time typing in the beginning when you learn a layout. You should focus on increasing your muscle memory for the common bigrams and common words, which will help you increase your speed quickly. This way will not train you for individual keys, it will train you for common bigrams and you will notice that you become much faster at typing bigrams than remembering key positions, but with the other lessons in my lessons thread you can improve on this. I usually use this method exclusively until I reach 28-30 WPM and then I start the other lengthy lessons in the lessons thread.
+
+
+[b]Amphetype settings:[/b]
+
+[b]1) On the Preferences tab[/b] set "Try to limit text and lesson to between 100 and 100 characters".
+
+[b]2) On the Lesson Generator tab[/b]:
+   "In generating lessons, I will make 3 copies of the list below and divide them into sublists of size 3"
+   The program will create either a single or multiple copies of each word interleaved according to the selection made.
+
+   For example if you pasted the text "about the it" and chose copies/size (I usually chose 3,3 or 3,4) you get:
+      2,3 --> about the it about the it
+      2,1 --> about about the the it it
+
+   Paste in the 1000 words (below), name the lesson at the bottom and click "Add to Sources" to save it.
+
+[b]3) On the Sources tab[/b] set "Repeat texts that don't meet the following requirements:"
+      WPM              your average speed (e.g., for 2 min at hi-games) + 10 WPM
+      Accuracy         99 or 100% [or 98% if it bothers you – but accuracy is important for typing flow!]
+   Set the lesson fields to the same values.
+
+   Select to get new lessons "In Order".
+
+   Choose your lesson from the Sources pane on the left and double-click on it to start typing.
+   Keep typing each lesson until you pass the threshold. Do not hit Esc to skip any lines.
+
+
+[b]The 1000 most common English words (From the web):[/b]
+[code]
+the of to and a in is it you that he was for on are with as I his they be at one have this from or had by hot word but what some we can out other were all there when up use your how said an each she which do their time if will way about many then them write would like so these her long make thing see him two has look more day could go come did number sound no most people my over know water than call first who may down side been now find any new work part take get place made live where after back little only round man year came show every good me give our under name very through just form sentence great think say help low line differ turn cause much mean before move right boy old too same tell does set three want air well also play small end put home read hand port large spell add even land here must big high such follow act why ask men change went light kind off need house picture try us again animal point mother world near build self earth father head stand own page should country found answer school grow study still learn plant cover food sun four between state keep eye never last let thought city tree cross farm hard start might story saw far sea draw left late run don't while press close night real life few north open seem together next white children begin got walk example ease paper group always music those both mark often letter until mile river car feet care second book carry took science eat room friend began idea fish mountain stop once base hear horse cut sure watch color face wood main enough plain girl usual young ready above ever red list though feel talk bird soon body dog family direct pose leave song measure door product black short numeral class wind question happen complete ship area half rock order fire south problem piece told knew pass since top whole king space heard best hour better true . during hundred five remember step early hold west ground interest reach fast verb sing listen six table travel less morning ten simple several vowel toward war lay against pattern slow center love person money serve appear road map rain rule govern pull cold notice voice unit power town fine certain fly fall lead cry dark machine note wait plan figure star box noun field rest correct able pound done beauty drive stood contain front teach week final gave green oh quick develop ocean warm free minute strong special mind behind clear tail produce fact street inch multiply nothing course stay wheel full force blue object decide surface deep moon island foot system busy test record boat common gold possible plane stead dry wonder laugh thousand ago ran check game shape equate hot miss brought heat snow tire bring yes distant fill east paint language among grand ball yet wave drop heart am present heavy dance engine position arm wide sail material size vary settle speak weight general ice matter circle pair include divide syllable felt perhaps pick sudden count square reason length represent art subject region energy hunt probable bed brother egg ride cell believe fraction forest sit race window store summer train sleep prove lone leg exercise wall catch mount wish sky board joy winter sat written wild instrument kept glass grass cow job edge sign visit past soft fun bright gas weather month million bear finish happy hope flower clothe strange gone jump baby eight village meet root buy raise solve metal whether push seven paragraph third shall held hair describe cook floor either result burn hill safe cat century consider type law bit coast copy phrase silent tall sand soil roll temperature finger industry value fight lie beat excite natural view sense ear else quite broke case middle kill son lake moment scale loud spring observe child straight consonant nation dictionary milk speed method organ pay age section dress cloud surprise quiet stone tiny climb cool design poor lot experiment bottom key iron single stick flat twenty skin smile crease hole trade melody trip office receive row mouth exact symbol die least trouble shout except wrote seed tone join suggest clean break lady yard rise bad blow oil blood touch grew cent mix team wire cost lost brown wear garden equal sent choose fell fit flow fair bank collect save control decimal gentle woman captain practice separate difficult doctor please protect noon whose locate ring character insect caught period indicate radio spoke atom human history effect electric expect crop modern element hit student corner party supply bone rail imagine provide agree thus capital won't chair danger fruit rich thick soldier process operate guess necessary sharp wing create neighbor wash bat rather crowd corn compare poem string bell depend meat rub tube famous dollar stream fear sight thin triangle planet hurry chief colony clock mine tie enter major fresh search send yellow gun allow print dead spot desert suit current lift rose continue block chart hat sell success company subtract event particular deal swim term opposite wife shoe shoulder spread arrange camp invent cotton born determine quart nine truck noise level chance gather shop stretch throw shine property column molecule select wrong gray repeat require broad prepare salt nose plural anger claim continent oxygen sugar death pretty skill women season solution magnet silver thank branch match suffix especially fig afraid huge sister steel discuss forward similar guide experience score apple bought led pitch coat mass card band rope slip win dream evening condition feed tool total basic smell valley nor double seat arrive master track parent shore division sheet substance favor connect post spend chord fat glad original share station dad bread charge proper bar offer segment slave duck instant market degree populate chick dear enemy reply drink occur support speech nature range steam motion path liquid log meant quotient teeth shell neck
+[/code]
+[/quote]
+
+Furthermore, you can let Amphetype generate a list of your most damaging (or whatever) words or trigrams, and send them to the Lesson Generator! I recommend editing out rare words before making the lessons themselves so you don't risk training words like 'Cthulhu' and 'Shub-Niggurath' a lot, but otherwise this is very useful once you've racked up some mileage in your database.
+
+Apparently, after typing a book about Graeco-Roman mythology for a while, Amphetype suggested this amusing list of words for me; I just sorted it and added punctuation:
+
+[b]They that were called under & into Hera/Zeus' order, have this beautiful form from their king/wife gods – with which their being became overly beautiful.[/b]
+
+Really, that was my list of "most damaging" words – rearranged but complete. Heh! A truly divine typing task. :-)
+
+User [user]bph[/user] has tried starting with the 1000 most common words and after a few runs through them, [url=https://forum.colemak.com/post/19614/#p19614]generating a lesson of, say, the 200 most damaging ones[/url]! That's clever, and will make you train only words that are both common and hard for you.
+
+In [url=https://forum.colemak.com/post/19132/#p19132]a forum post by misterW[/url], he suggests a focus on common and damaging n-grams. I quite agree with that!
+
+[quote=misterW (lightly edited)]
+Typing is all about grouping chunks of characters together and into your memory. Grab a list of the most common words and n-grams: [b]'the', 'and', 'with', 'that', 'tion', 'ing', 'for'[/b]. You want to be typing those extremely fast. Roll your fingers whenever possible. You want to commit these chunks into memory. You could think of it as, "I'm going to become the best in the world at typing the word [i]different[/i]."
+
+What would you need to do to accomplish that? You need to practice it until it becomes second nature that you don't even have to think about it. Visualization helps. When away from the keyboard, visualize in your mind where the keys are and what fingers you will use to type the word "that" or whatever word you struggle with.
+
+[...]
+
+Don't practice full paragraphs that you struggle with. Practice small words or phrases, one at a time. So if you want to learn the [b]'tion'[/b] 4-gram, just keep practicing that. Then add a leading letter: [b]'ation', 'etion', 'ition', 'otion', 'ution', 'ption'[/b], get fast and comfortable with all of those combinations. Then try full words: [b]'station', 'motion', 'fruition'[/b]. You'll notice that the start of those words you haven't practiced, so you will be slow for the first few letters, and then you'll speed through the 'tion' part that you practiced. That's good.
+
+Practice it every day. If your hands get tired, take a break and freshen your mind by trying a new combination, say [b]'ent'[/b]. Then [b]'went'[/b], then [b]'enter'[/b], progressing to [b]'movement'[/b].
+[/quote]
+
+Here are a couple of sample lists for focusing on n-grams. Feel free to add your favourites below! ;-)
+[code]
+io on ion tion ation etion ition otion ution ption nation station fruition gumption tuition completion attention assumption interruption
+[/code]
+[code]
+he the then them they there their they're theirs theme theory therein thermal thematic therefore theology theatrics themselves anathema
+[/code]
+etc etc...
+
+If you want to be thorough, you can check out lists like [url]http://www.wordfind.com/starts-with/the/[/url] or [url]http://www.morewords.com/starts-with/the/[/url] – but I suppose the most bang-for-buck will be earned by training the most common of those words.
+
+Also, here's another [b][url=https://github.com/first20hours/google-10000-english]list of common words[/url][/b] from Google Research ([url=https://forum.colemak.com/post/19141/#p19141]thanks, misterW![/url]). You can filter it by n-grams, for instance.
+
+
+    [img]https://www.dropbox.com/s/qwt81c2xyowr2sw/Amphetype_4-Analysis.png?dl=1[/img]
+    [i]Amphetype's Analysis tab, where you can make and export lists of words or trigrams that cause you trouble[/i]
+
+
+[h]Links (mostly for making specified lists of words):[/h]
+[url]https://github.com/webiest/amphetype[/url] (Amphetype itself)
+[url]https://github.com/lalopmak/amphetype[/url] (user Lalop's Amphetype fork, with some tweaks)
+[url]http://www.wordfind.com/[/url]
+[url]http://worddetector.com/[/url]
+[url]http://www.morewords.com/[/url]
+[url]http://www.wordhippo.com/[/url]
+[url]https://github.com/first20hours/google-10000-english[/url]
+
+
+[h]Notes:[/h]
+• The experts all seem to value the ability to vary your speed. Type well-known words blazingly fast, and slow down a bit for hard ones to avoid mistakes.
+• Mistakes will slow you down more than consciously slowing down will, once you get used to it!
+• Good training should be varied! Don't wear yourself out by banging your head against a hurdle until you're exhausted, but keep chipping away at it now and then.
+• I think that many shorter bouts in a day beats a few long ones.
+• You can of course use the above mentioned lesson lists with other training tools such as [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
+• If you want to see lesson statistics on the Analysis tab, you'll have to select "Save key/trigram/word statistics from generated lessons" on the Preferences tab.
+• Whether training or just typing, I try to make a point of deleting the whole word if I make a mistake; Extend helps with that (Ext+T+O for Ctrl+Back).
+    This can sometimes be faster than mashing the Back key, but more importantly it lets you type the word correctly before proceeding. That should help in the long run.
+
+
+    [img]https://www.dropbox.com/s/u1xp3biy6wb5ogd/10FF_badges_animated.gif?raw=1[/img]
+    [i]An eager typing trainee (courtesy of [b][url=https://10fastfingers.com/typing-test/english]TenFastFingers[/url][/b])![/i]

@@ -1,6 +1,10 @@
-[h]Update: Tarmak for Curl-DH mods![/h]
+[h]Tarmak for Curl-DH mods![/h]
+[h]NOTE (2017): These are now outdated, and superseded by the new Curl(DH) mod![/h]
 
-As some will have noticed, my Big Bag of Keyboard Tricks holds a new trick or two: The Curl-DH mods invented by Stevep99! For those who didn't know: These mods move the D and H from the middle "trench" which several users have found hard to reach, to the lower row positions of Colemak B/K or V/M which some find much better than their "non-home-row" reputations. I'm using the Curl-DbgHk mod and liking it a lot.
+    [img]https://www.dropbox.com/s/ub363imkf12ywwc/Tarmak-Curl_SpectralAnimation_45d.gif?raw=1[/img]
+
+
+As [url=https://forum.colemak.com/viewtopic.php?pid=14803#p14803]mentioned further up in this topic[/url], my Big Bag of Keyboard Tricks holds a new trick or two: The Curl-DH mods invented by Stevep99! For those who didn't know: These mods move the D and H from the middle "trench" which several users have found hard to reach, to the lower row positions of Colemak B/K or V/M which some – myself included – find much better than their "non-home-row" reputations. I'm using the Curl-DbgHk mod and liking it a lot.
 
 These mods move a couple more keys than standard Colemak but keep all finger assignments. Also, by keeping the G in its QWERTY place the number of extra key movements is reduced by one. My preferred mod (Curl-DbgHk) moves only 18 keys to Colemak's 17 if you don't count the Angle mod (as the ZXCV keys all keep their finger assignments!). That's very much worth it to me.
 
@@ -12,77 +16,88 @@ The left-hand "D" mod should be done with Tarmak2 as that's where the G is norma
 
 
 [b]Implementations[/b]
-[b]Linux/XKB:[/b] Tarmak needs a few tweaks, but nothing major! In the Linux world you can turn on the D(v)bg and Hk/Hm switches separately which makes implementation quite simple requiring only a tweak in step 2 (see the symbols/colemak file).
+[b]Linux/XKB:[/b] Tarmak needs a few tweaks, but nothing major! In the Linux world you can turn on the D(v)bg and Hk/Hm switches separately which makes implementation quite simple requiring only a tweak in step 2. See the symbols/colemak file or the XKB Big Bag topic.
+[Update: You can now select the modified step 2 directly as Tarmak2bk/vm; there's also a Tarmak1k. For the other Tarmak steps, use options or edit the colemak file, and/or select models with the setxkb.sh script.]
 
 [b]Windows/PKL:[/b] For PKL you'll have to comment/uncomment some lines in the layout.ini file and if your layout doesn't have the necessary lines you can find them in the Colemak-ISO AngleWide file as the Curl mod is a development on the Angle mod and I expect that most Curl modders will also go with the Wide mod!
 
-[b]Mac:[/b] User [url=http://forum.colemak.com/profile.php?id=2552]mkborregaard[/url] has made [url=http://forum.colemak.com/viewtopic.php?pid=16655#p16655]a Karabinier implementation of the Curl-DbgHk mod Tarmak steps[/url]. Thanks!
+[b]Mac:[/b] User [user]mkborregaard[/user] has made [url=https://forum.colemak.com/viewtopic.php?pid=16655#p16655]a Karabinier implementation of the Curl(DbgHk)Angle mod Tarmak steps[/url]. Thanks!
 
 
-[b]Tarmak(ETROI)-Curl(DbgHk)[/b]
+[b]Tarmak(ETROI)-Curl(DbgHk)Angle,  a.k.a. DreymaR's Curl-DH mod[/b]
 
-    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/ergomods/Cmk-dbg-hk-eD-wide_Xm.png[/img]
-    [i]Colemak[eD]-No shown with the Curl-DbgHk and (Angle)Wide ergo mods[/i]
+    [img]https://www.dropbox.com/s/vy0btqjyuja6iiy/Cmk-dbg-hk-eD-wide_Xm.png?raw=1[/img]
+    [i]Colemak[eD]-No shown with the Curl(DbgHk)Angle and Wide ergo mods[/i]
 
-[quote=Tarmak(ETROI)-Curl(DbgHk)]
-1) The [b]E[/b]>K>[b]H[/b]>N>(J) "most essential" loop, fixing the important E (and N) – with the Curl(Hk) mod
+
+[quote=Tarmak(ETROI)-Curl(DbgHk)Angle]
+[b]1)[/b] The [b]E[/b]>K>[b]H[/b]>N>(J) "most essential" loop, fixing the important E (and N) – with the Curl(Hk) mod
 [code] q  w {J} r  t  y  u  i  o  p 
   a  s  d  f  g {K}{N}{E} l  ;     The "Tarmak1(E)-Curl(Hk)" transitional layout (E>K>H>N>J)
  _  z  x  c  v  b {H} m [/code]
-2) The (J)>B>[b]T[/b]>F loop, bringing the important T into place – with the Angle (V>C>X>Z>_) and Curl(Dbg) mods
+[b]2)[/b] The (J)>B>[b]T[/b]>F loop, bringing the important T into place – with the Angle (V>C>X>Z>_) and Curl(Dbg) mods
 [code] q  w {F} r {B} y  u  i  o  p 
   a  s  d {T} g  K  N  E  l  ;     The "Tarmak2(ET)-Curl(DbgHk)" transitional layout (V-_>B>T>F>E>K>H>N>J)
 {z}{x}{c}{v}{J}{_} H  m [/code]
-3) The (J)>[b]R[/b]>S>[b]D[/b] loop, getting RSD into place – all of which are relatively frequent!
+[b]3)[/b] The (J)>[b]R[/b]>S>[b]D[/b] loop, getting RSD into place – all of which are relatively frequent!
 [code] q  w  F {J} B  y  u  i  o  p 
   a {R}{S} T  g  K  N  E  l  ;     The "Tarmak3(ETR)-Curl(DbgHk)" transitional layout (R>S>D>V-_>B>T>F>E>K>H>N>J)
  z  x  c  v {D} _  H  m [/code]
-4) The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
+[b]4)[/b] The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
 [code] q  w  F {P} B {J} u  i {Y}{;}
   a  R  S  T  g  K  N  E  l {O}    The "Tarmak4(ETRO)-Curl(DbgHk)" transitional layout (Y>O>;>P>R>S>D>V-_>B>T>F>E>K>H>N>J)
  z  x  c  v  D  _  H  m [/code]
-5) The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
+[b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
 [code] q  w  F  P  B  J {L}{U} Y  ; 
   a  R  S  T  g  K  N  E {I} O     The Colemak-Curl(DbgHk) layout (Y>O>;>P>R>S>D>V-_>B>T>F>E>K>H>N>J & L>U>I)
  z  x  c  v  D  _  H  m [/code]
 [/quote]
 
 
-[b]Tarmak(ETROI)-Curl(DvbgHm)[/b]
+[b]Tarmak(ETROI)-Curl(DvbgHm)Angle,  a.k.a. SteveP's mod-DH[/b]
 
-    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/ergomods/Cmk-dvbg-hm-eD-wide_Xm.png[/img]
-    [i]Colemak[eD] shown with the Curl-DvbgHm ergo mod by Stevep99 and the (Angle)Wide ergo mod[/i]
+    [img]https://www.dropbox.com/s/qbpquehr5q52ko6/Cmk-dvbg-hm-eD-wide_Xm.png?raw=1[/img]
+    [i]Colemak[eD] shown with the Curl(DvbgHm)Angle ergo mod by Stevep99 and the Wide ergo mod[/i]
 
-[quote=Tarmak(ETROI)-Curl(DvbgHm)]
-1) The [b]E[/b]>K>N>(J) "most essential" loop, fixing the important E (and N)
+
+[quote=Tarmak(ETROI)-Curl(DvbgHm)Angle]
+[b]1)[/b] The [b]E[/b]>K>N>(J) "most essential" loop, fixing the important E (and N)
 [code] q  w {J} r  t  y  u  i  o  p 
   a  s  d  f  g  h {N}{E} l  ;     The "Tarmak1(E)" transitional layout (E>K>N>J)
  _  z  x  c  v  b {K} m [/code]
-2) The (J)>B>[b]T[/b]>F loop, bringing the important T into place – with the Angle (C>X>Z>_) and Curl(Dvbg) mods
+[b]2)[/b] The (J)>B>[b]T[/b]>F loop, bringing the important T into place – with the Angle (C>X>Z>_) and Curl(Dvbg) mods
 [code] q  w {F} r {B} y  u  i  o  p 
   a  s  d {T} g  h  N  E  l  ;     The "Tarmak2(ET)-Curl(Dvbg)" transitional layout (C-_>B>T>F>E>K>N>J)
 {z}{x}{c}{J} v {_} K  m [/code]
-3) The (J)>[b]R[/b]>S>[b]D[/b] loop, getting RSD into place – all of which are relatively frequent!
+[b]3)[/b] The (J)>[b]R[/b]>S>[b]D[/b] loop, getting RSD into place – all of which are relatively frequent!
 [code] q  w  F {J} B  y  u  i  o  p 
   a {R}{S} T  g  h  N  E  l  ;     The "Tarmak3(ETR)-Curl(Dvbg)" transitional layout (R>S>D>C-_>B>T>F>E>K>N>J)
  z  x  c {D} v  _  K  m [/code]
-4) The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
+[b]4)[/b] The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
 [code] q  w  F {P} B {J} u  i {Y}{;}
   a  R  S  T  g  h  N  E  l {O}    The "Tarmak4(ETRO)-Curl(Dvbg)" transitional layout (Y>O>;>P>R>S>D>C-_>B>T>F>E>K>N>J)
  z  x  c  D  v  _  K  m [/code]
-5) The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
+[b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak-Curl(Dvbg)!
 [code] q  w  F  P  B  J {L}{U} Y  ; 
   a  R  S  T  g  h  N  E {I} O     The Colemak-Curl(Dvbg) layout (Y>O>;>P>R>S>D>C-_>B>T>F>E>K>N>J & L>U>I)
  z  x  c  D  v  _  K  m [/code]
-6) The [b]H[/b]>M self-contained loop (may be done at any point in the progression but shown last here)
+[b]6)[/b] The [b]H[/b]>M self-contained loop (may be done at any point in the progression but shown last here)
 [code] q  w  F  P  B  J  L  U  Y  ; 
   a  R  S  T  g {M} N  E  I  O     The Colemak-Curl(DvbgHm) layout (Y>O>;>P>R>S>D>C-_>B>T>F>E>K>N>J & L>U>I & H>M)
  z  x  c  D  v  _  K {H}[/code]
 [/quote]
 
-For the technically inclined, here's what the key change loops look like with the Curl-DH mods included:
+
+For the technically inclined, here's what the key change loops look like with the Curl-DH mods included (on ANSI boards, ignore '_'):
 [code]
-Colemak[Angle] loops:  Y>O>;>P  >  R>S>D  >            G>T>F  -  E>K>N>J       L>U>I     [B>V>C>X>Z>_]
+Colemak[Angle] loops:  Y>O>;>P  >  R>S>D  >            G>T>F  >  E>K>N>J       L>U>I     [B>V>C>X>Z>_]
+Colemak-DH     loops:  Y>O>;>P  >  R>S>D  >    C>X>Z>_>B>T>F  >  E>K>H>M>N>J   L>U>I
 Colemak-DbgHk  loops:  Y>O>;>P  >  R>S>D  >  V>C>X>Z>_>B>T>F  >  E>K>H>N>J     L>U>I
 Colemak-DvbgHm loops:  Y>O>;>P  >  R>S>D  >    C>X>Z>_>B>T>F  >  E>K>N>J       L>U>I     H>M
 [/code]
+
+
+    [img]https://www.dropbox.com/s/h1najfe5j7xb661/Tarmak_Spectral_ETROI-Curl%28DbgHk%29.png?raw=1[/img]
+        [i]The Tarmak(ETROI) transitional Colemak layouts for the Curl(DbgHk)Angle ergo mod[/i]
+        [i]The steps are spectrally color-coded from red (Tarmak1) to violet (Colemak-CurlAngle)[/i]
+        [i]Not shown in this figure is how the J key is forced into temporary positions (QWERTY E, B and R)[/i]

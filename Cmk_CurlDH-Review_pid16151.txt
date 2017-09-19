@@ -1,31 +1,42 @@
-[h]The Colemak "[url=http://colemakmods.github.io/mod-dh/]Curl-DH[/url]" ergo mod, reviewed by DreymaR:[/h]
+[h]The Colemak "[url=https://colemakmods.github.io/mod-dh/]Curl-DH[/url]" ergo mod, reviewed by DreymaR:[/h]
 
-Well, the D-H mod is, obviously, an ergo mod. In my opinion it gives less benefit at higher cost than the Angle mod does (but I [i]really[/i] like the Angle mod and its cost is very very low), and more benefit but at a higher cost than the Wide mod does (which again has very low cost and a decent but not a huge benefit). The cost is notable for several days, especially for the rare letters in my experience, and only now do I feel that I'm back at nearly full fluency (~65 WPM at 98% accuracy; usually I do ~70 WPM with realistic typing at full fluency). If I'm tired or haven't typed in a while, there's still a need to concentrate on the changes. But all in all, it feels like a low-cost venture as no keys changed fingers.
+Well, the Curl-DH mod is, obviously, an ergo mod. In my opinion it gives less benefit at higher cost than the Angle mod does (but I [i]really[/i] like the Angle mod and its cost is very very low), and more benefit but at a higher cost than the Wide mod does (which again has very low cost and a decent but not a huge benefit). The cost is noticeable for several days, especially for the rare letters in my experience, and only now do I feel that I'm back at nearly full fluency (~65 WPM at 98% accuracy; usually I do ~70 WPM with realistic typing at full fluency). If I'm tired or haven't typed in a while, there's still a need to concentrate on the changes. But all in all, it feels like a very low-cost venture to move from Colemak to Colemak-DH, as no keys changed fingers.
 
 It could be generalized to any layout optimized for a straight home row, but the Colemak version takes the opportunity to put the G back in its original position as well. This is a good move as it sorts B, D and G better according to frequencies, and in the large picture makes the left-hand mod as simple as standard Colemak. Probably simpler, since the G is more common than the now moved B.
 
-I did it during Yuletide so I'd have time to fiddle it at low cost to work efficiency. That worked well. And yes, I think I'll stick with it. The D, G, H and importantly the HE bigram feel so much better now, and the B and K that are worse off for it seem to be in more sensible standings now. And here I thought that Colemak could hardly feel more natural, and yet now it does somehow.
+I did it during Yuletide so I'd have time to fiddle it at low cost to work efficiency. That worked well. And yes, I'll certainly stick with it. The D, G, H and importantly the HE bigram feel so much better now, and the B and K that are worse off for it seem to be in more sensible standings now. And here I thought that Colemak could hardly feel more natural, and yet now it does somehow.
 
 The mod promotes a relaxed hand position and I realize that many many users have been talking about something like this over the years. There just wasn't a good solution for it other than making an entirely new layout which nobody has done convincingly yet to my knowledge – for instance, newcomers seem to find it hard to beat the same-finger stat of Colemak while keeping as many QWERTY placements for the sake of peace. Also, complete layout change yet one more time... ugh. Been there, ditched Dvorak, not too happy about the thought of yet another blank sheet unless it'd hold truly great promise. The contestants until Colemak-Curl have looked less promising if anything.
 
-I'd recommend the light mod (Dbg and Hk) over Steve's heavier mod if you have a normal-stagger keyboard. It seems to be about as good (depending on how well you like the outwards vs inwards lower index finger positions) at a lower compatibility cost. I feel that the index fingers rest naturally about there, but I see Steve's point about the luxury of curling the fingers straight down too. So YMMV there. Just sit comfortably at your keyboard with your hands in a good position, and make up your mind about how those positions feel to you.
+I'd recommend the light mod (Dbg Hk) over Steve's heavier mod if you have a normal-stagger keyboard. It seems to be about as good (depending on how well you like the outwards vs inwards lower index finger positions) at a lower compatibility cost. I feel that the index fingers rest naturally about there, but I see Steve's point about the luxury of curling the fingers straight down too. So YMMV there. Just sit comfortably at your keyboard with your hands in a good position, and make up your mind about how those positions feel to you.
 
-    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/ergomods/Cmk-dvbg-hm-eD-wide_Xm.png[/img]
+    [img]https://www.dropbox.com/s/qbpquehr5q52ko6/Cmk-dvbg-hm-eD-wide_Xm.png?raw=1[/img]
     [i]Colemak[eD] with stevep99's "Curl-DH[DvbgHm]" ergo mod[/i]
 
-    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/doc/ergomods/Cmk-dbg-hk-eD-wide_Xm.png[/img]
+    [img]https://www.dropbox.com/s/vy0btqjyuja6iiy/Cmk-dbg-hk-eD-wide_Xm.png?raw=1[/img]
     [i]Colemak[eD] with my lighter "Curl-DH[DbgHk]" ergo mod[/i]
 
-The Angle mod is integral to this project. I recommend using an ISO keyboard no matter what (I have a Unicomp ISO keyboard with US key caps, so being a US citizen is no real excuse), but there are of course Angle mod possibilities for the ANSI board too although they're somewhat less elegant. I'd recommend the "A-Wing"/"A-Frame" in that case, pushing the brackets to the left top and middle row (and the slash to the middle bottom row) to achieve Angle goodness.
+The Angle mod is integral to this project. I recommend using an ISO keyboard no matter what (I have a Unicomp ISO keyboard with US key caps, so being a US citizen is no real excuse), but there are of course Angle mod possibilities for the ANSI board too although they're somewhat less elegant. I'd recommend the "A-Wing"/"A-Frame" in that case, pushing the brackets to the left top and middle row (and the slash to the middle bottom row) to achieve Angle goodness. But "Angle-Z" would be a good choice too.
 
-If doing the light version, I'm not sure which side gives the most benefit but I'm thinking that the HK switch has one less key so maybe one might want to try that first. It's nice that you can do just one side if you're curious or if one side bothers you the most. I did both at once (ironically enough, being the creator or Tarmak and all!) and that went well enough, but it's a nice possibility.
+It's nice that you can do just one side if you're curious or if one side bothers you the most. I did both at once (ironically enough, being the creator or Tarmak and all!) and that went well enough, but it's a nice possibility. I'm not sure which side gives the most benefit (in the light version) but I'm thinking that the HK switch has one less key so maybe one might want to try that first.
 
-Some words require a spot of re-polishing, but I found that surprisingly easy. Being used to alternative fingering on the NK bigram, I just moved that trick to the new K position without trouble it seems. A few words like 'knee' are a bit interesting but then again I guess they always were (for 'knee', I slide in for the three first letters and back for the fourth, avoiding the same-finger 'ee' in the process).
+Some words require a spot of re-polishing after the switch, but I found that surprisingly easy. Being used to alternative fingering on the NK bigram, I just moved that trick to the new K position without trouble it seems. A few words like 'knee' are a bit interesting but then again I guess they always were (for 'knee', I slide in for the three first letters and back for the fourth, avoiding the same-finger 'ee' in the process).
 
-I've been perusing Amphetype a lot lately, typing texts and common words. Also a site that lets you type fairy tales and stuff ([url]http://www.powertyping.com[/url]). A fun and relaxing way of working in a mod like this one.
+I've been perusing Amphetype a lot lately, typing texts and common words. Also a site that lets you type fairy tales and stuff ([url]http://www.powertyping.com[/url]). A fun and relaxing way of breaking in a mod like this one.
 
 In conclusion, it still feels like Colemak, with all the goodness I love about it. But it's a Colemak that has had a minor design flaw (straight-homerow thinking – the state of the art in 2006 but now dated in my opinion as years of insights and discussions have flowed in) corrected at the low cost of a slight rearrangement of five index-finger keys and one more key moved from its QWERTY position – but to a better position (also, the G gets back its QWERTY position at the expense of the less frequent B). In my opinion, it does what Workman and Norman and other men tried to do but it does it so very much more elegantly. Well, I'm biased as hell, no surprise. ;-)
 
-Thanks to [url=http://forum.colemak.com/profile.php?id=2374]Stevep99[/url] for this fun and useful innovation!
+Thanks to [user]Stevep99[/user] for this fun and useful innovation!
+
+[h][i]~ DreymaR[/i][/h]
+
+
+
+[h]P.S.: UPDATE, MAY 2017 – THERE CAN BE ONLY ONE![/h]
+
+So, after living and learning for quite some time [url=https://forum.colemak.com/post/19723/#p19723]we have unified and standardized the Curl(DH) mod[/url]! Nowadays, I'm using Curl(DvbgHmk) – which shall henceforth be known as [i]the[/i] [b]Curl(DH)[/b] mod. It moves one more key than my old suggestion did, and breaks up the ZXCV block, but I think it's worth these concessions. For some matrix board users, SteveP's original mod may still be desirable since the down-out positions are a bit more awkward there, but for normal staggered boards I certainly recommend this updated mod with all my heart. Just watch yourself in the start when copy/pasting. :-)
+
+    [img]https://www.dropbox.com/s/z6c4qwz4sf1hq70/Cmk-dvbg-hmk-eD-wide_Xm.png?dl=1[/img]
+    [i]Colemak[eD] with the new Curl-DH ergo mod[/i]
 
 [h][i]~ DreymaR[/i][/h]

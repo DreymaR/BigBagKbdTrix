@@ -1,0 +1,60 @@
+Two and a half years in now! And I think, time to reassess? Thinking time, again. ;-)
+
+I'm unhappy that we have two competing DH-mods. Makes implementations a hassle and confuses newcomers. But of course, there are multiple preferences and considerations and it's hard to strike the compromises that make everybody happy enough.
+
+[code] q  w  F  P  B  J  L  U  Y  ; 
+  a  R  S  T  g  K  N  E  I  O     The Colemak-Curl(DbgHk) layout – my current Curl-DH mod
+ z  x  c  v  D  _  H  m 
+[/code]
+
+[code] q  w  F  P  B  J  L  U  Y  ; 
+  a  R  S  T  g  M  N  E  I  O     The Colemak-Curl(DvbgHm) layout – SteveP's current DH-mod
+ z  x  c  D  v  _  K  H 
+[/code]
+
+Could we do it? See [url=https://forum.colemak.com/post/19718/#p19718]this post[/url].
+
+My proposal is this "best of both worlds, accepting just a little pain" solution:
+
+[code] q  w  F  P  B  J  L  U  Y  ; 
+  a  R  S  T  g  K  N  E  I  O     The Colemak-Curl(DvbgHmk) layout
+ z  x  c  D  v  _  M  H 
+
+ q  w  F  P  B  J  L  U  Y  ; 
+  a  R  S  T  g  K  N  E  I  O     The Colemak-Curl(DvbgHmk) ANSI-Z layout
+    x  c  D  v  Z  M  H 
+[/code]
+
+It's influenced by the insight that to newcomers the Angle mod doesn't necessarily feel as an automatic single change. In [url=https://forum.colemak.com/post/19718/#p19718]the topic mentioned above[/url], people chimed in that keeping the V in its old QWERTY/Colemak place seems at least as simple as moving ZXCV together. I've thought of it differently because I did the Angle shift first.
+
+In fact, using the above Curl-DH mod with the AngleWide mod as I'd do (I call it Colemak-CAW), both V and M would remain in their old unmodded positions! That's kind of nice.
+
+The other major point is that the M in my opinion deserves a better position than the "dethroned" middle trench. The above position will be better for it, at least on staggered boards which are by far the most common ones (actually, I don't like pure matrix boards). This means moving one more key compared to my current Curl-DH mod, but you know – so be it. I've come to think that the benefits will be worth this price in the long run.
+
+For the record, [url=https://en.wikipedia.org/wiki/Letter_frequency]Wikipedia (citing R. Lewand)[/url] and [url=https://www.math.cornell.edu/~mec/2003-2004/cryptography/subs/frequencies.html]the Cornell page of letter frequencies in English[/url] report these numbers for the letters involved:
+[b]D: 4.3%[/b]
+[b]G: 2.0%[/b]
+[b]B: 1.5%[/b]
+[b]V: 1.0%[/b] (1.0–1.1%)
+
+[b]H: 6.0%[/b] (5.9–6.1%)
+[b]M: 2.5%[/b] (2.4–2.6%)
+[b]K: 0.7%[/b] (0.7–0.8%)
+
+These frequencies, of course, tell nothing about the efficiency of n-grams. We've all noticed how much nicer the important HE bigram becomes with both the current DH-mods.
+
+Heh, judging from pure letter frequencies the V might have to move to the upper row! But that'd bork the Ctrl+V shortcut way too much. So no. Just no. Right...?
+
+I've come to realize that what the left-hand issue amounts to is not as much two different DH-mods as two different Angle mods! I may end up providing one Angle mod moving V and one not moving it, for ISO boards. For ANSI boards it wouldn't make much sense to insert Z between C and V [i]per se[/i], but for ISO boards inserting B there would make sense from a pure letter frequency point of view. Doing it that way would add a modularity that'd let people choose freely between the current left-hand DH mods without having more than one main DH mod. There are already several Angle mods and that's the way it has to be I think, so the hit there wouldn't be too bad. I have to think about that one!
+
+[b]Benefits[/b], comparing the above proposal to the current DbgHk (mine) and DvbgHm (SteveP's) mods:
+[b]+[/b] One common DH-mod would be much easier to promote and implement! Curlers, unite! :-þ
+[b]+[/b] Apparently, slightly better D and H positions than DbgHk's – according to many users' preferences
+[b]+[/b] Better M position than DvbgHm's position, at least on normal-staggered boards
+[b]+[/b] Even B is actually somewhat more common than V in English, so V shouldn't have a prime position
+[b]+[/b] [i][Edit 2017-09:][/i] V and M (and K as well) are kept on their native rows, and with the Wide mod even in their native positions!
+
+[b]Pains[/b]:
+[b]-[/b] Three keys are moved on the right hand, two more than standard Colemak, one more than DbgHk
+[b]-[/b] The XCV Cut/Copy/Paste block is split up, unlike DbgHk
+[b]-[/b] This makes Extend a little uglier, wedging the left mouse button between Copy and Paste

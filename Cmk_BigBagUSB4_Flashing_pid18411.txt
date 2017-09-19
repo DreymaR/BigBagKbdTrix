@@ -1,21 +1,22 @@
-[h][5.3]    DEVICE FLASHING[/h]
+[h][4.3]    DEVICE FLASHING[/h]
 
 This post shows how to flash your HEX file to a USB-2-USB device and get it ready for typing. See the above posts for how to [b][url=https://forum.colemak.com/post/18407/#p18407]prepare the device[/url][/b] and [b][url=https://forum.colemak.com/post/18410/#p18410]get the HEX file you want[/url][/b].
 
+[b]NOTE:[/b] Flashing with a keyboard plugged into the device may be safe in most cases. But I got trouble with one keyboard (IBM/Unicomp Model M) after using FLIP for flashing with it inserted; it seems like the drivers or registry entry got corrupted somehow because now it won't mount on that PC anymore even though it's quite okay on other machines. Be warned.
 
-[b][i]Flashing the device on Linux:[/i][/b]
 
-My script run with the [b]-f[/b] option flashes the generated HEX file to a connected device using DFU-Programmer; if you've already made the .hex file use [b]-m[/b] to skip rebuilding it. If you want to flash without using my script, you could use the 'make dfu' command inside the usb_usb directory, or look inside the script to see how I did it.
+[b][i]Flashing the device with Linux:[/i][/b]
 
-According to the [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build]TMK wiki build FAQ[/url], you'll need admin/sudo rights for the 'dfu-programmer' command (there's [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build#linux-udev-rules]a workaround using udev rules[/url], but it's a bit techy). I've tried flashing without sudo and it worked for me in one case but not another. If you do need sudo, run makeflash like this (here with -mf, to flash an existing usb_usb.hex file):
+My script run with the [b]-f[/b] option flashes the generated HEX file to a connected device using DFU-Programmer; if you've already made the .hex file use [b]-b[/b] to skip rebuilding it. If you want to flash without using my script, you could use the 'make dfu' command inside the usb_usb directory, or look inside the script to see how I did it.
+
+According to the [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build]TMK wiki build FAQ[/url], you'll need admin/sudo rights for the 'dfu-programmer' command (there's [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build#linux-udev-rules]a workaround using udev rules[/url], but it's a bit techy). I've tried flashing without sudo and it worked for me in one case but not another. If you do need sudo, run makeflash like this:
 [code]
-$> sudo ./makeflash_usb2usb.sh -mf
+$> sudo ./makeflash_dreymar_tmk.sh -bf
 [/code]
 
-If you're using a Linux VM for flashing, make sure the USB-2-USB device is [b]properly captured[/b] for the Linux client. Every time you enter or leave bootloader mode, you may have to recapture the device for your VM. It should be ticked off in the Devices>USB menu on VirtualBox for instance; similarly for VMWare and others.
+[b]NOTE:[/b] You do [i]not[/i] generally want to build your files as root! Then you'll be in trouble if you try to clean up as non-root afterwards. So run MakeFlash twice, once with normal privileges to build your .hex file and the other time with -b (to not build again) and -f (to flash) with sudo/root privileges.
 
-    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/usb/doc/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png[/img]
-    [i]Fig. 4: The Devices (pop-up) menu of VirtualBox, showing the properly captured Atmel USB device.[/i]
+If you're using BASH on Windows 10 (beta), [url=https://github.com/tmk/tmk_keyboard/wiki/Bash-On-Ubuntu-On-Windows10]dfu-programmer won't work yet[/url], due to a problem with mounting USB devices in general (libusb). Use Windows native tools instead, such as FLIP or dfu-programmer for Windows.
 
 If you have another device, you may need some other method and more tools. As mentioned at the start of this post, there are helpful help files you may consult for this.
 
@@ -32,5 +33,5 @@ You can use Atmel FLIP on Windows instead of flashing under Linux: It gives you 
 [b]5.[/b] [b]Activate the device (fig 5–5)[/b]. Press "[b]Start Application[/b]". Reset should be checked.
 [b]6.[/b] [b]Test the device[/b]. With a keyboard connected to the device, type something on it and see that it does what it should.
 
-    [img]https://dl.dropboxusercontent.com/u/14504410/Keyboards/dreymar/usb/doc/USB2USB_AtmelFlip_Hasu.png[/img]
+    [img]https://www.dropbox.com/s/ozmnhilo335x7ff/USB2USB_AtmelFlip_Hasu.png?dl=1[/img]
     [i]Fig. 5: Atmel FLIP for Windows. 1) Select chip (a); 2) Connect (c); 3) Load HEX file (b); 4) Flash device; 5) Start device[/i]

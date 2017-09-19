@@ -1,0 +1,37 @@
+[h][4.1]    DOWNLOAD AND INSTALL[/h]
+
+Files for Portable Keyboard Layout (PKL) by Farkas Máté can be found here:
+[b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]My PKL repo at GitHub, with all layouts and stuff[/url][/b]
+
+This topic is already too long and complex so I can't add a lot of support for PKL here, but basically: 
+• PKL runs on Windows (XP, 7/8/10 – except some "secure" dialogs)
+• It's portable: Just run it from anywhere! You don't need Install rights, and it doesn't change the Registry nor anything outside its own folders
+• You can carry it with you on a USB drive and run it directly from the USB drive, as long as you have Run privileges from that drive; or put it in the Cloud!
+• It's compatible with the wonderful [url=http://portableapps.com/]PortableApps format[/url]
+• To run PKL with the PortableApps menu, put the PKL folder in the PortableApps folder (e.g., C:\PortableApps) – that's all!
+• To run PKL at startup, put a shortcut to pkl.exe (e.g., Alt-drag the program icon somewhere) in your Windows Startup folder
+    (To access the Startup folder, press Win+R (for the Run dialog) then enter 'shell:startup')
+• The above will work by user, so you can use your PKL independently of others (but all users of one PKL will share the same settings)
+• PKL won't be running at first logon but will remain active under a screen lock, so I recommend getting a layout-independent password or learning your password on all layouts you're using!
+
+• There are a couple of pkl###.ini files in my download, for Wide/nonWide setups and suchlike. Have a look at them, and rename the one that suits you to 'pkl.ini'.
+• The file formats (pkl.ini and layout.ini files) are understandable and commented, but not always simple. Proper documentation, unfortunately, doesn't exist yet.
+
+
+[h][4.2]    PKL TIPS AND TRICKS[/h]
+• PKL settings are in the pkl.ini file in the PKL folder, and layout info/settings in the layout.ini file in your chosen layout folder
+• You can adjust the size of the help images in the layout.ini file; I've included a few options but anything goes really
+    - My help images have a native resolution of 90 dpi which makes them 812×282 pixels
+    - If you want smaller images you could use for instance 2/3 or 1/2 of that in both directions
+• If you want to use the CapsLock key for something else or use another key for your Extend modifier:
+    – Change the value of the 'extend_key =' line in layout.ini
+    – You'll have to use the "enumerated" names for keys, such as 'BACK' for Backspace...
+    – ...or a scan code such as 'sc00e'.
+    – Check the file for more names and info.
+• To disable the Extend key, set its value to 'disabled'.
+    – This should work for any other key you wish to remove too.
+• If, say, you want a Colemak-style Backspace key on your CapsLock, change its mapping:
+    – Change the value of the active 'CapsLock =' line in layout.ini to 'BACK    VirtualKey'.
+    – Remove the rest of the line or add a semicolon after the value above.
+    – If you want PKL to ignore a key instead, just put a semicolon before or delete that line.
+    – Make sure you also turn off CapsLock as Extend as described above.

@@ -1,0 +1,84 @@
+[h]TARMAK FOR CURL(DH)ANGLE ERGO MODDED COLEMAK[/h]
+
+    [img]https://www.dropbox.com/s/auaprjtyzkdpa85/TarmakCurl-ISO_SpectralAnimation-48d.gif?dl=1[/img]
+
+
+The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to better positions for people who dislike the "middle trench" positions ([i]QWERTY[/i] GH) and feel that this part of the home row doesn't feel quite like home after all! See my [b][url=http://goo.gl/IKR3j]Big Bag topic[/url][/b] or [user]stevep99[/user]'s [url=https://colemakmods.github.io/mod-dh/]DH-mod pages on GitHub[/url] for more info.
+
+Keep your hands at home position ([i]QWERTY[/i] ASDF JKL;) and stretch inwards then down. Which is more comfortable?
+    • If you like the inwards stretches ([i]QWE[/i] GH) best, ignore Curl. (Or, try again while keeping your wrists straight as they should ideally be!)
+    • If you like the downward curls ([i]QWE[/i] CM) best, consider Curl(DH)!
+
+Curl mods require an Angle mod (see above) to work.
+
+In May 2017, [user]SteveP99[/user] and the other Curl users agreed on one common Curl(DH) mod, consisting of
+    • an MK switch from the old "mod-DH" a.k.a. the Curl(DvbgHm) mod, or
+    • DV and HM switches from my old Curl(DbgHk) mod.
+
+
+[b]Tarmak-Curl(DH) on ISO/"World" keyboards:[/b]
+
+    [img]https://www.dropbox.com/s/n43eixm08pp0m5y/Tarmak-ETROI_Spectral_Curl.png?dl=1[/img]
+    [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH) mod on an ISO keyboard.[/i]
+ 
+Here's the Tarmak steps with the unified Curl(DH) mod, shown on an ISO keyboard:
+
+[quote=Tarmak-CurlAngle(ISO)]
+
+[b]1a)[/b] The [b]E[/b]>K>[b]N[/b]>(J) "most essential" loop, fixing the important E (and N)
+    [img]https://www.dropbox.com/s/iob5kby7umjzo64/Tarmak1_E_Spect.png?dl=1[/img]    [i]Tarmak1(E) "vanilla"[/i]
+
+[b]1b)[/b] The [b]H[/b]>M>K Curl(H) mod (by default combined with step 1a)
+    [img]https://www.dropbox.com/s/mtncpm7p6dfo48h/TarmakCurl1_E_Spect.png?dl=1[/img]    [i]Tarmak1(E)-Curl[/i]
+
+[b]2a)[/b] The Angle (B>C>X>Z>_) mod, in preparation for Tarmak2-Curl
+    [img]https://www.dropbox.com/s/pfgbnrb36g34tpz/TarmakCurl1b_E-CAngle_Spect.png?dl=1[/img]    [i]Tarmak1(E)-CurlAngle(ISO)[/i]
+
+[b]2b)[/b] The (J)>B>[b]T[/b]>F loop, bringing the important T into place – with the Curl mod
+    [img]https://www.dropbox.com/s/m10g2mzfi0y438u/TarmakCurl2_T_Spect.png?dl=1[/img]    [i]Tarmak2(ET)-Curl[/i]
+
+[b]3)[/b] The (J)>[b]R[/b]>[b]S[/b]>[b]D[/b] loop, getting RSD into place – all of which are relatively frequent!
+    [img]https://www.dropbox.com/s/25jf2k2tki1ua9k/TarmakCurl3_R_Spect.png?dl=1[/img]    [i]Tarmak3(ETR)-Curl[/i]
+
+[b]4)[/b] The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
+    [img]https://www.dropbox.com/s/grjoj7rhrq2qnu1/TarmakCurl4_O_Spect.png?dl=1[/img]    [i]Tarmak4(ETRO)-Curl[/i]
+
+[b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak-Curl(DH)!
+    [img]https://www.dropbox.com/s/478np39um0lxtuw/TarmakCurl5_I_Spect.png?dl=1[/img]    [i]Colemak-Curl(DH)[/i]
+[/quote]
+
+I've split steps 1 and 2 above for clarity. But if you're the careful type you may choose to split them in practice too:
+
+The full Tarmak1-Curl step is a big one which may be scary if you're new to layout switches. If that is the case, consider taking on the normal Tarmak1 step first! The K key will be wrongly placed for the Curl mod, but it's a quite rare key so it shouldn't hurt too much, allowing for a baby-step approach. (In fact, you might then postpone the Hmk switch to whenever you like in the progression, but for sanity's sake I've put it in step 1.)
+
+Similarly, if it seems that a lot is happening in the Tarmak2-Curl step then you may try tackling only the CurlAngle mod (_ZXCVB?XCBV_ in this case) first. In this case, the B gets temporarily misplaced. Several implementations allow you to select the CurlAngle mod separately.
+
+
+[b]Tarmak-Curl(DH) on ANSI/US keyboards:[/b]
+
+For ANSI/US keyboards, you have to choose an ANSI-Angle mod as these boards don't have the extra key between Z and LShift. The most common one is Angle(Z), which moves Z into the middle where the B used to be as XC move to the left. The Curl mod then arranges B and D as usual:
+
+    [img]https://www.dropbox.com/s/06r0sp6iv90bywf/Tarmak-ETROI_Spectral_Curl-Z-Angle.png?dl=1[/img]
+    [i]Spectrally color-coded Tarmak(ETROI) with the CurlAngle(Z) ANSI/US mod.[/i]
+ 
+So again, here's the Tarmak steps with the unified Curl(DH) mod, on an ANSI keyboard with the Angle(Z) mod:
+
+[quote=Tarmak-CurlAngle(ANSI-Z)]
+
+[b]1)[/b] The [b]E[/b]>K>[b]H[/b]>M>[b]N[/b]>(J) "most essential" loop, fixing the important E (as well as H and N)
+    [img]https://www.dropbox.com/s/qejlzlx6d8asd2j/TarmakCurl1_E_Spect.png?dl=1[/img]    [i]Tarmak1(E)-Curl[/i]
+
+[b]2)[/b] The (J)>B>C>X>Z>[b]T[/b]>F loop, bringing the important T into place – with the Curl and Angle(Z) mods
+    [img]https://www.dropbox.com/s/0lu7fcxsm40fx6l/TarmakCurl2_T_Spect.png?dl=1[/img]    [i]Tarmak2(ET)-Curl[/i]
+
+[b]3)[/b] The (J)>[b]R[/b]>[b]S[/b]>[b]D[/b] loop, getting RSD into place – all of which are relatively frequent!
+    [img]https://www.dropbox.com/s/jl35tceordca79v/TarmakCurl3_R_Spect.png?dl=1[/img]    [i]Tarmak3(ETR)-Curl[/i]
+
+[b]4)[/b] The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
+    [img]https://www.dropbox.com/s/lbvejub6sc97f1g/TarmakCurl4_O_Spect.png?dl=1[/img]    [i]Tarmak4(ETRO)-Curl[/i]
+
+[b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak-Curl(DH)!
+    [img]https://www.dropbox.com/s/t0hzydsdmggmo9a/TarmakCurl5_I_Spect.png?dl=1[/img]    [i]Colemak-Curl(DH)[/i]
+[/quote]
+
+All these Tarmak-Curl transitions are found in my Big Bag implementations – see the various implementation topics.
