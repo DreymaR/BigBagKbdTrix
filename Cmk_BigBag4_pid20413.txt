@@ -1,0 +1,70 @@
+[h][4]    [u]Other Typing Tricks[/u][/h]
+[h][4.1]    HARDWARE USB-2-USB REMAPPING DEVICES (QUICKIE)[/h]
+
+I've decided to call this kind of device a QUICKIE (QWERTY USB In, Colemak Key Input Emulated)! :-) A more proper name for it would be "USB-to-USB remapping device".
+
+For more info, see the [b][url=https://forum.colemak.com/topic/2158-dreymars-big-bag-of-keyboard-tricks-usb2usb-edition/]Big Bag of Tricks topic – USB2USB edition[/url][/b]!
+
+A very interesting XKB/Win/Mac-independent trick. A USB-to-USB device that plugs between the keyboard and whatever you're connecting your keyboard to, provides an OS independent solution that can accommodate many of my tricks! For people having to deal with zealous IT security rules, this may be the only solution short of getting an expensive remappable keyboard. It could let you type Colemak to, say, a PlayStation. And it could be fun to make one yourself if you're adventurous and DIY oriented!
+
+It'll remap only key strokes so basic layout and ergo mods such as Colemak-CurlAngleWide(+Extend) are possible, but not AltGr or dead key mods such as Colemak[eD].
+
+The safest and easiest option may be to order the brilliant [url=https://geekhack.org/index.php?topic=69169.0]USB to USB Converter from GeekHack user Hasu[/url], who has also developed the TMK software for converting keyboards to more awesome keyboards. I provide TMK files in the USB-2-USB Big Bag topic.
+
+    [img]https://www.dropbox.com/s/jf1auju0b8fdixp/USB2USB-Hasu_GeekHack-Topic69169_GadOE.jpg?dl=1[/img]
+    [i]Hasu's [url=https://geekhack.org/index.php?topic=69169.0]USB to USB Converter for TMK Key mapping[/url][/i]
+
+
+[h][4.2]    "COLEMAKOID" MESSAGEASE LAYOUT FOR TOUCH SCREEN TYPING[/h]
+
+As mentioned, this is mainly for touch screen devices (Android/Apple/etc) and as such I'll only mention it briefly here. In the [url=https://forum.colemak.com/viewtopic.php?pid=15468#p15468]Colemakoid MessagEase layout topic[/url] you can read more about this wonderful touch screen "keyboard" and my preferred settings for it. Highly recommended for your touch devices!
+
+    [img]https://www.dropbox.com/s/4mqgxd8ih69q3i5/MessagEase_KbdEx_DreymaR_Colemakoid.png?dl=1[/img]
+    [i]My "Colemakoid" drag mappings for the MessagEase touch screen keyboard (shown with my "subtle" color scheme)[/i]
+
+
+[h][4.3]    AMPHETYPE[/h]
+
+[b][url=https://github.com/webiest/amphetype]Amphetype[/url][/b] is a cross-platform, layout agnostic typing program written by user [user]tristesse[/user]. I think it's very nice for typing texts, analyzing weaknesses and generating lessons. Check it out directly or from [b][url=https://forum.colemak.com/topic/2201-training-with-amphetype/]my Amphetype topic[/url][/b].
+
+
+    [img]https://www.dropbox.com/s/vl81fnybu2ehj0d/Amphetype_1-Typer.png?dl=1[/img]
+    [i]Amphetype about to start a book text session (from [url=https://www.gutenberg.org/files/22381/22381-h/22381-h.htm]Berens' Greek/Roman mythology[/url])[/i]
+
+
+[h][4.4]    THE TYPING OF THE DEAD[/h]
+
+This is a weird and wonderful thing: The rail shooter House Of The Dead converted into a typing game! Heh. So much fun.
+
+The conversion is quite faithful, but with extra silly elements added – particularly in the first game. Zombies will often throw or wield kitchen utensils instead of knives and axes, and the main characters have a SEGA Dreamcast console with a huge cell battery strapped on their back as well as a SEGA keyboard before them.
+
+The original is still lying about and considered abandonware, so if you're interested you may give it a spin of the barrel. The original's drills can be downright handy for practising a particular aspect of your typing. There are exercises focused on typing speed, accuracy, reaction and special keys. There's even a typing tutorial (QWERTY-based but still useful). I haven't had much trouble running it, but I had to disable my second screen. I ran it in 16-bit color but I don't think that's necessary.
+
+    [img]https://www.dropbox.com/s/xqgrkm7hkkxoex6/TTotD-1_Tower.jpg?dl=1[/img]
+    [i]In [b]The Typing Of The Dead[/b], you'll meet various challenges such as the Tower boss. Type in the right answer to defeat it.[/i]
+
+
+The second installment, [b]Typing Of The Dead: Overkill[/b] is available on Steam, optionally bundled with several add-on dictionaries. It has more shine, but only three extra minigame modes. And I have a feeling that it's managed the nigh-impossible task of being even cheesier than the original. Beware! ;-)
+
+    [img]https://www.dropbox.com/s/gsshmq89z493or0/TTotD-Overkill_Shakespeare.jpg?dl=1[/img]
+    [i][b]The Typing Of The Dead: Overkill[/b] has hi-res sound & graphics, and custom dictionaries such as this Shakespeare one![/i]
+
+
+For the record: I like both! The original is what I'll go to for typing training, though.
+
+More info and downloads through these links:
+[b][url=http://www.theisozone.com/downloads/pc/windows-games/the-typing-of-the-dead-pc/]The Typing Of The Dead[/url][/b] (PC version)
+[b][url=http://store.steampowered.com/app/246580/]The Typing Of The Dead: Overkill[/url][/b] (Steam)
+
+
+[h][4.5]    PHYSICAL KEYBOARD MODDING[/h]
+
+You don't need special hardware to use a special layout. On my laptop I blind type happily away using Colemak-CAW and the only change I've made is to scratch the N (QWERTY K) key a little to aid homing since I have a Wide ergo mod. But some will want the visual to match the experience. And naturally, many layout enthusiasts are also keyboard hardware enthusiasts!
+
+These days, there are many many options to buy or make a keyboard to your liking. I have an old and somewhat dated [b][url=https://forum.colemak.com/topic/188-make-your-own-physical-colemak-board/]physical board modding[/url][/b] topic where you may pick up some ideas, but you may also want to search around for newer topics.
+
+I also suggest checking out the [b][url=https://deskthority.net/wiki/Main_Page]Deskthority.net[/url][/b] Wiki and the [b][url=https://geekhack.org/]GeekHack.org[/url][/b] forums as they are great founts of knowledge and opinions on most things keyboard. Especially mechanical switches, but lots of other things too.
+
+
+    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?dl=1[/img]
+    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]

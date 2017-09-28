@@ -1,0 +1,71 @@
+[h][2]    [u]Ergonomic Key Remappings[/u][/h]
+[h][2.1]    THE ANGLE/WIDE ERGONOMIC KEYBOARD MODEL MODS[/h]
+
+See for instance [url=https://forum.colemak.com/viewtopic.php?id=839&p=2]this topic by cevgar on Wide mods[/url], and [url=https://forum.colemak.com/viewtopic.php?pid=1685#p1685]this topic by me on Angle mods[/url].
+
+Some have noted that these mods can really open up, say, a cramped notebook keyboard so much that it feels "bigger on the inside"! So maybe this slogan is suitable? ;-)
+[b][url=https://en.wikipedia.org/wiki/TARDIS]Typing Advancement: Row Displacement Increases Spaciousness (T.A.R.D.I.S.)[/url][/b]
+(Although technically, for the most part these mods displace half-rows. Bear with me.)
+
+These are ergonomic mods, moving some keys around to achieve straight wrists (the Angle mods), as well as better hand separation and right pinky load (the Wide mods). The Angle part is almost a no-brainer to me as it allows the left hand to keep a straight wrist without changing the fingering on ZXCV, and makes B easier to reach. Colemak creator [user]Shai[/user] himself has given his "blessing" to this mod! The Wide mod is more optional, but it does put some load off the right-hand pinky, widen the arm distance (useful for small keyboards in particular, but nice regardless), and provide easier access to AltGr/Enter/Backspace/RShift.
+
+With a 102/105-key ISO keyboard the Angle mod is very smooth indeed, and I strongly recommend at least an Angle shift if you have an ISO keyboard! The US/ANSI solution is either to move the Z to the middle which is somewhat more dramatic, or to split the bottom row while shifting all the others to the right in a manouevre known as the 'A-Wing' (see below). Both have their points, so I really don't know which is better although all ANSI Angle modders I've heard of are using Angle(Z). With A-Wing, you'll not get the "wide" experience, and increased distance to Tab and LShift. With Angle(Z) and straight wrists, hitting LShift is actually rather nice!
+
+When I use these I like to move the key caps around and make the change global - my family actually don't seem to mind as the changes are fairly intuitive and unintrusive, leastways for the run-of-the-mill keyboard user who looks at symbol key caps to find them. I got used to the changes quickly, too. But you can implement the change on a per-user basis if you wish. (If you do, take care with your logon dialogs and passwords!)
+
+    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
+    [i]The AngleWide-Slash wide ergo mod for PC105/ISO keyboards.[/i]
+
+     [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?dl=1[/img]
+     [i]The Angle(Z)Wide ergo mod for PC104/ANSI keyboards[/i]
+
+     [img]https://www.dropbox.com/s/txebhgrvefdi7wj/Cmk-ANSI-AWing_60d_FShui.png?dl=1[/img]
+     [i]The "A-Wing" ergo mod for PC104/ANSI keyboards[/i]
+
+"There is another." I haven't implemented this ANSI Angle mod, but I will at least mention it. The trick is moving Z to the LShift key! LShift then needs a new home which should be better than the old B position. One solution is to move LShift to the Alt key and put Alt on the old B key. But this means moving modifiers around, so I'm a bit wary of it. Also, a fat Z key looks a bit odd, but if it works for you then all's fine! User [user]stevep99[/user] has [url=http://colemakmods.github.io/ergonomic-mods/angle.html]some neat pages on layout mods where he lists this one[/url].
+
+[b][i]Other names:[/i][/b]
+Many of these mods have been discussed under other names. So if you come across older posts here's a key to what we've been discussing:
+• AngleWide is often abbreviated as AWide, and CurlAngleWide as CAW.
+• The Curl(DH) mods have somewhat arcane longer names (DH=DvbgHmk, DHm=DvbgHm and DvH=DbgHk) which describe and distinguish them.
+• I've named Wide mods after which key they put in the old Right Bracket position; as such, the one I use is AWide(/), AWide-Slash or Awide(35) mod.
+• The A-Wing angle mod has been called Angle-Frame, A-Frame or AngleWing.
+• I don't know any snappy names for the fat-Z mod. Well, except for Fat-Z which is kind of cool. ;-)
+
+
+[h][2.2]    THE "CURL(DH)" COLEMAK ERGO MOD[/h]
+
+See [user]stevep99[/user]'s [b][url=https://colemakmods.github.io/mod-dh/]Colemakmods page[/url][/b], as well as the [url=https://forum.colemak.com/viewtopic.php?id=1942]main Colemak Mod-DH topic[/url] and links therein. Also, note [url=https://forum.colemak.com/viewtopic.php?pid=16151#p16151]my review of the Curl mods[/url]. Note, however, that we've since then agreed on [url=https://forum.colemak.com/post/19723/#p19723]one common Curl(DH) mod[/url].
+
+
+    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
+    [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
+
+The point of the Curl ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
+
+The Curl mod has a few variants in addition to the standard one, notably Steve's original [i]DHm (DvbgHm)[/i] mod which swaps the Colemak(Angle) D–V and H–M positions but leaves the K alone, and my old [i]DvH (DbgHk)[/i] which instead swaps D–B and H–K while letting the M stay unchanged. The DHm mod is probably better if you have a non-staggered matrix board. I made the DvH mod to be less radical and intrusive as it doesn't move the V and M keys (apart from the Angle mod moving V with ZXC). However, I have now moved on to [i]Curl-DH (DvbgHmk)[/i], in the name of unity and goodness. And I shall henceforth name it [i]the[/i] [b]Curl(DH)[/b] mod.
+
+The Colemak Curl mod also puts the G key back to its old QWERTY position which more than offsets moving the less frequently used B. On the right hand side, at least one more key has to be moved compared to standard Colemak; the default mod moves two. But this cost returns a larger gain, as H moves to a better position.
+
+If you type a lot in a language in which L is more common than H (including [url=http://letterfrequency.org/]several latin and Nordic languages[/url]), it [i]may[/i] be worth considering a further tweak in which L is moved down to the better position on the lower row and H gets whatever position you deem second-best. There have also been mod proposals for the Dutch who need a better J position. You'd have to implement these yourself for now.
+
+The Curl mod depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and [url=https://forum.colemak.com/viewtopic.php?pid=16393#p16393]tweak the 2nd Tarmak step a little[/url]. The right-hand mod (Hmk, Hm or Hk) may be learnt whenever you feel like it as it's mostly separate from the rest of the layout from Tarmak1 onwards.
+
+    [img]https://www.dropbox.com/s/y01ux6xoxg7i64a/Cmk-pos-CurlDH-ISO_90d.png?dl=1[/img]
+    [i]My personal assessment of key position goodness (from green via blue to purple), using a straight-wrist, relaxed-fingers hand position.[/i]
+    
+
+I've dubbed my CurlAngleWide modded Colemak a [ins][b]Colemak-CAW[/b][/ins]! It's a Colemak at heart, but sufficiently modded that I wanted a snappy name for it. And yes, that's also a tip-of-the-hat to Billy Macaw in CATS. ;-)
+
+
+[h][2.3]    MODIFIER MODNESS (Work In Progress)[/h]
+
+We've already encountered a modfied modifier above: The Extend key, which is usually the mostly unused CapsLock being put to far better use. In "vanilla" Colemak, this key is modded to a second Backspace.
+
+In the Linux world, it's quite common to shuffle around the modifiers a bit. Caps can become Control, Esc or something else for instance.
+
+[user]SteveP99[/user] is a big fan of remapping in particular the Alt keys, since they're thumb keys which can be very ergonomic. He likes to put Extend and/or Shift on those keys. See his [b][url=http://colemakmods.github.io/ergonomic-mods/modifiers.html]GitHub pages on ergonomic mods[/url][/b] for more info.
+
+I'm a little wary of modifier modding myself, as it can be hard to implement reliably across platforms. Sometimes keys don't play well together, possibly because of hardware limitations in the scan matrix of cheaper keyboards and possibly because an OS (or Java/Flash/etc) can get confused when a non-modifier key becomes one. I've had my share of troubles with the Extend-modifier keys (Ext+A/S/T for Alt/Shift/Ctrl). Another issue is the differences between keyboards when it comes to the position of particularly the Right Alt key, making it very convenient on some boards but not on others. I do believe you should use a keyboard with a good RAlt position. Note that the Wide mod helps a bit with that.
+
+Another modifier mod is [b]Sticky Shift[/b]. With this mod, which is available out-of-the-box in many OSes, you can tap a Shift (or Ctrl) key and then another key to released a shifted (or control) character. It's used by some of the fastest typists because with a chording Shift there's a higher risk of getting DOuble CApitals at high speeds. I find it quite pleasant to use.

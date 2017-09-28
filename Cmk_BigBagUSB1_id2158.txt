@@ -1,8 +1,41 @@
-[h]DREYMAR'S (USB++): DreymaR's Extensive Yet Modular ARSenal (for QUICKIE USB-2-USB & other TMK devices)[/h]
-
-This topic is the younger sister topic of the [b][url=https://forum.colemak.com/viewtopic.php?id=1438]Bag Of Tricks for XKB on Linux[/url][/b] (the main one) and [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Bag Of Tricks for PKL on Windows[/url][/b]. It covers many of the same improvements, but see the other two topics for more info and explanations of what the tricks are for.
+[h]DREYMAR'S (USB++): DreymaR's Extensive Yet Modular ARSenal – for QUICKIE USB-2-USB & other TMK devices[/h]
 
     [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?dl=1[/img]
+
+
+There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
+
+I also have topics focusing on different implementations of the Big Bag Of Keyboard Tricks:
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag (XKB) for Linux[/url][/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag (PKL) for Windows[/url][/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for USB-2-USB remapping "QUICKIE" devices[/url][/b] [b]– you are here![/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Big Bag (Mac) for Karabinier[/url][/b] by [user]mkborregaard[/user]
+
+
+[h]DREYMAR'S BIG BAG OF TRICKS for QUICKIE USB-2-USB devices[/h]
+
+[i]WARNING - Some Assembly May Be Required (if you want a specific locale/ergo variant for instance)[/i]
+
+[b][1]    [u]Character/Key Mapping Layers[/u][/b]
+[b][1.1][/b] (A note about AltGr and dead key mappings such as Colemak[eD])
+[b][1.2][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend layers[/url][/b] using Caps Lock (and Tab) as switch modifier(s) for navigation/editing/browsing/etc from near the home position
+
+[b][2]    [u]Ergonomic Key Remappings[/u][/b]
+[b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
+[b][2.2][/b] [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
+
+[b][3]    [u]Other Layouts[/u][/b]
+[b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
+[b][3.2][/b] (Locale and phonetic layout variants)
+[b][3.3][/b] [b]Mirrored Colemak[/b] that allows one-handed typing without extra learning
+
+[b][4]    [u]Download and Setup[/u][/b]
+[b][4.1][/b] [b][url=https://forum.colemak.com/post/18407/#p18407]Download and Install[/url][/b]
+[b][4.2][/b] [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/url][/b]
+[b][4.3][/b] [b][url=https://forum.colemak.com/post/18411/#p18411]Device Flashing[/url][/b]
+[b][4.4][/b] [b]Hardware Implementations[/b]
+
+[b][–.–][/b] [b]Links/Done/Todo[/b]
 
 
 This post explains what a [b]QUICKIE USB-2-USB device[/b] is, and what I've managed to implement on [b][url=https://geekhack.org/index.php?topic=69169.0]Hasu's USB to USB keyboard converter[/url][/b] using his [b][url=https://github.com/tmk/tmk_keyboard]TMK Keyboard Firmware Collection[/url][/b] toolkit. If you're eager to get started before reading the details, you may jump directly to the [b][url=https://forum.colemak.com/post/18407/#p18407]Download and Install[/url][/b], [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/url][/b] and [b][url=https://forum.colemak.com/post/18411/#p18411]Device Flashing[/url][/b] posts below.
@@ -25,31 +58,7 @@ There are several possible ways of programming a USB-2-USB device. Essentially y
 [b]3)[/b] [b]Flash[/b] the .hex file to the device's static memory
 [b]4)[/b] [b]Reset[/b] the device (or just unplug and replug it) to reactivate application mode so it works
 
-
-[h]DREYMAR'S BIG BAG OF TRICKS for QUICKIE USB-2-USB devices:[/h]
-
-[b]        [u]Character/Key Mapping Layers:[/u][/b]
-[b][1.1][/b] (A note about AltGr and dead key mappings such as Colemak[eD])
-[b][1.2][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend layers[/url][/b] using Caps Lock (and Tab) as switch modifier(s) for navigation/editing/browsing/etc from near the home position
-
-[b]        [u]Ergonomic Key Remappings:[/u][/b]
-[b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2][/b] [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
-
-[b]        [u]Other Layouts:[/u][/b]
-[b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
-[b][3.2][/b] (Locale and phonetic layout variants)
-[b][3.3][/b] [b]Mirrored Colemak[/b] that allows one-handed typing without extra learning
-
-[b]        [u]Download and Setup:[/u][/b]
-[b][4.1][/b] [b][url=https://forum.colemak.com/post/18407/#p18407]Download and Install[/url][/b] (separate post)
-[b][4.2][/b] [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/url][/b] (––––"––––)
-[b][4.3][/b] [b][url=https://forum.colemak.com/post/18411/#p18411]Device Flashing[/url][/b] (––––"––––)
-[b][4.4][/b] [b]Hardware Implementations[/b]
-
-[b][–.–][/b] [b]Links/Done/Todo[/b]
-
-An advantage with my TMK-based implementation is that you can pick and choose most of the enhancements as modules:
+An advantage of my TMK-based implementation is that you can pick and choose most of the enhancements as modules:
 • The AngleWide mods are keymap types so they work with any layout you choose, including QWERTY or Dvorak
 • The Extend layers and switch keys are options that should work with nearly any existing layout
 • The Curl mods for Colemak layouts use a separate switch (together with CurlAngle keymaps)
@@ -57,6 +66,7 @@ An advantage with my TMK-based implementation is that you can pick and choose mo
 Freedom of choice through [b]modularity[/b] is an ideal in the DreymaR world, as it is in Linux. :-)
 
 
+[h][1]    [u]Character/Key Mapping Layers[/u][/h]
 [s][h][1.1]    COLEMAK[eD] - EDITION DREYMAR[/h][/s]
 
 A USB-2-USB device remaps only key strokes, not character input events. So key mods like layout and ergo remappings are possible, but not mods that send glyphs. Your dead keys and AltGr mappings will work as they do without the device, and you may only move their keys around as they are.
@@ -122,6 +132,7 @@ For the NumPad layer, remember that the NumLock state influences what you get. T
 [b]NOTE: Superstacking Extend modifiers didn't work for me.[/b] Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Others didn't have this problem...?
 
 
+[h][2]    [u]Ergonomic Key Remappings[/u][/h]
 [h][2.1]    THE ANGLE/WIDE ERGONOMIC KEYBOARD MODEL MODS[/h]
 
 These are ergonomic mods, moving some keys around to achieve straight wrists (the Angle mods), as well as better hand separation and right pinky load (the Wide mods). The Angle part is almost a no-brainer to me as it allows the left hand to keep a straight wrist without changing the fingering on ZXCV, and makes B easier to reach. [url=https://forum.colemak.com/profile.php?id=2]Shai Coleman[/url] himself has given his "blessing" to this mod! The Wide mod is more optional, but it does put some load off the right-hand pinky, widen the arm distance (useful for small keyboards in particular, but nice regardless), and provide easier access to AltGr/Enter/Backspace/RShift.
@@ -160,7 +171,7 @@ The actual keymap types are in the keymap_common_dreymar.h file and they're hard
 The Curl(DH) ergo mods make the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row V/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
 
     [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
-    [i]The Colemak Curl(DH)Angle ergo modded layout.[/i]
+    [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
 The old "DHm" (DvbgHm) variant which doesn't move K from its Colemak position, may be better for non-staggered matrix boards, but it's debated. If you switch between staggered and non-staggered boards you'll probably want to use the standard Curl(DH) consistently.
 
@@ -179,6 +190,7 @@ To use Curl mods with my TMK files, there's a preprocessor switch named CURLMOD:
 This switch only affects Colemak layouts, including the four Tarmak layouts and Mirrored Colemak. Make sure you use a CurlAngle or CurlAngleWide keymap type such as [i]UNIMAP_AWIZXCBV[/i] with it (optional for Tarmak1).
 
 
+[h][3]    [u]Other Layouts[/u][/h]
 [h][3.1]    THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
 
 There's [url=https://forum.colemak.com/viewtopic.php?id=1858]a main forum topic on this[/url] that you may want to read. Basically, I've added four Tarmak layouts that provide stepping stones from the standard (US) English QWERTY layout to the Colemak[eD] layout by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the uncommon J is misplaced in the process.
@@ -251,16 +263,14 @@ Then, you may choose whether the switch key should be a normal Shift-type (switc
 Tip: Sticky Shift and Ctrl could be useful for one-handed typing! See the STICKYMODS setting.
 
 
+[h][4]    [u]Download and Setup[/u][/h]
 [h][4.1]    DOWNLOAD AND INSTALL[/h]
-
 There's a separate [b][url=https://forum.colemak.com/post/18407/#p18407]Download and Install[/url][/b] post below. It shows how to get and install my files, and also how to prepare the device in bootloader mode.
 
 [h][4.2]    KEYMAP CONFIGURATION[/h]
-
 There's a separate [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/url][/b] post below. It shows how to get or tweak/make a HEX file that suits your layout needs.
 
 [h][4.3]    DEVICE FLASHING[/h]
-
 There's a separate [b][url=https://forum.colemak.com/post/18411/#p18411]Device Flashing[/url][/b] post below. It shows how to load a HEX file into your USB-2-USB device and get it ready for typing.
 
 

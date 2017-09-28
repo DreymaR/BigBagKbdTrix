@@ -1,26 +1,31 @@
-[h]DREYMAR'S (PKL Win): DreymaR's Extensive Yet Modular ARSenal (for Portable Keyboard Layout on Windows)[/h]
-
-[i]WARNING - Some Assembly May Be Required (if you want a specific locale/ergo variant for instance)[/i]
-
-[b]NOTE:[/b] This is the sister topic to my main [b][url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url][/b] topic where I discuss the modifications below in detail along with their implementation into Linux (XKB for the X.Org server). In this topic the focus is on PKL implementations of the same "tricks". For a more detailed presentation of any of the topics below, please go to the main Big Bag topic. And bear with me for fleshing the Linux topic more out than the Windows one - it's really not about turf wars but about my editing capacity.
-
-Note that there are also Big Bag implementation topics for hardware [b][url=https://forum.colemak.com/viewtopic.php?id=2158]USB-2-USB remapping devices (QUICKIE)[/url][/b] and one by user [user]mkborregaard[/user] with [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Mac implementations of several Big Bag tricks[/url][/b].
+[h]DREYMAR'S (PKL/Win): DreymaR's Extensive Yet Modular ARSenal – for Portable Keyboard Layout on Windows[/h]
 
     [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?dl=1[/img]
 
 
-My personal Colemak arsenal for PKL/Win now includes several other enhancements (again, also see the main topic linked to above):
+There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
 
-[b]        [u]Character/Key Mapping Layers:[/u][/b]
+I also have topics focusing on different implementations of the Big Bag Of Keyboard Tricks:
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag (XKB) for Linux[/url][/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag (PKL) for Windows[/url][/b] [b]– you are here![/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for USB-2-USB remapping "QUICKIE" devices[/url][/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Big Bag (Mac) for Karabinier[/url][/b] by [user]mkborregaard[/user]
+
+
+[h]DREYMAR'S BIG BAG OF TRICKS for WINDOWS/PKL[/h]
+
+[i]WARNING - Some Assembly May Be Required (if you want a specific locale/ergo variant for instance)[/i]
+
+[b][1]    [u]Character/Key Mapping Layers[/u][/b]
 [b][1.1][/b] My [b][url=https://forum.colemak.com/viewtopic.php?id=1280]Colemak[eD][/url] AltGr mappings[/b] (lv3–4; dead keys on symbol keys etc)
 [b][1.2][/b] An [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend layer[/url][/b] using Caps Lock as a switch modifier for navigation/editing/browsing/etc from near the home position
 [b][1.3][/b] Several [b]Dead key enhancements[/b] giving access to lots of glyphs (presently for Windows/PKL only)
 
-[b]        [u]Ergonomic Key Remappings:[/u][/b]
+[b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
 [b][2.2]†[/b] The [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
 
-[b]        [u]Other Layouts:[/u][/b]
+[b][3]    [u]Other Layouts[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
 [b][3.2]†[/b] For several [b][url=https://forum.colemak.com/viewtopic.php?id=1458]locales/scripts[/url][/b]:
             • A '[b]Unified Symbols[/b]' layout with only a few necessary changes from standard Colemak[eD]
@@ -28,7 +33,7 @@ My personal Colemak arsenal for PKL/Win now includes several other enhancements 
             • Intuitive [b]Colemak phonetic layouts[/b] to write other scripts like Cyrillic, Greek and Hebrew (e.g., using a toggle switch key)
 [b][3.3][/b] [b]Mirrored Colemak[/b] that allows one-handed typing without extra learning
 
-[b]        [u][url=https://forum.colemak.com/post/10279/#p10279]Download and Setup:[/url][/u][/b]
+[b][4]    [u][url=https://forum.colemak.com/post/10279/#p10279]Download and Setup[/url][/u][/b]
 [b][4.1][/b] [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]Download and Install[/url][/b] files for PortableKeyboardLayout (PKL) for Windows
 [b][4.2][/b] [b]PKL Tips and Tricks[/b]
 
@@ -36,9 +41,10 @@ My personal Colemak arsenal for PKL/Win now includes several other enhancements 
 
 [b]†:[/b] For the most part, these files are not premade for Win/PKL (yet) due to the non-modular nature of PKL files.
 
-I use Farkas Máté's excellent [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[/url] ('PKL') to achieve most of the above for Windows.
+I use Farkas Máté's [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[/url] ('PKL') to achieve most of the above for Windows. It's included in my download below.
 
 
+[h][1]    [u]Character/Key Mapping Layers[/u][/h]
 [h][1.1]    COLEMAK[eD] - EDITION DREYMAR[/h]
 
 My PKL layout.ini file (see links to downloads below) largely corresponds to its XKB counterpart when it comes to the lv3-4(AltGr) mappings. Note that since the Angle/Wide mods aren't modular in PKL I can't deliver all combinations of layout and ergo mod - I myself use both the Colemak[eD] mappings for Norwegian and the AngleWide-Slash/35 mod so that'll be there. I've also included a few others such as the non-Wide standard Colemak[eD] and a bunch of 'virtualkey' layouts that don't have separate lv3-4 mappings. Feel free to add your own; ask if you need help.
@@ -128,6 +134,7 @@ There are 19 dead keys in my pkl layout right now. The common accents are there,
 Note that the dead keys interact in clever ways: Ring then 'angle' will produce 'arced angle', Tilde with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in will usually matter: Start with the modifier(s) (such as dead_stroke for "not") then the symbol-producing key (such as dead_maths and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the layout.ini files, but logic will take you far too.
 
 
+[h][2]    [u]Ergonomic Key Remappings[/u][/h]
 [h][2.1]    THE ANGLE/WIDE ERGONOMIC KEYBOARD MODS[/h]
 
 The Angle/Wide ergonomic mods have to be shoehorned into PKL, I'm afraid, as it has no modularity separating key codes from symbols. So I've made edits in the layout.ini file for my Wide mod and also had to make corresponding edits in the pkl.ini [extend] section to make it come together. You could then install both Wide and nonWide layouts and switch between them, but the Extend mappings would only be right for one or the other. And changing stuff is a bit hard. Maybe that's okay with you though.
@@ -147,13 +154,12 @@ The Curl(DH) ergo mod makes the home "row" curl like a relaxed hand does instead
 I've got some optional mappings in some of the layouts (such as the AngleWide-ISO and AngleWide-No ones) that you may activate by uncommenting their lines and commenting out the original lines. Not very official, yet...
 
     [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
-    [i]The Colemak Curl(DH)Angle ergo modded layout.[/i]
+    [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
 There are special Tarmak steps to learn the Colemak-Curl(DH) gradually should you want to. See below.
 
-I've dubbed my CurlAngleWide modded Colemak a [ins][b]Colemak-CAW[/b][/ins]! It's a Colemak at heart, but sufficiently modded that I wanted a snappy name for it. It's also a tip-of-the-hat to Billy MacCaw in CATS! ;-)
 
-
+[h][3]    [u]Other Layouts[/u][/h]
 [h][3.1]    THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
 
 There's [url=https://forum.colemak.com/viewtopic.php?id=1858]a main forum topic on this[/url] that you may want to read.
@@ -230,4 +236,4 @@ There's a separate [b][url=https://forum.colemak.com/post/10279/#p10279]Download
 
 
     [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?dl=1[/img]
-    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M type) ISO keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
+    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]

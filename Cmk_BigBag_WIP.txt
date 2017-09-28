@@ -1,4 +1,0 @@
-Note to self: Make a main intro topic for the BigBag, and limit the other topics to implementations and very short presentations!
-This will also be a preparation for the possible transition to github pages.
-
-The generic BigBag stuff is currently mostly in the far-too-long XKB topic, so get it out from there!
