@@ -25,7 +25,7 @@ As mentioned, this is mainly for touch screen devices (Android/Apple/etc) and as
 
 [h][4.3]    AMPHETYPE[/h]
 
-[b][url=https://github.com/webiest/amphetype]Amphetype[/url][/b] is a cross-platform, layout agnostic typing program written by user [user]tristesse[/user]. I think it's very nice for typing texts, analyzing weaknesses and generating lessons. Check it out directly or from [b][url=https://forum.colemak.com/topic/2201-training-with-amphetype/]my Amphetype topic[/url][/b].
+[b][url=https://github.com/webiest/amphetype]Amphetype[/url][/b] is a cross-platform, layout agnostic typing program written by user [user]tristesse[/user]. I think it's very nice for typing texts, analyzing weaknesses and generating lessons. Check it out directly or from [b][url=https://forum.colemak.com/topic/2201-training-with-amphetype/]my Amphetype topic[/url][/b] which contains some nifty training tricks.
 
 
     [img]https://www.dropbox.com/s/vl81fnybu2ehj0d/Amphetype_1-Typer.png?dl=1[/img]
