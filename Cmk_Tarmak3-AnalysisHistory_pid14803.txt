@@ -28,12 +28,41 @@ Here's [url=https://forum.colemak.com/viewtopic.php?pid=14545#p14545]a more rece
     The current Tarmak(ETROI): [url]http://patorjk.com/keyboard-layout-analyzer/#/load/MVB2CBnK[/url]
     The older Tarmak(ETOIR): [url]http://patorjk.com/keyboard-layout-analyzer/#/load/2b1Bz5t9[/url]
 
+    [img]https://www.dropbox.com/s/l0cila42vlvcvy9/Tarmak_ETROI_Patorjk-Austen.gif?raw=1[/img]
+
+
 The measly 141 instances of J in this sample prove that it is indeed a rare letter – the rarest of those that are moved by Colemak. Even the colon/semicolon key and Z had more presses and only X and Q of all the letters less (241/142/102/83 presses, respectively). This is an argument for moving only the J around, as a letter that rare won't be used enough to settle in your motor memory before the next step.
 
 Patorjk favorises hand alternation which brings Colemak to somewhat of a disadvantage [i]per se[/i] since Colemak focuses on same-hand rolls instead. I don't know whether this bias will play into the present analysis but I shouldn't think it matters a lot?
 
-    [img]https://www.dropbox.com/s/l0cila42vlvcvy9/Tarmak_ETROI_Patorjk-Austen.gif?raw=1[/img]
-        
+
+[b][url=http://colemakmods.github.io/mod-dh/]SteveP99's Switching Difficulty Index and Layout Analyzer[/url][/b]
+
+[user]SteveP99[/user], the originator of the Colemak-Curl(DH) mod, has [url=http://colemakmods.github.io/mod-dh/learn.html]a page where he analyzes the difficulty of switching to other layouts[/url], and [url=http://colemakmods.github.io/mod-dh/compare.html]a page where he analyzes their quality[/url]. His models are quite interesting, so have a gander if you're into modeling and analysis!
+
+[code]
+Layout  | Moves |  ∑m   | Effort ||  SDI  |  LEI  | "B4B" |
+-----------------------------------------------------------
+QWERTY  |   0   |  0.0  |  2.37  ||    0  |    0  |  1.0  |
+Tarmak1 |   4   |  2.5  |  2.10  ||    8  |   13  |  1.6  |
+Tarmak2 |   7   |  3.3  |  1.92  ||   12  |   23  |  2.0  |
+Tarmak3 |  10   |  4.8  |  1.90  ||   19  |   25  |  1.3  |
+Tarmak4 |  14   |  6.5  |  1.78  ||   25  |   33  |  1.3  |
+Colemak |  17   |  8.0  |  1.72  ||   31  |   37  |  1.2  |
+CmkCurl |  19   |  8.8  |  1.64  ||   33  |   45  |  1.4  |
+-----------------------------------------------------------
+Dvorak  |  28   | 22.3  |  1.88  ||   61  |   26  |  0.4  |
+-----------------------------------------------------------
+[/code]
+[i]SteveP99's Switching Difficulty Index (S.D.I.) and Effort Per Key translated into Layout Ease and "Bang4Buck" indices (L.E.I. & "B4B").[/i]
+
+I've fiddled a bit with Steve's raw results. His effort parameter is lower for better layouts, so I made a "Layout Ease Index" similar to his "Layout Switching Index" for direct comparison with QWERTY: The L.E.I. is defined as the percentual increase in ratio of QWERTY's "overall score effort per key" to the layout's (using Angle mods). Thus, it's 0 for QWERTY(Angle) and higher as we get to better layouts according to Steve's analysis model. Then a conjectural "Bang4Buck" parameter was calculated as the ratio of L.E.I.(="Bang") to S.D.I.(="Buck"). Don't take that too literally, but it should provide some clue as to how much gain you get for your effort.
+
+[b]CAVEAT[/b]: Do [i]not[/i] take the above to mean that I think you should stop at Tarmak2 just because the analysis shows the most "Bang4Buck" there! It's true that switching seven or so keys gives a lot of model effort reduction for the cost – cf. the Minimak-8 layout which is an attempt to get the most out of the fewest key changes. But I really don't think that most typists will be happy typing on a "half-baked" optimization! Also, there are subtle benefits to full optimization that the model doesn't catch as mentioned above.
+
+Also, the low "B4B" score of Dvorak in no way means that you shouldn't switch to Dvorak just because it doesn't give any "B4B" over QWERTY! Rather, it means that you should indeed be careful about interpreting these indices. Dvorak is a fine layout, well optimized and well tried out. It has a few blemishes but it's an excellent layout overall. Switching to Dvorak from QWERTY is well worth the effort in my opinion, and I should know because I've done it. It's just that with Colemak and Colemak-Curl(DH) you get something just as good and in my opinion even better, at a much lower cost! To which the above analysis agrees.
+
+The numbers would be a bit different for Tarmak/Colemak-Curl(DH). These layouts will have a sharper learning curve but end up at better analysis scores.
 
 
 [h]THE NAMING OF TARMAK[/h]
@@ -44,7 +73,7 @@ The name 'Tarmak' is obviously inspired by 'Colemak'. Thus I quipped when I thou
 - A tarmac is an attempt to pave the way!
 - I'm pretty sure someone will find it sticky, smelly, unhealthy etc etc...  ;)[/quote]
 
-To separate the Tarmak variants, I use a naming scheme that refers to the most important letter brought to its Colemak home row position by each step. Of the most common letters in English ([url=https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language]ETAOINSHR, sorted by frequency[/url]), QWERTY only has A, S and H on the home row! So the first standard Tarmak step is Tarmak1(E) which brings the E to the home row (and N as well, but E is a lot more common!), then comes Tarmak2(ET) which adds T and so on. The whole progression to Colemak is Tarmak(ETROI). It's a bit of a toss-up between R and S frequencywise and they're both sorted in the same step but 'R' is brought to the home row while 'S' is only shuffled about. (Note that I've used both the R and S in names in earlier posts – sorry about that confusion.)
+To separate the Tarmak variants, I use a naming scheme that refers to the most important letter brought to its Colemak home row position by each step. Of the most common letters in English ([url=https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_letters_in_the_English_language]ETAOINSHR, sorted by frequency[/url]), QWERTY only has A, S and H on the home row! So the first standard Tarmak step is Tarmak1(E) which brings the E to the home row (and N as well, but E is a lot more common!), then comes Tarmak2(ET) which adds T and so on. The whole progression to Colemak is Tarmak(ETROI). It's a bit of a toss-up between R and S frequencywise and they're both sorted in the same step but 'R' is brought to the home row while 'S' is only shuffled about.
 
 
 [h]THE HISTORY OF TARMAK[/h]
