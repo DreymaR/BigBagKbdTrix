@@ -108,13 +108,15 @@ the of to and a in is it you that he was for on are with as I his they be at one
 [/code]
 [/quote]
 
-Furthermore, you can let Amphetype generate a list of your most damaging (or whatever) words or trigrams, and send them to the Lesson Generator! I recommend editing out rare words before making the lessons themselves so you don't risk training words like 'Cthulhu' and 'Shub-Niggurath' a lot, but otherwise this is very useful once you've racked up some mileage in your database.
+Furthermore, you can let Amphetype generate a list of your "most damaging" (or slowest, most mistyped etc.) words or trigrams, and send them to the Lesson Generator! I recommend editing out rare words before making the lessons themselves so you don't risk training words like 'Cthulhu' and 'Shub-Niggurath' a lot, but otherwise this is very useful once you've racked up some mileage in your database.
 
 Apparently, after typing a book about Graeco-Roman mythology for a while, Amphetype suggested this amusing list of words for me; I just sorted it and added punctuation:
 
 [b]They that were called under & into Hera/Zeus' order, have this beautiful form from their king/wife gods – with which their being became overly beautiful.[/b]
 
 Really, that was my list of "most damaging" words – rearranged but complete. Heh! A truly divine typing task. :-)
+
+On a side note, I don't trust the "viscosity" measure 100%, as I don't fully understand its implications. Tristesse feels that an even typing flow is holy if I understand him right, but we know that the best typists do speed up for familiar words and elements and brake down for the trickier ones. Ergo, the best typists in the world choose to have "bad viscosity" to some extent? Hmmm....! I still use the "most damaging" stat to select words though as it seems to be the most balanced measure.
 
 User [user]bph[/user] has tried starting with the 1000 most common words and after a few runs through them, [url=https://forum.colemak.com/post/19614/#p19614]generating a lesson of, say, the 200 most damaging ones[/url]! That's clever, and will make you train only words that are both common and hard for you.
 
