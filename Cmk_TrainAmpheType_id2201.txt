@@ -175,7 +175,7 @@ Also, here's another [b][url=https://github.com/first20hours/google-10000-englis
 
 [h]Online Training Tools:[/h]
 I've compiled a little list of other typing tests/trainers that I like and use:
-In my [url=https://forum.colemak.com/post/20413/#p20413]Other Typing Tricks[/url] post, I describe the immensely fun [b]The Typing of The Dead[/b]. Have a gander!
+[b][url=https://forum.colemak.com/post/20413/#p20413]The Typing of The Dead[/url][/b] is an immensely fun game described in my Other Typing Tricks post. Have a gander!
 [b][url=https://10fastfingers.com/typing-test/english]10FastFingers[/url][/b] has a very smooth and enjoyable test with some flexibility like typing your own text.
 [b][url=http://play.typeracer.com/]TypeRacer[/url][/b] is another classic for speed training. There's even an Instant Death mode that trains accuracy ruthlessly!
 [b][url=http://www.rapidtyping.com/online-typing-games/fast-typer-2.html]Fast Typer 2[/url][/b] is a hoot, as you train both speed and accuracy very ... fast, indeed.
@@ -183,8 +183,13 @@ In my [url=https://forum.colemak.com/post/20413/#p20413]Other Typing Tricks[/url
 
 On the [b][url=https://colemak.com/Learn]Colemak Learn page[/url][/b], there's a list of several tests and trainers, if you want to browse around for more.
 [b][url=https://sense-lang.org/trial/typing/tutor/EN_colemak_tutorial.php]Sense-Lang[/url][/b] has Colemak lessons, but unfortunately no ergo mods like Curl(DH).
-[b][url=http://www.keybr.com/practice]Keybr[/url][/b] is used by many it seems. I haven't used it much but see if you like it.
+[b][url=http://www.keybr.com/practice]Keybr[/url][/b] is used by many it seems. It's a rather no-nonsense online trainer.
+[b][url=https://www.keyhero.com/]Key Hero[/url][/b] is a nice online solution. It's written by a Colemak user, records progress and focuses on realistic learning.
 [b][url=https://thetypingcat.com/]The Typing Cat[/url][/b] also seems nice. Nice kitty! =^.^=
+
+This may come too late for you since you're here reading my training page, but:
+If you're new to Colemak and didn't opt for the [b][url=https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/]Tarmak[/url][/b] experience, then maybe [b][url=https://github.com/first20hours/keyzen-colemak]KeyZen for Colemak[/url][/b] could work for you?
+It lets you learn by simply doing in the here and now, without stress. Om, Om! _/|\_
 
     [img]https://www.dropbox.com/s/u1xp3biy6wb5ogd/10FF_badges_animated.gif?raw=1[/img]
     [i]An eager typing trainee (courtesy of [b][url=https://10fastfingers.com/typing-test/english]TenFastFingers[/url][/b])![/i]
