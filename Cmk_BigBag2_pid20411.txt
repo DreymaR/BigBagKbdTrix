@@ -14,15 +14,19 @@ With a 102/105-key ISO keyboard the Angle mod is very smooth indeed, and I stron
 When I use these I like to move the key caps around and make the change global - my family actually don't seem to mind as the changes are fairly intuitive and unintrusive, leastways for the run-of-the-mill keyboard user who looks at symbol key caps to find them. I got used to the changes quickly, too. But you can implement the change on a per-user basis if you wish. (If you do, take care with your logon dialogs and passwords!)
 
     [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
-    [i]The AngleWide-Slash wide ergo mod for PC105/ISO keyboards.[/i]
+    [i]The [b]AngleWide(Slash)[/b] wide ergo mod for PC105/ISO keyboards.[/i]
 
      [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?dl=1[/img]
-     [i]The Angle(Z)Wide ergo mod for PC104/ANSI keyboards[/i]
+     [i]The [b]Angle(Z)Wide[/b] ergo mod for PC104/ANSI keyboards[/i]
 
      [img]https://www.dropbox.com/s/txebhgrvefdi7wj/Cmk-ANSI-AWing_60d_FShui.png?dl=1[/img]
-     [i]The "A-Wing" ergo mod for PC104/ANSI keyboards[/i]
+     [i]The "[b]A-Wing[/b]" ergo mod for PC104/ANSI keyboards[/i]
 
-"There is another." I haven't implemented this ANSI Angle mod, but I will at least mention it. The trick is moving Z to the LShift key! LShift then needs a new home which should be better than the old B position. One solution is to move LShift to the Alt key and put Alt on the old B key. But this means moving modifiers around, so I'm a bit wary of it. Also, a fat Z key looks a bit odd, but if it works for you then all's fine! User [user]stevep99[/user] has [url=http://colemakmods.github.io/ergonomic-mods/angle.html]some neat pages on layout mods where he lists this one[/url].
+"There is another." I haven't implemented the "Fat-Z" ANSI Angle mod, but I will at least mention it. The trick is moving Z to the LShift key! LShift then needs a new home which should be better than the old B position. One solution is to move LShift to the Alt key and put Alt on the old B key. But this means moving modifiers around, so I'm a bit wary of it. Also, a fat Z key looks a bit odd, but if it works for you then all's fine!
+
+[user]Stevep99[/user]'s [b][url=http://colemakmods.github.io/ergonomic-mods/wide.html]Ergonomic Keyboard Mods[/url][/b] page lists the above mods. Note though that we don't agree 100% on which Wide mod is better, as his fave has the = key between 5 and 6 where mine has it between 6 and 7. Some split keyboards follow my way and others (particularly matrix boards) his. His preferred variant is [i]a priori[/i] more symmetric but on a normal-staggered board mine has = on the longest stretch from the home position which is as it should be. Efficiency before aesthetics. ;-)
+
+We've also discussed which key should be on the upper-right (old [ key) position: On ANSI boards it pretty much has to be the apostrophe but on ISO boards it should be a common key as that position is quite good. I prefer the forward slash, as both slash and question mark are quite common symbols. SteveP lists two variants where one has the ISO hash key (backslash in most layouts) in that position, but that's a less common key than slash/question.
 
 [b][i]Other names:[/i][/b]
 Many of these mods have been discussed under other names. So if you come across older posts here's a key to what we've been discussing:
@@ -39,7 +43,7 @@ See [user]stevep99[/user]'s [b][url=https://colemakmods.github.io/mod-dh/]Colema
 
 
     [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
-    [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
+    [i]The Colemak Curl(DH)AngleWide, a.k.a. [b]Colemak-CAW[/b], ergo modded layout.[/i]
 
 The point of the Curl ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
 
@@ -64,7 +68,7 @@ We've already encountered a modfied modifier above: The Extend key, which is usu
 
 In the Linux world, it's quite common to shuffle around the modifiers a bit. Caps can become Control, Esc or something else for instance.
 
-[user]SteveP99[/user] is a big fan of remapping in particular the Alt keys, since they're thumb keys which can be very ergonomic. He likes to put Extend and/or Shift on those keys. See his [b][url=http://colemakmods.github.io/ergonomic-mods/modifiers.html]GitHub pages on ergonomic mods[/url][/b] for more info.
+[user]SteveP99[/user] is a big fan of remapping in particular the Alt keys, since they're thumb keys which can be very ergonomic. He likes to put Extend and/or Shift on those keys. See his [b][url=http://colemakmods.github.io/ergonomic-mods/modifiers.html]Ergonomic Keyboard Mods[/url][/b] GitHub page for more info.
 
 I'm a little wary of modifier modding myself, as it can be hard to implement reliably across platforms. Sometimes keys don't play well together, possibly because of hardware limitations in the scan matrix of cheaper keyboards and possibly because an OS (or Java/Flash/etc) can get confused when a non-modifier key becomes one. I've had my share of troubles with the Extend-modifier keys (Ext+A/S/T for Alt/Shift/Ctrl). Another issue is the differences between keyboards when it comes to the position of particularly the Right Alt key, making it very convenient on some boards but not on others. I do believe you should use a keyboard with a good RAlt position. Note that the Wide mod helps a bit with that.
 
