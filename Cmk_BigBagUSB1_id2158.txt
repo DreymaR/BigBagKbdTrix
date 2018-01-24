@@ -71,9 +71,11 @@ Freedom of choice through [b]modularity[/b] is an ideal in the DreymaR world, as
 
 A USB-2-USB device remaps only key strokes, not character input events. So key mods like layout and ergo remappings are possible, but not mods that send glyphs. Your dead keys and AltGr mappings will work as they do without the device, and you may only move their keys around as they are.
 
-Sorry, but AltGr/DeadKey glyph mappings such as the powerful Colemak[eD] below are totally up to the active layout on the machine you're typing to.
+Sorry, but AltGr/DeadKey glyph mappings such as the powerful Colemak[eD] below are for the most part up to the active layout on the machine you're typing to.
 
-In all honesty, [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Keymap]it is possible to send Unicode[/url] with methods such as Windows' Alt+NumPad(####) defined as TMK macros. But since it's platform dependent and clunky, I haven't.
+In all honesty though, [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Keymap]it is possible to send Unicode[/url] with methods such as Windows' Alt+NumPad(####) defined for instance as TMK macros. But since it's platform dependent, memory consuming and clunky, I couldn't do this to create the full Colemak[eD]. Dead key tables and functions would've been even more byte-gobbling, so no.
+
+However, I have made a user function I called FOURLVL that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts on the bracket and LSGT keys as in Colemak[eD], and it works fine for me. You can find various lists of alt codes to use, such as [url=https://fsymbols.com/keyboard/windows/alt-codes/list/]this one[/url]. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.
 
     [img]https://www.dropbox.com/s/k1t0ha6m924bjlq/Cmk-ISO-eD-No-CurlAWide_90d_FShui.png?dl=1[/img]
     [i]Fig.: Colemak-CAW[eD], showing the Norwegian 'us' variant on an ISO board with the Curl(DH)Angle and Wide(/) ergonomic mods (see below).[/i]
@@ -326,6 +328,7 @@ This topic won't show you any more about how to get your own QUICKIE USB-2-USB d
 [h]DONE:[/h]
 • Now witness the typing power of this fully operational USB-2-USB device!
 • Hope you like it! And ... happy USB-2-USB hacking, brave and adventurous souls! ;-)
+• 2018-01: I've added a FOURLVL user function that allows for input of Unicode glyphs not in the layout using the AltGr(RAlt) modifier.
 
 
 [h]TODO:[/h]
