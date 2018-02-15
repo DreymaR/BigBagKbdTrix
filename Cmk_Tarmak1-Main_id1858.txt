@@ -31,8 +31,8 @@ This animated image, like the one at the top of this topic, shows the full Tarma
 
 
 Here I've explained each of the Tarmak "tar lumps" in more detail:
-[quote=The Tarmak (Transitional Colemak) layouts:]
-
+[quote=Tarmak (Transitional Colemak)] 
+    
 [b]1)[/b] The (J)>[b]E[/b]>K>N "most essential" loop, fixing the important E (and N)
     [img]https://www.dropbox.com/s/9kye4w0v3w582o6/Tarmak1_Spectral_E.png?raw=1[/img]    [i]Tarmak1(E)[/i]
 
@@ -76,16 +76,17 @@ The very first Tarmak user was [user]Ezuk[/user]. Working as a writer, he gave u
 
 Here is why Tarmak is the best way to learn a superior keyboard layout:
 
-• It’s free: Won’t cost you a dime.
-• It comes as a portable app: No coding; no registry hacks; you don’t even have to install anything or be an Administrator. 
-   You can even put it on a USB stick and use it on any computer you get to.
-• It’s based on AutoHotkey, one of our favorite automation tools, and it’s open-source.
-• It won’t kill your productivity: Throughout your learning process, you’ll still be able to type. 
-   If you’re patient and don’t rush ahead, there won’t be a single moment where you’ll feel you just can’t type.
-• It’s easy to move between stages: Want to move on to the next step? It’s as easy as a right-click on a system tray icon. 
-   Too hard for you? No problem, step back.
-• Comes with keyboard images: It’s sometimes hard to visualize where the new keys are, especially since your keyboard is now “wrong” (shows you the old keys). 
-   Tarmak comes with helpful images that show you the different stages.[/quote]
+• [b]It’s free[/b]: Won’t cost you a dime.
+• [b]It comes as a portable app[/b]: No coding; no registry hacks; you don’t even have to install anything or be an Administrator. 
+    You can even put it on a USB stick and use it on any computer you get to.
+    It’s based on AutoHotkey, one of our favorite automation tools, and it’s open-source.
+• [b]It won’t kill your productivity[/b]: Throughout your learning process, you’ll still be able to type. 
+    If you’re patient and don’t rush ahead, there won’t be a single moment where you’ll feel you just can’t type.
+• [b]It’s easy to move between stages[/b]: Want to move on to the next step? It’s as easy as a right-click on a system tray icon. 
+    Too hard for you? No problem, step back.
+• [b]Comes with keyboard images[/b]: It’s sometimes hard to visualize where the new keys are, 
+    especially since your keyboard is now “wrong” (shows you the old keys). 
+    Tarmak comes with helpful images that show you the different stages.[/quote]
 
 
 Here's [url=https://forum.colemak.com/viewtopic.php?pid=12243#p12243]what user Ghaz had to say[/url]:
@@ -145,24 +146,24 @@ I typed on Qwerty for over 30 years.  DreymaR's Tarmak method finally gave me th
 [h]DREYMAR'S BIG(!) BAG OF TRICKS?!? HALP, I'M NEW HERE![/h]
 – If you check out my sig topics, you'll see that there's a [i]lot[/i] you can do in addition to learning Colemak! Some of it doesn't even require Colemak.
 – So, this is a little beginner's introduction to the wonders of layout modding: What are your main options, and what's good to begin with?
-– If any of this interests you right away, read more about it in my [b][url=http://goo.gl/IKR3j]Big Bag of Tricks[/url][/b] topics (especially the XKB one).
+– If any of this interests you right away, read more about it in my [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Tricks[/url][/b] topics.
 
 [b]1) Extend:[/b] This mod is as brilliant as Colemak itself, and independent of your typing layout! It lets you navigate, edit and more without moving your hands.
-    • You could learn to Extend before you learn a new layout, during, or after; both PKL(Win) and XKB(Linux) let you do that.
+    • You could learn to Extend before you learn Colemak, during, or after; both PKL(Win) and XKB(Linux) let you do that.
     • See the [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend Extra Extreme[/url][/b] topic if you need convincing.
 [b]2) Angle/Wide ergo mods:[/b] These are also basically layout independent. QWERTY-AngleWide is definitely possible.
     • The [b]Angle[/b] mod is simple, especially on a PC105/ISO keyboard: Slide ZXCVB one step to the left, keep your fingering but straighten your left wrist. Comfy!
     • If you have an ANSI keyboard, you must make a tradeoff: Move the Z key back to the middle ("Angle-Z"), or, e.g., the middle/upper rows to the right ("A-Wing").
-    • The [b]Wide[/b] mod is quite simple on any keyboard: Slide the right-hand keys one step to the right, improving hand distance and thumb/pinky reaches. I like it!
+    • The [b]Wide[/b] mod is quite simple on any keyboard: Slide the right-hand keys one step to the right, improving hand distance and thumb/pinky reaches. Neat!
     • These could be "hard" implemented, even changing the physical key caps to Angle/Wide positions if you can. My wife typed QWERTY-AngleWide without trouble.
-[b]3) The Curl(DH) ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down may make them easier to reach with lightly curled, relaxed fingers!
+[b]3) The Curl(DH) ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down makes them easier to reach with lightly curled, relaxed fingers!
     • [b]NOTE:[/b] There is a tweaked [b][url=https://forum.colemak.com/post/14801/#p14801]Tarmak-Curl progression for the Colemak-Curl(DH) ergo mod[/url][/b]!
 [b]4) Colemak[eD]:[/b] This only affects you if you'll be using the AltGr key, as it's about the extra mapping layers on each key.
-    • Vanilla Colemak has several nice AltGr mappings, but they seem somewhat unintuitive and not really practical to me.
+    • Vanilla Colemak has several AltGr mappings, but they seem somewhat unintuitive and not really practical to me.
     • My "[b][url=https://forum.colemak.com/viewtopic.php?id=1280][edition DreymaR][/url][/b]" mappings place useful symbols and letters quite intuitively.
-    • Further symbols/letters are on dead keys that all reside on symbol keys with AltGr. In PKL(Win) at least, there's a huge(!) bunch of nice symbols!
-    • Vanilla Colemak is more broadly implemented in general. But if you use my Big Bag files you'll mostly get Colemak[eD].
-[b]5) Locale layouts:[/b] If you use other languages than US English, you'll want some special letters, accents and symbols readily available.
+    • Further symbols/letters are on dead keys that all reside on symbol keys with AltGr. In PKL(Win) at least, there's a huge(!) bunch of glyphs/symbols!
+    • If you use any of my Big Bag files you'll mostly get Colemak[eD].
+[b]5) Locale layouts:[/b] If you use other languages than US English, you may want some special letters, accents and symbols readily available.
     • I've devised lots of [b][url=https://forum.colemak.com/viewtopic.php?id=1458]Locale Colemak[/url][/b] variants.
     • Using XKB(Linux), you'll have access to all these once you're done with Tarmak. With PKL(Win), you may have to make yours or ask me.
 

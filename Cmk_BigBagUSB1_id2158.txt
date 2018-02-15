@@ -17,7 +17,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 [i]WARNING - Some Assembly May Be Required (if you want a specific locale/ergo variant for instance)[/i]
 
 [b][1]    [u]Character/Key Mapping Layers[/u][/b]
-[b][1.1][/b] (A note about AltGr and dead key mappings such as Colemak[eD])
+[b][1.1][/b] (My [b][url=https://forum.colemak.com/viewtopic.php?id=1280]Colemak[eD][/url] AltGr mappings[/b])
 [b][1.2][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend layers[/url][/b] using Caps Lock (and Tab) as switch modifier(s) for navigation/editing/browsing/etc from near the home position
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
@@ -26,7 +26,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][3]    [u]Other Layouts[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
-[b][3.2][/b] (Locale and phonetic layout variants)
+[b][3.2][/b] ([b][url=https://forum.colemak.com/viewtopic.php?id=1458]Locale[/url][/b] and phonetic layout variants)
 [b][3.3][/b] [b]Mirrored Colemak[/b] that allows one-handed typing without extra learning
 
 [b][4]    [u]Download and Setup[/u][/b]
@@ -75,10 +75,10 @@ Sorry, but AltGr/DeadKey glyph mappings such as the powerful Colemak[eD] below a
 
 In all honesty though, [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Keymap]it is possible to send Unicode[/url] with methods such as Windows' Alt+NumPad(####) defined for instance as TMK macros. But since it's platform dependent, memory consuming and clunky, I couldn't do this to create the full Colemak[eD]. Dead key tables and functions would've been even more byte-gobbling, so no.
 
-However, I have made a user function I called FOURLVL that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts on the bracket and LSGT keys as in Colemak[eD], and it works fine for me. You can find various lists of alt codes to use, such as [url=https://fsymbols.com/keyboard/windows/alt-codes/list/]this one[/url]. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.
+However, I have made a user function that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts (on the bracket and ISO LSGT keys) as in Colemak[eD], and it works fine for me. I even added the bullet and dagger glyphs (on the ISO \| key) for good measure. You can find various lists of alt codes to use, such as [url=https://fsymbols.com/keyboard/windows/alt-codes/list/]this one[/url]. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.
 
-    [img]https://www.dropbox.com/s/k1t0ha6m924bjlq/Cmk-ISO-eD-No-CurlAWide_90d_FShui.png?dl=1[/img]
-    [i]Fig.: Colemak-CAW[eD], showing the Norwegian 'us' variant on an ISO board with the Curl(DH)Angle and Wide(/) ergonomic mods (see below).[/i]
+    [img]https://www.dropbox.com/s/1tvaze9m9438af7/Cmk-ISO-eD-CurlAWide_90d_FShui.png?raw=1[/img]
+    [i]Fig.: Colemak-CAW[eD], showing an ISO board with the Curl(DH)Angle and Wide ergonomic mods (see below).[/i]
 
 
 [h][1.2]    EXTEND LAYERS AND THE CAPS SWITCH MODIFIER[/h]
@@ -113,7 +113,7 @@ The USB-2-USB implementation is almost the same as the Linux/XKB and Windows/PKL
  * |    |    |MPau|MRwd|MFFd|Ejct| |WRef|BriD|BriU|Slep| |www |Mail|App3|App4|
  * `----'    `-------------------' `-------------------' `-------------------'
  * ,-------------------------------------------------------------------------.
- * |    | !  | @  | #  | $  | %  | ^  | P7 | P8 | P9 | P* | P- | =  |        |
+ * | ?? | !  | @  | #  | $  | %  | ^  | P7 | P8 | P9 | P* | P- | =  |        |
  * |-------------------------------------------------------------------------|
  * |      |Home| Up |End |Del |Esc |PgUp| P4 | P5 | P6 | P+ | (  | )  |      |
  * |-------------------------------------------------------------------------|
@@ -125,13 +125,13 @@ The USB-2-USB implementation is almost the same as the Linux/XKB and Windows/PKL
  * `-------------------------------------------------------------------------' 
 [/code]
 
-To use the Extend layers, make sure the EXTENDMODE constant is defined to 1. This'll make CapsLock the Extend1 modifier (overriding CAPSBEHAVIOR).
+To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the [b][url=https://forum.colemak.com/post/18410/#p18410]Configuration[/url][/b] post below.
 
-For now, the Extend2 modifier is the Tab key (and not the Alt+Caps combo I'd like). Tapping that key instead produces a normal key stroke. Be aware that this key behavior ruins auto-repeat for the key – I think that's an acceptable tradeoff for Tab. You may change it to another key but it's a little technical; see the [b][url=https://forum.colemak.com/post/18410/#p18410]Configuration[/url][/b] post below.
+There's a couple of EXT#BIT constants that determine how Extend2 is selected: If EXT2BIT is defined as MOD_BIT(KC_RSFT) for instance, holding Right Shift down while pressing the Extend key will activate Extend2. Holding down Extend alone will maintain that layer. The EXT3BIT and the combination of the two could select Extend3 and Extend4, but I haven't yet implemented these layers as I haven't yet decided on what to put in them. You could add your own if you want to – ask me how.
 
 For the NumPad layer, remember that the NumLock state influences what you get. There's a NumLock key easily accessible in the layer.
 
-[b]NOTE: Superstacking Extend modifiers didn't work for me.[/b] Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Others didn't have this problem...?
+[b]NOTE: Superstacking Extend modifiers[/b] doesn't always work for me. Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Other users didn't have this problem...?
 
 
 [h][2]    [u]Ergonomic Key Remappings[/u][/h]
@@ -147,25 +147,22 @@ I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and 
      [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?dl=1[/img]
      [i]The Angle(Z)Wide ergo mod for US/ANSI keyboards[/i]
 
-     [img]https://www.dropbox.com/s/txebhgrvefdi7wj/Cmk-ANSI-AFrame_60d_FShui.png?dl=1[/img]
-     [i]The "A-Wing" ergo mod for US/ANSI keyboards[/i]
-
 Colemak-Curl(DH) requires by default a special Angle(Wide) variant in which the V is kept in its original position so that only ZXC and B (which then gets remapped to D by the Curl-DH mod) move. See below.
 
-Using one of these requires a little search-and-replace in the keymap_dreymar.c file before compiling:
+To use one of these, define the Unimap layout constant in my keymap (.c) file:
 [code]
- * Search-replace 'UNIMAP_AWIZXCBV' (CurlAngleWide-ISO) in this file to use ergonomic Curl/Angle/Wide keyboard mods:
- * _MINIMALL - Default unimap format for all keyboard and converter types (this one is w/o F13-24)
- * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle ergo mod (the simple ZXCVB_ half-row shift)
- * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/) ergo mod
- * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z) ergo mod
- * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(') ergo mod
- * _ANAAWING (w/ Curl-DH: N/A)       - ANSI/US A-Wing ergo mod
+* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
+ * _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
+ * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle (the simple lower left half-row shift)
+ * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/)
+ * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z)
+ * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(')
+ * _ANAAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
  *
- * NOTE: Select a Curl(DH) or non-Curl ergo model, or plain MINIMALL. For Curl(DH), you also need to set CURLMOD.
+ * Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
 [/code]
 
-The actual keymap types are in the keymap_common_dreymar.h file and they're harder to edit manually.
+The actual keymap types are defined in the header (.h) file as compiler macros and those are a bit harder to edit manually.
 
 
 [h][2.2]    THE "CURL(DH)" COLEMAK ERGO MODS[/h]
@@ -227,16 +224,18 @@ If you want to learn the brilliant Colemak-Curl(DH) variant using a Tarmak progr
 
 [h][3.2]    LOCALE AND PHONETIC VARIANTS[/h]
 
-The QUICKIE doesn't support locales [i]per se[/i], as it only sends key strokes and these are re-coded by your computer's layout settings. However, users with locale layouts installed may find that the default symbol key mappings are non-intuitive since they may be quite different from the US ones. So I've made a "hack" layout for myself that moves several symbol keys to where I feel they are more naturally placed.
+The QUICKIE only partially supports locales [i]per se[/i], as it only sends key strokes that are then re-coded by your computer's layout settings. My four-level Unicode function remedies this somewhat by allowing some keys to have their AltGr/RAlt states remapped to an OS dependent Unicode input method. So I can set a standard US QWERTY layout on my computer and still have, e.g., the locale ÆæØøÅå letters where I'm used to.
 
-For instance, instead of a [=+] key as on US keyboards, the Norwegian locale has [+?], [0=] etc. I can't sort that out to get the symbol placements I'm used to as a Colemak[eD] typist unless I choose a US locale layout on the computer I'm on – but I still need the Norwegian ÆØÅ letters so that won't work! I had to settle for, e.g., moving the +? key to the US /? key position so at least the question mark is in the right place. Not perfect, but the best I can do.
+Before I made that function however, I used the locale layout installed on Windows. But I found that the default symbol key mappings are non-intuitive since they are quite different from the US ones which I'm used to now. So I've made a "hack" layout for myself that moves several symbol keys to where I feel they are better placed for me.
+
+For instance, instead of a [=+] key as on US keyboards, the Norwegian locale has [+?], [0=] etc. I can't sort that out to get the symbol placements I'm used to as a Colemak[eD] typist unless I choose a US locale layout on the computer I'm on – but I still need the Norwegian ÆØÅ letters so that won't work! I had to settle for, e.g., moving the +? key to the US /? key position so at least the question mark is in the right place. Not perfect, but the best I could do.
 
 Phonetic layouts for non-latin scripts require a layout with that script installed on the computer or whatever you're typing to. If you select a QWERTY phonetic layout for a script and have a USB-2-USB Colemak keymap active, your resulting layout will be Colemak phonetic. If, however, you want to swap some key positions (for Rulemak/Bulmak for instance), a suitable new keymap must be made and compiled.
 
 
 [h][3.3]    MIRRORED COLEMAK[/h]
 
-Advanced typing is possible with only one hand given a modicum of familiarity with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.
+Advanced typing with only one hand is possible given a modicum of familiarity with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.
 
 Mirrored layouts are easily implementable for the USB-2-USB device. I've provided a mirrored Colemak that obeys the Curl mod setting. This will usually be your second layout (layer 1) on top of Colemak, so in my map file it's set by using ACTIVELAYOUT 5 (Colemak) and SECONDLAYOUT 6 (mirrored Colemak).
 
@@ -326,15 +325,14 @@ This topic won't show you any more about how to get your own QUICKIE USB-2-USB d
 
 
 [h]DONE:[/h]
-• Now witness the typing power of this fully operational USB-2-USB device!
-• Hope you like it! And ... happy USB-2-USB hacking, brave and adventurous souls! ;-)
-• 2018-01: I've added a FOURLVL user function that allows for input of Unicode glyphs not in the layout using the AltGr(RAlt) modifier.
+• Now witness the typing power of this fully operational USB-2-USB device! Happy hacking, brave and adventurous souls! ;-)
+• 2018-01: Added a user function that allows for input of Unicode glyphs not in the layout using the AltGr(RAlt) modifier.
+• 2018-02: More advanced modifiers for Extend2+. Hold down, e.g., RShift then Caps (then release RShift) for Extend2. Can't use Alt keys (yet) on Win.
 
 
 [h]TODO:[/h]
 • Extend modifiers don't always stack? Caps+S+T+N didn't produce Ctrl+Shift+Left but ST keystrokes for me once; others have had no such problems.
-• More advanced modifiers for Extend2+. For now, I'm using <TAB> or <LSGT>/VK_102 as a dual-role modifier (hold-Ext2, tap-keystroke).
-• Extend3–4? Would it be possible to implement some shortstrings at least? Memory considerations may preclude this for now.
+• Extend3–4? Would it be possible to implement some shortstrings at least? Memory limitations may preclude this for now.
 • Use the ScrollLock LED to show whether the second layout is active?
 
 

@@ -11,9 +11,9 @@ Keep your hands at home position ([i]QWERTY[/i] ASDF JKL;) and stretch inwards t
 
 Curl mods require an Angle mod (see above) to work.
 
-In May 2017, [user]SteveP99[/user] and the other Curl users agreed on one common Curl(DH) mod, consisting of
-    • an MK switch from the old "mod-DH" a.k.a. the Curl(DvbgHm) mod, or
-    • DV and HM switches from my old Curl(DbgHk) mod.
+In May 2017, [user]SteveP99[/user], myself and other Curl users agreed on one common Curl(DH) mod, consisting of
+    • the D and H positions from the old "mod-DH" a.k.a. the Curl(DHm) mod, and
+    • the middle-trench K position from my old Curl(DH) mod, allowing M a better position (at least on standard row-staggered boards).
 
 
 [b]Tarmak-Curl(DH) on ISO/"World" keyboards:[/b]
@@ -51,7 +51,7 @@ I've split steps 1 and 2 above for clarity. But if you're the careful type you m
 
 The full Tarmak1-Curl step is a big one which may be scary if you're new to layout switches. If that is the case, consider taking on the normal Tarmak1 step first! The K key will be wrongly placed for the Curl mod, but it's a quite rare key so it shouldn't hurt too much, allowing for a baby-step approach. (In fact, you might then postpone the Hmk switch to whenever you like in the progression, but for sanity's sake I've put it in step 1.)
 
-Similarly, if it seems that a lot is happening in the Tarmak2-Curl step then you may try tackling only the CurlAngle mod (_ZXCVB?XCBV_ in this case) first. In this case, the B gets temporarily misplaced. Several implementations allow you to select the CurlAngle mod separately.
+Similarly, if it seems that a lot is happening in the Tarmak2-Curl step then you may try tackling only the CurlAngle mod (_ZXCVB→XCBV_ in this case) first. In this case, the B gets temporarily misplaced. Several implementations allow you to select the CurlAngle mod separately.
 
 
 [b]Tarmak-Curl(DH) on ANSI/US keyboards:[/b]

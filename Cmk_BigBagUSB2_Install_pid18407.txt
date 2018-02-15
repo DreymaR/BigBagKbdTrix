@@ -14,7 +14,7 @@ The [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/u
 
 [b]1.[/b] [b]For flashing on Windows: [url=http://www.atmel.com/tools/FLIP.aspx]Install Atmel's FLIP application[/url][/b] for device drivers ++
         • Note that it says 'Buy now' on a button but the links below don't cost anything!
-        • I've had trouble with FLIP not finding a Java Virtual Machine after a Java update; you may have to [url=https://www.java.com/en/download/manual.jsp]reinstall your Java Runtime Environment[/url].
+        • I've had trouble with FLIP not finding a Java Virtual Machine after a Java update; you may have to [b][url=https://www.java.com/en/download/manual.jsp]reinstall your Java Runtime Environment[/url][/b].
 
 [b]2.[/b] [b]Insert the device and press its Bootloader mode button (fig. 1–4)[/b].
         • You don't need a keyboard plugged into the device yet. In fact, to be on the safe side, I recommend not plugging in a keyboard yet!
@@ -84,6 +84,7 @@ Hasu has [url=https://github.com/tmk/tmk_keyboard/wiki/Bash-On-Ubuntu-On-Windows
     [b][i]Start Menu → Bash on Ubuntu on Windows[/i][/b]; you'll have to finish the Ubuntu install and choose a username/pwd the first time.
 • Navigate to a suitable folder and follow the step-by-step procedure above to install AVR tools, make, git and TMK and get going!
     At [b][i]/mnt/c/[/i][/b] you'll find the C:\ drive; you have access to the same file system as Windows does.
+• If you have my files in a different location from the main tmk ones, you can use a symbolic link to make my script see the tmk dir.
 
 
 [b][i]Addendum: Using other keyboard converters/controllers[/i][/b]

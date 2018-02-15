@@ -58,25 +58,27 @@ If you run the script with [b]-h[/b], you'll see the default values for which di
 
 [b][i]Editing my (or other) TMK keymap files:[/i][/b]
 
-I've provided a [i][b]unimap_dreymar.c[/b][/i] file with several keymaps/layouts in, and a [i][b]unimap_dreymar.h[/b][/i] file that holds keymap special types for the Angle/Wide ergo mods. For normal purposes, the [b]unimap_dreymar.c[/b] file will be the only one you want to edit to get the layout(s) you want. Use any editor (as long as the character encoding's right) to edit the file in your local [b][url=https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb]tmk_keyboard/converter/usb_usb[/url][/b] directory before building the HEX file as described above.
+I've provided a [i][b]unimap_dreymar.c[/b][/i] file with several keymaps/layouts in, and a [i][b]unimap_dreymar.h[/b][/i] file that mostly holds keymap types for the Angle/Wide ergo mods. For normal purposes, the [b]unimap_dreymar.c[/b] file will be the one you want to edit to get the layout(s) you want. Use any editor (as long as it preserves character encoding) to edit the file in your local [b][url=https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb]tmk_keyboard/converter/usb_usb[/url][/b] directory before building the HEX file as described above.
 
-The default layer is layer0; this will always be active when the device is activated. I've used layer1 for a second layout and added a layer-toggle key (ScrollLock by default) to go back and forth between two layouts. Layer2–7 up are intended for Extend layers but in reality this only takes up layers 2–3 for now.
+The default layer is layer0; this will always be active when the device is activated. I've used layer1 for a second layout and added a layer-toggle key (ScrollLock by default) to go back and forth between two layouts. Layer2+ are intended for Extend layers but only layers 2–3 are in use for now.
 
-Most of the behavior is chosen with preprocessor directives; you can edit the values of the #define <OPTION> <value> lines before compiling to produce different .hex files as you like.
+The layout options are chosen with preprocessor directives; you can edit the values of the #define <OPTION> <value> lines before compiling to produce different .hex files as you like.
 
-The Angle/Wide mods have no directive, but must be activated by search/replace. All instances of the current UNIMAP_<type> string must be replaced.
-
-[b][i]Keymap type settings (Angle/Wide ergo mods) in unimap_dreymar.c; see below if you need to edit these in unimap_dreymar.h:[/i][/b]
+[b][i]"Physical" keymap type settings (Angle/Wide ergo mods) in unimap_dreymar.c; see below if you want to edit these in unimap_dreymar.h:[/i][/b]
 [code]
-/* Search/replace 'UNIMAP_AWIZXCBV' (CurlAngleWide-ISO) in this file to choose ergonomic Curl/Angle/Wide keyboard mods:
- * _MINIMALL - Default unimap format for all keyboard and converter types (w/o F13-24; this one is unmodded)
- * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle ergo mod (the simple ZXCVB_ half-row shift)
- * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/) ergo mod
- * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z) ergo mod
- * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(') ergo mod
- * _ANAAWING (w/ Curl-DH: N/A)       - ANSI/US A-Wing ergo mod
+/* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
+ * _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
+ * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle (the simple lower left half-row shift)
+ * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/)
+ * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z)
+ * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(')
+ * _ANAAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
  *
- * NOTE: Select a Curl(DH) or non-Curl ergo model, or plain MINIMALL. For Curl(DH), you also need to set CURLMOD.
+ * Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
+ * To get my favoured Colemak-CAW (CurlAngleWide) layout on ISO/ANSI, use _AWIZXCBV / _AWAXCBVZ
+ *      with ACTIVELAYOUT 5 and CURLMOD 1 settings below. Oh, and CAPSBEHAVIOR 1 of course! ^_^
+ */
+#define UNIMAPLAYOUT(...)   UNIMAP_AWIZXCBV( __VA_ARGS__ )  /* CurlAngleWide-ISO ergo model */
 [/code]
 
 For layouts and layout options, the directives will select which pieces of code below to actually compile so you get what you want.
@@ -85,29 +87,30 @@ For layouts and layout options, the directives will select which pieces of code 
 [code]
 /* Define the ACTIVELAYOUT (and CURLMOD) constant(s) to choose the layer0 layout:
  * 0  : QWERTY
- * 1  : Tarmak1 - transitional Colemak (supports CURLMOD; see below)
- * 2  : Tarmak2 - transitional Colemak (--"--)
- * 3  : Tarmak3 - transitional Colemak (--"--)
- * 4  : Tarmak4 - transitional Colemak (--"--)
+ * 1-#: Tarmak1 - transitional Colemak (supports CURLMOD; see below)
+ * 2-#: Tarmak2 - transitional Colemak (--"--)
+ * 3-#: Tarmak3 - transitional Colemak (--"--)
+ * 4-#: Tarmak4 - transitional Colemak (--"--)
  * 5-0: Colemak
  * 5-1: Colemak Curl-DH (requires a CurlAngle keymap; see above)
- * 8  : Dvorak
- * 9  : Workman (if you must - I believe Colemak Curl-DH is a lot better!)
+ * 6-#: Mirrored Colemak (normally used as second layout with a layer switch)
+ * 7  : Dvorak
+ * 8  : Workman (if you must - I believe Colemak Curl-DH is a _lot_ better!)
  */
-#define ACTIVELAYOUT 5
+#define ACTIVELAYOUT    5   /* LAY_COLEMAK      */
 [/code]
 
 [b][i]Second/switch layout settings:[/i][/b]
 [code]
 /* Define the SECONDLAYOUT (and CURLMOD) constant(s) to choose the layer1 switch layout:
  * 0  : Unmodded QWERTY is the default; otherwise:
- * 1  : QWERTY with any ergo mods (AngleWide etc)
+ * 1  : QWERTY with any active ergo mods (AngleWide etc)
  * 2-#: Colemak (if you want something else, replace it in the code between the 'REPLACE THE SECOND LAYOUT...' lines)
  * 3-#: Colemak Mirrored as second layout for one-handed typing (needs an accessible switch key!)
- *      NOTE: The "FPau" key is a layer1 toggle or switch (edit it below), normally used on the Pause key.
- *            You may replace, e.g., the LAlt/"FnLA" or RWin/"RGUI" key with "FPau" in your active layout.
+ *      NOTE: The "FPau" key is a layer1 toggle or switch (select which below), normally used on the Pause key.
+ *            You may swap, e.g., LALT, RGUI or another key with "FPau" in your active layout to use that key instead.
  */
-#define SECONDLAYOUT 0
+# define SECONDLAYOUT   0   /* SEC_VANQWERTY    */
 [/code]
 
 [b][i]Curl(DH)-mod settings:[/i][/b]
@@ -117,37 +120,30 @@ For layouts and layout options, the directives will select which pieces of code 
  * 1: The Curl(DH) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
  * 2: SteveP99's old Curl(DHm or DvbgHm) ergo mod, bringing D/H down but M to the home row.
  *    Some matrix board users may prefer this mod, but several prefer the default even on matrix boards.
- * N/A: DreymaR's old Curl(DbgHk) mod, bringing DH "down-and-out" to the QWERTY V/N keys (edit the layouts for this)
  *
  * NOTE: On the first Tarmak step, CURLMOD 1 will include the HMK swaps whereas CURLMOD 2 won't. So you can choose.
  *       For a baby Tarmak1 step, use CURLMOD 2 and then 1. The K will be misplaced at first, but it's rare.
- *       (For the other steps, CURLMOD 2 still doesn't move HM so Curl(DHm) users generally do HM in the last step.)
  * NOTE: Another baby step after Tarmak1 could be transitioning to a CurlAngle(Wide) keymap model before Tarmak2.
  */
-#define CURLMOD 1
+# define CURLMOD        1   /* CURL_DH          */
 [/code]
 
-[b][i]Extend mapping activation (on by default):[/i][/b]
+[b][i]CapsLock behavior settings, including Extend mode:[/i][/b]
 [code]
-/* The EXTENDMODE constant activates the powerful Extend layers:
- * 0: No Extend (saves a little memory)
- * 1: Ext1 on Caps    : Navigation/editing/multimedia
- * 2: Ext1 on LAlt      (Caps used as LAlt instead)
- * 3: Ext1 on RAlt      (Caps used as RAlt instead)
- * *: Ext2 on Tab     : NumPad/Navigation [NOTE: For now, the Ext2 modifier is Tab but it "should" be Alt+Caps]
+/* The CAPSBEHAVIOR constant chooses Caps key action, including the powerful Extend layer switch:
+ * 0: CapsLock (unchanged)
+ * 1: Extend modifier (uses a little more layout memory, but it's by far the most powerful option IMNSHO!)
+ * 2: BackSpace (for vanilla Colemak or otherwise; a decent choice but Extend is better!)
+ * 3: LCtrl
+ * 4: Esc
  */
-#define EXTENDMODE 1
-[/code]
+#define CAPSBEHAVIOR    1   /* CAPS_EXTEND      */
 
-[b][i]CapsLock behavior settings (only takes effect if EXTENDMODE isn't 1):[/i][/b]
-[code]
-/* The CAPSBEHAVIOR constant chooses Caps key action if EXTENDMODE is 0:
- * 0: CapsLock (normal behavior)
- * 1: BackSpace (for Colemak or otherwise)
- * 2: LCtrl
- * 3: Esc
+/* The EXT#BIT constants with the main Extend key (Caps by default) select Extend# layers in the EXTENDER user function:
+ * Ext1 on Caps alone       : Navigation/editing/multimedia
+ * Ext2 on Ext2+Caps        : NumPad/Navigation
  */
-#define CAPSBEHAVIOR 1
+#define EXT2BIT MOD_BIT(KC_RSFT)                                    /*  Ext2+Ext selects Extend2    */
 [/code]
 
 [b][i]Sticky mods (Shift and/or Ctrl) settings:[/i][/b]
@@ -157,11 +153,11 @@ For layouts and layout options, the directives will select which pieces of code 
  * 1: Sticky Shift only
  * 2: Sticky Ctrl only
  * 3: Sticky Shift & Ctrl
- * NOTE: In the .h file, some constants normally set in config.h are (re)set:
+ * NOTE: In the unimap_dreymar.h file, some relevant constants normally set in config.h are (re)set:
  *       - TAPPING_TERM is the max time a key may be held down for it to register as tapped
  *       - ONESHOT_TIMEOUT is the max delay before a oneshot modifier is ignored
  */
-#define STICKYMODS 1
+#define STICKYMODS      1   /* STICKY_SHFT      */
 [/code]
 
 [b][i]ScrollLock and Pause/Break behavior settings:[/i][/b]
@@ -169,24 +165,24 @@ For layouts and layout options, the directives will select which pieces of code 
 /* The SCLKBEHAVIOR constant chooses ScrollLock key action:
  * 0: Normal ScrollLock (default)
  * 1: Layer 1 toggle key (toggles the second layout)
- * 2: Layer 1 switch key (layer shift; e.g., for mirrored typing if you can use it as ghetto foot switch)
+ * 2: Layer 1 switch key (layer shift; e.g., for mirrored typing if you can use it as "ghetto" foot switch)
  */
-#define SLCKBEHAVIOR 1
+#define SLCKBEHAVIOR    1   /* SLCK_L1TOGGLE    */
 
 /* The PAUSBEHAVIOR constant chooses Pause/Break key action:
  * 0: Normal Pause/Break (default)
  * 1: Win/GUI key (useful for 101/104-key boards that have no GUI key)
  */
-#define PAUSBEHAVIOR 0
+#define PAUSBEHAVIOR    0   /* PAUS_PAUS        */
 [/code]
 
 
 [b][i]Editing maps and headers manually:[/i][/b]
 It is of course entirely possible to edit the layouts themselves directly. It should be fairly intuitive how to do that. See the [url=https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keycode.txt]TMK keycode.txt[/url] file for a list of all key codes (layouts use the 3–4 letter versions).
 
-CapsLock, LAlt and RAlt (plus the temporary Ext2 modifier key whatever that is) are defined as Fn## keys in the layouts. At the start of the file there's a bunch of action definitions for these. (Before Unimap, they were defined differently, at the end of the file.)
+CapsLock, LAlt, RAlt and some other keys are defined as Fn## keys in the layouts. At the start of the file there's a bunch of action definitions for these.
 
-Below are some examples from my unimap file:
+Below are some examples from an unimap file:
 [code]
 #  define AC_FTab ACTION_LAYER_TAP_KEY(2, KC_TAB)    // FTab (Tab key)  as Ext2 – tap for Tab (for now)
 #  define AC_FnLA ACTION_KEY(KC_LALT)                // FnLA (LAlt key) as usual (for now)
@@ -200,16 +196,15 @@ In the above:
     – The Tab key is quite handy as a dual-role modifier, but unfortunately it loses its repeat functionality this way.
     – ISO keyboard users might want to use the <LSGT> key instead; its code is NUBS ("Non-US Backslash").
 • FnLA and FnRA, similarly, are my versions of the LAlt and RAlt keys. But for now, their defined actions are mostly to be their normal selves!
-• AC_FnU1 is a user macro key that I put on Extend1+Tilde/Grave. It's macro is defined at the end of the file; in this case it types out a boilerplate text (my email footer).
+• AC_FnU1 is a user macro key that I put on Extend+Tilde/Grave. It's macro is defined at the end of the file; in this case it types out a boilerplate text (my email footer).
 • Commented out above, is an alternative definition for FnU1: Sending a LWin+T keystroke instead (in Windows, this brings you to the menu line).
 
-Here's an ergo remapping from the [b]dreymar.h[/b] file; this one's (the lower part of) the UNIMAP_ANGLEISO mod. Note how ZXCVB and LSGT have moved:
+Here's an ergo remapping from the [b]unimap_dreymar.h[/b] file; this one's (the lower part of) the UNIMAP_ANIZXCVB Angle-ISO mod. Note how ZXCVB have moved:
 [code]
-             F13 ,F14 ,F15 ,F16 ,   F17 ,F18 ,F19 ,F20 ,   F21 ,F22 ,F23 ,F24 ,                                           \
-    ESC_,    FK01,FK02,FK03,FK04,   FK05,FK06,FK07,FK08,   FK09,FK10,FK11,FK12,   PRSC,SCLK,PAUS,        VOLD,VOLU,MUTE,  \
-    TLDE,N1_1,N2_2,N3_3,N4_4,N5_5,N6_6,N7_7,N8_8,N9_9,NA_0,NBMN,NCEQ,JYEN,BKSP,   INS_,HOME,PGUP,   NMLK,KPDV,KPMU,KPMN,  \
-    TAB_  ,U1_Q,U2_W,U3_E,U4_R,U5_T,U6_Y,U7_U,U8_I,U9_O,UA_P,UBLB,UCRB,   BKSL,   DEL_,END_,PGDN,   KP_7,KP_8,KP_9,KPAD,  \
-    CAPS   ,H1_A,H2_S,H3_D,H4_F,H5_G,H6_H,H7_J,H8_K,H9_L,HASC,HBQU,HCHS,  RTRN,                     KP_4,KP_5,KP_6,KPCM,  \
-    LSFT ,L1_Z,L2_X,L3_C,L4_V,L5_B,LSGT,L6_N,L7_M,L8CM,L9DT,LASL,JROM,    RSFT,        _UP_,        KP_1,KP_2,KP_3,KPEN,  \
-    LCTL ,LWIN,LALT,JMHE,         SPCE         ,JHEN,JKAN,RALT,RWIN,MENU, RCTL,   LEFT,DOWN,RGHT,   KP_0     ,KPDT,KPEQ   \
+    ESC_,    FK01,FK02,FK03,FK04,   FK05,FK06,FK07,FK08,   FK09,FK10,FK11,FK12,   PSCR,SCLK,PAUS,        VOLD,VOLU,MUTE,  \
+    GRV_,N1_1,N2_2,N3_3,N4_4,N5_5,N6_6,N7_7,N8_8,N9_9,Na_0,NbMN,NcEQ,JYEN,BSPC,   INS_,HOME,PGUP,   NLCK,KPDV,KPMU,KPMN,  \
+    TAB_  ,U1_Q,U2_W,U3_E,U4_R,U5_T,U6_Y,U7_U,U8_I,U9_O,Ua_P,UbLB,UcRB,   BSLS,   DEL_,END_,PGDN,   KP_7,KP_8,KP_9,KPAD,  \
+    CAPS   ,H1_A,H2_S,H3_D,H4_F,H5_G,H6_H,H7_J,H8_K,H9_L,HaSC,HbQU,HcHS,  ENT_,                     KP_4,KP_5,KP_6,KPCM,  \
+    LSFT ,L1_Z,L2_X,L3_C,L4_V,L5_B,L0LG,L6_N,L7_M,L8CM,L9DT,LaSL,JROM,    RSFT,        _UP_,        KP_1,KP_2,KP_3,KPEN,  \
+    LCTL ,LGUI,LALT,JMHE,         SPC_         ,JHEN,JKAN,RALT,RGUI,APP_, RCTL,   LEFT,DOWN,RGHT,   KP_0     ,KPDT,KPEQ   \
 [/code]
