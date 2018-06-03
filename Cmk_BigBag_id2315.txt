@@ -33,7 +33,6 @@ And so, [i]voila[/i], here it is:
 [b][url=https://forum.colemak.com/post/20412/#p20412][3]    Other Layouts[/url][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
 [b][3.2][/b] For several [b][url=https://forum.colemak.com/viewtopic.php?id=1458]locales[/url][/b], a '[b]Unified Symbols[/b]' layout with only a few necessary changes from standard Colemak[eD]
-         Also, a layout to '[b]Keep Local Symbols[/b]' like their default (QWERTY-type) counterparts and key cap markings for that locale
 [b][3.3][/b] Intuitive [b]Cyrillic, Greek and Hebrew Colemak phonetic layouts[/b] to write other scripts (e.g., using a toggle switch key)
 [b][3.4][/b] [b]Mirrored Colemak[/b], allowing one-handed typing without extra learning
 
@@ -65,9 +64,13 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as in Lin
 
 [h]TODO:[/h]
 • Present the Big Bag more hypertextually on GitHub gh-pages. (I know, I'm slow at this...)
-• Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?)
-• A total of 4 Extend layers! Proposals: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings
-• Modifier keys for 4 Extend layers. For instance, Caps+{--, LAlt, RAlt, LAlt+RAlt}. Holding Caps or LAlt down should maintain the layer state.
-• For some (or all?) Extend layers, a Lock (say, Shift+Alt+Caps locks; tapping Caps releases)
+• Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?) [done in PKL]
+• A total of 4 Extend layers!? Proposals: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings
+• Modifier keys for 4 Extend layers. For instance, Caps+{--, LAlt, RAlt, LAlt+RAlt}. Holding Caps or Alt down should maintain the layer state.
+• For some (or all?) Extend layers, a Lock (say, Shift+Alt+Caps locks; tapping Caps releases)?
 • Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)
+
+[h]LASTLY:[/h]
+• Best of luck with Colemak and its many marvelous mods! ^_^
+• If you do get stuck, here's a little [b][url=https://forum.colemak.com/topic/2157-joking-around/]light entertainment[/url][/b] to hopefully Shift your mo(o)d. ;-)

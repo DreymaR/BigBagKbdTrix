@@ -27,7 +27,6 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 [b][3]    [u]Other Layouts[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
 [b][3.2][/b] For several [b][url=https://forum.colemak.com/viewtopic.php?id=1458]locales[/url][/b], a '[b]Unified Symbols[/b]' layout with only a few necessary changes from standard Colemak[eD]
-         Also, a layout to '[b]Keep Local Symbols[/b]' like their default (QWERTY-type) counterparts and key cap markings for that locale
 [b][3.3][/b] Intuitive [b]Cyrillic, Greek and Hebrew Colemak phonetic layouts[/b] to write other scripts (e.g., using a toggle switch key)
 [b][3.4][/b] [b]Mirrored Colemak[/b], allowing one-handed typing without extra learning
 
@@ -60,13 +59,13 @@ See the xkb/symbols/colemak file for comments and explanations, in addition to t
  - Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.
  - The positions of added letters and symbols should as far as possible be easy to remember!
 
-    [img]https://www.dropbox.com/s/e1on8tn4hvof0mr/Cmk-ANSI-eD_90d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?dl=1[/img]
     [i]The Colemak [edition DreymaR] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
     [i]Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.[/i]
     
 
-    [img]https://www.dropbox.com/s/k1t0ha6m924bjlq/Cmk-ISO-eD-No-CurlAWide_90d_FShui.png?dl=1[/img]
-    [i]Colemak-CAW[eD], showing the Norwegian 'us' variant on an ISO board with the Curl(DH)Angle and Wide(/) ergonomic mods (see below).[/i]
+    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+    [i]The Colemak-CAW[eD] ergonomic variant shown on an ISO board (see below).[/i]
 
 
 [b][i]HowTo:[/i][/b]
@@ -80,11 +79,11 @@ See the xkb/symbols/colemak file for comments and explanations, in addition to t
 
 This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.
 
-From my XKB source file:
-[code]A modular Extend mapping layer like the one I have in Portable Keyboard Layout for Windows
-- Key names are in /usr/include/X11/keysymdef.h and XF86keysym.h (Removing the XK_ prefix)
-- <FK##> mapped as XF86 Multimedia keys; shifted versions were not implemented in WinPKL
+    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?dl=1[/img]
+    [i]A symbolic chart of my Extend mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.[/i]
 
+A more explicit figure from my XKB Extend source file:
+[spoiler][code]
 These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
 +------+------+------+------+------+------+------+------+------+------+------+------+------+
 |Esc + |F1 <> |F2 << |F3 >> |F4 <> |F5 <> |F6 << |F7 >> |F8 <> |F9 <> |F10<> |F11<> |F12<> |
@@ -103,16 +102,14 @@ These keys are modified/transposed by holding down the 'extend key' (CapsLock by
 |_ *** |Z €€€ |X === |C === |V === |B *** |K *** |M *** |, *** |. *** |/ €€€ |Spc € |Entr€ |
 | *MOn | Undo | Cut  | Copy | Paste| *Bt1 | *Bt2 | *Bt3 | *MLe | *MRi | Multi| Enter| PrtSc|
 +------+------+------+------+------+------+------+------+------+------+------+-------------+
-Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; € Various commands.[/code]
+Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; € Various commands.
+[/code][/spoiler]
 
 Hitting Caps+<LSGT> (or Shift+NumLock if that's enabled) enables/disables Pointer Mousing; when that's on you may move the mouse pointer with the GD<> keys and use BKM for buttons (or you can use the KeyPad keys as before). My mapped keys go a few pixels at a time so when acceleration is on you may travel quickly around the screen this way. Wheel mousing works but doesn't repeat so you'll have to press many times to scroll a long way.
 
 The multimedia keys are mapped to the F keys (++) as intended but XKB/Linux doesn't necessarily link any actions to their key presses although these days most of the usual multimedia keys are configured as expected; this is done in the Shortcuts settings which can be accessed in Unity/Gnome via the Keyboard settings (or dconf-editor/gsettings to org.gnome.desktop.wm.keybindings for the Window Manager ones and ??? for other categories). You could also use xbindkeys, AutoKey or others to bind whatever you want to these keys.
 
 Using the Settings > Keyboard panel in Unity/Gnome (gnome-control-center keyboard) doesn't work as expected with the Extend mapped keys, since the hotkey will register as a 'Level 5 shift' keypress when you press your Extend key! The trick is to press the modifier(s) before clicking on the shortcut you want to set! Then when 'New accelerator' is showing you press down the final key. I had to do that for the Calculator and Terminal keys (Lv5+<FK12>) as those shortcuts were disabled by default in my Ubuntu install.
-
-    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?dl=1[/img]
-    [i]A symbolic chart of my Extend mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.[/i]
 
 The XKB implementation is almost the same as the Windows/PKL one. You get shifted multimedia keys which Win/PKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are poorly implemented. Instead, there's a MouseKeys On/Off key on <LSGT> and a Compose/Multi key on Slash. Those should be fairly useful I think. The Tilde key is customizeable – by default it holds a spare Del but it could be anything you deem useful.
 
@@ -168,15 +165,12 @@ These are ergonomic mods, moving some keys around to achieve straight wrists (th
 For Linux/xkb, the Angle/Wide mods are implemented as keyboard models. This means that you can use them with [i]any[/i] layout including the QWERTY and Dvorak ones, Tarmak and even the Curl mods and Mirrored Colemak (because those are implemented as layouts). Modularity at your fingertips, again.
 
     [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
-    [i]The AngleWide-Slash wide ergo mod for PC105/ISO keyboards.[/i]
+    [i]The AngleWide(Slash) wide ergo mod for PC105/ISO keyboards.[/i]
 
-I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide(Slash) mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a [url=https://forum.colemak.com/viewtopic.php?pid=12302#p12302]Wide(Quote) mod[/url] as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (at the cost of longer left pinky stretches).
+I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide(Slash) mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a [url=https://forum.colemak.com/viewtopic.php?pid=12302#p12302]Wide(Quote) mod[/url] as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (at the cost of longer left pinky stretches), should anyone be interested.
 
      [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?dl=1[/img]
      [i]The Angle(Z)Wide ergo mod for PC104/ANSI keyboards[/i]
-
-     [img]https://www.dropbox.com/s/txebhgrvefdi7wj/Cmk-ANSI-AWing_60d_FShui.png?dl=1[/img]
-     [i]The "A-Wing" ergo mod for PC104/ANSI keyboards[/i]
 
 [b][i]HowTo:[/i][/b]
 To use these, you might have to edit a file or so (see below under "Installation") unless your distro supports keyboard choice which Ubuntu used to do but doesn't anymore.

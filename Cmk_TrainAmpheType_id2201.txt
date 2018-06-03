@@ -152,25 +152,21 @@ Also, here's another [b][url=https://github.com/first20hours/google-10000-englis
     [i]Amphetype's Analysis tab, where you can make and export lists of words or trigrams that cause you trouble[/i]
 
 
-[h]Links (mostly for making specified lists of words):[/h]
-[url]https://github.com/webiest/amphetype[/url] (Amphetype itself)
-[url]https://github.com/lalopmak/amphetype[/url] (user Lalop's Amphetype fork, with some tweaks)
-[url]http://www.wordfind.com/[/url]
-[url]http://worddetector.com/[/url]
-[url]http://www.morewords.com/[/url]
-[url]http://www.wordhippo.com/[/url]
-[url]https://github.com/first20hours/google-10000-english[/url]
-
-
 [h]Notes:[/h]
-• The experts all seem to value the ability to vary your speed. Type well-known words blazingly fast, and slow down a bit for hard ones to avoid mistakes.
+• The experts all seem to value the ability to [b]vary your speed[/b]. Type well-known words blazingly fast, and slow down a bit for hard ones to avoid mistakes.
 • Mistakes will slow you down more than consciously slowing down will, once you get used to it!
-• Good training should be varied! Don't wear yourself out by banging your head against a hurdle until you're exhausted, but keep chipping away at it now and then.
+• [b]Good training should be varied[/b]! Don't wear yourself out by banging your head against a hurdle until you're exhausted, but keep chipping away at it now and then.
 • I think that many shorter bouts in a day beats a few long ones.
 • You can of course use the above mentioned lesson lists with other training tools such as [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
 • If you want to see lesson statistics on the Analysis tab, you'll have to select "Save key/trigram/word statistics from generated lessons" on the Preferences tab.
-• Whether training or just typing, I try to make a point of deleting the whole word if I make a mistake; Extend helps with that (Ext+T+O for Ctrl+Back).
-    This can sometimes be faster than mashing the Back key, but more importantly it lets you type the word correctly before proceeding. That should help in the long run.
+
+
+[h]Training tip: Take the Control Back![/h]
+This is a quite useful trick I think. Whether training or just typing normally, I try to make a point of [b]deleting the whole word[/b] if I make a mistake!
+
+This can sometimes be faster than mashing the Back key, but more importantly it lets you type the word correctly before proceeding. That may help in the long run: When practising a music instrument for instance, I focus on doing it right so I don't ingrain any mistakes into my muscle memory and so I can learn in flow. I believe that typing is similar in this respect.
+
+Extend helps me do this quite easily ([b]Ext+T+O[/b] for [b]Ctrl+Back[/b]).
 
 
 [h]Online Training Tools:[/h]
@@ -190,6 +186,17 @@ On the [b][url=https://colemak.com/Learn]Colemak Learn page[/url][/b], there's a
 This may come too late for you since you're here reading my training page, but:
 If you're new to Colemak and didn't opt for the [b][url=https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/]Tarmak[/url][/b] experience, then maybe [b][url=https://github.com/first20hours/keyzen-colemak]KeyZen for Colemak[/url][/b] could work for you?
 It lets you learn by simply doing in the here and now, without stress. Om, Om! _/|\_
+
+
+[h]Links (mostly for making specified lists of words):[/h]
+[url]https://github.com/webiest/amphetype[/url] (Amphetype itself)
+[url]https://github.com/lalopmak/amphetype[/url] (user Lalop's Amphetype fork, with some tweaks)
+[url]http://www.wordfind.com/[/url]
+[url]http://worddetector.com/[/url]
+[url]http://www.morewords.com/[/url]
+[url]http://www.wordhippo.com/[/url]
+[url]https://github.com/first20hours/google-10000-english[/url]
+
 
     [img]https://www.dropbox.com/s/u1xp3biy6wb5ogd/10FF_badges_animated.gif?raw=1[/img]
     [i]An eager typing trainee (courtesy of [b][url=https://10fastfingers.com/typing-test/english]TenFastFingers[/url][/b])![/i]

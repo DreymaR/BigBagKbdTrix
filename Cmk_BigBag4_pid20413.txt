@@ -38,7 +38,7 @@ This is a weird and wonderful thing: The rail shooter House Of The Dead converte
 
 The conversion is quite faithful, but with extra silly elements added – particularly in the first game. Zombies will often throw or wield kitchen utensils instead of knives and axes, and the main characters have a SEGA Dreamcast console with a huge cell battery strapped on their back as well as a SEGA keyboard before them.
 
-The original is still lying about and considered abandonware, so if you're interested you may give it a spin of the barrel. The original's drills can be downright handy for practising a particular aspect of your typing. There are exercises focused on typing speed, accuracy, reaction and special keys. There's even a typing tutorial (QWERTY-based but still useful). I haven't had much trouble running it, but I had to disable my second screen. I ran it in 16-bit color but I don't think that's necessary.
+The original is still lying about and considered abandonware, so if you're interested you may give it a spin of the barrel. The original's drills can be downright handy for practising a particular aspect of your typing. There are exercises focused on typing speed, accuracy, reaction and special keys. There's even a typing tutorial (QWERTY-based but still useful).
 
     [img]https://www.dropbox.com/s/xqgrkm7hkkxoex6/TTotD-1_Tower.jpg?dl=1[/img]
     [i]In [b]The Typing Of The Dead[/b], you'll meet various challenges such as the Tower boss. Type in the right answer to defeat it.[/i]
@@ -53,8 +53,20 @@ The second installment, [b]Typing Of The Dead: Overkill[/b] is available on Stea
 For the record: I like both! The original is what I'll go to for typing training, though.
 
 More info and downloads through these links:
-[b][url=http://www.theisozone.com/downloads/pc/windows-games/the-typing-of-the-dead-pc/]The Typing Of The Dead[/url][/b] (PC version)
+[b][url=http://www.theisozone.com/downloads/pc/windows-games/the-typing-of-the-dead-pc/]The Typing Of The Dead 2000[/url][/b] (PC version)
 [b][url=http://store.steampowered.com/app/246580/]The Typing Of The Dead: Overkill[/url][/b] (Steam)
+
+[b]Technical tips for TotD 2000:[/b]
+• After unpacking the .rar file there's an install.exe and then a setup.bat you should run.
+• I've gotten it to run on an extended monitor, without changing color depth (on Win 10).
+    – If you have a second monitor and want to play on your main one, disable the other.
+• I have to start it up with a standard US or UK layout active, or some keys will be weird.
+    – After that, I can switch to any other Win layout such as the one I've made with MSKLC.
+• Locale layouts may struggle as they can have some symbols on AltGr or dead keys.
+• PKL works so I can use Extend to navigate etc.
+• The gun sound files (TotD\sound\SE\COMMON\gun#_22.wav [1-5]) can be replaced with ...
+    ... typing sound files (TotD\sound\SE\typing\typing#.wav [1-5]) which are more pleasant.
+• If it's hard, set it to "Very Easy" in Options. There are other settings there that may help too.
 
 
 [h][4.5]    PHYSICAL KEYBOARD MODDING[/h]

@@ -50,13 +50,13 @@ I use Farkas Máté's [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[
 My PKL layout.ini file (see links to downloads below) largely corresponds to its XKB counterpart when it comes to the lv3-4(AltGr) mappings. Note that since the Angle/Wide mods aren't modular in PKL I can't deliver all combinations of layout and ergo mod - I myself use both the Colemak[eD] mappings for Norwegian and the AngleWide-Slash/35 mod so that'll be there. I've also included a few others such as the non-Wide standard Colemak[eD] and a bunch of 'virtualkey' layouts that don't have separate lv3-4 mappings. Feel free to add your own; ask if you need help.
 
 
-    [img]https://www.dropbox.com/s/e1on8tn4hvof0mr/Cmk-ANSI-eD_90d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?dl=1[/img]
     [i]The Colemak [edition DreymaR] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
     [i]Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.[/i]
     
 
-    [img]https://www.dropbox.com/s/k1t0ha6m924bjlq/Cmk-ISO-eD-No-CurlAWide_90d_FShui.png?dl=1[/img]
-    [i]Colemak-CAW[eD], showing the Norwegian 'us' variant on an ISO board with the Curl(DH)Angle and Wide(/) ergonomic mods (see below).[/i]
+    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+    [i]The Colemak-CAW[eD] ergonomic variant, shown on an ISO board (see below).[/i]
 
 
 My PKL files have separate help images for each state and dead key, with and without Shift (which is quite a lot of images as there are 19 different dead keys now!), that activate when you need them. You can set your own hotkey to show/hide these, or use the default Ctrl+Shift+1. The help image will jump between the top and bottom of your screen if you mouse over it, so as to stay out of the way.
@@ -66,10 +66,13 @@ My PKL files have separate help images for each state and dead key, with and wit
 
 The Extend mappings using CapsLock (or another key of your choice, set in pkl.ini) as a modifier for all sorts of cool moving-keys-around, originated with autohotkey and PKL. I'm very happy with it and consider it a Life Hack on par with Colemak itself! This is one heavy reason I want a PKL implementation of my layout on any Windows PC I work on instead of settling for just a plain Colemak install.
 
-For more info and tricks, see my [url=https://forum.colemak.com/viewtopic.php?pid=16698#p16698]Extend Extra Extreme[/url] topic.
+For more info and tricks, see my [b][url=https://forum.colemak.com/viewtopic.php?pid=16698#p16698]Extend Extra Extreme[/url][/b] topic.
 
-From my pkl.ini file:
-[code]
+    [img]https://www.dropbox.com/s/sxcsk0on5jbp1ac/Extend-ISO-NoWi-Win_90d.png?dl=1[/img]
+    [i]A symbolic chart of my Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
+
+A more explicit chart from my pkl.ini file:
+[spoiler][code]
 ; These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
 ;+------+------+------+------+------+------+------+------+------+------+------+------+------+
 ;|Esc + |F1 <> |F2 << |F3 >> |F4 <> |F5 <> |F6 << |F7 >> |F8 <> |F9 <> |F10<> |F11<> |F12<> |
@@ -88,15 +91,11 @@ From my pkl.ini file:
 ;| *WhLe| Undo | Cut  | Copy | Paste| *BtnL| BtnM | *BtnR| *Le17| *Ri17| *WhRi| Enter| PrtSc|
 ;+------+------+------+------+------+------+------+------+------+------+------+-------------+
 ;Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; ¤ Various commands.
-[/code]
+[/code][/spoiler]
 
 The PKL implementation of my Extend layer is working fully. It includes sideways wheel scrolling, which the Linux version lacks (it has mousing on/off and a multi key instead). The WheelLeft key is mapped to ISO VK_102 which isn't available on ANSI boards, so if ANSI users want it they'll have to put it elsewhere. One might forgo one Esc key and put the WheelLeft/Right on the bracket keys for instance.
 
 On the Tilde key I put a handy [url=https://forum.colemak.com/post/19992/#p19992]mouse homing key[/url] as a default. It's handy for retrieving or putting away your mouse cursor, or for accessing buttons and menus at the upper-left corner of your current window without touching the actual mouse. Another suggestion is Win+T which is quite convenient for opening the Taskbar which can then be navigated further with Extend-keys. Or whatever you like, really! :-)
-
-
-    [img]https://www.dropbox.com/s/sxcsk0on5jbp1ac/Extend-ISO-NoWi-Win_90d.png?dl=1[/img]
-    [i]A symbolic chart of my Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
 
 
 [h][1.3]    ENHANCED DEAD KEY MAPPINGS[/h]
@@ -140,7 +139,7 @@ Note that the dead keys interact in clever ways: Ring then 'angle' will produce 
 The Angle/Wide ergonomic mods have to be shoehorned into PKL, I'm afraid, as it has no modularity separating key codes from symbols. So I've made edits in the layout.ini file for my Wide mod and also had to make corresponding edits in the pkl.ini [extend] section to make it come together. You could then install both Wide and nonWide layouts and switch between them, but the Extend mappings would only be right for one or the other. And changing stuff is a bit hard. Maybe that's okay with you though.
 
     [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
-    [i]The AngleWide-Slash ('AWide-35') wide ergo mod for PC105/ISO keyboards.[/i]
+    [i]The AngleWide(Slash) wide ergo mod for PC105/ISO keyboards.[/i]
 
 In the pkl.ini file I have some snippets at the bottom which may be pasted into the [extend] section to implement a wide or non-wide Extend layer. It should be self-explanatory. There are also two template pkl.ini files for wide or non-wide which you could copy and rename to pkl.ini to easily get what suits you.
 
@@ -196,11 +195,10 @@ SC014 = G    5    g    G    --    ŋ    Ŋ    ; QWERTY tT
 SC015 = OEM_4    1    å    Å    *{Esc}    [    {    ; QWERTY [{ ; Cmk-eD-No
 SC016 = J    5    j    J    --    ʃ    Ʃ    ; QWERTY yY[/code]
 Note the following:
-• The OEM_4 (Left Bracket) key has scan code SC015 so it's in the middle now; this is the Wide(35/Slash) ergonomic mod in action
+• The OEM_4 (Left Bracket) key has scan code SC015 so it's in the middle now; this is the Wide ergonomic mod in action
 • The Norwegian Åå letter on LBr is on lv1-2 mappings due to this being my Norwegian locale layout;
-   the only keys that deviate from the standard setup are LBr(OEM_4), RBr(OEM_6) and LSGT(OEM_102).
-   (Oh, and the lv3-4 of A because I moved the Ææ to RBr, but that's no biggie)
-• On your keyboard these OEM_# numbers could be different as there's a difference between US/ANSI and Euro/ISO boards; try it out...
+   the only keys that deviate from the standard setup here are LBr(OEM_4), RBr(OEM_6) and LSGT(OEM_102).
+• On your keyboard the OEM_# numbers could be different as there's a difference between US/ANSI and Euro/ISO boards; try it out...
 
 
 [h][3.3]    MIRRORED COLEMAK[/h]
@@ -216,7 +214,7 @@ There's a separate [b][url=https://forum.colemak.com/post/10279/#p10279]Download
 
 
 [h]DONE:[/h]
-• [b]2014-01-25[/b]: Added ANSI VirtualKey QWERTY+Colemak with the Wide(28) mod
+• [b]2014-01-25[/b]: Added ANSI VirtualKey QWERTY+Colemak with the Wide(Quote) mod
 • [b]2014-05-21[/b]: Revamped Tarmak layouts, with better docs, icons, help images etc
 • [b]2014-11-06[/b]: Complete help image set for the Colemak-eD_ISO layout, dead key enhancements and Latin locale variants
 • [b]2015-06-25[/b]: Tarmak layouts with help images and pkl.ini files for ISO/ANSI; Curl(DH)Angle ergo mods for ISO/ANSI (AngleZ and A-Wing)
@@ -225,11 +223,11 @@ There's a separate [b][url=https://forum.colemak.com/post/10279/#p10279]Download
 
 
 [h]TODO:[/h]
-• Whatever I want to do with the layouts and stuff themselves, I'll discuss it in [url=https://forum.colemak.com/viewtopic.php?id=1438]the main Big Bag topic[/url]
+• Whatever I want to do with the layouts and stuff themselves, I'll discuss it in the main Big Bag topic.
 • There's quite a lot that could be done with these files. More locales and help images, both wide and nonwide file sets...
 • However, I'll only do any of that if someone really needs help and asks very nicely. ;)
 • The main problem is that since PKL definitions aren't as modular as the XKB ones I'd have to make any changes in multiple file sets at once. Ugh.
-• I'm actually considering having a stab at the PKL source code to see if I could modularize the images and key codes a bit. The Vortex ([user]vVv[/user]) mod looks best.
+• I'm having a stab at the PKL source code to see if I can modularize the images and key codes. I was inspired by the Vortex ([user]vVv[/user]) mod.
 • A better and clearer implementation of Curl(DH) mods (with Colemak[eD] mappings?).
 
 
