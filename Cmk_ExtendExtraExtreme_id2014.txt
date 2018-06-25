@@ -13,6 +13,7 @@
 
 
 [img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... Why?[/h]
+[quote=stevep99]Living without Extend at this point would seem like some kind of perverse hell imposed as punishment for terrible crimes committed in numerous past lives.[/quote]
 As described in [b]my Big Bag topics (for [url=https://forum.colemak.com/viewtopic.php?id=1438]Linux/XKB[/url], [url=https://forum.colemak.com/viewtopic.php?id=1467]Windows/PKL[/url] and [url=https://forum.colemak.com/viewtopic.php?id=2158]USB-2-USB devices[/url])[/b], the Extend mappings are wonderful and in my opinion at least as useful as Colemak itself. Also, they're much [b]easier to start using[/b] as you don't have to learn much to get started and can [b]grow gradually into full mastery[/b] without any loss of efficiency – even ingrained QWERTY die-hards could get used to a little Extend on the side unless they're completely backwards. You start up using the [b]arrow keys in the home position[/b] and/or [b]multimedia keys[/b], and before you know it you'll be jumping around [b]selecting whole words[/b] at a time and doing more and more advanced stuff.
 
 Another advantage of using Extend is that all these [b]shortcut tricks are available on other computers[/b] too, albeit in more awkward geometries as you have to reach for arrow and PgUp/Dn etc keys without the power of Extend. Extend may not be as powerful as specialized navigation software like Vimperator/Pentadactyl or MouselessBrowsing, but it's [b]generic, usable in all apps/modes and always ready[/b], and it comes with my layout which I have to install anyway so for me it's "already there" without having to manage any extra software. I actually think that even Vim benefits from it (as arrows are OmniMode and no remappings are needed)!
@@ -26,7 +27,7 @@ Many of the tricks described here work under [b]both Windows and Linux[/b], as t
 [img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... What?[/h]
 Oh, sorry. Maybe you don't know or remember exactly what Extend is? If you do, you may skip to the next part now. For those reading on, Extend is like the Fn layer that some laptops have to get the NumPad and maybe some other keys. Some compact "hacker" keyboards such as the [url=https://en.wikipedia.org/wiki/Happy_Hacking_Keyboard]Happy Hacking Keyboard[/url] also sport Fn layers that give easy access to arrows, F# keys and other keys that are missing from the reduced-size keyboard.
 
-    [img]https://www.dropbox.com/s/6zp35xojn4ssh40/HHKBPro2_EliteKbds.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/6zp35xojn4ssh40/HHKBPro2_EliteKbds.png?raw=1[/img]
     [i]The legacy of Extend: The Happy Hacking Keyboard's Fn layer for navigation, media and F# keys.[/i]
 
 Instead of an extra hardware key, the Extend mappings can use any key really as that extra "Fn"/Shift-type modifier, but usually it's [b]CapsLock[/b] that gets the honor. I wanted a better layout than the one above, so I and others on the Colemak forums came up with one around 2008. It was later expanded and implemented in PortableKeyboardLayout (PKL) by its creator Farkas Máté who also to my knowledge came up with the name 'Extend' for this wonder. Interestingly, the same nav key setup is seen on the fancy [url=https://ultimatehackingkeyboard.com/]Ultimate Hacking Keyboard[/url]! I have no idea who came up with it first, but they have almost the right idea there. (Almost?!? Yes, unfortunately they put the dorky Insert key in a too good position, left lots of good keys open and didn't make accessible Alt/Shift/Ctrl keys – we'll get back to those in a minute.)
@@ -316,7 +317,7 @@ So there you have it, voila and prestidigitatus! I hope you will learn to enjoy 
 [i]~ DreymaR[/i]
 
 
-[img]https://www.dropbox.com/s/kukcuvozwh6btmg/PKL_Extend.png?dl=1[/img]
+[img]https://www.dropbox.com/s/kukcuvozwh6btmg/PKL_Extend.png?raw=1[/img]
 
 
 [b][i]SOME RELEVANT LINKS (MOSTLY ABOUT SHORTCUTS)[/i][/b]

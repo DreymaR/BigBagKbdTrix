@@ -33,5 +33,5 @@ You can use Atmel FLIP on Windows instead of flashing under Linux: It gives you 
 [b]5.[/b] [b]Activate the device (fig 5–5)[/b]. Press "[b]Start Application[/b]". Reset should be checked.
 [b]6.[/b] [b]Test the device[/b]. With a keyboard connected to the device, type something on it and see that it does what it should.
 
-    [img]https://www.dropbox.com/s/ozmnhilo335x7ff/USB2USB_AtmelFlip_Hasu.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ozmnhilo335x7ff/USB2USB_AtmelFlip_Hasu.png?raw=1[/img]
     [i]Fig. 5: Atmel FLIP for Windows. 1) Select chip (a); 2) Connect (c); 3) Load HEX file (b); 4) Flash device; 5) Start device[/i]

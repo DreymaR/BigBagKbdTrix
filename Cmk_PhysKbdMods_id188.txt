@@ -91,7 +91,7 @@ There are several more modern matrix boards and some are even reprogrammable. I'
 User [user]Korivak[/user] mentioned the Apple/Mac keyboard as a good alternative:
 [quote=Korivak]The Apple keyboard has identical keycaps in all three rows, so it's easy to swap the keycaps on.  It's also widely available, well built and works with both Windows and OS X.[/quote]
 
-    [img]https://www.dropbox.com/s/ak5airljz6fhj25/Cmk-Wide-Qu_MacKbd_Kalixiri_2010-02.jpg?dl=1[/img]
+    [img]https://www.dropbox.com/s/ak5airljz6fhj25/Cmk-Wide-Qu_MacKbd_Kalixiri_2010-02.jpg?raw=1[/img]
     [i][user]kalixiri[/user]'s Mac keyboard, showing a Colemak-Wide ergo mod for ANSI[/i]
 
 
@@ -109,7 +109,7 @@ Note: This isn't a scan code remapped board, which I think is okay because sendi
 
 I haven't got one of these (yet). That said, the [b][url=https://waytools.com/]TextBlade from WayTools[/url][/b] looks awesome for an ultra-portable USB/BlueTooth keyboard solution, and you can order [b][url=https://waytools.com/threads/blog/colemak]a Colemak-printed version[/url][/b] of it. Check it out. I'm convinced – and thanks to user Dave for [url=https://forum.colemak.com/viewtopic.php?id=2127]the post that tipped me off[/url]! One thing that'd make it even more awesome though, would be the inclusion of an internal, reprogrammable layout converter chip (maybe using TMK?)!
 
-    [img]https://www.dropbox.com/s/syrb7av2lym867k/WayTools-TextBlade_Cmk_s.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/syrb7av2lym867k/WayTools-TextBlade_Cmk_s.png?raw=1[/img]
     [i]WayTools TextBlade ultra-portable keyboard, available with Colemak key markings[/i]
 
 
@@ -120,7 +120,7 @@ I haven't got one of these (yet). That said, the [b][url=https://waytools.com/]T
 
 Now my own projects: I've bought and converted a [b]Saitek Slimline Multimedia[/b] board. It's dirt cheap, slimline, keycaps are easy to move, it's black and red and passes my critical eye, it comes in national variants and it has a bunch of extra keys some of which are readily customizable in Windows. I've befriended the left-hand scroll wheel and left/right scroll keys (rarely in use but every now and then they're good to have there), and the speaker volume wheel, as well as the back/forward/close/switch keys; the Copy/Cut/Paste keys would've been great if I were still on Dvorak but they don't see very frequent use unless I do a lot of copy-pasting all at once. The board has special functions for F keys, but fortunately not the "F-Lock illness" that Logitech invented (the F keys weren't the default state and after every restart you'd have to push that damn F-Lock key to get your function keys back). One minus is the lack of LEDs to show the Lock key states. There are small icons in the system tray if you use the Windows driver, but these can't be seen if the task bar is hidden (e.g., all full-screen apps). I've found that a bit annoying.
 
-    [img]https://www.dropbox.com/s/71x7diim0ur3bl6/ColemakNo_Saitek-SL-MM.jpg?dl=1[/img]
+    [img]https://www.dropbox.com/s/71x7diim0ur3bl6/ColemakNo_Saitek-SL-MM.jpg?raw=1[/img]
     [i]My old Saitek keyboard; nice and shiny[/i]
 
 This is not a board for people who need an adamant microswitch feel to their typing. But I like it so far, and I don't personally need that "heavy feel". One aber is that if you use the stands to angle the typing surface towards you, the row of multimedia keys at the top will give way just a little which feels awkward. I tried keeping the stand down for a while but I like having it up so I decided to live with the slight sway and now I don't notice it anymore.
@@ -133,7 +133,7 @@ I also found a "slim" board in the electronics garbage bin at the hospital where
 
 The Siemens [b]KBPC S[/b] ("S" for "Slim"?) board I converted had readily movable keys, except for the "bump keys" F and J that had an extra ridge on the stem, ostensibly to aid montage. I got it off easily enough using a sharp knife, and the keys worked without any trouble.
 
-    [img]https://www.dropbox.com/s/fds2bql9juipwbo/ColemakNo_Siemens-KBPC-S.jpg?dl=1[/img]
+    [img]https://www.dropbox.com/s/fds2bql9juipwbo/ColemakNo_Siemens-KBPC-S.jpg?raw=1[/img]
     [i]A Siemens keyboard, now redeemed from its dirty QWERTY past[/i]
 
 The Siemens Fujitsu [b]KBPC XP[/b] board is also found at my workplace. From inspection, the keys are moveable except that there are stems at two opposing corners of each key and the bottom row has these placed differently from the middle and upper rows. Luckily, this only affects the J and K keys. I think one could simply remove the stems with no adverse effects, except the risk of the two keycaps falling off if the board were to be held upside down. That would be a minor problem indeed. A more elegant solution would be to make new holes in the keyboard for the J and K keys' corner stems. A soldering iron would be too thick for that unless you have a special tip, but maybe one could heat a wire to melt a hole with? I don't really think it'd be worth doing though.
@@ -144,7 +144,7 @@ There are other KBPC boards from Siemens Fujitsu that also seem to share the fla
 
 I have a Unicomp Spacesaver "IBM Model M type" keyboard – see at the bottom of this post for an image. Mechanical keyboards often have completely moddable key caps so they're a layout modder's paradise. Nuff said? ;-)
 
-    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
     [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M type) ISO keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
 
 
@@ -161,7 +161,7 @@ For some of the boards I've converted, I made new bumps for the T and N with an 
 
 The old F and J bumps were left in place as I don't think they cause any trouble at all. If they annoy you, you could whittle them away carefully; don't overdo it though or you'll make an unseemly depression even if you only took a little too much. Easy does it.
 
-    [img]https://www.dropbox.com/s/rvxqibrwdw1zo0t/ColemakNo_Siemens-KBPC-S_bumps.jpg?dl=1[/img]
+    [img]https://www.dropbox.com/s/rvxqibrwdw1zo0t/ColemakNo_Siemens-KBPC-S_bumps.jpg?raw=1[/img]
     [i]My modified Siemens keyboard showing the new index finger anchors[/i]
 
 If you don't have a soldering iron you might try heating up some suitable implement. But be warned that I don't think a candle can heat up a screwdriver enough to melt even this easily meltable plastic with. Maybe a gas torch could, but don't sue me if that doesn't work.

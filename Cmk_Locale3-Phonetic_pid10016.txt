@@ -21,7 +21,7 @@ I made some choices concerning some Greek letters (e.g., Χχ vs Ψψ vs Ξξ), 
 
 [h][il] HEBREW SCRIPT[/h]
 
-   [img]https://www.dropbox.com/s/b9amh8gzfvhgzx3/HebrewCmk_Wrapman_WIP.png?dl=1[/img]
+   [img]https://www.dropbox.com/s/b9amh8gzfvhgzx3/HebrewCmk_Wrapman_WIP.png?raw=1[/img]
    [i]The proposed/WIP Colemak phonetic layout for Hebrew script based on phonetic Israeli layouts and own work.[/i]
 
 [b]NOTE:[/b] Turns out my first attempt at this was a misunderstanding and as such quite useless as it was based on the Israeli national layout which isn't phonetic after all! [user]Wrapman[/user] and I are working on a new one (the one in the image above), see [url=https://forum.colemak.com/post/19971/#p19971]the discussion below[/url]!

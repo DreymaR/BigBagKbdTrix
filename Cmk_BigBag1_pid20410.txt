@@ -12,12 +12,12 @@ See my various layout files for comments and explanations, in addition to these 
  - Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.
  - The positions of added letters and symbols should as far as possible be easy to remember!
 
-    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?raw=1[/img]
     [i]The [b]Colemak [edition DreymaR][/b] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
     [i]Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.[/i]
     
 
-    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
     [i][b]Colemak-CAW[eD][/b], using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see [url=https://forum.colemak.com/post/20411/#p20411]the next post[/url]).[/i]
 
 
@@ -27,7 +27,7 @@ This is my favorite mod next to Colemak itself! The ability to navigate and edit
 
 For more info and tricks, see my [b][url=https://forum.colemak.com/viewtopic.php?pid=16698#p16698]Extend Extra Extreme[/url][/b] topic.
 
-    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?raw=1[/img]
     [i]A symbolic chart of my [b]Extend[/b] mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.[/i]
 
 A more explicit chart from my XKB Extend source file:
@@ -98,26 +98,27 @@ There are 19 dead keys in my pkl layout right now. The common accents are there,
 02) Hook, palatal hook
 03) Horn, retroflex hook/tail
 04) Currency:
-    [img]https://www.dropbox.com/s/fcrps2y8gxgq3dd/dk04_currency.png?dl=1[/img]    [img]https://www.dropbox.com/s/0q1zsov1jzt9xa4/dk04sh_currency.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/fcrps2y8gxgq3dd/dk04_currency.png?raw=1[/img]    [img]https://www.dropbox.com/s/0q1zsov1jzt9xa4/dk04sh_currency.png?raw=1[/img]
 05) Greek (phonetic):
-    [img]https://www.dropbox.com/s/u635qlsqzus8m1x/dk05_greek.png?dl=1[/img]    [img]https://www.dropbox.com/s/af6f7swvm5w4j24/dk05sh_greek.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/u635qlsqzus8m1x/dk05_greek.png?raw=1[/img]    [img]https://www.dropbox.com/s/af6f7swvm5w4j24/dk05sh_greek.png?raw=1[/img]
 06) Circumflex
 07) Caron
 08) Ogonek, comma below
 09) Breve
 10) Ring above, ring symbols:
-    [img]https://www.dropbox.com/s/ao08n7m6awdb7o9/dk10_ringabove.png?dl=1[/img]    [img]https://www.dropbox.com/s/ezrzh2ewwzllne8/dk10sh_ringabove.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ao08n7m6awdb7o9/dk10_ringabove.png?raw=1[/img]    [img]https://www.dropbox.com/s/ezrzh2ewwzllne8/dk10sh_ringabove.png?raw=1[/img]
 11) Macron
 12) Double-acute, math/science:
-    [img]https://www.dropbox.com/s/7mqklbxtbken7sq/dk12_dblacutesci.png?dl=1[/img]    [img]https://www.dropbox.com/s/cnqhigzwg94n1vh/dk12sh_dblacutesci.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/7mqklbxtbken7sq/dk12_dblacutesci.png?raw=1[/img]    [img]https://www.dropbox.com/s/cnqhigzwg94n1vh/dk12sh_dblacutesci.png?raw=1[/img]
 13) Umlaut/diaeresis
 14) Tilde
 15) Acute, superscripts
-    [img]https://www.dropbox.com/s/0dhe2lb23jm3s64/dk15_acute.png?dl=1[/img]    [img]https://www.dropbox.com/s/1ggyh52bratpnt2/dk15sh_acute.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/0dhe2lb23jm3s64/dk15_acute.png?raw=1[/img]    [img]https://www.dropbox.com/s/1ggyh52bratpnt2/dk15sh_acute.png?raw=1[/img]
 16) Grave, subscripts
 17) Cedilla
 18) Dot above
 19) Stroke/bar, fractions
-    [img]https://www.dropbox.com/s/g5p9q84gzbf12rn/dk19_strokebar.png?dl=1[/img]    [img]https://www.dropbox.com/s/62ydgf3tqk7xq1c/dk19sh_strokebar.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/g5p9q84gzbf12rn/dk19_strokebar.png?raw=1[/img]    [img]https://www.dropbox.com/s/62ydgf3tqk7xq1c/dk19sh_strokebar.png?raw=1[/img]
 
-Note that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.
+
+[b]Note[/b] that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.

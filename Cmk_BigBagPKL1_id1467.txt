@@ -1,6 +1,6 @@
 [h]DREYMAR'S (PKL/Win): DreymaR's Extensive Yet Modular ARSenal – for Portable Keyboard Layout on Windows[/h]
 
-    [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?raw=1[/img]
 
 
 There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
@@ -50,12 +50,12 @@ I use Farkas Máté's [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[
 My PKL layout.ini file (see links to downloads below) largely corresponds to its XKB counterpart when it comes to the lv3-4(AltGr) mappings. Note that since the Angle/Wide mods aren't modular in PKL I can't deliver all combinations of layout and ergo mod - I myself use both the Colemak[eD] mappings for Norwegian and the AngleWide-Slash/35 mod so that'll be there. I've also included a few others such as the non-Wide standard Colemak[eD] and a bunch of 'virtualkey' layouts that don't have separate lv3-4 mappings. Feel free to add your own; ask if you need help.
 
 
-    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?raw=1[/img]
     [i]The Colemak [edition DreymaR] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
     [i]Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.[/i]
     
 
-    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
     [i]The Colemak-CAW[eD] ergonomic variant, shown on an ISO board (see below).[/i]
 
 
@@ -68,7 +68,7 @@ The Extend mappings using CapsLock (or another key of your choice, set in pkl.in
 
 For more info and tricks, see my [b][url=https://forum.colemak.com/viewtopic.php?pid=16698#p16698]Extend Extra Extreme[/url][/b] topic.
 
-    [img]https://www.dropbox.com/s/sxcsk0on5jbp1ac/Extend-ISO-NoWi-Win_90d.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/sxcsk0on5jbp1ac/Extend-ISO-NoWi-Win_90d.png?raw=1[/img]
     [i]A symbolic chart of my Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
 
 A more explicit chart from my pkl.ini file:
@@ -108,27 +108,27 @@ There are 19 dead keys in my pkl layout right now. The common accents are there,
 02) Hook, palatal hook
 03) Horn, retroflex hook/tail
 04) Currency:
-    [img]https://www.dropbox.com/s/fcrps2y8gxgq3dd/dk04_currency.png?dl=1[/img]    [img]https://www.dropbox.com/s/0q1zsov1jzt9xa4/dk04sh_currency.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/fcrps2y8gxgq3dd/dk04_currency.png?raw=1[/img]    [img]https://www.dropbox.com/s/0q1zsov1jzt9xa4/dk04sh_currency.png?raw=1[/img]
 05) Greek (phonetic):
-    [img]https://www.dropbox.com/s/u635qlsqzus8m1x/dk05_greek.png?dl=1[/img]    [img]https://www.dropbox.com/s/af6f7swvm5w4j24/dk05sh_greek.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/u635qlsqzus8m1x/dk05_greek.png?raw=1[/img]    [img]https://www.dropbox.com/s/af6f7swvm5w4j24/dk05sh_greek.png?raw=1[/img]
 06) Circumflex
 07) Caron
 08) Ogonek, comma below
 09) Breve
 10) Ring above, ring symbols:
-    [img]https://www.dropbox.com/s/ao08n7m6awdb7o9/dk10_ringabove.png?dl=1[/img]    [img]https://www.dropbox.com/s/ezrzh2ewwzllne8/dk10sh_ringabove.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ao08n7m6awdb7o9/dk10_ringabove.png?raw=1[/img]    [img]https://www.dropbox.com/s/ezrzh2ewwzllne8/dk10sh_ringabove.png?raw=1[/img]
 11) Macron
 12) Double-acute, math/science:
-    [img]https://www.dropbox.com/s/7mqklbxtbken7sq/dk12_dblacutesci.png?dl=1[/img]    [img]https://www.dropbox.com/s/cnqhigzwg94n1vh/dk12sh_dblacutesci.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/7mqklbxtbken7sq/dk12_dblacutesci.png?raw=1[/img]    [img]https://www.dropbox.com/s/cnqhigzwg94n1vh/dk12sh_dblacutesci.png?raw=1[/img]
 13) Umlaut/diaeresis
 14) Tilde
 15) Acute, superscripts
-    [img]https://www.dropbox.com/s/0dhe2lb23jm3s64/dk15_acute.png?dl=1[/img]    [img]https://www.dropbox.com/s/1ggyh52bratpnt2/dk15sh_acute.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/0dhe2lb23jm3s64/dk15_acute.png?raw=1[/img]    [img]https://www.dropbox.com/s/1ggyh52bratpnt2/dk15sh_acute.png?raw=1[/img]
 16) Grave, subscripts
 17) Cedilla
 18) Dot above
 19) Stroke/bar, fractions
-    [img]https://www.dropbox.com/s/g5p9q84gzbf12rn/dk19_strokebar.png?dl=1[/img]    [img]https://www.dropbox.com/s/62ydgf3tqk7xq1c/dk19sh_strokebar.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/g5p9q84gzbf12rn/dk19_strokebar.png?raw=1[/img]    [img]https://www.dropbox.com/s/62ydgf3tqk7xq1c/dk19sh_strokebar.png?raw=1[/img]
 
 Note that the dead keys interact in clever ways: Ring then 'angle' will produce 'arced angle', Tilde with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in will usually matter: Start with the modifier(s) (such as dead_stroke for "not") then the symbol-producing key (such as dead_maths and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the layout.ini files, but logic will take you far too.
 
@@ -138,7 +138,7 @@ Note that the dead keys interact in clever ways: Ring then 'angle' will produce 
 
 The Angle/Wide ergonomic mods have to be shoehorned into PKL, I'm afraid, as it has no modularity separating key codes from symbols. So I've made edits in the layout.ini file for my Wide mod and also had to make corresponding edits in the pkl.ini [extend] section to make it come together. You could then install both Wide and nonWide layouts and switch between them, but the Extend mappings would only be right for one or the other. And changing stuff is a bit hard. Maybe that's okay with you though.
 
-    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?raw=1[/img]
     [i]The AngleWide(Slash) wide ergo mod for PC105/ISO keyboards.[/i]
 
 In the pkl.ini file I have some snippets at the bottom which may be pasted into the [extend] section to implement a wide or non-wide Extend layer. It should be self-explanatory. There are also two template pkl.ini files for wide or non-wide which you could copy and rename to pkl.ini to easily get what suits you.
@@ -152,7 +152,7 @@ The Curl(DH) ergo mod makes the home "row" curl like a relaxed hand does instead
 
 I've got some optional mappings in some of the layouts (such as the AngleWide-ISO and AngleWide-No ones) that you may activate by uncommenting their lines and commenting out the original lines. Not very official, yet...
 
-    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
 There are special Tarmak steps to learn the Colemak-Curl(DH) gradually should you want to. See below.
@@ -165,7 +165,7 @@ There's [url=https://forum.colemak.com/viewtopic.php?id=1858]a main forum topic 
 
 See below for a download of all four steps plus "Tarmak0" (a.k.a. QWERTY) and "Tarmak5" (a.k.a. Colemak).
 
-    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?raw=1[/img]
     [i]The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).[/i]
 
 These transitional layouts were implemented as VirtualKey ones, so the lv3-4 (AltGr) and dead key mappings you'll get will be the same as on your installed keyboard layout in Windows. The layouts should support Extend mode fully. If you define several of them in your pkl.ini file, you can swiftly change between them should you wish to.
@@ -174,7 +174,7 @@ My pkl.ini files come with lines prepared for Tarmak progressions that you may s
 
 There's a help image for each step, that you can see or hide with the shortcut Ctrl+Shift+1 (configurable in pkl.ini). Holding Shift will show the current and previous steps in different colors.
 
-    [img]https://www.dropbox.com/s/25jf2k2tki1ua9k/TarmakCurl3_R_Spect.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/25jf2k2tki1ua9k/TarmakCurl3_R_Spect.png?raw=1[/img]
     [i]The help image for the third Tarmak-Curl step. Unshifted version.[/i]
 
 
@@ -233,5 +233,5 @@ There's a separate [b][url=https://forum.colemak.com/post/10279/#p10279]Download
 
 
 
-    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
     [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]

@@ -1,6 +1,6 @@
 [h]DREYMAR'S (XKB): DreymaR's Extensive Yet Modular ARSenal – for X KeyBoarding[/h]
 
-    [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?raw=1[/img]
 
 
 There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
@@ -59,12 +59,12 @@ See the xkb/symbols/colemak file for comments and explanations, in addition to t
  - Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.
  - The positions of added letters and symbols should as far as possible be easy to remember!
 
-    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?raw=1[/img]
     [i]The Colemak [edition DreymaR] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
     [i]Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.[/i]
     
 
-    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
     [i]The Colemak-CAW[eD] ergonomic variant shown on an ISO board (see below).[/i]
 
 
@@ -79,7 +79,7 @@ See the xkb/symbols/colemak file for comments and explanations, in addition to t
 
 This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.
 
-    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?raw=1[/img]
     [i]A symbolic chart of my Extend mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.[/i]
 
 A more explicit figure from my XKB Extend source file:
@@ -164,12 +164,12 @@ These are ergonomic mods, moving some keys around to achieve straight wrists (th
 
 For Linux/xkb, the Angle/Wide mods are implemented as keyboard models. This means that you can use them with [i]any[/i] layout including the QWERTY and Dvorak ones, Tarmak and even the Curl mods and Mirrored Colemak (because those are implemented as layouts). Modularity at your fingertips, again.
 
-    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?raw=1[/img]
     [i]The AngleWide(Slash) wide ergo mod for PC105/ISO keyboards.[/i]
 
 I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide(Slash) mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a [url=https://forum.colemak.com/viewtopic.php?pid=12302#p12302]Wide(Quote) mod[/url] as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (at the cost of longer left pinky stretches), should anyone be interested.
 
-     [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?dl=1[/img]
+     [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?raw=1[/img]
      [i]The Angle(Z)Wide ergo mod for PC104/ANSI keyboards[/i]
 
 [b][i]HowTo:[/i][/b]
@@ -191,7 +191,7 @@ The point of the Curl ergo mod is to make the home "row" curl more like a relaxe
 
 The Curl mod depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and [url=https://forum.colemak.com/post/14801/#p14801]tweak the 2nd Tarmak step a little[/url].
 
-    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
 
@@ -253,7 +253,7 @@ Further modifier modifications is still pretty much a work in progress in my Big
 
 There's a [b][url=https://forum.colemak.com/viewtopic.php?id=1858]main Tarmak topic[/url][/b] that you may want to read. Basically, four Tarmak layouts provide stepping stones from standard QWERTY to Colemak[eD] by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the rare J key is misplaced in the process.
 
-    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?raw=1[/img]
     [i]The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).[/i]
 
 My xkb Tarmak files are all based on my standard Colemak[eD](US English) layout with no options for other lv3-4 mappings. They are learning aids anyway, so this shouldn't be much of a problem.
@@ -287,10 +287,10 @@ Here's what I've covered so far, for the most part both with conservative 'keep 
      • Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.
      • See the colemak_template symbols file for more info on local Colemak[eD] variants.
 
-    [img]https://www.dropbox.com/s/rrk123wxzal3txg/Cmk-eD-dk%2Bno-usym-aw_Xm.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/rrk123wxzal3txg/Cmk-eD-dk%2Bno-usym-aw_Xm.png?raw=1[/img]
     [i]The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant; mostly like the standard Colemak[eD].[/i]
 
-    [img]https://www.dropbox.com/s/ar55fttjlkwrn13/Cmk-eD-no-ksym_Xm.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ar55fttjlkwrn13/Cmk-eD-no-ksym_Xm.png?raw=1[/img]
     [i]The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).[/i]
 
 Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
@@ -308,7 +308,7 @@ See [url=https://forum.colemak.com/viewtopic.php?pid=10016#p10016]the phonetic s
 
 For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?
 
-    [img]https://www.dropbox.com/s/yeuwzxj62xm4tir/Cmk-X-phon-gr-awide-sl_mask.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/yeuwzxj62xm4tir/Cmk-X-phon-gr-awide-sl_mask.png?raw=1[/img]
     [i]The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.[/i]
 
 [b][i]HowTo:[/i][/b]
@@ -330,7 +330,7 @@ On XKB: Using a Group setup, add the mirrored Colemak[eD] as your next layout gr
      Use Ubuntu: 'Keyboard Layout'->'Options'->'key(s) to change layout (while pressed)'.
 
 
-    [img]https://www.dropbox.com/s/znasuh1q5f86t43/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/znasuh1q5f86t43/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png?raw=1[/img]
     [i]The Mirrored Colemak layout, which should be good for right-handed typing. The Angle mod is recommended for this.[/i]
     [i](The Mirrored Colemak layout with the AngleWide(Slash) mod is better for left-handed typing I think.)[/i]
 
@@ -555,5 +555,5 @@ The xkb server can get its settings from several places so how your actual setti
 
 
 
-    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
     [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]

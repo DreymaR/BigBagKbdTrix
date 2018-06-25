@@ -20,7 +20,7 @@ The [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/u
         • You don't need a keyboard plugged into the device yet. In fact, to be on the safe side, I recommend not plugging in a keyboard yet!
         • When in Application/Keyboard mode, the yellow App LED should be lit; when in Bootloader/Flash mode it goes out.
 
-    [img]https://www.dropbox.com/s/o0ht4z1kdmje0q1/USB2USB_Hasu-physical.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/o0ht4z1kdmje0q1/USB2USB_Hasu-physical.png?raw=1[/img]
     [i]Fig. 1: Hasu's USB-2-USB device. 1) USB host – plug keyboard here; 2) USB client – plug into computer or whatever; 3) App LED; 4) Bootloader button[/i]
 
 [b]3a.[/b] [b]For flashing on Windows: Install/update the device drivers for your ATmega32U4 (or other) chip[/b].
@@ -28,7 +28,7 @@ The [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/u
         • Point the driver update to the [b]C:\Program Files (x86)\Atmel\Flip 3.4.7\usb[/b] or similar directory if necessary
         • Now, using the Windows Device Manager you can check that the device is mounted:
 
-    [img]https://www.dropbox.com/s/w7tehe9krg9gix3/USB2USB_WinDevMgr_Hasu-ApplicationVsBootloaderMode.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/w7tehe9krg9gix3/USB2USB_WinDevMgr_Hasu-ApplicationVsBootloaderMode.png?raw=1[/img]
     [i]Fig. 2: Windows Device Manager showing the Hasu USB-2-USB device in Application/Keyboard (left) and Bootloader (right) mode.[/i]
 
 [b]3b.[/b] [b]For flashing on Linux: Ensure that your device is seen by the OS, in DFU (bootloader) mode[/b].
@@ -37,7 +37,7 @@ The [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/u
         • Every time you enter or leave bootloader mode, you may have to recapture the device for your VM.
         • It should be ticked off in the Devices>USB menu on VirtualBox for instance; similarly for VMWare and others:
 
-    [img]https://www.dropbox.com/s/f5683klcr1nhc5y/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/f5683klcr1nhc5y/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png?raw=1[/img]
     [i]Fig. 4: The Devices (pop-up) menu of VirtualBox, showing a properly captured Atmel USB device.[/i]
 
 
@@ -46,7 +46,7 @@ The [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/u
 My files are extensions of Hasu's TMK code. You'll need to compile them within a copy of his repo, and I'll describe how to do this on a Linux machine. You can use a real or virtual Linux machine; I've used an Ubuntu VM. If you have an updated 64-bit Windows 10, you can even use the Linux Subsystem BASH command line to do it without leaving Windows – see below! I guess you could also use for instance [url=https://www.cygwin.com/]CygWin[/url] or [url=http://www.mingw.org/]MinGW[/url], but I haven't tried those possibilities.
 
 Included in my files is the shell script [i][b]makeflash_dreymar_tmk.sh[/b][/i] that does several things on a Linux machine. Run it with the -h option for more help:
-    [img]https://www.dropbox.com/s/av3fpswzgudb9pj/USB2USB_Linux-MakeFlash-help.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/av3fpswzgudb9pj/USB2USB_Linux-MakeFlash-help.png?raw=1[/img]
     [i]Fig. 3: The help text for my MakeFlash script, showing options and default values. This image may be outdated; run the script yourself.[/i]
 
 

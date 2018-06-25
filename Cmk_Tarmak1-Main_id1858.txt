@@ -56,11 +56,11 @@ Here I've explained each of the Tarmak "tar lumps" in more detail:
 
 Here are the spectrally coded Tarmak steps again, together in one Colemak image. Not shown in this figure is how the J hops between temporary positions (QWERTY E, G and R) before finding its place; that's explained above.
 
-    [img]https://www.dropbox.com/s/g5qhyce8azpqgdh/Tarmak-ETROI_Spectral_ANSI.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/g5qhyce8azpqgdh/Tarmak-ETROI_Spectral_ANSI.png?raw=1[/img]
 
 The next image shows the Tarmak steps leading to a Curl(DH) ergo modded Colemak variant, should you be interested in that. If so, see [b][url=https://forum.colemak.com/post/14801/#p14801]the next post below[/url][/b].
 
-    [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
     [i]This image shows Tarmak-Curl(DH) on an ANSI Angle(Z) modded board.[/i]
     [i]On an ISO keyboard you can use a simpler Angle mod without splitting the ZXC keys.)[/i]
 
@@ -69,10 +69,10 @@ The next image shows the Tarmak steps leading to a Curl(DH) ergo modded Colemak 
 
 There have been several positive reports from satisfied Tarmak users.
 
-The very first Tarmak user was [user]Ezuk[/user]. Working as a writer, he gave up going cold turkey because he needed his fingers with him at all times. He used the 3-step 2008 version of Tarmak over a period of several months to ensure full typing fluency and wrote [url=http://www.makeuseof.com/tag/how-i-quickly-mastered-a-superior-keyboard-layout-without-losing-productivity/]a very positive blog review[/url] that got some attention. More recently he's written [url=http://www.makeuseof.com/tag/curious-about-colemak-learn-the-best-keyboard-layout-easily/]an excellent promotion post for the updated Tarmak[/url] with notes on using PortableKeyboardLayout to learn and use the layouts. Highly recommended reading!
+The very first Tarmak user was [b][url=https://forum.colemak.com/user/365-ezuk/]Ezuk[/url][/b]. Working as a writer, he gave up going cold turkey because he needed his fingers with him at all times. He used the 3-step 2008 version of Tarmak over a period of several months to ensure full typing fluency and wrote [url=http://www.makeuseof.com/tag/how-i-quickly-mastered-a-superior-keyboard-layout-without-losing-productivity/]a very positive blog review[/url] that got some attention. More recently he's written [url=http://www.makeuseof.com/tag/curious-about-colemak-learn-the-best-keyboard-layout-easily/]an excellent promotion post for the updated Tarmak[/url] with notes on using PortableKeyboardLayout to learn and use the layouts. Highly recommended reading!
 [quote=ezuk][h]It’s Free, Easy To Use, And Won’t Kill Your Productivity[/h]
 
-    [img]http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2014/05/tarmak-switch.png?ec7b17[/img]
+    [img]https://www.dropbox.com/s/s9oy72mbswufr34/Tarmak_Switch_PKL_Ezuk.png?raw=1[/img]
 
 Here is why Tarmak is the best way to learn a superior keyboard layout:
 
@@ -103,7 +103,6 @@ Here's [url=https://forum.colemak.com/viewtopic.php?pid=12243#p12243]what user G
 As shown in the graph below from the Amphetype program, [url=https://forum.colemak.com/viewtopic.php?id=1710]user Coldmak had a smooth 9-day transition to Colemak[/url]. He obviously worked quite hard for it as shown by the many test points on the graph, but kept his typing speed above 20 words per minute (although he probably rushed the last step a little) and reported a pleasant experience. After that transition, his Colemak typing speed kept rising as you can see in his topic.
 
     [img]https://www.dropbox.com/s/sz8u7yqwnzs3inh/Tarmak_Switch_Amphetype_Coldmak.jpg?raw=1[/img]
-        
 
 
 Similarly, [url=https://forum.colemak.com/viewtopic.php?pid=12558#p12558]user bph found Tarmak very useful[/url]:
@@ -120,6 +119,13 @@ So all in, I think going qwerty to colemak via tarmak will take half the effort 
 [quote=RavenLoon]I started my Tarmak project [...] with a plan to step up each Friday after work.  I made the final transition [in a month]. It's been just over a week and I've timed out in Amphetype twice at over 50 wpm / 97% accuracy, though my average is still only in the 40's.  Each week I was able to fairly easily climb back from the instant "hit" to reliably over 40 wpm / 97% accuracy before the next step.
 
 I typed on Qwerty for over 30 years.  DreymaR's Tarmak method finally gave me the gradual methodology I needed to move to a better keyboard layout [...] and (for me the final piece of the puzzle) the Tarmak transition method puts [Colemak] truly within reach of people who actually have to keep getting work done while working on the transition.[/quote]
+
+
+[url=https://medium.com/@vojtajina/my-keyboard-layout-is-better-than-yours-f23b19d1b046]A nice writeup on Medium[/url]:
+[quote=Vojta Jína]
+Here is the best part, are you ready? Some genius figured out that you can make a smooth transition from QWERTY to Colemak in five small steps! Each step is just swapping a couple of keys and thus you don’t have to be useless.
+[/quote]
+
 
 
 [h]MINI-FAQ[/h]
@@ -168,7 +174,7 @@ I typed on Qwerty for over 30 years.  DreymaR's Tarmak method finally gave me th
     • Using XKB(Linux), you'll have access to all these once you're done with Tarmak. With PKL(Win), you may have to make yours or ask me.
 
 
-    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
     [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
 
 
@@ -193,10 +199,10 @@ I'd like to say thanks to all the wonderful people of the Colemak forums and els
 
 [b]Mac:[/b]
 • The [url=https://pqrs.org/osx/karabiner/index.html.en]KeyRemap4MacBook aka Karabiner[/url] creator [url=https://github.com/tekezo/Karabiner/issues/508#issuecomment-154707061]"Tekezo" has added the Tarmak steps[/url] (to vanilla Colemak, no mods) to the default options. That's so nice.
-    Thanks to user [user]bombdiggity[/user] who contributed to that happening.
-• User [user]BradWright[/user] made [url=https://gist.github.com/bradleywright/11123852/revisions]all the Tarmak steps available as a private.xml file[/url] for Karabiner.
-• User [user]opiusic[/user] has made [url=https://github.com/sblaurock/tarmak-layouts]OSX layout install files for both the default ETROI and the older ETOIR progressions[/url] (based on [url=https://forum.colemak.com/viewtopic.php?id=1684]the older ones[/url] by user [user]ghaz[/user] which only had the ETOIR progression). Additional instructions for these can be found [url=http://www.languagegeek.com/keyboard_general/mac_installation1.html]over at the LanguageGeek pages[/url].
-• User [user]mkborregaard[/user] has made [url=https://forum.colemak.com/viewtopic.php?id=2020]a Karabinier implementation of the Curl-DbgHk mod Tarmak steps[/url] (and more;  see [url=https://forum.colemak.com/profile.php?id=2552]this forum topic[/url]).
+    Thanks to user [b][url=https://forum.colemak.com/user/2614-bombdiggity/]bombdiggity[/url][/b] who contributed to that happening.
+• User [b][url=https://forum.colemak.com/user/2379-bradwright/]BradWright[/url][/b] made [url=https://gist.github.com/bradleywright/11123852/revisions]all the Tarmak steps available as a private.xml file[/url] for Karabiner.
+• User [b][url=https://forum.colemak.com/user/2460-opiusic/]opiusic[/url][/b] has made [url=https://github.com/sblaurock/tarmak-layouts]OSX layout install files for both the default ETROI and the older ETOIR progressions[/url] (based on [url=https://forum.colemak.com/viewtopic.php?id=1684]the older ones[/url] by user [b][url=https://forum.colemak.com/user/2210-ghaz/]ghaz[/url][/b] which only had the ETOIR progression). Additional instructions for these can be found [url=http://www.languagegeek.com/keyboard_general/mac_installation1.html]over at the LanguageGeek pages[/url].
+• User [b][url=https://forum.colemak.com/user/2552-mkborregaard/]mkborregaard[/url][/b] has made [url=https://forum.colemak.com/viewtopic.php?id=2020]a Karabinier implementation of the Curl-DbgHk mod Tarmak steps[/url] (and more;  see [url=https://forum.colemak.com/profile.php?id=2552]this forum topic[/url]).
 • GitHub users [url=https://github.com/shelbyd]shelbyd[/url] and [url=https://github.com/professor]professor[/url] have a [url=https://github.com/shelbyd/tarmak]Mac OS 10.9 repo[/url] with Tarmak.
 
 [b]USB-2-USB and other converter/controller devices:[/b]

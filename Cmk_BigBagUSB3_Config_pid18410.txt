@@ -25,7 +25,7 @@ If you find a ready-made HEX file, make sure it's built for the right chip. The 
 
 [b][url=http://www.tmk-kbd.com/tmk_keyboard/editor/unimap/?usb_usb]Hasu's Online TMK Keymap Editor for the USB to USB converter[/url][/b] will let you make .hex files you can save and use for flashing your ATmega32U4 device. If you need a simple keymap that I haven't made already, this may be the easiest way of getting it.
 
-    [img]https://www.dropbox.com/s/6gggrl9zl83iq05/USB2USB_Hasu-TMK-WebEditor_L0-L1_70pc.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/6gggrl9zl83iq05/USB2USB_Hasu-TMK-WebEditor_L0-L1_70pc.png?raw=1[/img]
     [i]Fig.: Hasu's Online keymap editor, showing two different layers and key panels.[/i]
 
 You can make up to 7 layers with this, only by clicking the keys you want into place. The NO code deactivates a key, and the TRNS code lets whatever is in active lower layers "shine through". There's a tab of layer switching functions too. Just mess around with it, it's fun.

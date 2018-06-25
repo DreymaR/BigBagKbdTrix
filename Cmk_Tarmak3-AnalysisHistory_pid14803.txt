@@ -185,7 +185,7 @@ The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to b
     [img]https://www.dropbox.com/s/yksxrjjcr8yd94j/Tarmak-Curl5_Spectral_I.png?raw=1[/img]    [i]Tarmak5(ETROI)-Curl(DbgHk)[/i]
 [/quote]
 
-    [img]https://www.dropbox.com/s/h1najfe5j7xb661/Tarmak_Spectral_ETROI-Curl-DbgHk.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/h1najfe5j7xb661/Tarmak_Spectral_ETROI-Curl-DbgHk.png?raw=1[/img]
     [i]Spectrally color-coded Tarmak(ETROI) with the old Curl(DbgHk) mod, shown on an ISO keyboard.[/i]
 
 
@@ -193,10 +193,10 @@ The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to b
 
 In May 2017, we agreed on one common Curl(DH) mod, consisting of a MK switch from the old "mod-DH" or "Curl(DvbgHm)" mod.
 
-    [img]https://www.dropbox.com/s/n43eixm08pp0m5y/Tarmak-ETROI_Spectral_Curl.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/n43eixm08pp0m5y/Tarmak-ETROI_Spectral_Curl.png?raw=1[/img]
     [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH) mod, shown on an ISO keyboard.[/i]
 
-    [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
     [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH)Angle(Z) ANSI mod.[/i]
 
 Here's how the Tarmak steps roll with the unified Curl(DH) mod (shown here on an ISO board):

@@ -36,7 +36,7 @@ Thanks to [user]Stevep99[/user] for this fun and useful innovation!
 
 So, after living and learning for quite some time [url=https://forum.colemak.com/post/19723/#p19723]we have unified and standardized the Curl(DH) mod[/url]! Nowadays, I'm using Curl(DvbgHmk) – which shall henceforth be known as [i]the[/i] [b]Curl(DH)[/b] mod. It moves one more key than my old suggestion did, and breaks up the ZXCV block, but I think it's worth these concessions. For some matrix board users, SteveP's original mod may still be desirable since the down-out positions are a bit more awkward there, but for normal staggered boards I certainly recommend this updated mod with all my heart. Just watch yourself in the start when copy/pasting. :-)
 
-    [img]https://www.dropbox.com/s/z6c4qwz4sf1hq70/Cmk-dvbg-hmk-eD-wide_Xm.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/z6c4qwz4sf1hq70/Cmk-dvbg-hmk-eD-wide_Xm.png?raw=1[/img]
     [i]Colemak[eD] with the new Curl-DH ergo mod[/i]
 
 [h][i]~ DreymaR[/i][/h]

@@ -11,7 +11,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 • The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for USB-2-USB remapping "QUICKIE" devices[/url][/b]
 • The [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Big Bag (Mac) for Karabinier[/url][/b] by [user]mkborregaard[/user] [url=https://forum.colemak.com/post/18673/#p18673](not yet MacOS Sierra ready?[/url])
 
-    [img]https://www.dropbox.com/s/ormuqzcz8l4yfg8/Tarmak-ETROI_Spectral_CAW.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ormuqzcz8l4yfg8/Tarmak-ETROI_Spectral_CAW.png?raw=1[/img]
 
 
 Since I started using Colemak in early 2007 I've been fiddling with it, trying out ideas from the forum and adding some of my own. Colemak [i]per se[/i] is to me only the letter block mappings including the semicolon, and their shifted counterparts. I've always ended up with that intact and it has stood the test of time. If you look up the "ergo" mods below you'll see that I'm somewhat flexible about the geometry – but in reality that's about the physical keyboard design and a better hand position for me. The layout itself stays mostly the same!
@@ -71,6 +71,14 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as in Lin
 • Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)
 
+
 [h]LASTLY:[/h]
 • Best of luck with Colemak and its many marvelous mods! ^_^
 • If you do get stuck, here's a little [b][url=https://forum.colemak.com/topic/2157-joking-around/]light entertainment[/url][/b] to hopefully Shift your mo(o)d. ;-)
+
+[quote="Typealong Clackity"]
+Colemak's connected to the ... Curl mod,
+The Curl mod's connected to the ... Angle mod,
+The Wide mod's connected to the ... shoulder bones,
+And Extend's just wonderful!
+[/quote]

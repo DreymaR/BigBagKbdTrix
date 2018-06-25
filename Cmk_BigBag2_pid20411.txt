@@ -8,12 +8,12 @@ It has been noted that these mods can really open up, say, a cramped notebook ke
 
 These are ergonomic mods, moving some keys around to achieve straight wrists (the Angle mods), better hand separation and lower right pinky load (the Wide mods). The Angle part is almost a no-brainer to me as it allows the left hand to keep a straight wrist without changing the fingering on ZXCV, and makes B easier to reach. Colemak creator [user]Shai[/user] himself has given his blessing to this mod! The Wide mod is more optional, but it does put some load off the right-hand pinky, widen the arm distance (useful particularly for small keyboards, but nice regardless), and provide easier access to AltGr/Enter/Backspace/RShift – all at a very low learning cost.
 
-    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?raw=1[/img]
     [i]The [b]AngleWide(Slash)[/b] wide ergo mod for PC105/ISO keyboards.[/i]
 
 With a 102/105-key ISO keyboard the Angle mod is very smooth indeed, and I strongly recommend at least an Angle shift if you have an ISO keyboard! The US/ANSI solution is usually to move the Z to the middle which is a bit more dramatic. There are some other options but they're rare; see below if you're interested.
 
-     [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?dl=1[/img]
+     [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?raw=1[/img]
      [i]The [b]Angle(Z)Wide[/b] ergo mod for PC104/ANSI keyboards[/i]
 
 When I use these mods I like to move the key caps around and make the change global - my family actually don't seem to mind as the changes are fairly intuitive and unintrusive, leastways for the run-of-the-mill keyboard user who looks at symbol key caps to find them. I got used to the changes quickly, too. But on laptops I usually don't move anything around and you can implement the change on a per-user basis if you wish. (If you do, take care with your logon dialogs and passwords!)
@@ -23,7 +23,7 @@ Actually, there are a couple of other possibilities for ANSI boards, since they 
 [spoiler]
 One alternative is the "A-Wing" mod which has a cool name but little usage: Split the bottom row while shifting all the others to the right. With A-Wing, you'll not get the "wide" experience, but must live with an increased distance to Tab and LShift. In comparison, hitting LShift when using Angle(Z) and straight wrists is actually rather nice!
 
-     [img]https://www.dropbox.com/s/txebhgrvefdi7wj/Cmk-ANSI-AWing_60d_FShui.png?dl=1[/img]
+     [img]https://www.dropbox.com/s/txebhgrvefdi7wj/Cmk-ANSI-AWing_60d_FShui.png?raw=1[/img]
      [i]The "[b]A-Wing[/b]" ergo mod for PC104/ANSI keyboards[/i]
 
 I haven't implemented the "Fat-Z" ANSI Angle mod, but I will at least mention it. The trick is moving Z to the LShift key! LShift then needs a new home which should be better than the old B position. One solution is to move LShift to the Alt key and put Alt on the old B key. But this means moving modifiers around, so I'm a bit wary of it. Also, a fat Z key looks a bit odd, but if it works for you then all's fine!
@@ -56,7 +56,7 @@ Many of these mods have been discussed under other names. So if you come across 
 
 The point of the Curl ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
 
-    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. [b]Colemak-CAW[/b], ergo modded layout.[/i]
 
 The Curl mod has a few variants in addition to the standard one, notably Steve's original [i]DHm (DvbgHm)[/i] mod which swaps the Colemak(Angle) D–V and H–M positions but leaves the K alone, and my old [i]DvH (DbgHk)[/i] which instead swaps D–B and H–K while letting the M stay unchanged. The DHm mod is probably better if you have a non-staggered matrix board. I made the DvH mod to be less radical and intrusive as it doesn't move the V and M keys (apart from the Angle mod moving V with ZXC). However, I have now moved on to [i]Curl-DH (DvbgHmk)[/i], in the name of unity and goodness. And I shall henceforth name it [i]the[/i] [b]Curl(DH)[/b] mod.
@@ -67,10 +67,26 @@ If you type a lot in a language in which L is more common than H (including [url
 
 The Curl mod depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and [url=https://forum.colemak.com/viewtopic.php?pid=16393#p16393]tweak the 2nd Tarmak step a little[/url]. The right-hand mod (Hmk, Hm or Hk) may be learnt whenever you feel like it as it's mostly separate from the rest of the layout from Tarmak1 onwards.
 
-    [img]https://www.dropbox.com/s/y01ux6xoxg7i64a/Cmk-pos-CurlDH-ISO_90d.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/y01ux6xoxg7i64a/Cmk-pos-CurlDH-ISO_90d.png?raw=1[/img]
     [i]My personal assessment of key position goodness (from green via blue to purple), using a straight-wrist, relaxed-fingers hand position.[/i]
     
-I've dubbed my CurlAngleWide modded Colemak a [ins][b]Colemak-CAW[/b][/ins]! It's a Colemak at heart, but sufficiently modded that I wanted a snappy name for it. And yes, that's also a tip-of-the-hat to Billy Macaw in CATS. ;-)
+I've dubbed my CurlAngleWide modded Colemak a [ins][b][url=https://forum.colemak.com/post/21780/#p21780]Colemak-CAW[/url][/b][/ins]! It's a Colemak at heart, but sufficiently modded that I wanted a snappy name for it. And yes, that's also a tip-of-the-hat to Billy Macaw in CATS. ;-) Also, there have been spiritual developments...:
+
+[spoiler]
+[h]COLEMAK ⲔⲰ – THE SOUL OF TYPING!?[/h]
+
+Would you believe that in ancient Egyptian Ka means the "soul-body" or life force (while Ba is the "traveling soul" and Akh the "eternal/divine soul"), its hieroglyph being the symbol of... two hands!!! Maybe that's something right there...?
+
+To bring this further down the rabbit hole, Wikipedia states that the Coptic word ⲔⲰ (kw) means approximately the same as Egyptian Ka, and this claim is further supported by [url=https://books.google.no/books?id=8KZbq3ADKRkC&pg=PA782&lpg=PA782&dq=?egyptian+ka+coptic+kw&source=bl&ots=Ecp28LCOif&sig=_K5yJK97yIsTKZ2cAgVMlcN3D_Y&hl=en&sa=X&ved=0ahUKEwjhupeGsefbAhVBkCwKHeLfByQQ6AEIXTAI#v=onepage&q=%3Fegyptian%20ka%20coptic%20kw&f=false]a book on hieroglyphics I found[/url]. As an added bonus, the latin translation of Ka is ... wait for it ... [b][i]genius[/i][/b]!
+
+To make it even stranger, ⲔⲰ would well transliterate to CAW!
+
+So maybe [b]Colemak-ⲔⲰ[/b] is the new thing then? The life force of typing! ^_^
+
+[img]https://www.buzzle.com/images/history/ancient-egyptian-symbols/ka-and-ba.jpg[/img]
+
+(If this becomes a thing, I'm so adding ⲔⲰ to my dead key table somewhere...!)
+[/spoiler]
 
 [b][u]Backdrop:[/u][/b]
 See [user]stevep99[/user]'s [b][url=https://colemakmods.github.io/mod-dh/]Colemakmods page[/url][/b], as well as the [url=https://forum.colemak.com/viewtopic.php?id=1942]main Colemak Mod-DH topic[/url] and links therein. Also, note [url=https://forum.colemak.com/viewtopic.php?pid=16151#p16151]my review of the Curl mods[/url]. Note, however, that we've since then agreed on [url=https://forum.colemak.com/post/19723/#p19723]one common Curl(DH) mod[/url].

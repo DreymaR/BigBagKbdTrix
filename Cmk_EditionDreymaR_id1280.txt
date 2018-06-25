@@ -1,6 +1,6 @@
 [h]Colemak - Edition DreymaR![/h]
 
-    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?raw=1[/img]
 
 
 To me, it's the letter block that's the true masterstroke of Colemak and, as it were, Colemak [i]per se[/i]:
@@ -86,11 +86,11 @@ So, I switched AltGr and AltGr+Shift positions for the H V B M keys, bringing th
 
 As also seen in my [url=https://forum.colemak.com/viewtopic.php?pid=9918]Big Bag Of Tricks Topic[/url] and above, this is the current state of Colemak[eD]:
 
-    [img]https://www.dropbox.com/s/ds1fuayndkkb2a4/Cmk-ISO-eD-Angle_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ds1fuayndkkb2a4/Cmk-ISO-eD-Angle_96d-FShui.png?raw=1[/img]
     [i]Fig.: The Colemak [edition DreymaR] layout, using different lv3-4 mappings from the standard Colemak. [/i]
     [i]Shown with the ZXCVB_ Angle-ISO ergonomic mod (see my sig topic), dead key emphasis and color-coded proposed fingering.[/i]
 
-    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
     [i]Fig.: Colemak [edition DreymaR], this time with the Curl(DH), Angle-ISO and Wide(Slash) ergonomic mods (see my sig topic).[/i]
 
 As you can see many parts of the setup are intuitive. Among the fuzzier points are the J L K H and bracket keys, which I consider "up for grabs" when making locale layouts so I can't keep anything terribly important there. I've settled on some Greek and signs that are available otherwise; for proper Greek typing you'll need a full layout anyway – I recommend a phonetic layout accessible by switch key. For hit-and-run Greek symbols there's now a Greek dead key on AltGr+5 (Windows/PKL only for now).

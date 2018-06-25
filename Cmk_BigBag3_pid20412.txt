@@ -5,7 +5,7 @@ There's a [b][url=https://forum.colemak.com/viewtopic.php?id=1858]main Tarmak to
 
 Similar transitional layouts have been [url=https://forum.colemak.com/viewtopic.php?id=480]reported successful in easing the conversion to Colemak typing[/url] and although this evidence is anecdotal I find the [url=https://forum.colemak.com/viewtopic.php?id=358]proposed hypothesis[/url] that gradual changes should be easier to learn for many a plausible one.
 
-    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?raw=1[/img]
     [i]The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).[/i]
 
 
@@ -24,11 +24,11 @@ Here's what I've covered so far, for the most part both with conservative 'keep 
      • Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.
      • See the colemak_template symbols file for more info on local Colemak[eD] variants.
 
-    [img]https://www.dropbox.com/s/580ikze9lamf8yx/Cmk-eD-usym-aw_Xm.png?dl=1[/img]
-    [img]https://www.dropbox.com/s/rrk123wxzal3txg/Cmk-eD-dk%2Bno-usym-aw_Xm.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/580ikze9lamf8yx/Cmk-eD-usym-aw_Xm.png?raw=1[/img]
+    [img]https://www.dropbox.com/s/rrk123wxzal3txg/Cmk-eD-dk%2Bno-usym-aw_Xm.png?raw=1[/img]
     [i]The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant (mostly like the standard Colemak above).[/i]
 
-    [img]https://www.dropbox.com/s/ar55fttjlkwrn13/Cmk-eD-no-ksym_Xm.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/ar55fttjlkwrn13/Cmk-eD-no-ksym_Xm.png?raw=1[/img]
     [i]The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).[/i]
 
 Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
@@ -40,7 +40,7 @@ See [url=https://forum.colemak.com/viewtopic.php?pid=10016#p10016]the phonetic s
 
 For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?
 
-    [img]https://www.dropbox.com/s/yeuwzxj62xm4tir/Cmk-X-phon-gr-awide-sl_mask.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/yeuwzxj62xm4tir/Cmk-X-phon-gr-awide-sl_mask.png?raw=1[/img]
     [i]The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.[/i]
 
 
@@ -55,9 +55,9 @@ You'll want an easily accessible key (such as a thumb key) to switch between nor
 Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.
 
 
-    [img]https://www.dropbox.com/s/znasuh1q5f86t43/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/znasuh1q5f86t43/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png?raw=1[/img]
     [i]The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)[/i]
 
 
-    [img]https://www.dropbox.com/s/8zm6bct5qiayttn/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/8zm6bct5qiayttn/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png?raw=1[/img]
     [i]The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing I think[/i]

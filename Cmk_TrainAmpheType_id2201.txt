@@ -18,7 +18,7 @@
 [b][i]~ DreymaR, 2017-02[/i][/b]
 
 
-    [img]https://www.dropbox.com/s/a1oqfswccypfd5l/Amphetype_3-Performance.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/a1oqfswccypfd5l/Amphetype_3-Performance.png?raw=1[/img]
     [i]Amphetype's Performance tab, not sugar-coating my lack of progress. ;-)[/i]
 
 
@@ -50,7 +50,7 @@ Further inspiration: Maybe you want to learn lyrics or poems by heart? Of course
 
 A slight caveat: If your layout doesn't support special glyphs, make sure your text doesn't have them. The book I'm currently typing about Greek and Roman mythology, has some old-fashioned spellings like [i]Æsculap[/i] and [i]Aïdes[/i]. For my Colemak[eD] that's no problem at all of course, but beware if you aren't used to it. The Amphetype fork has an option to clean out anything non-trivial I think, but I haven't used it.
 
-    [img]https://www.dropbox.com/s/vl81fnybu2ehj0d/Amphetype_1-Typer.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/vl81fnybu2ehj0d/Amphetype_1-Typer.png?raw=1[/img]
     [i]Amphetype about to start a book text session (from [url=https://www.gutenberg.org/files/22381/22381-h/22381-h.htm]Berens' Greek/Roman mythology[/url])[/i]
 
 
@@ -148,7 +148,7 @@ If you want to be thorough, you can check out lists like [url]http://www.wordfin
 Also, here's another [b][url=https://github.com/first20hours/google-10000-english]list of common words[/url][/b] from Google Research ([url=https://forum.colemak.com/post/19141/#p19141]thanks, misterW![/url]). You can filter it by n-grams, for instance.
 
 
-    [img]https://www.dropbox.com/s/qwt81c2xyowr2sw/Amphetype_4-Analysis.png?dl=1[/img]
+    [img]https://www.dropbox.com/s/qwt81c2xyowr2sw/Amphetype_4-Analysis.png?raw=1[/img]
     [i]Amphetype's Analysis tab, where you can make and export lists of words or trigrams that cause you trouble[/i]
 
 
@@ -174,7 +174,7 @@ I've compiled a little list of other typing tests/trainers that I like and use:
 [b][url=https://forum.colemak.com/post/20413/#p20413]The Typing of The Dead[/url][/b] is an immensely fun game described in my Other Typing Tricks post. Have a gander!
 [b][url=https://10fastfingers.com/typing-test/english]10FastFingers[/url][/b] has a very smooth and enjoyable test with some flexibility like typing your own text.
 [b][url=http://play.typeracer.com/]TypeRacer[/url][/b] is another classic for speed training. There's even an Instant Death mode that trains accuracy ruthlessly!
-[b][url=http://www.rapidtyping.com/online-typing-games/fast-typer-2.html]Fast Typer 2[/url][/b] is a hoot, as you train both speed and accuracy very ... fast, indeed.
+[b][url=http://eidosk.com/play_game.php?id=1]Fast Typer 3[/url][/b] and its predecessor [b][url=http://www.rapidtyping.com/online-typing-games/fast-typer-2.html]F.T.2[/url][/b] are a hoot, as you train both speed and accuracy very ... fast, indeed. Brutal but fun.
 [b][url=https://www.speedtypingonline.com/typing-test]Speed Typing Online[/url][/b] has a fun little test in which you type text quotes and lyrics.
 
 On the [b][url=https://colemak.com/Learn]Colemak Learn page[/url][/b], there's a list of several tests and trainers, if you want to browse around for more.
