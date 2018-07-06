@@ -26,8 +26,8 @@ And so, [i]voila[/i], here it is:
 [b][1.3][/b] Several [b]Dead key enhancements[/b] giving access to lots of glyphs (presently for Windows/PKL only)
 
 [b][url=https://forum.colemak.com/post/20411/#p20411][2]    Ergonomic Key Remappings[/url][/b]
-[b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2][/b] The [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
+[b][2.1][/b] [b]Angle/Wide[/b] ergo modifications to improve wrist angles, hand spacing and right pinky stretch/load effort
+[b][2.2][/b] The [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
 [b][2.3][/b] [b]Modifier modness[/b] (Work In Progress)
 
 [b][url=https://forum.colemak.com/post/20412/#p20412][3]    Other Layouts[/url][/b]
@@ -69,6 +69,7 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as in Lin
 • Modifier keys for 4 Extend layers. For instance, Caps+{--, LAlt, RAlt, LAlt+RAlt}. Holding Caps or Alt down should maintain the layer state.
 • For some (or all?) Extend layers, a Lock (say, Shift+Alt+Caps locks; tapping Caps releases)?
 • Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
+• Develop and test a [url=https://forum.colemak.com/topic/2389-vietnamese-colemak/]Vietnamese Colemak[/url] (with [user]IceDryst[/user] and whoever's interested).
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)
 
 

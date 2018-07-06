@@ -38,7 +38,7 @@ Patorjk favorises hand alternation which brings Colemak to somewhat of a disadva
 
 [b][url=http://colemakmods.github.io/mod-dh/]SteveP99's Switching Difficulty Index and Layout Analyzer[/url][/b]
 
-[user]SteveP99[/user], the originator of the Colemak-Curl(DH) mod, has [url=http://colemakmods.github.io/mod-dh/learn.html]a page where he analyzes the difficulty of switching to other layouts[/url], and [url=http://colemakmods.github.io/mod-dh/compare.html]a page where he analyzes their quality[/url]. His models are quite interesting, so have a gander if you're into modeling and analysis!
+[user]SteveP99[/user], the originator of the Colemak-DH a.k.a. Curl(DH) mod, has [url=http://colemakmods.github.io/mod-dh/learn.html]a page where he analyzes the difficulty of switching to other layouts[/url], and [url=http://colemakmods.github.io/mod-dh/compare.html]a page where he analyzes their quality[/url]. His models are quite interesting, so have a gander if you're into modeling and analysis!
 
 [code]
 Layout  | Moves |  ∑m   | Effort ||  SDI  |  LEI  | "B4B" |
@@ -60,9 +60,9 @@ I've fiddled a bit with Steve's raw results. His effort parameter is lower for b
 
 [b]CAVEAT[/b]: Do [i]not[/i] take the above to mean that I think you should stop at Tarmak2 just because the analysis shows the most "Bang4Buck" there! It's true that switching seven or so keys gives a lot of model effort reduction for the cost – cf. the Minimak-8 layout which is an attempt to get the most out of the fewest key changes. But I really don't think that most typists will be happy typing on a "half-baked" optimization! Also, there are subtle benefits to full optimization that the model doesn't catch as mentioned above.
 
-Also, the low "B4B" score of Dvorak in no way means that you shouldn't switch to Dvorak just because it doesn't give any "B4B" over QWERTY! Rather, it means that you should indeed be careful about interpreting these indices. Dvorak is a fine layout, well optimized and well tried out. It has a few blemishes but it's an excellent layout overall. Switching to Dvorak from QWERTY is well worth the effort in my opinion, and I should know because I've done it. It's just that with Colemak and Colemak-Curl(DH) you get something just as good and in my opinion even better, at a much lower cost! To which the above analysis agrees.
+Also, the low "B4B" score of Dvorak in no way means that you shouldn't switch to Dvorak just because it doesn't give any "B4B" over QWERTY! Rather, it means that you should indeed be careful about interpreting these indices. Dvorak is a fine layout, well optimized and well tried out. It has a few blemishes but it's an excellent layout overall. Switching to Dvorak from QWERTY is well worth the effort in my opinion, and I should know because I've done it. It's just that with Colemak(-DH) you get something just as good and in my opinion even better, at a much lower cost! To which the above analysis agrees.
 
-The numbers would be a bit different for Tarmak/Colemak-Curl(DH). These layouts will have a sharper learning curve but end up at better analysis scores.
+The numbers would be a bit different for Tarmak-DH/Colemak-DH. These layouts will have a sharper learning curve but end up at better analysis scores.
 
 
 [h]THE NAMING OF TARMAK[/h]
@@ -189,9 +189,9 @@ The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to b
     [i]Spectrally color-coded Tarmak(ETROI) with the old Curl(DbgHk) mod, shown on an ISO keyboard.[/i]
 
 
-[b]2017: Tarmak(E-T-R-O-I) for the unified Curl(DH) ergo mod[/b]
+[b]2017: Tarmak(E-T-R-O-I) for the unified Colemak-DH ergo mod[/b]
 
-In May 2017, we agreed on one common Curl(DH) mod, consisting of a MK switch from the old "mod-DH" or "Curl(DvbgHm)" mod.
+In May 2017, we agreed on one common Colemak-DH mod, consisting of a MK switch from the old "mod-DH" or "Curl(DvbgHm)" mod.
 
     [img]https://www.dropbox.com/s/n43eixm08pp0m5y/Tarmak-ETROI_Spectral_Curl.png?raw=1[/img]
     [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH) mod, shown on an ISO keyboard.[/i]
@@ -199,7 +199,7 @@ In May 2017, we agreed on one common Curl(DH) mod, consisting of a MK switch fro
     [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
     [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH)Angle(Z) ANSI mod.[/i]
 
-Here's how the Tarmak steps roll with the unified Curl(DH) mod (shown here on an ISO board):
+Here's how the Tarmak steps roll with the unified Colemak-DH mod (shown here on an ISO board):
 
 [quote=Tarmak-Curl(DH)Angle(ISO)]
 
@@ -229,8 +229,8 @@ Here's how the Tarmak steps roll with the unified Curl(DH) mod (shown here on an
  z  x  c  D  v  _  M  H [/code]
 [b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak-Curl(DH)!
 [code] q  w  F  P  B  J {L}{U} Y  ; 
-  a  R  S  T  g  K  N  E {I} O     Colemak-Curl(DH)
+  a  R  S  T  g  K  N  E {I} O     Colemak-DH
  z  x  c  D  v  _  M  H [/code]
 [/quote]
 
-I've split steps 1 and 2 above for clarity. But if you're the careful type you may choose to split them in practice too. See the Tarmak-Curl post above.
+I've split steps 1 and 2 above for clarity. But if you're the careful type you may choose to split them in practice too. See the Tarmak-DH post above.

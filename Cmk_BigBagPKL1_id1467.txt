@@ -23,7 +23,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2]†[/b] The [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
+[b][2.2]†[/b] The [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
 
 [b][3]    [u]Other Layouts[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
@@ -39,7 +39,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][–.–][/b] [b]Done/Todo[/b]
 
-[b]†:[/b] For the most part, these files are not premade for Win/PKL (yet) due to the non-modular nature of PKL files.
+[b]†:[/b] For the most part, these files are not premade for Win/PKL (yet) due to the non-modular nature of PKL files. This is about to change with PKL[eD] though!
 
 I use Farkas Máté's [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[/url] ('PKL') to achieve most of the above for Windows. It's included in my download below.
 
@@ -146,16 +146,16 @@ In the pkl.ini file I have some snippets at the bottom which may be pasted into 
 My help images for PKL are non-Wide only, but do show the Angle mod on an ISO/Euro keyboard. I'm sorry, but making extra images for other setups will be too much work for me! So please see if you can't wrap your head around the provided images even if they may not be exactly the same setup as your keyboard.
 
 
-[h][2.2]    THE "CURL(DH)" COLEMAK ERGO MOD[/h]
+[h][2.2]    THE COLEMAK-DH ALIAS "CURL(DH)" ERGO MOD[/h]
 
-The Curl(DH) ergo mod makes the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row C/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
+The [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod makes the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row C/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
 
-I've got some optional mappings in some of the layouts (such as the AngleWide-ISO and AngleWide-No ones) that you may activate by uncommenting their lines and commenting out the original lines. Not very official, yet...
+I've now made a solution for ergo mods that allows setting a Remap in the layout.ini file! This makes it possible to turn a non-ergo layout into an ergo modded one.
 
     [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
-There are special Tarmak steps to learn the Colemak-Curl(DH) gradually should you want to. See below.
+There are special Tarmak steps to learn Colemak-DH gradually should you want to. See below.
 
 
 [h][3]    [u]Other Layouts[/u][/h]
@@ -170,7 +170,7 @@ See below for a download of all four steps plus "Tarmak0" (a.k.a. QWERTY) and "T
 
 These transitional layouts were implemented as VirtualKey ones, so the lv3-4 (AltGr) and dead key mappings you'll get will be the same as on your installed keyboard layout in Windows. The layouts should support Extend mode fully. If you define several of them in your pkl.ini file, you can swiftly change between them should you wish to.
 
-My pkl.ini files come with lines prepared for Tarmak progressions that you may simply uncomment (commenting out whatever else 'layout =' lines are active there) and start using. You may choose between a progression to vanilla Colemak or to Curl(DH)Angle-modded Colemak. Wide mods are not (yet) available for Tarmak, but they may not be that necessary as you can always go Wide after you've reached the goal.
+My pkl.ini files come with lines prepared for Tarmak progressions that you may simply uncomment (commenting out whatever else 'layout =' lines are active there) and start using. You may choose between a progression to vanilla Colemak or to Colemak-DH (see above). Wide mods are not (yet) available for Tarmak, but they may not be that necessary as you can always go Wide after you've reached the goal.
 
 There's a help image for each step, that you can see or hide with the shortcut Ctrl+Shift+1 (configurable in pkl.ini). Holding Shift will show the current and previous steps in different colors.
 
@@ -219,7 +219,7 @@ There's a separate [b][url=https://forum.colemak.com/post/10279/#p10279]Download
 • [b]2014-11-06[/b]: Complete help image set for the Colemak-eD_ISO layout, dead key enhancements and Latin locale variants
 • [b]2015-06-25[/b]: Tarmak layouts with help images and pkl.ini files for ISO/ANSI; Curl(DH)Angle ergo mods for ISO/ANSI (AngleZ and A-Wing)
 • [b]2016-01-27[/b]: Implementation of the Tarmak steps up to and including the Curl(DbgHk) ergo mod, as vk_layouts.
-• [b]2017-08-08[/b]: Implementation of the new unified Curl(DH) mod. Also, I finally moved everything to GitHub.
+• [b]2017-08-08[/b]: Implementation of the new unified Colemak-DH mod. Also, I finally moved everything to GitHub.
 
 
 [h]TODO:[/h]

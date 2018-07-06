@@ -22,7 +22,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2][/b] [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
+[b][2.2][/b] [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
 
 [b][3]    [u]Other Layouts[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
@@ -61,7 +61,7 @@ There are several possible ways of programming a USB-2-USB device. Essentially y
 An advantage of my TMK-based implementation is that you can pick and choose most of the enhancements as modules:
 • The AngleWide mods are keymap types so they work with any layout you choose, including QWERTY or Dvorak
 • The Extend layers and switch keys are options that should work with nearly any existing layout
-• The Curl mods for Colemak layouts use a separate switch (together with CurlAngle keymaps)
+• The Curl(DH) mod for Colemak layouts uses a separate switch (together with CurlAngle keymaps)
 • Mirrored Colemak and Tarmak (transitional Colemak) are separate layouts.
 Freedom of choice through [b]modularity[/b] is an ideal in the DreymaR world, as it is in Linux. :-)
 
@@ -147,7 +147,7 @@ I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and 
      [img]https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?raw=1[/img]
      [i]The Angle(Z)Wide ergo mod for US/ANSI keyboards[/i]
 
-Colemak-Curl(DH) requires by default a special Angle(Wide) variant in which the V is kept in its original position so that only ZXC and B (which then gets remapped to D by the Curl-DH mod) move. See below.
+Colemak-DH requires by default a special Angle(Wide) variant in which the V is kept in its original position so that only ZXC and B move; B then gets remapped to D by the mod itself. See below.
 
 To use one of these, define the Unimap layout constant in my keymap (.c) file:
 [code]
@@ -165,22 +165,22 @@ To use one of these, define the Unimap layout constant in my keymap (.c) file:
 The actual keymap types are defined in the header (.h) file as compiler macros and those are a bit harder to edit manually.
 
 
-[h][2.2]    THE "CURL(DH)" COLEMAK ERGO MODS[/h]
+[h][2.2]    THE COLEMAK-DH ALIAS "CURL(DH)" ERGO MOD[/h]
 
-The Curl(DH) ergo mods make the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row V/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
+The [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod makes the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row V/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
 
     [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
-The old "DHm" (DvbgHm) variant which doesn't move K from its Colemak position, may be better for non-staggered matrix boards, but it's debated. If you switch between staggered and non-staggered boards you'll probably want to use the standard Curl(DH) consistently.
+The old "DHm" (DvbgHm) variant which doesn't move K from its Colemak position, may be better for non-staggered matrix boards, but it's debated. If you switch between staggered and non-staggered boards you'll probably want to use the standard Colemak-DH consistently.
 
 This mod depends on using a CurlAngle ergo mod which is easier on an "102/105-key" ISO keyboard but as seen above there are decent options for US/ANSI boards too.
 
-To use Curl mods with my TMK files, there's a preprocessor switch named CURLMOD:
+To use Colemak-DH with my TMK files, there's a preprocessor switch named CURLMOD:
 [code]
    The CURLMOD options for Colemak/Tarmak layouts are:
  * 0: No Curl - vanilla Colemak/Tarmak
- * 1: The Curl(DH) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
+ * 1: The Colemak-DH ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
  * 2: SteveP99's old Curl(DHm) ergo mod, bringing D/H down but M to the home row.
 ...
 #define CURLMOD 1
@@ -199,7 +199,7 @@ There's [url=https://forum.colemak.com/viewtopic.php?id=1858]a main forum topic 
 
 The Tarmak progressions work modularly with the AngleWide ergo mods.
 
-If you want to learn the brilliant Colemak-Curl(DH) variant using a Tarmak progression, that's possible too! You just have to learn a CurlAngle mod before or with the 2nd Tarmak step which also gets tweaked a little so it moves B instead of G. The right-hand swaps (Hmk) should ideally be learnt in conjunction with Tarmak1-Curl because that moves K, but for SteveP's old variant I've deferred the HM swap to the last step. It could go wherever you like as it's separate, so feel free to edit the layout file if you desire.
+If you want to learn the brilliant Colemak-DH variant using a Tarmak progression, that's possible too! You just have to learn a CurlAngle mod before or with the 2nd Tarmak step which also gets tweaked a little so it moves B instead of G. The right-hand swaps (Hmk) should ideally be learnt in conjunction with Tarmak1-Curl because that moves K, but for SteveP's old variant I've deferred the HM swap to the last step. It could go wherever you like as it's separate, so feel free to edit the layout file if you desire.
 
 [code]
      * Tarmak2 - Transitional Colemak (ET)

@@ -91,6 +91,6 @@ As also seen in my [url=https://forum.colemak.com/viewtopic.php?pid=9918]Big Bag
     [i]Shown with the ZXCVB_ Angle-ISO ergonomic mod (see my sig topic), dead key emphasis and color-coded proposed fingering.[/i]
 
     [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
-    [i]Fig.: Colemak [edition DreymaR], this time with the Curl(DH), Angle-ISO and Wide(Slash) ergonomic mods (see my sig topic).[/i]
+    [i]Fig.: Colemak [edition DreymaR] with the ISO Curl(DH)AngleWide ergonomic mods – a.k.a. [b]Colemak-CAW[eD][/b] (see my sig topic).[/i]
 
 As you can see many parts of the setup are intuitive. Among the fuzzier points are the J L K H and bracket keys, which I consider "up for grabs" when making locale layouts so I can't keep anything terribly important there. I've settled on some Greek and signs that are available otherwise; for proper Greek typing you'll need a full layout anyway – I recommend a phonetic layout accessible by switch key. For hit-and-run Greek symbols there's now a Greek dead key on AltGr+5 (Windows/PKL only for now).

@@ -7,7 +7,7 @@ For more info, see the [b][url=https://forum.colemak.com/topic/2158-dreymars-big
 
 A very interesting XKB/Win/Mac-independent trick. A USB-to-USB device that plugs between the keyboard and whatever you're connecting your keyboard to, provides an OS independent solution that can accommodate many of my tricks! For people having to deal with zealous IT security rules, this may be the only solution short of getting an expensive remappable keyboard. It could let you type Colemak to, say, a PlayStation. And it could be fun to make one yourself if you're adventurous and DIY oriented!
 
-It'll remap only key strokes so basic layout and ergo mods such as Colemak-CurlAngleWide(+Extend) are possible, but not AltGr or dead key mods such as Colemak[eD].
+It'll remap only key strokes so basic layout and ergo mods such as Colemak-Curl(DH)AngleWide(+Extend) are possible, but not easily AltGr or dead key mods such as Colemak[eD].
 
 The safest and easiest option may be to order the brilliant [url=https://geekhack.org/index.php?topic=69169.0]USB to USB Converter from GeekHack user Hasu[/url], who has also developed the TMK software for converting keyboards to more awesome keyboards. I provide TMK files in the USB-2-USB Big Bag topic.
 

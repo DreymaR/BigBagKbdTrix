@@ -58,10 +58,10 @@ Here are the spectrally coded Tarmak steps again, together in one Colemak image.
 
     [img]https://www.dropbox.com/s/g5qhyce8azpqgdh/Tarmak-ETROI_Spectral_ANSI.png?raw=1[/img]
 
-The next image shows the Tarmak steps leading to a Curl(DH) ergo modded Colemak variant, should you be interested in that. If so, see [b][url=https://forum.colemak.com/post/14801/#p14801]the next post below[/url][/b].
+The next image shows the Tarmak steps leading to the [b][url=https://forum.colemak.com/post/14801/#p14801]Colemak-DH[/url][/b] ergonomic variant, should you be interested. I like it!
 
     [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
-    [i]This image shows Tarmak-Curl(DH) on an ANSI Angle(Z) modded board.[/i]
+    [i]This image shows Tarmak-DH on an ANSI Angle(Z) modded board, leading to Colemak-DH.[/i]
     [i]On an ISO keyboard you can use a simpler Angle mod without splitting the ZXC keys.)[/i]
 
 
@@ -162,8 +162,8 @@ Here is the best part, are you ready? Some genius figured out that you can make 
     • If you have an ANSI keyboard, you must make a tradeoff: Move the Z key back to the middle ("Angle-Z"), or, e.g., the middle/upper rows to the right ("A-Wing").
     • The [b]Wide[/b] mod is quite simple on any keyboard: Slide the right-hand keys one step to the right, improving hand distance and thumb/pinky reaches. Neat!
     • These could be "hard" implemented, even changing the physical key caps to Angle/Wide positions if you can. My wife typed QWERTY-AngleWide without trouble.
-[b]3) The Curl(DH) ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down makes them easier to reach with lightly curled, relaxed fingers!
-    • [b]NOTE:[/b] There is a tweaked [b][url=https://forum.colemak.com/post/14801/#p14801]Tarmak-Curl progression for the Colemak-Curl(DH) ergo mod[/url][/b]!
+[b]3) The Colemak-DH a.k.a "Curl(DH)" ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down makes them easier to reach with lightly curled, relaxed fingers!
+    • [b]NOTE:[/b] There is a tweaked [b][url=https://forum.colemak.com/post/14801/#p14801]Tarmak progression for Colemak-DH[/url][/b]!
 [b]4) Colemak[eD]:[/b] This only affects you if you'll be using the AltGr key, as it's about the extra mapping layers on each key.
     • Vanilla Colemak has several AltGr mappings, but they seem somewhat unintuitive and not really practical to me.
     • My "[b][url=https://forum.colemak.com/viewtopic.php?id=1280][edition DreymaR][/url][/b]" mappings place useful symbols and letters quite intuitively.
@@ -191,7 +191,7 @@ I'd like to say thanks to all the wonderful people of the Colemak forums and els
 
 [b]Windows:[/b]
 • Here's [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]My full PortableKeyboardLayout repo at GitHub[/url][/b] as described in the [url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag Of Tricks (for PKL)[/url] topic. It should run portably without any fuss.
-• (You can download directly a small file with some [url=https://www.dropbox.com/s/6vla7ocz2nwks0a/PKL_vk_Tarmak.zip?dl=1]"VirtualKey" layout files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url]. Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file. There are layouts for ISO and ANSI(US) keyboards, vanilla or [url=https://forum.colemak.com/viewtopic.php?pid=16393#p16393]Curl-modded[/url] Colemak. The files may not be updated any more though, so I recommend the GitHub repo!)
+• (You can download directly a small file with some [url=https://www.dropbox.com/s/6vla7ocz2nwks0a/PKL_vk_Tarmak.zip?dl=1]"VirtualKey" layout files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url]. Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file. There are layouts for ISO and ANSI(US) keyboards, vanilla or Colemak-DH. The files may not be updated any more though, so I recommend the GitHub repo!)
 
 [b]Linux [i]et al[/i]:[/b]
 • For XKB, see the [url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks (Linux/XKB)[/url] topic. After installing, search for 'Tarmak' in the layout chooser.
@@ -202,7 +202,7 @@ I'd like to say thanks to all the wonderful people of the Colemak forums and els
     Thanks to user [b][url=https://forum.colemak.com/user/2614-bombdiggity/]bombdiggity[/url][/b] who contributed to that happening.
 • User [b][url=https://forum.colemak.com/user/2379-bradwright/]BradWright[/url][/b] made [url=https://gist.github.com/bradleywright/11123852/revisions]all the Tarmak steps available as a private.xml file[/url] for Karabiner.
 • User [b][url=https://forum.colemak.com/user/2460-opiusic/]opiusic[/url][/b] has made [url=https://github.com/sblaurock/tarmak-layouts]OSX layout install files for both the default ETROI and the older ETOIR progressions[/url] (based on [url=https://forum.colemak.com/viewtopic.php?id=1684]the older ones[/url] by user [b][url=https://forum.colemak.com/user/2210-ghaz/]ghaz[/url][/b] which only had the ETOIR progression). Additional instructions for these can be found [url=http://www.languagegeek.com/keyboard_general/mac_installation1.html]over at the LanguageGeek pages[/url].
-• User [b][url=https://forum.colemak.com/user/2552-mkborregaard/]mkborregaard[/url][/b] has made [url=https://forum.colemak.com/viewtopic.php?id=2020]a Karabinier implementation of the Curl-DbgHk mod Tarmak steps[/url] (and more;  see [url=https://forum.colemak.com/profile.php?id=2552]this forum topic[/url]).
+• User [b][url=https://forum.colemak.com/user/2552-mkborregaard/]mkborregaard[/url][/b] has made [url=https://forum.colemak.com/viewtopic.php?id=2020]a Karabinier implementation of the Tarmak-DbgHk (old Colemak-DH version) steps[/url] (and more;  see [url=https://forum.colemak.com/profile.php?id=2552]this forum topic[/url]).
 • GitHub users [url=https://github.com/shelbyd]shelbyd[/url] and [url=https://github.com/professor]professor[/url] have a [url=https://github.com/shelbyd/tarmak]Mac OS 10.9 repo[/url] with Tarmak.
 
 [b]USB-2-USB and other converter/controller devices:[/b]

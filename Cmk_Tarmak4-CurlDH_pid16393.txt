@@ -1,5 +1,5 @@
 [h]Tarmak for Curl-DH mods![/h]
-[h]NOTE (2017): These are now outdated, and superseded by the new Curl(DH) mod![/h]
+[h]NOTE (2017): These are now outdated, and superseded by the new Colemak-DH mod![/h]
 
     [img]https://www.dropbox.com/s/ub363imkf12ywwc/Tarmak-Curl_SpectralAnimation_45d.gif?raw=1[/img]
 

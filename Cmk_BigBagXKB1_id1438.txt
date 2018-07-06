@@ -21,7 +21,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2][/b] The [b]Colemak [url=https://colemakmods.github.io/mod-dh/]Curl(DH)[/url] ergo mod[/b] (deprioritize middle columns without keys changing fingers)
+[b][2.2][/b] The [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
 [b][2.3][/b] [b]Modifier modness[/b] (Work In Progress)
 
 [b][3]    [u]Other Layouts[/u][/b]
@@ -162,7 +162,7 @@ I think it's about the locales. The big en_US.UTF-8 Compose file has the dead_st
 
 These are ergonomic mods, moving some keys around to achieve straight wrists (the Angle mods), as well as better hand separation and right pinky load (the Wide mods). The Angle part is almost a no-brainer to me as it allows the left hand to keep a straight wrist without changing the fingering on ZXCV, and makes B easier to reach. Colemak creator [user]Shai[/user] himself has given his "blessing" to this mod! The Wide mod is more optional, but it does put some load off the right-hand pinky, widen the arm distance (useful for small keyboards in particular, but nice regardless), and provide easier access to AltGr/Enter/Backspace/RShift.
 
-For Linux/xkb, the Angle/Wide mods are implemented as keyboard models. This means that you can use them with [i]any[/i] layout including the QWERTY and Dvorak ones, Tarmak and even the Curl mods and Mirrored Colemak (because those are implemented as layouts). Modularity at your fingertips, again.
+For Linux/xkb, the Angle/Wide mods are implemented as keyboard models. This means that you can use them with [i]any[/i] layout including the QWERTY and Dvorak ones, Tarmak and even the Curl(DH) mod and Mirrored Colemak, because those are implemented as layouts. Modularity at your fingertips, again.
 
     [img]https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?raw=1[/img]
     [i]The AngleWide(Slash) wide ergo mod for PC105/ISO keyboards.[/i]
@@ -185,11 +185,11 @@ The xkb ergonomic keyboard model mods have names|shortstrings as following (see 
 • [b]pc105aw-sl | 5aw[/b] - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
 
 
-[h][2.2]    THE "CURL(DH)" COLEMAK ERGO MOD[/h]
+[h][2.2]    THE COLEMAK-DH ALIAS "CURL(DH)" ERGO MOD[/h]
 
-The point of the Curl ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
+The point of the [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
 
-The Curl mod depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and [url=https://forum.colemak.com/post/14801/#p14801]tweak the 2nd Tarmak step a little[/url].
+The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and tweak the 2nd Tarmak step a little.
 
     [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
@@ -212,12 +212,12 @@ The Curl mod depends on using an Angle mod which is easier on an "105-key"/ISO k
     – [b]pc105curl/pc105caw-sl | 5c/5cw[/b] – ISO/Euro CurlAngle(Wide-Slash)
     – To get the older mod variants (DHm/DvbgHm or DvH/DbgHk) you'll have to edit the colemak symbol file, or specify model+option directly.
 • Note: If you have a system (X11) directory install, you'll need sudo privileges to edit those files. (Make sure you use gksudo or similar if you start a GUI editor.)
-• There are special Tarmak-Curl layouts; see the Tarmak section below.
+• There are special Tarmak-Curl(DH) layouts; see the Tarmak section below.
 • NOTE: If your locale variant remaps any of the affected keys (mainly D, G, H, M or K) you'll have to look up and edit that locale symbols file.
 
 [b][i]Example: Editing the symbols/colemak file[/i][/b]
-• Below I've uncommented a line in the "[i]cmk_ed_letters[/i]" section of [i]xkb/symbols/colemak[/i], activating both sides of the Curl-DH mod.
-• This is useful for non-US layouts and Tarmak steps; otherwise you can just select the English Curl layouts as explained above.
+• Below I've uncommented a line in the "[i]cmk_ed_letters[/i]" section of [i]xkb/symbols/colemak[/i], activating both sides of the Curl(DH) mod.
+• This is useful for non-US layouts and Tarmak steps; otherwise you can just select the English Curl(DH) layouts as explained above.
 [code]
 //// Activating the line below will "hard" enable the Curl(DH) mod; see below.
     include "colemak(cmk_ed_dh)"
@@ -539,10 +539,10 @@ The xkb server can get its settings from several places so how your actual setti
 • Made the Extend layer modifiers (A/S/T for Alt/Shift/Ctrl) work with the other keys like they do in my PKL implementation under Windows
 • Extend Undo/Cut/Copy/Paste, navigation and F-keys work as they should, as does Wheel Scrolling
 • Reviewed the Curl mod solution: Could keyboard models be better? [Verdict: This leads to very many models and an odd Extend layer...]
-• Curl mods implemented as Options in addition to the US layouts (a bit strange, as they'd mess up non-Colemak layouts, but very useful)
+• Curl(DH) mods implemented as Options in addition to the US layouts (a bit strange, as they'd mess up non-Colemak layouts, but very useful)
 • More locale variants: [b]al hu ro tr, ba/hr/rs/si[/b]...
-• Updates to the install and setxkb scripts. Clearer output, and setxkb now supports model-only shortstrings and curl "models" (see script -h)
-• Reassessed the Curl mod yet again with the new unified Curl mod. Models are now required, as CurlAngle mods which preserve Ext+V as Paste.
+• Updates to the install and setxkb scripts. Clearer output, and setxkb now supports model-only shortstrings and Curl(DH) "models" (see script -h)
+• Reassessed the Curl(DH) mod yet again with the new unified Colemak-DH mod. Models are now required, as CurlAngle mods which preserve Ext+V as Paste.
 • Finished updating the Curl(DH) mods (I think)
 
 [h]TODO:[/h]
