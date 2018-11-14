@@ -1,36 +1,47 @@
 [h]LOCALE COLEMAK[eD] VARIANTS[/h]
 
-In the following I describe how to make locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "lesser/greater" key (LSGT a.k.a. VK_102). If more keys than these are needed, the HJKL keys with (Shift+)AltGr (lv3-4) are also available in my layout since they hold nonessential mappings beforehand and are placed together. This is what I call 'Unified Symbols' variants. I also provide 'Keep Local Symbols' variants where all the non-letter keys behave as locale users are used to – but at the cost of whichever nifty Colemak[eD] mappings were on those keys! This includes all dead keys as I've put those solely on symbol keys.
+In the following I describe how to make locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "lesser/greater" key (LSGT a.k.a. VK_102). If more keys than these are needed, the HJKL keys with (Shift+)AltGr (lv3-4) are also available in my layout since they hold nonessential mappings beforehand and are placed together, and in some cases other keys are natural candidates.
 
-In the below, the 'Keep Local Symbols'/'ks' variants are shown without any Angle/Wide ergonomic mods to avoid confusion to newcomers. The 'Unified Symbols'/'us' variants however, are shown as cutouts from a WideAngle modded keyboard as all the "fluid" keys are bunched together in the middle on such a board. Both variant types may of course be used with wide or non-wide setups at your leisure.
+This is what I call [b]Unified Symbols[/b] or 'US' variants (yes, that's also the name of the United States English layout but then again they're based on that one). I also provide 'Keep Local Symbols' variants where all the non-letter keys behave as locale users are used to – but at the cost of whichever nifty Colemak[eD] mappings were on those keys! This includes all dead keys as I've put those solely on symbol keys.
+
+In the below, the 'Keep Local Symbols'/KS variants are shown without any Angle/Wide ergonomic mods to avoid confusion to newcomers. The 'Unified Symbols'/US variants however, are shown as cutouts from a WideAngle modded keyboard as all the "fluid" keys are bunched together in the middle on such a board. Both variant types may of course be used with wide or non-wide setups at your leisure.
 
     [img]https://www.dropbox.com/s/xp98ujdrlsf9ki9/Cmk-eD-usym-aw_Xmc.png?raw=1[/img]
-    [i]Basic 'Unified Symbols' ('US') Colemak[eD], shown with the AngleWide ergo mod[/i]
+    [i]Basic Unified Symbols ('US') Colemak[eD], shown with the AngleWide ergo mod[/i]
+
+
+[h]LANGUAGES, COUNTRIES and LOCALES[/h]
+
+Some languages are used in several countries and some countries use several languages, and sometimes there are even several layout variants for a combination. It's a complex issue. On Windows (both MSKLC and PKL), a [url=https://ss64.com/locale.html]Windows Locale Code[/url] is used to account for the complexity. Linux/XKB instead uses [b][url=https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2]ISO two-letter Country Codes[/url][/b] for file names, adding a few names of their own such as LatAm for Latin America and Epo for Esperanto, and within such a file there's a default variant and as many subvariants as you like. If a layout is used in several countries it can be linked to in several symbols files.
+
+Note that there also exists two-letter language codes and they're sometimes not the same as the country codes. E.g., CS for the Czech [i]language[/i] vs CZ for the [i]country[/i].
+
+In the below, I've tagged my locale layouts with the file names that Linux/XKB uses. Mainly so I easily know which XKB file a layout is found in, but I've also used the same codes for my PKL locale layout variants. In the cases where one language is used in several countries, the XKB layout will be found linked between several files, and in the PKL files it'll have a compound name tag like "BeCaFr" for French (Belgium, Canada, France). Such a country list often won't be exhaustive but representative. Hopefully there should be correspondence between the tags used below and in my files.
 
 There's quite a bunch of unified locale variants now! I can make more on request or whim. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.
 
 Here's what I've covered so far, providing both conservative 'Keep Local Symbols' and my preferred 'Unified Symbols' variants (at least on Linux/XKB):
-[b]al at ba be bg br ca cz de dk es fi fr gb gr hr hu il is it latam nl no pl pt ro rs ru se si tr us[/b]
-On a side note, there are but 11 Dvorak layouts so now Colemak really has wind in its locale sails!
+[b]AL AT BA BE BG BR CA CZ DE DK ES FI FR GB GR HR HU IL IS IT LatAm NL NO PL PT RO RS RU SE SI TR US[/b]
+By comparison, there are but 11 Dvorak layouts so now Colemak really has wind in its locale sails!
 
-These non-latin (phonetic) variants are covered in [url=https://forum.colemak.com/post/10016/#p10016]the next post[/url]: [b]bg gr il ru[/b] (and others using the same scripts)
+These non-latin (phonetic) variants are covered in [url=https://forum.colemak.com/post/10016/#p10016]the next post[/url]: [b]BG GR IL RU[/b] (and others using the same scripts)
 
 
-[h][al] ALBANIAN (ALBANIA)[/h]
+[h][AL] ALBANIAN (ALBANIA)[/h]
 
 Albanian is nice and simple, needing only Ëë and Çç.
 
     [img]https://www.dropbox.com/s/j0ci7vvwvilvg4s/Cmk-eD-al-ksym_Xm.png?raw=1[/img]
     [i]Albanian 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]al[/b]:
+The '[eD] unified symbols' solution for [b]AL[/b]:
 • Çç, while also present at AltGr+Kk, can have the same key as in the local layout (LBr). I put Ëë next to it.
 
     [img]https://www.dropbox.com/s/bwew5088ipr4lb4/Cmk-eD-al-usym-aw_Xmc.png?raw=1[/img]
     [i]Albanian 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][ba hr rs si] BOSNIAN (BOSNIA), CROATIAN (CROATIA), SERBIAN (SERBIA), SLOVENIAN (SLOVENIA)[/h]
+[h][BA HR RS SI] BOSNIAN (BOSNIA), CROATIAN (CROATIA), SERBIAN (SERBIA), SLOVENIAN (SLOVENIA)[/h]
 
 The Bosnian/Serbocroatian/Slovenian layouts are almost identical, differing mostly in how they handle some dead keys (on ~/1/3/5/7/- ).
 They need Đđ, Ćć, and the caron letters Čč/Šš/Žž. Some variants also include NJ, LJ and DŽ digraphs, but the default ones do not.
@@ -44,17 +55,18 @@ They need Đđ, Ćć, and the caron letters Čč/Šš/Žž. Some variants also i
     [img]https://www.dropbox.com/s/t5q7k6oqbju28vc/Cmk-eD-si-ksym_Xm.png?raw=1[/img]
     [i]Slovenian 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]ba hr rs si[/b]:
-• A caron dead key on LBr takes care of ČŠŽ.
+The '[eD] unified symbols' solution for [b]BA+HR+RS+SI[/b]:
+• A caron dead key on RBr takes care of ČŠŽ. For a non-Wide layout it could be on LBr instead; it should be close to the right hand.
+• I also put caron on Shift+RBr. This way you could for instance hit LShift+{RBr,c} for Č.
 • Stroke D could've replaced the Ðð on AltGr+Dd, but it's too common so it gets RBr.
-• As options, instead of the LBr dead key the caron letters ČŽŠ may be placed on AltGr+KHL in addition to LBr.
-• Another available option is putting the DŽ/NJ/LJ digraphs on AltGr+HJL for instance.
+• Alternatively, instead of the LBr dead key the caron letters ČŽŠ may be placed on AltGr+KHL in addition to LBr.
+• Another possibility is putting the DŽ/NJ/LJ digraphs on AltGr+HJL.
 
     [img]https://www.dropbox.com/s/2c5pv7re355is8n/Cmk-eD-ba%2Bhr%2Brs%2Bsi-usym-aw_Xmc.png?raw=1[/img]
     [i]Bosnian+Croatian+Serbian+Slovenian 'Unified Symbols' Colemak[eD] (latin script – for kyrillic, see the next post)[/i]
 
 
-[h][be ca fr] FRENCH (BELGIUM, CANADA and FRANCE)[/h]
+[h][BE CA FR] FRENCH (BELGIUM, CANADA and FRANCE)[/h]
 
 The Belgian, Canadian (international) and French default QWERTY layouts are similar enough that a harmonized 'unified' variant was made for these locales.
 This variant should be good for all users of the French and similar languages. One layout to rule them all...
@@ -71,7 +83,7 @@ Some [url=https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of
     [img]https://www.dropbox.com/s/5x1derk73xu4i18/Cmk-eD-fr-ksym_Xm.png?raw=1[/img]
     [i]French 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]be+ca+fr[/b]:
+The '[eD] unified symbols' solution for [b]BE+CA+FR[/b]:
 • Going by letter frequencies, é and grave merit their own keys; the other accents are of less critical importance.
 • Éé gets its own key (LSGT) instead of an acute dead key since it's quite frequent and only one letter.
 • A Çç key is preferable to the cedilla dead key since there's only one letter needed, but lv3-4 is acceptable since it's a rare letter.
@@ -85,7 +97,7 @@ The '[eD] unified symbols' solution for [b]be+ca+fr[/b]:
     [i]Belgian+Canadian(Intl)+French 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][br pt] PORTUGUESE (BRAZIL and PORTUGAL)[/h]
+[h][BR PT] PORTUGUESE (BRAZIL and PORTUGAL)[/h]
 
     [img]https://www.dropbox.com/s/u5kck8767j6p7qi/Cmk-eD-br-ksym_Xm.png?raw=1[/img]
     [i]Portuguese (Brazil) 'Keep Local Symbols' Colemak[eD][/i]
@@ -93,7 +105,7 @@ The '[eD] unified symbols' solution for [b]be+ca+fr[/b]:
     [img]https://www.dropbox.com/s/pg9km0pmz04ecfj/Cmk-eD-pt-ksym_Xm.png?raw=1[/img]
     [i]Portuguese (Portugal) 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]br+pt[/b]:
+The '[eD] unified symbols' solution for [b]BR+PT[/b]:
 • The two Portuguese locales' default layouts have the acute/grave key on different keys (br on LBr and pt on RBr); that's messy.
 • I think that the acute is the more common accent? At any rate, it feels logical to place it on the LBr.
 • Tilde is also important and used for more than just ñ in Portuguese (ã and õ at least), and circumflex is also provided.
@@ -104,7 +116,7 @@ The '[eD] unified symbols' solution for [b]br+pt[/b]:
     [i]Portuguese (Brazil and Portugal) 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][cz pl] CZECH (CZECH REPUBLIC) and POLISH (POLAND)[/h]
+[h][CZ PL] CZECH (CZECH REPUBLIC) and POLISH (POLAND)[/h]
 
     [img]https://www.dropbox.com/s/gp0hqwtvob84c2j/Cmk-eD-cz-ksym_Xm.png?raw=1[/img]
     [i]Czech 'Keep Local Symbols' Colemak[eD][/i]
@@ -114,7 +126,7 @@ The Polish layout has special letters on AltGr+letter mappings; unfortunately, t
     [img]https://www.dropbox.com/s/xd1375pkpizvo7t/Cmk-eD-pl-ksym_Xm.png?raw=1[/img]
     [i]Polish 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]cz[/b] and [b]pl[/b]:
+The '[eD] unified symbols' solution for [b]CZ[/b] and [b]PL[/b]:
 • These two locales ended up very similar, with one acute key and one other accent (hacek for cz, ogonek for pl) for commonly accented letters.
 • The ů in Czech is hardly ever capitalized in normal text but the Ů is sometimes needed for caps and letter referrals so it's provided (also for consistency).
 • The Żż in Polish is the only letter using the dot-above accent so it gets a key for itself. The AltGr+period dead key is also quite easy to hit.
@@ -128,12 +140,12 @@ The '[eD] unified symbols' solution for [b]cz[/b] and [b]pl[/b]:
     [i]Polish 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][de at] DEUTSCH/GERMAN (DEUTSCHLAND/GERMANY, ÖSTERRREICH/AUSTRIA)[/h]
+[h][AT DE] DEUTSCH/GERMAN (DEUTSCHLAND/GERMANY, ÖSTERRREICH/AUSTRIA)[/h]
 
     [img]https://www.dropbox.com/s/zr1sz0pim7fqj7z/Cmk-eD-at%2Bde-ksym_Xm.png?raw=1[/img]
     [i]German (Germany and Austria) 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]at de[/b]:
+The '[eD] unified symbols' solution for [b]AT+DE[/b]:
 • The German layout conserves the Üü position from the default layout.
 • Ää and Öö are harmonized with the Scandinavian layouts.
 • For ß only AltGr+s is provided; I think that's very easy to hit though. The capitalized version is there as an option but I hear it's hardly ever used.
@@ -142,7 +154,7 @@ The '[eD] unified symbols' solution for [b]at de[/b]:
     [i]German (Germany and Austria) 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][dk fi no se] DANISH (DENMARK), NORWEGIAN (NORWAY), FINNISH (FINLAND) and SWEDISH (SWEDEN)[/h]
+[h][DK FI NO SE] DANISH (DENMARK), NORWEGIAN (NORWAY), FINNISH (FINLAND) and SWEDISH (SWEDEN)[/h]
 
 The Scandinavian languages use the same special letters albeit written differently: Åå Ææ Øø for Danish and Norwegian, and Åå Ää Öö for Finnish and Swedish. Their default layouts are quite similar too, apart from some stupid differences in punctuation placement which fortunately won't cause us any trouble.
 
@@ -158,7 +170,7 @@ The Scandinavian languages use the same special letters albeit written different
     [img]https://www.dropbox.com/s/hqlwoiiw6e8v5xd/Cmk-eD-se-ksym_Xm.png?raw=1[/img]
     [i]Swedish 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]dk+no[/b] and [b]fi+se[/b]:
+The '[eD] unified symbols' solution for [b]DK+NO[/b] and [b]FI+SE[/b]:
 • These locales use the same special letters. The Åå is kept in place; the same position for all the Scandinavian default layouts.
 • The Ææ is somewhat more common in Danish and the Øø in Norwegian, but that shouldn't matter much here! Both positions are decent enough.
 • The Ää and Öö are placed in harmony with the other Scandinavian (and German!) layouts.
@@ -170,7 +182,7 @@ The '[eD] unified symbols' solution for [b]dk+no[/b] and [b]fi+se[/b]:
     [i]Finnish+Swedish 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][es latam] SPANISH (SPAIN and most of LATIN AMERICA)[/h]
+[h][ES LatAm] SPANISH (SPAIN and most of LATIN AMERICA)[/h]
 
     [img]https://www.dropbox.com/s/9j58v3sdeccjnh1/Cmk-eD-es-ksym_Xm.png?raw=1[/img]
     [i]Spanish (Spain) 'Keep Local Symbols' Colemak[eD][/i]
@@ -178,7 +190,7 @@ The '[eD] unified symbols' solution for [b]dk+no[/b] and [b]fi+se[/b]:
     [img]https://www.dropbox.com/s/hszbi3q9xnmwnb8/Cmk-eD-latam-ksym_Xm.png?raw=1[/img]
     [i]Spanish (Latin America) 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]es+latam[/b]:
+The '[eD] unified symbols' solution for [b]ES+LatAm[/b]:
 • For writing Spanish, the tilde is important but only used for Ññ so that letter gets a key for itself.
 • Both acute and grave are important accents so they get lv1 placement in a logical fashion on the brackets ("up then down").
 • Unfortunately, the Spain and LatAm default layouts have different placement of the acute accent key. That's silly I think!
@@ -189,12 +201,12 @@ The '[eD] unified symbols' solution for [b]es+latam[/b]:
     [i]Spanish (Spain and Latin America) 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][gb] ENGLISH (GREAT BRITAIN aka UNITED KINGDOM)[/h]
+[h][GB] ENGLISH (GREAT BRITAIN aka UNITED KINGDOM)[/h]
 
     [img]https://www.dropbox.com/s/8ww6rzy67mty1oc/Cmk-eD-gb-ksym_Xm.png?raw=1[/img]
     [i]English (UK) 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]gb[/b]:
+The '[eD] unified symbols' solution for [b]GB[/b]:
 • The US (English) layout serves the needs of all English-speaking locales to my knowledge (the £ sign is there).
 • To avoid national pride issues, please do think of that 'US' moniker as "Unified Symbols" and not as "US of A". ;-)
 • Using the 'Keep Local Symbols' layout, conservative Brits may find all symbols where they're accustomed to – at the cost of dead keys etc.
@@ -203,12 +215,12 @@ The '[eD] unified symbols' solution for [b]gb[/b]:
     [i]English(UK) 'Unified Symbols' Colemak[eD] is identical to the basic 'US' layout[/i]
 
 
-[h][hu] HUNGARIAN (HUNGARY)[/h]
+[h][HU] HUNGARIAN (HUNGARY)[/h]
 
     [img]https://www.dropbox.com/s/szcxvt8y9lvp2gc/Cmk-eD-hu-ksym_Xm.png?raw=1[/img]
     [i]Hungarian 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]hu[/b]:
+The '[eD] unified symbols' solution for [b]HU[/b]:
 • The common acute and less common double-acute accents are provided as lv1-2 dead keys
 • The Öö/Üü umlaut letters are provided directly on LSGT (and also an umlaut dead key on RBr)
 
@@ -216,7 +228,7 @@ The '[eD] unified symbols' solution for [b]hu[/b]:
     [i]Hungarian 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][is] ICELANDIC (ICELAND)[/h]
+[h][IS] ICELANDIC (ICELAND)[/h]
 
 Iceland managed to stick with the Þþ and Ðð letters when for instance English lost them and stupidly started writing 'th' instead. ;)
 Other than that, they need the Ææ and Öö letters like the other Nordic countries do, but make do without the Åå (as they use Áá instead).
@@ -226,7 +238,7 @@ Some [url=https://en.wikipedia.org/wiki/Icelandic_alphabet#Letter_frequencies]le
     [img]https://www.dropbox.com/s/6prplez8hd2iobu/Cmk-eD-is-ksym_Xm.png?raw=1[/img]
     [i]Icelandic 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]is[/b]:
+The '[eD] unified symbols' solution for [b]IS[/b]:
 • As the letter frequencies show, the Þþ and especially Ðð are so common that they shouldn't be kept on lv3-4 mappings for this locale.
 • Ææ and Öö however, are less common and hopefully AltGr+Aa and AltGr+Tt respectively are easy enough to hit.
 • There are several accented letters (Áá Éé Íí Óó Úú Ýý) and some are quite frequent, so a good acute dead key is needed.
@@ -236,7 +248,7 @@ The '[eD] unified symbols' solution for [b]is[/b]:
     [i]Icelandic 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][it] ITALIAN (ITALY)[/h]
+[h][IT] ITALIAN (ITALY)[/h]
 
 Some [url=http://www.sttmedia.com/characterfrequency-italian]letter frequencies[/url] for Italian: àèìòù 0.89% (è 0.42%; à 0.15%; ù 0.12%; ò 0.11%; ì 0.09%); é 0.06%.
 If this is accurate, the accented letters are quite rare all in all.
@@ -245,7 +257,7 @@ If this is accurate, the accented letters are quite rare all in all.
     [img]https://www.dropbox.com/s/q7e3kr57diqrz7v/Cmk-eD-it-ksym_Xm.png?raw=1[/img]
     [i]Italian 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]it[/b]:
+The '[eD] unified symbols' solution for [b]IT[/b]:
 • For the Italian layout, several different accented letters are needed but capitalized letters weren't in the default layout.
 • Thus, the letters were provided directly as in the default layout. The éè key was kept on LBr and the rest put together.
 • The letters çłñ may be used (for Ligurian and Venetian script for instance) but they're rare so they're on lv3-4 mappings.
@@ -255,22 +267,23 @@ The '[eD] unified symbols' solution for [b]it[/b]:
     [i]Italian 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][nl] DUTCH (NETHERLAND)[/h]
+[h][NL] DUTCH (NETHERLAND)[/h]
 
     [img]https://www.dropbox.com/s/m6dwa3j19fek8zo/Cmk-eD-nl-ksym_Xm.png?raw=1[/img]
     [i]Dutch 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]nl[/b]:
+The '[eD] unified symbols' solution for [b]NL[/b]:
 • The Dutch layout is similar to Belgian and other French-type ones but has more use of the umlaut than the circumflex.
 • Therefore I didn't harmonize it fully with the French-type layouts but kept the LBr key the way it is in the default layout.
 • The acute letter Éé is somewhat common as is Óó; the acute dead key on RBr should be good enough for that.
 • The IJ ligature isn't provided in the default layout so it isn't here either; I think it's falling into disuse? The Compose method has it.
+• NOTE: Since IJ is more common in Dutch, it may be nice to swap J with another right hand index keys such as M, DH mod style?
 
     [img]https://www.dropbox.com/s/hfu8791rzcuek94/Cmk-eD-nl-usym-aw_Xmc.png?raw=1[/img]
     [i]Dutch 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][ro] ROMANIAN (ROMANIA)[/h]
+[h][RO] ROMANIAN (ROMANIA)[/h]
 
 The Romanian locale letters are on AltGr+letter mappings in the default layout.
 Thus, some Colemak[eD] letter mappings (notably, π and typographic quotes) were lost for the "Keep Local Symbols" variant.
@@ -278,7 +291,7 @@ Thus, some Colemak[eD] letter mappings (notably, π and typographic quotes) were
     [img]https://www.dropbox.com/s/y99c2akzclzm6nu/Cmk-eD-ro-ksym_Xm.png?raw=1[/img]
     [i]Romanian 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]ro[/b]:
+The '[eD] unified symbols' solution for [b]RO[/b]:
 • Proper comma-below Ss and Tt are provided on AltGr+Ss/Tt (cedilla versions are on the cedilla dead key as before)
 • Circumflex A/I; breve A/I (I for Crimean Tatars) and stroke D are given separate, suitable positions
 
@@ -286,7 +299,7 @@ The '[eD] unified symbols' solution for [b]ro[/b]:
     [i]Romanian 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][tr] TURKISH (TURKEY)[/h]
+[h][TR] TURKISH (TURKEY)[/h]
 
 The letters ıİ (3.9%) üÜ (1.8%) şŞ (1.6%) çÇ (1.4%) ğĞ (0.9%) öÖ (0.7%) are needed.
 In both my variants, the Ii is changed to Iı (dotless i) as in the default Turkish layout.
@@ -294,7 +307,7 @@ In both my variants, the Ii is changed to Iı (dotless i) as in the default Turk
     [img]https://www.dropbox.com/s/rxm971wxk8rwoop/Cmk-eD-tr-ksym_Xm.png?raw=1[/img]
     [i]Turkish 'Keep Local Symbols' Colemak[eD][/i]
 
-The '[eD] unified symbols' solution for [b]tr[/b]:
+The '[eD] unified symbols' solution for [b]TR[/b]:
 • Turkish doesn't use QWX and J is rare, but they need to be kept in place because of English etc!
 • The needed special letters are provided directly according to frequencies.
 • An option for a more accessible circumflex dead key is an alternative variant.
@@ -302,11 +315,3 @@ The '[eD] unified symbols' solution for [b]tr[/b]:
 
     [img]https://www.dropbox.com/s/z8693l8ordepnvo/Cmk-eD-tr-usym-aw_Xmc.png?raw=1[/img]
     [i]Turkish 'Unified Symbols' Colemak[eD]; the Iı key (on Cmk Ii) isn't shown here[/i]
-
-
-[b][i][DISCLAIMER: The above may still be subject to (hopefully small!) changes.][/i][/b]
-
-
-[b]TODO/DONE:[/b]
-• [del]Some variants aren't documented here yet even though they have been implemented in my xkb files[/del]
-• [del]Some images are from older Colemak[eD] versions so the grayed-out keys will show strange mappings[/del]

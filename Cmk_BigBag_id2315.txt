@@ -43,6 +43,11 @@ And so, [i]voila[/i], here it is:
 [b][4.4][/b] [b]The Typing of the Dead[/b] for ultra-cheesy-violent typing gaming
 [b][4.5][/b] [b][url=https://forum.colemak.com/topic/188-make-your-own-physical-colemak-board/]Physical keyboard modding[/url][/b]
 
+[b][5]    Get Outta Here! (guest links)[/b]
+[b][–.–][/b] [b][url=https://forum.colemak.com/topic/2454-the-ultimate-will-colemak-destroy-my-qwerty-skills-thread/]Will Colemak Destroy My QWERTY Skills?[/url][/b] by our [b][url=https://discordapp.com/channels/409502982246236160/430326185159819274]Colemak Discord[/url][/b] champion, [user]NottNott[/user] the "Not-NottNott-Bot" ^_^
+[b][–.–][/b] [b][url=https://forum.colemak.com/topic/2455-vipers-speedtyping-guide/]Speedtyping Guide[/url][/b] by Colemak-wielding [b][url=https://forum.colemak.com/topic/2449-it-is-a-great-day-for-colemak/]200+WPM[/url][/b] champion [user]Viper[/user]
+
+
 [b][–.–][/b] [b]Done/Todo[/b]
 
 
@@ -78,8 +83,10 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as in Lin
 • If you do get stuck, here's a little [b][url=https://forum.colemak.com/topic/2157-joking-around/]light entertainment[/url][/b] to hopefully Shift your mo(o)d. ;-)
 
 [quote="Typealong Clackity"]
-Colemak's connected to the ... Curl mod,
+Colemak's connected to the ... Curl* mod,
 The Curl mod's connected to the ... Angle mod,
 The Wide mod's connected to the ... shoulder bones,
 And Extend's just wonderful!
+-------
+*: DH
 [/quote]

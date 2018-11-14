@@ -1,8 +1,6 @@
 [h]PHONETIC COLEMAK LAYOUTS[/h]
 
-These scripts generally have their own or latin letters on (Shift+)AltGr mappings, so the [eD] lv3–4 layers aren't used for them.
-
-For the phonetic variant of Greek script I mostly moved the keys of their default layouts to a Colemak setup, not changing anything else. This type of layout already exists in QWERTY form, so making Colemak versions isn't too hard.
+These scripts generally have their own or latin letters on (Shift+)AltGr mappings, so they don't use the Colemak[eD] lv3–4 layers.
 
 Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think that at least the XKB way of doing that may be too QWERTY-centric for that to work right now.
 
@@ -11,15 +9,17 @@ The phonetic Hebrew is currently a Work In Progress, see below.
 The Kyrillic layouts are slightly tricky since Kyrillic script has more letters than latin script; user [user]ghen[/user] has made a nice solution named [url=https://forum.colemak.com/viewtopic.php?pid=13877#p13877]Rulemak[/url]. There are other proposals as well; see the topics linked to in the main post.
 
 
-[h][gr] GREEK SCRIPT[/h]
+[h][GR] GREEK SCRIPT[/h]
 
    [img]https://www.dropbox.com/s/yeuwzxj62xm4tir/Cmk-X-phon-gr-awide-sl_mask.png?raw=1[/img]
    [i]The Colemak phonetic layout for Greek script, simply moving around the keys of the default (here xkb) Greek layout.[/i]
 
+For the phonetic variant of Greek script I mostly moved the keys of their default layouts to a Colemak setup, not changing anything else. This type of layout already exists in QWERTY form, so making Colemak versions isn't too hard.
+
 I made some choices concerning some Greek letters (e.g., Χχ vs Ψψ vs Ξξ), but I consider my solutions useful and intuitive, and supported by at least some transliteration and/or keyboard layout tradition.
 
 
-[h][il] HEBREW SCRIPT[/h]
+[h][IL] HEBREW SCRIPT[/h]
 
    [img]https://www.dropbox.com/s/b9amh8gzfvhgzx3/HebrewCmk_Wrapman_WIP.png?raw=1[/img]
    [i]The proposed/WIP Colemak phonetic layout for Hebrew script based on phonetic Israeli layouts and own work.[/i]
@@ -27,7 +27,7 @@ I made some choices concerning some Greek letters (e.g., Χχ vs Ψψ vs Ξξ), 
 [b]NOTE:[/b] Turns out my first attempt at this was a misunderstanding and as such quite useless as it was based on the Israeli national layout which isn't phonetic after all! [user]Wrapman[/user] and I are working on a new one (the one in the image above), see [url=https://forum.colemak.com/post/19971/#p19971]the discussion below[/url]!
 
 
-[h][bg ru (by mk rs ua)?] KYRILLIC SCRIPT[/h]
+[h][BG RU (BY MK RS UA?)] KYRILLIC SCRIPT[/h]
 
    [img]https://www.dropbox.com/s/jpvyijtzswxki0a/Cmk-X-phon-ru.png?raw=1[/img]
    [i]The Colemak phonetic layout for Russian Kyrillic script – 'Rulemak' by [user]Ghen[/user]. New (2016) version.[/i]
@@ -42,4 +42,4 @@ Both Kyrillic layouts are discussed in [b][url=https://forum.colemak.com/viewtop
 
 Personally, I'd love to standardize the X/H == х/ч mappings between Rulemak and Bulmak. But it seems that this won't be easy as Russian and Bulgarian traditions differ too much on this point. Standardization is good, but not at the cost of disuse.
 
-[b]NOTE:[/b] As I understand it, there are East Slavic (Russian/Church/Belarus/Ukraina?) and South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?) main language groups (and some others, West and North). Does anyone know whether it'd be sensible to make layouts for Belarus([b]by[/b]), Ukraina([b]ua[/b]), Serbia(Cyrillic, [b]rs[/b]) and Macedonia([b]mk[/b]) based on these two layouts ([b]ru[/b] & [b]bg[/b]) with some small changes if necessary? That'd be awesome! :-)
+[b]NOTE:[/b] As I understand it, there are East Slavic (Russian/Church/Belarus/Ukraina?) and South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?) main language groups (and some others, West and North). Does anyone know whether it'd be sensible to make layouts for Belarus([b]BY[/b]), Ukraina([b]UA[/b]), Serbia([b]RS[/b], Cyrillic) and Macedonia([b]MK[/b]) based on the [b]RU[/b]/[b]BG[/b] layouts, with some small changes if necessary? That'd be awesome! :-)

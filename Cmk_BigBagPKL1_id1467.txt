@@ -23,7 +23,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2]†[/b] The [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
+[b][2.2][/b] The [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
 
 [b][3]    [u]Other Layouts[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
@@ -39,15 +39,19 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][–.–][/b] [b]Done/Todo[/b]
 
-[b]†:[/b] For the most part, these files are not premade for Win/PKL (yet) due to the non-modular nature of PKL files. This is about to change with PKL[eD] though!
+[b]†:[/b] For the most part, these files are not premade for Win/PKL (yet) due to the non-modular nature of PKL files. The new PKL[eD] makes it easier though!
 
-I use Farkas Máté's [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[/url] ('PKL') to achieve most of the above for Windows. It's included in my download below.
+I use Farkas Máté's [url=http://pkl.sourceforge.net/]Portable Keyboard Layout[/url] (PKL) to achieve most of the above for Windows.
+
+In my [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]Github PKL repository[/url][/b] you'll find not only the Big Bag tricks but a whole new version of PKL called PKL[eD] ("edition DreymaR"). It adds to the already good functionality of PKL in many ways. See the Downloads section below.
+
+PKL[eD] has been tested by [b][url=https://10fastfingers.com/user/1429229]Viper[/url][/b] who is [url=https://forum.colemak.com/topic/2449-it-is-a-great-day-for-colemak/]likely the world's fastest Colemak typist these days[/url], and according to him it works without trouble at typing speeds of at least 150 WPM, probably 200+ WPM!
 
 
 [h][1]    [u]Character/Key Mapping Layers[/u][/h]
 [h][1.1]    COLEMAK[eD] - EDITION DREYMAR[/h]
 
-My PKL layout.ini file (see links to downloads below) largely corresponds to its XKB counterpart when it comes to the lv3-4(AltGr) mappings. Note that since the Angle/Wide mods aren't modular in PKL I can't deliver all combinations of layout and ergo mod - I myself use both the Colemak[eD] mappings for Norwegian and the AngleWide-Slash/35 mod so that'll be there. I've also included a few others such as the non-Wide standard Colemak[eD] and a bunch of 'virtualkey' layouts that don't have separate lv3-4 mappings. Feel free to add your own; ask if you need help.
+My PKL layout.ini file (see links to downloads below) largely corresponds to its XKB counterpart when it comes to the lv3-4(AltGr) mappings. Note that since the Angle/Wide mods aren't modular in PKL every combination of layout and ergo mods needs its own layout folder/file - from plain Colemak[eD] to your favourite locale variant of Colemak-CAW[eD]! There are also a bunch of 'VirtualKey' layouts that don't have separate lv3-4 mappings. Fortunately, with PKL[eD] it's easier to (de)activate ergo mods separately. Feel free to add your own variants; ask if you need help.
 
 
     [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?raw=1[/img]
@@ -115,7 +119,7 @@ There are 19 dead keys in my pkl layout right now. The common accents are there,
 07) Caron
 08) Ogonek, comma below
 09) Breve
-10) Ring above, ring symbols:
+10) Ring above, ring symbols, ligatures [some, like ǳ/ǆ, have been added since the image below was made]:
     [img]https://www.dropbox.com/s/ao08n7m6awdb7o9/dk10_ringabove.png?raw=1[/img]    [img]https://www.dropbox.com/s/ezrzh2ewwzllne8/dk10sh_ringabove.png?raw=1[/img]
 11) Macron
 12) Double-acute, math/science:
@@ -181,11 +185,15 @@ There's a help image for each step, that you can see or hide with the shortcut C
 [h][3.2]    LOCALE & PHONETIC COLEMAK VARIANTS [i][TODO/WIP][/i][/h]
 
 See [url=https://forum.colemak.com/viewtopic.php?id=1458]my Locale Variants forum topic[/url] for the various locale and non-latin script solutions!
-(Warning: In most cases you'll have to change the PKL files yourself, or ask for help. Notable exceptions are the Rulemak layout for Cyrillic script.)
+(Warning: In some cases you'll have to change the PKL files yourself, or ask for help. Check the Layouts\Colemak-eD folder to see which ones exist already.)
 
-The locale layouts I've provided are for the most part only a "Latin" layout that can be switched between French/Portuguese/Spanish/Italian by un-/commenting some lines in the layout.ini file, and the Norwegian setup with the AngleWide mod. They usually work for, say, a US keyboard too, but there could be snags with some OEM_ keys (semicolon, slash, tilde, that sort of key). To make your own locale variant you'll want to copy the layout folder for my eD layout over to a new one, renaming it (and putting that new name into your pkl.ini file so the program can choose it!) and then editing the layout.ini file in there.
+The locale layouts I've provided so far include the "Latin" layouts for French(BeCaFr)/Portuguese(BrPt)/Spanish(EsLat)/Italian(It), "Germanic", Slavic and some others. These are for the most part set up with the CurlAngleWide mod but you could change that in the [eD_info] of the layout – however, the help images would have to be remade to reflect the changes. The locale layouts may work for, say, a US keyboard too, but you'd miss an important key in OEM_102.
 
-Only generic ISO help images are provided, as it's too much work to manually generate all the necessary images. I don't have a script like Farkas Máté did.
+To make your own locale variant you'll want to copy the layout folder for my eD layout over to a new one, renaming it (and putting that new name into your pkl.ini file so the program can choose it!) and then editing the layout.ini file in there.
+
+If you want help images for a locale variant that doesn't have them already, you can use Inkscape (portable or installed) with the PKL[eD] Help Image Generator. Or ask me, if it's a variant others could be interested in.
+
+The dead key images can for the most part be borrowed from another layout with a compatible board type and ergo mod. A few glyphs may be off but for the most part that won't matter to you. If you need the combining accents released by øØœŒ in my layouts, just add the required letters somewhere in yours.
 
 Example from my layout file showing Norwegian vs standard ISO mappings:
 [code]
@@ -234,4 +242,4 @@ There's a separate [b][url=https://forum.colemak.com/post/10279/#p10279]Download
 
 
     [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
-    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
+    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American/Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
