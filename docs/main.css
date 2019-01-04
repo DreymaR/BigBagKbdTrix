@@ -1,0 +1,352 @@
+@font-face{
+    font-family: Raleway;
+    src: url('content/fonts/Raleway-Regular.ttf');
+}
+
+@font-face{
+    font-family: Raleway;
+    font-weight: bold;
+    src: url('content/fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face{
+    font-family: Raleway-ExtraBold;
+    src: url('content/fonts/Raleway-ExtraBold.ttf');
+}
+
+*:not(p) {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Raleway;
+    font-size: 16px;
+    background-color: #F1F1F1;
+    color: #707070;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+main, #navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 40px);
+    height: 70px;
+    background-color: #BE90D5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+#navLogo {
+    display: block;
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    right: calc(50% - 25px);
+    z-index: -1;
+}
+
+#menuIcon {
+    position: absolute;
+    right: 30px;
+    width: 40px;
+    z-index: 10;
+    transition: right .2s ease-in-out;
+}
+
+#menuIcon:before,
+#menuIcon:after,
+#menuIcon #hamburger {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-bottom: 7px;
+    transition: all .2s ease-in-out;
+}
+
+#menuIcon::after {
+    margin-bottom: 0;
+}
+
+#menuIcon.isActive:before {
+    transform: translateY(12px) rotate(135deg);
+    background-color: #BE90D5;
+}
+
+#menuIcon.isActive:after {
+    transform: translateY(-12px) rotate(-135deg);
+    background-color: #BE90D5;
+}
+
+#menuIcon.isActive #hamburger {
+    transform: scale(0);
+    background-color: #BE90D5;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    max-width: 450px;
+    height: 100vh;
+    overflow: auto;
+    background-color: #BE90D5;
+    color: #FFF;
+    font-family: Raleway-ExtraBold;
+    font-size: 40px;
+    transition: left .5s ease;
+}
+
+#menu.isActive {
+    left: 0;
+}
+
+#menuHeader {
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+#menuLogo {
+    display: block;
+    width: 127px;
+    height: 127px;
+    margin: 12px auto;
+}
+
+#menu ul {
+    margin: 8px 25px 0 25px;
+    list-style: none;
+}
+
+#menu > ul > li {
+    padding: 12px 0;
+    border-bottom: 2px dashed #FFF;
+}
+
+#menu > ul > li:last-child {
+    border-bottom: none;
+}
+
+#menu .submenu {
+    position: relative;
+}
+
+#menu .submenu.isActive:before {
+    content: '▾';
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .61);
+}
+
+.submenu ul {
+    height: 0;
+    overflow: hidden;
+	-webkit-transition: height 0.3s ease-in-out;
+	transition: height 0.3s ease-in-out;
+}
+
+.submenu ul.show {
+    height: auto;
+}
+
+.submenu ul li {
+    margin-bottom: 20px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.submenu ul li:last-child {
+    margin-bottom: 10px
+}
+
+main {
+    max-width: 980px;
+    /*min-height: calc(100vh - 70px);*/
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background-color: #E6E6E6;
+}
+
+main img {
+    width: 100%;
+    display: block;
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 22px 0;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+    main, #navbar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #navbar {
+        width: calc(100% - 60px);
+    }
+
+    #menuIcon.isActive {
+        right: calc(100vw - 430px);
+        transition: right .4s ease-in-out;
+    }
+
+    #menuIcon:before,
+    #menuIcon:after,
+    #menuIcon #hamburger {
+        transition: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #navIcon {
+        transition: all .2s ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    #menu {
+        position: unset;
+    }
+
+    #menuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    #menu, ul, #menu ul li {
+        height: 100%;
+        padding: 0;
+    }
+
+    #menu ul li a {
+        display: block;
+    }
+
+    #menu {
+        width: unset;
+        max-width: unset;
+        overflow: unset;
+    }
+
+    #menu > ul {
+        display: flex;
+        margin: 0;
+    }
+
+    #menu ul li {
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: #BE90D5;
+        color: #FFF;
+    }
+
+    #menu > ul > li {
+        border: none;
+    }
+
+    #menu > ul > li:hover {
+        background-color: #FFF;
+        color: #BE90D5;;
+    }
+
+    .submenu ul {
+        display: none;
+    }
+
+    #menu .submenu li {
+        margin-bottom: 0;
+        padding: 10px 15px;
+    }
+
+    #menu .submenu li:hover {
+        background-color: #FFF;
+        color: #BE90D5;;
+    }
+
+    #menu > ul > li > a {
+        display: inline-block;
+        height: 25px;
+        padding: 22px 13px;
+    }
+
+    #menu .submenu:hover ul {
+        position: absolute;
+        top: 70px;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        background-color: #BE90D5;
+    }
+
+    #menu .submenu.isActive:before {
+        content: "";
+    }
+
+    #menuHeader {
+        display: none;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+
+    #navLogo {
+        position: unset;
+        margin-right: 40px;
+    }
+}

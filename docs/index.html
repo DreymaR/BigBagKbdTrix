@@ -1,8 +1,83 @@
 <!DOCTYPE html>
 <head>
     <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
 </head>
 <body>
+    <nav id="navbar">
+        <div id="menuIcon">
+            <div id="hamburger"></div>
+        </div>
+        <div id="menuContainer">
+            <div id="menu">
+                <div id="menuHeader">
+                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                </div>
+                <ul>
+                    <li class="submenu"><a href="#">KEY MAPPINGS</a>
+                        <ul>
+                            <li><a href="#">Colmak[eD]</a></li>
+                            <li><a href="#">Extend Layers</a></li>
+                            <li><a href="#">Dead Keys</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ERGO MODS</a></li>
+                    <li><a href="#">OTHER LAYOUTS</a></li>
+                    <li><a href="#">TYPING TRICKS</a></li>
+                    <li><a href="#">INSTALL</a></li>
+                    <li><a href="#">GUEST LINKS</a></li>
+                </ul>
+            </div>
+        </div>
+        <img id="navLogo" src="content/images/logo-nav.png" alt="Logo">
+    </nav>
 
+    <main>
+        <h1>DreymaR's Extensive Yet Modular ARSenal for typing!</h1>
+        <p class="center">[CAVEAT EMPTOR: This work is under some long-term construction due to its complexity <br>
+        Almost all areas are now nicely domitable, but a hard-hat area or two may still be found.]</p>
+
+        <img src="content/images/Tarmak-ETROI_Spectral_CAW.png" alt="Tarmak">
+        <p>
+            Since I started using Colemak in early 2007 I've been fiddling with it, trying out ideas from the forum and adding some of my own. Colemak per se is to me only the letter block mappings including the semicolon, and their shifted counterparts. I've always ended up with that intact and it has stood the test of time. If you look up the ergonomic mods below you'll see that I'm somewhat flexible about the geometry – but in reality that's about the physical keyboard design and a better hand position for me. The layout itself stays essentially the same!
+        </p>
+
+        <p>And so, voila, here it is!</p>
+
+        <p>I use my own edition of Farkas Máté's excellent Portable Keyboard Layout – PKL[eD] – to implement the Big Bag for Windows. For Linux, I've hacked up a bunch of modifications to the X.Org XKB files. Then I got me a USB-2-USB "QUICKIE" converter and implemented much of my tricks for that too; they should work for most programmable controllers. I'm pretty proud of it all, I must say! :)</p>
+        <p>An advantage with my implementation is that in most cases you can pick and choose most of the enhancements as modules:</p>
+        <ul>
+            <li> The Angle/Wide ergo mods are models/remaps so they work with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user</li>
+            <li>The Extend layers and their switch key are "options" and should work with nearly any existing layout</li>
+            <li> The locale/phonetic, Mirrored and Tarmak layouts are separate layout variants selectable with various chooser keys as desired
+                    Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.</li>
+        </ul>
+
+        <h3>DONE:</h3>
+        <ul>
+            <li>Updated Rulemak and Bulmak to 2016 versions (<b>ru/by/ua, bg/rs/mk</b> – although only found in <b>ru</b> and <b>bg</b> so far):
+                East Slavic (Russian/Church/Belarus/Ukraina?) & South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?)</li>
+            <li>Tarmak layouts for Curl-DH modders. The changes are minor, but should be easily accessible for the newcomer.</li>
+            <li>Get the Big Bag implementations up and going on GitHub.</li>
+        </ul>
+
+
+        <h3>TODO:</h3>
+        <ul>
+            <li>Present the Big Bag more hypertextually on GitHub gh-pages. (I know, I'm slow at this...)</li>
+            <li>Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?) [done in PKL]</li>
+            <li>A total of 4 Extend layers!? Proposals: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings</li>
+            <li>Modifier keys for 4 Extend layers. For instance, Caps+{--, LAlt, RAlt, LAlt+RAlt}. Holding Caps (or Alt?) down should maintain the layer state.</li>
+            <li>For some (or all?) Extend layers, a Lock (say, Shift+Alt+Caps locks; tapping Caps releases)?</li>
+            <li>Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With wrapman and whoever's interested.)</li>
+            <li>Develop and test a Vietnamese Colemak (with icedryst and whoever's interested).</li>
+            <li>More locale variants: epo (Esperanto), …? (Any suggestions, or comments on the existing ones?)</li>
+            <li>A section on alternative fingering? Tricks like sliding in for the NK/KN bigram are useful for the somewhat advanced typist.</li>
+        </ul>
+    </main>
+
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
