@@ -22,13 +22,17 @@
 body {
     font-family: Raleway;
     font-size: 16px;
-    background-color: #F1F1F1;
-    color: #707070;
+    background-color: #F7F7F7;
+    color: #4E4E4E;
 }
 
 a {
     color: unset;
     text-decoration: none;
+}
+
+a:active {
+
 }
 
 main, #navbar {
@@ -44,15 +48,14 @@ main, #navbar {
     position: fixed;
     top: 0;
     width: calc(100% - 40px);
-    height: 70px;
-    background-color: #BE90D5;
+    height: 65px;
+    background-color: #AA77BB;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
 #navLogo {
     display: block;
-    width: 57px;
-    height: 57px;
+    width: 52px;
     position: absolute;
     right: calc(50% - 25px);
     z-index: -1;
@@ -84,17 +87,17 @@ main, #navbar {
 
 #menuIcon.isActive:before {
     transform: translateY(12px) rotate(135deg);
-    background-color: #BE90D5;
+    background-color: #AA77BB;
 }
 
 #menuIcon.isActive:after {
     transform: translateY(-12px) rotate(-135deg);
-    background-color: #BE90D5;
+    background-color: #AA77BB;
 }
 
 #menuIcon.isActive #hamburger {
     transform: scale(0);
-    background-color: #BE90D5;
+    background-color: #AA77BB;
 }
 
 #menu {
@@ -105,7 +108,7 @@ main, #navbar {
     max-width: 450px;
     height: 100vh;
     overflow: auto;
-    background-color: #BE90D5;
+    background-color: #AA77BB;
     color: #FFF;
     font-family: Raleway-ExtraBold;
     font-size: 40px;
@@ -193,7 +196,7 @@ main {
     margin: 0 auto;
     padding-top: 90px;
     padding-bottom: 20px;
-    background-color: #E6E6E6;
+    background-color: #ECECEC;
 }
 
 main img {
@@ -252,6 +255,7 @@ ul {
 
 @media only screen and (min-width: 1100px) {
     #navbar {
+        height: 60px;
         justify-content: center;
     }
 
@@ -290,7 +294,7 @@ ul {
         font-family: Raleway;
         font-size: 20px;
         font-weight: 600;
-        background-color: #BE90D5;
+        background-color: #AA77BB;
         color: #FFF;
     }
 
@@ -300,7 +304,7 @@ ul {
 
     #menu > ul > li:hover {
         background-color: #FFF;
-        color: #BE90D5;;
+        color: #AA77BB;;
     }
 
     .submenu ul {
@@ -314,13 +318,13 @@ ul {
 
     #menu .submenu li:hover {
         background-color: #FFF;
-        color: #BE90D5;;
+        color: #AA77BB;;
     }
 
     #menu > ul > li > a {
         display: inline-block;
         height: 25px;
-        padding: 22px 13px;
+        padding: 17px 13px;
     }
 
     #menu .submenu:hover ul {
@@ -330,7 +334,7 @@ ul {
         width: 100%;
         height: auto;
         margin: 0;
-        background-color: #BE90D5;
+        background-color: #AA77BB;
     }
 
     #menu .submenu.isActive:before {
@@ -347,6 +351,7 @@ ul {
 
     #navLogo {
         position: unset;
+        width: 48px;
         margin-right: 40px;
     }
 }
