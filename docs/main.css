@@ -31,6 +31,66 @@ a {
     text-decoration: none;
 }
 
+#platforms {
+    height: 100%;
+    width: 38px;
+    margin-left: 0;
+    padding: 0;
+    background-image: url("content/images/platforms.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+#platforms:hover #platformIcons{
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+#platformIcons {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 120px;
+    height: 125px;
+    padding: 5px 5px 5px 15px;
+	flex-direction: column;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #AA77BB;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    
+    transition: all .2s ease-in-out;
+}
+
+#platformIcons a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+#platformIcons #linux {
+    background-image: url("content/images/platforms_linux.png");
+}
+
+#platformIcons #tmk {
+    background-image: url("content/images/platforms_tmk.png");
+}
+
+#platformIcons #mac {
+    background-image: url("content/images/platforms_mac.png");
+}
+
+#platformIcons #win {
+    background-image: url("content/images/platforms_win.png");
+}
+
 main, #navbar {
     padding-left: 20px;
     padding-right: 20px;
@@ -38,7 +98,7 @@ main, #navbar {
 
 #navbar {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     position: fixed;
@@ -213,11 +273,7 @@ main img.smallImg {
     max-width: 400px;
 }
 
-main img.autoWidth {
-    width: auto;
-}
-
-main img:not(.headerImg) + p {
+main img:not(.headerImg) + p:not(.left) {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
@@ -238,7 +294,7 @@ h1 {
 }
 
 h2 {
-    margin-top: 1em;
+    margin: 1em 0;
 }
 
 h3 {
@@ -253,8 +309,14 @@ main ul li:before {
     content:"";
 }
 
-ul.dashed {
-    list-style-type: none;
+ul.disc li:before {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top;
+    content: "•";
+    font-size: 1.5em;
+    line-height: .8;
+    font-weight: bold;
 }
 
 ul.dashed li:before {
@@ -268,6 +330,10 @@ ul.dashed li:before {
 
 .center {
     text-align: center;
+}
+
+.left {
+    text-align: left;
 }
 
 code {
@@ -355,7 +421,18 @@ img.left {
 @media only screen and (min-width: 1100px) {
     #navbar {
         height: 60px;
+        flex-direction: row-reverse;
         justify-content: center;
+    }
+
+    #platforms {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    #platformIcons {
+        right: -5px;
+        left: unset;
     }
 
     #menu {
@@ -423,7 +500,7 @@ img.left {
     #menu > ul > li > a {
         display: inline-block;
         height: 25px;
-        padding: 17px 13px;
+        padding: 17px 20px;
     }
 
     #menu .submenu:hover ul {
@@ -452,6 +529,10 @@ img.left {
         position: unset;
         width: 48px;
         height: 48px;
-        margin-right: 40px;
+        margin-right: 20px;
+    }
+
+    main img.autoWidth {
+        width: auto;
     }
 }
