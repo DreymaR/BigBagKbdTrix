@@ -62,3 +62,51 @@ function toggleSpoiler() {
         spoilerBody.parentNode.classList.add('isActive');
     }
 }
+
+if(window.matchMedia("(max-width: 1100px)").matches) {
+    if(!localStorage.getItem('website_visited')) {
+        drawTutorialScreen();
+    }
+}
+
+function drawTutorialScreen() {
+    let tutorialScreen = document.createElement('div');
+    tutorialScreen.id = 'tutorialScreen';
+
+    let platformIcon = document.createElement('div');
+    platformIcon.id = 'tutorialPlatform';
+    
+    let arrow = document.createElement('img');
+    arrow.setAttribute('src', 'content/images/arrow.png');
+    arrow.id = 'tutorialArrow';
+
+    let text = document.createElement('span');
+    text.innerText = 'Click here to toggle the desired platform.';
+    text.id = 'tutorialText';
+
+    let closeDiv = document.createElement('a');
+    closeDiv.id = 'tutorialClose';
+
+    let closeText = document.createElement('span');
+    closeText.id = 'tutorialCloseText';
+    closeText.innerText = 'Got it';
+
+    let closeButton = document.createElement('div');
+    closeButton.id = 'tutorialCloseButton';
+
+    closeDiv.append(closeText);
+    closeDiv.append(closeButton);
+    closeDiv.addEventListener('click', removeTutorialScreen);
+
+    tutorialScreen.append(platformIcon);
+    tutorialScreen.append(arrow);
+    tutorialScreen.append(text);
+    tutorialScreen.append(closeDiv);
+    
+    document.body.append(tutorialScreen);
+    localStorage.setItem('website_visited', true);
+}
+
+function removeTutorialScreen() {
+    document.body.removeChild(tutorialScreen);    
+}
