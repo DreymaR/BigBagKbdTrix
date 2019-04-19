@@ -6,6 +6,44 @@ submenus.forEach(submenu => submenu.addEventListener('click', toggleSubmenu));
 let spoilers = [].slice.call(document.getElementsByClassName('spoiler'));
 spoilers.forEach(spoiler => spoiler.children[0].addEventListener('click', toggleSpoiler));
 
+let platformsEl = document.getElementById('platformIcons').children;
+let platforms = {
+    'linux' : platformsEl[0],
+    'tmk' : platformsEl[1],
+    'mac' : platformsEl[2],
+    'win' : platformsEl[3]
+}
+
+Object.keys(platforms).forEach(platform => function() {  
+    platforms[platform].addEventListener('click',
+        function() {
+            togglePlatform(platform);
+        }
+    );
+}());
+
+function togglePlatform(platform) {
+    let currentPlatform = sessionStorage.getItem('platform');
+    if (currentPlatform == platform) {
+        sessionStorage.removeItem('platform');
+        platforms[platform].classList.remove('isActive');
+        console.log('deactivating current');
+    }
+    else {
+        if (!currentPlatform) {
+            sessionStorage.setItem('platform', platform);
+            platforms[platform].classList.add('isActive');
+        }
+        else {
+            Object.keys(platforms).forEach(platform => function() {
+                if (platforms[platform].classList.contains('isActive')) {
+                    platforms[platform].classList.remove('isActive');
+                }
+            })
+        }
+    }
+}
+
 function toggleMenu() {
     if(window.matchMedia("(max-width: 1100px)").matches) {
         let menu = document.getElementById('menu');

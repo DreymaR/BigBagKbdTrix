@@ -158,6 +158,22 @@ a {
     background-image: url("content/images/platforms_win.png");
 }
 
+#platformIcons #linux.isActive {
+    background-image: url("content/images/platforms_linux_active.png");
+}
+
+#platformIcons #tmk.isActive {
+    background-image: url("content/images/platforms_tmk_active.png");
+}
+
+#platformIcons #mac.isActive {
+    background-image: url("content/images/platforms_mac_active.png");
+}
+
+#platformIcons #win.isActive {
+    background-image: url("content/images/platforms_win_active.png");
+}
+
 main, #navbar {
     padding-left: 20px;
     padding-right: 20px;
