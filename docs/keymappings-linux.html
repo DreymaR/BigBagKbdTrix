@@ -66,6 +66,14 @@
 
         <img src="content/images/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
         <p class="italic"><strong>Colemak-CAW[eD]</strong>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see the next post).</p>
+        
+        <p class="italic"><b>HowTo:</b></p>
+        <ul class="disc">
+            <li>You can select the various layouts for different locales (see below) that all have my Colemak[eD] mappings, in the standard layout chooser</li>
+            <li>I often type 'colemak' or the language name into the search field to narrow down the search</li>
+            <li>Alternatively, you may use a 'setxkbmap' terminal command such as 'setxkbmap -layout "us(cmk_ed_us)" -v 9'</li>
+            <li>Or see below about my <b>setxkb</b> script for changing XKB settings!</li>
+        </ul>
 
         <h2>EXTEND LAYERS AND THE CAPS SWITCH MODIFIER</h2>
         <p>This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.</p>
@@ -80,8 +88,6 @@
         <div class="spoiler">
             <p><span>Spoiler:</span></p>
             <div class="spoilerBody">
-                <img class="left" src="content/images/Extend-ISO-NoMod-Linux_96d-Labels.png" alt="">
-                <p class="italic left">My Extend mappings (lvl1 only). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
                 <pre><code>
 These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
 +------+------+------+------+------+------+------+------+------+------+------+------+------+
@@ -108,9 +114,20 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;> MultiMedia; € Vari
 
         <p>The XKB implementation is almost the same as the Windows/PKL one. You get shifted multimedia keys which Win/PKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are poorly implemented. Instead, there's a MouseKeys On/Off key on &lt;LSGT> and a Compose/Multi key on Slash. The Tilde key is customizeable – it could be anything you deem useful.</p>
 
-        <p>Holding down AltGr with the Extend modifier you get a NumPad layer (lv7-8) laid out pretty much like a standard one but with the top row moved around to fit existing keys:</p>
+        <p><b>MouseKeys</b>: Hitting Caps+&lt;LSGT&gt; (or Shift+NumLock if that's enabled) enables/disables Pointer Mousing; when that's on you may move the mouse pointer with the GD&lt;&gt; keys and use BKM for buttons (or you can use the KeyPad keys as before). My mapped keys go a few pixels at a time so when acceleration is on you may travel quickly around the screen this way. Wheel mousing works but doesn't repeat so you'll have to press many times to scroll a long way.
 
-        <pre><code>
+        <p><b>Multimedia keys</b>: These are mapped to the F keys (++) as intended but XKB/Linux doesn't necessarily link any actions to their key presses although these days most of the usual multimedia keys are configured as expected; this is done in the Shortcuts settings which can be accessed in Unity/Gnome via the Keyboard settings (or dconf-editor/gsettings to org.gnome.desktop.wm.keybindings for the Window Manager ones and ??? for other categories). You could also use xbindkeys, AutoKey or others to bind whatever you want to these keys. Using the Settings > Keyboard panel in Unity/Gnome (gnome-control-center keyboard) doesn't work as expected with the Extend mapped keys, since the hotkey will register as a 'Level 5 shift' keypress when you press your Extend key! The trick is to press the modifier(s) before clicking on the shortcut you want to set! Then when 'New accelerator' is showing you press down the final key. I had to do that for the Calculator and Terminal keys (Lv5+&lt;FK12&gt;) as those shortcuts were disabled by default in my Ubuntu install.</p>
+
+        <p>Holding down AltGr you get <b>Extend2</b>, a numeric layer laid out pretty much like a standard NumPad but with the top row moved around to fit:</p>
+
+        <img src="content/images/Extend2-ISO-NoMod_96d.png" alt="">
+        <p class="italic">A symbolic chart of my <strong>Extend</strong> mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
+
+        <p>Here's the XKB file version:</p>
+        <div class="spoiler">
+            <p><span>Spoiler:</span></p>
+            <div class="spoilerBody">
+                <pre><code>
 // KeyPad overlay with nav block to the left (lv7-8):
 // +------+------+------+------+------+------+------+------+------+------+------+------+------+
 // |` €€€ |1     |2     |3     |4 £   |5 €   |6     |7     |8  ⇑  |9     |0     |-     |=     |
@@ -125,71 +142,33 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;> MultiMedia; € Vari
 // |_ *** |Z €€€ |X === |C === |V === |B *** |K     |M     |,  ⇕  |.     |/     |Spc   |Entr  |
 // | *MOn | Undo | Cut  | Copy | Paste| *Bt1 |  ,   | KP_0 | KP_0 | KP_. | KP_/ | Spc  | K_Ent|
 // +------+------+------+------+------+------+------+------+------+------+------+------+------+
-        </code></pre>
+                </code></pre>
+            </div>
+        </div>
 
         <p>Having to hold down both CapsLock and AltGr while entering numbers is hardly ideal. For PKL/Windows, you only have to hold the Extend modifier after selecting which Extend layer to activate. On Linux, I might construct a level7 modifier by combining level3 with level5 but that's still Work-In-Progress.</p>
 
-        <p>There may be a need for navigating while entering numbers, but on the other hand KeyPad keys rarely use modifiers. So I moved the nav block from its UNEI arrow cross to the WARS cross familiar to gamers. Number row keys 1-6 are reverted to their lv2-3 symbols since these may be needed for numeric input, as are some other keys; the bracket keys cater for the parentheses in this layer which feels logical to me.</p>
-
-        <p>On Linux/XKB, if you're cheeky and dexterous enough to press CapsLock+AltGr+Shift at the same time you're treated to a set of double-arrow symbols of the kind used in mathematical proofs and more (⇖⇑⇗ ⇐⇔⇒ ⇙⇓⇘), laid out like in one of the standard xkb keypad layouts. I thought they might be somewhat handy, but the heavy chording required suits the fact that few need them very often! The single arrows didn't fit in, but at least the four orthogonal ones (←↑↓→) are already there in the lv3-4 Colemak[eD] mappings.</p>
-
-        <p><strong>Tips:</strong></p>
-        <ul>
-        <li>The backtick/tilde key to the left of 1 can be whatever you want to: An extra Del, Ctrl+A (Select All), Ctrl+W (Close), Ctrl+T (New Tab), Win+T (Taskbar)...</li>
-        <li>You can do some really fancy stuff with this! Ext-A/T+4(=Alt/Ctrl+F4) closes programs/tabs, Ext-T+J/H(=Ctrl+PgUp/PgDn) switches tabs...</li>
-        <li>Or try this in a browser: Ext-6 for the address bar, then type an URL, then Ext-A+Spc to open it in a new tab (saves Ctrl+T for a new tab)!</li>
-        <li>Most of these tricks work in many apps under both Windows and Linux these days. Some application specific ones are marked as such.</li>
-        <li>My Extend layer doesn't support letters nor the Win/GUI key, which limits the shortcut repertoire somewhat. But even so there's really a lot you can do!</li>
+        <p>If you're cheeky and dexterous enough to press CapsLock+AltGr+Shift at the same time you're treated to a set of double-arrow symbols of the kind used in mathematical proofs and more (⇖⇑⇗ ⇐⇔⇒ ⇙⇓⇘), laid out like in one of the standard xkb keypad layouts. I thought they might be somewhat handy, but the heavy chording required suits the fact that few need them very often! The single arrows didn't fit in, but at least the four orthogonal ones (←↑↓→) are already there in the lv3-4 Colemak[eD] mappings.</p>
+        
+        <p>All KeyPad keys are affected by PointerEnable! So if you find the mouse pointer moving around instead of numbers being entered, hit the key to disable pointer mousing (Shift+NumLock or CapsLock+LSGT). Or, you've found an extra way of key mousing! :-)</p>
+        
+        <p class="italic"><b>HowTo:</b></p>
+        <p>To get the Extend mappings to work in xkb, you need two things:</p>
+        <ul class="disc">
+            <li>Set the 'misc:extend' xkbmap option (see below for setup info), and</li>
+            <li>choose a modifier key to switch to level5; I've added a 'level5:caps_switch_lock' option to use the Caps key.</li>
+            <li>There are others to choose from (lsgt, lalt, lwin and rwin) that were already available in xkb; you could even have more than one if you want!</li>
+            <li>(By using several lv5 switch keys, the switch_lock behavior makes it possible to lock the Extend layer by pressing two modifiers together should you require that.)</li>
+            <li>If you have the 'Options...' settings menu (Gnome has it), these options are under the 'Miscellaneous' and 'Level 5' headings.</li>
         </ul>
-        <p>(FYI: There are good reasons for the WheelUp/Dn placements and the lack of a Win key, having to do with keyboard implementations.)</p>
 
         <h2>ENHANCED DEAD KEY MAPPINGS</h2>
 
+        <p>For some reason, the Stroke dead key is still broken in my XKB. Gotta get that fixed at some point (maybe it'll be my first Linux bugfix unless someone beats me to it). Furthermore, I'd like to add more mappings that feel intuitive to me such as superscripts on the acute accent key and subscripts on the grave accent key.</p>
+
         <p>Some dead keys are almost empty: The doubleacute only caters for ő ű, and ring only caters for å ů ẘ ẙ. There's also a whole iota dead key that only concerns itself with Greek characters. I'm tempted to stuff something good into those cracks even if it's not an entirely logical thing to do (because the name of the dead key wouldn't reflect these extra mappings). If you use up a key mapping on a dead key it really shouldn't sit there taking up keyboard space for the meager purpose of providing 2-3 glyphs!</p>
 
-        <p>There are 19 dead keys in my pkl layout right now. The common accents are there, together with a currency dead key on AltGr+4 and a Greek phonetic dead key on AltGr+5. Furthermore, some sparsely populated accent keys have been enhanced with extra content, such as superscripts/subscripts on acute/grave, fractions and negations on stroke/bar and ring symbols on ringabove. The most extensively reworked key is the double-acute which used to have only Uu and Oo and now contains a fairly rich set of math/science symbols (think of the double acute as akin to the equals and prime signs)! You really have to see them to believe them – I'll showcase some below but you can see them all using PKL (default Ctrl+Shift+1 for the help images):</p>
-
-        <p class="center">01) Dot below <br>
-        02) Hook, palatal hook <br>
-        03) Horn, retroflex hook/tail <br>
-        04) Currency: </p>
-
-        <img src="content/images/dk04_currency.png" class="smallImg" alt="Currency">
-        <img src="content/images/dk04sh_currency.png" class="smallImg" alt="Sh Currency">
-
-        <p>05) Greek (phonetic):</p>
-
-        <img src="content/images/dk05_greek.png" class="smallImg" alt="Greek">
-        <img src="content/images/dk05sh_greek.png" class="smallImg" alt="Sh Greek">
-
-        <p>06) Circumflex <br>
-        07) Caron <br>
-        08) Ogonek, comma below <br>
-        09) Breve <br>
-        10) Ring above, ring symbols, ligatures <br>
-        11) Macron <br>
-        12) Double-acute, math/science:</p>
-
-        <img src="content/images/dk12_dblacutesci.png" class="smallImg" alt="Dbla">
-        <img src="content/images/dk12sh_dblacutesci.png" class="smallImg" alt="Sh Dbla">
-
-        <p>13) Umlaut/diaeresis <br>
-        14) Tilde <br>
-        15) Acute, superscripts</p>
-
-        <img src="content/images/dk15_acute.png" class="smallImg" alt="Acute">
-        <img src="content/images/dk15sh_acute.png" class="smallImg" alt="Sh Acute">
-
-        <p>16) Grave, subscripts <br>
-        17) Cedilla <br>
-        18) Dot above <br>
-        19) Stroke/bar, fractions</p>
-
-        <img src="content/images/dk19_strokebar.png" class="smallImg" alt="Strokebar">
-        <img src="content/images/dk19sh_strokebar.png" class="smallImg" alt="Sh Strokebar">
-
-
-        <p class="left"><strong>Note</strong> that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.</p>
+        <p>I think it's about the locales. The big en_US.UTF-8 Compose file has the dead_stroke key defined (and lots of other goodness!) so I should find out how to get that then. Defining my own ~/.XCompose file apparently involves setting the xim input method as the active one instead of a hard-compiled GTK one my Ubuntu must be using now I guess. It's a bit complex it seems... :o I'll be back on this issue when/if I find out more!</p>
 
 
     </main>

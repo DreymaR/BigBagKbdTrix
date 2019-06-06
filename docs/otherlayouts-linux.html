@@ -81,6 +81,14 @@
 
             <p>Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.</p>
 
+            <p class="italic"><b>HowTo:</b></p>
+            <ul class="disc">
+                <li>You can select any layout from the normal layout chooser – enter your language in the search field to narrow it down. There are two types: </li>
+                <li>"Unified symbols" <b>(cmk_ed_us)</b> layouts, using the US-like symbol mappings that I recommend; these give the full Colemak[eD] experience </li>
+                <li>"Keep local symbols" <b>(cmk_ed_ks)</b> layouts, if you don't want to change the symbol mappings from your locale but just the letter keys (and semicolon) </li>
+                <li>Using command line or default file, the Cmk[eD] layouts are called 'lc:cmk_ed_us' and 'lc:cmk_ed_ks', where 'lc' is the locale code ('se' for Swedish for instance) </li>
+            </ul>
+
             <h2>PHONETIC COLEMAK LAYOUTS FOR NON-LATIN SCRIPTS</h2>
             <p>See the <a href="https://forum.colemak.com/viewtopic.php?pid=10016#p10016">phonetic subtopic of my Locale topic</a> for more info on these layouts.</p>
 
@@ -88,7 +96,13 @@
 
             <img src="content/images/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
             <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p>
-
+            
+            <p class="italic"><b>HowTo:</b></p>
+            <ul class="disc">
+                <li>You can select any layout from the normal layout chooser – enter your language in the search field to narrow it down.</li>
+                <li>The non-latin script variants are called " <b>&lt;Language &gt; (Colemak, phonetic)"</b></li>
+                <li>Using command line or default file, the phonetic layouts are called 'ru:colemak', 'bg:colemak', 'gr:colemak' and 'il:colemak'</li>
+            </ul>
 
             <h2>MIRRORED COLEMAK</h2>
             <p>Advanced typing is possible with only one hand given a mimimum of training with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.</p>
@@ -97,14 +111,27 @@
 
             <p>You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use an arm or foot switch set to any other key (maybe an out-of-the-way one like ScrollLock), or a "ghetto switch" made by stripping most keys off a keyboard and placing it on the floor. A more fancy but still cheap switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard.</p>
 
+            <p>Using a Group setup, add the mirrored Colemak[eD] as your next layout group.
+                    Then you may choose between a slew of "key(s) to change layout (while pressed)" options!
+                    This does compromise your group options a bit (if you need to use non-latin layouts etc).
+                    If that bothers you, consider using both 'next' and 'last' layout groups with chooser keys.
+                    Use Ubuntu: 'Keyboard Layout'->'Options'->'key(s) to change layout (while pressed)'.</p>
+
             <p>Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.</p>
 
             <img src="content/images/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
-            <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)</p>
+            <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this) <br>
+                (The Mirrored Colemak layout with the AngleWide(Slash) mod is better for left-handed typing I think.)</p>
 
-
-            <img src="content/images/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
-            <p class="italic">The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing I think</p>
+            
+                <p class="italic"><b>HowTo:</b></p>
+                <ul class="disc">
+                    <li>This is only for English(US) – if you want something else you'll have to edit it in yourself.</li>
+                    <li>You can choose it in the normal language chooser; it's called "<b>English (Colemak[eD], mirrored)</b>"</li>
+                    <li>Using command line or default file, the layout is called '<b>us:cmk_ed_mirror'</b></li>
+                    <li>AngleWide is chosen separately, as a keyboard model (see above)</li>
+                </ul>
+            
     </main>
     <script src="scripts/main.js"></script>
 </body>
