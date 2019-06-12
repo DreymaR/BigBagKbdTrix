@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <link href="main.css" rel="stylesheet">
 </head>
-<body>
+<body class="linux">
     <nav id="navbar">
         <div id="menuIcon">
             <div id="hamburger"></div>
@@ -80,14 +80,15 @@
             <p class="italic">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).</p>
 
             <p>Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.</p>
-
-            <p class="italic"><b>HowTo:</b></p>
-            <ul class="disc">
-                <li>You can select any layout from the normal layout chooser – enter your language in the search field to narrow it down. There are two types: </li>
-                <li>"Unified symbols" <b>(cmk_ed_us)</b> layouts, using the US-like symbol mappings that I recommend; these give the full Colemak[eD] experience </li>
-                <li>"Keep local symbols" <b>(cmk_ed_ks)</b> layouts, if you don't want to change the symbol mappings from your locale but just the letter keys (and semicolon) </li>
-                <li>Using command line or default file, the Cmk[eD] layouts are called 'lc:cmk_ed_us' and 'lc:cmk_ed_ks', where 'lc' is the locale code ('se' for Swedish for instance) </li>
-            </ul>
+            <div class="platform-specific">
+                <p class="italic"><b>HowTo:</b></p>
+                <ul class="disc">
+                    <li>You can select any layout from the normal layout chooser – enter your language in the search field to narrow it down. There are two types: </li>
+                    <li>"Unified symbols" <b>(cmk_ed_us)</b> layouts, using the US-like symbol mappings that I recommend; these give the full Colemak[eD] experience </li>
+                    <li>"Keep local symbols" <b>(cmk_ed_ks)</b> layouts, if you don't want to change the symbol mappings from your locale but just the letter keys (and semicolon) </li>
+                    <li>Using command line or default file, the Cmk[eD] layouts are called 'lc:cmk_ed_us' and 'lc:cmk_ed_ks', where 'lc' is the locale code ('se' for Swedish for instance) </li>
+                </ul>
+            </div>
 
             <h2>PHONETIC COLEMAK LAYOUTS FOR NON-LATIN SCRIPTS</h2>
             <p>See the <a href="https://forum.colemak.com/viewtopic.php?pid=10016#p10016">phonetic subtopic of my Locale topic</a> for more info on these layouts.</p>
@@ -97,12 +98,14 @@
             <img src="content/images/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
             <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p>
             
-            <p class="italic"><b>HowTo:</b></p>
-            <ul class="disc">
-                <li>You can select any layout from the normal layout chooser – enter your language in the search field to narrow it down.</li>
-                <li>The non-latin script variants are called " <b>&lt;Language &gt; (Colemak, phonetic)"</b></li>
-                <li>Using command line or default file, the phonetic layouts are called 'ru:colemak', 'bg:colemak', 'gr:colemak' and 'il:colemak'</li>
-            </ul>
+            <div class="platform-specific">
+                <p class="italic"><b>HowTo:</b></p>
+                <ul class="disc">
+                    <li>You can select any layout from the normal layout chooser – enter your language in the search field to narrow it down.</li>
+                    <li>The non-latin script variants are called " <b>&lt;Language &gt; (Colemak, phonetic)"</b></li>
+                    <li>Using command line or default file, the phonetic layouts are called 'ru:colemak', 'bg:colemak', 'gr:colemak' and 'il:colemak'</li>
+                </ul>
+            </div>
 
             <h2>MIRRORED COLEMAK</h2>
             <p>Advanced typing is possible with only one hand given a mimimum of training with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.</p>
@@ -123,7 +126,7 @@
             <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this) <br>
                 (The Mirrored Colemak layout with the AngleWide(Slash) mod is better for left-handed typing I think.)</p>
 
-            
+            <div class="platform-specific">            
                 <p class="italic"><b>HowTo:</b></p>
                 <ul class="disc">
                     <li>This is only for English(US) – if you want something else you'll have to edit it in yourself.</li>
@@ -131,6 +134,7 @@
                     <li>Using command line or default file, the layout is called '<b>us:cmk_ed_mirror'</b></li>
                     <li>AngleWide is chosen separately, as a keyboard model (see above)</li>
                 </ul>
+            </div>
             
     </main>
     <script src="scripts/main.js"></script>

@@ -89,6 +89,24 @@ a {
     background-size: contain
 }
 
+.platform-specific {
+    position: relative;
+    margin-top: 15px;
+    padding: 0 10px 10px 10px;
+    border: 3px solid #AA77BB;
+}
+
+.platform-specific:before {
+    content: '';
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -19px;
+    left: 10px;
+    background: #ECECEC url(content/images/linux.svg) no-repeat center / 66%;
+}
+
 #platforms:after, #tutorialPlatform {
     content: "";
     display: inline-block;
@@ -98,6 +116,11 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
+}
+
+.linux #platforms:after {
+    background-image: url("content/images/linux2.svg");
+    width: 35px;
 }
 
 #platforms {
@@ -188,6 +211,7 @@ main, #navbar {
     top: 0;
     width: calc(100% - 40px);
     height: 65px;
+    z-index: 1;
     background-color: #AA77BB;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
