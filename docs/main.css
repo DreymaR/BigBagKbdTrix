@@ -118,7 +118,7 @@ a {
     background-position-y: 50%;
 }
 
-.linux #platforms:after {
+#platforms.linux:after {
     background-image: url("content/images/linux2.svg");
     width: 35px;
 }

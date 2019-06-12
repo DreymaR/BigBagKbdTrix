@@ -36,6 +36,10 @@ document.onload = function () {
                 }
             });
         }
+        document.getElementById('platforms').classList.add(platform);
+    }
+    else {
+        document.getElementById('platforms').removeAttribute('class');
     }
 }();
 
@@ -55,9 +59,11 @@ function togglePlatform(platform) {
         if (getCurrentPageName().includes(platform)) {
             window.location.href = page.substring(0, page.indexOf('-')) + '.html';
         }
+        document.getElementById('platforms').removeAttribute('class');
     }
     else {
         if (!currentPlatform) {
+            document.getElementById('platforms').classList.add(platform);
             sessionStorage.setItem('platform', platform);
             platformWisePages.forEach(function (platformWisePage) {
                 if (getCurrentPageName().includes(platformWisePage)) {
@@ -67,11 +73,12 @@ function togglePlatform(platform) {
             platforms[platform].classList.add('isActive');
         }
         else {
+            
             Object.keys(platforms).forEach(platform => function () {
                 if (platforms[platform].classList.contains('isActive')) {
                     platforms[platform].classList.remove('isActive');
                 }
-            })
+            });
         }
     }
 }
