@@ -123,6 +123,11 @@ a {
     width: 35px;
 }
 
+#platforms.win:after {
+    background-image: url("content/images/win.svg");
+    width: 35px;
+}
+
 #platforms {
     display: flex;
 }

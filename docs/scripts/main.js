@@ -62,24 +62,24 @@ function togglePlatform(platform) {
         document.getElementById('platforms').removeAttribute('class');
     }
     else {
-        if (!currentPlatform) {
-            document.getElementById('platforms').classList.add(platform);
-            sessionStorage.setItem('platform', platform);
-            platformWisePages.forEach(function (platformWisePage) {
-                if (getCurrentPageName().includes(platformWisePage)) {
-                    window.location.href = page.substring(0, page.indexOf('.')) + '-' + platform + '.html';
-                }
-            });
-            platforms[platform].classList.add('isActive');
-        }
-        else {
-            
-            Object.keys(platforms).forEach(platform => function () {
+        if (currentPlatform) {
+            console.log(Object.keys(platforms))
+            Object.keys(platforms).forEach(function (platform) {
+                console.log();
                 if (platforms[platform].classList.contains('isActive')) {
                     platforms[platform].classList.remove('isActive');
                 }
             });
         }
+        
+        document.getElementById('platforms').classList.add(platform);
+        sessionStorage.setItem('platform', platform);
+        platformWisePages.forEach(function (platformWisePage) {
+            if (getCurrentPageName().includes(platformWisePage)) {
+                window.location.href = platformWisePage + '-' + platform + '.html';
+            }
+        });
+        platforms[platform].classList.add('isActive');
     }
 }
 
