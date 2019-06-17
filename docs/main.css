@@ -128,6 +128,11 @@ a {
     width: 35px;
 }
 
+#platforms.tmk:after {
+    background-image: url("content/images/tmk.svg");
+    width: 35px;
+}
+
 #platforms {
     display: flex;
 }
@@ -171,35 +176,35 @@ a {
 }
 
 #platformIcons #linux {
-    background-image: url("content/images/platforms_linux.png");
+    background-image: url("content/images/platforms_linux.svg");
 }
 
 #platformIcons #tmk {
-    background-image: url("content/images/platforms_tmk.png");
+    background-image: url("content/images/platforms_tmk.svg");
 }
 
 #platformIcons #mac {
-    background-image: url("content/images/platforms_mac.png");
+    background-image: url("content/images/platforms_mac.svg");
 }
 
 #platformIcons #win {
-    background-image: url("content/images/platforms_win.png");
+    background-image: url("content/images/platforms_win.svg");
 }
 
 #platformIcons #linux.isActive {
-    background-image: url("content/images/platforms_linux_active.png");
+    background-image: url("content/images/platforms_linux_active.svg");
 }
 
 #platformIcons #tmk.isActive {
-    background-image: url("content/images/platforms_tmk_active.png");
+    background-image: url("content/images/platforms_tmk_active.svg");
 }
 
 #platformIcons #mac.isActive {
-    background-image: url("content/images/platforms_mac_active.png");
+    background-image: url("content/images/platforms_mac_active.svg");
 }
 
 #platformIcons #win.isActive {
-    background-image: url("content/images/platforms_win_active.png");
+    background-image: url("content/images/platforms_win_active.svg");
 }
 
 main, #navbar {
@@ -511,6 +516,10 @@ code::-webkit-scrollbar {
 
 .italic {
     font-style: italic;
+}
+
+.linethrough {
+    text-decoration: line-through;
 }
 
 img.left {

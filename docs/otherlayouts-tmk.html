@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Other Layouts</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="menuIcon">
+            <div id="hamburger"></div>
+        </div>
+        <div id="platforms">
+            <div id="platformIcons">
+                    <a id="linux" href="#"></a>
+                    <a id="tmk" href="#"></a>
+                    <a id="mac" href="#"></a>
+                    <a id="win" href="#"></a>
+            </div>
+        </div>
+        <div id="menuContainer">
+            <div id="menu">
+                <div id="menuHeader">
+                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                </div>
+                <ul>
+                    <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
+                        <ul>
+                            <li><a href="colemaked.html">Colemak[eD]</a></li>
+                            <li><a href="extendlayers.html">Extend Layers</a></li>
+                            <li><a href="deadkeys.html">Dead Keys</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ergomods.html">ERGONOMY</a></li>
+                    <li><a href="otherlayouts.html">VARIANTS</a></li>
+                    <li><a href="typingtricks.html">TRICKERY</a></li>
+                    <li><a href="guestlinks.html">LINKS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a id="navLogo" href="index.html"><img src="content/images/logo-nav.png" alt="Logo"></a>
+    </nav>
+
+    <main>
+            <h1>Other Layouts</h1>
+
+            <h2>THE TARMAK TRANSITIONAL COLEMAK LAYOUTS</h2>
+
+            <p>There's a <a href="tarmak.html"><b>main Tarmak topic</b></a> that you should take a look at. Basically, I've added four Tarmak layouts that provide stepping stones from the standard QWERTY layout to Colemak[eD] by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the rare J key is misplaced in the process. If you're brave and impatient, you may of course skip steps to customize your progress.</p>
+
+            <p>Tarmak transitional layouts have been <a href="https://forum.colemak.com/viewtopic.php?id=480">reported successful in easing the conversion to Colemak typing</a> and although this evidence is anecdotal I find the <a href="https://forum.colemak.com/viewtopic.php?id=358">proposed hypothesis</a> that gradual changes should be easier to learn for many a plausible one.</p>
+
+            <img src="content/images/Tarmak_Spectral_ETROI.png" alt="Tarmak Spectral">
+            <p class="italic">The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).</p>
+
+            <div class="platform-specific">
+                    <p>The Tarmak progressions work modularly with the AngleWide ergo mods.</p>
+
+                    <p>If you want to learn the brilliant Colemak-DH variant using a Tarmak progression, that's possible too! You just have to learn a CurlAngle mod before or with the 2nd Tarmak step which also gets tweaked a little so it moves B instead of G. The right-hand swaps (Hmk) should ideally be learnt in conjunction with Tarmak1-Curl because that moves K, but for SteveP's old variant I've deferred the HM swap to the last step. It could go wherever you like as it's separate, so feel free to edit the layout file if you desire.</p>
+                    
+                    <pre><code>
+* Tarmak2 - Transitional Colemak (ET)
+* ,-----------------------------------------------------------.
+* |     |  q|  w|  F|  r|  G|  y|  u|  i|  o|  p|   |   |     |
+* |-----------------------------------------------------------|
+* |      |  a|  s|  d|  T| *J|  h|  N|  E|  l|  ;|   |        |
+* |-----------------------------------------------------------|
+* |        |  z|  x|  c|  v|  b|  K|  m|   |   |   |          |
+* `-----------------------------------------------------------'     
+
+* Tarmak2-Curl(DH) - Transitional Colemak-Curl-DH (ET)
+* ,-----------------------------------------------------------.
+* |     |  q|  w|  F|  r|  B|  y|  u|  i|  o|  p|   |   |     |
+* |-----------------------------------------------------------|
+* |      |  a|  s|  d|  T|  g|  K|  N|  E|  l|  ;|   |        |
+* |-----------------------------------------------------------|
+* |    |  z|  x|  c| *J|  v|  _|  M|  H|   |   |   |          |
+* `-----------------------------------------------------------'    
+                </code></pre>
+            </div>
+
+            <h2>LOCALE COLEMAK[eD] VARIANTS</h2>
+            <p>See <a href="https://forum.colemak.com/viewtopic.php?id=1458">my Locale Variants forum topic</a> for the various locale solutions.</p>
+
+            <p>I took off a bit and made quite a bunch of these, heh! I can make more on request. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.</p>
+
+            <p>Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' variants
+                (On a side note, there were only 11 Dvorak layouts in the xkb files last time I looked!): <br>
+                <b>al at ba be bg br ca cz de dk es fi fr gb gr hr hu il is it latam nl no pl pt ro rs ru se si tr us</b></p>
+
+            <p>- The brackets (lvl3-4) and the LSGT key may hold the most common locale-specific keys.</p>
+
+            <ul>
+                <li>The oe/aring special letters may well be replaced; these should also be on dead keys.</li>
+                <li>Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.</li>
+                <li>See the colemak_template symbols file for more info on local Colemak[eD] variants.</li>
+            </ul>
+
+            <img src="content/images/Cmk-eD-usym-aw_Xm.png" alt="Colemak[eD] Usym">
+            <img src="content/images/Cmk-eD-dk%2Bno-usym-aw_Xm.png" alt="Colemak[eD] Bno-Usym">
+            <p class="italic">The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant (mostly like the standard Colemak above).</p>
+
+            <img src="content/images/Cmk-eD-no-ksym_Xm.png" alt="Colemak[eD] No Ksym">
+            <p class="italic">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).</p>
+
+            <p>Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.</p>
+
+            <h2>PHONETIC COLEMAK LAYOUTS FOR NON-LATIN SCRIPTS</h2>
+            <p>See the <a href="https://forum.colemak.com/viewtopic.php?pid=10016#p10016">phonetic subtopic of my Locale topic</a> for more info on these layouts.</p>
+
+            <p>For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?</p>
+
+            <img src="content/images/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
+            <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p>
+
+            <div class="platform-specific">
+                    <p>The QUICKIE only partially supports locales per se, as it only sends key strokes that are then re-coded by your computer's layout settings. My four-level Unicode function remedies this somewhat by allowing some keys to have their AltGr/RAlt states remapped to an OS dependent Unicode input method. So I can set a standard US QWERTY layout on my computer and still have, e.g., the locale ÆæØøÅå letters where I'm used to.</p>
+
+                    <p>Before I made that function however, I used the locale layout installed on Windows. But I found that the default symbol key mappings are non-intuitive since they are quite different from the US ones which I'm used to now. So I've made a "hack" layout for myself that moves several symbol keys to where I feel they are better placed for me.</p>
+                    
+                    <p>For instance, instead of a [=+] key as on US keyboards, the Norwegian locale has [+?], [0=] etc. I can't sort that out to get the symbol placements I'm used to as a Colemak[eD] typist unless I choose a US locale layout on the computer I'm on – but I still need the Norwegian ÆØÅ letters so that won't work! I had to settle for, e.g., moving the +? key to the US /? key position so at least the question mark is in the right place. Not perfect, but the best I could do.</p>
+                    
+                    <p>Phonetic layouts for non-latin scripts require a layout with that script installed on the computer or whatever you're typing to. If you select a QWERTY phonetic layout for a script and have a USB-2-USB Colemak keymap active, your resulting layout will be Colemak phonetic. If, however, you want to swap some key positions (for Rulemak/Bulmak for instance), a suitable new keymap must be made and compiled.</p>
+            </div>
+
+            <h2>MIRRORED COLEMAK</h2>
+            <p>Advanced typing is possible with only one hand given a mimimum of training with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.</p>
+
+            <p>I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger bigram avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger bigrams when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand variants but then you'd have to learn a new layout).</p>
+
+            <p>You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use an arm or foot switch set to any other key (maybe an out-of-the-way one like ScrollLock), or a "ghetto switch" made by stripping most keys off a keyboard and placing it on the floor. A more fancy but still cheap switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard.</p>
+
+            <p>Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.</p>
+
+            <img src="content/images/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
+            <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)</p>
+
+
+            <img src="content/images/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
+            <p class="italic">The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing I think</p>
+
+            <div class="platform-specific">
+                <p>Advanced typing with only one hand is possible given a modicum of familiarity with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.</p>
+
+                <p>Mirrored layouts are easily implementable for the USB-2-USB device. I've provided a mirrored Colemak that obeys the Curl mod setting. This will usually be your second layout (layer 1) on top of Colemak, so in my map file it's set by using ACTIVELAYOUT 5 (Colemak) and SECONDLAYOUT 6 (mirrored Colemak).</p>
+                
+                <p>If you want a non-Colemak mirrored layout, you're on your own writing one. If you do, please post it below so others can benefit! I haven't yet</p>
+                
+                <pre><code>
+  Mirrored Colemak (used as switch layout for one-handed typing)
+* ,---.   ,---------------. ,---------------. ,---------------.
+* |  \|   |F12|F11|F10|F9 | |F8 |F7 |F6 |F5 | |F4 |F3 |F2 |F1 |
+* `---'   `---------------' `---------------' `---------------'
+* ,-----------------------------------------------------------.
+* |BSp|  -|  0|  9|  8|  7|  6|  5|  4|  3|  2|  1|  =|     ` |
+* |-----------------------------------------------------------|
+* | Ent |  ;|  Y|  U|  L|  J|  G|  P|  F|  W|  Q|Esc|Cps|   \ |
+* |-----------------------------------------------------------|
+* |    ' |  O|  I|  E|  N|  H|  D|  T|  S|  R|  A|  '|  Enter |
+* |-----------------------------------------------------------|
+* | Shift  |  /|  .|  ,|  M|  K|  B|  V|  C|  X|  Z|    Shift |
+* `-----------------------------------------------------------'
+                </code></pre>
+                <p>You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use a foot switch set to any other key, or a "ghetto foot switch" made by stripping most keys off a keyboard and placing it on the floor, for instance. A more fancy but still cheap foot switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard. By default, the layer switch key in my files is Pause/Break which could be cannibalized this way.</p>
+                
+                <p>Then, you may choose whether the switch key should be a normal Shift-type (switch) or a Caps-type (toggle) modifier. See how I've defined the "FPau" Fn key in my file; it's used as my definition for the Pause key but you can copy that to any other key as well. The normal way would be to set FPau to Shift/switch-type with "ACTION_LAYER_MOMENTARY(1)" (the 'PAUSBEHAVIOR 2' setting), and then replace the desired key in your active (layer0) layout with FPau if you wish to move it. If you go with a toggle modifier, you need to make that key transparent (TRNS) on the mirrored layout, or provide a similar toggle somewhere else or you won't be able to get back!</p>
+                
+                <p>Tip: Sticky Shift and Ctrl could be useful for one-handed typing! See the STICKYMODS setting.</p>
+
+
+                <h2>DOWNLOAD AND INSTALL</h2>
+
+                <p>First off: <a href="https://github.com/DreymaR/BigBagKbdTrix_TMK"><b>Here are my TMK-based files</b></a> on GitHub! There's:</p>
+                
+                <ul class="disc">
+                    <li>A BigBagKbdTrix_TMK dir with my files; it can go into or beside the tmk_keyboard/ dir of <a href="https://github.com/tmk/tmk_keyboard/">Hasu's repo</a></li>
+                    <li>A MakeFlash shell script (see below) that'll install and run TMK with my files under Linux</li>
+                    <li>A _myhexfiles dir with some ready-made HEX files that you can flash directly onto a Hasu device (or any other ATmega32U4 chip)</li>
+                </ul>
+                
+                <p>In addition to providing my additional files for use with <a href="https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb/">Hasu's TMK code for his USB to USB converter</a>, this post shows how to prepare your device and get ready to make and flash (install) a HEX file to it. If you have another device or just wish to learn more, I recommend looking at the <a href="https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/build.md">TMK help files</a> and <a href="https://github.com/njbair/keyboard_firmware#building--flashing-the-firmware">NJBair's instructive firmware building/flashing guide.</a></p>
+                
+                <p>The <b>Keymap Configuration</b> post below will show you how to get or generate a keymap/layout that suits you, and the Device Flashing post shows how to program a USB2USB or other TMK device with that file.</p>
+                
+                
+                <p class="italic">Device preparation:</p>
+                
+                <p>1. For flashing on Windows: <a href="http://www.atmel.com/tools/FLIP.aspx"><b>Install Atmel's FLIP application</b></a> for device drivers ++</p>
+                
+                <ul class="disc">
+                    <li>Note that it says 'Buy now' on a button but the links below don't cost anything!</li>
+                    <li>I've had trouble with FLIP not finding a Java Virtual Machine after a Java update; you may have to <a href="https://www.java.com/en/download/manual.jsp"><b>reinstall your Java Runtime Environment</b></a>.</li>
+                </ul>
+                
+                <p>2. Insert the device and press its Bootloader mode button (fig. 1–4).</p>
+                <ul class="disc">
+                    <li>You don't need a keyboard plugged into the device yet. In fact, to be on the safe side, I recommend not plugging in a keyboard yet!</li>
+                    <li>When in Application/Keyboard mode, the yellow App LED should be lit; when in Bootloader/Flash mode it goes out.</li>
+                </ul>
+                
+                    <img src="content/images/USB2USB_Hasu-physical.png" alt="USB2USB Hasu Physical">
+                    <p class="italic">Fig. 1: Hasu's USB-2-USB device. 1) USB host – plug keyboard here; 2) USB client – plug into computer or whatever; 3) App LED; 4) Bootloader button</p>
+                
+                <p><b>3a. For flashing on Windows: Install/update the device drivers for your ATmega32U4 (or other) chip.</b></p>
+                <ul class="disc">
+                    <li>The Windows Device Manager shows your device first as a HID keyboard and then, in Bootloader mode, as an Atmel or ATMega USB device</li>
+                    <li>Point the driver update to the <b>C:\Program Files (x86)\Atmel\Flip 3.4.7\usb</b> or similar directory if necessary</li>
+                    <li>Now, using the Windows Device Manager you can check that the device is mounted:</li>
+                </ul>
+            
+                    <img src="content/images/USB2USB_WinDevMgr_Hasu-ApplicationVsBootloaderMode.png" alt="USB2USB Application Vs Bootloader Mode">
+                    <p class="italic">Fig. 2: Windows Device Manager showing the Hasu USB-2-USB device in Application/Keyboard (left) and Bootloader (right) mode.</p>
+                
+                <p><b>3b. For flashing on Linux: Ensure that your device is seen by the OS, in DFU (bootloader) mode.</b></p>
+                <ul class="disc">
+                    <li>The <b>lsusb</b> command lists attached USB devices; hopefully there's an entry with Atmel and "AVR DFU Bootloader" in it.</li>
+                    <li>If you're using a Linux virtual machine, make sure the device is <b>captured</b> in Bootloader mode, using your VM app's device listings.</li>
+                    <li>Every time you enter or leave bootloader mode, you may have to recapture the device for your VM.</li>
+                    <li>It should be ticked off in the Devices>USB menu on VirtualBox for instance; similarly for VMWare and others:</li>
+                </ul>
+                
+                    <img src="content/images/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png" alt="USB2USB Bootloader Mode">
+                    <p class="italic">Fig. 4: The Devices (pop-up) menu of VirtualBox, showing a properly captured Atmel USB device.</p>
+                
+                
+                <p class="italic"><b>Getting and installing my TMK files, TMK itself and AVR tools for Linux:</b></p>
+                
+                <p>My files are extensions of Hasu's TMK code. You'll need to compile them within a copy of his repo, and I'll describe how to do this on a Linux machine. You can use a real or virtual Linux machine; I've used an Ubuntu VM. If you have an updated 64-bit Windows 10, you can even use the Linux Subsystem BASH command line to do it without leaving Windows – see below! I guess you could also use for instance CygWin or MinGW, but I haven't tried those possibilities.</p>
+                
+                <p>Included in my files is the shell script <b class="italic">makeflash_dreymar_tmk.sh</b> that does several things on a Linux machine. Run it with the -h option for more help:</p>
+                    <img src="content/images/USB2USB_Linux-MakeFlash-help.png" alt="USB2USB Linux MakeFlash Help">
+                    <p class="italic">Fig. 3: The help text for my MakeFlash script, showing options and default values. This image may be outdated; run the script yourself.</p>
+                
+                
+                <p class="italic"><b>Step-by-step instructions for installing on Linux:</b></p>
+                
+                <p>Here's a set of <b>step-by-step download/install instructions</b>:</p>
+                <p>1) <a href="https://github.com/DreymaR/BigBagKbdTrix_TMK"><b>Download or clone my repo</b></a> and... </p>
+                <ul class="disc">
+                    <li>if installing TMK, put its directory with at least the <b>MakeFlash</b> script in the dir in which you want TMK.</li>
+                    <li>My files/dirs can actually go either a) in a dir beside TMK's <b>tmk_keyboard</b>, b) directly inside it, or c) in a dir inside it</li>
+                    <li>(On my virtual machine, I use a shared folder so both Linux and Windows can see the HEX files I've built directly.)</li>
+                </ul>
+                <p>2) <b>Install the AVR Tools</b> needed for compiling for and flashing to the chip with <b class="italic">bash makeflash_tmk_dreymar.sh -a</b> <br>
+                3) <b>Install Git & Hasu's GitHub TMK repository</b> with <b class="italic">bash makeflash_dreymar_tmk.sh -g</b> (if you have Git/TMK already, it'll update them) <br>
+                4) Make sure my repo is in place relative to the TMK one as described above, and open a terminal there <br>
+                5) Now you're ready to <b>Build and flash HEX files</b> from TMK code. To simply build the default keymap as set in keymap_dreymar.c, use: </p>
+                
+                <pre><code>
+$> ./makeflash_dreymar_tmk.sh
+                </code></pre>
+                <p>See the <b>Keymap Configuration</b> post below for more info on getting a HEX file that suits you, and the <b>Device Flashing</b> post for how to program your device with the HEX file.</p>
+                
+                
+                <p class="italic"><b>Addendum: Using BASH on Windows through the Linux Subsystem</b></p>
+                
+                <p>The Windows 10 Anniversary Edition (64-bit) has an exciting addition that's nominally still in beta but already quite operational (command-line only): <a href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">A Ubuntu GNU/Linux "Subsystem" running a BASH command line terminal</a>! This is capable of compiling the TMK code just like a Linux machine. I've heard you cannot flash to a device with it, as dfu-programmer isn't working (yet) – but that's no biggie as you can just use Windows-based flashing tools. Anyway, just try and see if it works now; let me know if it does!</p>
+                
+                <p>Hasu has <a href="https://github.com/tmk/tmk_keyboard/wiki/Bash-On-Ubuntu-On-Windows10">instructions on how to use BASH on Windows 10 for TMK compiling</a>, but here's a little run-through:</p>
+                <ul class="disc">
+                    <li>Make sure you have the <b>Windows 10(64bit) Anniversary Update</b> or newer; if you don't then <a href="https://support.microsoft.com/en-us/help/12387/windows-10-update-history">get it from Microsoft's pages</a>.<br>
+                        <b class="italic">Settings → System → About</b>; your WIndows version should be >1607.</li>
+                    <li>Activate <b>Developer Mode</b><br>
+                        <b class="italic">Settings → Update & Security → For developers → Developer mode</b></li>
+                    <li>Activate <b>Windows Subsystem for Linux</b><br>
+                        <b class="italic">Control Panel → Programs → Turn Windows features on or off → Windows Subsystem for Linux (beta)</b> (requires a restart)</li>
+                    <li>Start the <b>BASH terminal</b><br>
+                        <b class="italic">Start Menu → Bash on Ubuntu on Windows</b>; you'll have to finish the Ubuntu install and choose a username/pwd the first time.</li>
+                    <li>Navigate to a suitable folder and follow the step-by-step procedure above to install AVR tools, make, git and TMK and get going!<br>
+                        At <b class="italic">/mnt/c/</b> you'll find the C:\ drive; you have access to the same file system as Windows does.</li>
+                    <li>If you have my files in a different location from the main tmk ones, you can use a symbolic link to make my script see the tmk dir.</li>
+                </ul>
+                
+                <p class="italic">Addendum: Using other keyboard converters/controllers</p>
+                
+                <p>The above should work directly for any ATmega32U4-based controllers. TMK works for several types of keyboard controllers and converters; look inside the TMK dirs for more info. The map files I use now are in the Unimap format, which should work with all TMK compatible controllers.</p>
+                
+                <p>I've tested Hasu's PS/2-USB converter. For that device, be aware of the following:</p>
+                <ul class="disc">
+                    <li>This converter uses the ATmega32U2 chip (for now). If flashing with FLIP, set its device selection accordingly.</li>
+                    <li>To compile for the PS/2-USB converter with my script, use the following switches:</li>
+                </ul>
+                
+                <pre><code>
+$> ./makeflash_dreymar_tmk.sh -d converter/ps2_usb/ -m Makefile.unimap.rev2
+                </code></pre>
+
+                <h2>KEYMAP CONFIGURATION</h2>
+                <p>This post shows how to get the keymap HEX file you want. How to compile TMK or other code is described here.</p>
+
+                <p>If you wish to delve deeply into keymap editing, make sure you've read at least Hasu's <a href="https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md"><b>Keymap and Layers</b></a> ReadMe. It and other docs are found in the <a href="https://github.com/tmk/tmk_keyboard/tree/master/tmk_core/doc"><b>tmk_keyboard/tmk_core/doc</b></a> dir of his GitHub repo.</p>
+
+
+                <p class="italic"><b>Using a precompiled HEX file</b>:</p>
+
+                <p>I've provided some .hex files with my download, but I can't make every combination of options as that'd take a lot of my time. If you're lucky, you'll find what you need and then you don't have to build your own HEX file. There may be other such files available from other sources, too.</p>
+
+                <p>My provided pre-compiled HEX files are:</p>
+                <ul class="disc">
+                    <li><b>QWE-Tarmak-Cmk_All_Extend</b>: A full progression from QWERTY via Tarmak 1–4 to Colemak, with Extend, without any ergonomic mods ("vanilla").</li>
+                    <li><b>QWE-Tarmak-Cmk_CurlAWideISO_Extend</b>: A full Tarmak progression as above, with Extend and the Curl(DH)AngleWide-ISO ergo mods.</li>
+                </ul>
+
+                <p>So you could use these files to:</p>
+                <ul class="disc">
+                    <li>Learn Colemak or Colemak-CAW with as many Tarmak steps as you like (0–4),</li>
+                    <li>Type Tarmak#, Colemak or Colemak-CAW with Extend, or just</li>
+                    <li>Type QWERTY with Extend and optionally the AngleWide-ISO ergo mod (the Curl mod does not apply to QWERTY)</li>
+                </ul>
+
+                <p>If you find a ready-made HEX file, make sure it's built for the right chip. The Hasu USB-2-USB device currently uses <b>Atmel ATmega32U4</b>.</p>
+
+
+                <p><b>Using Hasu's online editor to generate a HEX file:</b></p>
+
+                <p><a href="http://www.tmk-kbd.com/tmk_keyboard/editor/unimap/?usb_usb"><b>Hasu's Online TMK Keymap Editor for the USB to USB converter</b></a> will let you make .hex files you can save and use for flashing your ATmega32U4 device. If you need a simple keymap that I haven't made already, this may be the easiest way of getting it.</p>
+
+                    <img src="content/images/USB2USB_Hasu-TMK-WebEditor_L0-L1_70pc.png" alt="USB2USB Web Editor">
+                    <p class="italic">Fig.: Hasu's Online keymap editor, showing two different layers and key panels.</p>
+
+                <p>You can make up to 7 layers with this, only by clicking the keys you want into place. The NO code deactivates a key, and the TRNS code lets whatever is in active lower layers "shine through". There's a tab of layer switching functions too. Just mess around with it, it's fun.</p>
+
+                <p>To make modified key strokes and other fancy stuff, there's a Code Edit tab. To understand it, read <a href="https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md">Hasu's TMK Keymap guide</a>.</p>
+
+                <p>You can also output C/JSON/etc code that you may compile manually for other devices, but you can't easily use that code for tweaking layouts, since it'll only give you hex codes for all the keys so unless you happen to know the right numbers you'll get a big headache trying to figure that out.</p>
+
+                <p>Here's an online editor example if you want a quick Big Bag starting point: <a href="https://goo.gl/GNfui5">My Colemak-CAW layout with two Extend layers</a>. You can also import one of the precompiled HEX files into it if you want.</p>
+
+                <p class="linethrough">Note: There's also an <a href="http://www.tmk-kbd.com/tmk_keyboard/editor/usb_usb/index.html">older version of the online editor</a>, but that didn't support modified keys.</p>
+
+
+                <p class="italic">Building a HEX file from TMK files on Linux:</p>
+
+                <p>If you've followed the <b>Download and Install</b> post above, by now you should have a copy of Hasu's TMK repo with my usb_usb files inside its <a href="https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb">converter/usb_usb</a> directory and a terminal open to that directory.</p>
+
+                <p>In addition to installing, my shell script <b>makeflash_dreymar_tmk.sh</b> run in Linux can:</p>
+                <ul class="disc">
+                    <li><b>Build a HEX file</b> (default name is usb_usb_unimap.hex) for flashing to your device, using Hasu's Makefile</li>
+                    <li><b>Flash a HEX file to a device in Bootloader mode</b> (or you may take the file to Windows and do it with Atmel FLIP instead)</li>
+                    <li><b>Clean up</b> all the files from a build/compilation; note that this also removes the .hex file unless you've renamed or moved it</li>
+                </ul>
+
+                <p>Run it with a keymap file's name (unimap_&lt;name>.c) to optionally choose a non-default keymap file (the default is 'dreymar'):</p>
+                <pre><code>
+$> bash makeflash_dreymar_tmk.sh [&lt;name>]
+                </code></pre>
+
+                <p>If you run the script with <b>-h</b>, you'll see the default values for which directory to use and what the file will be called etc. For an example, see the Install post above.</p>
+
+
+                <p class="italic"><b>Editing my (or other) TMK keymap files</b>:</p>
+
+                <p>I've provided a <b class="italic">unimap_dreymar.c</b> file with several keymaps/layouts in, and a <b class="italic">unimap_dreymar.h</b> file that mostly holds keymap types for the Angle/Wide ergo mods. For normal purposes, the <b>unimap_dreymar.c</b> file will be the one you want to edit to get the layout(s) you want. Use any editor (as long as it preserves character encoding) to edit the file in your local <a href="https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb"><b>tmk_keyboard/converter/usb_usb</b></a> directory before building the HEX file as described above.</p>
+
+                <p>The default layer is layer0; this will always be active when the device is activated. I've used layer1 for a second layout and added a layer-toggle key (ScrollLock by default) to go back and forth between two layouts. Layer2+ are intended for Extend layers but only layers 2–3 are in use for now.</p>
+
+                <p>The layout options are chosen with preprocessor directives; you can edit the values of the #define &lt;OPTION> &lt;value> lines before compiling to produce different .hex files as you like.</p>
+
+                <p class="italic"><b>"Physical" keymap type settings (Angle/Wide ergo mods) in unimap_dreymar.c; see below if you want to edit these in unimap_dreymar.h</b>:</p>
+
+                <pre><code>
+/* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
+* _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
+* _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle (the simple lower left half-row shift)
+* _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/)
+* _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z)
+* _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(')
+* _ANAAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
+*
+* Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
+* To get my favoured Colemak-CAW (CurlAngleWide) layout on ISO/ANSI, use _AWIZXCBV / _AWAXCBVZ
+*      with ACTIVELAYOUT 5 and CURLMOD 1 settings below. Oh, and CAPSBEHAVIOR 1 of course! ^_^
+*/
+#define UNIMAPLAYOUT(...)   UNIMAP_AWIZXCBV( __VA_ARGS__ )  /* CurlAngleWide-ISO ergo model */
+                </code></pre>
+
+                <p>For layouts and layout options, the directives will select which pieces of code below to actually compile so you get what you want.</p>
+
+                <p class="italic"><b>Active/default layout settings</b>:</p>
+
+                <pre><code>
+/* Define the ACTIVELAYOUT (and CURLMOD) constant(s) to choose the layer0 layout:
+* 0  : QWERTY
+* 1-#: Tarmak1 - transitional Colemak (supports CURLMOD; see below)
+* 2-#: Tarmak2 - transitional Colemak (--"--)
+* 3-#: Tarmak3 - transitional Colemak (--"--)
+* 4-#: Tarmak4 - transitional Colemak (--"--)
+* 5-0: Colemak
+* 5-1: Colemak Curl-DH (requires a CurlAngle keymap; see above)
+* 6-#: Mirrored Colemak (normally used as second layout with a layer switch)
+* 7  : Dvorak
+* 8  : Workman (if you must - I believe Colemak Curl-DH is a _lot_ better!)
+*/
+#define ACTIVELAYOUT    5   /* LAY_COLEMAK      */
+                </code></pre>
+
+                <p class="italic"><b>Second/switch layout settings</b>:</p>
+
+                <pre><code>
+/* Define the SECONDLAYOUT (and CURLMOD) constant(s) to choose the layer1 switch layout:
+* 0  : Unmodded QWERTY is the default; otherwise:
+* 1  : QWERTY with any active ergo mods (AngleWide etc)
+* 2-#: Colemak (if you want something else, replace it in the code between the 'REPLACE THE SECOND LAYOUT...' lines)
+* 3-#: Colemak Mirrored as second layout for one-handed typing (needs an accessible switch key!)
+*      NOTE: The "FPau" key is a layer1 toggle or switch (select which below), normally used on the Pause key.
+*            You may swap, e.g., LALT, RGUI or another key with "FPau" in your active layout to use that key instead.
+*/
+# define SECONDLAYOUT   0   /* SEC_VANQWERTY    */
+                </code></pre>
+
+                <p class="italic"><b>Curl(DH)-mod settings</b>:</p>
+
+                <pre><code>
+/* The CURLMOD options for Colemak and Tarmak layouts are:
+* 0: No Curl - vanilla Colemak/Tarmak
+* 1: The Curl(DH) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
+* 2: SteveP99's old Curl(DHm or DvbgHm) ergo mod, bringing D/H down but M to the home row.
+*    Some matrix board users may prefer this mod, but several prefer the default even on matrix boards.
+*
+* NOTE: On the first Tarmak step, CURLMOD 1 will include the HMK swaps whereas CURLMOD 2 won't. So you can choose.
+*       For a baby Tarmak1 step, use CURLMOD 2 and then 1. The K will be misplaced at first, but it's rare.
+* NOTE: Another baby step after Tarmak1 could be transitioning to a CurlAngle(Wide) keymap model before Tarmak2.
+*/
+# define CURLMOD        1   /* CURL_DH          */
+                </code></pre>
+
+                <p class="italic"><b>CapsLock behavior settings, including Extend mode</b>:</p>
+
+                <pre><code>
+/* The CAPSBEHAVIOR constant chooses Caps key action, including the powerful Extend layer switch:
+* 0: CapsLock (unchanged)
+* 1: Extend modifier (uses a little more layout memory, but it's by far the most powerful option IMNSHO!)
+* 2: BackSpace (for vanilla Colemak or otherwise; a decent choice but Extend is better!)
+* 3: LCtrl
+* 4: Esc
+*/
+#define CAPSBEHAVIOR    1   /* CAPS_EXTEND      */
+
+/* The EXT#BIT constants with the main Extend key (Caps by default) select Extend# layers in the EXTENDER user function:
+* Ext1 on Caps alone       : Navigation/editing/multimedia
+* Ext2 on Ext2+Caps        : NumPad/Navigation
+*/
+#define EXT2BIT MOD_BIT(KC_RSFT)                                    /*  Ext2+Ext selects Extend2    */
+                </code></pre>
+
+                <p class="italic"><b>Sticky mods (Shift and/or Ctrl) settings</b>:</p>
+
+                <pre><code>
+/* The STICKYMODS constant chooses LShift, RShift and RCtrl key behavior (I chose to leave LCtrl alone):
+* 0: Normal Shift/Ctrl (default)
+* 1: Sticky Shift only
+* 2: Sticky Ctrl only
+* 3: Sticky Shift & Ctrl
+* NOTE: In the unimap_dreymar.h file, some relevant constants normally set in config.h are (re)set:
+*       - TAPPING_TERM is the max time a key may be held down for it to register as tapped
+*       - ONESHOT_TIMEOUT is the max delay before a oneshot modifier is ignored
+*/
+#define STICKYMODS      1   /* STICKY_SHFT      */
+                </code></pre>
+
+                <p class="italic"><b>ScrollLock and Pause/Break behavior settings</b>:</p>
+
+                <pre><code>
+/* The SCLKBEHAVIOR constant chooses ScrollLock key action:
+* 0: Normal ScrollLock (default)
+* 1: Layer 1 toggle key (toggles the second layout)
+* 2: Layer 1 switch key (layer shift; e.g., for mirrored typing if you can use it as "ghetto" foot switch)
+*/
+#define SLCKBEHAVIOR    1   /* SLCK_L1TOGGLE    */
+
+/* The PAUSBEHAVIOR constant chooses Pause/Break key action:
+* 0: Normal Pause/Break (default)
+* 1: Win/GUI key (useful for 101/104-key boards that have no GUI key)
+*/
+#define PAUSBEHAVIOR    0   /* PAUS_PAUS        */
+                </code></pre>
+
+                <p class="italic"><b>Editing maps and headers manually</b>: <br>
+                It is of course entirely possible to edit the layouts themselves directly. It should be fairly intuitive how to do that. See the <a href="https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keycode.txt">TMK keycode.txt</a> file for a list of all key codes (layouts use the 3–4 letter versions).</p>
+
+                <p>CapsLock, LAlt, RAlt and some other keys are defined as Fn## keys in the layouts. At the start of the file there's a bunch of action definitions for these.</p>
+
+                <p>Below are some examples from an unimap file:</p>
+
+                <pre><code>
+#  define AC_FTab ACTION_LAYER_TAP_KEY(2, KC_TAB)    // FTab (Tab key)  as Ext2 – tap for Tab (for now)
+#  define AC_FnLA ACTION_KEY(KC_LALT)                // FnLA (LAlt key) as usual (for now)
+#  define AC_FnRA ACTION_KEY(KC_RALT)                // FnRA (RAlt key) as usual (for now)
+//#  define AC_FnU1 ACTION_MODS_KEY(MOD_LGUI, KC_T)    // FnU1 (`) as Win+T
+#  define AC_FnU1 ACTION_MACRO(TYPESTR1)             // FnU1 as user macro: Type a string
+                </code></pre>
+
+                <p>In the above:</p>
+                <ul class="disc">
+                    <li>FTab, mapped to the Tab key (TAB) in my layouts, activates layer 2 (Ext2) while held down, and sends the TAB key code if tapped.<br>
+                        – The Tab key is quite handy as a dual-role modifier, but unfortunately it loses its repeat functionality this way.<br>
+                        – ISO keyboard users might want to use the &lt;LSGT> key instead; its code is NUBS ("Non-US Backslash").</li>
+                    <li>FnLA and FnRA, similarly, are my versions of the LAlt and RAlt keys. But for now, their defined actions are mostly to be their normal selves!</li>
+                    <li>AC_FnU1 is a user macro key that I put on Extend+Tilde/Grave. It's macro is defined at the end of the file; in this case it types out a boilerplate text (my email footer).</li>
+                    <li>Commented out above, is an alternative definition for FnU1: Sending a LWin+T keystroke instead (in Windows, this brings you to the menu line).</li>
+                </ul>
+
+                <p>Here's an ergo remapping from the <b>unimap_dreymar.h</b> file; this one's (the lower part of) the UNIMAP_ANIZXCVB Angle-ISO mod. Note how ZXCVB have moved:</p>
+                <pre><code>
+ESC_,    FK01,FK02,FK03,FK04,   FK05,FK06,FK07,FK08,   FK09,FK10,FK11,FK12,   PSCR,SCLK,PAUS,        VOLD,VOLU,MUTE,  \
+GRV_,N1_1,N2_2,N3_3,N4_4,N5_5,N6_6,N7_7,N8_8,N9_9,Na_0,NbMN,NcEQ,JYEN,BSPC,   INS_,HOME,PGUP,   NLCK,KPDV,KPMU,KPMN,  \
+TAB_  ,U1_Q,U2_W,U3_E,U4_R,U5_T,U6_Y,U7_U,U8_I,U9_O,Ua_P,UbLB,UcRB,   BSLS,   DEL_,END_,PGDN,   KP_7,KP_8,KP_9,KPAD,  \
+CAPS   ,H1_A,H2_S,H3_D,H4_F,H5_G,H6_H,H7_J,H8_K,H9_L,HaSC,HbQU,HcHS,  ENT_,                     KP_4,KP_5,KP_6,KPCM,  \
+LSFT ,L1_Z,L2_X,L3_C,L4_V,L5_B,L0LG,L6_N,L7_M,L8CM,L9DT,LaSL,JROM,    RSFT,        _UP_,        KP_1,KP_2,KP_3,KPEN,  \
+LCTL ,LGUI,LALT,JMHE,         SPC_         ,JHEN,JKAN,RALT,RGUI,APP_, RCTL,   LEFT,DOWN,RGHT,   KP_0     ,KPDT,KPEQ   \
+                </code></pre>
+
+                <h2>DEVICE FLASHING</h2>
+                <p>This post shows how to flash your HEX file to a USB-2-USB device and get it ready for typing. See the above posts for how to <a href="https://forum.colemak.com/post/18407/#p18407"><b>prepare the device</b></a> and <a href="https://forum.colemak.com/post/18410/#p18410"><b>get the HEX file you want</b></a>.</p>
+
+                <p><b>NOTE</b>: Flashing with a keyboard plugged into the device may be safe in most cases. But I got trouble with one keyboard (IBM/Unicomp Model M) after using FLIP for flashing with it inserted; it seems like the drivers or registry entry got corrupted somehow because now it won't mount on that PC anymore even though it's quite okay on other machines. Be warned.</p>
+
+
+                <p class="italic"><b>Flashing the device with Linux</b>:</p>
+
+                <p>My script run with the <b>-f</b> option flashes the generated HEX file to a connected device using DFU-Programmer; if you've already made the .hex file use <b>-b</b> to skip rebuilding it. If you want to flash without using my script, you could use the 'make dfu' command inside the usb_usb directory, or look inside the script to see how I did it.</p>
+
+                <p>According to the <a href="https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build">TMK wiki build FAQ</a>, you'll need admin/sudo rights for the 'dfu-programmer' command (there's a workaround using udev rules, but it's a bit techy). I've tried flashing without sudo and it worked for me in one case but not another. If you do need sudo, run makeflash like this:</p>
+
+                <pre><code>
+$> sudo ./makeflash_dreymar_tmk.sh -bf
+                </code></pre>
+
+                <p><b>NOTE</b>: You do not generally want to build your files as root! Then you'll be in trouble if you try to clean up as non-root afterwards. So run MakeFlash twice, once with normal privileges to build your .hex file and the other time with -b (to not build again) and -f (to flash) with sudo/root privileges.</p>
+
+                <p>If you're using BASH on Windows 10 (beta), <a href="https://github.com/tmk/tmk_keyboard/wiki/Bash-On-Ubuntu-On-Windows10">dfu-programmer won't work yet</a>, due to a problem with mounting USB devices in general (libusb). Use Windows native tools instead, such as FLIP or dfu-programmer for Windows.</p>
+
+                <p>If you have another device, you may need some other method and more tools. As mentioned at the start of this post, there are helpful help files you may consult for this.</p>
+
+                <p class="italic"><b>Flashing the device with Atmel FLIP on Windows</b>:</p>
+
+                <p>You can use Atmel FLIP on Windows instead of flashing under Linux: It gives you more feedback and intuitive control with the process. If you compiled your HEX file on Linux you must make it available for the Windows file system to use Windows FLIP. I just put the whole TMK repository in a shared folder that both Windows and my virtual Linux machine can see; you could also move it on a USB drive or copy-paste from a Virtual Machine if your VM settings allow this.</p>
+
+                <p><b>1. Select the right chip (fig 5–1)</b>. For the Hasu device, it's <b>ATmega32U4</b>. Verify the chip type <b class="italic">(fig 5–a)</b>.<br>
+                <b>2. Connect to the device</b> in Bootloader mode. Select <b>USB connection (fig 5–2)</b> then <b>Open</b>. Verify the connection <b class="italic">(fig 5–c)</b>.<br>
+                <b>3. Load a HEX file (fig 5–3)</b>. Use shared folders, a USB disk or some other way of accessing the file with Windows.<br>
+                Verify for ATmega32U4 which only has 32kB memory minus 4 kB bootloader, that the file size is below <b>28480 bytes <em>(fig 5–b)</em></b>.<br>
+                <b>4. Flash the device (fig 5–4)</b>. Make sure all options are on as shown, then press <b>"Run"</b>.<br>
+                <b>5. Activate the device (fig 5–5)</b>. Press <b>"Start Application"</b>. Reset should be checked.<br>
+                <b>6. Test the device</b>. With a keyboard connected to the device, type something on it and see that it does what it should.</p>
+
+                    <img src="content/images/USB2USB_AtmelFlip_Hasu.png" alt="USB2USB Atmel FLIP">
+                    <p class="italic">Fig. 5: Atmel FLIP for Windows. 1) Select chip (a); 2) Connect (c); 3) Load HEX file (b); 4) Flash device; 5) Start device</p>
+
+                <h2>HARDWARE IMPLEMENTATIONS</h2>
+                <p>I won't cover all possibilities here. I use Hasu's converters myself and haven't got any experience with others, but the possibilities are many.</p>
+
+                <p><a href="https://geekhack.org/index.php?topic=80421">A Pro Micro (such as the one seen above by GeekHack user Yangdigi)</a> may be cheapest, but it also seems to be the most techy option?</p>
+
+                <p>Colemak forum user <a href="https://forum.colemak.com/user/2108-darkness/">Darkness</a> made a device and <a href="https://github.com/darkytoothpaste/keymapper">his own code for it</a>, see his <a href="https://forum.colemak.com/viewtopic.php?id=1561">"Arduino-based hardware keyboard remapper" topic</a> for more info. Scroll down that page for pictures and a nice <a href="https://forum.colemak.com/viewtopic.php?pid=11494#p11494">how-to sum-up post</a>. He started off with an Arduino Leonardo like the one to the left in Yangdigi's image above; this can be a good development platform if you have one. But for a more useful implementation, he uses an Arduino Teensy 2.0 as seen below. Hasu has tried his TMK code on this device and it seems to be working fine.</p>
+
+                    <img src="content/images/USB2USB_DarkyToothpaste_Teensy.jpg" alt="USB2USB Darkness Teensy">
+                    <p class="italic">Darkness's Teensy-based USB-2-USB Converter (see <a href="https://forum.colemak.com/viewtopic.php?id=1561">his topic</a>)</p>
+
+                <p>I'm really hoping that <a href="https://www.kickstarter.com/projects/paulstoffregen/teensy-35-and-36/description"><b>the upcoming Teensy 3.5/3.6</b></a> can be used for TMK! These devices are fast, have a lot more Flash/RAM (512/192 kB for 3.5; 1024/256 kB for 3.6) and most importantly, come with a second USB intended for Host mode so it won't need a separate USB host! That may make it a cheap and powerful option; someone will hopefully test this soon.</p>
+
+                <p>The safest and easiest option may be to order the brilliant <a href="https://geekhack.org/index.php?topic=69169.0"><b>USB to USB Converter from GeekHack user Hasu</b></a>, who has also developed the TMK software for converting keyboards to more awesome keyboards. I've got a few of these beauties, and my code, instructions and .hex definition files below are based on Hasu's device although they may be used for other devices too (may need some geeky tweaking).</p>
+
+                    <img src="content/images/USB2USB_Hasu-NJBair_GeekHack-topic74708_GadOE.jpg" alt="USB2USB Converter">
+                    <p class="italic"><a href="https://geekhack.org/index.php?topic=69169.0">Hasu's USB to USB Converter for TMK Key mapping</a> (original photo by <a href="https://geekhack.org/index.php?topic=74708.0">Nick J Bair</a>)</p>
+
+                    <img src="content/images/PS2USB_Hasu_GadOE.png" alt="USB2USB GadOE">
+                    <p class="italic">Oh look, Hasu has other converters and keyboard controllers too! Here's a <b>PS/2-to-USB</b> converter making my friend's vintage IBM Model M board awesome.</p>
+
+
+                <p>This topic won't show you any more about how to get your own QUICKIE USB-2-USB device. From my own experience I can heartily recommend Hasu's products, but find out what works for you. Best of luck, either way!</p>
+
+
+                <h2>LINKS</h2>
+
+                <p><em class="underlined">@GeekHack:</em>
+                <a href="https://geekhack.org/index.php?topic=69169"><b>Hasu's USB to USB converter topic</b></a> and <a href="https://geekhack.org/index.php?topic=72052.0">Hasu's converter buying topic</a>
+                <a href="https://geekhack.org/index.php?topic=41989.0">Hasu's TMK topic</a> (code basis for keyboard controllers/converters in general)
+                <a href="https://geekhack.org/index.php?topic=74708.0">NJBair's review of Hasu's USB-2-USB converter</a>, with <a href="https://geekhack.org/index.php?topic=74708.msg2149453#msg2149453">a nice FLIP guide</a>
+                <a href="https://geekhack.org/index.php?topic=80421">YangDigi's Pro Micro DIY converter topic</a> (some Teensy info too)</p>
+
+                <p><em class="underlined">@GitHub:</em>
+                <a href="https://github.com/tmk/tmk_keyboard"><b>Hasu's GitHub TMK repository</b></a>, and <a href="https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb/">its USB-2-USB section</a>
+                <a href="https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build">Hasu's Build FAQ</a>, <a href="https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/build.md">Build README</a> and <a href="https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md">keymap README</a>
+                <a href="https://github.com/njbair/keyboard_firmware#building--flashing-the-firmware">NJBair's repository</a> including some build/flash info
+                <a href="https://github.com/tmk/tmk_keyboard/wiki">Hasu's TMK Keyboard Wiki</a> with much useful info</p>
+
+                <p><em class="underlined">@TMK_site:</em>
+                <a href="http://www.tmk-kbd.com/tmk_keyboard/editor/usb_usb/index.html"><b>Hasu's Online TMK Keymap Editor for the USB to USB converter</b></a></p>
+
+                <p><em class="underlined">@Colemak:</em>
+                <a href="https://forum.colemak.com/topic/1561-arduinobased-hardware-keyboard-remapper/">Darkness' Arduino-based hardware keyboard remapper topic</a></p>
+
+                <p><em class="underlined">@QMK:</em>
+                <a href="http://qmk.fm/"><b>QMK (Quantum Mechanical Keyboard)</b></a> is a TMK-fork-gone-solo that deserves honorable mention
+                <a href="https://github.com/jackhumbert/qmk_firmware">The GitHub QMK repository</a>  (I don't use QMK myself, but it has a lot of documentation and more)</p>
+
+
+                <h2>DONE:</h2>
+                <ul class="disc">
+                    <li>Now witness the typing power of this fully operational USB-2-USB device! Happy hacking, brave and adventurous souls! ;-)</li>
+                    <li>2018-01: Added a user function that allows for input of Unicode glyphs not in the layout using the AltGr(RAlt) modifier.</li>
+                    <li>2018-02: More advanced modifiers for Extend2+. Hold down, e.g., RShift then Caps (then release RShift) for Extend2. Can't use Alt keys (yet) on Win.</li>
+                </ul>
+
+
+                <h2>TODO:</h2>
+                <ul class="disc">
+                    <li>Extend modifiers don't always stack? Caps+S+T+N didn't produce Ctrl+Shift+Left but ST keystrokes for me once; others have had no such problems.</li>
+                    <li>Extend3–4? Would it be possible to implement some shortstrings at least? Memory limitations may preclude this for now.</li>
+                    <li>Use the ScrollLock LED to show whether the second layout is active?</li>
+                </ul>
+
+
+                <img src="content/images/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png" alt="Unicomp DreymaR">
+                <p class="italic">My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American/Ninja" caps, splendidly sporting the Colemak-CAW layout.</p>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Key Mappings</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="menuIcon">
+            <div id="hamburger"></div>
+        </div>
+        <div id="platforms">
+            <div id="platformIcons">
+                    <a id="linux" href="#"></a>
+                    <a id="tmk" href="#"></a>
+                    <a id="mac" href="#"></a>
+                    <a id="win" href="#"></a>
+            </div>
+        </div>
+        <div id="menuContainer">
+            <div id="menu">
+                <div id="menuHeader">
+                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                </div>
+                <ul>
+                    <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
+                        <ul>
+                            <li><a href="colemaked.html">Colemak[eD]</a></li>
+                            <li><a href="extendlayers.html">Extend Layers</a></li>
+                            <li><a href="deadkeys.html">Dead Keys</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ergomods.html">ERGONOMY</a></li>
+                    <li><a href="otherlayouts.html">VARIANTS</a></li>
+                    <li><a href="typingtricks.html">TRICKERY</a></li>
+                    <li><a href="guestlinks.html">LINKS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a id="navLogo" href="index.html"><img src="content/images/logo-nav.png" alt="Logo"></a>
+    </nav>
+
+    <main>
+        <h1>Character/Key Mapping Layers</h1>
+
+        <h2>COLEMAK[eD] - EDITION DREYMAR</h2>
+        <p>See <a href="colemaked.html">the Colemak[eD] page</a> if you're interested.</p>
+
+        <p>This is my own preferred AltGr mapping layers (modifier lv3-4 in Linux terminology) for the Colemak layout. I've tried to add much functionality while keeping it intuitive. In particular, I want to be able to write different scripts and tech/maths symbols. Since the start, there's been some minor tweaks based on my experience and forum feedback, but it's been stable for a long time now.</p>
+
+        <p>See my various layout files for comments and explanations, in addition to these design goals:</p>
+        <ul class="dashed">
+            <li>Keeping level 1-2 of Colemak intact! This is what I think of as the Colemak layout per se.</li>
+            <li>Dead keys easily accessible as unshifted AltGr+symbol keys; common ones in good positions.</li>
+            <li>Added letters/quotes allowing many of the major latin scripts to be written correctly.</li>
+            <li>Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.</li>
+            <li>The positions of added letters and symbols should as far as possible be easy to remember!</li>
+        </ul>
+
+        <img src="content/images/Cmk-ANSI-eD_96d-FShui.png" alt="Colemak ANSI eD">
+        <p class="italic">The <strong>Colemak [edition DreymaR]</strong> layout, using different lv3-4 mappings from Shai's default Colemak. <br>
+        Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.</p>
+
+
+        <img src="content/images/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
+        <p class="italic"><strong>Colemak-CAW[eD]</strong>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see the next post).</p>
+
+        <div class="platform-specific">
+            <p>A USB-2-USB device remaps only key strokes, not character input events. So key mods like layout and ergo remappings are possible, but not mods that send glyphs. Your dead keys and AltGr mappings will work as they do without the device, and you may only move their keys around as they are.</p>
+
+            <p>Sorry, but AltGr/DeadKey glyph mappings such as the powerful Colemak[eD] below are for the most part up to the active layout on the machine you're typing to.</p>
+
+            <p>In all honesty though, <a href="https://github.com/tmk/tmk_keyboard/wiki/FAQ-Keymap">it is possible to send Unicode</a> with methods such as Windows' Alt+NumPad(####) defined for instance as TMK macros. But since it's platform dependent, memory consuming and clunky, I couldn't do this to create the full Colemak[eD]. Dead key tables and functions would've been even more byte-gobbling, so no.</p>
+
+            <p>However, I have made a user function that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts (on the bracket and ISO LSGT keys) as in Colemak[eD], and it works fine for me. I even added the bullet and dagger glyphs (on the ISO \| key) for good measure. You can find various lists of alt codes to use, such as this one. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.</p>
+        </div>
+
+        <img src="content/images/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ANSI eD">
+        <p class="italic">Fig.: Colemak-CAW[eD], showing an ISO board with the Curl(DH)Angle and Wide ergonomic mods (see below).</p>
+
+        <h2>EXTEND LAYERS AND THE CAPS SWITCH MODIFIER</h2>
+        <p>This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.</p>
+
+        <p>For more info and tricks, see <a href="extendlayers.html">my Extend Extra Extreme page</a>.</p>
+
+        <img src="content/images/Extend-ISO-NoMod-Win_96d.png" alt="">
+        <p class="italic">My Extend Nav/Edit mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.</p>
+
+        <img src="content/images/Extend-ISO-NoMod-Ext2_96d.png" alt="">
+        <p class="italic">My Extend NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.</p>
+
+        A more explicit chart from my XKB Extend source file:
+
+        <div class="spoiler">
+            <p><span>Spoiler:</span></p>
+            <div class="spoilerBody">
+                <img class="left" src="content/images/Extend-ISO-NoMod-Linux_96d-Labels.png" alt="">
+                <p class="italic left">My Extend mappings (lvl1 only). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
+                <pre><code>
+These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Esc + |F1 &lt;> |F2 &lt;&lt; |F3 >> |F4 &lt;> |F5 &lt;> |F6 &lt;&lt; |F7 >> |F8 &lt;> |F9 &lt;> |F10&lt;> |F11&lt;> |F12&lt;> |
+|      | Pause| Rew  | Fwd  | Eject| Refr | Bri- | Bri+ | Sleep| WWW  | Mail | App1 | App2 |
+| Caps | Play | Prev | Next | Stop | Mute | Vol- | Vol+ | Media| Home | Srch | File | Calc |
++======+======+======+======+======+======+======+======+======+======+======+======+======+
+|` €€€ |1     |2     |3     |4     |5     |6     |7     |8     |9     |0     |-     |=     |
+| Cust | F1   | F2   | F3   | F4   | F5   | F6   | F7   | F8   | F9   | F10  | F11  | F12  |
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Tab   |Q €€€ |W *** |F &lt;&lt;> |P &lt;>> |G *** |J ### |L ### |U ### |Y ### |; €€€ |[ €€€ |] €€€ |
+|      | Esc  | *WhUp| BrBck| BrFwd| *MUp | PgUp | Home | Up   | End  | Del  | Esc  | Ins  |
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Caps+ |A +++ |R *** |S +++ |T +++ |D *** |H ### |N ### |E ### |I ### |O €€€ |' €€€ |\ >&lt;> |
+| ++++ | Alt  | *WhDn| Shift| Ctrl | *MDn | PgDn | Left | Down | Right| Back | Menu | BrFav|
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|_ *** |Z €€€ |X === |C === |V === |B *** |K *** |M *** |, *** |. *** |/ €€€ |Spc € |Entr€ |
+| *MOn | Undo | Cut  | Copy | Paste| *Bt1 | *Bt2 | *Bt3 | *MLe | *MRi | Multi| Enter| PrtSc|
++------+------+------+------+------+------+------+------+------+------+------+-------------+
+Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;> MultiMedia; € Various commands.
+                </code></pre>
+            </div>
+        </div>
+
+        <p>The XKB implementation is almost the same as the Windows/PKL one. You get shifted multimedia keys which Win/PKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are poorly implemented. Instead, there's a MouseKeys On/Off key on &lt;LSGT> and a Compose/Multi key on Slash. The Tilde key is customizeable – it could be anything you deem useful.</p>
+
+        <p>Holding down AltGr with the Extend modifier you get a NumPad layer (lv7-8) laid out pretty much like a standard one but with the top row moved around to fit existing keys:</p>
+
+        <pre><code>
+// KeyPad overlay with nav block to the left (lv7-8):
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |` €€€ |1     |2     |3     |4 £   |5 €   |6     |7     |8  ⇑  |9     |0     |-     |=     |
+// | Cust |  !   |  @   |  #   |  $   |  %   |  ^   | KP_7 | KP_8 | KP_9 | KP_* | KP_- | KP_= |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Tab   |Q ### |W ### |F ### |P €€€ |G €€€ |J ### |L     |U     |Y     |;     |[ {   |] }   |
+// |      | Home | Up   | End  | Del  | Esc  | PgUp | KP_4 | KP_5 | KP_6 | KP_+ |  (   |  )   |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Caps+ |A ### |R ### |S ### |T €€€ |D     |H ### |N     |E  ⇓  |I     |O     |' "   |\ |   |
+// | ++++ | Left | Down | Right| Back | K_Lck| PgDn | KP_1 | KP_2 | KP_3 | K_Ent|  '   |  :   |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |_ *** |Z €€€ |X === |C === |V === |B *** |K     |M     |,  ⇕  |.     |/     |Spc   |Entr  |
+// | *MOn | Undo | Cut  | Copy | Paste| *Bt1 |  ,   | KP_0 | KP_0 | KP_. | KP_/ | Spc  | K_Ent|
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+        </code></pre>
+
+        <p>Having to hold down both CapsLock and AltGr while entering numbers is hardly ideal. For PKL/Windows, you only have to hold the Extend modifier after selecting which Extend layer to activate. On Linux, I might construct a level7 modifier by combining level3 with level5 but that's still Work-In-Progress.</p>
+
+        <p>There may be a need for navigating while entering numbers, but on the other hand KeyPad keys rarely use modifiers. So I moved the nav block from its UNEI arrow cross to the WARS cross familiar to gamers. Number row keys 1-6 are reverted to their lv2-3 symbols since these may be needed for numeric input, as are some other keys; the bracket keys cater for the parentheses in this layer which feels logical to me.</p>
+
+        <p>On Linux/XKB, if you're cheeky and dexterous enough to press CapsLock+AltGr+Shift at the same time you're treated to a set of double-arrow symbols of the kind used in mathematical proofs and more (⇖⇑⇗ ⇐⇔⇒ ⇙⇓⇘), laid out like in one of the standard xkb keypad layouts. I thought they might be somewhat handy, but the heavy chording required suits the fact that few need them very often! The single arrows didn't fit in, but at least the four orthogonal ones (←↑↓→) are already there in the lv3-4 Colemak[eD] mappings.</p>
+
+        <p><strong>Tips:</strong></p>
+        <ul>
+        <li>The backtick/tilde key to the left of 1 can be whatever you want to: An extra Del, Ctrl+A (Select All), Ctrl+W (Close), Ctrl+T (New Tab), Win+T (Taskbar)...</li>
+        <li>You can do some really fancy stuff with this! Ext-A/T+4(=Alt/Ctrl+F4) closes programs/tabs, Ext-T+J/H(=Ctrl+PgUp/PgDn) switches tabs...</li>
+        <li>Or try this in a browser: Ext-6 for the address bar, then type an URL, then Ext-A+Spc to open it in a new tab (saves Ctrl+T for a new tab)!</li>
+        <li>Most of these tricks work in many apps under both Windows and Linux these days. Some application specific ones are marked as such.</li>
+        <li>My Extend layer doesn't support letters nor the Win/GUI key, which limits the shortcut repertoire somewhat. But even so there's really a lot you can do!</li>
+        </ul>
+        <p>(FYI: There are good reasons for the WheelUp/Dn placements and the lack of a Win key, having to do with keyboard implementations.)</p>
+
+        <div class="platform-specific">
+            <p>The USB-2-USB implementation is almost the same as the Linux/XKB and Windows/PKL ones. Some advanced media key codes such as Brightness controls are missing for now (as their key codes aren't in TMK). How some of the advanced keys like MouseWheel Left/Right are interpreted is still up to the OS.</p>
+
+            <p>Here's the Extend1 and Extend2 layer charts from my TMK source file:</p>
+
+            
+            <div class="spoiler">
+                <p><span>Spoiler:</span></p>
+                <div class="spoilerBody">
+                    <pre><code>
+DreymaR's Extend1 layer:
+ * ,----.    ,-------------------. ,-------------------. ,-------------------.
+ * |Caps|    |MPly|MPrv|MNxt|MStp| |Mute|VolD|VolU|MSel| |WHom|WSch|MyCm|Calc|
+ * `----'    `-------------------' `-------------------' `-------------------'
+ * ,-------------------------------------------------------------------------.
+ * | ?? | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10| F11| F12|  Pause |
+ * |-------------------------------------------------------------------------|
+ * |      |Esc |Wh_U|WBak|WFwd|Ms_U|PgUp|Home| Up |End |Del |Esc |Ins |  App |
+ * |-------------------------------------------------------------------------|
+ * |*Ext1* |Alt |Wh_D|Shft|Ctrl|Ms_D|PgDn|Left|Down|Rght|BSpc|App |WFav|PScr |
+ * |-------------------------------------------------------------------------|
+ * |     |Wh_L| ^Z | ^X | ^C | ^V |Btn1|Btn2|Btn3|Ms_L|Ms_R|Wh_R|            |
+ * |-------------------------------------------------------------------------|
+ * |      |     |Ext1 |           Return            |     |     |     |      |
+ * `-------------------------------------------------------------------------' 
+                    </code></pre><br>
+                    <pre><code>
+DreymaR's Extend2 layer:
+ * ,----.    ,-------------------. ,-------------------. ,-------------------.
+ * |    |    |MPau|MRwd|MFFd|Ejct| |WRef|BriD|BriU|Slep| |www |Mail|App3|App4|
+ * `----'    `-------------------' `-------------------' `-------------------'
+ * ,-------------------------------------------------------------------------.
+ * | ?? | !  | @  | #  | $  | %  | ^  | P7 | P8 | P9 | P* | P- | =  |        |
+ * |-------------------------------------------------------------------------|
+ * |      |Home| Up |End |Del |Esc |PgUp| P4 | P5 | P6 | P+ | (  | )  |      |
+ * |-------------------------------------------------------------------------|
+ * |*Ext2* |Left|Down|Rght|BSpc|NLck|PgDn| P1 | P2 | P3 |PEnt| '  | ,  |     |
+ * |-------------------------------------------------------------------------|
+ * |     |    | ^Z | ^X | ^C | ^V |Btn1| :  | P0 | P0 | P. | P/ |            |
+ * |-------------------------------------------------------------------------|
+ * |      |     |     |                             |Ext2 |     |     |      |
+ * `-------------------------------------------------------------------------' 
+                    </code></pre>    
+                </div>
+            </div>
+
+            <p>To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the <a href="https://forum.colemak.com/post/18410/#p18410"><b>Configuration</b></a> post below.</p>
+
+            <p>There's a couple of EXT#BIT constants that determine how Extend2 is selected: If EXT2BIT is defined as MOD_BIT(KC_RSFT) for instance, holding Right Shift down while pressing the Extend key will activate Extend2. Holding down Extend alone will maintain that layer. The EXT3BIT and the combination of the two could select Extend3 and Extend4, but I haven't yet implemented these layers as I haven't yet decided on what to put in them. You could add your own if you want to – ask me how.</p>
+
+            <p>For the NumPad layer, remember that the NumLock state influences what you get. There's a NumLock key easily accessible in the layer.</p>
+
+            <p><b>NOTE: Superstacking Extend modifiers</b> doesn't always work for me. Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Other users didn't have this problem...?</p>
+        </div>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

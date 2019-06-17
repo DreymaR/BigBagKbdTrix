@@ -63,7 +63,6 @@ function togglePlatform(platform) {
     }
     else {
         if (currentPlatform) {
-            console.log(Object.keys(platforms))
             Object.keys(platforms).forEach(function (platform) {
                 console.log();
                 if (platforms[platform].classList.contains('isActive')) {
@@ -71,7 +70,7 @@ function togglePlatform(platform) {
                 }
             });
         }
-        
+        document.getElementById('platforms').removeAttribute('class');        
         document.getElementById('platforms').classList.add(platform);
         sessionStorage.setItem('platform', platform);
         platformWisePages.forEach(function (platformWisePage) {
