@@ -10,13 +10,12 @@ let platformsEl = document.getElementById('platformIcons').children;
 let platforms = {
     'linux': platformsEl[0],
     'tmk': platformsEl[1],
-    'mac': platformsEl[2],
     'win': platformsEl[3]
 }
 
 let platformWisePages = ['ergomods', 'keymappings', 'otherlayouts'];
 
-Object.keys(platforms).forEach(platform => function () {
+Object.keys(platforms).forEach(platform => function (){
     platforms[platform].addEventListener('click',
         function () {
             togglePlatform(platform);
@@ -32,7 +31,10 @@ document.onload = function () {
         if (!(page.includes(platform))) {
             platformWisePages.forEach(function (platformWisePage) {
                 if (getCurrentPageName().includes(platformWisePage)) {
-                    window.location.href = platformWisePage + '-' + platform + '.html';
+                    let destination = platformWisePage + '-' + platform + '.html';
+                    if(destination!='ergomods-win.html'){
+                        window.location.href = destination;
+                    }
                 }
             });
         }
@@ -57,7 +59,10 @@ function togglePlatform(platform) {
         sessionStorage.removeItem('platform');
         platforms[platform].classList.remove('isActive');
         if (getCurrentPageName().includes(platform)) {
-            window.location.href = page.substring(0, page.indexOf('-')) + '.html';
+            destination = page.substring(0, page.indexOf('-')) + '.html';
+            if(destination!='ergomods-win.html'){
+                window.location.href = destination;
+            }
         }
         document.getElementById('platforms').removeAttribute('class');
     }
@@ -75,7 +80,10 @@ function togglePlatform(platform) {
         sessionStorage.setItem('platform', platform);
         platformWisePages.forEach(function (platformWisePage) {
             if (getCurrentPageName().includes(platformWisePage)) {
-                window.location.href = platformWisePage + '-' + platform + '.html';
+                let destination = platformWisePage + '-' + platform + '.html';
+                if(destination!='ergomods-win.html'){
+                    window.location.href = platformWisePage + '-' + platform + '.html';
+                }
             }
         });
         platforms[platform].classList.add('isActive');

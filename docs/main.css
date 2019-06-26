@@ -21,8 +21,8 @@
 
 body {
     font-family: Raleway;
-    font-size: 16px;
-    background-color: #F7F7F7;
+    font-size: 15px;
+    background-color: #ECECEC;
     color: #4E4E4E;
 }
 
@@ -104,7 +104,18 @@ a {
     position: absolute;
     top: -19px;
     left: 10px;
-    background: #ECECEC url(content/images/linux.svg) no-repeat center / 66%;
+}
+
+.platform-specific.linux:before {
+    background: #F7F7F7 url(content/images/linux_purple2.svg) no-repeat center / 66%;
+}
+
+.platform-specific.win:before {
+    background: #F7F7F7 url(content/images/win_purple.svg) no-repeat center / 86%;
+}
+
+.platform-specific.tmk:before {
+    background: #F7F7F7 url(content/images/tmk_purple.svg) no-repeat center / 83%;
 }
 
 #platforms:after, #tutorialPlatform {
@@ -119,17 +130,17 @@ a {
 }
 
 #platforms.linux:after {
-    background-image: url("content/images/linux2.svg");
+    background-image: url("content/images/linux_white.svg");
     width: 35px;
 }
 
 #platforms.win:after {
-    background-image: url("content/images/win.svg");
+    background-image: url("content/images/win_white.svg");
     width: 35px;
 }
 
 #platforms.tmk:after {
-    background-image: url("content/images/tmk.svg");
+    background-image: url("content/images/tmk_white.svg");
     width: 35px;
 }
 
@@ -173,38 +184,40 @@ a {
     display: inline-block;
     width: 48px;
     height: 48px;
+    border-radius: 50%;
+    background: #fff;
 }
 
 #platformIcons #linux {
-    background-image: url("content/images/platforms_linux.svg");
+    background-image: url("content/images/linux_gray.svg");
 }
 
 #platformIcons #tmk {
-    background-image: url("content/images/platforms_tmk.svg");
+    background-image: url("content/images/tmk_gray.svg");
 }
 
 #platformIcons #mac {
-    background-image: url("content/images/platforms_mac.svg");
+    background-image: url("content/images/mac_gray.svg");
 }
 
 #platformIcons #win {
-    background-image: url("content/images/platforms_win.svg");
+    background-image: url("content/images/win_gray.svg");
 }
 
 #platformIcons #linux.isActive {
-    background-image: url("content/images/platforms_linux_active.svg");
+    background-image: url("content/images/linux_purple.svg");
 }
 
 #platformIcons #tmk.isActive {
-    background-image: url("content/images/platforms_tmk_active.svg");
+    background-image: url("content/images/tmk_purple.svg");
 }
 
 #platformIcons #mac.isActive {
-    background-image: url("content/images/platforms_mac_active.svg");
+    background-image: url("content/images/mac_purple.svg");
 }
 
 #platformIcons #win.isActive {
-    background-image: url("content/images/platforms_win_active.svg");
+    background-image: url("content/images/win_purple.svg");
 }
 
 main, #navbar {
@@ -384,7 +397,7 @@ main {
     margin: 0 auto;
     padding-top: 90px;
     padding-bottom: 20px;
-    background-color: #ECECEC;
+    background-color: #F7F7F7;
 }
 
 main img {

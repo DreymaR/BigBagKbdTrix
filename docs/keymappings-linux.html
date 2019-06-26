@@ -67,7 +67,7 @@
         <img src="content/images/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
         <p class="italic"><strong>Colemak-CAW[eD]</strong>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see the next post).</p>
         
-        <div class="platform-specific">
+        <div class="platform-specific linux">
             <p class="italic"><b>HowTo:</b></p>
             <ul class="disc">
                 <li>You can select the various layouts for different locales (see below) that all have my Colemak[eD] mappings, in the standard layout chooser</li>
@@ -117,7 +117,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;> MultiMedia; € Vari
         <p>The XKB implementation is almost the same as the Windows/PKL one. You get shifted multimedia keys which Win/PKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are poorly implemented. Instead, there's a MouseKeys On/Off key on &lt;LSGT> and a Compose/Multi key on Slash. The Tilde key is customizeable – it could be anything you deem useful.</p>
         <p class="italic">A symbolic chart of my <strong>Extend</strong> mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
 
-        <div class="platform-specific">
+        <div class="platform-specific linux">
             <p><b>MouseKeys</b>: Hitting Caps+&lt;LSGT&gt; (or Shift+NumLock if that's enabled) enables/disables Pointer Mousing; when that's on you may move the mouse pointer with the GD&lt;&gt; keys and use BKM for buttons (or you can use the KeyPad keys as before). My mapped keys go a few pixels at a time so when acceleration is on you may travel quickly around the screen this way. Wheel mousing works but doesn't repeat so you'll have to press many times to scroll a long way.
 
             <p><b>Multimedia keys</b>: These are mapped to the F keys (++) as intended but XKB/Linux doesn't necessarily link any actions to their key presses although these days most of the usual multimedia keys are configured as expected; this is done in the Shortcuts settings which can be accessed in Unity/Gnome via the Keyboard settings (or dconf-editor/gsettings to org.gnome.desktop.wm.keybindings for the Window Manager ones and ??? for other categories). You could also use xbindkeys, AutoKey or others to bind whatever you want to these keys. Using the Settings > Keyboard panel in Unity/Gnome (gnome-control-center keyboard) doesn't work as expected with the Extend mapped keys, since the hotkey will register as a 'Level 5 shift' keypress when you press your Extend key! The trick is to press the modifier(s) before clicking on the shortcut you want to set! Then when 'New accelerator' is showing you press down the final key. I had to do that for the Calculator and Terminal keys (Lv5+&lt;FK12&gt;) as those shortcuts were disabled by default in my Ubuntu install.</p>
