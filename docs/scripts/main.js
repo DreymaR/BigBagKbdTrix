@@ -15,40 +15,48 @@ let platforms = {
 
 let platformWisePages = ['ergomods', 'keymappings', 'otherlayouts'];
 
-Object.keys(platforms).forEach(platform => function (){
-    platforms[platform].addEventListener('click',
-        function () {
-            togglePlatform(platform);
-        }
-    );
-}());
-
 document.onload = function () {
     let platform = sessionStorage.getItem('platform');
     if (platform) {
         platforms[platform].classList.add('isActive');
         page = getCurrentPageName();
         if (!(page.includes(platform))) {
-            platformWisePages.forEach(function (platformWisePage) {
-                if (getCurrentPageName().includes(platformWisePage)) {
-                    let destination = platformWisePage + '-' + platform + '.html';
-                    if(destination!='ergomods-win.html'){
-                        window.location.href = destination;
-                    }
-                }
-            });
+            checkForPlatformPage(platform);
         }
         document.getElementById('platforms').classList.add(platform);
     }
     else {
         document.getElementById('platforms').removeAttribute('class');
     }
+    
+
+    Object.keys(platforms).forEach(platform => function (){
+        platforms[platform].addEventListener('click',
+            function () {
+                togglePlatform(platform);
+            }
+        );
+    }());
 }();
 
 function getCurrentPageName() {
     let path = window.location.pathname;
     let page = path.split("/").pop();
     return page;
+}
+
+function redirect(destination) {
+    if(destination!='ergomods-win.html'){
+        window.location.href = destination;
+    }
+}
+
+function checkForPlatformPage(platform){
+    platformWisePages.forEach(function (platformWisePage) {
+        if (getCurrentPageName().includes(platformWisePage)) {
+            redirect(platformWisePage + '-' + platform + '.html')
+        }
+    });
 }
 
 function togglePlatform(platform) {
@@ -59,10 +67,7 @@ function togglePlatform(platform) {
         sessionStorage.removeItem('platform');
         platforms[platform].classList.remove('isActive');
         if (getCurrentPageName().includes(platform)) {
-            destination = page.substring(0, page.indexOf('-')) + '.html';
-            if(destination!='ergomods-win.html'){
-                window.location.href = destination;
-            }
+            redirect(page.substring(0, page.indexOf('-')) + '.html');
         }
         document.getElementById('platforms').removeAttribute('class');
     }
@@ -78,14 +83,7 @@ function togglePlatform(platform) {
         document.getElementById('platforms').removeAttribute('class');        
         document.getElementById('platforms').classList.add(platform);
         sessionStorage.setItem('platform', platform);
-        platformWisePages.forEach(function (platformWisePage) {
-            if (getCurrentPageName().includes(platformWisePage)) {
-                let destination = platformWisePage + '-' + platform + '.html';
-                if(destination!='ergomods-win.html'){
-                    window.location.href = platformWisePage + '-' + platform + '.html';
-                }
-            }
-        });
+        checkForPlatformPage(platform);
         platforms[platform].classList.add('isActive');
     }
 }
