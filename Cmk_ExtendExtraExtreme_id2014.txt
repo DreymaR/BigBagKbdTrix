@@ -5,8 +5,8 @@
 [h]EXTEND![/h]
 
 
-    [img]https://www.dropbox.com/s/gks7fzzhw6y7o3p/Extend-ANSI-NoWi-Linux_90d.png?raw=1[/img]
-    [i]Symbolic chart of my Extend mappings. Greens, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
+    [img]https://www.dropbox.com/s/111rz19f4va8jc2/Extend-ANSI-NoMod-Linux_96d.png?raw=1[/img]
+    [i]Extend! Green, navigation; blue, mousing; orange, multimedia; gray, system/misc. For more info, read on![/i]
 
 
 [h](Or: Extend is really really neat – and I'll tell you why now.)[/h]
@@ -14,14 +14,13 @@
 
 [img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... Why?[/h]
 [quote=stevep99]Living without Extend at this point would seem like some kind of perverse hell imposed as punishment for terrible crimes committed in numerous past lives.[/quote]
-As described in [b]my Big Bag topics (for [url=https://forum.colemak.com/viewtopic.php?id=1438]Linux/XKB[/url], [url=https://forum.colemak.com/viewtopic.php?id=1467]Windows/PKL[/url] and [url=https://forum.colemak.com/viewtopic.php?id=2158]USB-2-USB devices[/url])[/b], the Extend mappings are wonderful and in my opinion at least as useful as Colemak itself. Also, they're much [b]easier to start using[/b] as you don't have to learn much to get started and can [b]grow gradually into full mastery[/b] without any loss of efficiency – even ingrained QWERTY die-hards could get used to a little Extend on the side unless they're completely backwards. You start up using the [b]arrow keys in the home position[/b] and/or [b]multimedia keys[/b], and before you know it you'll be jumping around [b]selecting whole words[/b] at a time and doing more and more advanced stuff.
+As described in [b]my [url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag[/url] topics (for [url=https://forum.colemak.com/viewtopic.php?id=1438]Linux/XKB[/url], [url=https://forum.colemak.com/viewtopic.php?id=1467]Windows/PKL[/url] and [url=https://forum.colemak.com/viewtopic.php?id=2158]USB-2-USB/TMK devices[/url])[/b], the Extend mappings are wonderful and in my opinion at least as useful as Colemak itself. Also, they're much [b]easier to start using[/b] as you don't have to learn much to get started and can [b]grow gradually into full mastery[/b] without any loss of efficiency – even ingrained QWERTY die-hards could get used to a little Extend on the side unless they're completely backwards. You start up using the [b]arrow keys in the home position[/b] and/or [b]multimedia keys[/b], and before you know it you'll be jumping around [b]selecting whole words[/b] at a time and doing more and more advanced stuff.
 
-Another advantage of using Extend is that all these [b]shortcut tricks are available on other computers[/b] too, albeit in more awkward geometries as you have to reach for arrow and PgUp/Dn etc keys without the power of Extend. Extend may not be as powerful as specialized navigation software like Vimperator/Pentadactyl or MouselessBrowsing, but it's [b]generic, usable in all apps/modes and always ready[/b], and it comes with my layout which I have to install anyway so for me it's "already there" without having to manage any extra software. I actually think that even Vim benefits from it (as arrows are OmniMode and no remappings are needed)!
+Another advantage of using Extend is that all these [b]shortcut tricks are available on other computers[/b] too, albeit in more awkward geometries as you have to reach for arrow and PgUp/Dn etc keys without the power of Extend. Extend may not be as powerful as specialized navigation software like Vimperator/Pentadactyl or MouselessBrowsing, but it's [b]generic, usable in all apps/modes and always ready[/b], and for me at least it comes with my layout which I have to install anyway so it's "already there" without having to manage any extra software. I actually think that even the mighty Vim benefits from it (as its keys are OmniMode and no remappings are needed)!
 
 I've been dabbling, learning and experimenting since 2008 to become an Adept of Extending, if I may call myself that. So I'd like to share some tricks here, to make everyone see how much better your computing experience can become with this mouse relieving wonder – along with some other shortcuts I've picked up along the way.
 
 Many of the tricks described here work under [b]both Windows and Linux[/b], as they often use the same shortcuts. Some are Windows specific though, and some are specific for some browsers (I mostly use Firefox but there are usually plugins and/or similar tricks available for other browsers). Macs often have different tacks and I haven't used one of those in a while so I can't really enlighten you much there – but the principles are the same so I guess Mac users could learn to love the Extend mode as much as I do. Up until recently there weren't any [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Extend mappings for Macs[/url][/b], but fortunately user mkborregaard has remedied that. Yay!
-
 
 
 [img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... What?[/h]
@@ -30,10 +29,28 @@ Oh, sorry. Maybe you don't know or remember exactly what Extend is? If you do, y
     [img]https://www.dropbox.com/s/6zp35xojn4ssh40/HHKBPro2_EliteKbds.png?raw=1[/img]
     [i]The legacy of Extend: The Happy Hacking Keyboard's Fn layer for navigation, media and F# keys.[/i]
 
-Instead of an extra hardware key, the Extend mappings can use any key really as that extra "Fn"/Shift-type modifier, but usually it's [b]CapsLock[/b] that gets the honor. I wanted a better layout than the one above, so I and others on the Colemak forums came up with one around 2008. It was later expanded and implemented in PortableKeyboardLayout (PKL) by its creator Farkas Máté who also to my knowledge came up with the name 'Extend' for this wonder. Interestingly, the same nav key setup is seen on the fancy [url=https://ultimatehackingkeyboard.com/]Ultimate Hacking Keyboard[/url]! I have no idea who came up with it first, but they have almost the right idea there. (Almost?!? Yes, unfortunately they put the dorky Insert key in a too good position, left lots of good keys open and didn't make accessible Alt/Shift/Ctrl keys – we'll get back to those in a minute.)
+Instead of an extra hardware "Fn" key, the Extend mappings can use any key really as their modifier, but usually it's [b]CapsLock[/b] that gets the honor although some prefer using a thumb. I wanted a far better layout than the one above, so I and others on the Colemak forums came up with one around 2008. It was later expanded and implemented in PortableKeyboardLayout (PKL) by its creator Farkas Máté who also to my knowledge came up with the name 'Extend' for this wonder. PKL has since gone and evolved into the EPiKaL [b]EPKL[/b]. My EPKL Extend layout is quite similar to the original one, but I've worked more on it adding mousing and multimedia and fiddling with some key placements.
 
-My Extend layout is similar to the default PKL one, but I've worked more on it adding mousing and multimedia and fiddling with some key placements. This, then, is the result:
+This, then, is the result. First, as a color-coded layout image with text labels:
+    [img]https://www.dropbox.com/s/e47zxgw949pvm21/Extend-ISO-NoMod-Win_96d-Labels.png?raw=1[/img]
+    [i]My Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
+    [i]World/ISO board. Windows/PKL mappings with MouseWheel R/L keys.[/i]
+    [i][FYI: The first image of this topic shows US/ANSI board with Linux mappings.][/i]
 
+Then the same image using symbols as found in EPKL help images etc. Shifted F# keys have extra multimedia functions:
+[spoiler]
+    [img]https://www.dropbox.com/s/t286h16ywl8y4ri/Extend-ISO-NoMod-Win_96d.png?raw=1[/img]
+[/spoiler]
+
+If you wish to print out a labeled Extend reference image you can use an image editor on this high-res one:
+[spoiler]
+    [img]https://www.dropbox.com/s/czhs7ujxz2o6sr0/Extend-DIY_192d-Labels.png?raw=1[/img]
+    [i]My Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
+    [i]DIY 1624×728px version. Piece together what you want using an image editor.[/i]
+[/spoiler]
+
+Also, here's the main Extend layer shown as a text table from the symbols file for Linux/XKB:
+[spoiler]
 [code]
 +------+------+------+------+------+------+------+------+------+------+------+------+------+
 |Esc + |F1 <> |F2 << |F3 >> |F4 <> |F5 <> |F6 << |F7 >> |F8 <> |F9 <> |F10<> |F11<> |F12<> |
@@ -55,23 +72,33 @@ My Extend layout is similar to the default PKL one, but I've worked more on it a
   Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; € Various commands.
 [/code]
     [i]My Extend mappings for XKB/Linux; the Windows/PKL ones are nearly identical save for the VK_102 and Slash keys.[/i]
-
-
-    [img]https://www.dropbox.com/s/sxcsk0on5jbp1ac/Extend-ISO-NoWi-Win_90d.png?raw=1[/img]
-    [i]Symbolic chart of my Extend mappings. Greens, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
-    [i]World/ISO board showing Windows mappings with MouseWheel R/L keys. [1st image: US/ANSI board with Linux mappings (missing the <LSGT> MouseKeysOn key).][/i]
+[/spoiler]
 
 Note the [b]home position modifier keys[/b]: These make it easy to hit powerful shortcut combinations! Alt+F4 is now accessible from the home position as Ext-A+4. Select Previous Word (Ctrl+Shift+Left) becomes Ext-S+T+N, etc etc. Letter shortcuts like Ctrl+Q don't work but some have alternatives like Alt+F4 that do. Also, there's no Win (GUI) key because it proved hard to implement and many Win-key shortcuts use letters. But the point of Extend isn't to replace those shortcuts – it's to bring the arrows and other out-of-the-way keys close to your home position to make you faster and stronger!
 
-Some useful shortcuts like Ctrl+A (Select All), Ctrl+S (Save), Ctrl+W (Close – Ctrl+F4 unfortunately doesn't work everywhere) and Ctrl+(Shift+)T (Re-/Open Tab) are quite easy to reach with one hand, even though it means twisting your wrist to reach the Ctrl key. Unless you use them a lot, they don't need to be on Extend mappings. If you feel that you need any of these in Extend mode, you could always use the Tilde key and/or one of the Escapes (or a right hand key like Ins, Menu, Favorites, Break, Mouse buttons, the Slash key – anything you feel you don't need of course).
+Some useful shortcuts like Ctrl+A (Select All), Ctrl+S (Save), Ctrl+W (Close – Ctrl+F4 unfortunately doesn't work everywhere) and Ctrl+(Shift+)T (Re-/Open Tab) are quite easy to reach with one hand, even though it means twisting your wrist to reach the Ctrl key. Unless you use them a lot, they don't need to be on Extend mappings. If you feel that you do need any of these in Extend, you could always map them to the Tilde key and/or one of the Escapes (or a right hand key like Ins, Menu, Favorites, Break, Mouse buttons, the Slash key – anything you feel you don't need of course).
 
-The Extend mappings are mostly positional so they'll [b]work with any layout[/b] – even if some keys like A and ZXCVB might be easier to remember using Colemak or QWERTY. If you use Angle and/or Wide ergo mods the Extend mappings should move accordingly to match the transposed home positions of the ZXVCB and right-hand keys. Other than that, I wouldn't move around the Extend mappings to suit different underlying layouts as they mostly go by key position.
+The Extend mappings are mostly positional so they'll [b]work with any layout[/b] – even if some keys like A and ZXCVB might be easier to remember using Colemak or QWERTY. If you use Curl(DH), Angle and/or Wide ergo mods the Extend mappings should move accordingly to match the transposed home positions of the ZXVCB and right-hand keys. Other than that, I wouldn't move around the Extend mappings to suit different underlying layouts as they mostly go by key position rather than letter.
 
 
-    [img]https://www.dropbox.com/s/5su4d8cat83z886/Extend-ISO-AWi-Linux_90d.png?raw=1[/img]
-    [i]Symbolic chart of my Extend mappings (Linux version). Greens, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
-    [i]World/ISO board with AngleWide ergo mod (shifted ZXCV_ and right-hand keys).[/i]
+    [img]https://www.dropbox.com/s/5su4d8cat83z886/Extend-ISO-AWide-Linux_96d.png?dl=1[/img]
+    [i]My Extend mappings, Linux version. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
+    [i]World/ISO board with (Curl)AngleWide ergo mod (CAW – shifted ZXCV_ and right-hand keys).[/i]
 
+
+On an interesting side note, the [b][url=https://ultimatehackingkeyboard.com/]Ultimate Hacking Keyboard (UHK)[/url][/b] has a "Mod" layer that seems to have borrowed quite a few mappings from my page, including the nav block that I designed in 2007/2008. Can it be coincidential? They have almost the right idea but it's still not nearly as good as a proper Extend: They missed the oh so important home row modifiers – we'll get back to those in a minute! – put the fairly useless Insert key where the very useful Back key should've been and left several good positions open. Nice try but no Extend. ^_^
+
+Here's the Mod layer of the UHK so you can see what I mean:
+[spoiler][img]https://www.dropbox.com/s/akzxtosncj7zuiz/UHK_ModLayer.png?dl=1[/img]
+[i]Source: [url]https://ultimatehackingkeyboard.com/wordpress/wp-content/uploads/2018/10/mod-layer.png[/url][/i][/spoiler]
+
+
+[img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... When?[/h]
+As described in an interesting article by [url=http://xahlee.info/kbd/banish_key_chords.html]Xah Lee[/url], chording isn't always the best answer. To produce single results like a special symbol or a single command, "tap-dance" key sequences may be better. A good example is the Compose method from Linux that can be trigged by any desired key combination, or by a "starter key" such as a dead key. The Alt key in Windows lets you access menu items by tapping a letter sequence such as [b]{Alt,f,t}[/b] to open a new tab, which is brilliant and can be easily learned by looking at the menus the first times.
+
+Sequences provide for near endless complexity, but chord layers like Extend let you do many similar operations without trigging them separately each time. So for navigation/editing like selecting the previous word then moving it to the end of the paragraph or for number entry chord layers are perfect.
+
+I've made some one-shot Extend layers (see below) that return to the main layer after releasing one key; these are good for "power strings" that typically are entered once, and approach the sequence concept. They could just as well have been implemented with tap-dances instead. The best is using a mix of chords and sequences!
 
 
 [img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... How?[/h]
@@ -279,35 +306,50 @@ This is kinda specific, but I noticed that the Windows tool for remoting (Window
 • Shortcuts with Ctrl+Alt: End, Left/Right, Break.
 
 
-[b][u]APPENDIX: MORE EXTEND – NUMPAD AND BEYOND[/u][/b]
+[b][u]APPENDIX: MORE EXTEND – LAYER IT ON[/u][/b]
 
-For Windows, only the main Extend layer described above is implemented. But more may easily be imagined!
+My Extend ideally has four layers – I don't see the need for more but let me know if you do. The [b]Extend2[/b] layer holds a NumPad with some useful symbols easily available and the navigation/editing block moved to the left hand:
 
-A NumPad "Extend2" layer is implemented in my Linux/xkb and USB-2-USB files, but for now it's a bit hard to access on Linux as it requires Caps+AltGr to be held down:
+    [img]https://www.dropbox.com/s/ufv16bnz9qzvzhy/Extend-ISO-NoMod-Ext2_96d.png?raw=1[/img]
+    [i]Extend NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.[/i]
 
-[code]
-// Extend2: KeyPad overlay with nav block to the left (lv7-8):
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |` €€€ |1     |2     |3     |4 £   |5 €   |6     |7     |8     |9     |0     |-     |=     |
-// | Cust |  !   |  @   |  #   |  $   |  %   |  ^   | KP_7 | KP_8 | KP_9 | KP_* | KP_- | KP_= |
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |Tab   |Q ### |W ### |F ### |P €€€ |G €€€ |J ### |L     |U     |Y     |;     |[ {   |] }   |
-// |      | Home | Up   | End  | Del  | Esc  | PgUp | KP_4 | KP_5 | KP_6 | KP_+ |  (   |  )   |
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |Caps+ |A ### |R ### |S ### |T €€€ |D     |H ### |N     |E     |I     |O     |' "   |\ |   |
-// | ++++ | Left | Down | Right| Back | K_Lck| PgDn | KP_1 | KP_2 | KP_3 | K_Ent|  '   |  \   |
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |_ *** |Z €€€ |X === |C === |V === |B *** |K ;   |M     |,     |.     |/     |Spc   |Entr  |
-// | *MOn | Undo | Cut  | Copy | Paste| *Bt1 |  ,   | KP_0 | KP_0 | KP_. | KP_/ | Spc  | K_Ent|
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-[/code]
+Here's Extend2 shown as a text table from the symbols file for Linux/XKB:
+[spoiler][code]
+ Extend2: KeyPad overlay with nav block to the left (lv7-8):
+ +------+------+------+------+------+------+------+------+------+------+------+------+------+
+ |` €€€ |1     |2     |3     |4 £   |5 €   |6     |7     |8     |9     |0     |-     |=     |
+ | Cust |  !   |  @   |  #   |  $   |  %   |  ^   | KP_7 | KP_8 | KP_9 | KP_* | KP_- | KP_= |
+ +------+------+------+------+------+------+------+------+------+------+------+------+------+
+ |Tab   |Q ### |W ### |F ### |P €€€ |G €€€ |J ### |L     |U     |Y     |;     |[ {   |] }   |
+ |      | Home | Up   | End  | Del  | Esc  | PgUp | KP_4 | KP_5 | KP_6 | KP_+ |  (   |  )   |
+ +------+------+------+------+------+------+------+------+------+------+------+------+------+
+ |Caps+ |A ### |R ### |S ### |T €€€ |D     |H ### |N     |E     |I     |O     |' "   |\ |   |
+ | ++++ | Left | Down | Right| Back | K_Lck| PgDn | KP_1 | KP_2 | KP_3 | K_Ent|  '   |  \   |
+ +------+------+------+------+------+------+------+------+------+------+------+------+------+
+ |_ *** |Z €€€ |X === |C === |V === |B *** |K ;   |M     |,     |.     |/     |Spc   |Entr  |
+ | *MOn | Undo | Cut  | Copy | Paste| *Bt1 |  ,   | KP_0 | KP_0 | KP_. | KP_/ | Spc  | K_Ent|
+ +------+------+------+------+------+------+------+------+------+------+------+------+------+
+[/code][/spoiler]
 
-There's even a "secret" layer for xkb using Caps+Shift+AltGr (it has some more arrow symbols and stuff), but that's ridiculous so I'll have to construct a better modifier for that! At the moment, I believe that for instance Alt+Caps (then hold down either Alt or Caps – not necessarily both) and similarly with AltGr and even Alt+AltGr, would be ideal.
+This is implemented in my Big Bag solutions for Windows(PKL), USB-2-USB(TMK) and Linux(XKB). In the former two you can configure a modifier or two that will modify which Extend layer gets activated by the Extend key; holding down the Extend key alone will maintain that layer.
 
-Some other ideas for extra Extend layers are:
-• Hotstring pad!
-• Coding pad, with brackets and other symbols – and maybe some boilerplate hotstrings?
-• Advanced key mousing (diagonals, different speeds...)
+With Linux/XKB it's still a bit hard to access Ext2 as it requires Caps+AltGr (Right Alt) to be held down. There's even a "secret" layer for xkb using Caps+Shift+AltGr (it has some more arrow symbols and stuff), but that's ridiculous so I'll have to construct a better modifier! At the moment, I believe that for instance Alt+Caps (then hold down either Alt or Caps – not necessarily both) and similarly with AltGr and even Alt+AltGr, would be ideal.
+
+On Windows/EPKL, I have string templates including a set of kaomoji text faces in the [b]Extend3[/b] layer! L is for Lenny. ( ͡° ͜ʖ ͡°)
+
+    [img]https://www.dropbox.com/s/ec1fe5zr6wr2xu2/Extend3-ISO-Angle_Cpt.png?dl=1[/img]
+    [i]My kaomoji Extend3 layer, mnemonically arranged for Colemak ISO-Angle.[/i]
+
+In EPKL, all four layers are available using combinations of the two specified modifiers (by default RAlt and RShift) with Extend. The Ext3/Ext4 layers are set to be one-shot string layers, so if you press RShift+RAlt+Ext, then hold down Ext and press a home row letter you'll release a "powerstring" then fall back to Ext1 for normal editing. Also, since the Ext1/Ext2 layers are positional they are marked as "hard" layers: They don't change with letter positions and would look the same on Colemak as on, say, Dvorak – but they are affected by ergo mods like AngleWide. The kaomoji layer in Ext3 is "soft" though, since the strings are mnemonically linked to different letters:
+
+    [img]https://www.dropbox.com/s/xup1kjksydnlump/Extend3-ISO-CAWide_Cpt.png?dl=1[/img]
+    [i]My kaomoji Extend layer, mnemonically arranged for Colemak-CAW. Note how both the Curl(DH) and AWide mods move mappings.[/i]
+
+Press RShift+Caps for Extend3, then Caps+D to start a Robot Dance Party in your text!  ♪～└[∵┌]└[･▥･]┘[┐∵]┘～♪
+
+Other ideas for Extend layers include more boilerplate text for coding, hotkey combinations for different programs, a better navigation/mousing layer etc etc. As mentioned above, releasing single strings or commands may just as well be implemented as dead key layers so it's up to the user's tastes.
+
+EPKL pro tip: The Autohotkey format lets you mix literal strings with keys. You can for instance write a set of html brackets then position the cursor between them, all in one Extend entry with the * prefix.
 
 
 [h]The ...[/h][img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img]

@@ -6,9 +6,9 @@
 There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
 
 I also have topics focusing on different implementations of the Big Bag Of Keyboard Tricks:
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag (PKL) for Windows[/url][/b] (or go straight to the [url=https://github.com/DreymaR/BigBagKbdTrixPKL]GitHub EPKL repository[/url])
 • The [b][url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag (XKB) for Linux[/url][/b]
-• The [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag (PKL) for Windows[/url][/b]
-• The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for USB-2-USB remapping "QUICKIE" devices[/url][/b] [b]– you are here![/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for programmable "QUICKIE" devices[/url][/b] [b]– you are here![/b]
 • The [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Big Bag (Mac) for Karabinier[/url][/b] by [user]mkborregaard[/user]
 
 
@@ -22,9 +22,11 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2][/b] [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
+[b][2.2][/b] [b]Colemak-DH[/b] alias the [b]Curl(DH)[/b] ergo mod (deprioritize middle columns without keys changing fingers)
+[b][2.3][/b] [b]Symbol key mods[/b] for the adventurous (better apostrophe and/or hyphen positions; Work-In-Progress)
+[b][2.4][/b] [b]Modifier modness[/b] for the adventurous (Sticky, One-shot etc; Work-In-Progress)
 
-[b][3]    [u]Other Layouts[/u][/b]
+[b][3]    [u]Layout Variants[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
 [b][3.2][/b] ([b][url=https://forum.colemak.com/viewtopic.php?id=1458]Locale[/url][/b] and phonetic layout variants)
 [b][3.3][/b] [b]Mirrored Colemak[/b] that allows one-handed typing without extra learning
@@ -81,15 +83,20 @@ However, I have made a user function that lets you define a few keys as four-lev
     [i]Fig.: Colemak-CAW[eD], showing an ISO board with the Curl(DH)Angle and Wide ergonomic mods (see below).[/i]
 
 
-[h][1.2]    EXTEND LAYERS AND THE CAPS SWITCH MODIFIER[/h]
+[h][1.2]    EXTEND LAYERS[/h]
 
-This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness.
+This is [b][url=https://forum.colemak.com/viewtopic.php?pid=16698#p16698]My Favorite Mod[/url][/b] next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And much more.
 
-    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?raw=1[/img]
-    [i]A symbolic chart of my Extend mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.[/i]
+    [img]https://www.dropbox.com/s/t286h16ywl8y4ri/Extend-ISO-NoMod-Win_96d.png?raw=1[/img]
+    [i]My Extend Nav/Edit mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.[/i]
+
+    [img]https://www.dropbox.com/s/ufv16bnz9qzvzhy/Extend-ISO-NoMod-Ext2_96d.png?raw=1[/img]
+    [i]My Extend NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.[/i]
 
 The USB-2-USB implementation is almost the same as the Linux/XKB and Windows/PKL ones. Some advanced media key codes such as Brightness controls are missing for now (as their key codes aren't in TMK). How some of the advanced keys like MouseWheel Left/Right are interpreted is still up to the OS.
 
+Here's the Extend1 and Extend2 layer charts from my TMK source file:
+[spoiler]
 [code]
     DreymaR's Extend1 layer:
  * ,----.    ,-------------------. ,-------------------. ,-------------------.
@@ -124,6 +131,7 @@ The USB-2-USB implementation is almost the same as the Linux/XKB and Windows/PKL
  * |      |     |     |                             |Ext2 |     |     |      |
  * `-------------------------------------------------------------------------' 
 [/code]
+[/spoiler]
 
 To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the [b][url=https://forum.colemak.com/post/18410/#p18410]Configuration[/url][/b] post below.
 
@@ -165,7 +173,7 @@ To use one of these, define the Unimap layout constant in my keymap (.c) file:
 The actual keymap types are defined in the header (.h) file as compiler macros and those are a bit harder to edit manually.
 
 
-[h][2.2]    THE COLEMAK-DH ALIAS "CURL(DH)" ERGO MOD[/h]
+[h][2.2]    COLEMAK-DH ALIAS THE CURL ERGO MOD[/h]
 
 The [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod makes the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row V/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
 
@@ -189,7 +197,25 @@ To use Colemak-DH with my TMK files, there's a preprocessor switch named CURLMOD
 This switch only affects Colemak layouts, including the four Tarmak layouts and Mirrored Colemak. Make sure you use a CurlAngle or CurlAngleWide keymap type such as [i]UNIMAP_AWIZXCBV[/i] with it (optional for Tarmak1).
 
 
-[h][3]    [u]Other Layouts[/u][/h]
+[h][2.3]    PLAYING WITH THE SYMS (Work-In-Progress)[/h]
+
+The fairly optional "Sym" symbol key mod hasn't yet been implemented in my TMK files. If you're interested, it shouldn't be too hard to add yourself.
+
+[code]
+  \   7   8   9   0   =
+[   j   l   u   y   '   -
+ ]   h   n   e   i   o   ;
+   /   k   m   ,   .   _____
+[/code]
+    [i]The "Sym" symbol rotation mod, shown with the Wide(ISO) mod.[/i]
+
+
+[h][2.4]    MODIFIER MODNESS (Work-In-Progress)[/h]
+
+I've implemented Sticky Shift but not much else for TMK. See the repo files/docs. Moving modifiers around shouldn't be hard to do if you're interested.
+
+
+[h][3]    [u]Layout Variants[/u][/h]
 [h][3.1]    THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
 
 There's [url=https://forum.colemak.com/viewtopic.php?id=1858]a main forum topic on this[/url] that you may want to read. Basically, I've added four Tarmak layouts that provide stepping stones from the standard (US) English QWERTY layout to the Colemak[eD] layout by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the uncommon J is misplaced in the process.

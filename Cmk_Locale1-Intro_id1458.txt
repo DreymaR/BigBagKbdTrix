@@ -23,7 +23,7 @@ Here's what [user]Shai[/user] has to say about making locale Colemak variants, o
 
 I fully agree, and so that's what I've done!
 
- - The [b]ISO-102/LSGT[/b] and [b][][/b] bracket keys may hold the most common locale-specific symbols.
+ - The [b]ISO/LSGT/OEM_102[/b] and [b][][/b] bracket keys may hold the most common locale-specific symbols.
     • The œ/ø/å (oe/oslash/aring) special letters may well be replaced; these should also be on dead keys.
         (The œ is rightly a ligature which fits the Compose method well for Linux users at least.)
 
@@ -47,7 +47,7 @@ Please note: The letter block keys have for the most part Colemak[eD] mappings i
 
 
 [h]THE ANGLE-WIDE MOD AND LOCALE VARIANTS[/h]
-The 'unified' layouts presented herein will be shown with the AngleWide-Slash ('AWide-35') wide keyboard mod (again, see the '[url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url]' topic). What this means is that the brackets are moved to the middle on the upper and home row, the VK_102/<LSGT> and Backslash/<BKSL> keys to the middle lower row, the += key to the middle upper row and finally the ?/ key to the upper right. I'm sorry if this confuses anyone, but the AngleWide mod brings the LSGT/102 key and brackets together right in the middle with the other moddable keys so they can all be shown in a partial keyboard image without everything else in between them! I'm now used to having all special letters in the middle of the keyboard and it feels good. :)
+The 'unified' layouts presented herein will be shown with the AngleWide-Slash ('AWide-35') wide keyboard mod (again, see the '[url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks[/url]' topic). What this means is that the brackets are moved to the middle on the upper and home row, the ISO-102/<LSGT> and Backslash/<BKSL> keys to the middle lower row, the += key to the middle upper row and finally the ?/ key to the upper right. I'm sorry if this confuses anyone, but the AngleWide mod brings the ISO/LSGT key and brackets together right in the middle with the other moddable keys so they can all be shown in a partial keyboard image without everything else in between them! I'm now used to having all special letters in the middle of the keyboard and it feels good. :)
 
 There's another mod called DH or Curl, which moves some index-finger keys around. It's shown in the image below, in my full Colemak-ⲔⲰ[eD] configuration:
 
@@ -73,6 +73,7 @@ Some topics on the forum regarding different locale Colemak variants (let me kno
 
 [b][url=https://forum.colemak.com/viewtopic.php?id=1447]Czech[/url][/b], by [b]davkol[/b]
 [b][url=https://forum.colemak.com/viewtopic.php?id=1050]Danish[/url][/b], by [b]erw[/b]
+[b][url=https://forum.colemak.com/topic/2469-optimizing-colemak-for-finnish/]Finnish[/url][/b], by [b]Vvanhala[/b] (also see Swedish/Finnish below)
 [b][url=https://forum.colemak.com/viewtopic.php?id=220]French[/url][/b], by [b]Endaka[/b]
 [b][url=https://forum.colemak.com/viewtopic.php?id=173]German[/url][/b], by [b]vilem[/b]
 [b][url=https://forum.colemak.com/viewtopic.php?id=1371]Hungarian[/url][/b], by [b]mr.schyte[/b]
@@ -105,7 +106,7 @@ Some topics on the forum regarding different locale Colemak variants (let me kno
 [h]TODO[/h]
 • Hebrew (and in extension, similar scripts like Arabic?)
 • Vietnamese
-• Japanese kana? That may require dead keys that can release ligatures.
+• Japanese kana? This likely requires dead keys that can release ligatures.
 
 Some variants may still be subject to minor changes:
 • Determine whether the Slovenian etc layouts should have the caron on RBr so it's easier to reach with the right hand! It's used with left-hand letters.

@@ -127,6 +127,12 @@ Here is the best part, are you ready? Some genius figured out that you can make 
 [/quote]
 
 
+[url=https://forum.colemak.com/topic/2533-tarmak-progress/p2/#p23300]Another reassuring message:[/url]
+[quote=colemux]
+The time spent on Tarmak was an insignificant slice of the total time to get here, and I've not made any "Tarmak mistakes" since shortly after switching away from Tarmak 4.  So it's clear that for me, using Tarmak couldn't possibly have slowed down my learning to any significant degree at all.  But as a means of maintaining motivation in the early days, I found it very useful, and I think it made the difference between carrying on and giving up (as I did the first time I tried, sans Tarmak).
+[/quote]
+
+
 
 [h]MINI-FAQ[/h]
 
@@ -154,22 +160,22 @@ Here is the best part, are you ready? Some genius figured out that you can make 
 – So, this is a little beginner's introduction to the wonders of layout modding: What are your main options, and what's good to begin with?
 – If any of this interests you right away, read more about it in my [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Tricks[/url][/b] topics.
 
-[b]1) Extend:[/b] This mod is as brilliant as Colemak itself, and independent of your typing layout! It lets you navigate, edit and more without moving your hands.
-    • You could learn to Extend before you learn Colemak, during, or after; both PKL(Win) and XKB(Linux) let you do that.
+[b]– Extend:[/b] This mod is as brilliant as Colemak itself, and independent of your typing layout! It lets you navigate, edit and more without moving your hands.
+    • You could learn to Extend before you learn Colemak, during, or after; both EPKL(Win) and XKB(Linux) let you do that.
     • See the [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend Extra Extreme[/url][/b] topic if you need convincing.
-[b]2) Angle/Wide ergo mods:[/b] These are also basically layout independent. QWERTY-AngleWide is definitely possible.
+[b]– Angle/Wide ergo mods:[/b] These are also basically layout independent. QWERTY-AngleWide is definitely possible.
     • The [b]Angle[/b] mod is simple, especially on a PC105/ISO keyboard: Slide ZXCVB one step to the left, keep your fingering but straighten your left wrist. Comfy!
     • If you have an ANSI keyboard, you must make a tradeoff: Move the Z key back to the middle ("Angle-Z"), or, e.g., the middle/upper rows to the right ("A-Wing").
     • The [b]Wide[/b] mod is quite simple on any keyboard: Slide the right-hand keys one step to the right, improving hand distance and thumb/pinky reaches. Neat!
     • These could be "hard" implemented, even changing the physical key caps to Angle/Wide positions if you can. My wife typed QWERTY-AngleWide without trouble.
-[b]3) The Colemak-DH a.k.a "Curl(DH)" ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down makes them easier to reach with lightly curled, relaxed fingers!
+[b]– The Colemak-DH a.k.a "Curl(DH)" ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down makes them easier to reach with lightly curled, relaxed fingers!
     • [b]NOTE:[/b] There is a tweaked [b][url=https://forum.colemak.com/post/14801/#p14801]Tarmak progression for Colemak-DH[/url][/b]!
-[b]4) Colemak[eD]:[/b] This only affects you if you'll be using the AltGr key, as it's about the extra mapping layers on each key.
+[b]– Colemak[eD]:[/b] This only affects you if you'll be using the AltGr key, as it's about the extra mapping layers on each key.
     • Vanilla Colemak has several AltGr mappings, but they seem somewhat unintuitive and not really practical to me.
     • My "[b][url=https://forum.colemak.com/viewtopic.php?id=1280][edition DreymaR][/url][/b]" mappings place useful symbols and letters quite intuitively.
     • Further symbols/letters are on dead keys that all reside on symbol keys with AltGr. In PKL(Win) at least, there's a huge(!) bunch of glyphs/symbols!
     • If you use any of my Big Bag files you'll mostly get Colemak[eD].
-[b]5) Locale layouts:[/b] If you use other languages than US English, you may want some special letters, accents and symbols readily available.
+[b]– Locale layouts:[/b] If you use other languages than US English, you may want some special letters, accents and symbols readily available.
     • I've devised lots of [b][url=https://forum.colemak.com/viewtopic.php?id=1458]Locale Colemak[/url][/b] variants.
     • Using XKB(Linux), you'll have access to all these once you're done with Tarmak. With PKL(Win), you may have to make yours or ask me.
 
@@ -185,17 +191,21 @@ I'd like to say thanks to all the wonderful people of the Colemak forums and els
 [h]TARMAK DOWNLOADS[/h]
 
 [b]Materials:[/b]
-• Feel free to use any images from this topic or my PKL files for learning aids. Just give me credit for them, please.
+• Feel free to use any images from this topic or my EPKL files for learning aids. Just give me credit for them, please.
 • If you need a set of printable/hi-res images like the ones in this post, you may use [url=https://www.dropbox.com/s/ayweu34g8q578eb/Tarmak_Spectral-180d.zip?dl=1]these that I've rendered at twice the normal resolution[/url].
-• My PKL files contain compact help images for the Tarmak steps in different configurations, see below.
+• My EPKL files contain compact help images for the Tarmak steps in different configurations, see below.
 
 [b]Windows:[/b]
-• Here's [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]My full PortableKeyboardLayout repo at GitHub[/url][/b] as described in the [url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag Of Tricks (for PKL)[/url] topic. It should run portably without any fuss.
-• (You can download directly a small file with some [url=https://www.dropbox.com/s/6vla7ocz2nwks0a/PKL_vk_Tarmak.zip?dl=1]"VirtualKey" layout files for the 4 Tarmak steps plus step 0 (QWERTY) and 5 (Colemak)[/url]. Install them in the PKL layouts folder and point to the ones you want in the pkl.ini file. There are layouts for ISO and ANSI(US) keyboards, vanilla or Colemak-DH. The files may not be updated any more though, so I recommend the GitHub repo!)
+• Here's my full [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]EPiKaL PortableKeyboardLayout[/url][/b] repo at GitHub as described in the [url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag Of Tricks (for PKL)[/url] topic. It should run portably without much fuss. There are layouts for ISO and ANSI(US) keyboards, vanilla or Colemak-DH, and more.
+
+• Tarmak steps come with EPKL and can be selected quite easily. In [url=https://github.com/DreymaR/BigBagKbdTrixPKL/blob/master/EPKL_Settings.ini]EPKL_Settings.ini[/url] there are some commented-out layout lines like this one:
+[code];layout = Tarmak\Tm1-VK@V:Tarmak1@C,Tarmak\Tm0-VK@K@E:QWERTY(VK)@E[/code]
+
+• Remove the semicolon from that line (and ideally add one to the uncommented layout line below) then refresh EPKL and you should have Tarmak. There's one line that cycles through the Tarmak steps on layout switch by menu or hotkey (default Ctrl+Shift+2), and the one I quoted here that only switches between Tarmak1 and QWERTY. You could easily edit the number 1 in that line to 2, 3, 4 or 5 – which is Colemak but in the same style as the Tarmak steps.
 
 [b]Linux [i]et al[/i]:[/b]
 • For XKB, see the [url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks (Linux/XKB)[/url] topic. After installing, search for 'Tarmak' in the layout chooser.
-• User [user]olemartinorg[/user] (as described in [url=https://forum.colemak.com/viewtopic.php?pid=15367#p15367]this forum topic[/url]) has provided [url=https://github.com/olemartinorg/tarmak-xmodmap]an Xmodmap makefile that'll generate Tarmak steps from your existing layout[/url]. Very clever, and useful if you prefer Xmodmap over messing with the XKB files.
+• User [user]olemartinorg[/user] (as described in [url=https://forum.colemak.com/viewtopic.php?pid=15367#p15367]this forum topic[/url]) has provided [url=https://github.com/olemartinorg/tarmak-xmodmap]an Xmodmap makefile that'll generate Tarmak steps from your existing layout[/url]. Clever, and can be useful if you prefer Xmodmap over messing with the XKB files. Keep in mind though, that my XKB solution is more complete.
 
 [b]Mac:[/b]
 • The [url=https://pqrs.org/osx/karabiner/index.html.en]KeyRemap4MacBook aka Karabiner[/url] creator [url=https://github.com/tekezo/Karabiner/issues/508#issuecomment-154707061]"Tekezo" has added the Tarmak steps[/url] (to vanilla Colemak, no mods) to the default options. That's so nice.

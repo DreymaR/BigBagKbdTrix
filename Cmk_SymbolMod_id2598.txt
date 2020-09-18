@@ -1,0 +1,99 @@
+[h]SYM – a symbol key mod for the enthusiasts![/h]
+
+I feel that the semicolon gets a too good position in standard Colemak. It must be a remnant of the insane position it has in QWERTY that puts it inside the "letter block" so to speak, where it doesn't deserve to be. The three symbol keys that do deserve a position among the letters are period, comma and apostrophe/quote, since they occur frequently in text. Next up is the hyphen that's quite common and too far away on the top row.
+
+Furthermore, using the Wide mod moves the right-hand symbol keys around already so I've already broken Shai's principle of leaving them alone in the name of simplicity. The ANSI Wide mod moves the apostrophe up and the /? key to the lower middle, while the ISO Wide mod moves /? up.
+
+My current feeling is that a semicolon-slash-apostrophe-hyphen rotation could be quite nice! Trying it out, it seems to make the apostrophe bigrams noticeably more comfy. It;s easier to stretch that pinky out upwards than opening the hand outwards, that;s my clear impression of what;s what.   ¯\_(ツ)_/¯
+
+But while we're at that... Let's take a closer look at [url=https://en.wikipedia.org/wiki/Punctuation_of_English#Frequency]punctuation[/url] vs [url=https://en.wikipedia.org/wiki/Letter_frequency]letter[/url] frequencies in English!  (✿◠‿◠)
+
+On the [url=https://mdickens.me/typing/letter_frequency.html]McDickens letter frequency page[/url] we see the following relative frequencies for English, after the initial [b]SPC e t a o i n s r h l d c u m[/b]:
+
+[code]
+Excluding code: g f p w y ENT b , . v k ' " - x 0 j 1 q 2 z ) ( : ! ? 5 ; 3 4 9 / 8 6 7 [ ] ...
+Including code: f g p y w ENT b , . v k - " _ ' x ) ( ; 0 j 1 q = 2 : z / * ! ? $ 3 5 > { } ...
+[/code]
+
+It's clear that these punctuation keys are more common than the rare letters [b]x j q z[/b] (having <0.16% usage each, all others having >0.8%).
+
+The below frequency estimates are based on the numbers on [url=https://en.wikipedia.org/wiki/Punctuation_of_English#Frequency]Wikipedia[/url] as well as the analysis used in [url=https://github.com/stevep99/keyboard-layout-analysis-tool/tree/master/data]SteveP99's keyboard layout analyzer[/url] based on, respectively, a Project Gutenberg book lexicon and the Linux source code base:
+[code]
+ b     CM    DT    v     k     QU    MN    x     j 
+ bB    ,<    .>    vV    kK    '"    -_    xX    jJ
+1.5   1.2   1.3   1.0   0.8   1.0   0.5*  .15   .15   (Approx. % usage. The -_ key varies w/ coding, 0.3-0.8?)
+1.5   1.8   1.2   0.9   0.8   1.0   0.3   .14   .14   (SteveP's % usage, based on book analysis.)
+1.5   1.7   1.1   1.3   0.9   0.4   8.1   1.5   .06   (SteveP's % usage, based on code/documentation. Underscore is 7.2!)
+[/code]
+The semi-/colon (SC) and slash/question (SL) keys are more of a toss-up. These don't quite deserve their good positions when entering text, as frequencywise they are on par with or worse than several number row symbols – especially the parentheses. It's different for coding as particularly the semicolon is quite common in some languages. However, my impression is that the text-related symbols are more important for flow. I think people may be overreporting the importance of the semi-/colon, unless you type almost exclusively code. If you do so though, note the massive role that the underscore can play!
+
+Since backslash is handled differently on ISO and ANSI boards, doesn't have a really good position on either and has a different key cap size on the latter, I'm uncertain whether to include it in remaps. I feel that the brackets should be left alone since they serve many purposes in locale layouts and since they're cool in the middle of the keyboard using the Wide mod. If anyone still wants to improve their role, I suggest a simple brackets-parentheses swap. So in sum, my candidates for worse positions when promoting the more common symbol keys are:
+[code]
+ SC    SL     Q     Z    EQ    BS
+ ;:    /?    qQ    zZ    =+    \|
+.13   .16   .10   .08   .06?   --
+.29   .15   .10   .06   .00   .00    (Note the huge variation in ;: frequency! SteveP reports 0.22+0.07 %.)
+1.4   0.6   0.3   0.2   0.9   0.2
+[/code]
+
+I've included the equals/plus (EQ) key since even though it's quite rare in text, it goes to the middle of the board in the Wide mod and that's ugly and unintuitive. Maybe it could take MN's place, and SL or BS its old place? Then, EQ would remain close to MN as it was before but just on a different row – like Dvorak's punctuation placements have it.
+
+The idea of a rotation mod to make symbol placements better was discussed both in a [url=https://forum.colemak.com/topic/2526-q-rotation/#p22919]Q > ; > ' rotation topic[/url] and in [url=https://forum.colemak.com/post/22921/#p22921]another topic[/url] where it was suggested to make it more like the Dvorak symbol placements. I don't think that's a goal in itself, but it's clear to me that Mr. Dvorak saw the importance of the hyphen-minus key.
+
+As for the idea of including the letter Q in a rotation with the quote key, I don't see any real benefit to making QU a roll. It's a comfortable bigram already, using a nice hand alternation.
+
+So, these cycles look interesting:
+[code]
+For ISO boards, as two separate loops:
+QU > SC
+MN > SL > BS > EQ
+
+For ISO boards, leaving SL alone:
+QU > SC > BS > EQ > MN
+
+For ANSI boards, leaving BS alone:
+QU > SC > SL > EQ > MN
+
+Optional addition: Swap parentheses and brackets
+() > [] (not a key swap so it's a bit harder to do with some implementations)
+[/code]
+
+Using vanilla Colemak, on an ortho board:
+[code]
+6   7   8   9   0   =   \
+j   l   u   y   '   [   ]
+h   n   e   i   o   -   ;        (leaving the slash alone)
+k   m   ,   .   /   _____
+[/code]
+
+With the Wide mod, on a staggered ISO board:
+[code]
+  \   7   8   9   0   =
+[   j   l   u   y   '   -
+ ]   h   n   e   i   o   ;        (both the quote and minus loops)
+   /   k   m   ,   .   _____
+[/code]
+
+The full CurlAngleWideSym mod on an ANSI board, adding the parenthesis/bracket swap:
+[code]
+1   2   3   4   5   6   /   7   8   9   0   =
+  Q   W   F   P   B   (   J   L   U   Y   '   -   \
+   A   R   S   T   G   )   K   N   E   I   O   
+     X   C   D   V   Z   ;   M   H   ,   .
+[/code]
+
+Any insights and thoughts? I'm thinking this could be a "[b]Sym[/b]bol Rotation" mod on top of the other mods we use. Some optimizers might like it, while other Colemak users wouldn't bother. Is it time for [b]Colemak-CAWS[/b]...?
+
+Warning: Bad joke inside. Consider CAWS and effect. You have been warned...
+[spoiler]
+[img]https://www.dropbox.com/s/znk0uyq3519wre5/FourGoodCAWs.jpg?raw=1[/img]
+[/spoiler]
+
+    [img]https://www.dropbox.com/s/2ccwaiqb5dmi4bf/Cmk-ISO-CurlAWideSym_90d-FShui_EPKL.png?raw=1[/img]
+    [i][b]Colemak-CAWS[/b]: The Sym symbol rotation together with the CurlAngleWide ergo mods on an ISO board.[/i]
+
+[b][edit 2020-03:][/b]
+I tried this "Sym" mod out a little but at first I found it too confusing to be worth my effort. Maybe others will be far more enthusiastic! However, I've also tested the bang-for-buck version of it: Only the [b]QU <> SC[/b] swap. That's a very light mod from standard Colemak, only moving one more key. In the spirit of the DH mod, it seeks to reduce lateral stretches while changing no fingerings. Heavy coders may not want to bother with it, but they should certainly consider the minus/underscore loop!
+
+[b][edit 2020-04:][/b]
+I'm now using the full Sym mod and liking it. Both the apostrophe/quote and hyphen keys feel more naturally placed, especially for normal text. Coders on ANSI boards may dislike the position of semicolon in Colemak-CAWS but for ISO I think it's fine. Now, as mentioned above, swapping the brackets and parentheses could be nice? How deeply into the rabbit hole would [i]you[/i] like to venture...?  ￣(=⌒ᆺ⌒=)￣

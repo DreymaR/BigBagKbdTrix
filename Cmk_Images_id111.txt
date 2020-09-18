@@ -1,0 +1,52 @@
+[h]DreymaR's Colemak Images[/h]
+[i](Well, some of them...)[/i]
+
+Here's a couple of my first Colemak images, maybe they're still useful to some:
+
+[img]https://www.dropbox.com/s/g8s6moe4s2jow45/Colemak_background.png?dl=1[/img]    [img]https://www.dropbox.com/s/t70cy6lpjq4028j/Colemak_light.gif?dl=1[/img]
+A desktop background and printable sticker image, for instance
+
+
+[img]https://www.dropbox.com/s/puv5xw8ui0zmjcm/Colemak_SEO_DreymaR.gif?dl=1[/img]
+A layout image I hacked up from one I found on the net
+
+
+[h]More image posts:[/h]
+
+I realized that this topic is linked to from the FAQ. Would be a shame, then, if people found it and didn't realize there are a bunch of other images to choose from now!
+
+I'll just mention some topics where I've added my own images:
+[url=https://forum.colemak.com/topic/111-i-made-a-couple-of-images/]"I made a couple of images"[/url] as linked to from colemak.com. [b]You Are Here![/b]
+[url=https://forum.colemak.com/viewtopic.php?id=731]My new-and-improved Inkscape vector graphics[/url], IBM keyboard style or plainer versions
+[url=https://forum.colemak.com/viewtopic.php?id=188]The 'Make your own physical keyboard' thread[/url] (plenty of real keyboard images there)
+[url=https://forum.colemak.com/viewtopic.php?id=2315]My 'Big Bag of Tricks' topic[/url] has several images in it as well
+[url=https://forum.colemak.com/viewtopic.php?pid=613#p613]A simple but nice GIF[/url] (I made it from one I found on the net)
+
+Some topics with Colemak-related images:
+[url=https://forum.colemak.com/viewtopic.php?id=454]Colemak icons and ligatures[/url]
+[url=https://forum.colemak.com/viewtopic.php?id=743]Board Wars - A New Hope![/url] (Hehe, I just had to...)
+[url=https://forum.colemak.com/viewtopic.php?id=127]A few playful twists for banners and the like[/url]
+
+
+[h]More current images:[/h]
+
+The current state of my graphics (never mind if some keys are moved or tweaked in these, that can be configured):
+
+
+   [img]https://www.dropbox.com/s/9koqz15vzc3ui1i/Cmk-ISO-MirrorOff-Angle_90d-FingerShui.png?dl=1[/img]
+      My Feng Shui inspired fingering color scheme, with F# keys
+
+
+   [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?dl=1[/img]
+      Colemak[eD] showing AltGr mappings, dead keys and the CurlAngleWide ergonomic mod
+
+
+   [img]https://www.dropbox.com/s/111rz19f4va8jc2/Extend-ANSI-NoMod-Linux_96d.png?dl=1[/img]
+      Extend mappings, with thematic colorings
+
+
+   [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?dl=1[/img]
+      Tarmak transitional Colemak layouts, spectrally color coded from red (first step) to purple (last step)
+
+
+For more info about these layouts and layers as well as many more images, see my [b][url=https://forum.colemak.com/viewtopic.php?id=2315]Big Bag[/url][/b] posts.

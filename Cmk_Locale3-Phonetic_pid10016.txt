@@ -18,6 +18,8 @@ For the phonetic variant of Greek script I mostly moved the keys of their defaul
 
 I made some choices concerning some Greek letters (e.g., Χχ vs Ψψ vs Ξξ), but I consider my solutions useful and intuitive, and supported by at least some transliteration and/or keyboard layout tradition.
 
+In addition to what's on the image above, I've added some "extras" to make accent usage easier. The two diaeresis letters Ϋϋ/Ϊϊ are added (to Q and ISO/LSGT, if there's room) as well as combining and non-combining Dasia/Psili/Ypogegrammenei-Iota (on lv3–4 of brackets and LSGT). Together with functional dead keys one could then write proper polytonic Greek quite smoothly if so desired.
+
 
 [h][IL] HEBREW SCRIPT[/h]
 
@@ -33,12 +35,12 @@ I made some choices concerning some Greek letters (e.g., Χχ vs Ψψ vs Ξξ), 
    [i]The Colemak phonetic layout for Russian Kyrillic script – 'Rulemak' by [user]Ghen[/user]. New (2016) version.[/i]
    [i]Based on KOI-8R, with the notable exception of ч on Colemak H because it's quite common and used in existing phonetic Russian layouts.[/i]
 
-Rulemak is implemented in xkb and PKL (Win) by ghen himself and also ported to my implementations – see the post below!
+Rulemak is implemented in xkb (Linux) and (E)PKL (Win) by ghen himself and also ported to my implementations – see the post below!
 
    [img]https://www.dropbox.com/s/820cv5hfpgcr9om/Cmk-X-phon-bg.png?raw=1[/img]
    [i]The Colemak "Bulmak" phonetic layout for Bulgarian Kyrillic script. 2016 version.[/i]
 
-Both Kyrillic layouts are discussed in [b][url=https://forum.colemak.com/viewtopic.php?pid=13877#p13877]the Rulemak topic[/url][/b]. Notably, ы and ё aren't used in Bulgarian and ъ is more common than ю. Note that in Rulemak, the VK_102/LSGT key is combining acute, whereas in Bulgarian Colemak it's combining grave. Makes some accented letters easy to type.
+Both Kyrillic layouts are discussed in [b][url=https://forum.colemak.com/viewtopic.php?pid=13877#p13877]the Rulemak topic[/url][/b]. Notably, ы and ё aren't used in Bulgarian and ъ is more common than ю. Note that in Rulemak, the ISO/LSGT key is combining acute, whereas in Bulgarian Colemak it's combining grave. Makes some accented letters easy to type.
 
 Personally, I'd love to standardize the X/H == х/ч mappings between Rulemak and Bulmak. But it seems that this won't be easy as Russian and Bulgarian traditions differ too much on this point. Standardization is good, but not at the cost of disuse.
 

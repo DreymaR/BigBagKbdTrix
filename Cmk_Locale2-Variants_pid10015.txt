@@ -1,6 +1,6 @@
 [h]LOCALE COLEMAK[eD] VARIANTS[/h]
 
-In the following I describe how to make locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "lesser/greater" key (LSGT a.k.a. VK_102). If more keys than these are needed, the HJKL keys with (Shift+)AltGr (lv3-4) are also available in my layout since they hold nonessential mappings beforehand and are placed together, and in some cases other keys are natural candidates.
+In the following I describe how to make locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "Lesser/Greater Than" key (LSGT a.k.a. ISO or OEM_102). If more keys than these are needed, the HJKL keys with (Shift+)AltGr (lv3-4) are also available in my layout since they hold nonessential mappings beforehand and are placed together, and in some cases other keys are natural candidates.
 
 This is what I call [b]Unified Symbols[/b] or 'US' variants (yes, that's also the name of the United States English layout but then again they're based on that one). I also provide 'Keep Local Symbols' variants where all the non-letter keys behave as locale users are used to – but at the cost of whichever nifty Colemak[eD] mappings were on those keys! This includes all dead keys as I've put those solely on symbol keys.
 
@@ -12,11 +12,11 @@ In the below, the 'Keep Local Symbols'/KS variants are shown without any Angle/W
 
 [h]LANGUAGES, COUNTRIES and LOCALES[/h]
 
-Some languages are used in several countries and some countries use several languages, and sometimes there are even several layout variants for a combination. It's a complex issue. On Windows (both MSKLC and PKL), a [url=https://ss64.com/locale.html]Windows Locale Code[/url] is used to account for the complexity. Linux/XKB instead uses [b][url=https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2]ISO two-letter Country Codes[/url][/b] for file names, adding a few names of their own such as LatAm for Latin America and Epo for Esperanto, and within such a file there's a default variant and as many subvariants as you like. If a layout is used in several countries it can be linked to in several symbols files.
+Some languages are used in several countries and some countries use several languages, and sometimes there are even several layout variants for a combination. It's a complex issue. On Windows (both MSKLC and EPKL), a [url=https://ss64.com/locale.html]Windows Locale Code[/url] is used to account for the complexity. Linux/XKB instead uses [b][url=https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2]ISO two-letter Country Codes[/url][/b] for file names, adding a few names of their own such as LatAm for Latin America and Epo for Esperanto, and within such a file there's a default variant and as many subvariants as you like. If a layout is used in several countries it can be linked to in several symbols files.
 
 Note that there also exists two-letter language codes and they're sometimes not the same as the country codes. E.g., CS for the Czech [i]language[/i] vs CZ for the [i]country[/i].
 
-In the below, I've tagged my locale layouts with the file names that Linux/XKB uses. Mainly so I easily know which XKB file a layout is found in, but I've also used the same codes for my PKL locale layout variants. In the cases where one language is used in several countries, the XKB layout will be found linked between several files, and in the PKL files it'll have a compound name tag like "BeCaFr" for French (Belgium, Canada, France). Such a country list often won't be exhaustive but representative. Hopefully there should be correspondence between the tags used below and in my files.
+In the below, I've tagged my locale layouts with the file names that Linux/XKB uses. Mainly so I easily know which XKB file a layout is found in, but I've also used the same codes for my EPKL locale layout variants. In the cases where one language is used in several countries, the XKB layout will be found linked between several files, and in the EPKL files it'll have a compound name tag like "BeCaFr" for French (Belgium, Canada, France). Such a country list often won't be exhaustive but representative. Hopefully there should be correspondence between the tags used below and in my files.
 
 There's quite a bunch of unified locale variants now! I can make more on request or whim. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.
 
@@ -85,7 +85,7 @@ Some [url=https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of
 
 The '[eD] unified symbols' solution for [b]BE+CA+FR[/b]:
 • Going by letter frequencies, é and grave merit their own keys; the other accents are of less critical importance.
-• Éé gets its own key (LSGT) instead of an acute dead key since it's quite frequent and only one letter.
+• Éé gets its own key (ISO/LSGT) instead of an acute dead key since it's quite frequent and only one letter.
 • A Çç key is preferable to the cedilla dead key since there's only one letter needed, but lv3-4 is acceptable since it's a rare letter.
 • For the other accent needs, dead keys are the best option; some are common enough to merit a lv1-2 placement.
 • LBr keeps its dead keys as in the default layout for easier access to the cirkumflex/umlaut letters even though these aren't very common.
@@ -140,7 +140,7 @@ The '[eD] unified symbols' solution for [b]CZ[/b] and [b]PL[/b]:
     [i]Polish 'Unified Symbols' Colemak[eD][/i]
 
 
-[h][AT DE] DEUTSCH/GERMAN (DEUTSCHLAND/GERMANY, ÖSTERRREICH/AUSTRIA)[/h]
+[h][DE AT] DEUTSCH/GERMAN (DEUTSCHLAND/GERMANY, ÖSTERRREICH/AUSTRIA)[/h]
 
     [img]https://www.dropbox.com/s/zr1sz0pim7fqj7z/Cmk-eD-at%2Bde-ksym_Xm.png?raw=1[/img]
     [i]German (Germany and Austria) 'Keep Local Symbols' Colemak[eD][/i]
@@ -174,6 +174,7 @@ The '[eD] unified symbols' solution for [b]DK+NO[/b] and [b]FI+SE[/b]:
 • These locales use the same special letters. The Åå is kept in place; the same position for all the Scandinavian default layouts.
 • The Ææ is somewhat more common in Danish and the Øø in Norwegian, but that shouldn't matter much here! Both positions are decent enough.
 • The Ää and Öö are placed in harmony with the other Scandinavian (and German!) layouts.
+• Colemak may be a bit tricky for Finnish in particular, since letter frequencies differ (English frequencies are NHLMKJ, Finnish NLKÄMJH). See the links above.
 
     [img]https://www.dropbox.com/s/6v7iuvnxxgnez24/Cmk-eD-dk%2Bno-usym-aw_Xmc.png?raw=1[/img]
     [i]Danish+Norwegian 'Unified Symbols' Colemak[eD][/i]
@@ -195,7 +196,7 @@ The '[eD] unified symbols' solution for [b]ES+LatAm[/b]:
 • Both acute and grave are important accents so they get lv1 placement in a logical fashion on the brackets ("up then down").
 • Unfortunately, the Spain and LatAm default layouts have different placement of the acute accent key. That's silly I think!
 • The necessary but less common umlaut and circumflex accents are given lv2 placements.
-• (One alternative idea from user javix for standard Spanish is to make a single dead key for acute and tilde on the <LSGT> key!)
+• (One alternative idea from user javix for standard Spanish is to make a single dead key for acute and tilde on the ISO/LSGT key!)
 
     [img]https://www.dropbox.com/s/quahv4h78786gu1/Cmk-eD-es%2Blatam-usym-aw_Xmc.png?raw=1[/img]
     [i]Spanish (Spain and Latin America) 'Unified Symbols' Colemak[eD][/i]
@@ -222,7 +223,7 @@ The '[eD] unified symbols' solution for [b]GB[/b]:
 
 The '[eD] unified symbols' solution for [b]HU[/b]:
 • The common acute and less common double-acute accents are provided as lv1-2 dead keys
-• The Öö/Üü umlaut letters are provided directly on LSGT (and also an umlaut dead key on RBr)
+• The Öö/Üü umlaut letters are provided directly on ISO/LSGT (and also an umlaut dead key on RBr)
 
     [img]https://www.dropbox.com/s/qxxkjqkqspo5mys/Cmk-eD-hu-usym-aw_Xmc.png?raw=1[/img]
     [i]Hungarian 'Unified Symbols' Colemak[eD][/i]
@@ -275,9 +276,10 @@ The '[eD] unified symbols' solution for [b]IT[/b]:
 The '[eD] unified symbols' solution for [b]NL[/b]:
 • The Dutch layout is similar to Belgian and other French-type ones but has more use of the umlaut than the circumflex.
 • Therefore I didn't harmonize it fully with the French-type layouts but kept the LBr key the way it is in the default layout.
-• The acute letter Éé is somewhat common as is Óó; the acute dead key on RBr should be good enough for that.
+• The acute letter Éé is somewhat common as is Óó; the acute dead key on RBr should be good enough for these.
 • The IJ ligature isn't provided in the default layout so it isn't here either; I think it's falling into disuse? The Compose method has it.
 • NOTE: Since IJ is more common in Dutch, it may be nice to swap J with another right hand index keys such as M, DH mod style?
+•             Another tack is mapping the IJ digraph/bigram somewhere if you can. Consider semicolon or the ISO/LSGT key.
 
     [img]https://www.dropbox.com/s/hfu8791rzcuek94/Cmk-eD-nl-usym-aw_Xmc.png?raw=1[/img]
     [i]Dutch 'Unified Symbols' Colemak[eD][/i]

@@ -1,9 +1,9 @@
-[h][3]    [u]Other Layouts[/u][/h]
+[h][3]    [u]Layout Variants[/u][/h]
 [h][3.1]    THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
 
-There's a [b][url=https://forum.colemak.com/viewtopic.php?id=1858]main Tarmak topic[/url][/b] that you may want to read. Basically, I've added four Tarmak layouts that provide stepping stones from the standard QWERTY layout to Colemak[eD] by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the rare J key is misplaced in the process.
+There's a [b][url=https://forum.colemak.com/viewtopic.php?id=1858]main Tarmak topic[/url][/b] that you should take a look at. Basically, I've added four Tarmak layouts that provide stepping stones from the standard QWERTY layout to Colemak[eD] by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the rare J key is misplaced in the process. If you're brave and impatient, you may of course skip steps to customize your progress.
 
-Similar transitional layouts have been [url=https://forum.colemak.com/viewtopic.php?id=480]reported successful in easing the conversion to Colemak typing[/url] and although this evidence is anecdotal I find the [url=https://forum.colemak.com/viewtopic.php?id=358]proposed hypothesis[/url] that gradual changes should be easier to learn for many a plausible one.
+Tarmak transitional layouts have been [url=https://forum.colemak.com/viewtopic.php?id=480]reported successful in easing the conversion to Colemak typing[/url] and although this evidence is anecdotal I find the [url=https://forum.colemak.com/viewtopic.php?id=358]proposed hypothesis[/url] that gradual changes should be easier to learn for many a plausible one.
 
     [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?raw=1[/img]
     [i]The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).[/i]
@@ -50,7 +50,7 @@ Advanced typing is possible with only one hand given a mimimum of training with 
 
 I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger bigram avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger bigrams when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand variants but then you'd have to learn a new layout).
 
-You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use a foot switch set to any other key (maybe an out-of-the-way one like ScrollLock), or a "ghetto foot switch" made by stripping most keys off a keyboard and placing it on the floor. A more fancy but still cheap foot switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard.
+You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use an arm or foot switch set to any other key (maybe an out-of-the-way one like ScrollLock), or a "ghetto switch" made by stripping most keys off a keyboard and placing it on the floor. A more fancy but still cheap switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard.
 
 Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.
 

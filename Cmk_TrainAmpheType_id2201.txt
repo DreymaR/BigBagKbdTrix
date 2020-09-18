@@ -1,34 +1,35 @@
-[h]I'm Gonna Be...[/h]
+[h]The Typing Training Topic[/h]
 
-[b]When I wake up, well, I know I'm gonna be[/b]
-[b]I'm gonna be the man who types a lot today[/b]
-[b]When I go out, yeah, I know I'm gonna be[/b]
-[b]I'm gonna be the man who goes the Colemak way![/b]
+[b][i]When I wake up, well, I know I'm gonna be[/i][/b]
+[b][i]I'm gonna be the man who types a lot today[/i][/b]
+[b][i]When I go out, yeah, I know I'm gonna be[/i][/b]
+[b][i]I'm gonna be the man who goes the Colemak way![/i][/b]
 
-[b]When I get time, well, I know I'm gonna be[/b]
-[b]I'm gonna be the man who hones my skills today[/b]
-[b]And when I'm home, hey, I know I'm gonna be[/b]
-[b]I'm gonna be the man who has some fun today![/b]
+[b][i]When I get time, well, I know I'm gonna be[/i][/b]
+[b][i]I'm gonna be the man who hones my skills today[/i][/b]
+[b][i]And when I'm home, hey, I know I'm gonna be[/i][/b]
+[b][i]I'm gonna be the man who has some fun today![/i][/b]
 
-[b]    But I would type five thousand words[/b]
-[b]    And I would type five thousand more[/b]
-[b]    Just to be the man who typed ten thousand words[/b]
-[b]    Much better than before![/b]
+[b][i]    But I would type five thousand words[/i][/b]
+[b][i]    And I would type five thousand more[/i][/b]
+[b][i]    Just to be the man who typed ten thousand words[/i][/b]
+[b][i]    Much better than before![/i][/b]
 
 [b][i]~ DreymaR, 2017-02[/i][/b]
 
 
+This started out as an instruction in using the Amphetype program for training your typing skills. But it now contains other training tricks as well, and links to other sites and programs. Whether you're new to the layout and just want to learn it properly to get by with less confusion, or an advanced speed monster who wants to make that next [b]P[/b]ersonal[b]B[/b]est, there may be something useful for you here.
+
     [img]https://www.dropbox.com/s/a1oqfswccypfd5l/Amphetype_3-Performance.png?raw=1[/img]
-    [i]Amphetype's Performance tab, not sugar-coating my lack of progress. ;-)[/i]
+    [i]Amphetype's Performance tab, not sugar-coating my lack of progress.[/i]  ᏊᵕꈊᵕᏊ
 
 
-[h]Typing training with Tristesse's Amphetype[/h]
+[h]Training with Amphetype[/h]
+[b][url=https://github.com/webiest/amphetype]Amphetype by Tristesse[/url][/b] is a brilliant cross-platform typing trainer. It can be used for leisurely typing texts or for intensive focused training sessions, as you like. It's flexible and informative despite being a one-man project – and it's free. I keep its database in my Dropbox so I can use it from anywhere while keeping track of my texts and progress.
 
-I've noticed that I kept reposting this tip over the years, so here's a topic on it. :-)
+Amphetype hasn't been developed in a long time, but it works without any problems and many people use it to this day. For Windows and Mac users though, running the old Python code may be problematic.
 
-[b][url=https://github.com/webiest/amphetype]Amphetype by Tristesse[/url][/b] is a brilliant cross-platform typing trainer. It can be used for leisurely typing texts or for intensive focused training sessions, as you like. It's flexible and informative – especially for a one-man project – and it's free. I have its database in my Dropbox so I can use it from anywhere.
-
-Amphetype hasn't been developed in a long time, but it works without any problems and many people use it to this day.
+You can find a pre-compiled Windows .exe as well as an OSX build at [b][url=https://code.google.com/archive/p/amphetype/downloads]Google Code Archive[/url][/b].
 
 I like using a largish font (Cambria Italic 22) and subtle colors that don't annoy the hell out of me:
 [code]
@@ -38,7 +39,7 @@ I like using a largish font (Cambria Italic 22) and subtle colors that don't ann
 • Incorrect back – #aaaaaa (RGB 170,170,170)
 [/code]
 
-When opening Amphetype in Windows, I usually press Alt+Space then X to maximize its window (or use the mouse like a muggle if you wish).
+When opening Amphetype in Windows, I usually press Alt+Space then X to maximize its window – or if you wish, use the mouse like a big muggle. ( Θώθ) c[_]
 
 
 [h]“Type-reading”[/h]
@@ -112,11 +113,11 @@ Furthermore, you can let Amphetype generate a list of your "most damaging" (or s
 
 Apparently, after typing a book about Graeco-Roman mythology for a while, Amphetype suggested this amusing list of words for me; I just sorted it and added punctuation:
 
-[b]They that were called under & into Hera/Zeus' order, have this beautiful form from their king/wife gods – with which their being became overly beautiful.[/b]
+[b][i]They that were called under & into Hera/Zeus' order, have this beautiful form from their king/wife gods – with which their being became overly beautiful.[/i][/b]
 
 Really, that was my list of "most damaging" words – rearranged but complete. Heh! A truly divine typing task. :-)
 
-On a side note, I don't trust the "viscosity" measure 100%, as I don't fully understand its implications. Tristesse feels that an even typing flow is holy if I understand him right, but we know that the best typists do speed up for familiar words and elements and brake down for the trickier ones. Ergo, the best typists in the world choose to have "bad viscosity" to some extent? Hmmm....! I still use the "most damaging" stat to select words though as it seems to be the most balanced measure.
+Note that I don't quite trust the "viscosity" measure, as I don't fully understand its implications. Tristesse feels that an even typing flow is holy if I understand him right, but we know that the best typists do speed up for familiar words and elements and brake down for the trickier ones. Ergo, the best typists in the world choose to have "bad viscosity" to some extent?! Still, sites like Monkey-type also report "consistency" as if metronome typing is a good thing. Hmmm....! I still use the "most damaging" stat to select words, as it seems to be the most balanced measure.
 
 User [user]bph[/user] has tried starting with the 1000 most common words and after a few runs through them, [url=https://forum.colemak.com/post/19614/#p19614]generating a lesson of, say, the 200 most damaging ones[/url]! That's clever, and will make you train only words that are both common and hard for you.
 
@@ -141,24 +142,34 @@ io on ion tion ation etion ition otion ution ption nation station fruition gumpt
 [code]
 he the then them they there their they're theirs theme theory therein thermal thematic therefore theology theatrics themselves anathema
 [/code]
-etc etc...
-
-If you want to be thorough, you can check out lists like [url]http://www.wordfind.com/starts-with/the/[/url] or [url]http://www.morewords.com/starts-with/the/[/url] – but I suppose the most bang-for-buck will be earned by training the most common of those words.
-
-Also, here's another [b][url=https://github.com/first20hours/google-10000-english]list of common words[/url][/b] from Google Research ([url=https://forum.colemak.com/post/19141/#p19141]thanks, misterW![/url]). You can filter it by n-grams, for instance.
+See the links below for more word lists. You can filter any such list by n-grams if you wish.
 
 
     [img]https://www.dropbox.com/s/qwt81c2xyowr2sw/Amphetype_4-Analysis.png?raw=1[/img]
     [i]Amphetype's Analysis tab, where you can make and export lists of words or trigrams that cause you trouble[/i]
 
 
-[h]Notes:[/h]
-• The experts all seem to value the ability to [b]vary your speed[/b]. Type well-known words blazingly fast, and slow down a bit for hard ones to avoid mistakes.
-• Mistakes will slow you down more than consciously slowing down will, once you get used to it!
-• [b]Good training should be varied[/b]! Don't wear yourself out by banging your head against a hurdle until you're exhausted, but keep chipping away at it now and then.
-• I think that many shorter bouts in a day beats a few long ones.
-• You can of course use the above mentioned lesson lists with other training tools such as [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
-• If you want to see lesson statistics on the Analysis tab, you'll have to select "Save key/trigram/word statistics from generated lessons" on the Preferences tab.
+[h]Pangram training[/h]
+A [b][url=https://en.wikipedia.org/wiki/Pangram]pangram[/url][/b] is a short phrase that contains all letters. Speed typist Sophie at the Colemak Discord used the best-known one about the quick brown fox to learn Colemak! She just typed it over and over until she knew where all the keys are. It's not a bad way of learning a layout I think, as you can do it anywhere without other tools than a simple text box – or in Amphetype or Monkey-type (see below) if you wish.
+
+At higher skill levels, it's probably best to switch your training to the most common words and n-grams as described above. But maybe it's beneficial for the better typists as well to drill the placement of the rarest letters as well now and then, as those may trip you up more easily.
+
+Sophie recommends using a pangram with mostly typical words. The "quick brown fox" one is a good example, as it uses the common word "the" twice and has no really weird words. Here are a few decent pangram examples:
+[code]The quick brown fox jumps over the lazy dog[/code]
+[code]Pack my box with five dozen liquor jugs[/code]
+[code]Sphinx of black quartz, judge my vow.[/code]
+[code]That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he’s foiled you again, creating chaos.[/code]
+This last one is a phonemic pangram, containing the sounds in English rather than its letters. It lacks W and Z but those are the same in QWERTY and Colemak anyway. I think it's a cute spin on the first one!  (✿◠‿◠)
+
+
+[h]Training with Monkey-type[/h]
+[b][url=https://monkey-type.com/]Monkey-type[/url][/b] bears special mention. It's a smooth, fairly no-nonsense online trainer with lots of possibilities. You can train words from different languages, interesting quotes and custom text. It makes instructive graphs showing your speeds and mistakes through each test, and has become a favorite of the Colemak Discord.
+
+Here's an example of pangram training, as described above. I used the standard "The quick brown fox..." phrase which comes up by default on the custom test, pressed "change" then "random" and a suitable word count. Generally though, I mostly do time tests with the English or English Expanded vocabularies.
+
+    [img]https://www.dropbox.com/s/3zl7ddlhdbrk9fe/PangramTraining_Monkey-type_CustomRandom.png?raw=1[/img]
+    [i]Monkey-type screenshot with custom word training[/i]
+
 
 
 [h]Training tip: Take the Control Back![/h]
@@ -169,33 +180,67 @@ This can sometimes be faster than mashing the Back key, but more importantly it 
 Extend helps me do this quite easily ([b]Ext+T+O[/b] for [b]Ctrl+Back[/b]).
 
 
-[h]Online Training Tools:[/h]
-I've compiled a little list of other typing tests/trainers that I like and use:
-[b][url=https://forum.colemak.com/post/20413/#p20413]The Typing of The Dead[/url][/b] is an immensely fun game described in my Other Typing Tricks post. Have a gander!
+[h]General Training Notes[/h]
+• Also linked to from the main Big Bag topic, here are some tips from the master typists [b][url=https://forum.colemak.com/topic/2455-vipers-speedtyping-guide/]Viper[/url][/b] and [b][url=https://forum.colemak.com/topic/1309-typing-tips-from-the-fastest-typist-sean-wrona/]Sean Wrona[/url][/b].
+• The experts all seem to value the ability to [b]vary your speed[/b]. Type well-known words blazingly fast, and slow down a bit for hard ones to avoid mistakes.
+• Mistakes will slow you down more than consciously slowing down will, once you get used to it!
+• [b]Good training should be varied[/b]! Don't wear yourself out by banging your head against a hurdle until you're exhausted, but keep chipping away at it now and then.
+• Remember to take breaks and do stretching and loosening exercises for your arms and wrists. Circulation is important, and you do not want RSI!
+• I think that many shorter bouts in a day beats a few long ones.
+• You can of course use the above mentioned lesson lists with other training tools such as [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
+• If you want to see lesson statistics on the Analysis tab, you'll have to select "Save key/trigram/word statistics from generated lessons" on the Preferences tab.
+
+Some tips from 200+WPM typist Sophie at the Colemak Discord on [b][url=https://discord.com/channels/409502982246236160/542348815546449930/752824690971770890]how to progress past 100 WPM[/url][/b] (useful for other speeds too):
+[quote=Sophie]
+I think at that point (90–120WPM range) it starts to become less about hitting single buttons fast consciously and more about a relaxed state of mind, your subconscious mind, and achieving a steady mental flow. Around 100WPM is certainly not a speed that requires you to stress your fingers in any way, it's still at that point very much a mental challenge rather than physical. 
+
+So yeah, your mind and hands should both be relaxed although if they start aching a little bit (like workout pain) this is good, you're building some raw strength. Some people say this is bad but I believe you can distinguish between a good pain for strength building and a bad pain for damaging yourself. I found my right pinky usage made my forearm ache for a while til I got it up to speed with the other fingers.
+
+It's only when I type about 220WPM raw speed I feel like I'm stressing my hands and that it's becoming a physical challenge. But I also have a long way to go in mastering my mindset and staying calm and just improving my typing in general. But yeah I don't think there's really much physical challenge in achieving 200WPM with Colemak so just stay calm, and most importantly enjoy your progress! Also experiment and have fun with bursting fast or whatever. You don't have to type rhythmically at the same pace for every word and key combination. Water can flow or it can crash, be water my friend...[/quote]
+These tips are in accord with what other expert typists have said. But with the added advice of being water! _/|\_
+
+
+[h]Other Training Tools[/h]
+Here are some typing improvement tools I've used or found promising:
+
+[b][u]Training[/u][/b]
+[b][url=https://monkey-type.com/]Monkey-type[/url][/b], as mentioned, is very popular. It trains common words smoothly, even plotting nice graphs of your speed afterwards.
 [b][url=https://10fastfingers.com/typing-test/english]10FastFingers[/url][/b] has a very smooth and enjoyable test with some flexibility like typing your own text.
 [b][url=http://play.typeracer.com/]TypeRacer[/url][/b] is another classic for speed training. There's even an Instant Death mode that trains accuracy ruthlessly!
 [b][url=http://eidosk.com/play_game.php?id=1]Fast Typer 3[/url][/b] and its predecessor [b][url=http://www.rapidtyping.com/online-typing-games/fast-typer-2.html]F.T.2[/url][/b] are a hoot, as you train both speed and accuracy very ... fast, indeed. Brutal but fun.
 [b][url=https://www.speedtypingonline.com/typing-test]Speed Typing Online[/url][/b] has a fun little test in which you type text quotes and lyrics.
+[b][url=https://typings.gg/]Typings.gg[/url][/b] is a sleek no-nonsense trainer. Choose how many words to type, and type them.
 
+[b][url=https://btype.io/l/en/en]bType[/url][/b] is great if you want an online tool for "type-reading" books. It even supports multiple languages.
+
+[b][u]Gaming[/u][/b]
+[b][url=https://forum.colemak.com/post/20413/#p20413]The Typing of The Dead[/url][/b] is an immensely fun game, also described in the main Big Bag topic. Have a gander!
+[b][url=https://store.steampowered.com/app/3450/Typer_Shark_Deluxe/]Typer Shark Deluxe[/url][/b] is another game I used to play a lot. The [url=https://scratch.mit.edu/projects/109345344/]Scratch version[/url] didn't work for me, but there's also a download of the PopCap game around.
+[b][url=https://store.steampowered.com/bundle/1809/CAPSLOCKDAY_Bundle/]CAPSLOCKDAY[/url][/b] is a Steam bundle that looks fun. It's four more or less typing related games at a friendly price. Haven't tried them out, but one of these days I may!
+
+[b][u]Learning[/u][/b]
 On the [b][url=https://colemak.com/Learn]Colemak Learn page[/url][/b], there's a list of several tests and trainers, if you want to browse around for more.
-[b][url=https://sense-lang.org/trial/typing/tutor/EN_colemak_tutorial.php]Sense-Lang[/url][/b] has Colemak lessons, but unfortunately no ergo mods like Curl(DH).
-[b][url=http://www.keybr.com/practice]Keybr[/url][/b] is used by many it seems. It's a rather no-nonsense online trainer.
+[b][url=https://colemak.academy/]Colemak Academy[/url][/b] is popular on the Colemak Discord. It has Colemak-DH, but the lessons aren't adjusted for it.
+[b][url=https://sense-lang.org/trial/typing/tutor/EN_colemak_tutorial.php]Sense-Lang[/url][/b] has Colemak lessons, but no Colemak-DH.
+[b][url=http://www.keybr.com/practice]Keybr[/url][/b] is used by many learners. It's a rather no-nonsense online trainer.
 [b][url=https://www.keyhero.com/]Key Hero[/url][/b] is a nice online solution. It's written by a Colemak user, records progress and focuses on realistic learning.
-[b][url=https://thetypingcat.com/]The Typing Cat[/url][/b] also seems nice. Nice kitty! =^.^=
+[b][url=https://thetypingcat.com/]The Typing Cat[/url][/b] also seems nice. Nice kitty! (=^ω^=)丿
 
 This may come too late for you since you're here reading my training page, but:
 If you're new to Colemak and didn't opt for the [b][url=https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/]Tarmak[/url][/b] experience, then maybe [b][url=https://github.com/first20hours/keyzen-colemak]KeyZen for Colemak[/url][/b] could work for you?
 It lets you learn by simply doing in the here and now, without stress. Om, Om! _/|\_
 
 
-[h]Links (mostly for making specified lists of words):[/h]
+[h]Links[/h]
 [url]https://github.com/webiest/amphetype[/url] (Amphetype itself)
 [url]https://github.com/lalopmak/amphetype[/url] (user Lalop's Amphetype fork, with some tweaks)
-[url]http://www.wordfind.com/[/url]
-[url]http://worddetector.com/[/url]
+
+These links are about making specified lists of words:
+[url]https://github.com/first20hours/google-10000-english[/url], the 10000 word list from Google Research (or [url=https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-no-swears.txt]this one[/url] for a raw text file without swear words)
+[url]http://www.wordfind.com/[/url] – you can find words starting with n-grams too, like [url]http://www.wordfind.com/starts-with/the/[/url]
+[url]http://worddetector.com/[/url] – words starting with "the" on [url]http://www.morewords.com/starts-with/the/[/url]
 [url]http://www.morewords.com/[/url]
 [url]http://www.wordhippo.com/[/url]
-[url]https://github.com/first20hours/google-10000-english[/url]
 
 
     [img]https://www.dropbox.com/s/u1xp3biy6wb5ogd/10FF_badges_animated.gif?raw=1[/img]

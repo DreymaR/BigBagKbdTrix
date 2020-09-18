@@ -1,16 +1,18 @@
 [h]KEYBOARD MODDING: GET YOUR OWN PHYSICAL COLEMAK KEYBOARD[/h]
 
 
-For many users of these forums, leaving the old QWERTY keycaps in place may be the most rational option (a completely blank DAS, Bzerk or TypeMatrix board being a stylish hardcore alternative). There may be the issue of compliance with QWERTY-using household members, or the fact that you use multiple boards through the day so you'd better get used to ignoring QWERTY markings anyway. But to be honest, by now I want my own keys to be "properly" labeled; if for nothing else, then so my kids will grow up with Colemak! They look at the keyboard and type what they see there of course. For less hardcore converts and beginners, a physical Colemak keyboard can be a great boon.
+For many users of these forums, leaving the old QWERTY keycaps in place may be the most rational option – a completely blank "ninja" board being a stylish hardcore alternative. There may be the issue of compliance with QWERTY-using household members, or the fact that you use multiple boards through the day so you'd better get used to ignoring QWERTY markings anyway. But to be honest, I do like my keys properly labeled; if for nothing else, then so my kids will grow up with Colemak! They look at the keyboard and type what they see there of course. For some Colemak converts, a physical Colemak keyboard can be a great boon.
 
-    [img]http://www.thinkgeek.com/images/products/zoom/das_keyboard_2.jpg[/img]
-    [i]DAS may be too much![/i]
+    [img]https://www.daskeyboard.com/blog/wp-content/uploads/DK4C-Ult-Top.png[/img]
+    [i]The [url=https://www.daskeyboard.com/daskeyboard-4-ultimate/]DAS Keyboard Ultimate[/url] may be too mystical for you – unless you happen to love the idea of key cap ninjaness?[/i]
 
 A good physical Colemak board solution will maybe make the casual keyboard users take Colemak more seriously. This effect should not be underestimated I think. To many users, the hardware is more than just a means to accessing the software. We who live "inside the box" must not forget that many users aren't quite there, and must see the "box" to trust its existence.
 
 However, if you want a good solution care must be taken. Moving the key caps around works fine on most laptops and some flat keyboards but not on the majority of stationary boards where the keys aren't of equal elevation and not even on all flat boards. If you want to "mod" a keyboard by moving the caps, make sure it's a "slim" board with caps that can actually be swapped around.
 
-Even getting someone to put together and sell a physical Colemak board (great as that would be!) might not suit my needs for instance: I need a national (Norwegian) board where the symbol/punctuation characters are in different places from the US layout, and which has special national characters (in my case, ÆØÅ). I'm even quite picky and generally prefer black boards to grey/latte ones. And a board from a special provider might easily get expensive. Tricky. The big plus of such a board would be that its scan codes could be Colemak right off the board, eliminating the need for installing and setting a layout (or running a program) in software. You could plug it in at your friends' computer and type Colemak immediately. But I don't think this matters a lot: After all, the software options are strong and flexible, and easier to carry around on a USB stick than a physical keyboard anyway.
+Even getting someone to put together and sell a physical Colemak board (great as that would be!) might not suit everybody's needs: Some want a national/locale board where symbol and punctuation characters are in different places from the US layout, and there may be special characters (e.g., the Norwegian letters ÆØÅ). Furthermore, I'm quite picky and generally prefer black boards to grey/latte ones. And a board from a special provider might easily get expensive. Tricky.
+
+One plus of such a board would be that its scan codes could be Colemak right off the board, eliminating the need for installing and setting a layout or running a program. You could plug it in at your friends' computer or even a gaming console and type Colemak immediately. But I don't think this matters a lot: After all, the software options are strong and flexible, and easier to carry around on a USB stick than a physical keyboard anyway. And you may not get the mod variant you prefer anyway: I use a combination of ergo mods which probably won't be found premade anywhere. A fully programmable board or QUICKIE device (see below) solves this, but again those things are somewhat expensive.
 
 
 
@@ -30,18 +32,16 @@ Hooleon also has relegendable keys that have a hard plastic transparent cover to
 
 [b]4KEYBOARD[/b]
 
-You can now (2010) get stickers made especially for the Colemak layout, from [url=http://www.4keyboard.com/colemak-keyboard-sticker-p-234.html]4keyboard.com[/url]. Basically, that's just a sheet of stickers like any other but it has the letters prearranged so that it's easy to apply in the Colemak layout. Your board will get a neat default-markings-to-the-left, Colemak-markings-to-the-right look available in at least yellow and blue colors optimal for dark/bright keys, respectively. Useful for newcomers especially - but if you consider buying a set of stickers then why not help out the people who dared to produce this?
+You can get stickers made especially for the Colemak layout, from [url=http://www.4keyboard.com/colemak-keyboard-sticker-p-234.html]4keyboard.com[/url]. Basically, that's just a sheet of stickers like any other but it has the letters prearranged so that it's easy to apply in the Colemak layout. Your board will get a neat default-markings-to-the-left, Colemak-markings-to-the-right look available in at least yellow and blue colors optimal for dark/bright keys, respectively. Useful for newcomers especially - but if you consider buying a set of stickers then why not help out the people who dared to produce this?
 
     [img]http://www.4keyboard.com/images/stickers/colemak/colemak-bl.jpg[/img]
     [i]4keyboard stickers (the blue variant is shown here; they also come in yellow)[/i]
 
 
-[b]THINKGEEK[/b]
+You can even get super-reflective stickers that'll lend your keys a 'glow-in-the-dark' quality (as long as it isn't actually totally dark but then your screen will be off and you won't really be typing anymore I guess?). Looks nice.
 
-ThinkGeek sells (2010) super-reflective stickers that'll lend your keys a 'glow-in-the-dark' quality (as long as it isn't actually totally dark but then your screen will be off and you won't really be typing anymore I guess?). Looks nice.
-
-    [img]http://www.thinkgeek.com/images/products/additional/large/d77d_glowing_keyboard_stickers_sheet.jpg[/img]
-    [i][url=http://www.thinkgeek.com/computing/keyboards-mice/d77d/]ThinkGeek's glow-in-the-dark key stickers[/url][/i]
+    [img]https://www.4keyboard.com/5033-home_default/english-uk-glowing-fluorescent-english-uk-keyboard-sticker.jpg[/img]
+    [i]4keyboard glow-in-the-dark key stickers[/i]
 
 
 
@@ -61,9 +61,9 @@ Typing on such a board must be an interesting experience indeed. I feel confiden
 
 [b]ODD INPUT SYSTEMS[/b]
 
-I've also thought about a system like the DX1 Input System ([url]http://www.thinkgeek.com/computing/input/77ba/[/url]) that lets you put the keys exactly where you want them exactly when you want them there. Again there's a price tag hurdle, this time set at $140. For gaming it sounds like great fun to modify your setup exactly as you want it without remapping a single key in the software, and it looks like it's got nice clicky keys. But I strongly suspect that once you've set this bad boy up a few times you tire of shuffling keys and leave it at your standard setup. You'd get your Colemak all right, but you can after all get that cheaper elsewhere if you won't be moving keys anymore after all. For the typist in need of something special (a non-staggered, localized, control-key-swapped, ergonomically-spaced, experimental dream creation of yours begging for testing maybe?) it might be interesting indeed. You could make it a TypeMatrix-oid, Kinesis-oid or vaguely Maltron-oid (a flat version of course) test board on the fly to find out what's best for you. An exciting board for developers. To get national glyphs I suppose you'd have to use stickers on some keys.
+I've also thought about crazy systems like the [url=https://www.ergocanada.com/products/other/ergodex_dx1_input_system.html]Ergodex DX1 Input System[/url] that lets you put the keys exactly where you want them exactly when you want them there. Again there's a price tag hurdle, this time set at $140. For gaming it sounds like great fun to modify your setup exactly as you want it without remapping a single key in the software, and it looks like it's got nice clicky keys. But I strongly suspect that once you've set this bad boy up a few times you tire of shuffling keys and leave it at your standard setup. You'd get your Colemak all right, but you can after all get that cheaper elsewhere if you won't be moving keys anymore after all. For the typist in need of something special (a non-staggered, localized, control-key-swapped, ergonomically-spaced, experimental dream creation of yours begging for testing maybe?) it might be interesting indeed. You could make it a TypeMatrix-oid, Kinesis-oid or vaguely Maltron-oid (a flat version of course) test board on the fly to find out what's best for you. An exciting board for developers. To get national glyphs I suppose you'd have to use stickers on some keys.
 
-    [img]http://www.thinkgeek.com/images/products/zoom/dx1.jpg[/img]
+    [img]https://www.ergocanada.com/products/other/ergodex/ergodex_dx1_tray_side_500.jpg[/img]
     [i]Where do you want to type today?[/i]
 
 
@@ -142,7 +142,7 @@ There are other KBPC boards from Siemens Fujitsu that also seem to share the fla
 
 ----------------
 
-I have a Unicomp Spacesaver "IBM Model M type" keyboard – see at the bottom of this post for an image. Mechanical keyboards often have completely moddable key caps so they're a layout modder's paradise. Nuff said? ;-)
+I have a Unicomp Spacesaver "IBM Model M type" keyboard. Mechanical keyboards often have completely moddable key caps so they're a layout modder's paradise in addition to having more ergonomical keys. Nuff said? ;-)
 
     [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
     [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M type) ISO keyboard with "American/Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
@@ -183,7 +183,7 @@ Sometimes recoding doesn't work for all purposes though, as I've seen games bypa
 
 In some cases though, like the poorly implemented but sometimes needed Microsoft Word for Mac, a recoded keyboard would be advantageous as the application doesn't use the virtual keycodes from the operating system properly, and tweaking system files (registry remappings in Windows) can be too drastic. On a computer that you're not the sole user of, you could easily plug in a removable converter and type Colemak as needed while you wouldn't get away with system tweaks that render the machine incompatible with QWERTY.
 
-Another application where a hardware scan code remapping would be handy: My Playstation 3 can use any USB keyboard, but obviously(?) I can't set its keyboard layout to Colemak. For rare OSes such as Solaris where no system remapping is ready (maybe someone have one but it may be hard to find) it's the same story. A board/device that can switch back and forth between layouts is great for such cases.
+Another application where a hardware scan code remapping would be handy: My Playstation and other gaming consoles can use any USB keyboard, but obviously(?) I can't set its keyboard layout to Colemak. For rare OSes such as Solaris where no system remapping is ready (maybe someone have one but it may be hard to find) it's the same story. A board/device that can switch back and forth between layouts is great for such cases.
 
 
 [b]CONCLUSION[/b]
@@ -191,4 +191,4 @@ Another application where a hardware scan code remapping would be handy: My Play
 In conclusion, getting your own Colemak board isn't hard to do, can be done about as low- or high-cost as you like and it's quite rewarding. My Colemak keyboards put a proud smile on my face and even though I type without looking at the keys they're useful whenever I lose my concentration or have to enter rarely used passwords. Plus, it's a visible message to the world that Colemak is a reality!
 
 
-[i]Øystein Bech Gadmar ("DreymaR"), 2007–[/i]
+[i]Øystein Bech Gadmar ("DreymaR"), 2007–2020+[/i]

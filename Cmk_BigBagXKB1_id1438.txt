@@ -6,9 +6,9 @@
 There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
 
 I also have topics focusing on different implementations of the Big Bag Of Keyboard Tricks:
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag (PKL) for Windows[/url][/b] (or go straight to the [url=https://github.com/DreymaR/BigBagKbdTrixPKL]GitHub EPKL repository[/url])
 • The [b][url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag (XKB) for Linux[/url][/b] [b]– you are here![/b]
-• The [b][url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag (PKL) for Windows[/url][/b]
-• The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for USB-2-USB remapping "QUICKIE" devices[/url][/b]
+• The [b][url=https://forum.colemak.com/viewtopic.php?id=2158]Big Bag (TMK) for programmable "QUICKIE" devices[/url][/b]
 • The [b][url=https://forum.colemak.com/viewtopic.php?id=2020]Big Bag (Mac) for Karabinier[/url][/b] by [user]mkborregaard[/user]
 
 
@@ -21,10 +21,11 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
-[b][2.2][/b] The [b]Colemak-DH[/b] ergo mod (deprioritize middle columns without keys changing fingers)
-[b][2.3][/b] [b]Modifier modness[/b] (Work In Progress)
+[b][2.2][/b] [b]Colemak-DH[/b] alias the [b]Curl(DH)[/b] ergo mod (deprioritize middle columns without keys changing fingers)
+[b][2.3][/b] [b]Symbol key mods[/b] for the adventurous (better apostrophe and/or hyphen positions; Work-In-Progress)
+[b][2.4][/b] [b]Modifier modness[/b] for the adventurous (Sticky, One-shot etc; Work-In-Progress)
 
-[b][3]    [u]Other Layouts[/u][/b]
+[b][3]    [u]Layout Variants[/u][/b]
 [b][3.1][/b] [b][url=https://forum.colemak.com/viewtopic.php?id=1858]Tarmak[/url] transitional Colemak[/b] layouts for learning Colemak in smaller steps if so desired
 [b][3.2][/b] For several [b][url=https://forum.colemak.com/viewtopic.php?id=1458]locales[/url][/b], a '[b]Unified Symbols[/b]' layout with only a few necessary changes from standard Colemak[eD]
 [b][3.3][/b] Intuitive [b]Cyrillic, Greek and Hebrew Colemak phonetic layouts[/b] to write other scripts (e.g., using a toggle switch key)
@@ -75,61 +76,64 @@ See the xkb/symbols/colemak file for comments and explanations, in addition to t
 • Or see below about my [b]setxkb[/b] script for changing XKB settings!
 
 
-[h][1.2]    EXTEND LAYERS AND THE CAPS SWITCH MODIFIER[/h]
+[h][1.2]    EXTEND LAYERS[/h]
 
-This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.
+This is [b][url=https://forum.colemak.com/viewtopic.php?pid=16698#p16698]My Favorite Mod[/url][/b] next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And much more.
 
-    [img]https://www.dropbox.com/s/4rnnya9te27p3do/Extend-ISO-NoWi-Linux_90d.png?raw=1[/img]
+    [img]https://www.dropbox.com/s/zhei5lgufhqmcc9/Extend-ISO-NoMod-Linux_96d.png?raw=1[/img]
     [i]A symbolic chart of my Extend mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.[/i]
 
-A more explicit figure from my XKB Extend source file:
+If you prefer text, this is from my XKB Extend source file:
 [spoiler][code]
 These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
-+------+------+------+------+------+------+------+------+------+------+------+------+------+
-|Esc + |F1 <> |F2 << |F3 >> |F4 <> |F5 <> |F6 << |F7 >> |F8 <> |F9 <> |F10<> |F11<> |F12<> |
-|      | Pause| Rew  | Fwd  | Eject| Refr | Bri- | Bri+ | Sleep| WWW  | Mail | App1 | App2 |
-| Caps | Play | Prev | Next | Stop | Mute | Vol- | Vol+ | Media| Home | Srch | File | Calc |
-+======+======+======+======+======+======+======+======+======+======+======+======+======+
-|` €€€ |1     |2     |3     |4     |5     |6     |7     |8     |9     |0     |-     |=     |
-| Cust | F1   | F2   | F3   | F4   | F5   | F6   | F7   | F8   | F9   | F10  | F11  | F12  |
-+------+------+------+------+------+------+------+------+------+------+------+------+------+
-|Tab   |Q €€€ |W *** |F <<> |P <>> |G *** |J ### |L ### |U ### |Y ### |; €€€ |[ €€€ |] €€€ |
-|      | Esc  | *WhUp| BrBck| BrFwd| *MUp | PgUp | Home | Up   | End  | Del  | Esc  | Ins  |
-+------+------+------+------+------+------+------+------+------+------+------+------+------+
-|Caps+ |A +++ |R *** |S +++ |T +++ |D *** |H ### |N ### |E ### |I ### |O €€€ |' €€€ |\ ><> |
-| ++++ | Alt  | *WhDn| Shift| Ctrl | *MDn | PgDn | Left | Down | Right| Back | Menu | BrFav|
-+------+------+------+------+------+------+------+------+------+------+------+------+------+
-|_ *** |Z €€€ |X === |C === |V === |B *** |K *** |M *** |, *** |. *** |/ €€€ |Spc € |Entr€ |
-| *MOn | Undo | Cut  | Copy | Paste| *Bt1 | *Bt2 | *Bt3 | *MLe | *MRi | Multi| Enter| PrtSc|
-+------+------+------+------+------+------+------+------+------+------+------+-------------+
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|Esc +  |F1 <>  |F2 <<  |F3 >>  |F4 <>  |F5 <>  |F6 <<  |F7 >>  |F8 <>  |F9 <>  |F10<>  |F11<>  |F12<>  |
+|       | Pause | Rew   | Fwd   | Eject | Refr  | Bri-  | Bri+  | Sleep | WWW   | Mail  | App1  | App2  |
+| Caps  | Play  | Prev  | Next  | Stop  | Mute  | Vol-  | Vol+  | Media | Home  | Srch  | File  | Calc  |
++=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+=======+
+|` €€€  |1      |2      |3      |4      |5      |6      |7      |8      |9      |0      |-      |=      |
+| Cust  | F1    | F2    | F3    | F4    | F5    | F6    | F7    | F8    | F9    | F10   | F11   | F12   |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|Tab    |Q €€€  |W ***  |F <<>  |P <>>  |G ***  |J ###  |L ###  |U ###  |Y ###  |; €€€  |[ €€€  |] €€€  |
+|       | Esc   | *WhUp | BrBck | BrFwd | *MUp  | PgUp  | Home  | Up    | End   | Del   | Esc   | Ins   |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|Caps+  |A +++  |R ***  |S +++  |T +++  |D ***  |H ###  |N ###  |E ###  |I ###  |O €€€  |' €€€  |\ ><>  |
+| ++++  | Alt   | *WhDn | Shift | Ctrl  | *MDn  | PgDn  | Left  | Down  | Right | Back  | Menu  | BrFav |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|_ ***  |Z €€€  |X ===  |C ===  |V ===  |B ***  |K ***  |M ***  |, ***  |. ***  |/ €€€  |Spc €  |Entr€  |
+| *MOn  | Undo  | Cut   | Copy  | Paste | *Bt1  | *Bt2  | *Bt3  | *MLe  | *MRi  | Multi | Enter | PrtSc |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
 Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; € Various commands.
 [/code][/spoiler]
 
-Hitting Caps+<LSGT> (or Shift+NumLock if that's enabled) enables/disables Pointer Mousing; when that's on you may move the mouse pointer with the GD<> keys and use BKM for buttons (or you can use the KeyPad keys as before). My mapped keys go a few pixels at a time so when acceleration is on you may travel quickly around the screen this way. Wheel mousing works but doesn't repeat so you'll have to press many times to scroll a long way.
+The XKB implementation is almost the same as the Windows/EPKL one. You get separate shifted multimedia key mappings which EPKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are generally poorly implemented in Linux. Instead, there's a MouseKeys On/Off key on <LSGT> and a Compose/Multi key on Slash. The Tilde key is customizeable – by default it holds a spare Del but it could be anything you deem useful. Of course, anything is customizeable really!  d( ^◇^)b
 
-The multimedia keys are mapped to the F keys (++) as intended but XKB/Linux doesn't necessarily link any actions to their key presses although these days most of the usual multimedia keys are configured as expected; this is done in the Shortcuts settings which can be accessed in Unity/Gnome via the Keyboard settings (or dconf-editor/gsettings to org.gnome.desktop.wm.keybindings for the Window Manager ones and ??? for other categories). You could also use xbindkeys, AutoKey or others to bind whatever you want to these keys.
+[b]MouseKeys:[/b] Hitting Caps+<LSGT> (or Shift+NumLock if that's enabled) enables/disables Pointer Mousing; when that's on you may move the mouse pointer with the GD<> keys and use BKM for buttons (or you can use the KeyPad keys as before). My mapped keys go a few pixels at a time so when acceleration is on you may travel quickly around the screen this way. Wheel mousing works but doesn't repeat so you'll have to press many times to scroll a long way.
 
-Using the Settings > Keyboard panel in Unity/Gnome (gnome-control-center keyboard) doesn't work as expected with the Extend mapped keys, since the hotkey will register as a 'Level 5 shift' keypress when you press your Extend key! The trick is to press the modifier(s) before clicking on the shortcut you want to set! Then when 'New accelerator' is showing you press down the final key. I had to do that for the Calculator and Terminal keys (Lv5+<FK12>) as those shortcuts were disabled by default in my Ubuntu install.
+[b]Multimedia keys:[/b] These are mapped to the F keys (++) as intended but XKB/Linux doesn't necessarily link any actions to their key presses although these days most of the usual multimedia keys are configured as expected; this is done in the Shortcuts settings which can be accessed in Unity/Gnome via the Keyboard settings (or dconf-editor/gsettings to org.gnome.desktop.wm.keybindings for the Window Manager ones and ??? for other categories). You could also use xbindkeys, AutoKey or others to bind whatever you want to these keys. Using the Settings > Keyboard panel in Unity/Gnome (gnome-control-center keyboard) doesn't work as expected with the Extend mapped keys, since the hotkey will register as a 'Level 5 shift' keypress when you press your Extend key! The trick is to press the modifier(s) before clicking on the shortcut you want to set! Then when 'New accelerator' is showing you press down the final key. I had to do that for the Calculator and Terminal keys (Lv5+<FK12>) as those shortcuts were disabled by default in my Ubuntu install.
 
-The XKB implementation is almost the same as the Windows/PKL one. You get shifted multimedia keys which Win/PKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are poorly implemented. Instead, there's a MouseKeys On/Off key on <LSGT> and a Compose/Multi key on Slash. Those should be fairly useful I think. The Tilde key is customizeable – by default it holds a spare Del but it could be anything you deem useful.
+Holding down AltGr you get [b]Extend2[/b], a numeric layer laid out pretty much like a standard NumPad but with the top row moved around to fit:
 
-Holding down AltGr you get a NumPad layer (lv7-8) laid out pretty much like a standard one (but with the top row moved around to fit existing keys):
-[code]
-// KeyPad overlay with nav block to the left (lv7-8):
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |` €€€ |1     |2     |3     |4 £   |5 €   |6     |7     |8  ⇑  |9     |0     |-     |=     |
-// | Cust |  !   |  @   |  #   |  $   |  %   |  ^   | KP_7 | KP_8 | KP_9 | KP_* | KP_- | KP_= |
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |Tab   |Q ### |W ### |F ### |P €€€ |G €€€ |J ### |L     |U     |Y     |;     |[ {   |] }   |
-// |      | Home | Up   | End  | Del  | Esc  | PgUp | KP_4 | KP_5 | KP_6 | KP_+ |  (   |  )   |
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |Caps+ |A ### |R ### |S ### |T €€€ |D     |H ### |N     |E  ⇓  |I     |O     |' "   |\ |   |
-// | ++++ | Left | Down | Right| Back | K_Lck| PgDn | KP_1 | KP_2 | KP_3 | K_Ent|  '   |  :   |
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-// |_ *** |Z €€€ |X === |C === |V === |B *** |K     |M     |,  ⇕  |.     |/     |Spc   |Entr  |
-// | *MOn | Undo | Cut  | Copy | Paste| *Bt1 |  ,   | KP_0 | KP_0 | KP_. | KP_/ | Spc  | K_Ent|
-// +------+------+------+------+------+------+------+------+------+------+------+------+------+
-[/code]
+    [img]https://www.dropbox.com/s/ufv16bnz9qzvzhy/Extend-ISO-NoMod-Ext2_96d.png?raw=1[/img]
+    [i]Extend NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.[/i]
+
+Here's the XKB file version:
+[spoiler][code]
+KeyPad overlay with nav block to the left (lv7-8):
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|` €€€  |1      |2      |3      |4 £    |5 €    |6      |7  ⇖   |8  ⇑   |9  ⇗  |0      |-      |=      |
+| Cust  |  !    |  @    |  #    |  $    |  %    |  ^    | KP_7  | KP_8  | KP_9  | KP_*  | KP_-  | KP_=  |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|Tab    |Q ###  |W ###  |F ###  |P €€€  |G €€€  |J ###  |L  ⇐   |U  ⇔  |Y  ⇒  |;      |[ {    |] }    |
+|       | Home  | Up    | End   | Del   | Esc   | PgUp  | KP_4  | KP_5  | KP_6  | KP_+  |  (    |  )    |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|Caps+  |A ###  |R ###  |S ###  |T €€€  |D      |H ###  |N  ⇙   |E  ⇓   |I  ⇘  |O      |' "    |\ |    |
+| ++++  | Left  | Down  | Right | Back  | K_Lck | PgDn  | KP_1  | KP_2  | KP_3  | K_Ent |  '    |  :    |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+|_ ***  |Z €€€  |X ===  |C ===  |V ===  |B ***  |K      |M      |,  ⇕   |.      |/      |Spc    |Entr   |
+| *MOn  | Undo  | Cut   | Copy  | Paste | *Bt1  |  ,    | KP_0  | KP_0  | KP_.  | KP_/  | Spc   | K_Ent |
++-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+
+[/code][/spoiler]
 
 Having to hold down both CapsLock and AltGr while entering numbers is hardly ideal. I'd like to use another key (but there are few to spare) and maybe make it a lock instead of a switch modifier (i.e., one you have to hold down). Unsure about that, really. But at least, here it is. Actually, one might construct a level7 modifier by combining level3 with level5.
 
@@ -185,7 +189,7 @@ The xkb ergonomic keyboard model mods have names|shortstrings as following (see 
 • [b]pc105aw-sl | 5aw[/b] - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
 
 
-[h][2.2]    THE COLEMAK-DH ALIAS "CURL(DH)" ERGO MOD[/h]
+[h][2.2]    COLEMAK-DH ALIAS THE CURL ERGO MOD[/h]
 
 The point of the [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
 
@@ -239,7 +243,20 @@ $> ./setxkb.sh -m pc105caw-sl -o 'misc:cmk_curl_dh'
 Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
 
 
-[h][2.3]    MODIFIER MODNESS (Work In Progress)[/h]
+[h][2.3]    PLAYING WITH THE SYMS (Work-In-Progress)[/h]
+
+The fairly optional "Sym" symbol key mod hasn't yet been implemented in my XKB files. If you're interested, it shouldn't be too hard to add yourself.
+
+[code]
+  \   7   8   9   0   =
+[   j   l   u   y   '   -
+ ]   h   n   e   i   o   ;
+   /   k   m   ,   .   _____
+[/code]
+    [i]The "Sym" symbol rotation mod, shown with the Wide(ISO) mod.[/i]
+
+
+[h][2.4]    MODIFIER MODNESS (Work-In-Progress)[/h]
 
 We've already encountered a modfied modifier above: The Extend key, which is usually the mostly unused CapsLock being put to far better use. In "vanilla" Colemak, this key is modded to a second Backspace.
 
@@ -248,7 +265,7 @@ In the Linux world, it's quite common to shuffle around the modifiers a bit. Cap
 Further modifier modifications is still pretty much a work in progress in my Big Bag.
 
 
-[h][3]    [u]Other Layouts[/u][/h]
+[h][3]    [u]Layout Variants[/u][/h]
 [h][3.1]    THE TARMAK TRANSITIONAL COLEMAK LAYOUTS[/h]
 
 There's a [b][url=https://forum.colemak.com/viewtopic.php?id=1858]main Tarmak topic[/url][/b] that you may want to read. Basically, four Tarmak layouts provide stepping stones from standard QWERTY to Colemak[eD] by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the rare J key is misplaced in the process.
