@@ -19,6 +19,8 @@
 *.yaml       text
 *.hex        text
 LICENSE      text
+README       text
+LICENSE.*    text
 README.*     text
 
 # Declare files that will always have LF/CRLF line endings on checkout:
