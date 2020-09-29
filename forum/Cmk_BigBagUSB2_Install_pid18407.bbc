@@ -1,0 +1,99 @@
+[h][4.1]    DOWNLOAD AND INSTALL[/h]
+
+[b]First off: [url=https://github.com/DreymaR/BigBagKbdTrix_TMK]Here are my TMK-based files[/url][/b] on GitHub! There's:
+• A [b]BigBagKbdTrix_TMK[/b] dir with my files; it can go into or beside the tmk_keyboard/ dir of [url=https://github.com/tmk/tmk_keyboard/]Hasu's repo[/url]
+• A [b]MakeFlash shell script[/b] (see below) that'll install and run TMK with my files under Linux
+• A [b]_myhexfiles[/b] dir with some ready-made HEX files that you can flash directly onto a Hasu device (or any other ATmega32U4 chip)
+
+In addition to providing my additional files for use with [url=https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb/]Hasu's TMK code for his USB to USB converter[/url], this post shows how to prepare your device and get ready to make and flash (install) a HEX file to it. If you have another device or just wish to learn more, I recommend looking at the [url=https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/build.md]TMK help files[/url] and [url=https://github.com/njbair/keyboard_firmware#building--flashing-the-firmware]NJBair's instructive firmware building/flashing guide[/url].
+
+The [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/url][/b] post below will show you how to get or generate a keymap/layout that suits you, and the [b][url=https://forum.colemak.com/post/18411/#p18411]Device Flashing[/url][/b] post shows how to program a USB2USB or other TMK device with that file.
+
+
+[b][i]Device preparation:[/i][/b]
+
+[b]1.[/b] [b]For flashing on Windows: [url=http://www.atmel.com/tools/FLIP.aspx]Install Atmel's FLIP application[/url][/b] for device drivers ++
+        • Note that it says 'Buy now' on a button but the links below don't cost anything!
+        • I've had trouble with FLIP not finding a Java Virtual Machine after a Java update; you may have to [b][url=https://www.java.com/en/download/manual.jsp]reinstall your Java Runtime Environment[/url][/b].
+
+[b]2.[/b] [b]Insert the device and press its Bootloader mode button (fig. 1–4)[/b].
+        • You don't need a keyboard plugged into the device yet. In fact, to be on the safe side, I recommend not plugging in a keyboard yet!
+        • When in Application/Keyboard mode, the yellow App LED should be lit; when in Bootloader/Flash mode it goes out.
+
+    [img]https://www.dropbox.com/s/o0ht4z1kdmje0q1/USB2USB_Hasu-physical.png?raw=1[/img]
+    [i]Fig. 1: Hasu's USB-2-USB device. 1) USB host – plug keyboard here; 2) USB client – plug into computer or whatever; 3) App LED; 4) Bootloader button[/i]
+
+[b]3a.[/b] [b]For flashing on Windows: Install/update the device drivers for your ATmega32U4 (or other) chip[/b].
+        • The Windows Device Manager shows your device first as a HID keyboard and then, in Bootloader mode, as an Atmel or ATMega USB device
+        • Point the driver update to the [b]C:\Program Files (x86)\Atmel\Flip 3.4.7\usb[/b] or similar directory if necessary
+        • Now, using the Windows Device Manager you can check that the device is mounted:
+
+    [img]https://www.dropbox.com/s/w7tehe9krg9gix3/USB2USB_WinDevMgr_Hasu-ApplicationVsBootloaderMode.png?raw=1[/img]
+    [i]Fig. 2: Windows Device Manager showing the Hasu USB-2-USB device in Application/Keyboard (left) and Bootloader (right) mode.[/i]
+
+[b]3b.[/b] [b]For flashing on Linux: Ensure that your device is seen by the OS, in DFU (bootloader) mode[/b].
+        • The [b]lsusb[/b] command lists attached USB devices; hopefully there's an entry with Atmel and "AVR DFU Bootloader" in it.
+        • If you're using a Linux virtual machine, make sure the device is [b]captured[/b] in Bootloader mode, using your VM app's device listings.
+        • Every time you enter or leave bootloader mode, you may have to recapture the device for your VM.
+        • It should be ticked off in the Devices>USB menu on VirtualBox for instance; similarly for VMWare and others:
+
+    [img]https://www.dropbox.com/s/f5683klcr1nhc5y/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png?raw=1[/img]
+    [i]Fig. 4: The Devices (pop-up) menu of VirtualBox, showing a properly captured Atmel USB device.[/i]
+
+
+[b][i]Getting and installing my TMK files, TMK itself and AVR tools for Linux:[/i][/b]
+
+My files are extensions of Hasu's TMK code. You'll need to compile them within a copy of his repo, and I'll describe how to do this on a Linux machine. You can use a real or virtual Linux machine; I've used an Ubuntu VM. If you have an updated 64-bit Windows 10, you can even use the Linux Subsystem BASH command line to do it without leaving Windows – see below! I guess you could also use for instance [url=https://www.cygwin.com/]CygWin[/url] or [url=http://www.mingw.org/]MinGW[/url], but I haven't tried those possibilities.
+
+Included in my files is the shell script [i][b]makeflash_dreymar_tmk.sh[/b][/i] that does several things on a Linux machine. Run it with the -h option for more help:
+    [img]https://www.dropbox.com/s/av3fpswzgudb9pj/USB2USB_Linux-MakeFlash-help.png?raw=1[/img]
+    [i]Fig. 3: The help text for my MakeFlash script, showing options and default values. This image may be outdated; run the script yourself.[/i]
+
+
+[b][i]Step-by-step instructions for installing on Linux:[/i][/b]
+
+Here's a set of [b]step-by-step download/install instructions[/b]:
+[b]1)[/b] [b][url=https://github.com/DreymaR/BigBagKbdTrix_TMK]Download or clone my repo[/url][/b] and...
+        • if installing TMK, put its directory with at least the [b]MakeFlash[/b] script in the dir in which you want TMK.
+        • My files/dirs can actually go either a) in a dir beside TMK's [b]tmk_keyboard[/b], b) directly inside it, or c) in a dir inside it
+        • (On my virtual machine, I use a shared folder so both Linux and Windows can see the HEX files I've built directly.)
+[b]2)[/b] [b]Install the AVR Tools[/b] needed for compiling for and flashing to the chip with [i][b]bash makeflash_tmk_dreymar.sh -a[/b][/i]
+[b]3)[/b] [b]Install Git & Hasu's GitHub TMK repository[/b] with [i][b]bash makeflash_dreymar_tmk.sh -g[/b][/i] (if you have Git/TMK already, it'll update them)
+[b]4)[/b] Make sure my repo is in place relative to the TMK one as described above, and open a terminal there
+[b]5)[/b] Now you're ready to [b]Build and flash HEX files[/b] from TMK code. To simply build the default keymap as set in keymap_dreymar.c, use:
+[code]
+$> ./makeflash_dreymar_tmk.sh
+[/code]
+
+See the [b][url=https://forum.colemak.com/post/18410/#p18410]Keymap Configuration[/url][/b] post below for more info on getting a HEX file that suits you, and the [b][url=https://forum.colemak.com/post/18411/#p18411]Device Flashing[/url][/b] post for how to program your device with the HEX file.
+
+
+[b][i]Addendum: Using BASH on Windows through the Linux Subsystem[/i][/b]
+
+The Windows 10 Anniversary Edition (64-bit) has an exciting addition that's nominally still in beta but already quite operational (command-line only): A [url=http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/]Ubuntu GNU/Linux "Subsystem" running a BASH command line terminal[/url]! This is capable of compiling the TMK code just like a Linux machine. I've heard you cannot flash to a device with it, as dfu-programmer isn't working (yet) – but that's no biggie as you can just use Windows-based flashing tools. Anyway, just try and see if it works now; let me know if it does!
+
+Hasu has [url=https://github.com/tmk/tmk_keyboard/wiki/Bash-On-Ubuntu-On-Windows10]instructions on how to use BASH on Windows 10 for TMK compiling[/url], but here's a little run-through:
+
+• Make sure you have the [b]Windows 10(64bit) Anniversary Update[/b] or newer; if you don't then [url=https://support.microsoft.com/en-us/help/12387/windows-10-update-history]get it from Microsoft's pages[/url].
+    [b][i]Settings → System → About[/i][/b]; your WIndows version should be >1607.
+• Activate [b]Developer Mode[/b]
+    [b][i]Settings → Update & Security → For developers → Developer mode[/i][/b]
+• Activate [b]Windows Subsystem for Linux[/b]
+    [b][i]Control Panel → Programs → Turn Windows features on or off → Windows Subsystem for Linux (beta)[/i][/b] (requires a restart)
+• Start the [b]BASH terminal[/b]
+    [b][i]Start Menu → Bash on Ubuntu on Windows[/i][/b]; you'll have to finish the Ubuntu install and choose a username/pwd the first time.
+• Navigate to a suitable folder and follow the step-by-step procedure above to install AVR tools, make, git and TMK and get going!
+    At [b][i]/mnt/c/[/i][/b] you'll find the C:\ drive; you have access to the same file system as Windows does.
+• If you have my files in a different location from the main tmk ones, you can use a symbolic link to make my script see the tmk dir.
+
+
+[b][i]Addendum: Using other keyboard converters/controllers[/i][/b]
+
+The above should work directly for any ATmega32U4-based controllers. TMK works for several types of keyboard controllers and converters; look inside the TMK dirs for more info. The map files I use now are in the Unimap format, which should work with all TMK compatible controllers.
+
+I've tested Hasu's PS/2-USB converter. For that device, be aware of the following:
+• This converter uses the ATmega32U2 chip (for now). If flashing with FLIP, set its device selection accordingly.
+• To compile for the PS/2-USB converter with my script, use the following switches:
+[code]
+$> ./makeflash_dreymar_tmk.sh -d converter/ps2_usb/ -m Makefile.unimap.rev2
+[/code]

@@ -1,0 +1,35 @@
+[h][4.1]    DOWNLOAD AND INSTALL[/h]
+
+Files for Portable Keyboard Layout (PKL) by Farkas Máté can be found here:
+[b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]My EPKL repo at GitHub, with all layouts and stuff[/url][/b]
+
+This topic is already too long and complex so I can't add a lot of EPKL support here, but basically: 
+• EPKL runs on Windows (XP, 7/8/10 – except some "secure" dialogs)
+• It's portable: Just run it from anywhere! You don't need Install rights, and it doesn't change the Registry nor anything outside its own folders
+• You can carry it with you on a USB drive and run it directly from the USB drive, as long as you have Run privileges from that drive; or put it in the Cloud!
+• It's compatible with the wonderful [b][url=http://portableapps.com/]PortableApps[/url][/b] format
+• To run EPKL with the PortableApps menu, put its folder in the PortableApps folder (e.g., C:\PortableApps) – that's all!
+• To run EPKL at startup, put a shortcut to pkl.exe (e.g., Alt-drag the program icon somewhere) in your Windows Startup folder
+    – To access the Startup folder, press Win+R (for the Run dialog) then enter 'shell:startup'
+• The above will work by user, so you can use your EPKL independently of others (but all users of one EPKL will share the same settings)
+• EPKL won't be running at first logon but will remain active under a screen lock, so I recommend getting a layout-independent password or learning your password on all layouts you're using!
+
+• The main settings files are EPKL_Settings.ini and EPKL_Layouts_#.ini, in which you can choose a layout. Layout specific settings are in that layout's folder in a layout.ini file.
+• I have a shortcut system for my layouts: You can specify board type (ANSI/ISO), AngleWide and Curl mods, and locale code.
+    – If that layout combination exists, it'll be used. Check the Layouts folder to see your options.
+• The .ini file formats are understandable and commented, but not always simple. Proper documentation, unfortunately, doesn't exist yet.
+
+
+[h][4.2]    EPKL TIPS AND TRICKS[/h]
+• Check the GitHub repo for a lot more info and tips!
+• You can adjust the size of the help images in the layout.ini file; I've included a few options but anything goes really
+    – Most of my help images are 812×282 pixels (at 96 dpi native resolution)
+    – If you want smaller images you could use for instance 2/3 or 1/2 of that in both directions
+    – There is a scale setting in % for each layout, and also a global Zoom hotkey setting to switch between sizes
+• If you want to use the CapsLock key for something else or use another key for your Extend modifier:
+    – Look in the EPKL_Layouts_#.ini files, for the 'QWCLK' behavior.
+    – It can be a simple key, like BACK (=Backspace) that standard Colemak uses...
+    – ...or better, the [b]Extend[/b] modifier!
+    – As a [b]Tap-or-Mod[/b] (ToM) key, it can double up as a key press on tap and a modifier on hold.
+    – This way it can even be a [b]Mother-of-Dead-Keys[/b] (MoDK), with many different functions!
+    – This behavior is ruled by what other modifiers are active when you tap/hold Extend.

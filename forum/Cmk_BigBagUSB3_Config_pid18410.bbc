@@ -1,0 +1,210 @@
+[h][4.2]    KEYMAP CONFIGURATION[/h]
+
+This post shows how to get the keymap HEX file you want. How to compile TMK or other code is described here.
+
+If you wish to delve deeply into keymap editing, make sure you've read at least Hasu's [b][url=https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md]Keymap and Layers[/url][/b] ReadMe. It and other docs are found in the [b][url=https://github.com/tmk/tmk_keyboard/tree/master/tmk_core/doc]tmk_keyboard/tmk_core/doc[/url][/b] dir of his GitHub repo.
+
+
+[b][i]Using a precompiled HEX file:[/i][/b]
+
+I've provided some .hex files with my download, but I can't make every combination of options as that'd take a lot of my time. If you're lucky, you'll find what you need and then you don't have to build your own HEX file. There may be other such files available from other sources, too.
+
+My provided pre-compiled HEX files are:
+• [b]QWE-Tarmak-Cmk_All_Extend:[/b] A full progression from QWERTY via Tarmak 1–4 to Colemak, with Extend, without any ergonomic mods ("vanilla").
+• [b]QWE-Tarmak-Cmk_CurlAWideISO_Extend:[/b] A full Tarmak progression as above, with Extend and the Curl(DH)AngleWide-ISO ergo mods.
+
+So you could use these files to:
+• Learn Colemak or Colemak-CAW with as many Tarmak steps as you like (0–4),
+• Type Tarmak#, Colemak or Colemak-CAW with Extend, or just
+• Type QWERTY with Extend and optionally the AngleWide-ISO ergo mod (the Curl mod does not apply to QWERTY)
+
+If you find a ready-made HEX file, make sure it's built for the right chip. The Hasu USB-2-USB device currently uses [b]Atmel ATmega32U4[/b].
+
+
+[b][i]Using Hasu's online editor to generate a HEX file:[/i][/b]
+
+[b][url=http://www.tmk-kbd.com/tmk_keyboard/editor/unimap/?usb_usb]Hasu's Online TMK Keymap Editor for the USB to USB converter[/url][/b] will let you make .hex files you can save and use for flashing your ATmega32U4 device. If you need a simple keymap that I haven't made already, this may be the easiest way of getting it.
+
+    [img]https://www.dropbox.com/s/6gggrl9zl83iq05/USB2USB_Hasu-TMK-WebEditor_L0-L1_70pc.png?raw=1[/img]
+    [i]Fig.: Hasu's Online keymap editor, showing two different layers and key panels.[/i]
+
+You can make up to 7 layers with this, only by clicking the keys you want into place. The NO code deactivates a key, and the TRNS code lets whatever is in active lower layers "shine through". There's a tab of layer switching functions too. Just mess around with it, it's fun.
+
+To make modified key strokes and other fancy stuff, there's a Code Edit tab. To understand it, read [url=https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md]Hasu's TMK Keymap guide[/url].
+
+You can also output C/JSON/etc code that you may compile manually for other devices, but you can't easily use that code for tweaking layouts, since it'll only give you hex codes for all the keys so unless you happen to know the right numbers you'll get a big headache trying to figure that out.
+
+Here's an online editor example if you want a quick Big Bag starting point: [url=https://goo.gl/GNfui5]My Colemak-CAW layout with two Extend layers[/url]. You can also import one of the precompiled HEX files into it if you want.
+
+[s]Note: There's also an [url=http://www.tmk-kbd.com/tmk_keyboard/editor/usb_usb/index.html]older version of the online editor[/url], but that didn't support modified keys.[/s]
+
+
+[b][i]Building a HEX file from TMK files on Linux:[/i][/b]
+
+If you've followed the [b][url=https://forum.colemak.com/post/18407/#p18407]Download and Install[/url][/b] post above, by now you should have a copy of Hasu's TMK repo with my usb_usb files inside its converter/usb_usb directory and a terminal open to that directory.
+
+In addition to installing, my shell script [i][b]makeflash_dreymar_tmk.sh[/b][/i] run in Linux can:
+• [b]Build a HEX file[/b] (default name is [i][b]usb_usb_unimap.hex[/b][/i]) for flashing to your device, using Hasu's Makefile
+• [b]Flash a HEX file to a device in Bootloader mode[/b] (or you may take the file to Windows and do it with Atmel FLIP instead)
+• [b]Clean up[/b] all the files from a build/compilation; note that this also removes the .hex file unless you've renamed or moved it
+
+Run it with a keymap file's name (unimap_<name>.c) to optionally choose a non-default keymap file (the default is 'dreymar'):
+[code]
+$> bash makeflash_dreymar_tmk.sh [<name>]
+[/code]
+
+If you run the script with [b]-h[/b], you'll see the default values for which directory to use and what the file will be called etc. For an example, see the Install post above.
+
+
+[b][i]Editing my (or other) TMK keymap files:[/i][/b]
+
+I've provided a [i][b]unimap_dreymar.c[/b][/i] file with several keymaps/layouts in, and a [i][b]unimap_dreymar.h[/b][/i] file that mostly holds keymap types for the Angle/Wide ergo mods. For normal purposes, the [b]unimap_dreymar.c[/b] file will be the one you want to edit to get the layout(s) you want. Use any editor (as long as it preserves character encoding) to edit the file in your local [b][url=https://github.com/tmk/tmk_keyboard/tree/master/converter/usb_usb]tmk_keyboard/converter/usb_usb[/url][/b] directory before building the HEX file as described above.
+
+The default layer is layer0; this will always be active when the device is activated. I've used layer1 for a second layout and added a layer-toggle key (ScrollLock by default) to go back and forth between two layouts. Layer2+ are intended for Extend layers but only layers 2–3 are in use for now.
+
+The layout options are chosen with preprocessor directives; you can edit the values of the #define <OPTION> <value> lines before compiling to produce different .hex files as you like.
+
+[b][i]"Physical" keymap type settings (Angle/Wide ergo mods) in unimap_dreymar.c; see below if you want to edit these in unimap_dreymar.h:[/i][/b]
+[code]
+/* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
+ * _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
+ * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle (the simple lower left half-row shift)
+ * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/)
+ * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z)
+ * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(')
+ * _ANAAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
+ *
+ * Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
+ * To get my favoured Colemak-CAW (CurlAngleWide) layout on ISO/ANSI, use _AWIZXCBV / _AWAXCBVZ
+ *      with ACTIVELAYOUT 5 and CURLMOD 1 settings below. Oh, and CAPSBEHAVIOR 1 of course! ^_^
+ */
+#define UNIMAPLAYOUT(...)   UNIMAP_AWIZXCBV( __VA_ARGS__ )  /* CurlAngleWide-ISO ergo model */
+[/code]
+
+For layouts and layout options, the directives will select which pieces of code below to actually compile so you get what you want.
+
+[b][i]Active/default layout settings:[/i][/b]
+[code]
+/* Define the ACTIVELAYOUT (and CURLMOD) constant(s) to choose the layer0 layout:
+ * 0  : QWERTY
+ * 1-#: Tarmak1 - transitional Colemak (supports CURLMOD; see below)
+ * 2-#: Tarmak2 - transitional Colemak (--"--)
+ * 3-#: Tarmak3 - transitional Colemak (--"--)
+ * 4-#: Tarmak4 - transitional Colemak (--"--)
+ * 5-0: Colemak
+ * 5-1: Colemak Curl-DH (requires a CurlAngle keymap; see above)
+ * 6-#: Mirrored Colemak (normally used as second layout with a layer switch)
+ * 7  : Dvorak
+ * 8  : Workman (if you must - I believe Colemak Curl-DH is a _lot_ better!)
+ */
+#define ACTIVELAYOUT    5   /* LAY_COLEMAK      */
+[/code]
+
+[b][i]Second/switch layout settings:[/i][/b]
+[code]
+/* Define the SECONDLAYOUT (and CURLMOD) constant(s) to choose the layer1 switch layout:
+ * 0  : Unmodded QWERTY is the default; otherwise:
+ * 1  : QWERTY with any active ergo mods (AngleWide etc)
+ * 2-#: Colemak (if you want something else, replace it in the code between the 'REPLACE THE SECOND LAYOUT...' lines)
+ * 3-#: Colemak Mirrored as second layout for one-handed typing (needs an accessible switch key!)
+ *      NOTE: The "FPau" key is a layer1 toggle or switch (select which below), normally used on the Pause key.
+ *            You may swap, e.g., LALT, RGUI or another key with "FPau" in your active layout to use that key instead.
+ */
+# define SECONDLAYOUT   0   /* SEC_VANQWERTY    */
+[/code]
+
+[b][i]Curl(DH)-mod settings:[/i][/b]
+[code]
+/* The CURLMOD options for Colemak and Tarmak layouts are:
+ * 0: No Curl - vanilla Colemak/Tarmak
+ * 1: The Curl(DH) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
+ * 2: SteveP99's old Curl(DHm or DvbgHm) ergo mod, bringing D/H down but M to the home row.
+ *    Some matrix board users may prefer this mod, but several prefer the default even on matrix boards.
+ *
+ * NOTE: On the first Tarmak step, CURLMOD 1 will include the HMK swaps whereas CURLMOD 2 won't. So you can choose.
+ *       For a baby Tarmak1 step, use CURLMOD 2 and then 1. The K will be misplaced at first, but it's rare.
+ * NOTE: Another baby step after Tarmak1 could be transitioning to a CurlAngle(Wide) keymap model before Tarmak2.
+ */
+# define CURLMOD        1   /* CURL_DH          */
+[/code]
+
+[b][i]CapsLock behavior settings, including Extend mode:[/i][/b]
+[code]
+/* The CAPSBEHAVIOR constant chooses Caps key action, including the powerful Extend layer switch:
+ * 0: CapsLock (unchanged)
+ * 1: Extend modifier (uses a little more layout memory, but it's by far the most powerful option IMNSHO!)
+ * 2: BackSpace (for vanilla Colemak or otherwise; a decent choice but Extend is better!)
+ * 3: LCtrl
+ * 4: Esc
+ */
+#define CAPSBEHAVIOR    1   /* CAPS_EXTEND      */
+
+/* The EXT#BIT constants with the main Extend key (Caps by default) select Extend# layers in the EXTENDER user function:
+ * Ext1 on Caps alone       : Navigation/editing/multimedia
+ * Ext2 on Ext2+Caps        : NumPad/Navigation
+ */
+#define EXT2BIT MOD_BIT(KC_RSFT)                                    /*  Ext2+Ext selects Extend2    */
+[/code]
+
+[b][i]Sticky mods (Shift and/or Ctrl) settings:[/i][/b]
+[code]
+/* The STICKYMODS constant chooses LShift, RShift and RCtrl key behavior (I chose to leave LCtrl alone):
+ * 0: Normal Shift/Ctrl (default)
+ * 1: Sticky Shift only
+ * 2: Sticky Ctrl only
+ * 3: Sticky Shift & Ctrl
+ * NOTE: In the unimap_dreymar.h file, some relevant constants normally set in config.h are (re)set:
+ *       - TAPPING_TERM is the max time a key may be held down for it to register as tapped
+ *       - ONESHOT_TIMEOUT is the max delay before a oneshot modifier is ignored
+ */
+#define STICKYMODS      1   /* STICKY_SHFT      */
+[/code]
+
+[b][i]ScrollLock and Pause/Break behavior settings:[/i][/b]
+[code]
+/* The SCLKBEHAVIOR constant chooses ScrollLock key action:
+ * 0: Normal ScrollLock (default)
+ * 1: Layer 1 toggle key (toggles the second layout)
+ * 2: Layer 1 switch key (layer shift; e.g., for mirrored typing if you can use it as "ghetto" foot switch)
+ */
+#define SLCKBEHAVIOR    1   /* SLCK_L1TOGGLE    */
+
+/* The PAUSBEHAVIOR constant chooses Pause/Break key action:
+ * 0: Normal Pause/Break (default)
+ * 1: Win/GUI key (useful for 101/104-key boards that have no GUI key)
+ */
+#define PAUSBEHAVIOR    0   /* PAUS_PAUS        */
+[/code]
+
+
+[b][i]Editing maps and headers manually:[/i][/b]
+It is of course entirely possible to edit the layouts themselves directly. It should be fairly intuitive how to do that. See the [url=https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keycode.txt]TMK keycode.txt[/url] file for a list of all key codes (layouts use the 3–4 letter versions).
+
+CapsLock, LAlt, RAlt and some other keys are defined as Fn## keys in the layouts. At the start of the file there's a bunch of action definitions for these.
+
+Below are some examples from an unimap file:
+[code]
+#  define AC_FTab ACTION_LAYER_TAP_KEY(2, KC_TAB)    // FTab (Tab key)  as Ext2 – tap for Tab (for now)
+#  define AC_FnLA ACTION_KEY(KC_LALT)                // FnLA (LAlt key) as usual (for now)
+#  define AC_FnRA ACTION_KEY(KC_RALT)                // FnRA (RAlt key) as usual (for now)
+//#  define AC_FnU1 ACTION_MODS_KEY(MOD_LGUI, KC_T)    // FnU1 (`) as Win+T
+#  define AC_FnU1 ACTION_MACRO(TYPESTR1)             // FnU1 as user macro: Type a string
+[/code]
+
+In the above:
+• FTab, mapped to the Tab key (TAB) in my layouts, activates layer 2 (Ext2) while held down, and sends the TAB key code if tapped.
+    – The Tab key is quite handy as a dual-role modifier, but unfortunately it loses its repeat functionality this way.
+    – ISO keyboard users might want to use the <LSGT> key instead; its code is NUBS ("Non-US Backslash").
+• FnLA and FnRA, similarly, are my versions of the LAlt and RAlt keys. But for now, their defined actions are mostly to be their normal selves!
+• AC_FnU1 is a user macro key that I put on Extend+Tilde/Grave. It's macro is defined at the end of the file; in this case it types out a boilerplate text (my email footer).
+• Commented out above, is an alternative definition for FnU1: Sending a LWin+T keystroke instead (in Windows, this brings you to the menu line).
+
+Here's an ergo remapping from the [b]unimap_dreymar.h[/b] file; this one's (the lower part of) the UNIMAP_ANIZXCVB Angle-ISO mod. Note how ZXCVB have moved:
+[code]
+    ESC_,    FK01,FK02,FK03,FK04,   FK05,FK06,FK07,FK08,   FK09,FK10,FK11,FK12,   PSCR,SCLK,PAUS,        VOLD,VOLU,MUTE,  \
+    GRV_,N1_1,N2_2,N3_3,N4_4,N5_5,N6_6,N7_7,N8_8,N9_9,Na_0,NbMN,NcEQ,JYEN,BSPC,   INS_,HOME,PGUP,   NLCK,KPDV,KPMU,KPMN,  \
+    TAB_  ,U1_Q,U2_W,U3_E,U4_R,U5_T,U6_Y,U7_U,U8_I,U9_O,Ua_P,UbLB,UcRB,   BSLS,   DEL_,END_,PGDN,   KP_7,KP_8,KP_9,KPAD,  \
+    CAPS   ,H1_A,H2_S,H3_D,H4_F,H5_G,H6_H,H7_J,H8_K,H9_L,HaSC,HbQU,HcHS,  ENT_,                     KP_4,KP_5,KP_6,KPCM,  \
+    LSFT ,L1_Z,L2_X,L3_C,L4_V,L5_B,L0LG,L6_N,L7_M,L8CM,L9DT,LaSL,JROM,    RSFT,        _UP_,        KP_1,KP_2,KP_3,KPEN,  \
+    LCTL ,LGUI,LALT,JMHE,         SPC_         ,JHEN,JKAN,RALT,RGUI,APP_, RCTL,   LEFT,DOWN,RGHT,   KP_0     ,KPDT,KPEQ   \
+[/code]

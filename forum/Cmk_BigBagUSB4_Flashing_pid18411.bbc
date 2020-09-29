@@ -1,0 +1,37 @@
+[h][4.3]    DEVICE FLASHING[/h]
+
+This post shows how to flash your HEX file to a USB-2-USB device and get it ready for typing. See the above posts for how to [b][url=https://forum.colemak.com/post/18407/#p18407]prepare the device[/url][/b] and [b][url=https://forum.colemak.com/post/18410/#p18410]get the HEX file you want[/url][/b].
+
+[b]NOTE:[/b] Flashing with a keyboard plugged into the device may be safe in most cases. But I got trouble with one keyboard (IBM/Unicomp Model M) after using FLIP for flashing with it inserted; it seems like the drivers or registry entry got corrupted somehow because now it won't mount on that PC anymore even though it's quite okay on other machines. Be warned.
+
+
+[b][i]Flashing the device with Linux:[/i][/b]
+
+My script run with the [b]-f[/b] option flashes the generated HEX file to a connected device using DFU-Programmer; if you've already made the .hex file use [b]-b[/b] to skip rebuilding it. If you want to flash without using my script, you could use the 'make dfu' command inside the usb_usb directory, or look inside the script to see how I did it.
+
+According to the [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build]TMK wiki build FAQ[/url], you'll need admin/sudo rights for the 'dfu-programmer' command (there's [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Build#linux-udev-rules]a workaround using udev rules[/url], but it's a bit techy). I've tried flashing without sudo and it worked for me in one case but not another. If you do need sudo, run makeflash like this:
+[code]
+$> sudo ./makeflash_dreymar_tmk.sh -bf
+[/code]
+
+[b]NOTE:[/b] You do [i]not[/i] generally want to build your files as root! Then you'll be in trouble if you try to clean up as non-root afterwards. So run MakeFlash twice, once with normal privileges to build your .hex file and the other time with -b (to not build again) and -f (to flash) with sudo/root privileges.
+
+If you're using BASH on Windows 10 (beta), [url=https://github.com/tmk/tmk_keyboard/wiki/Bash-On-Ubuntu-On-Windows10]dfu-programmer won't work yet[/url], due to a problem with mounting USB devices in general (libusb). Use Windows native tools instead, such as FLIP or dfu-programmer for Windows.
+
+If you have another device, you may need some other method and more tools. As mentioned at the start of this post, there are helpful help files you may consult for this.
+
+
+[b][i]Flashing the device with Atmel FLIP on Windows:[/i][/b]
+
+You can use Atmel FLIP on Windows instead of flashing under Linux: It gives you more feedback and intuitive control with the process. If you compiled your HEX file on Linux you must make it available for the Windows file system to use Windows FLIP. I just put the whole TMK repository in a shared folder that both Windows and my virtual Linux machine can see; you could also move it on a USB drive or copy-paste from a Virtual Machine if your VM settings allow this.
+
+[b]1.[/b] [b]Select the right chip (fig 5–1)[/b]. For the Hasu device, it's [b]ATmega32U4[/b]. Verify the chip type [b][i](fig 5–a)[/i][/b].
+[b]2.[/b] [b]Connect to the device[/b] in Bootloader mode. Select [b]USB connection (fig 5–2)[/b] then [b]Open[/b]. Verify the connection [b][i](fig 5–c)[/i][/b].
+[b]3.[/b] [b]Load a HEX file (fig 5–3)[/b]. Use shared folders, a USB disk or some other way of accessing the file with Windows.
+                 Verify for ATmega32U4 which only has 32kB memory minus 4 kB bootloader, that the file size is below [b]28480 bytes[/b] [b][i](fig 5–b)[/i][/b].
+[b]4.[/b] [b]Flash the device (fig 5–4)[/b]. Make sure all options are on as shown, then press "[b]Run[/b]".
+[b]5.[/b] [b]Activate the device (fig 5–5)[/b]. Press "[b]Start Application[/b]". Reset should be checked.
+[b]6.[/b] [b]Test the device[/b]. With a keyboard connected to the device, type something on it and see that it does what it should.
+
+    [img]https://www.dropbox.com/s/ozmnhilo335x7ff/USB2USB_AtmelFlip_Hasu.png?raw=1[/img]
+    [i]Fig. 5: Atmel FLIP for Windows. 1) Select chip (a); 2) Connect (c); 3) Load HEX file (b); 4) Flash device; 5) Start device[/i]
