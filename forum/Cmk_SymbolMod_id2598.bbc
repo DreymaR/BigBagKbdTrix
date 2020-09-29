@@ -97,3 +97,18 @@ I tried this "Sym" mod out a little but at first I found it too confusing to be 
 
 [b][edit 2020-04:][/b]
 I'm now using the full Sym mod and liking it. Both the apostrophe/quote and hyphen keys feel more naturally placed, especially for normal text. Coders on ANSI boards may dislike the position of semicolon in Colemak-CAWS but for ISO I think it's fine. Now, as mentioned above, swapping the brackets and parentheses could be nice? How deeply into the rabbit hole would [i]you[/i] like to venture...?  ￣(=⌒ᆺ⌒=)￣
+
+[b][edit 2020-09:][/b]
+I feel the ANSI semicolon may have drawn the short straw here, and Slash should probably have the bottom row like with ISO. Would it be better to have the semicolon on the BS key after all?
+[code]
+For ANSI boards, 1) leaving BS alone or 2) putting semicolon on the BS key:
+QU > SC > SL > EQ > MN
+QU > SC > BS > EQ > MN > SL
+[/code]
+The full CurlAngleWideSym mod on an ANSI board, with semicolon on the BS key:
+[code]
+1   2   3   4   5   6   \   7   8   9   0   =
+  Q   W   F   P   B   [   J   L   U   Y   '   -   ;
+   A   R   S   T   G   ]   K   N   E   I   O   
+     X   C   D   V   Z   /   M   H   ,   .
+[/code]

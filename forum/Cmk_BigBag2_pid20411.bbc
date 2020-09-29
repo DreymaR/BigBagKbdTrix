@@ -126,8 +126,9 @@ For ISO boards, as two separate loops:
 QU > SC
 MN > SL > BS > EQ
 
-For ANSI boards, leaving BS alone:
+For ANSI boards, 1) leaving BS alone or 2) putting semicolon on the BS key:
 QU > SC > SL > EQ > MN
+QU > SC > BS > EQ > MN > SL
 
 Optional addition: Swap parentheses and brackets
 () > []

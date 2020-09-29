@@ -1,13 +1,20 @@
-DreymaR's Big Bag Of Keyboard Tricks - Forum topics
-===================================================
+DreymaR's Big Bag Of Keyboard Tricks - Forum topics -> html
+===========================================================
 
 TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks at the Colemak Forum:
 -----------------------------------------------------------------------
-- Make an Image-ination point in the main BigBag post and Main4
-- Make Image2 and Image3 posts
+- Make Image2 and Image3 posts for the Image topic (topic 111)
 	- Image2: Keyboard images. State licencing for SVG (CC) vs others (Public Domain)
 	- Image3: Interesting designs, fun, logos, icons, etc
-- Migrate everything from .txt to .bbc files, and move these to a forum subfolder in preparation for merging w/ the .html topic
+
+TODO/WIP For the BigBag web pages:
+----------------------------------
+- Merge this w/ the .html topic! There's a guide at Stackoverflow:
+	- https://stackoverflow.com/questions/21353656/merge-git-repo-into-branch-of-another-repo
+- Make a Co browser tab favicon
+	- https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website
+- Make one img (or res?) folder from the Dropbox Public one, and one html or www/web
+	- Put css and js in a separate script or res folder, or in www?
 
 
 HTML tips from MarVel95, 2019-09-17:
