@@ -4,7 +4,7 @@
     <title>Extend Layers - Dreymar's Bag Of Tricks</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="web/main.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -22,7 +22,7 @@
         <div id="menuContainer">
             <div id="menu">
                 <div id="menuHeader">
-                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
                 </div>
                 <ul>
                     <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <a id="navLogo" href="index.html"><img src="content/images/logo-nav.png" alt="Logo"></a>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
     </nav>
 
     <main>
@@ -49,11 +49,11 @@
         <h1 class="left">&nbsp; &nbsp; EXTRICATING</h1>
         <h1 class="left">EXTEND!</h1>
 
-        <img src="content/images/Extend-ANSI-NoWi-Linux_90d.png" alt="Extend ANSI NoWi Linux ">
+        <img src="res/img/Extend-ANSI-NoWi-Linux_90d.png" alt="Extend ANSI NoWi Linux ">
         <p class="italic">Extend! Green, navigation; blue, mousing; orange, multimedia; gray, system/misc. For more info, read on!</p>
 
         <h2>(Or: Extend is really really neat – and I'll tell you why now.)</h2>
-        <img class="autoWidth left" src="content/images/Extend_KeyLogo.png" alt="Extend Key Logo">
+        <img class="autoWidth left" src="res/img/Extend_KeyLogo.png" alt="Extend Key Logo">
 
         <h2> ... Why?</h2>
         <div class="quote"><p><b>stevep99 said:</b><br>
@@ -68,33 +68,33 @@
 
         <p>Many of the tricks described here work under <b>both Windows and Linux</b>, as they often use the same shortcuts. Some are Windows specific though, and some are specific for some browsers (I mostly use Firefox but there are usually plugins and/or similar tricks available for other browsers). Macs often have different tacks and I haven't used one of those in a while so I can't really enlighten you much there – but the principles are the same so I guess Mac users could learn to love the Extend mode as much as I do. Up until recently there weren't any <b><a href="https://forum.colemak.com/viewtopic.php?id=2020">Extend mappings for Macs</a></b>, but fortunately user mkborregaard has remedied that. Yay!</p>
 
-        <img class="autoWidth left" src="content/images/Extend_KeyLogo.png" alt="Extend_KeyLogo.png">
+        <img class="autoWidth left" src="res/img/Extend_KeyLogo.png" alt="Extend_KeyLogo.png">
 
         <h2> ... What?</h2>
 
         <p>Oh, sorry. Maybe you don't know or remember exactly what Extend is? If you do, you may skip to the next part now. For those reading on, Extend is like the Fn layer that some laptops have to get the NumPad and maybe some other keys. Some compact "hacker" keyboards such as the <a href="https://en.wikipedia.org/wiki/Happy_Hacking_Keyboard">Happy Hacking Keyboard</a> also sport Fn layers that give easy access to arrows, F# keys and other keys that are missing from the reduced-size keyboard.</p>
 
-        <img src="content/images/HHKBPro2_EliteKbds.png" alt="HHKBPro2_EliteKbds.png">
+        <img src="res/img/HHKBPro2_EliteKbds.png" alt="HHKBPro2_EliteKbds.png">
         <p class="italic">The legacy of Extend: The Happy Hacking Keyboard's Fn layer for navigation, media and F# keys.</p>
 
         <p>Instead of an extra hardware "Fn" key, the Extend mappings can use any key really as their modifier, but usually it's CapsLock that gets the honor although some prefer using a thumb. I wanted a far better layout than the one above, so I and others on the Colemak forums came up with one around 2008. It was later expanded and implemented in PortableKeyboardLayout (PKL) by its creator Farkas Máté who also to my knowledge came up with the name 'Extend' for this wonder. <br>
         My Extend layout is quite similar to the default PKL one, but I've worked more on it adding mousing and multimedia and fiddling with some key placements.</p>
 
         This, then, is the result. First, as a color-coded layout image with text labels:
-        <img src="content/images/Extend-ISO-NoMod-Win_96d-Labels.png" alt="Extend ISO NoMod Win 96d Labels">
+        <img src="res/img/Extend-ISO-NoMod-Win_96d-Labels.png" alt="Extend ISO NoMod Win 96d Labels">
         <p class="italic">My Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.<br>
             World/ISO board. Windows/PKL mappings with MouseWheel R/L keys.<br>
             [FYI: The first image of this topic shows US/ANSI board with Linux mappings.]</p>
 
         <p>Then the same image using symbols as found in EPKL help images etc. Shifted F# keys have extra multimedia functions:</p>
-        <img src="content/images/Extend-ISO-NoMod-Win_96d.png" alt="Extend ISO NoMod Win 96d">
+        <img src="res/img/Extend-ISO-NoMod-Win_96d.png" alt="Extend ISO NoMod Win 96d">
 
         <p>If you wish to print out a labeled Extend reference image you can use an image editor on this high-res one:</p>
 
         <div class="spoiler">
             <p><span>Spoiler:</span></p>
             <div class="spoilerBody">
-                <img src="content/images/Extend-DIY_192d-Labels.png" alt="Extend DIY 192d labels">
+                <img src="res/img/Extend-DIY_192d-Labels.png" alt="Extend DIY 192d labels">
                 <p class="italic">My Extend mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.<br>
                     DIY 1624×728px version. Piece together what you want using an image editor.</p>
             </div>
@@ -133,7 +133,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 
         <p>The Extend mappings are mostly positional so they'll work with any layout – even if some keys like A and ZXCVB might be easier to remember using Colemak or QWERTY. If you use Curl(DH), Angle and/or Wide ergo mods the Extend mappings should move accordingly to match the transposed home positions of the ZXVCB and right-hand keys. Other than that, I wouldn't move around the Extend mappings to suit different underlying layouts as they mostly go by key position rather than letter.</p>
 
-        <img src="content/images/Extend-ISO-AWi-Linux_90d.png" alt="Extend-ISO-AWi-Linux_90d.png">
+        <img src="res/img/Extend-ISO-AWi-Linux_90d.png" alt="Extend-ISO-AWi-Linux_90d.png">
         <p class="italic">My Extend mappings, Linux version. Greens, navigation; blue, mousing; orange, multimedia; gray, system/misc. <br>
             World/ISO board with AngleWide ergo mod (shifted ZXCV_ and right-hand keys).</p>
 
@@ -145,12 +145,12 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
         <div class="spoiler">
             <p><span>Spoiler:</span></p>
             <div class="spoilerBody">
-                <img src="content/images/UHK_ModLayer.png" alt="UHK Mod Layer">
+                <img src="res/img/UHK_ModLayer.png" alt="UHK Mod Layer">
                 <p class="italic">Source: <a href="https://ultimatehackingkeyboard.com/wordpress/wp-content/uploads/2018/10/mod-layer.png">https://ultimatehackingkeyboard.com/wor … -layer.png</a></p>
             </div>
         </div>
 
-        <img class="autoWidth left" src="content/images/Extend_KeyLogo.png" alt="Extend_KeyLogo.png">
+        <img class="autoWidth left" src="res/img/Extend_KeyLogo.png" alt="Extend_KeyLogo.png">
 
         <h2>... When?</h2>
         
@@ -160,7 +160,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
         
         <p>I've made some one-shot Extend layers (see below) that return to the main layer after releasing one key; these are good for "power strings" that typically are entered once, and approach the sequence concept. They could just as well have been implemented with tap-dances instead. The best is using a mix of chords and sequences!</p>
 
-        <img class="autoWidth left" src="content/images/Extend_KeyLogo.png" alt="Extend_KeyLogo.png">
+        <img class="autoWidth left" src="res/img/Extend_KeyLogo.png" alt="Extend_KeyLogo.png">
 
         <h2> ... How?</h2>
 
@@ -382,7 +382,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 
         <p>My Extend ideally has four layers – I don't see the need for more but let me know if you do. The Extend2 layer holds a NumPad with some useful symbols easily available and the navigation/editing block moved to the left hand:</p>
 
-        <img src="content/images/PKL_ISO_Ext2.png" alt="PKL_ISO_Ext2.png">
+        <img src="res/img/PKL_ISO_Ext2.png" alt="PKL_ISO_Ext2.png">
 
         <p class="italic">Extend NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.</p>
 
@@ -417,11 +417,11 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 
         <p>On Windows/EPKL, I have string templates including a set of kaomoji text faces in the Extend3 layer! L is for Lenny. ( ͡° ͜ʖ ͡°)</p>
 
-        <img src="content/images/Extend3-ISO-Angle_Cpt.png" alt="Extend3 ISO Angle Cpt">        
+        <img src="res/img/Extend3-ISO-Angle_Cpt.png" alt="Extend3 ISO Angle Cpt">        
         <p class="italic">My kaomoji Extend3 layer, mnemonically arranged for Colemak ISO-Angle.</p>
 
         <p>In EPKL, all four layers are available using combinations of the two specified modifiers (by default RAlt and RShift) with Extend. The Ext3/Ext4 layers are set to be one-shot string layers, so if you press RShift+RAlt+Ext, then hold down Ext and press a home row letter you'll release a "powerstring" then fall back to Ext1 for normal editing. Also, since the Ext1/Ext2 layers are positional they are marked as "hard" layers: They don't change with letter positions and would look the same on Colemak as on, say, Dvorak – but they are affected by ergo mods like AngleWide. The kaomoji layer in Ext3 is "soft" though, since the strings are mnemonically linked to different letters:</p>
-        <img src="content/images/Extend3-ISO-CAWide_Cpt.png" alt="Extend3 ISO CAWide Cpt">
+        <img src="res/img/Extend3-ISO-CAWide_Cpt.png" alt="Extend3 ISO CAWide Cpt">
         <p class="italic">My kaomoji Extend layer, mnemonically arranged for Colemak-CAW. Note how both the Curl(DH) and AWide mods move mappings.</p>
 
         <p>Press RShift+Caps for Extend3, then Caps+D to start a Robot Dance Party in your text!  ♪～└[∵┌]└[･▥･]┘[┐∵]┘～♪</p>
@@ -433,13 +433,13 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 
         <h2>The ...</h2>
 
-        <p><span class="postimg"><img class="autoWidth left" src="content/images/Extend_KeyLogo.png" alt="Extend_KeyLogo.png"></span></p>
+        <p><span class="postimg"><img class="autoWidth left" src="res/img/Extend_KeyLogo.png" alt="Extend_KeyLogo.png"></span></p>
 
         <p>So there you have it, voila and prestidigitatus! I hope you will learn to enjoy Extending as much as I have, and find it liberating and empowering. Best of luck on your journeys!</p>
 
         <p><em>~ DreymaR</em></p>
 
-        <p><span class="postimg"><img class="autoWidth left" src="content/images/PKL_Extend.png" alt="PKL_Extend.png"></span></p>
+        <p><span class="postimg"><img class="autoWidth left" src="res/img/PKL_Extend.png" alt="PKL_Extend.png"></span></p>
 
         <p><b><em>SOME RELEVANT LINKS (MOSTLY ABOUT SHORTCUTS)</em></b><br><a href="https://en.wikipedia.org/wiki/Table_of_keyboard_shortcuts">https://en.wikipedia.org/wiki/Table_of_ … _shortcuts</a><br><a href="http://www.computerhope.com/shortcut.htm">http://www.computerhope.com/shortcut.htm</a><br><a href="https://support.microsoft.com/kb/126449">https://support.microsoft.com/kb/126449</a><br><a href="http://windows.microsoft.com/en-us/windows/keyboard-shortcuts#keyboard-shortcuts=windows-7">http://windows.microsoft.com/en-us/wind … =windows-7</a></p>
 
@@ -450,6 +450,6 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 
         <p>It would seem that Frank Herbert is referring to Extend in this passage?! Fortunately, it took us substantially less than four thousand years and no messing with consciousness-expanding substances as we solved it in software! ;-)</p>
     </main>
-    <script src="scripts/main.js"></script>
+    <script src="web/main.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <title>Other Layouts</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="web/main.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -22,7 +22,7 @@
         <div id="menuContainer">
             <div id="menu">
                 <div id="menuHeader">
-                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
                 </div>
                 <ul>
                     <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <a id="navLogo" href="index.html"><img src="content/images/logo-nav.png" alt="Logo"></a>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
     </nav>
 
     <main>
@@ -51,7 +51,7 @@
 
             <p>Tarmak transitional layouts have been <a href="https://forum.colemak.com/viewtopic.php?id=480">reported successful in easing the conversion to Colemak typing</a> and although this evidence is anecdotal I find the <a href="https://forum.colemak.com/viewtopic.php?id=358">proposed hypothesis</a> that gradual changes should be easier to learn for many a plausible one.</p>
 
-            <img src="content/images/Tarmak_Spectral_ETROI.png" alt="Tarmak Spectral">
+            <img src="res/img/Tarmak_Spectral_ETROI.png" alt="Tarmak Spectral">
             <p class="italic">The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).</p>
 
             <div class="platform-specific win">
@@ -61,7 +61,7 @@
 
                 <p>There's a help image for each step, that you can see or hide with the shortcut Ctrl+Shift+1 (configurable in pkl.ini). Holding Shift will show the current and previous steps in different colors.</p>
 
-                <img class="smallImg" src="content/images/TarmakCurl3_R_Spect.png" alt="Tarmak Curl 3">
+                <img class="smallImg" src="res/img/TarmakCurl3_R_Spect.png" alt="Tarmak Curl 3">
                 <p class="italic">The help image for the third Tarmak-Curl step. Unshifted version.</p>
             </div>
 
@@ -82,11 +82,11 @@
                 <li>See the colemak_template symbols file for more info on local Colemak[eD] variants.</li>
             </ul>
 
-            <img src="content/images/Cmk-eD-usym-aw_Xm.png" alt="Colemak[eD] Usym">
-            <img src="content/images/Cmk-eD-dk%2Bno-usym-aw_Xm.png" alt="Colemak[eD] Bno-Usym">
+            <img src="res/img/Cmk-eD-usym-aw_Xm.png" alt="Colemak[eD] Usym">
+            <img src="res/img/Cmk-eD-dk%2Bno-usym-aw_Xm.png" alt="Colemak[eD] Bno-Usym">
             <p class="italic">The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant (mostly like the standard Colemak above).</p>
 
-            <img src="content/images/Cmk-eD-no-ksym_Xm.png" alt="Colemak[eD] No Ksym">
+            <img src="res/img/Cmk-eD-no-ksym_Xm.png" alt="Colemak[eD] No Ksym">
             <p class="italic">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).</p>
 
             <p>Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.</p>
@@ -100,7 +100,7 @@
 
             <p>For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?</p>
 
-            <img src="content/images/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
+            <img src="res/img/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
             <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p>
 
 
@@ -113,11 +113,11 @@
 
             <p>Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.</p>
 
-            <img src="content/images/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
+            <img src="res/img/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
             <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)</p>
 
 
-            <img src="content/images/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
+            <img src="res/img/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
             <p class="italic">The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing I think</p>
 
             <div class="platform-specific win">
@@ -167,6 +167,6 @@
                     &nbsp;&nbsp;&nbsp;– If so, make sure you also turn off CapsLock as Extend as described above.</li>
             </div>
     </main>
-    <script src="scripts/main.js"></script>
+    <script src="web/main.js"></script>
 </body>
 </html>

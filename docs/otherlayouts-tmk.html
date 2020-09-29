@@ -4,7 +4,7 @@
     <title>Other Layouts</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="web/main.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -22,7 +22,7 @@
         <div id="menuContainer">
             <div id="menu">
                 <div id="menuHeader">
-                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
                 </div>
                 <ul>
                     <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <a id="navLogo" href="index.html"><img src="content/images/logo-nav.png" alt="Logo"></a>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
     </nav>
 
     <main>
@@ -51,7 +51,7 @@
 
             <p>Tarmak transitional layouts have been <a href="https://forum.colemak.com/viewtopic.php?id=480">reported successful in easing the conversion to Colemak typing</a> and although this evidence is anecdotal I find the <a href="https://forum.colemak.com/viewtopic.php?id=358">proposed hypothesis</a> that gradual changes should be easier to learn for many a plausible one.</p>
 
-            <img src="content/images/Tarmak_Spectral_ETROI.png" alt="Tarmak Spectral">
+            <img src="res/img/Tarmak_Spectral_ETROI.png" alt="Tarmak Spectral">
             <p class="italic">The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).</p>
 
             <div class="platform-specific tmk">
@@ -97,11 +97,11 @@
                 <li>See the colemak_template symbols file for more info on local Colemak[eD] variants.</li>
             </ul>
 
-            <img src="content/images/Cmk-eD-usym-aw_Xm.png" alt="Colemak[eD] Usym">
-            <img src="content/images/Cmk-eD-dk%2Bno-usym-aw_Xm.png" alt="Colemak[eD] Bno-Usym">
+            <img src="res/img/Cmk-eD-usym-aw_Xm.png" alt="Colemak[eD] Usym">
+            <img src="res/img/Cmk-eD-dk%2Bno-usym-aw_Xm.png" alt="Colemak[eD] Bno-Usym">
             <p class="italic">The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant (mostly like the standard Colemak above).</p>
 
-            <img src="content/images/Cmk-eD-no-ksym_Xm.png" alt="Colemak[eD] No Ksym">
+            <img src="res/img/Cmk-eD-no-ksym_Xm.png" alt="Colemak[eD] No Ksym">
             <p class="italic">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).</p>
 
             <p>Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.</p>
@@ -111,7 +111,7 @@
 
             <p>For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?</p>
 
-            <img src="content/images/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
+            <img src="res/img/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
             <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p>
 
             <div class="platform-specific tmk">
@@ -133,11 +133,11 @@
 
             <p>Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.</p>
 
-            <img src="content/images/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
+            <img src="res/img/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
             <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)</p>
 
 
-            <img src="content/images/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
+            <img src="res/img/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
             <p class="italic">The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing I think</p>
 
             <div class="platform-specific tmk">
@@ -199,7 +199,7 @@
                     <li>When in Application/Keyboard mode, the yellow App LED should be lit; when in Bootloader/Flash mode it goes out.</li>
                 </ul>
                 
-                    <img src="content/images/USB2USB_Hasu-physical.png" alt="USB2USB Hasu Physical">
+                    <img src="res/img/USB2USB_Hasu-physical.png" alt="USB2USB Hasu Physical">
                     <p class="italic">Fig. 1: Hasu's USB-2-USB device. 1) USB host – plug keyboard here; 2) USB client – plug into computer or whatever; 3) App LED; 4) Bootloader button</p>
                 
                 <p><b>3a. For flashing on Windows: Install/update the device drivers for your ATmega32U4 (or other) chip.</b></p>
@@ -209,7 +209,7 @@
                     <li>Now, using the Windows Device Manager you can check that the device is mounted:</li>
                 </ul>
             
-                    <img src="content/images/USB2USB_WinDevMgr_Hasu-ApplicationVsBootloaderMode.png" alt="USB2USB Application Vs Bootloader Mode">
+                    <img src="res/img/USB2USB_WinDevMgr_Hasu-ApplicationVsBootloaderMode.png" alt="USB2USB Application Vs Bootloader Mode">
                     <p class="italic">Fig. 2: Windows Device Manager showing the Hasu USB-2-USB device in Application/Keyboard (left) and Bootloader (right) mode.</p>
                 
                 <p><b>3b. For flashing on Linux: Ensure that your device is seen by the OS, in DFU (bootloader) mode.</b></p>
@@ -220,7 +220,7 @@
                     <li>It should be ticked off in the Devices>USB menu on VirtualBox for instance; similarly for VMWare and others:</li>
                 </ul>
                 
-                    <img src="content/images/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png" alt="USB2USB Bootloader Mode">
+                    <img src="res/img/USB2USB_VBox-DevicesMenu_Hasu-BootloaderMode.png" alt="USB2USB Bootloader Mode">
                     <p class="italic">Fig. 4: The Devices (pop-up) menu of VirtualBox, showing a properly captured Atmel USB device.</p>
                 
                 
@@ -229,7 +229,7 @@
                 <p>My files are extensions of Hasu's TMK code. You'll need to compile them within a copy of his repo, and I'll describe how to do this on a Linux machine. You can use a real or virtual Linux machine; I've used an Ubuntu VM. If you have an updated 64-bit Windows 10, you can even use the Linux Subsystem BASH command line to do it without leaving Windows – see below! I guess you could also use for instance CygWin or MinGW, but I haven't tried those possibilities.</p>
                 
                 <p>Included in my files is the shell script <b class="italic">makeflash_dreymar_tmk.sh</b> that does several things on a Linux machine. Run it with the -h option for more help:</p>
-                    <img src="content/images/USB2USB_Linux-MakeFlash-help.png" alt="USB2USB Linux MakeFlash Help">
+                    <img src="res/img/USB2USB_Linux-MakeFlash-help.png" alt="USB2USB Linux MakeFlash Help">
                     <p class="italic">Fig. 3: The help text for my MakeFlash script, showing options and default values. This image may be outdated; run the script yourself.</p>
                 
                 
@@ -316,7 +316,7 @@ $> ./makeflash_dreymar_tmk.sh -d converter/ps2_usb/ -m Makefile.unimap.rev2
 
                 <p><a href="http://www.tmk-kbd.com/tmk_keyboard/editor/unimap/?usb_usb"><b>Hasu's Online TMK Keymap Editor for the USB to USB converter</b></a> will let you make .hex files you can save and use for flashing your ATmega32U4 device. If you need a simple keymap that I haven't made already, this may be the easiest way of getting it.</p>
 
-                    <img src="content/images/USB2USB_Hasu-TMK-WebEditor_L0-L1_70pc.png" alt="USB2USB Web Editor">
+                    <img src="res/img/USB2USB_Hasu-TMK-WebEditor_L0-L1_70pc.png" alt="USB2USB Web Editor">
                     <p class="italic">Fig.: Hasu's Online keymap editor, showing two different layers and key panels.</p>
 
                 <p>You can make up to 7 layers with this, only by clicking the keys you want into place. The NO code deactivates a key, and the TRNS code lets whatever is in active lower layers "shine through". There's a tab of layer switching functions too. Just mess around with it, it's fun.</p>
@@ -545,7 +545,7 @@ $> sudo ./makeflash_dreymar_tmk.sh -bf
                 <b>5. Activate the device (fig 5–5)</b>. Press <b>"Start Application"</b>. Reset should be checked.<br>
                 <b>6. Test the device</b>. With a keyboard connected to the device, type something on it and see that it does what it should.</p>
 
-                    <img src="content/images/USB2USB_AtmelFlip_Hasu.png" alt="USB2USB Atmel FLIP">
+                    <img src="res/img/USB2USB_AtmelFlip_Hasu.png" alt="USB2USB Atmel FLIP">
                     <p class="italic">Fig. 5: Atmel FLIP for Windows. 1) Select chip (a); 2) Connect (c); 3) Load HEX file (b); 4) Flash device; 5) Start device</p>
 
                 <h2>HARDWARE IMPLEMENTATIONS</h2>
@@ -555,17 +555,17 @@ $> sudo ./makeflash_dreymar_tmk.sh -bf
 
                 <p>Colemak forum user <a href="https://forum.colemak.com/user/2108-darkness/">Darkness</a> made a device and <a href="https://github.com/darkytoothpaste/keymapper">his own code for it</a>, see his <a href="https://forum.colemak.com/viewtopic.php?id=1561">"Arduino-based hardware keyboard remapper" topic</a> for more info. Scroll down that page for pictures and a nice <a href="https://forum.colemak.com/viewtopic.php?pid=11494#p11494">how-to sum-up post</a>. He started off with an Arduino Leonardo like the one to the left in Yangdigi's image above; this can be a good development platform if you have one. But for a more useful implementation, he uses an Arduino Teensy 2.0 as seen below. Hasu has tried his TMK code on this device and it seems to be working fine.</p>
 
-                    <img src="content/images/USB2USB_DarkyToothpaste_Teensy.jpg" alt="USB2USB Darkness Teensy">
+                    <img src="res/img/USB2USB_DarkyToothpaste_Teensy.jpg" alt="USB2USB Darkness Teensy">
                     <p class="italic">Darkness's Teensy-based USB-2-USB Converter (see <a href="https://forum.colemak.com/viewtopic.php?id=1561">his topic</a>)</p>
 
                 <p>I'm really hoping that <a href="https://www.kickstarter.com/projects/paulstoffregen/teensy-35-and-36/description"><b>the upcoming Teensy 3.5/3.6</b></a> can be used for TMK! These devices are fast, have a lot more Flash/RAM (512/192 kB for 3.5; 1024/256 kB for 3.6) and most importantly, come with a second USB intended for Host mode so it won't need a separate USB host! That may make it a cheap and powerful option; someone will hopefully test this soon.</p>
 
                 <p>The safest and easiest option may be to order the brilliant <a href="https://geekhack.org/index.php?topic=69169.0"><b>USB to USB Converter from GeekHack user Hasu</b></a>, who has also developed the TMK software for converting keyboards to more awesome keyboards. I've got a few of these beauties, and my code, instructions and .hex definition files below are based on Hasu's device although they may be used for other devices too (may need some geeky tweaking).</p>
 
-                    <img src="content/images/USB2USB_Hasu-NJBair_GeekHack-topic74708_GadOE.jpg" alt="USB2USB Converter">
+                    <img src="res/img/USB2USB_Hasu-NJBair_GeekHack-topic74708_GadOE.jpg" alt="USB2USB Converter">
                     <p class="italic"><a href="https://geekhack.org/index.php?topic=69169.0">Hasu's USB to USB Converter for TMK Key mapping</a> (original photo by <a href="https://geekhack.org/index.php?topic=74708.0">Nick J Bair</a>)</p>
 
-                    <img src="content/images/PS2USB_Hasu_GadOE.png" alt="USB2USB GadOE">
+                    <img src="res/img/PS2USB_Hasu_GadOE.png" alt="USB2USB GadOE">
                     <p class="italic">Oh look, Hasu has other converters and keyboard controllers too! Here's a <b>PS/2-to-USB</b> converter making my friend's vintage IBM Model M board awesome.</p>
 
 
@@ -613,10 +613,10 @@ $> sudo ./makeflash_dreymar_tmk.sh -bf
                 </ul>
 
 
-                <img src="content/images/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png" alt="Unicomp DreymaR">
+                <img src="res/img/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png" alt="Unicomp DreymaR">
                 <p class="italic">My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American/Ninja" caps, splendidly sporting the Colemak-CAW layout.</p>
         </div>
     </main>
-    <script src="scripts/main.js"></script>
+    <script src="web/main.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <title>Key Mappings</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="main.css" rel="stylesheet">
+    <link href="web/main.css" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -22,7 +22,7 @@
         <div id="menuContainer">
             <div id="menu">
                 <div id="menuHeader">
-                    <img id="menuLogo" src="content/images/logo-menu.png" alt="Menu Logo">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
                 </div>
                 <ul>
                     <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
@@ -39,7 +39,7 @@
                 </ul>
             </div>
         </div>
-        <a id="navLogo" href="index.html"><img src="content/images/logo-nav.png" alt="Logo"></a>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
     </nav>
 
     <main>
@@ -59,12 +59,12 @@
             <li>The positions of added letters and symbols should as far as possible be easy to remember!</li>
         </ul>
 
-        <img src="content/images/Cmk-ANSI-eD_96d-FShui.png" alt="Colemak ANSI eD">
+        <img src="res/img/Cmk-ANSI-eD_96d-FShui.png" alt="Colemak ANSI eD">
         <p class="italic">The <strong>Colemak [edition DreymaR]</strong> layout, using different lv3-4 mappings from Shai's default Colemak. <br>
         Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.</p>
 
 
-        <img src="content/images/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
+        <img src="res/img/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
         <p class="italic"><strong>Colemak-CAW[eD]</strong>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see the next post).</p>
 
         <div class="platform-specific tmk">
@@ -77,7 +77,7 @@
             <p>However, I have made a user function that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts (on the bracket and ISO LSGT keys) as in Colemak[eD], and it works fine for me. I even added the bullet and dagger glyphs (on the ISO \| key) for good measure. You can find various lists of alt codes to use, such as this one. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.</p>
         </div>
 
-        <img src="content/images/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ANSI eD">
+        <img src="res/img/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ANSI eD">
         <p class="italic">Fig.: Colemak-CAW[eD], showing an ISO board with the Curl(DH)Angle and Wide ergonomic mods (see below).</p>
 
         <h2>EXTEND LAYERS AND THE CAPS SWITCH MODIFIER</h2>
@@ -85,10 +85,10 @@
 
         <p>For more info and tricks, see <a href="extendlayers.html">my Extend Extra Extreme page</a>.</p>
 
-        <img src="content/images/Extend-ISO-NoMod-Win_96d.png" alt="">
+        <img src="res/img/Extend-ISO-NoMod-Win_96d.png" alt="">
         <p class="italic">My Extend Nav/Edit mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.</p>
 
-        <img src="content/images/Extend-ISO-NoMod-Ext2_96d.png" alt="">
+        <img src="res/img/Extend-ISO-NoMod-Ext2_96d.png" alt="">
         <p class="italic">My Extend NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.</p>
 
         A more explicit chart from my XKB Extend source file:
@@ -96,7 +96,7 @@
         <div class="spoiler">
             <p><span>Spoiler:</span></p>
             <div class="spoilerBody">
-                <img class="left" src="content/images/Extend-ISO-NoMod-Linux_96d-Labels.png" alt="">
+                <img class="left" src="res/img/Extend-ISO-NoMod-Linux_96d-Labels.png" alt="">
                 <p class="italic left">My Extend mappings (lvl1 only). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
                 <pre><code>
 These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
@@ -214,6 +214,6 @@ DreymaR's Extend2 layer:
             <p><b>NOTE: Superstacking Extend modifiers</b> doesn't always work for me. Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Other users didn't have this problem...?</p>
         </div>
     </main>
-    <script src="scripts/main.js"></script>
+    <script src="web/main.js"></script>
 </body>
 </html>
