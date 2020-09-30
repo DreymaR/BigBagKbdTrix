@@ -16,10 +16,9 @@ let platforms = {
 let platformWisePages = ['ergomods', 'keymappings', 'otherlayouts'];
 
 document.onload = function () {
-    function () {
-        includeHTML();
-    }
-    
+    includeHTML();    /* W3Schools - how to include html */
+
+    /* Marvel95's main code */
     let platform = sessionStorage.getItem('platform');
     if (platform) {
         platforms[platform].classList.add('isActive');
@@ -32,7 +31,6 @@ document.onload = function () {
     else {
         document.getElementById('platforms').removeAttribute('class');
     }
-    
 
     Object.keys(platforms).forEach(platform => function (){
         platforms[platform].addEventListener('click',
@@ -197,30 +195,30 @@ function removeTutorialScreen() {
     document.body.removeChild(tutorialScreen);
 }
 
+/* https://www.w3schools.com/howto/howto_html_include.asp */
 function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+    var elms, i, elmt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    elms = document.getElementsByTagName("*");
+    for (i = 0; i < elms.length; i++) {
+        elmt = elms[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmt.getAttribute("bb-include-html");
+        if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                    if (this.status == 200) {elmt.innerHTML = this.responseText;}
+                    if (this.status == 404) {elmt.innerHTML = "Page not found.";}
+                    /* Remove the attribute, and call this function once more: */
+                    elmt.removeAttribute("bb-include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            return;
         }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
-  }
 }

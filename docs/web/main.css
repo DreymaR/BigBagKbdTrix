@@ -169,8 +169,8 @@ a {
     width: 120px;
     height: 125px;
     padding: 5px 5px 5px 15px;
-	flex-direction: column;
-	justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -372,8 +372,8 @@ main, #navbar {
 .submenu ul {
     height: 0;
     overflow: hidden;
-	-webkit-transition: height 0.3s ease-in-out;
-	transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
 }
 
 .submenu ul.show {
@@ -484,7 +484,7 @@ code {
     max-width: calc(100% - 30px);
     padding: 0 15px;
     overflow: scroll;
-    background-color: #6981B7;
+    background-color: #67A;    /* #6981B7; */
     color: #FFF;
 }
 
