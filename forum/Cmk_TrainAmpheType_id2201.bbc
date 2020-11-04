@@ -75,7 +75,13 @@ For racking up mileage by type-reading books, I recommend not using too strict p
 
 Further inspiration: Maybe you want to learn lyrics or poems by heart? Of course, type-reading isn't the optimal way of enjoying poetry but can be a hard-hitting combo if you want to repeat a verse many times anyway! Maybe Kipling's "If" will sort out both your wisdom and typing skills at the same time!? Or maybe something motivational is to your tastes? Feel free to use the song I made at the top of this post... ;-)
 
-Beware: If your layout doesn't support special glyphs, make sure your text doesn't have them either. The book I'm currently typing about Greek and Roman mythology, has some old-fashioned spellings like [i]Æsculap[/i] and [i]Aïdes[/i]. For Colemak[eD] that's no problem at all of course, but beware if you aren't used to it. The Amphetype fork has an option to clean out anything non-trivial I think, but I haven't used it.
+[b]Bewäre – of «ṡpéciãł çħâràcṭērṣ»[/b]: If your layout doesn't support special glyphs like accented letters, en/em dashes (–/—) and typographic quotes („” “” «» etc), make sure your text doesn't have them either. The book I'm currently typing about Greek and Roman mythology has some old-fashioned spellings like [i]Æsculap[/i] and [i]Aïdes[/i]. For Colemak[eD] that's no problem at all of course, but beware if you aren't used to it. Here are some ways you can ensure you have a text you can type:
+[spoiler]
+• The UTF-8 Unicode encoded texts at Project Gutenberg may have special glyphs in them. But from "more files...", look for '####-0.txt' or just '####.txt'.
+• The Lalopmak Amphetype fork has an option to clean out anything non-trivial I think, but I haven't used it.
+• Monkeytype (see below) has an option to "Remove fancy typography". It can take a whole book it seems, but didn't fix «» nor accented letters when I tried it.
+• There should be several tools on the web, such as this [b][url=https://www.alejtech.com/en/services/additional-services/online-text-transformation-tools/diacritics-removal.html]Diacritics Removal Tool[/url][/b]. Some tools actually remove the symbols though, and others leave letters accented.
+[/spoiler]
 
     [img]https://www.dropbox.com/s/vl81fnybu2ehj0d/Amphetype_1-Typer.png?raw=1[/img]
     [i]Amphetype about to start a book text session (from [url=https://www.gutenberg.org/files/22381/22381-h/22381-h.htm]Berens' Greek/Roman mythology[/url])[/i]
@@ -139,7 +145,7 @@ Furthermore, you can let Amphetype generate a list of your "most damaging" (or s
 
 If you want to see lesson statistics on the Analysis tab, you'll have to select "Save key/trigram/word statistics from generated lessons" on the Preferences tab.
 
-Note that I don't quite trust the "viscosity" measure, as I don't fully understand its implications. Tristesse feels that an even typing flow is holy if I understand him right, but we know that the best typists do speed up for familiar words and elements and brake down for the trickier ones. Ergo, the best typists in the world choose to have "bad viscosity" to some extent?! Still, sites like Monkey-type also report "consistency" as if metronome typing is a good thing. Hmmm....! I still use the "most damaging" stat to select words, as it seems to be the most balanced measure.
+Note that I don't quite trust the "viscosity" measure, as I don't fully understand its implications. Tristesse feels that an even typing flow is holy if I understand him right, but we know that the best typists do speed up for familiar words and elements and brake down for the trickier ones. Ergo, the best typists in the world choose to have "bad viscosity" to some extent?! Still, sites like Monkeytype also report "consistency" as if metronome typing is a good thing. Hmmm....! I still use the "most damaging" stat to select words, as it seems to be the most balanced measure.
 
 
     [img]https://www.dropbox.com/s/qwt81c2xyowr2sw/Amphetype_4-Analysis.png?raw=1[/img]
@@ -174,7 +180,7 @@ Here are a couple of sample lists for focusing on n-grams. Feel free to add your
 See the links below for more word lists. You can filter any such list by n-grams if you wish.
 [/spoiler]
 
-You can of course use the above mentioned lesson lists with other training tools such as Monkey-type or [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
+You can of course use the above mentioned lesson lists with other training tools such as Monkeytype or [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
 
 
 [h]Take the Control Back![/h]
@@ -211,11 +217,11 @@ This produced 120 words...
 • of length 2 or longer (this gives more words but some strange 2-letter ones), 
 • with at least one of the Tarmak1 letters ENK in them, but no letters from higher Tarmak steps.
 [/spoiler]
-You can find a directory of such word lists [b][url=https://www.dropbox.com/sh/dalxh56m711lt4k/AABV3z8UyywQKGpMC2NAHWXUa?dl=0]here[/url][/b]. Paste one into Amphetype or Monkey-type to generate custom lessons.  ( のvの) c[_]
+You can find a directory of such word lists [b][url=https://www.dropbox.com/sh/dalxh56m711lt4k/AABV3z8UyywQKGpMC2NAHWXUa?dl=0]here[/url][/b]. Paste one into Amphetype or Monkeytype to generate custom lessons.  ( のvの) c[_]
 
 
 [h]Pangram training[/h]
-A [b][url=https://en.wikipedia.org/wiki/Pangram]pangram[/url][/b] is a short phrase that contains all letters. Speed typist Sophie at the Colemak Discord used the best-known one about the quick brown fox to learn Colemak! She just typed it over and over until she knew where all the keys are. It's not a bad way of learning a layout I think, as you can do it anywhere without other tools than a simple text box – or in Amphetype or Monkey-type (see below) if you wish.
+A [b][url=https://en.wikipedia.org/wiki/Pangram]pangram[/url][/b] is a short phrase that contains all letters. Speed typist Sophie at the Colemak Discord used the best-known one about the quick brown fox to learn Colemak! She just typed it over and over until she knew where all the keys are. It's not a bad way of learning a layout I think, as you can do it anywhere without other tools than a simple text box – or in Amphetype or Monkeytype (see below) if you wish.
 
 At higher skill levels, it's probably best to switch your training to the most common words and n-grams as described above. But maybe it's beneficial for the better typists as well to drill the placement of the rarest letters as well now and then, as those may trip you up more easily.
 
@@ -224,23 +230,26 @@ Sophie recommends using a pangram with mostly typical words. The "quick brown fo
 [code]Pack my box with five dozen liquor jugs[/code]
 [code]Sphinx of black quartz, judge my vow.[/code]
 [code]That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he’s foiled you again, creating chaos.[/code]
-This last one is a phonemic pangram, containing the sounds in English rather than its letters. It lacks W and Z but those are the same in QWERTY and Colemak anyway. I think it's a cute spin on the first one!  (✿◠‿◠)
+That last one is a phonemic pangram, containing the sounds in English rather than its letters. It lacks W and Z but those are the same in QWERTY and Colemak anyway. I think it's a cute spin on the first one!  (✿◠‿◠)
+
+[code]The razor-toothed piranhas of the genera Serrasalmus and Pygocentrus are the most ferocious freshwater fish in the world. In reality they seldom attack a human.[/code]
+This isn't a pangram but close: It's the 160-letter phrase used by [b]The Guinness World Records[/b] for their [b][url=https://www.exideas.com/ME/meetOurChamp.php]SMS speed record[/url][/b]. Good practice for any keyboard type.
 
 
-[h]Training with Monkey-type[/h]
-[b][url=https://monkey-type.com/]Monkey-type[/url][/b] bears special mention. It's a smooth, fairly no-nonsense online trainer with lots of possibilities. You can train words from different languages, interesting quotes and custom text. It makes instructive graphs showing your speeds and mistakes through each test, and has become a favorite of the Colemak Discord.
+[h]Training with Monkeytype[/h]
+[b][url=https://monkeytype.com/]Monkeytype[/url][/b] bears special mention. It's a smooth, fairly no-nonsense online trainer with lots of possibilities. You can train words from different languages, interesting quotes and custom text. It makes instructive graphs showing your speeds and mistakes through each test, and has become a favorite of the Colemak Discord.
 
 Here's an example of pangram training, as described above. I used the standard "The quick brown fox..." phrase which comes up by default on the custom test, pressed "change" then "random" and a suitable word count. Generally though, I mostly do time tests with the English or English Expanded vocabularies.
 
     [img]https://www.dropbox.com/s/3zl7ddlhdbrk9fe/PangramTraining_Monkey-type_CustomRandom.png?raw=1[/img]
-    [i]Monkey-type screenshot with custom word training[/i]
+    [i]Monkeytype screenshot with custom word training[/i]
 
 
 [h]Other Training Tools[/h]
 Here are some typing improvement tools I've used or found promising:
 
 [b][u]Training[/u][/b]
-[b][url=https://monkey-type.com/]Monkey-type[/url][/b], as mentioned, is very popular. It trains common words smoothly, even plotting nice graphs of your speed afterwards.
+[b][url=https://monkeytype.com/]Monkeytype[/url][/b], as mentioned, is very popular. It trains common words smoothly, even plotting nice graphs of your speed afterwards.
 [b][url=https://10fastfingers.com/typing-test/english]10FastFingers[/url][/b] has a very smooth and enjoyable test with some flexibility like typing your own text.
 [b][url=http://play.typeracer.com/]TypeRacer[/url][/b] is another classic for speed training. There's even an Instant Death mode that trains accuracy ruthlessly!
 [b][url=http://eidosk.com/play_game.php?id=1]Fast Typer 3[/url][/b] and its predecessor [b][url=http://www.rapidtyping.com/online-typing-games/fast-typer-2.html]F.T.2[/url][/b] are a hoot, as you train both speed and accuracy very ... fast, indeed. Brutal but fun.
@@ -248,6 +257,7 @@ Here are some typing improvement tools I've used or found promising:
 [b][url=https://typings.gg/]Typings.gg[/url][/b] is a sleek no-nonsense trainer. Choose how many words to type, and type them.
 
 [b][url=https://btype.io/l/en/en]bType[/url][/b] is great if you want an online tool for "type-reading" books. It even supports multiple languages.
+[b][url=https://www.typelit.io/]TypeLit.io[/url][/b] also has books for you to type in. It has a very nice feel and an interesting library.
 
 [b][u]Gaming[/u][/b]
 [b][url=https://forum.colemak.com/post/20413/#p20413]The Typing of The Dead[/url][/b] is an immensely fun game, also described in the main Big Bag topic. Have a gander!

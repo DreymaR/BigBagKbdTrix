@@ -8,6 +8,8 @@ https://dreymar.github.io/BigBagKbdTrix/test-page.html?version=new
   
 TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
 -------------------------------------------------------------------------
+- Update everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
+	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
 - Dictionary: Explain SFB, Curl/Angle/Wide, inward/outward/mixed rolls
 - Make Image2 and Image3 posts for the Image topic (topic 111)
 	- Image2: Keyboard images. State licencing for SVG (CC) vs others (Public Domain)
@@ -15,9 +17,10 @@ TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
-- Include the header code on all pages instead of duplicating code! May have to use JS. Or jQuery.load()?
-	- See https://www.w3schools.com/howto/howto_html_include.asp
-		- Failed for me. Tried baking it into the main.js.
+- Include the header code on all pages instead of duplicating code! (Answer: Should use Jekyll?!)
+	- May have to use JS. Or jQuery.load()? 
+		- https://www.w3schools.com/howto/howto_html_include.asp failed for me.
+		- Tried baking it into the main.js.
 		- Need to include it as <head and <nav tags, not <div as in the example?!
 	- Or https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file (jQuery)
 	- https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
@@ -25,10 +28,14 @@ TODO/WIP For the BigBag web pages:
 	- I think <body onload="includeHTML()"> would only work for body and not head?
 	- W3Schools: document.onload = function() {fn()}; to run fn()
 	- https://stackoverflow.com/questions/22326742/server-side-includes-alternative
-		- GH-pages use Jekyll; could include as, say, {% include web/inc-navbar.html %}
+- GH-pages use Jekyll
+	- Can include html as, say, {% include web/inc-navbar.html %}
+	- Jekyll setup for GitHub consists of some files. Added these in the Jekyll folder; figure it out...?
+	- Hard to get Jekyll up on WSL Ubuntu. Managed it eventually with some help.
 - Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
 	- Put fonts, css and js in the web folder
 	- TODO: Update all content image links to res locations
+	- TODO: Change all res/img links to the old subfolder structure so images are sorted by subject again
   
 DONE
 ----
