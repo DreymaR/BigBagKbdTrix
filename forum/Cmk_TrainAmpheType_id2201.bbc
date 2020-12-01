@@ -213,9 +213,9 @@ This produced a list of 360 words...
 For the first steps, include the common-ground letters to get enough words:
 [code]grep '^[qwahzxcvbmenk]*$' google-10000-english-sfw.txt | sed -r '/^.{,1}$/d' | grep 'e\|n\|k' > train-tarmak1-len2-qwco.txt[/code]
 This produced 120 words...
-• containing letters common to QWERTY and Colemak plus the Tarmak1 letters ENK,
-• of length 2 or longer (this gives more words but some strange 2-letter ones), 
-• with at least one of the Tarmak1 letters ENK in them, but no letters from higher Tarmak steps.
+• only containing letters common to QWERTY and Colemak plus the Tarmak1 letters ENK,
+• of length 2 or longer (giving more words but some strange 2-letter ones), 
+• with at least one of the Tarmak1 letters ENK in them.
 [/spoiler]
 You can find a directory of such word lists [b][url=https://www.dropbox.com/sh/dalxh56m711lt4k/AABV3z8UyywQKGpMC2NAHWXUa?dl=0]here[/url][/b]. Paste one into Amphetype or Monkeytype to generate custom lessons.  ( のvの) c[_]
 
@@ -252,7 +252,7 @@ Here are some typing improvement tools I've used or found promising:
 [b][url=https://monkeytype.com/]Monkeytype[/url][/b], as mentioned, is very popular. It trains common words smoothly, even plotting nice graphs of your speed afterwards.
 [b][url=https://10fastfingers.com/typing-test/english]10FastFingers[/url][/b] has a very smooth and enjoyable test with some flexibility like typing your own text.
 [b][url=http://play.typeracer.com/]TypeRacer[/url][/b] is another classic for speed training. There's even an Instant Death mode that trains accuracy ruthlessly!
-[b][url=http://eidosk.com/play_game.php?id=1]Fast Typer 3[/url][/b] and its predecessor [b][url=http://www.rapidtyping.com/online-typing-games/fast-typer-2.html]F.T.2[/url][/b] are a hoot, as you train both speed and accuracy very ... fast, indeed. Brutal but fun.
+[b][url=http://eidosk.com/play_game.php?id=1]Fast Typer 3[/url][/b] and its predecessor [b]F.T.2[/b] are a hoot, as you train both speed and accuracy very ... fast, indeed. Brutal but fun.
 [b][url=https://www.speedtypingonline.com/typing-test]Speed Typing Online[/url][/b] has a fun little test in which you type text quotes and lyrics.
 [b][url=https://typings.gg/]Typings.gg[/url][/b] is a sleek no-nonsense trainer. Choose how many words to type, and type them.
 
@@ -275,6 +275,19 @@ On the [b][url=https://colemak.com/Learn]Colemak Learn page[/url][/b], there's a
 This may come too late for you since you're here reading my training page, but:
 If you're new to Colemak and didn't opt for the [b][url=https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/]Tarmak[/url][/b] experience, then maybe [b][url=https://github.com/first20hours/keyzen-colemak]KeyZen for Colemak[/url][/b] could work for you?
 It lets you learn by simply doing in the here and now, without stress. Om, Om! _/|\_
+
+
+[h]Alternate fingerings[/h]
+At a certain point in your layout training, you'll start to notice some bigrams being less than optimal. One of the selling points for Colemak is that it allows you to use standard touch typing technique without having to devise a lot of homebrew "alt-fingering" tricks to get fast. The fastest QWERTY typists typically use a whole lot of alt-fingering. However, any layout will at some point benefit from a little alt-fingering. Colemak, too, has some [url=http://colemakmods.github.io/mod-dh/analyze.html]same-finger bigrams[/url] that aren't all that uncommon:
+[code]
+E, KN UE SC Y.
+[/code]
+
+(Yes, SC/CS is a same-finger bigram on Colemak. If you've got CT/CT instead, you're using an "Angle Cheat" technique for which Colemak wasn't designed. I'd strongly advise you to use a proper Angle mod instead, since the CT/TC bigram is at least twice as common than SC/CS and so you'll spoil the excellent design of Colemak a bit by cheating.)
+
+Slide your hand in so that the middle finger types N for KN/NK and MN/NM bigrams. This holds true whether you use Colemak Vanilla or DH. It's not so easy for, say, LN/NL or UE/EU so you'll still have to do those the hard way. I often find downward curling bigrams like UE and E-comma easier than the upwards ones, for some reason.
+
+Alt-fingering is very useful once you reach a certain level of dedication and skill. I wouldn't quite recommend it while starting up with a new layout, as it may confuse the newcomer trying to build muscle memory. Gaining at least 50 WPM before starting with alt-fingering has been recommended. But speed typists use it to good effect. I usually alt-finger KN/NK, LK/KL, MN/NM, TG/GT, BG/GB and TV/VT now (on Colemak-DH), by sliding in with the middle finger as described above. These all come naturally after a while due to their symmetry, but it's only **KN/NK** and **LK/KL** that are very common and really need it.
 
 
 [h]Links[/h]

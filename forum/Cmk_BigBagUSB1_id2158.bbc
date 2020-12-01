@@ -1,6 +1,6 @@
 [h]DREYMAR'S (USB++): DreymaR's Extensive Yet Modular ARSenal – for QUICKIE USB-2-USB & other TMK devices[/h]
 
-    [img]https://www.dropbox.com/s/e21hymd7xpkrbli/TarmakCurl-5_ETROI_Spect.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-Curl_Spectral-45d/Tarmak-Curl-5_Spectral_ETROI.png[/img]
 
 
 There is a [b][url=https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/]Big Bag of Keyboard Tricks Main Topic[/url][/b], in which I go into detail on what the different tricks are.
@@ -79,7 +79,7 @@ In all honesty though, [url=https://github.com/tmk/tmk_keyboard/wiki/FAQ-Keymap]
 
 However, I have made a user function that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts (on the bracket and ISO LSGT keys) as in Colemak[eD], and it works fine for me. I even added the bullet and dagger glyphs (on the ISO \| key) for good measure. You can find various lists of alt codes to use, such as [url=https://fsymbols.com/keyboard/windows/alt-codes/list/]this one[/url]. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.
 
-    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/Cmk-ISO-eD-CurlAWide_96d-FShui.png[/img]
     [i]Fig.: Colemak-CAW[eD], showing an ISO board with the Curl(DH)Angle and Wide ergonomic mods (see below).[/i]
 
 
@@ -159,15 +159,17 @@ Colemak-DH requires by default a special Angle(Wide) variant in which the V is k
 
 To use one of these, define the Unimap layout constant in my keymap (.c) file:
 [code]
-* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
+ * Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
  * _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
- * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle (the simple lower left half-row shift)
- * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/)
- * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z)
- * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(')
- * _ANAAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
+ * _ISO__A__ (w/ Curl-DH: _ISO_CA__) - ISO/Int Angle (the simple lower left half-row shift)
+ * _ISO__AW_ (w/ Curl-DH: _ISO_CAW_) - ISO/Int Angle-Wide(/)
+ * _ISO_CAWS                         - ISO/Int Curl-Angle-Wide(/)-Sym (more accessible apostrophe and hyphen/minus)
+ * _ANS__A__ (w/ Curl-DH: _ANS_CA__) - ANSI/US Angle(Z)
+ * _ANS__AW_ (w/ Curl-DH: _ANS_CAW_) - ANSI/US Angle(Z)-Wide(')
+ * _ANSAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
  *
  * Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
+ * NOTE: These map layouts affect all layouts. So for instance the CAWS map will affect both Colemak and Extend.
 [/code]
 
 The actual keymap types are defined in the header (.h) file as compiler macros and those are a bit harder to edit manually.
@@ -175,21 +177,19 @@ The actual keymap types are defined in the header (.h) file as compiler macros a
 
 [h][2.2]    COLEMAK-DH ALIAS THE CURL ERGO MOD[/h]
 
-The [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod makes the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row V/M positions, while preserving the key-to-finger mappings of vanilla Colemak.
+The [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod makes the home "row" curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. This is achieved by moving the common D and H from their debated "middle trench" positions to the more comfortable lower-row V/M positions, while preserving the key-to-finger mappings of vanilla Colemak. Since Oct 2020, standard Colemak-DH is the original DH mod a.k.a. DHm.
 
-    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/ergomods/Cmk-ISO-CurlAWide_90d-FShui.png[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
-
-The old "DHm" (DvbgHm) variant which doesn't move K from its Colemak position, may be better for non-staggered matrix boards, but it's debated. If you switch between staggered and non-staggered boards you'll probably want to use the standard Colemak-DH consistently.
 
 This mod depends on using a CurlAngle ergo mod which is easier on an "102/105-key" ISO keyboard but as seen above there are decent options for US/ANSI boards too.
 
 To use Colemak-DH with my TMK files, there's a preprocessor switch named CURLMOD:
 [code]
-   The CURLMOD options for Colemak/Tarmak layouts are:
+ * The CURLMOD options for Colemak and Tarmak layouts are:
  * 0: No Curl - vanilla Colemak/Tarmak
- * 1: The Colemak-DH ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
- * 2: SteveP99's old Curl(DHm) ergo mod, bringing D/H down but M to the home row.
+ * 1: The 2017 Curl(DHk) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
+ * 2: SteveP99's original Curl(DHm) ergo mod, bringing D/H down but M to the home row. DH standard since Oct 2020.
 ...
 #define CURLMOD 1
 [/code]
@@ -199,15 +199,15 @@ This switch only affects Colemak layouts, including the four Tarmak layouts and 
 
 [h][2.3]    PLAYING WITH THE SYMS (Work-In-Progress)[/h]
 
-The fairly optional "Sym" symbol key mod hasn't yet been implemented in my TMK files. If you're interested, it shouldn't be too hard to add yourself.
+The fairly optional "Sym" symbol key mod hasn't been fully implemented in my TMK files. There's a model for CAWS-ISO that may serve as a template if you want another variant. But note that models affect Extend layers and other layouts too! So you may be better off just editing the layout definitions directly instead.
 
 [code]
   \   7   8   9   0   =
 [   j   l   u   y   '   -
- ]   h   n   e   i   o   ;
-   /   k   m   ,   .   _____
+ ]   m   n   e   i   o   ;
+   /   k   h   ,   .   _____
 [/code]
-    [i]The "Sym" symbol rotation mod, shown with the Wide(ISO) mod.[/i]
+    [i]The "Sym" symbol rotation mod together with the Curl-DH and AngleWide(ISO) mods is [b]Colemak-CAWS[/b].[/i]
 
 
 [h][2.4]    MODIFIER MODNESS (Work-In-Progress)[/h]
@@ -237,7 +237,7 @@ If you want to learn the brilliant Colemak-DH variant using a Tarmak progression
      * |        |  z|  x|  c|  v|  b|  K|  m|   |   |   |          |
      * `-----------------------------------------------------------'     
 
-     * Tarmak2-Curl(DH) - Transitional Colemak-Curl-DH (ET)
+     * Tarmak2-Curl(DHk) - Transitional Colemak-Curl-DHk (ET)
      * ,-----------------------------------------------------------.
      * |     |  q|  w|  F|  r|  B|  y|  u|  i|  o|  p|   |   |     |
      * |-----------------------------------------------------------|

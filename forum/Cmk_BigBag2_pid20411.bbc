@@ -21,6 +21,8 @@ With a 102/105-key ISO keyboard the Angle mod is very smooth indeed, and I stron
 
 When I use these mods I like to move the key caps around and make the change global - my family actually don't seem to mind as the changes are fairly intuitive and unintrusive, leastways for the run-of-the-mill keyboard user who looks at symbol key caps to find them. I got used to the changes quickly, too. But on laptops I usually don't move anything around and you can implement the change on a per-user basis if you wish. (If you do, take care with your logon dialogs and passwords!)
 
+[user]Stevep99[/user]'s [b][url=http://colemakmods.github.io/ergonomic-mods/wide.html]Ergonomic Keyboard Mods[/url][/b] page lists the above mods and more.
+
 [b][u]"There is another."[/u][/b]
 Actually, there are a couple of other possibilities for ANSI boards, since they don't have a near-perfect solution like the ISO crowd. I call them "A-Wing" and "FatZ". And then there's the insidious "Angle Cheat" too...:
 [spoiler]
@@ -39,7 +41,7 @@ One possibility tried out by [user]BenDover178[/user] is to make LShift a [i]dua
      [i]The "[b]DoubleFatWide[/b]" ergo mod for PC104/ANSI keyboards; shown with the DH mod and some extras.[/i]
 
 The above image shows a DoubleFatWide-modded ANSI board, inspired by [b][url=https://forum.colemak.com/user/2955-bendover178/]BenDover[/url][/b]. It also has some interesting (and optional!) extras:
-• The Colemak-DH mod (see below), affecting the DBG(V) and HMK letters
+• The Colemak-DH mod (see below), affecting the DBG(V) and HM letters
 • The middle parentheses can be exchanged for pretty much anything. If you need locale letters/accents for instance, they're good for those.
 • Double-function Shift keys, working both as letters and modifiers (see the Modifier Modness section)
 • Fat Apostrophe, forcing Enter upward. If you use Extend-Enter and/or don't mind, this is no problem. Could also swap it with semicolon if desired.
@@ -48,40 +50,40 @@ The above image shows a DoubleFatWide-modded ANSI board, inspired by [b][url=htt
 [b]"Angle-Cheat"[/b]:The least intrusive but probably not the smartest way of ensuring a straight left wrist is a trick I've seen many typists do intuitively: Simply change the ZXC fingering so that the index finger hits C and so on. This is what Colemak speed record holder [user]Viper[/user] has been using, so you can certainly type fast with it! And it'll be available for both Colemak and QWERTY without any tweaks. On the downside, this trick does nothing to improve the B position, it swaps the SC/CS same-finger bigram for the more common CT/TC one (which I consider [i]A Bad Thing™[/i]) and it doesn't enable Colemak-DH (see below).
 [/spoiler]
 
-[b][u]6s and 7s With U[/u][/b]
-[user]Stevep99[/user]'s [b][url=http://colemakmods.github.io/ergonomic-mods/wide.html]Ergonomic Keyboard Mods[/url][/b] page lists the above mods. Note that we don't agree 100% on which Wide mod is better, as his fave has the = key between 5 and 6 where mine has it between 6 and 7. Some split keyboards follow my way and others (particularly matrix boards) his. His preferred variant is [i]a priori[/i] more symmetric but on a normal-staggered board mine has = on the longest stretch from the home position which is as it should be. Efficiency before aesthetics. ;-)
-
-We've also discussed which key should be on the upper-right (old [ key) position: On ANSI boards it pretty much has to be the apostrophe but on ISO boards it should be a common key as that position is quite good. I prefer the forward slash, as both slash and question mark are quite common symbols. SteveP lists two variants where one has the ISO hash key (backslash in most layouts) in that position, but that's a less common key than slash/question.
-
 [b][u]Backdrop:[/u][/b]
 For some more background...
 [spoiler]
 See for instance [url=https://forum.colemak.com/viewtopic.php?id=839&p=2]this topic by cevgar on Wide mods[/url], and [url=https://forum.colemak.com/viewtopic.php?pid=1685#p1685]this topic by me on Angle mods[/url].
 
-[b][i]Other names:[/i][/b]
+[b][u]Other names:[/u][/b]
 Many of these mods have been discussed under other names. So if you come across older posts here's a key to what we've been discussing:
-• AngleWide is often abbreviated as AWide, and Curl(DH)AngleWide as CAW.
-• The Colemak-DH (Curl) mods have somewhat arcane longer names (DH=DvbgHmk, DHm=DvbgHm and DvH=DbgHk) which describe and distinguish them.
+• AngleWide is often abbreviated as AWide, and Curl(DH)AngleWideSym as CAWS.
+• The Colemak-DH Curl mods have somewhat arcane longer names (DH=DHm=DvbgHm, DHk=DvbgHmk and DvH=DbgHk) which describe and distinguish them.
 • I've named Wide mods after which key they put in the old Right Bracket position; as such, the one I use is AWide(/), AWide-Slash or Awide(35) mod.
 • The A-Wing angle mod has been called Angle-Frame, A-Frame or AngleWing.
-• I don't know any snappy names for the fat-Z mod. Well, except for Fat-Z which is kind of cool. ;-)
+• I don't know any snappy names for the Fat-Z mod. Then again, Fat-Z is more than cool enough already. ;-)
+
+[b][u]6s and 7s With U[/u][/b]
+Some Wide mods have the = key between 5 and 6 whereas mine has it between 6 and 7. Most split keyboards with standard row-staggered geometry follow my way and others – particularly matrix boards – have 6 on the right hand. The 6-on-right variant is [i]a priori[/i] more symmetric with five number keys on each hand, but on a normal-staggered board mine has 6 on the shortest and = on the longest stretch from the home position which is as it should be. Efficiency before aesthetics. ;-)
+
+There has also been discussion about which key should be on the "Left Bracket key" upper-right position: On ANSI boards it pretty much has to be the apostrophe but on ISO boards another fairly common key should get the honor. I prefer the forward slash in the Wide-ISO mod, as both slash and question mark are relatively common symbols. In my Symbol key mod (see below) I put the even more common hyphen-minus there which feels very good.
 [/spoiler]
 
 
 [h][2.2]    COLEMAK-DH ALIAS THE CURL ERGO MOD[/h]
 
-The point of the [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod is to make the home row curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and [b]without any letters changing fingers[/b] was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
+The point of the [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod is to make the home row curl like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, they lose to Colemak on several other important performance statistics (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] in 2014 to fix the issue based on Colemak and [b]without any letters changing fingers[/b] was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
 
-    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/ergomods/Cmk-ISO-CurlAWide_90d-FShui.png[/img]
     [i]The Colemak-Curl(DH)-AngleWide, a.k.a. [b]Colemak-CAW[/b], ergo modded layout. Each image color corresponds to a finger.[/i]
 
-The Colemak-DH mod also puts the G key back to its old QWERTY position which more than offsets moving the less frequently used B. On the right hand side, at least one more key has to be moved compared to standard Colemak; the default mod moves two. But this investment returns a larger gain, as H moves to a better position.
+The Colemak-DH mod also puts the G key back to its old QWERTY position which more than offsets moving the less frequently used B. On the right hand side, the M and H keys move compared to standard Colemak. But this investment returns a larger gain, as the common H moves to a better position. One substantial benefit is that the common bi-/trigram [b]HE[/b] and [b]THE[/b] are made better.
 
-If you type a lot in a language in which L is more common than H (including [url=http://letterfrequency.org/]several latin and Nordic languages[/url]), it [i]may[/i] be worth considering a further tweak in which L is moved down to the better position on the lower row and H gets whatever position you deem second-best. There have also been mod proposals for the Dutch who need a better J position. You'd have to implement these yourself for now.
+If you type a lot in a language in which L is more common than H (including [url=http://letterfrequency.org/]several latin and Nordic languages[/url]), it [i]may[/i] be worth considering a further tweak in which L is moved down to the better position on the lower row and H gets whatever position you deem second-best. There have also been mod proposals for the Dutch who need a better J position, but it turns out that all the other index finger keys were more important still.
 
-The DH mod depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and tweak the 2nd Tarmak step a little. The right-hand mod is mostly separate from the rest of the layout from Tarmak1 onwards, but it's advisable to do it in step 1 which moves K anyway.
+The DH mod for normal row-staggered keyboards depends on using an Angle mod which is easier on an "105-key"/ISO keyboard but there are decent options for "US"/ANSI boards too. If you want to learn this using the Tarmak progression described above, that's possible too! You just have to learn the Angle mod early on, and the 2nd Tarmak step is tweaked a little. The right-hand mod is mostly separate from the rest of the layout from Tarmak1 onwards, but it's okay to do it in the Tarmak1 step.
 
-    [img]https://www.dropbox.com/s/y01ux6xoxg7i64a/Cmk-pos-CurlDH-ISO_90d.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/ergomods/Cmk-pos-Angle-ISO_90d.png[/img]
     [i]My personal assessment of key position goodness (from green via blue to purple), using a straight-wrist, relaxed-fingers hand position.[/i]
     
 I've dubbed my CurlAngleWide modded Colemak the [ins][b][url=https://forum.colemak.com/post/21780/#p21780]Colemak-CAW[/url][/b][/ins]! It's a Colemak at heart, but sufficiently modded that I wanted a snappy name for it. And yes, that's also a tip-of-the-hat to Billy Macaw in CATS. ;-) Also, there have been spiritual developments...:
@@ -106,9 +108,9 @@ Or, as the great poet Edgar Allan MacCole so famously put it:
 [/spoiler]
 
 [b][u]Backdrop:[/u][/b]
-The DH mod has a few variants in addition to the standard one, notably Steve's original [i]DHm (DvbgHm)[/i] mod which swaps the Colemak(Angle) D–V and H–M positions but leaves the K alone, and my old [i]DvH (DbgHk)[/i] which instead swaps D–B and H–K while letting the M stay unchanged. The DHm mod may be good if you have a non-staggered matrix board. I made the DvH mod to be less radical and intrusive as it doesn't move the V and M keys (apart from the Angle mod moving V with ZXC). However, I have now moved on to [i]Colemak-DvbgHmk[/i], in the name of unity and goodness. And it shall henceforth be known as [i]the[/i] [b]Colemak-DH[/b] mod.
+The DH mod has had a few variants in addition to the standard one, which from 2020 is Steve's original [b]DHm[/b] mod swapping the Colemak(Angle) D–V–B–G and H–M positions. This variant was selected as the standard since it's good both for standard row-staggered and modern matrix/column-staggered keyboards. My old [i]DvH (DbgHk)[/i] mod kept the ZXCV keys together, and the 2017–2020 DHk standard had K on the home row and M in the "pocket" – which most typists agree is just a little better on row-staggered boards but significantly worse on matrix boards. We've tried out all these variants a lot, and arrived at a single strong and flexible [url=https://forum.colemak.com/topic/2638-announcement-a-change-to-colemakdh/]DH standard[/url].
 
-See [user]stevep99[/user]'s [b][url=https://colemakmods.github.io/mod-dh/]Colemakmods page[/url][/b], as well as the [url=https://forum.colemak.com/viewtopic.php?id=1942]main Colemak-DH topic[/url] and links therein. Also, note [url=https://forum.colemak.com/viewtopic.php?pid=16151#p16151]my review of the DH mods[/url]. Note, however, that we've since then agreed on [url=https://forum.colemak.com/post/19723/#p19723]one common Colemak-DH mod[/url].
+See [user]stevep99[/user]'s [b][url=https://colemakmods.github.io/mod-dh/]Colemakmods page[/url][/b], as well as the [url=https://forum.colemak.com/viewtopic.php?id=1942]main Colemak-DH topic[/url] and links therein. Also, note [url=https://forum.colemak.com/viewtopic.php?pid=16151#p16151]my review of the DH mods[/url] and the [url=https://forum.colemak.com/post/19723/#p19723]2017 DHk standard[/url] topic.
 
 
 [h][2.3]    PLAYING WITH THE SYMS[/h]
@@ -133,7 +135,7 @@ QU > SC > BS > EQ > MN > SL
 Optional addition: Swap parentheses and brackets
 () > []
 [/code]
-    [img]https://www.dropbox.com/s/2ccwaiqb5dmi4bf/Cmk-ISO-CurlAWideSym_90d-FShui_EPKL.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/ergomods/Cmk-ISO-CurlAWideSym_90d-FShui_EPKL.png[/img]
     [i][b]Colemak-CAWS[/b]: The Sym symbol rotation together with the CurlAngleWide ergo mods on an ISO board.[/i]
 
 [h][2.4]    MODIFIER MODNESS (Work-In-Progress)[/h]

@@ -60,12 +60,12 @@ PKL[eD] was tested by [b][url=https://10fastfingers.com/user/1429229]Viper[/url]
 
 As described in the main Big Bag topic, the [b]Colemak[eD][/b] AltGr mappings have been implemented similarly for various platforms. Although the underlying technology varies, they should work almost the same for XKB and EPKL for instance. For some locale variants in particular, you may have to add your own or ask me for help.
 
-    [img]https://www.dropbox.com/s/t5v9wg7qx6evrvt/Cmk-ANSI-eD_96d-FShui.png?raw=1[/img]
-    [i]The Colemak [edition DreymaR] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/Cmk-ANSI-eD_96d-FShui.png[/img]
+    [i]The [b]Colemak [edition DreymaR][/b] layout, using different lv3-4 mappings from Shai's default Colemak.[/i]
     [i]Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.[/i]
     
 
-    [img]https://www.dropbox.com/s/bqq3u03canj7i9n/Cmk-ISO-eD-CurlAWide_96d-FShui.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/Cmk-ISO-eD-CurlAWide_96d-FShui.png[/img]
     [i]The Colemak-CAW[eD] ergonomic variant, shown on an ISO board (see below).[/i]
 
 
@@ -191,7 +191,7 @@ The [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod 
 
 I've now made a solution for ergo mods that allows setting a Remap in the layout.ini file! This makes it possible to turn a non-ergo layout into an ergo modded one.
 
-    [img]https://www.dropbox.com/s/yk6trpvr2w5tdp8/Cmk-ISO-CurlAWide_90d_FShui.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/ergomods/Cmk-ISO-CurlAWide_90d-FShui.png[/img]
     [i]The Colemak Curl(DH)AngleWide, a.k.a. Colemak-CAW, ergo modded layout.[/i]
 
 There are special Tarmak steps to learn Colemak-DH gradually should you want to. See below.

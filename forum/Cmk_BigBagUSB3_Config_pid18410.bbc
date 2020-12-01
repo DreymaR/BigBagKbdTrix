@@ -68,17 +68,20 @@ The layout options are chosen with preprocessor directives; you can edit the val
 [code]
 /* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
  * _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
- * _ANIZXCVB (w/ Curl-DH: _ANIZXCBV) - ISO/Int Angle (the simple lower left half-row shift)
- * _AWIZXCVB (w/ Curl-DH: _AWIZXCBV) - ISO/Int Angle-Wide(/)
- * _ANAXCVBZ (w/ Curl-DH: _ANAXCBVZ) - ANSI/US Angle(Z)
- * _AWAXCVBZ (w/ Curl-DH: _AWAXCBVZ) - ANSI/US Angle(Z)-Wide(')
- * _ANAAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
+ * _ISO__A__ (w/ Curl-DH: _ISO_CA__) - ISO/Int Angle (the simple lower left half-row shift)
+ * _ISO__AW_ (w/ Curl-DH: _ISO_CAW_) - ISO/Int Angle-Wide(/)
+ * _ISO_CAWS                         - ISO/Int Curl-Angle-Wide(/)-Sym (more accessible apostrophe and hyphen/minus)
+ * _ANS__A__ (w/ Curl-DH: _ANS_CA__) - ANSI/US Angle(Z)
+ * _ANS__AW_ (w/ Curl-DH: _ANS_CAW_) - ANSI/US Angle(Z)-Wide(')
+ * _ANSAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
  *
  * Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
- * To get my favoured Colemak-CAW (CurlAngleWide) layout on ISO/ANSI, use _AWIZXCBV / _AWAXCBVZ
- *      with ACTIVELAYOUT 5 and CURLMOD 1 settings below. Oh, and CAPSBEHAVIOR 1 of course! ^_^
+ * NOTE: These map layouts affect all layouts. So for instance the CAWS map will affect both Colemak and Extend.
+ *      The Sym mod would work fine with QWERTY since Colemak uses QWERTY symbol keys, but not with, e.g., Dvorak.
+ * To get my favoured Colemak-CAW (CurlAngleWide) layout on ISO/ANSI, use the _###_CAW_ map with
+ *      ACTIVELAYOUT 5 and CURLMOD 2 settings below. Oh, and CAPSBEHAVIOR 1 for Extend, of course! ^_^
  */
-#define UNIMAPLAYOUT(...)   UNIMAP_AWIZXCBV( __VA_ARGS__ )  /* CurlAngleWide-ISO ergo model */
+#define UNIMAPLAYOUT(...)   UNIMAP_ANS_CAW_( __VA_ARGS__ )  /* CurlAngleWide-ANSI ergo model */
 [/code]
 
 For layouts and layout options, the directives will select which pieces of code below to actually compile so you get what you want.
@@ -95,7 +98,7 @@ For layouts and layout options, the directives will select which pieces of code 
  * 5-1: Colemak Curl-DH (requires a CurlAngle keymap; see above)
  * 6-#: Mirrored Colemak (normally used as second layout with a layer switch)
  * 7  : Dvorak
- * 8  : Workman (if you must - I believe Colemak Curl-DH is a _lot_ better!)
+ * 8  : Workman (but don't use that - Colemak Curl-DH is a _lot_ better!)
  */
 #define ACTIVELAYOUT    5   /* LAY_COLEMAK      */
 [/code]
@@ -117,15 +120,18 @@ For layouts and layout options, the directives will select which pieces of code 
 [code]
 /* The CURLMOD options for Colemak and Tarmak layouts are:
  * 0: No Curl - vanilla Colemak/Tarmak
- * 1: The Curl(DH) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
- * 2: SteveP99's old Curl(DHm or DvbgHm) ergo mod, bringing D/H down but M to the home row.
- *    Some matrix board users may prefer this mod, but several prefer the default even on matrix boards.
+ * 1: The 2017 Curl(DHk) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
+ * 2: SteveP99's original Curl(DHm) ergo mod, bringing D/H down but M to the home row. DH standard since Oct 2020.
+ *    Some row-staggered board users may like the DHk variant, but the DH(m) standard is good for all board types.
+ * N/A: DreymaR's old Curl(DvH) mod, bringing DH center-down to the QWERTY V/N keys (edit the layouts for this)
  *
  * NOTE: On the first Tarmak step, CURLMOD 1 will include the HMK swaps whereas CURLMOD 2 won't. So you can choose.
  *       For a baby Tarmak1 step, use CURLMOD 2 and then 1. The K will be misplaced at first, but it's rare.
+ *       (For the other steps, CURLMOD 2 still doesn't move HM so Curl(DHm) users can do HM in the last step.)
  * NOTE: Another baby step after Tarmak1 could be transitioning to a CurlAngle(Wide) keymap model before Tarmak2.
+ * NOTE: You could use a non-Curl UNIMAP_# for a Curl(DH) mod, to keep ZXCV together as in my old Curl(DbgHk) mod.
  */
-# define CURLMOD        1   /* CURL_DH          */
+# define CURLMOD        2   /* CURL_DH          */
 [/code]
 
 [b][i]CapsLock behavior settings, including Extend mode:[/i][/b]
