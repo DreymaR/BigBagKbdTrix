@@ -160,8 +160,10 @@ Really, that was my list of "most damaging" words – rearranged but complete. H
 
 User [user]bph[/user] has tried starting with the 1000 most common words and after a few runs through them, generating [b][url=https://forum.colemak.com/post/19614/#p19614]a lesson of the 200 most damaging common words[/url][/b]! That's clever, and will make you train only words that are both common and hard for you.
 
+
+[h]Bigram, Trigram, N-Gram Training[/h]
 In a forum post by [user]misterW[/user], he suggests a focus on [b][url=https://forum.colemak.com/post/19132/#p19132]common and damaging n-grams[/url][/b]. I quite agree with that!
-[spoiler]
+
 [quote=misterW (lightly edited)]
 Typing is all about grouping chunks of characters together and into your memory. Grab a list of the most common words and n-grams: [b]'the', 'and', 'with', 'that', 'tion', 'ing', 'for'[/b]. You want to be typing those extremely fast. Roll your fingers whenever possible. You want to commit these chunks into memory. You could think of it as, "I'm going to become the best in the world at typing the word [i]different[/i]."
 
@@ -175,12 +177,15 @@ Practice it every day. If your hands get tired, take a break and freshen your mi
 [/quote]
 
 Here are a couple of sample lists for focusing on n-grams. Feel free to add your favourites below! ;-)
+[spoiler]
 [code]io on ion tion ation etion ition otion ution ption nation station fruition gumption tuition completion attention assumption interruption[/code]
 [code]he the then them they there their they're theirs theme theory therein thermal thematic therefore theology theatrics themselves anathema[/code]
 See the links below for more word lists. You can filter any such list by n-grams if you wish.
 [/spoiler]
 
 You can of course use the above mentioned lesson lists with other training tools such as Monkeytype or [url=https://forum.colemak.com/post/7664/#p7664]TypeFaster[/url], if you like.
+
+There's also a very nice n-gram trainer by RanelPadon (you can find him on the Colemak Discord): [b][url=https://ranelpadon.github.io/ngram-type/]NGram-Type[/url][/b]. Simple, neat and recommended.
 
 
 [h]Take the Control Back![/h]
@@ -255,6 +260,7 @@ Here are some typing improvement tools I've used or found promising:
 [b][url=http://eidosk.com/play_game.php?id=1]Fast Typer 3[/url][/b] and its predecessor [b]F.T.2[/b] are a hoot, as you train both speed and accuracy very ... fast, indeed. Brutal but fun.
 [b][url=https://www.speedtypingonline.com/typing-test]Speed Typing Online[/url][/b] has a fun little test in which you type text quotes and lyrics.
 [b][url=https://typings.gg/]Typings.gg[/url][/b] is a sleek no-nonsense trainer. Choose how many words to type, and type them.
+[b][url=https://ranelpadon.github.io/ngram-type/]NGram-Type[/url][/b] as mentioned above, is a simple and effective way to train common n-grams.
 
 [b][url=https://btype.io/l/en/en]bType[/url][/b] is great if you want an online tool for "type-reading" books. It even supports multiple languages.
 [b][url=https://www.typelit.io/]TypeLit.io[/url][/b] also has books for you to type in. It has a very nice feel and an interesting library.
@@ -270,11 +276,10 @@ On the [b][url=https://colemak.com/Learn]Colemak Learn page[/url][/b], there's a
 [b][url=https://sense-lang.org/trial/typing/tutor/EN_colemak_tutorial.php]Sense-Lang[/url][/b] has Colemak lessons, but no Colemak-DH.
 [b][url=http://www.keybr.com/practice]Keybr[/url][/b] is used by many learners. It's a rather no-nonsense online trainer.
 [b][url=https://www.keyhero.com/]Key Hero[/url][/b] is a nice online solution. It's written by a Colemak user, records progress and focuses on realistic learning.
-[b][url=https://thetypingcat.com/]The Typing Cat[/url][/b] also seems nice. Nice kitty! (=^ω^=)丿
+[b][url=https://thetypingcat.com/]The Typing Cat[/url][/b] also seems nice. Nice kitty!  ( =^･ω･^=)丿
 
 This may come too late for you since you're here reading my training page, but:
-If you're new to Colemak and didn't opt for the [b][url=https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/]Tarmak[/url][/b] experience, then maybe [b][url=https://github.com/first20hours/keyzen-colemak]KeyZen for Colemak[/url][/b] could work for you?
-It lets you learn by simply doing in the here and now, without stress. Om, Om! _/|\_
+If you're new to Colemak and didn't opt for the [b][url=https://forum.colemak.com/topic/1858-learn-colemak-in-steps-with-the-tarmak-layouts/]Tarmak[/url][/b] experience, then maybe [b][url=https://ranelpadon.github.io/keyzen-colemak-dh/]KeyZen-Colemak-DH[/url][/b] could work for you? It lets you learn by simply doing in the here and now, without stress. Om, Om! _/|\_
 
 
 [h]Alternate fingerings[/h]

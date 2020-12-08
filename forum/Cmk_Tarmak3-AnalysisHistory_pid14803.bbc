@@ -1,6 +1,5 @@
 [i]In this post I go into more detail about analysis, naming and history. It's non-essential stuff, but some may find it interesting.[/i]
 
-
 [h]TARMAK ANALYSIS[/h]
 
 Here is some analysis of Tarmak, using analysis programs available online. Keep in mind though, that such analyzers are only as good as their design. The maker of CodeSharp (and the Workman layout) for instance, feels that the Colemak D and H positions are very bad for him, and that hand alternation is a lot better than finger rolls. While I've come to appreciate the first sentiment, I don't agree on all the rest. I also feel that same-finger bigrams are very bad; these are more common in the Workman layout than in Colemak and I think that's a horrible idea. Be that as it may, the tools take into consideration many relevant parameters and seem to be well designed as such.
@@ -13,7 +12,7 @@ This graphic shows the number of keys that each successive layout step changes, 
 
 This was done for the older Tarmak(ETOIR) steps, but the results are very similar for the new one.
 
-    [img]https://www.dropbox.com/s/i0a2y275f56ycmd/Tarmak_KeyChangesVsModelGain.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_KeyChangesVsModelGain.png[/img]
 
 The "effort reduction per key" was assessed using the "overall effort" percentage from the CodeSharp analyzer, divided by the number of extra keys moved from the previous layout (4-3-3-3-4-4-12 keys). As seen, effort gain per key increases the most for the first Tarmak steps. Switching to Tarmak 2–4 really gains you a lot of benefit for your troubles. The first step may seem ineffective in comparison, but it bears the penalty of having to displace the J key; if that step too had moved only 3 keys it'd have done better but it's still clear that the second step is very important too. After the last Tarmak step, the final 4-key change to Colemak doesn't produce much modeled benefit compared to the previous changes. Since the mini-loops of Tarmak have been sorted using this model that may be expected; however, I personally believe that the Colemak has significant important benefits that the model are blind to! The full Colemak has a lot less same-finger bigrams and gives other benefits compared to the last Tarmak step which the analyzer won't quite pick up.
 
@@ -28,7 +27,7 @@ Here's [url=https://forum.colemak.com/viewtopic.php?pid=14545#p14545]a more rece
     The current Tarmak(ETROI): [url]http://patorjk.com/keyboard-layout-analyzer/#/load/MVB2CBnK[/url]
     The older Tarmak(ETOIR): [url]http://patorjk.com/keyboard-layout-analyzer/#/load/2b1Bz5t9[/url]
 
-    [img]https://www.dropbox.com/s/l0cila42vlvcvy9/Tarmak_ETROI_Patorjk-Austen.gif?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_ETROI_Patorjk-Austen.gif[/img]
 
 
 The measly 141 instances of J in this sample prove that it is indeed a rare letter – the rarest of those that are moved by Colemak. Even the colon/semicolon key and Z had more presses and only X and Q of all the letters less (241/142/102/83 presses, respectively). This is an argument for moving only the J around, as a letter that rare won't be used enough to settle in your motor memory before the next step.
@@ -88,7 +87,12 @@ There is [url=https://forum.colemak.com/viewtopic.php?pid=8786#p8786]an older Ta
 [b]2011: Tarmak(E-T-O-I-R)[/b]
 Then in 2011, some useful [url=https://forum.colemak.com/viewtopic.php?pid=8799#p8799]model analysis[/url] by user [user]Cevgar[/user] (using the "CodeSharp" layout analyzer) on smaller loop chunks made me change the recommended loop progression to maximize the gain in typing model efficiency for each short step of 3–4 moved keys. Getting the G>T>F loop in place sailed up as much more important than fixing one hand at a time, since QWERTY puts the T in a needlessly poor position. This led to the 5–step Tarmak(ETOIR – earlier called 'ETOIS') progression that split each hand loop in half and demoted the LUI loop to the next-to-last step.
 
-[quote=Tarmak(ETOIR)]It's possible to do the "most effective" key movements 3-4 keys at a time, each step bringing an important key or two to the Colemak home position while moving less central keys out of the way to [i]their[/i] proper positions. Here are the Tarmak(ETOIR) Transitional Colemak Layout in sorted "lumps" for learning Colemak in 2-5 steps as desired:
+[b][u]Tarmak(ETOIR)[/u][/b]
+It's possible to do the "most effective" key movements 3-4 keys at a time, each step bringing an important key or two to the Colemak home position while moving less central keys out of the way to [i]their[/i] proper positions.
+
+Here are the Tarmak(ETOIR) Transitional Colemak Layout in sorted "lumps" for learning Colemak in 2-5 steps as desired:
+[spoiler]
+    [b][u]Tarmak(ETOIR):[/u][/b]
 
 [b]1)[/b] The [b]E[/b]>K>N>(J) "most essential" loop, fixing the important E (and N) and just messing up the infrequently used J
 [code] q  w {J} r  t  y  u  i  o  p 
@@ -111,20 +115,22 @@ Then in 2011, some useful [url=https://forum.colemak.com/viewtopic.php?pid=8799#
    a {R}{S} T {D} h  N  E  I  O     The Colemak layout (P>R>S>D>G>T>F>E>K>N>J>Y>O>; & L>U>I)
      z  x  c  v  b  K  m [/code]
 
-The above sequence of loops looks most promising to me (and the Codesharp analysis). With the four layouts above available, anyone preferring smaller "tar lumps" can go one step at a time while more ambitious learners may use for instance #2 and then #4 or just #3 before moving to Colemak.[/quote]
+The above sequence of loops looks most promising to me (and the Codesharp analysis). With the four layouts above available, anyone preferring smaller "tar lumps" can go one step at a time while more ambitious learners may use for instance #2 and then #4 or just #3 before moving to Colemak.
+[/spoiler]
 
 The Tarmak(ETOIR) layouts have been tried successfully by several people, including forum reports by users [url=https://forum.colemak.com/viewtopic.php?id=1684]ghaz[/url], [url=https://forum.colemak.com/viewtopic.php?id=1708]bph[/url] and [url=https://forum.colemak.com/viewtopic.php?id=1710]Coldmak[/url]. The reports suggest that if you give each step a little time to settle in, you can keep your productivity while learning Colemak.
 
-    [img]https://www.dropbox.com/s/a1p6cxo1jweiiuk/Tarmak_Spectral_ETOIR.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/OldTmk/Tarmak_Spectral_ETOIR.png[/img]
     [i]Spectrally color-coded Tarmak(ETOIR, 2011) shown on an ANSI keyboard.[/i]
 
 
 [b]2014: Tarmak(E-T-R-O-I)[/b]
 Now, in April 2014 Karl Nordstrom (user [user]karl[/user]) presented a new Tarmak variant in [url=https://forum.colemak.com/viewtopic.php?pid=14542]an excellent forum topic[/url]. He was loath to move the semicolon to the middle of the board because he's typing a lot of code. Also, he wanted the LUI loop last so that the misplaced keys would be resolved as soon as possible to keep confusion to a minimum.
 
-Thus came about the new Tarmak(ETROI) progression, with a (J)>R>S>D loop in step 3 that lets us finish the big loop before the LUI loop and move only J to wrong positions.
+Thus came about the new Tarmak(ETROI) progression, with a (J)>R>S>D loop in step 3 that lets us finish the big loop before the LUI loop and move only J to wrong positions:
+[spoiler]
+    [b][u]Tarmak(ETROI):[/u][/b]
 
-[quote=Tarmak(ETROI)]
 [b]1)[/b] The [b]E[/b]>K>N>(J) "most essential" loop, fixing the important E (and N)
 [code] q  w {J} r  t  y  u  i  o  p 
    a  s  d  f  g  h {N}{E} l  ;     The "Tarmak1(E)" transitional layout (E>K>N>J)
@@ -144,17 +150,17 @@ Thus came about the new Tarmak(ETROI) progression, with a (J)>R>S>D loop in step
 [b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
 [code] q  w  F  P  G  J {L}{U} Y  ; 
    a  R  S  T  D  h  N  E {I} O     The Colemak layout (Y>O>;>P>R>S>D>G>T>F>E>K>N>J & L>U>I)
-     z  x  c  v  b  K  m [/code][/quote]
+     z  x  c  v  b  K  m [/code]
+[/spoiler]
 
 This progression evens out the efficiency gain per moved key a little between the steps, depending on the analyzer used. As Karl points out though, that isn't so important to a learner as you won't be all that efficient while struggling with placements anyway. Unless you're planning on staying with a Tarmak step for a very long time it shouldn't matter at all.
 
-    [img]https://www.dropbox.com/s/gi1rh06u7ksdas3/Tarmak_Spectral_ETROI.png?raw=1[/img]
-    [i]Spectrally color-coded Tarmak(ETROI, 2014–) shown on an ANSI keyboard.[/i]
-        
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-ETROI_Spectral_ANSI.png[/img]
+    [i]Spectrally color-coded Tarmak(ETROI, 2014) shown on an ANSI keyboard.[/i]
 
-It's still entirely possible to use the older Tarmak(ETOIR) to learn Colemak, but nowadays I recommend Tarmak(ETROI) as the standard. The two progressions are both good and should provide relatively similar benefits.
 
 Some arguments for the Tarmak(ETROI) vs Tarmak(ETOIR) progressions:
+• Both progressions seem good and should provide similar benefit.
 • Moving only the J (the rarest letter moved in Colemak) feels more consistent than moving first that and then the semicolon.
 • J is actually less frequent than the semicolon/colon, not only in code but in English text as well!
 • Moving R and S into place earlier and in a separate step should be beneficial: These two letters often cause Colemak learners trouble since they "castle" past each other from their QWERTY positions. In Tarmak3(ETR) you get to learn their positions without having to focus on so much else at the same time.
@@ -162,13 +168,18 @@ Some arguments for the Tarmak(ETROI) vs Tarmak(ETOIR) progressions:
 • Moving the L>U>I loop to the end lets you finish the big loop so as to resolve the temporarily misplaced letter (J) earlier.
 
 
-[b]2015: Tarmak(E-T-R-O-I) for the Curl-DbgHk/DvbgHm ergo mods[/b]
+[b]2015: Tarmak(E-T-R-O-I) for the Curl-DvH ergo mod[/b]
 
-    [img]https://www.dropbox.com/s/ub363imkf12ywwc/Tarmak-Curl_SpectralAnimation_45d.gif?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-CkA-ISO_Spectral-45d/Tarmak-DHk_SpectralAnimation_45d.gif[/img]
 
-The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to better positions for people who dislike the center "trench" and feel that this part of the home row doesn't feel like home after all! See [url=https://forum.colemak.com/viewtopic.php?pid=16393#p16393]my post further down[/url] if you're interested. [Do note that the Curl(DbgHk) a.k.a. Curl(DvH) variant is as of 2017 superseded by a Unified Curl(DH) mod – see below!]
+The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to better positions for people who dislike the center "trench" and feel that this part of the home row doesn't feel like home after all! See [url=https://forum.colemak.com/viewtopic.php?pid=16393#p16393]my post further down[/url] if you're interested.
 
-[quote=Tarmak(ETROI)-Curl(DbgHk)Angle]
+Note that my 2015 Curl-DvH variant was superseded by a unified Curl-DHk mod in 2017 and finally Curl-DH(m) in 2020 – see below!
+
+Here are the steps for the 2015 Tarmak(ETROI)-Curl(DvH):
+[spoiler]
+    [b][u]Tarmak(ETROI)-Curl(DvH)Angle(ISO):[/u][/b]
+
 [b]1)[/b] The [b]E[/b]>K>[b]H[/b]>N>(J) "most essential" loop, fixing the important E (and N) – with the Curl(Hk) mod
     [img]https://www.dropbox.com/s/hdt87dol5kgh8qs/Tarmak-Curl1_Spectral_E.png?raw=1[/img]    [i]Tarmak1(E)-Curl(DbgHk)[/i]
 
@@ -183,25 +194,25 @@ The Curl(DH) mods are an ingenious way of getting the frequent D and H keys to b
 
 [b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak-Curl(DbgHk)!
     [img]https://www.dropbox.com/s/yksxrjjcr8yd94j/Tarmak-Curl5_Spectral_I.png?raw=1[/img]    [i]Tarmak5(ETROI)-Curl(DbgHk)[/i]
-[/quote]
+[/spoiler]
 
     [img]https://www.dropbox.com/s/h1najfe5j7xb661/Tarmak_Spectral_ETROI-Curl-DbgHk.png?raw=1[/img]
-    [i]Spectrally color-coded Tarmak(ETROI) with the old Curl(DbgHk) mod, shown on an ISO keyboard.[/i]
+    [i]2015: Spectrally color-coded Tarmak(ETROI) with the old Curl-DvH mod, shown on an ISO keyboard.[/i]
 
 
-[b]2017: Tarmak(E-T-R-O-I) for the unified Colemak-DH ergo mod[/b]
+[b]2017: Tarmak(E-T-R-O-I) for the Colemak-DHk standard ergo mod[/b]
 
-In May 2017, we agreed on one common Colemak-DH mod, consisting of a MK switch from the old "mod-DH" or "Curl(DvbgHm)" mod.
+In May 2017, we agreed on one common Colemak-DH mod, consisting of a mere MK switch from the original "mod-DH" or Curl(DHm).
 
-    [img]https://www.dropbox.com/s/n43eixm08pp0m5y/Tarmak-ETROI_Spectral_Curl.png?raw=1[/img]
-    [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH) mod, shown on an ISO keyboard.[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/OldTmk/Tarmak-ETROI_Spectral_CkA-ISO.png[/img]
+    [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DHk)Angle mod, shown on an ISO keyboard.[/i]
 
-    [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
-    [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH)Angle(Z) ANSI mod.[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/OldTmk/Tarmak-ETROI_Spectral_CkA-Z.png[/img]
+    [i]2017: Spectrally color-coded Tarmak(ETROI) with the Curl(DHk)Angle(Z) ANSI mod.[/i]
 
-Here's how the Tarmak steps roll with the unified Colemak-DH mod (shown here on an ISO board):
-
-[quote=Tarmak-Curl(DH)Angle(ISO)]
+Here's what the Tarmak steps were like with the 2017 Colemak-DHk mod:
+[spoiler]
+    [b][u]Tarmak(ETROI)-Curl(DHk)Angle(ISO):[/u][/b]
 
 [b]1a)[/b] The [b]E[/b]>K>[b]N[/b]>(J) "most essential" loop, fixing the important E (and N)
 [code] q  w {J} r  t  y  u  i  o  p 
@@ -231,6 +242,11 @@ Here's how the Tarmak steps roll with the unified Colemak-DH mod (shown here on 
 [code] q  w  F  P  B  J {L}{U} Y  ; 
   a  R  S  T  g  K  N  E {I} O     Colemak-DH
  z  x  c  D  v  _  M  H [/code]
-[/quote]
 
-I've split steps 1 and 2 above for clarity. But if you're the careful type you may choose to split them in practice too. See the Tarmak-DH post above.
+I've split steps 1 and 2 above for clarity. But if you're the careful type you may choose to split them in practice too.
+[/spoiler]
+
+
+[b]2020: Tarmak(E-T-R-O-I) for the Colemak-DH(m) standard ergo mod[/b]
+
+In Oct 2020, we once more agreed on a new Curl-DH standard: SteveP's original mod! There can be only one. See the Tarmak-DH post above.

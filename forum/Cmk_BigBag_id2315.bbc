@@ -6,7 +6,7 @@ If you're new to this, there may be a lot of unfamiliar terms and concepts! You 
 
 If something is too obscure or hard, look up the community on the Colemak Forum and Discord. We're a right helpful lot! The BigBag is my go-to reply to many questions on the Discord and elsewhere, to the extent that a meme was created in my honor. Be warned...!  ( ͡~  ͜ʖ ͡°)
 [spoiler]
-[img]https://www.dropbox.com/s/s5loxmrz8axz3tx/DreymaR-TalkAboutBigBag_Poltergeist_orig.png?raw=1[/img]
+[img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/div/Funny/DreymaR-TalkAboutBigBag_Poltergeist_orig.png[/img]
 [i]Created by Poltergeist at the Colemak Discord, 2020-09-29[/i]
 [/spoiler]
     [i]DreymaR[/i] ~ ( のvの) c[_]
@@ -25,7 +25,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 
 [h]INTRO[/h]
 
-    [img]https://www.dropbox.com/s/ormuqzcz8l4yfg8/Tarmak-ETROI_Spectral_CAW.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-ETROI_Spectral_CAWS.png[/img]
 
 
 This is the [b]Big Bag of Keyboard Tricks Main Topic[/b], in which I go into detail on what my different tricks are.
@@ -96,18 +96,20 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as it is 
     East Slavic (Russian/Church/Belarus/Ukraina?) & South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?)
 • Tarmak layouts for Curl-DH modders. The changes are minor, but should be easily accessible for the newcomer.
 • Get the Big Bag implementations up and going on GitHub.
+• Training topic: Alternative fingering. Tricks like sliding in for the NK/KN bigram are useful for the somewhat advanced typist.
 
 
 [h]TODO:[/h]
+• Transition from DHk (the 2017 standard) to DHm (SteveP's original DH mod) as the Colemak-DH standard
 • Present the Big Bag more hypertextually on GitHub web pages (Work-In-Progress)
 • Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?) [done in EPKL]
 • A total of 4 Extend layers: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings – or whatever you like! [done in EPKL]
 • Modifier keys for 4 Extend layers. For instance, Caps+{--, RShift, RAlt, RShift+RAlt}. Holding down Caps maintains the layer state.
 • "Tap dance sequences", using dead keys and/or combines to release strings and things without having to hold modifier chords.
 • Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
+• Also an Arabic phonetic layout.
 • Develop and test a [url=https://forum.colemak.com/topic/2389-vietnamese-colemak/]Vietnamese Colemak[/url] (with [user]IceDryst[/user] and whoever's interested).
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)
-• A section on alternative fingering? Tricks like sliding in for the NK/KN bigram are useful for the somewhat advanced typist.
 
 
 [h]LASTLY:[/h]

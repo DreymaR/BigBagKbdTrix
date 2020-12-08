@@ -11,17 +11,18 @@ Keep your hands at home position ([i]QWERTY[/i] ASDF JKL;) and stretch inwards t
 
 Curl(DH) mods require an Angle mod (see above) to work.
 
-In May 2017, [user]SteveP99[/user], myself and other users agreed on one common Colemak-DH, consisting of
+In Oct 2020, [user]SteveP99[/user], myself and others agreed on one common Colemak-DH, consisting of
     • the D and H positions from the original DH-mod a.k.a. Curl(DHm), and
-    • the middle-trench K position from my old Curl(DvH) mod, allowing M a better position – at least on standard row-staggered boards.
+    • G and M on the old home row, which works well both for standard row-staggered boards and matrix boards.
+This version supersedes the 2017 DHk standard with K on the home row. That version wasn't so nice for matrix boards.
 
 
 [b]Tarmak-DH on ISO/"World" keyboards:[/b]
 
-    [img]https://www.dropbox.com/s/n43eixm08pp0m5y/Tarmak-ETROI_Spectral_Curl.png?raw=1[/img]
-    [i]Spectrally color-coded Tarmak(ETROI) with the Curl(DH) mod on an ISO keyboard.[/i]
- 
-Here's the Tarmak steps with the unified Colemak-DH mod, shown on an ISO keyboard:
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-ETROI_Spectral_CA-ISO.png[/img]
+    [i]Spectrally color-coded Tarmak-DH(ETROI) with the CurlAngle mod on an ISO keyboard.[/i]
+
+Here are the Tarmak steps for the 2017 Colemak-DHk mod, shown on an ISO keyboard; the 2020 DH(m) mod will be quite similar:
 
 [quote=Tarmak-CurlAngle(ISO)]
 
@@ -54,12 +55,12 @@ The full Tarmak1-Curl(H) step is a big one which may be scary if you're new to l
 Similarly, if it seems that a lot is happening in the Tarmak2-Curl(DH) step then you may try tackling only the CurlAngle mod (_ZXCVB→XCB_V in this case) first. In this case, the B gets temporarily misplaced. Several implementations allow you to select the DH mod separately.
 
 
-[b]Tarmak-DH on ANSI/US keyboards:[/b]
+[b]Tarmak-DHk on ANSI/US keyboards:[/b]
 
 For ANSI/US keyboards, you have to choose an ANSI-Angle mod as these boards don't have the extra key between Z and LShift. The most common one is Angle(Z), which moves Z into the middle where the B used to be as XC move to the left. The Curl mod then arranges B and D as usual:
 
-    [img]https://www.dropbox.com/s/06r0sp6iv90bywf/Tarmak-ETROI_Spectral_Curl-Z-Angle.png?raw=1[/img]
-    [i]Spectrally color-coded Tarmak(ETROI) with the CurlAngle(Z) ANSI/US mod.[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-ETROI_Spectral_CA-Z-em.png[/img]
+    [i]Spectrally color-coded Tarmak-DH(ETROI) with the CurlAngle(Z) ANSI/US mod.[/i]
  
 So again, here's the Tarmak steps with the unified Colemak-DH mod, on an ANSI keyboard with the Angle(Z) mod:
 

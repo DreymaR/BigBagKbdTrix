@@ -61,7 +61,7 @@ Here are the spectrally coded Tarmak steps again, together in one Colemak image.
 The next image shows the Tarmak steps leading to the [b][url=https://forum.colemak.com/post/14801/#p14801]Colemak-DH[/url][/b] ergonomic variant, should you be interested. I like it!
 
     [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
-    [i]This image shows Tarmak-DH on an ANSI Angle(Z) modded board, leading to Colemak-DH.[/i]
+    [i]This image shows Tarmak-DHk on an ANSI Angle(Z) modded board, leading to Colemak-DHk.[/i]
     [i]On an ISO keyboard you can use a simpler Angle mod without splitting the ZXC keys.)[/i]
 
 
@@ -165,9 +165,9 @@ The time spent on Tarmak was an insignificant slice of the total time to get her
     • See the [b][url=https://forum.colemak.com/viewtopic.php?id=2014]Extend Extra Extreme[/url][/b] topic if you need convincing.
 [b]– Angle/Wide ergo mods:[/b] These are also basically layout independent. QWERTY-AngleWide is definitely possible.
     • The [b]Angle[/b] mod is simple, especially on a PC105/ISO keyboard: Slide ZXCVB one step to the left, keep your fingering but straighten your left wrist. Comfy!
-    • If you have an ANSI keyboard, you must make a tradeoff: Move the Z key back to the middle ("Angle-Z"), or, e.g., the middle/upper rows to the right ("A-Wing").
+    • If you have an ANSI keyboard, you must make a tradeoff: Move the Z key back to the middle ("Angle-Z"), or, e.g., use the Shift key for it ("Fat-Z", harder to implement).
     • The [b]Wide[/b] mod is quite simple on any keyboard: Slide the right-hand keys one step to the right, improving hand distance and thumb/pinky reaches. Neat!
-    • These could be "hard" implemented, even changing the physical key caps to Angle/Wide positions if you can. My wife typed QWERTY-AngleWide without trouble.
+    • These are "hard" mods, you could even change the physical key caps to Angle/Wide positions if possible. My wife typed QWERTY-AngleWide without trouble.
 [b]– The Colemak-DH a.k.a "Curl(DH)" ergo mod:[/b] A Colemak-specific mod. Moving the common D and H down makes them easier to reach with lightly curled, relaxed fingers!
     • [b]NOTE:[/b] There is a tweaked [b][url=https://forum.colemak.com/post/14801/#p14801]Tarmak progression for Colemak-DH[/url][/b]!
 [b]– Colemak[eD]:[/b] This only affects you if you'll be using the AltGr key, as it's about the extra mapping layers on each key.
@@ -199,9 +199,9 @@ I'd like to say thanks to all the wonderful people of the Colemak forums and els
 • Here's my full [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL]EPiKaL PortableKeyboardLayout[/url][/b] repo at GitHub as described in the [url=https://forum.colemak.com/viewtopic.php?id=1467]Big Bag Of Tricks (for PKL)[/url] topic. It should run portably without much fuss. There are layouts for ISO and ANSI(US) keyboards, vanilla or Colemak-DH, and more.
 
 • Tarmak steps come with EPKL and can be selected quite easily. In [url=https://github.com/DreymaR/BigBagKbdTrixPKL/blob/master/EPKL_Settings.ini]EPKL_Settings.ini[/url] there are some commented-out layout lines like this one:
-[code];layout = Tarmak\Tm1-VK@V:Tarmak1@C,Tarmak\Tm0-VK@K@E:QWERTY(VK)@E[/code]
+[code];layout = Tarmak\Tmk-VK-Tm1_@K:Tarmak1,Tarmak\Tmk-VK-Tm0_@K:QWERTY[/code]
 
-• Remove the semicolon from that line (and ideally add one to the uncommented layout line below) then refresh EPKL and you should have Tarmak. There's one line that cycles through the Tarmak steps on layout switch by menu or hotkey (default Ctrl+Shift+2), and the one I quoted here that only switches between Tarmak1 and QWERTY. You could easily edit the number 1 in that line to 2, 3, 4 or 5 – which is Colemak but in the same style as the Tarmak steps.
+• Remove the semicolon from that line (and ideally add one to the uncommented layout line below) then refresh EPKL and you should have Tarmak. You can use one line that cycles through the Tarmak steps on layout switch by menu or hotkey (default Ctrl+Shift+2), or like the one I quoted here that only switches between a Tarmak step and QWERTY. You could easily edit the number 1 in that line to 2, 3, 4 or 5 – which is Colemak but in the same style as the Tarmak steps.
 
 [b]Linux [i]et al[/i]:[/b]
 • For XKB, see the [url=https://forum.colemak.com/viewtopic.php?id=1438]Big Bag Of Tricks (Linux/XKB)[/url] topic. After installing, search for 'Tarmak' in the layout chooser.
