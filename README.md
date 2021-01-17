@@ -17,21 +17,18 @@ TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
-- Include the header code on all pages instead of duplicating code! (Answer: Should use Jekyll?!)
-	- May have to use JS. Or jQuery.load()? 
-		- https://www.w3schools.com/howto/howto_html_include.asp failed for me.
-		- Tried baking it into the main.js.
-		- Need to include it as <head and <nav tags, not <div as in the example?!
-	- Or https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file (jQuery)
-	- https://stackoverflow.com/questions/31954089/how-can-i-reuse-a-navigation-bar-on-multiple-pages
-	- https://stackoverflow.com/questions/22326742/server-side-includes-alternative
-	- I think <body onload="includeHTML()"> would only work for body and not head?
-	- W3Schools: document.onload = function() {fn()}; to run fn()
-	- https://stackoverflow.com/questions/22326742/server-side-includes-alternative
-- GH-pages use Jekyll
-	- Can include html as, say, {% include web/inc-navbar.html %}
-	- Jekyll setup for GitHub consists of some files. Added these in the Jekyll folder; figure it out...?
-	- Hard to get Jekyll up on WSL Ubuntu. Managed it eventually with some help.
+- Implement Jekyll in order to remove duplicating code!
+	- Take out everything except the content of the <main> tag into default.html.
+	- Figure out a way to edit some portion of the default.html per page basis - like hightlighting the current page's menu item. Maybe use parameters?
+- Implement SASS/LESS for easier reading of the styles code.
+- Fix the popup that shows during the first website visit.
+- Rework the 'Platforms' menu visualisation.
+	- Let it open without delay.
+	- Make it smoother so it doesn't glitch/flicker.
+	- Make the icons smaller.
+	- Implement a sort of a 'Under construction' message for the Mac platform.
+- Switch the places of the menu and Platforms icons so that when opening the menu, the icon doesn't have to move all across the screen -> increases animation smoothness.
+- Change the style of spoilers so that they're more visible.
 - Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
 	- Put fonts, css and js in the web folder
 	- TODO: Update all content image links to res locations
