@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Key Mappings</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="web/main.css" rel="stylesheet">
+    <link rel="icon" href="res/ico/Cmk-ico64_c4.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="menuIcon">
+            <div id="hamburger"></div>
+        </div>
+        <div id="platforms">
+            <div id="platformIcons">
+                    <a id="linux" href="#"></a>
+                    <a id="tmk" href="#"></a>
+                    <a id="mac" href="#"></a>
+                    <a id="win" href="#"></a>
+            </div>
+        </div>
+        <div id="menuContainer">
+            <div id="menu">
+                <div id="menuHeader">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
+                </div>
+                <ul>
+                    <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
+                        <ul>
+                            <li><a href="colemaked.html">Colemak[eD]</a></li>
+                            <li><a href="extendlayers.html">Extend Layers</a></li>
+                            <li><a href="deadkeys.html">Dead Keys</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ergomods.html">ERGONOMY</a></li>
+                    <li><a href="otherlayouts.html">VARIANTS</a></li>
+                    <li><a href="typingtricks.html">TRICKERY</a></li>
+                    <li><a href="guestlinks.html">LINKS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
+    </nav>
+    <main>
+        <h1>Character/Key Mapping Layers</h1>
+
+        <h2>COLEMAK[eD] - EDITION DREYMAR</h2>
+        <p>See <a href="colemaked.html">the Colemak[eD] page</a> if you're interested.</p>
+
+        <p>This is my own preferred AltGr mapping layers (modifier lv3-4 in Linux terminology) for the Colemak layout. I've tried to add much functionality while keeping it intuitive. In particular, I want to be able to write different scripts and tech/maths symbols. Since the start, there's been some minor tweaks based on my experience and forum feedback, but it's been stable for a long time now.</p>
+
+        <p>See my various layout files for comments and explanations, in addition to these design goals:</p>
+        <ul class="dashed">
+            <li>Keeping level 1-2 of Colemak intact! This is what I think of as the Colemak layout per se.</li>
+            <li>Dead keys easily accessible as unshifted AltGr+symbol keys; common ones in good positions.</li>
+            <li>Added letters/quotes allowing many of the major latin scripts to be written correctly.</li>
+            <li>Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.</li>
+            <li>The positions of added letters and symbols should as far as possible be easy to remember!</li>
+        </ul>
+
+        <img src="res/img/Cmk-ANSI-eD_96d-FShui.png" alt="Colemak ANSI eD">
+        <p class="italic">The <strong>Colemak [edition DreymaR]</strong> layout, using different lv3-4 mappings from Shai's default Colemak. <br>
+        Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.</p>
+
+
+        <img src="res/img/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
+        <p class="italic"><strong>Colemak-CAW[eD]</strong>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see the next post).</p>
+
+        <h2>EXTEND LAYERS AND THE CAPS SWITCH MODIFIER</h2>
+        <p>This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.</p>
+
+        <p>For more info and tricks, see <a href="extendlayers.html">my Extend Extra Extreme page</a>.</p>
+
+        <img src="res/img/Extend-ISO-NoMod-Win_96d.png" alt="">
+        <p class="italic">My Extend Nav/Edit mappings. Green, navigation; blue, mousing; orange, multimedia; gray, system/misc.</p>
+
+        A more explicitly labeled chart, and an ASCII one from my Extend .ini file:
+
+        <div class="spoiler">
+            <p><span>Spoiler:</span></p>
+            <div class="spoilerBody">
+                <img class="left" src="res/img/Extend-ISO-NoMod-Linux_96d-Labels.png" alt="">
+                <p class="italic left">My Extend mappings (lvl1 only). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
+                <pre><code>
+These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Esc + |F1 &lt;> |F2 &lt;&lt; |F3 >> |F4 &lt;> |F5 &lt;> |F6 &lt;&lt; |F7 >> |F8 &lt;> |F9 &lt;> |F10&lt;> |F11&lt;> |F12&lt;> |
+|      | Pause| Rew  | Fwd  | Eject| Refr | Bri- | Bri+ | Sleep| WWW  | Mail | App1 | App2 |
+| Caps | Play | Prev | Next | Stop | Mute | Vol- | Vol+ | Media| Home | Srch | File | Calc |
++======+======+======+======+======+======+======+======+======+======+======+======+======+
+|` €€€ |1     |2     |3     |4     |5     |6     |7     |8     |9     |0     |-     |=     |
+| Cust | F1   | F2   | F3   | F4   | F5   | F6   | F7   | F8   | F9   | F10  | F11  | F12  |
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Tab   |Q €€€ |W *** |F &lt;&lt;> |P &lt;>> |G *** |J ### |L ### |U ### |Y ### |; €€€ |[ €€€ |] €€€ |
+|      | Esc  | *WhUp| BrBck| BrFwd| *MUp | PgUp | Home | Up   | End  | Del  | Esc  | Ins  |
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Caps+ |A +++ |R *** |S +++ |T +++ |D *** |H ### |N ### |E ### |I ### |O €€€ |' €€€ |\ >&lt;> |
+| ++++ | Alt  | *WhDn| Shift| Ctrl | *MDn | PgDn | Left | Down | Right| Back | Menu | BrFav|
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|_ *** |Z €€€ |X === |C === |V === |B *** |K *** |M *** |, *** |. *** |/ €€€ |Spc € |Entr€ |
+| *MOn | Undo | Cut  | Copy | Paste| *Bt1 | *Bt2 | *Bt3 | *MLe | *MRi | Multi| Enter| PrtSc|
++------+------+------+------+------+------+------+------+------+------+------+-------------+
+Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;> MultiMedia; € Various commands.
+                </code></pre>
+            </div>
+        </div>
+
+        <img src="res/img/Extend2-ISO-NoMod_96d.png" alt="Extend2 NumPad mappings">
+        <p class="italic">My Extend2 NumPad mappings. Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.</p>
+
+        <div class="platform-specific win">
+                <p>EPKL has a richly functional Extend implementation. It includes sideways wheel scrolling which the Linux version lacks (it has mousing on/off and a Multi key instead). WheelLeft is mapped to the ISO VK_102 key, so if ANSI board users want it they'll have to put it elsewhere. One might forgo one Esc key and put WheelLeft/Right on the bracket keys for instance.</p>
+
+                <p>On the Tilde key I put a handy mouse homing key as a default. It's handy for retrieving or putting away your mouse cursor, or for accessing buttons and menus at the upper-left corner of your current window without touching the actual mouse. Another suggestion is Win+T which is quite convenient for opening the Taskbar which can then be navigated further with Extend-keys. Or whatever you like, of course. :-)</p>
+                
+                <p>The Extend key is specified in the layout.ini file. To not use it, set its value to 'disabled' – but you'd be missing out big time!</p>
+                
+                <p>Multi-Extend is available in EPKL: You can set up to two modifiers in the Settings file, which select other Extend layers if held when pressing the Extend key. That layer is then maintained by just holding the Extend key down. Only the first two layers are filled in for now, but you may put whatever you want in there. I put some string examples into Ext3/4 as illustrations. Definitions are found in the Extend File specified in the layout.ini file. Here are the current defaults; they're easily changeable:</p>
+            
+            <pre><code>
+    Mod     Layer   Default 
+============================
+    ---     Ext1    Nav/Edit
+     1      Ext2    NumPad  
+     2      Ext3    Strings including kaomoji
+    1+2     Ext4    Coding
+            </code></pre>
+
+            <p>I've put string templates including a set of kaomoji text faces in the Extend3 layer:</p>
+
+            <img src="res/img/Extend3-ISO-Angle_Cpt.png" alt="Extend3 layer">
+            <p class="italic">My kaomoji Extend3 layer, mnemonically arranged (shown here for Colemak ISO-Angle).</p>
+
+            <p><b>Autohotkey code</b> With the * prefix an entry uses the Autohotkey format which lets you mix literal strings with keys. You can for instance write a set of html brackets then position the cursor between them, write then select text and more. See the extend file for examples.</p>
+
+            <p><b>One-shot Extend layers</b> is possible through the 'extReturnTo' setting in your Extend .ini file. When an entry is sent from, say, layer 4, PKL can return to any specified Extend layer. So if you have text strings in that layer you'll be back in editing mode after sending a string, without having to do anything.</p>
+
+            <p><b>Soft vs Hard Extend layers</b>: In the extend file you can specify which layers are "hard" or positional and shouldn't change between, say, Colemak and Dvorak but only with positional mods like Angle/Wide. A "soft" layer like the strings/kaomoji one is mnemonic and mappings follow letter positions. L is for Lenny. ( ͡° ͜ʖ ͡°)</p>
+
+            <p><b>Tap-Extend</b> is another new Extend functionality. You can set an "Extend Taps" entry with standard Extend syntax; so for instance Backspace will send the Back key. The "Extend time" setting defines a time in ms within which you can release the Extend key and have the entry sent. After this or if you press another key in the meantime, it works as the Extend modifier key like before. Set the time to 0 to disable Tap-Extend.</p>
+        </div>
+
+        <h2>ENHANCED DEAD KEY MAPPINGS</h2>
+
+        <p>Some dead keys are almost empty: The doubleacute only caters for ő ű, and ring only caters for å ů ẘ ẙ. There's also a whole iota dead key that only concerns itself with Greek characters. I'm tempted to stuff something good into those cracks even if it's not an entirely logical thing to do (because the name of the dead key wouldn't reflect these extra mappings). If you use up a key mapping on a dead key it really shouldn't sit there taking up keyboard space for the meager purpose of providing 2-3 glyphs!</p>
+
+        <p>There are 19 dead keys in my pkl layout right now. The common accents are there, together with a currency dead key on AltGr+4 and a Greek phonetic dead key on AltGr+5. Furthermore, some sparsely populated accent keys have been enhanced with extra content, such as superscripts/subscripts on acute/grave, fractions and negations on stroke/bar and ring symbols on ringabove. The most extensively reworked key is the double-acute which used to have only Uu and Oo and now contains a fairly rich set of math/science symbols (think of the double acute as akin to the equals and prime signs)! You really have to see them to believe them – I'll showcase some below but you can see them all using PKL (default Ctrl+Shift+1 for the help images):</p>
+
+        <p class="center">01) Dot below <br>
+        02) Hook, palatal hook <br>
+        03) Horn, retroflex hook/tail <br>
+        04) Currency: </p>
+
+        <img src="res/img/dk04_currency.png" class="smallImg" alt="Currency">
+        <img src="res/img/dk04sh_currency.png" class="smallImg" alt="Sh Currency">
+
+        <p>05) Greek (phonetic):</p>
+
+        <img src="res/img/dk05_greek.png" class="smallImg" alt="Greek">
+        <img src="res/img/dk05sh_greek.png" class="smallImg" alt="Sh Greek">
+
+        <p>06) Circumflex <br>
+        07) Caron <br>
+        08) Ogonek, comma below <br>
+        09) Breve <br>
+        10) Ring above, ring symbols, ligatures <br>
+        11) Macron <br>
+        12) Double-acute, math/science:</p>
+
+        <img src="res/img/dk12_dblacutesci.png" class="smallImg" alt="Dbla">
+        <img src="res/img/dk12sh_dblacutesci.png" class="smallImg" alt="Sh Dbla">
+
+        <p>13) Umlaut/diaeresis <br>
+        14) Tilde <br>
+        15) Acute, superscripts</p>
+
+        <img src="res/img/dk15_acute.png" class="smallImg" alt="Acute">
+        <img src="res/img/dk15sh_acute.png" class="smallImg" alt="Sh Acute">
+
+        <p>16) Grave, subscripts <br>
+        17) Cedilla <br>
+        18) Dot above <br>
+        19) Stroke/bar, fractions</p>
+
+        <img src="res/img/dk19_strokebar.png" class="smallImg" alt="Strokebar">
+        <img src="res/img/dk19sh_strokebar.png" class="smallImg" alt="Sh Strokebar">
+
+
+        <p class="left"><strong>Note</strong> that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.</p>
+
+
+    </main>
+    <script src="web/main.js"></script>
+</body>
+</html>

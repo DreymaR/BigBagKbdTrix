@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Key Mappings</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="web/main.css" rel="stylesheet">
+    <link rel="icon" href="res/ico/Cmk-ico64_c4.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="menuIcon">
+            <div id="hamburger"></div>
+        </div>
+        <div id="platforms">
+            <div id="platformIcons">
+                    <a id="linux" href="#"></a>
+                    <a id="tmk" href="#"></a>
+                    <a id="mac" href="#"></a>
+                    <a id="win" href="#"></a>
+            </div>
+        </div>
+        <div id="menuContainer">
+            <div id="menu">
+                <div id="menuHeader">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
+                </div>
+                <ul>
+                    <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
+                        <ul>
+                            <li><a href="colemaked.html">Colemak[eD]</a></li>
+                            <li><a href="extendlayers.html">Extend Layers</a></li>
+                            <li><a href="deadkeys.html">Dead Keys</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ergomods.html">ERGONOMY</a></li>
+                    <li><a href="otherlayouts.html">VARIANTS</a></li>
+                    <li><a href="typingtricks.html">TRICKERY</a></li>
+                    <li><a href="guestlinks.html">LINKS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
+    </nav>
+    <main>
+        <h1>Character/Key Mapping Layers</h1>
+
+        <h2>COLEMAK[eD] - EDITION DREYMAR</h2>
+        <p>See <a href="colemaked.html">the Colemak[eD] page</a> if you're interested.</p>
+
+        <p>This is my own preferred AltGr mapping layers (modifier lv3-4 in Linux terminology) for the Colemak layout. I've tried to add much functionality while keeping it intuitive. In particular, I want to be able to write different scripts and tech/maths symbols. Since the start, there's been some minor tweaks based on my experience and forum feedback, but it's been stable for a long time now.</p>
+
+        <p>See my various layout files for comments and explanations, in addition to these design goals:</p>
+        <ul class="dashed">
+            <li>Keeping level 1-2 of Colemak intact! This is what I think of as the Colemak layout per se.</li>
+            <li>Dead keys easily accessible as unshifted AltGr+symbol keys; common ones in good positions.</li>
+            <li>Added letters/quotes allowing many of the major latin scripts to be written correctly.</li>
+            <li>Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.</li>
+            <li>The positions of added letters and symbols should as far as possible be easy to remember!</li>
+        </ul>
+
+        <img src="res/img/Cmk-ANSI-eD_96d-FShui.png" alt="Colemak ANSI eD">
+        <p class="italic">The <strong>Colemak [edition DreymaR]</strong> layout, using different lv3-4 mappings from Shai's default Colemak. <br>
+        Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.</p>
+
+
+        <img src="res/img/Cmk-ISO-eD-CurlAWide_96d-FShui.png" alt="Colemak ISO eD">
+        <p class="italic"><strong>Colemak-CAW[eD]</strong>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see the next post).</p>
+
+        <h2>EXTEND LAYERS AND THE CAPS SWITCH MODIFIER</h2>
+        <p>This is my favorite mod next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more.</p>
+
+        <p>For more info and tricks, see <a href="extendlayers.html">my Extend Extra Extreme page</a>.</p>
+
+        <img src="res/img/Extend-ISO-NoWi-Linux_90d.png" alt="">
+        <p class="italic">A symbolic chart of my <strong>Extend</strong> mappings (lvl1 only). Greens, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
+
+        A more explicit chart from my XKB Extend source file:
+
+        <div class="spoiler">
+            <p><span>Spoiler:</span></p>
+            <div class="spoilerBody">
+                <img class="left" src="res/img/Extend-ISO-NoMod-Linux_96d-Labels.png" alt="">
+                <p class="italic left">My Extend mappings (lvl1 only). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.</p>
+                <pre><code>
+These keys are modified/transposed by holding down the 'extend key' (CapsLock by default):
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Esc + |F1 &lt;> |F2 &lt;&lt; |F3 >> |F4 &lt;> |F5 &lt;> |F6 &lt;&lt; |F7 >> |F8 &lt;> |F9 &lt;> |F10&lt;> |F11&lt;> |F12&lt;> |
+|      | Pause| Rew  | Fwd  | Eject| Refr | Bri- | Bri+ | Sleep| WWW  | Mail | App1 | App2 |
+| Caps | Play | Prev | Next | Stop | Mute | Vol- | Vol+ | Media| Home | Srch | File | Calc |
++======+======+======+======+======+======+======+======+======+======+======+======+======+
+|` €€€ |1     |2     |3     |4     |5     |6     |7     |8     |9     |0     |-     |=     |
+| Cust | F1   | F2   | F3   | F4   | F5   | F6   | F7   | F8   | F9   | F10  | F11  | F12  |
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Tab   |Q €€€ |W *** |F &lt;&lt;> |P &lt;>> |G *** |J ### |L ### |U ### |Y ### |; €€€ |[ €€€ |] €€€ |
+|      | Esc  | *WhUp| BrBck| BrFwd| *MUp | PgUp | Home | Up   | End  | Del  | Esc  | Ins  |
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|Caps+ |A +++ |R *** |S +++ |T +++ |D *** |H ### |N ### |E ### |I ### |O €€€ |' €€€ |\ >&lt;> |
+| ++++ | Alt  | *WhDn| Shift| Ctrl | *MDn | PgDn | Left | Down | Right| Back | Menu | BrFav|
++------+------+------+------+------+------+------+------+------+------+------+------+------+
+|_ *** |Z €€€ |X === |C === |V === |B *** |K *** |M *** |, *** |. *** |/ €€€ |Spc € |Entr€ |
+| *MOn | Undo | Cut  | Copy | Paste| *Bt1 | *Bt2 | *Bt3 | *MLe | *MRi | Multi| Enter| PrtSc|
++------+------+------+------+------+------+------+------+------+------+------+-------------+
+Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;> MultiMedia; € Various commands.
+                </code></pre>
+            </div>
+        </div>
+
+        <p>The XKB implementation is almost the same as the Windows/PKL one. You get shifted multimedia keys which Win/PKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are poorly implemented. Instead, there's a MouseKeys On/Off key on &lt;LSGT> and a Compose/Multi key on Slash. The Tilde key is customizeable – it could be anything you deem useful.</p>
+
+        <p>Holding down AltGr with the Extend modifier you get a NumPad layer (lv7-8) laid out pretty much like a standard one but with the top row moved around to fit existing keys:</p>
+
+        <pre><code>
+// KeyPad overlay with nav block to the left (lv7-8):
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |` €€€ |1     |2     |3     |4 £   |5 €   |6     |7     |8  ⇑  |9     |0     |-     |=     |
+// | Cust |  !   |  @   |  #   |  $   |  %   |  ^   | KP_7 | KP_8 | KP_9 | KP_* | KP_- | KP_= |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Tab   |Q ### |W ### |F ### |P €€€ |G €€€ |J ### |L     |U     |Y     |;     |[ {   |] }   |
+// |      | Home | Up   | End  | Del  | Esc  | PgUp | KP_4 | KP_5 | KP_6 | KP_+ |  (   |  )   |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |Caps+ |A ### |R ### |S ### |T €€€ |D     |H ### |N     |E  ⇓  |I     |O     |' "   |\ |   |
+// | ++++ | Left | Down | Right| Back | K_Lck| PgDn | KP_1 | KP_2 | KP_3 | K_Ent|  '   |  :   |
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+// |_ *** |Z €€€ |X === |C === |V === |B *** |K     |M     |,  ⇕  |.     |/     |Spc   |Entr  |
+// | *MOn | Undo | Cut  | Copy | Paste| *Bt1 |  ,   | KP_0 | KP_0 | KP_. | KP_/ | Spc  | K_Ent|
+// +------+------+------+------+------+------+------+------+------+------+------+------+------+
+        </code></pre>
+
+        <p>Having to hold down both CapsLock and AltGr while entering numbers is hardly ideal. For PKL/Windows, you only have to hold the Extend modifier after selecting which Extend layer to activate. On Linux, I might construct a level7 modifier by combining level3 with level5 but that's still Work-In-Progress.</p>
+
+        <p>There may be a need for navigating while entering numbers, but on the other hand KeyPad keys rarely use modifiers. So I moved the nav block from its UNEI arrow cross to the WARS cross familiar to gamers. Number row keys 1-6 are reverted to their lv2-3 symbols since these may be needed for numeric input, as are some other keys; the bracket keys cater for the parentheses in this layer which feels logical to me.</p>
+
+        <p>On Linux/XKB, if you're cheeky and dexterous enough to press CapsLock+AltGr+Shift at the same time you're treated to a set of double-arrow symbols of the kind used in mathematical proofs and more (⇖⇑⇗ ⇐⇔⇒ ⇙⇓⇘), laid out like in one of the standard xkb keypad layouts. I thought they might be somewhat handy, but the heavy chording required suits the fact that few need them very often! The single arrows didn't fit in, but at least the four orthogonal ones (←↑↓→) are already there in the lv3-4 Colemak[eD] mappings.</p>
+
+        <p><strong>Tips:</strong></p>
+        <ul>
+        <li>The backtick/tilde key to the left of 1 can be whatever you want to: An extra Del, Ctrl+A (Select All), Ctrl+W (Close), Ctrl+T (New Tab), Win+T (Taskbar)...</li>
+        <li>You can do some really fancy stuff with this! Ext-A/T+4(=Alt/Ctrl+F4) closes programs/tabs, Ext-T+J/H(=Ctrl+PgUp/PgDn) switches tabs...</li>
+        <li>Or try this in a browser: Ext-6 for the address bar, then type an URL, then Ext-A+Spc to open it in a new tab (saves Ctrl+T for a new tab)!</li>
+        <li>Most of these tricks work in many apps under both Windows and Linux these days. Some application specific ones are marked as such.</li>
+        <li>My Extend layer doesn't support letters nor the Win/GUI key, which limits the shortcut repertoire somewhat. But even so there's really a lot you can do!</li>
+        </ul>
+        <p>(FYI: There are good reasons for the WheelUp/Dn placements and the lack of a Win key, having to do with keyboard implementations.)</p>
+
+        <h2>ENHANCED DEAD KEY MAPPINGS</h2>
+
+        <p>Some dead keys are almost empty: The doubleacute only caters for ő ű, and ring only caters for å ů ẘ ẙ. There's also a whole iota dead key that only concerns itself with Greek characters. I'm tempted to stuff something good into those cracks even if it's not an entirely logical thing to do (because the name of the dead key wouldn't reflect these extra mappings). If you use up a key mapping on a dead key it really shouldn't sit there taking up keyboard space for the meager purpose of providing 2-3 glyphs!</p>
+
+        <p>There are 19 dead keys in my pkl layout right now. The common accents are there, together with a currency dead key on AltGr+4 and a Greek phonetic dead key on AltGr+5. Furthermore, some sparsely populated accent keys have been enhanced with extra content, such as superscripts/subscripts on acute/grave, fractions and negations on stroke/bar and ring symbols on ringabove. The most extensively reworked key is the double-acute which used to have only Uu and Oo and now contains a fairly rich set of math/science symbols (think of the double acute as akin to the equals and prime signs)! You really have to see them to believe them – I'll showcase some below but you can see them all using PKL (default Ctrl+Shift+1 for the help images):</p>
+
+        <p class="center">01) Dot below <br>
+        02) Hook, palatal hook <br>
+        03) Horn, retroflex hook/tail <br>
+        04) Currency: </p>
+
+        <img src="res/img/dk04_currency.png" class="smallImg" alt="Currency">
+        <img src="res/img/dk04sh_currency.png" class="smallImg" alt="Sh Currency">
+
+        <p>05) Greek (phonetic):</p>
+
+        <img src="res/img/dk05_greek.png" class="smallImg" alt="Greek">
+        <img src="res/img/dk05sh_greek.png" class="smallImg" alt="Sh Greek">
+
+        <p>06) Circumflex <br>
+        07) Caron <br>
+        08) Ogonek, comma below <br>
+        09) Breve <br>
+        10) Ring above, ring symbols, ligatures <br>
+        11) Macron <br>
+        12) Double-acute, math/science:</p>
+
+        <img src="res/img/dk12_dblacutesci.png" class="smallImg" alt="Dbla">
+        <img src="res/img/dk12sh_dblacutesci.png" class="smallImg" alt="Sh Dbla">
+
+        <p>13) Umlaut/diaeresis <br>
+        14) Tilde <br>
+        15) Acute, superscripts</p>
+
+        <img src="res/img/dk15_acute.png" class="smallImg" alt="Acute">
+        <img src="res/img/dk15sh_acute.png" class="smallImg" alt="Sh Acute">
+
+        <p>16) Grave, subscripts <br>
+        17) Cedilla <br>
+        18) Dot above <br>
+        19) Stroke/bar, fractions</p>
+
+        <img src="res/img/dk19_strokebar.png" class="smallImg" alt="Strokebar">
+        <img src="res/img/dk19sh_strokebar.png" class="smallImg" alt="Sh Strokebar">
+
+
+        <p class="left"><strong>Note</strong> that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.</p>
+
+
+    </main>
+    <script src="web/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Other Layouts</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="web/main.css" rel="stylesheet">
+    <link rel="icon" href="res/ico/Cmk-ico64_c4.png">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="menuIcon">
+            <div id="hamburger"></div>
+        </div>
+        <div id="platforms">
+            <div id="platformIcons">
+                    <a id="linux" href="#"></a>
+                    <a id="tmk" href="#"></a>
+                    <a id="mac" href="#"></a>
+                    <a id="win" href="#"></a>
+            </div>
+        </div>
+        <div id="menuContainer">
+            <div id="menu">
+                <div id="menuHeader">
+                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
+                </div>
+                <ul>
+                    <li class="submenu"><a href="keymappings.html">MAPPINGS</a>
+                        <ul>
+                            <li><a href="colemaked.html">Colemak[eD]</a></li>
+                            <li><a href="extendlayers.html">Extend Layers</a></li>
+                            <li><a href="deadkeys.html">Dead Keys</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ergomods.html">ERGONOMY</a></li>
+                    <li><a href="otherlayouts.html">VARIANTS</a></li>
+                    <li><a href="typingtricks.html">TRICKERY</a></li>
+                    <li><a href="guestlinks.html">LINKS</a></li>
+                </ul>
+            </div>
+        </div>
+        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
+    </nav>
+    <main>
+            <h1>Other Layouts</h1>
+
+            <h2>THE TARMAK TRANSITIONAL COLEMAK LAYOUTS</h2>
+
+            <p>There's a <a href="tarmak.html"><b>main Tarmak topic</b></a> that you should take a look at. Basically, I've added four Tarmak layouts that provide stepping stones from the standard QWERTY layout to Colemak[eD] by moving only 3-4 keys per step. Each step brings at least one important key to the home row (notably, E-T-R-O-I) and only the rare J key is misplaced in the process. If you're brave and impatient, you may of course skip steps to customize your progress.</p>
+
+            <p>Tarmak transitional layouts have been <a href="https://forum.colemak.com/viewtopic.php?id=480">reported successful in easing the conversion to Colemak typing</a> and although this evidence is anecdotal I find the <a href="https://forum.colemak.com/viewtopic.php?id=358">proposed hypothesis</a> that gradual changes should be easier to learn for many a plausible one.</p>
+
+            <img src="res/img/Tarmak_Spectral_ETROI.png" alt="Tarmak Spectral">
+            <p class="italic">The 5-step Tarmak (transitional Colemak) layouts, spectrally color-coded from red (Tarmak#1) to violet (Colemak).</p>
+
+
+            <h2>LOCALE COLEMAK[eD] VARIANTS</h2>
+            <p>See <a href="https://forum.colemak.com/viewtopic.php?id=1458">my Locale Variants forum topic</a> for the various locale solutions.</p>
+
+            <p>I took off a bit and made quite a bunch of these, heh! I can make more on request. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.</p>
+
+            <p>Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' variants
+                (On a side note, there were only 11 Dvorak layouts in the xkb files last time I looked!): <br>
+                <b>al at ba be bg br ca cz de dk es fi fr gb gr hr hu il is it latam nl no pl pt ro rs ru se si tr us</b></p>
+
+            <p>- The brackets (lvl3-4) and the LSGT key may hold the most common locale-specific keys.</p>
+
+            <ul>
+                <li>The oe/aring special letters may well be replaced; these should also be on dead keys.</li>
+                <li>Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.</li>
+                <li>See the colemak_template symbols file for more info on local Colemak[eD] variants.</li>
+            </ul>
+
+            <img src="res/img/Cmk-eD-usym-aw_Xm.png" alt="Colemak[eD] Usym">
+            <img src="res/img/Cmk-eD-dk%2Bno-usym-aw_Xm.png" alt="Colemak[eD] Bno-Usym">
+            <p class="italic">The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant (mostly like the standard Colemak above).</p>
+
+            <img src="res/img/Cmk-eD-no-ksym_Xm.png" alt="Colemak[eD] No Ksym">
+            <p class="italic">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant (symbols like local key markings).</p>
+
+            <p>Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.</p>
+
+            <h2>PHONETIC COLEMAK LAYOUTS FOR NON-LATIN SCRIPTS</h2>
+            <p>See the <a href="https://forum.colemak.com/viewtopic.php?pid=10016#p10016">phonetic subtopic of my Locale topic</a> for more info on these layouts.</p>
+
+            <p>For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?</p>
+
+            <img src="res/img/Cmk-X-phon-gr-awide-sl_mask.png" alt="Colemak X Phonetic">
+            <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p>
+
+
+            <h2>MIRRORED COLEMAK</h2>
+            <p>Advanced typing is possible with only one hand given a mimimum of training with the mirroring method. In fact, this paragraph was written entirely using the left hand with the exception of the mirroring key itself, with hardly any training! The brain is inherently good at mirroring things.</p>
+
+            <p>I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger bigram avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger bigrams when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand variants but then you'd have to learn a new layout).</p>
+
+            <p>You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use an arm or foot switch set to any other key (maybe an out-of-the-way one like ScrollLock), or a "ghetto switch" made by stripping most keys off a keyboard and placing it on the floor. A more fancy but still cheap switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard.</p>
+
+            <p>Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.</p>
+
+            <img src="res/img/Cmk-ISO-MirrorOn-Angle_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled">
+            <p class="italic">The Mirrored Colemak layout, which should be good for right-handed typing (the Angle mod is recommended for this)</p>
+
+
+            <img src="res/img/Cmk-ISO-MirrorOn-AWide35_90d-FingerShui.png" alt="Colemak ISO Mirrorred Angled Wide">
+            <p class="italic">The Mirrored Colemak layout with the AngleWide-Slash mod (see the Wide mod heading); better for left-handed typing I think</p>
+    </main>
+    <script src="web/main.js"></script>
+</body>
+</html>
