@@ -189,7 +189,7 @@ The xkb ergonomic keyboard model mods have names|shortstrings as following (see 
 • [b]pc105aw-sl | 5aw[/b] - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
 
 
-[h][2.2]    COLEMAK-DH ALIAS THE CURL ERGO MOD[/h]
+[h][2.2]    COLEMAK-DH ALIAS THE CURL-DH ERGO MOD[/h]
 
 The point of the [b][url=https://colemakmods.github.io/mod-dh/]Colemak-DH[/url][/b] ergo mod is to make the home "row" curl more like a relaxed hand does instead of forcing it to a straight line as was commonly thought best some years ago. Several typists have felt that the middle-trench D and H positions of Colemak weren't so comfortable and as a result the Workman and Norman and other layouts were made. However, I don't think they succeeded on many other important facets (more keys moved, and/or more same-finger bigrams, and/or poorer performance on other stats). So the proposal by [user]stevep99[/user] to fix the issue based on Colemak and without any keys changing fingers was a stroke of genius! It's a low-cost improvement of the default straight-homerow Colemak. And I still think of it as Colemak because it really is, keeping its good stats for travel distances, finger usage and same-finger ratios.
 
@@ -211,10 +211,10 @@ The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"
 • If you wish a "harder" solution, you can edit the [i]xkb/symbols/colemak[/i] file, uncommenting the mod lines you want.
     These are found in the xkb_symbols "[i]cmk_ed_letters[/i]" partial, so they affect all locale variants, Tarmak etc. – but not non-Colemak layouts.
 • Finally, the setxkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
-    – [b]pc104curl-z/pc104caw-zqu | 4c/4cw[/b] – ANSI/US CurlAngle-Z(Wide-Quote)
-    – [b]pc104cawing | 4cf[/b] – ANSI/US CurlAngleWing(Quote)
-    – [b]pc105curl/pc105caw-sl | 5c/5cw[/b] – ISO/Euro CurlAngle(Wide-Slash)
-    – To get the older mod variants (DHm/DvbgHm or DvH/DbgHk) you'll have to edit the colemak symbol file, or specify model+option directly.
+    – [b]4ca/4caw[/b] – ANSI/US CurlAngle-Z(Wide-Quote)
+    – [b]4cf[/b] – ANSI/US CurlAngleWing(Quote)
+    – [b]5ca/5caw[/b] – ISO/Euro CurlAngle(Wide-Slash)
+    – To get the older mod variants (DHk or DvH) you'll have to edit the colemak symbol file, or specify model+option directly.
 • Note: If you have a system (X11) directory install, you'll need sudo privileges to edit those files. (Make sure you use gksudo or similar if you start a GUI editor.)
 • There are special Tarmak-Curl(DH) layouts; see the Tarmak section below.
 • NOTE: If your locale variant remaps any of the affected keys (mainly D, G, H, M or K) you'll have to look up and edit that locale symbols file.
@@ -223,10 +223,10 @@ The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"
 • Below I've uncommented a line in the "[i]cmk_ed_letters[/i]" section of [i]xkb/symbols/colemak[/i], activating both sides of the Curl(DH) mod.
 • This is useful for non-US layouts and Tarmak steps; otherwise you can just select the English Curl(DH) layouts as explained above.
 [code]
-//// Activating the line below will "hard" enable the Curl(DH) mod; see below.
-    include "colemak(cmk_ed_dh)"
-//// Activating the line below will "hard" enable the old Curl(DHm) mod; see below.
-//    include "colemak(cmk_ed_dhm)"
+//// Activating the line below will "hard" enable the Cmk-DH = Curl(DHm) mod; see below.
+//    include "colemak(cmk_ed_dh)"
+//// Activating the line below will "hard" enable the old Curl(DHk) mod; see below.
+//    include "colemak(cmk_ed_dhk)"
 //// This is the old Curl(DvH) Colemak ergo mod, keeping V and M in place.
 //    include "colemak(cmk_ed_dvh)"
 [/code]
@@ -236,8 +236,8 @@ The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"
 • The shortstring line will not change the active layout (apart from the Curl mod); the other line will use the setxkb.sh default layout.
 • This is useful if you don't want to edit the files. Curl affects only the first/main layout, but will mess up any non-Cmk layouts in the GUI.
 [code]
-$> ./setxkb.sh 5cw
-$> ./setxkb.sh -m pc105caw-sl -o 'misc:cmk_curl_dh'
+$> ./setxkb.sh "5caw"
+$> ./setxkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
 [/code]
 
 Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
@@ -381,6 +381,7 @@ I've made a script ([b]install-dreymar-xmod.sh[/b]) that takes care of business.
 There are various ways of making your xkb setup persistently activated. I prefer writing a line in your [b]~/.bashrc[/b] file running the system [b]setxkbmap[/b] command. My [b]setxkb.sh[/b] script can do that with the [b]-a[/b] switch.
 
 [b]NOTE:[/b] You must use 'bash <script> -<options>' (or './<script> -<options>' with run privileges for the .sh file), not the 'sh' command!
+                     (To get run privileges for the .sh scripts in my directory, run the command [b]chmod +x *.sh[/b] in the BigBag directory.)
 [b]NOTE:[/b] You can get the xkb directory back to its original state by reinstalling the xkb-data package (e.g., 'sudo apt-get install xkb-data').
 
 
@@ -391,14 +392,14 @@ My [b]setxkb.sh[/b] script may be called with [b]-m[/b](odel),[b] -l[/b](ayout) 
   SetXKB.sh [<kbd> [<loc> <sym]] ShortStr syntax:
   ===============================================
   <kbd> 4/5   - ANSI-104/ISO-105 keyboard model, then...\n"\
-        n/a/c - Normal/Angle/Curl-DH, and optionally...\n"\
-        w/f   - Wide/A-Wing (a.k.a. 'A-Frame')\n"\
+        n/c - Normal/Curl-DH, and optionally...\n"\
+      a/w/f   - Angle/Wide/A-Wing (a.k.a. 'A-Frame')\n"\
   <loc> Two-letter locale layout code like 'us' for USA, 'gb' for UK etc\n"\
   <sym> 'us'/'ks' for 'Universal' or 'Keep Locale' symbol variants\n\n"\
 
   Examples: '5a se us': PC105-Angle, Swedish Cmk[eD] 'UnifiedSym'\n"\
             '4cf gb ks': PC104-Curl(DH)AWing, Eng.(UK) Cmk[eD] 'KeepSym'\n"\
-            '5cw': PC105-Curl(DH)AngleWide, keep current layout/variant\n"
+            '5caw': PC105-Curl(DH)AngleWide, keep current layout/variant\n"
 [/code]
 
 
@@ -406,10 +407,11 @@ My [b]setxkb.sh[/b] script may be called with [b]-m[/b](odel),[b] -l[/b](ayout) 
 
 [b]1.[/b] [b]Download/unzip/clone[/b] the BigBagKbdTrixXKB dir to, say, your home desktop ([b]~/Desktop[/b])
 [b]2.[/b] Open a terminal window and go there, e.g.: [b]cd ~/Desktop/BigBagKbdTrixXKB[/b]
-[b]3.[/b] To install/activate: [b]sudo bash ./install-dreymar-xmod.sh -ox[/b]
-[b]4.[/b] See XKB Configuration step below and edit [b]/etc/default/keyboard[/b] to make startup changes persistent
-[b]5.[/b] [b]Reboot[/b] the system (to be on the safe side; may not be necessary)
-[b]6.[/b] [b]Select your layout[/b] such as English(Colemak[Ed], Curl-DH ergo) from dropdown top-right menu (Ubuntu) or settings → keyboard
+[b]3.[/b] Make the scripts executable with [b]chmod +x *.sh[/b]
+[b]4.[/b] To install/activate: [b]sudo bash ./install-dreymar-xmod.sh -ox[/b].
+[b]5.[/b] See XKB Configuration step below and edit [b]/etc/default/keyboard[/b] to make startup changes persistent
+[b]6.[/b] [b]Reboot[/b] the system (to be on the safe side; may not be necessary)
+[b]7.[/b] [b]Select your layout[/b] such as English(Colemak[Ed], Curl-DH ergo) from dropdown top-right menu (Ubuntu) or settings → keyboard
 
 
 [b]Install script usage example: System install[/b]
@@ -430,11 +432,11 @@ $> ./install-dreymar-xmod.sh -r 1
 
 [b]Setup script usage example: Change model/layout with shortstrings, and write to file[/b]
     • For activating a single layout and model, we use a -s 'model locale eD-variant' shortstring
-    • Activate model PC105-Curl(DH)AngleWide ergo mod (implemented as model+option).
+    • Activate Curl(DH)+PC105-AngleWide ergo mod (implemented as model+option).
     • Activate a French "UniSym" layout (at the moment, the default layout is my Norwegian Cmk[eD]...).
     • Append the resulting setxkbmap command to your ~/.bashrc file with '-a' so it gets activated on each logon.
 [code]
-$> ./setxkb.sh -a 5cw fr us
+$> ./setxkb.sh -a "5caw fr us"
 [/code]
 
 [b](NB: If local-dir setxkbmap works for you!?) Install script usage example: Local default install[/b]
@@ -443,7 +445,7 @@ $> ./setxkb.sh -a 5cw fr us
     • Also, activate the WideAngle ISO board model ('pc105awide-sl')
     • Since no system files are affected, force no backup with '-n'
 [code]
-$> bash install-dreymar-xmod.sh -n 5w hr ks
+$> bash install-dreymar-xmod.sh -n "5w hr ks"
 [/code]
 
 [b](NB: See above!) Install/setxkb script usage example: Local install to a specified path, then activate it manually, also adding a line to ~/.bashrc.[/b]
@@ -461,13 +463,13 @@ $> ./setxkb.sh -ad  '~/myxkb/dxkb' 4n us us
 [b][i]Linux GUI settings:[/i][/b]
 On [b]Ubuntu using Gnome (and what else?)[/b]: If you go to the Layout settings, hit '+' to add a layout and type in 'Colemak' you should see a bunch of additions. The Extend option is found under Options -> Miscellaneous Compatibility Options, and you should choose an appropriate lv5 switch for it (I've added a Caps Lock option). If you can't find it, your distro may not have those options visible in the Settings GUI and you may have to do it the command-line, dconf-editor and/or config file way.
 
-The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shift (named 'pc105angle-lg'), the Angle/Wide-Slash mod described above ('pc105awide-sl') as well as the US/ANSI/PC-104 board ZXCVB shift ('pc104angle-z') and Wide(Quote) mod ('pc104wide-qu'). Unfortunately, the current Ubuntu versions have lost the GUI Settings option to switch keyboard models (which I find very odd).
+The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shift (named 'pc105angle-lg'), the Angle/Wide-Slash mod described above ('pc105awide-sl') as well as the US/ANSI/PC-104 board ZXCVB shift ('pc104angle-z') and Wide(Quote) mod ('pc104wide-qu'). Unfortunately, the current Ubuntu versions have lost the GUI Settings option to switch keyboard models – which I find very odd.
 
 [b][i]Using my setxkb script:[/i][/b]
 As seen above, I have a little script that activates layouts and options, allowing a shortstring notation to keep things compact. It's essentially just a wrapper for the setxkbmap command described below. To get more info on it, run it with -h for help or have a peek inside the script!
 
 The shortstring format can be handy if you want to change layouts by hand. If not, just don't bother too much with it. A setxkb shortstring consists of:
-• [b]KbdModel[/b], such as '4n' for an unmodded PC104(ANSI) keyboard, '4a' for the Angle-Z mod or '5cw' for a PC105(ISO)-CurlAngleWide mod.
+• [b]KbdModel[/b], such as '4n' for an unmodded PC104(ANSI) keyboard, '4a' for the Angle-Z mod or '5caw' for a PC105(ISO)-CurlAngleWide mod.
 • [b]Locale[/b], such as 'us' for USA, 'gb' for Great Britain, 'no' for Norway etc.
 • [b]SymVariant[/b]: It's 'us' for the main Cmk[eD] "Unified Symbols" variants, or 'ks' to "Keep Local Symbols".
 • (Sorry, but there's no way to set XKB options with shortstrings as that'd be too complex.)
@@ -555,12 +557,11 @@ The xkb server can get its settings from several places so how your actual setti
 [h]DONE:[/h]
 • Made the Extend layer modifiers (A/S/T for Alt/Shift/Ctrl) work with the other keys like they do in my PKL implementation under Windows
 • Extend Undo/Cut/Copy/Paste, navigation and F-keys work as they should, as does Wheel Scrolling
-• Reviewed the Curl mod solution: Could keyboard models be better? [Verdict: This leads to very many models and an odd Extend layer...]
+• Reviewed the Curl mod solution: Keyboard models are reserved for Angle/Wide mods. This leads to the Curl Extend layer not having Paste on Ext+V.
 • Curl(DH) mods implemented as Options in addition to the US layouts (a bit strange, as they'd mess up non-Colemak layouts, but very useful)
 • More locale variants: [b]al hu ro tr, ba/hr/rs/si[/b]...
 • Updates to the install and setxkb scripts. Clearer output, and setxkb now supports model-only shortstrings and Curl(DH) "models" (see script -h)
-• Reassessed the Curl(DH) mod yet again with the new unified Colemak-DH mod. Models are now required, as CurlAngle mods which preserve Ext+V as Paste.
-• Finished updating the Curl(DH) mods (I think)
+• Finished updating the Curl(DH) mods
 
 [h]TODO:[/h]
 • Something seems to break key repetition after a while in Ubuntu?!? Not sure it's my fault but...

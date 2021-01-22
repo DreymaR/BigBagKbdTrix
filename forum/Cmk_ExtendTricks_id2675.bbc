@@ -1,0 +1,94 @@
+[h]Extend Consciousness![/h]
+
+[img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/div/Extend/Extend-ISO-NoMod-Win_96d-Labels.png[/img]
+
+Let's make a list of favorite Extend tricks. Share yours!
+
+Of course, Extend is described in detail in the [b][url=https://forum.colemak.com/topic/2014-extend-extra-extreme/]Extend Extra Extreme[/url][/b] topic, with many of the tricks I use. But that's a long read and maybe some users have tricks that I don't use. Please post your faves below! I'll add more as we go.
+
+
+[h]Do You Even Extend?[/h]
+Easy yet brillant tricks using the regular Extend layer. These should work both in Windows and Linux.
+
+• [b]Ext+T+O[/b] [Ctrl+Back]: Delete the previous word
+• [b]Ext+S+(T+)N, Ext+X, Ext+(T+)UNEI/LY/etc, Ext+V[/b] [Shift+(Ctrl+)Left, Cut, Move, Paste]: Move word(s) somewhere else
+• [b]Ext+S+(T+)Y[/b] [Shift+(Ctrl+)End]: Select to the end of the line; with T/Ctrl, to the end of the text
+
+• [b]Ext+W/R[/b] [MouseWheel Up/Down]: Scroll web and editor pages, without changing the text cursor position
+• [b]Ext+F/P[/b] [Browser Back/Forward]: Go back and forth in a browser tab's history
+• [b]Ext+Q/Spc[/b] [Esc/Enter]: Escape a dialog or confirm a selected option – navigate with Ext-arrows and Tab
+
+• [b]Ext+A+4[/b] [Alt+F4]: Close the active program
+
+
+[img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/div/Extend/Extend_KeyLogo.png[/img]
+
+
+[h]Flextending Your Muscles[/h]
+Somewhat more advanced tricks.
+
+• [b]RAlt+Ext, keep holding Ext[/b]: Access the Extend2 NumPad layer.
+• [b]RShift+Ext, keep holding Ext[/b]: Access the Extend3 Kaomoji layer. However, I prefer the more powerful Shift+Ext-tap Kaomoji.
+
+• [b]Ext+(T+)5[/b] [F5]: Refresh page; with Ctrl "hard" refresh (also clear the page cache)
+• [b]Ext+6[/b], <URL or ? then a search term>, [b]Ext+A+Spc[/b] [F6, <URL/?>, Alt+Enter]: Open an URL or search in a new browser tab
+• [b]Ext+T+4[/b] [Ctrl+F4]: Close the current browser tab
+• [b]Ext+(S+)T+J/M[/b] [(Shift+)Ctrl+PageUp/PageDn]: Switch(/move) tabs, both in browsers and text editors
+
+• [b]Ext+2[/b] [F2]: Rename a selected file in the file manager. Naturally, I also use Extend for navigating and selecting files.
+• [b]Ext+=[/b] [F11]: Full screen mode for several apps (may be another key than = depending on your Wide mod config)
+
+• [b]Ext+A+S+U/E[/b] [Alt+Shift+Up/Down]: On Discord, move between unread channels
+
+
+[img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/div/Extend/Extend_KeyLogo.png[/img]
+
+
+[h]Sweet Mother Of DKs[/h]
+Tricks using Dead Keys, such as ToM-Ext-tap. These are implemented in EPKL for Windows, but sadly not in the BigBag for Linux nor controllers/TMK.
+[spoiler]
+Here are some sample mappings from the EPKL [dk_Ext_Special] DeadKeys table:
+[code]
+<y>  = α(){Left}                            ; y -> Parentheses, move cursor inside
+<Y>+ = α[]{Left}                            ; Y -> Brackets   , --"--
+<›>  = α{{}{}}{Left}                        ; › -> Braces     , --"--; AltGr mappings are Colemak-eD specific
+<->  = →+
+
+<`>  = α```{Enter 2}```{Enter}{Up 2}        ; ` -> Markdown/Discord Code block
+<f>  = ¶Brc                                 ; f -> Braces function boilerplate, as a PowerString
+<F>+ = ¶C4Loop                              ; F -> C for-loop boilerplate example
+<P>+ = α[img][/img]{Left 6}                 ; P -> BBCode Picture/Image tags
+<B>+ = α[b][/b]{Left 4}                     ; B -> BBCode Bold tags
+<a>  = α^a                                  ; A -> Ctrl+a - Select all
+<s>  = α{Home}+{Down}                       ; s -> Select the current line (Down -> End to exclude the final line break)
+<S>+ = α#+s                                 ; S -> Win+Shift+s - Windows Snipping/Screenshot Tool
+<t>  = α!{Tab}                              ; T -> Alt-Tab tap
+<D>+ = α[code]{Enter 2}[/code]{Enter}{Up 2} ; D -> BBCode Code block
+<U>+ = α[url][/url]{Left 6}                 ; U -> BBCode URL tags
+<'>  = ¶CBS                                 ; ' -> Ctrl+Backspace - delete word. The &BSp PowerString is a normal Backspace.
+[/code]
+[/spoiler]
+
+• [b]Ext-tap,###[/b] for special strings and shortcuts – best for single-shot effects and text snippets
+• [b]Ext-tap,a[/b] to select all (Ctrl+a)
+• [b]Ext-tap,s[/b] to select the current line – X to cut it instead
+• [b]Ext-tap,t[/b] [Alt+Tab] to switch back and forth between programs
+• [b]Ext-tap,y/Y/›[/b] for parentheses/brackets/braces – the cursor is placed between them
+• [b]Ext-tap,(Shift+)z[/b] for Undo/Redo without Ctrl key chording
+• [b]Ext-tap,Shift+V[/b] [Win+v] to use the Windows Paste panel with your previous clips
+• [b]Ext-tap,Shift+S[/b] [Win+Shift+s] to use the Windows Screenshot Snipping tool
+• [b]Ext-tap,comma[/b] [type 'next', Enter] for "next page" on many web sites
+
+• [b]RAlt+Ext-tap,###[/b] for special commands – nice for avoiding awkward chords with the Ctrl keys etc
+• [b]RAlt+Ext-tap, t[/b] [Ctrl+Shift+Esc] – Windows Task Manager
+• [b]RAlt+Ext-tap, e[/b] [Win+Period] – Windows Emoji Picker
+• [b]RAlt+Ext-tap, b[/b] to open a browser tab with my bank's URL – see [dk_Ext_Cmd] in the EPKL _eD_deadkeys.ini file
+
+• [b]Shift+Ext-tap,###[/b] for Kaomoji of all sorts. I even made some blurbs they can blurt out, like this:
+[quote=The Kaomoji Layer]
+ ( のvの) c[_]  ～(  Try DreymaR's "BigBag" on Windows with **EPKL**  )
+[url]https://github.com/DreymaR/BigBagKbdTrixPKL[/url]
+[/quote]
+
+
+[img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/div/Extend/Extend_KeyLogo.png[/img]

@@ -78,6 +78,8 @@ Note the [b]home position modifier keys[/b]: These make it easy to hit powerful 
 
 Some useful shortcuts like Ctrl+A (Select All), Ctrl+S (Save), Ctrl+W (Close – Ctrl+F4 unfortunately doesn't work everywhere) and Ctrl+(Shift+)T (Re-/Open Tab) are quite easy to reach with one hand, even though it means twisting your wrist to reach the Ctrl key. Unless you use them a lot, they don't need to be on Extend mappings. If you feel that you do need any of these in Extend, you could always map them to the Tilde key and/or one of the Escapes (or a right hand key like Ins, Menu, Favorites, Break, Mouse buttons, the Slash key – anything you feel you don't need of course).
 
+A better solution for one-shot commands and mappings is on [b]tap layers[/b]. Instead of chording – that is, holding down modifiers while pressing other keys – I use for instance tap-Extend then a key for Ctrl or Win key combinations I need often. See the "When?" section below.
+
 The Extend mappings are mostly positional so they'll [b]work with any layout[/b] – even if some keys like A and ZXCVB might be easier to remember using Colemak or QWERTY. If you use Curl(DH), Angle and/or Wide ergo mods the Extend mappings should move accordingly to match the transposed home positions of the ZXVCB and right-hand keys. Other than that, I wouldn't move around the Extend mappings to suit different underlying layouts as they mostly go by key position rather than letter.
 
 
@@ -94,7 +96,9 @@ Here's the Mod layer of the UHK so you can see what I mean:
 
 
 [img]https://www.dropbox.com/s/gszysyby0jvljp7/Extend_KeyLogo.png?raw=1[/img][h] ... When?[/h]
-As described in an interesting article by [url=http://xahlee.info/kbd/banish_key_chords.html]Xah Lee[/url], chording isn't always the best answer. To produce single results like a special symbol or a single command, "tap-dance" key sequences may be better. A good example is the Compose method from Linux that can be trigged by any desired key combination, or by a "starter key" such as a dead key. The Alt key in Windows lets you access menu items by tapping a letter sequence such as [b]{Alt,f,t}[/b] to open a new tab, which is brilliant and can be easily learned by looking at the menus the first times.
+As described in an interesting article by [url=http://xahlee.info/kbd/banish_key_chords.html]Xah Lee[/url], chording isn't always the best answer. To produce single results like a special symbol or a single command, "tap-dance" key sequences are generally better. A good example is the Compose method from Linux that can be trigged by any desired key combination, or by a "leader key" such as a Compose or dead key. The Alt key in Windows lets you access menu items by tapping a letter sequence such as [b]{Alt,f,t}[/b] to open a new tab, which is brilliant and can be easily learned by looking at the menus the first times.
+
+Even a "tap-dance" of several key strokes is preferable to chording for many one-shot needs. Holding down keys is more tiring than tapping out a sequence, and the more contorted a chord gets the worse it will be.
 
 Sequences provide for near endless complexity, but chord layers like Extend let you do many similar operations without trigging them separately each time. So for navigation/editing like selecting the previous word then moving it to the end of the paragraph or for number entry chord layers are perfect.
 
@@ -106,7 +110,9 @@ Head over to the appropriate [b]Big Bag topic ([url=https://forum.colemak.com/vi
 
 Much of Extend's power is immediately obvious. Shortcuts you've been using easily and intuitively translate to their Extend counterparts. One of the advantages of Extend, as mentioned, is the transparent correspondence between Extend and non-Extend shortcuts. But there are very useful tricks that even I didn't know until quite recently. Having the necessary keys more available creates new possibilities for awesomeness, and so using Extend over time will be a pleasantly surprising journey if you're anything like me.
 
-Below I'll go through some shortcut categories and explain how Extend can help you excel in them. [b][i]Prestidigitatus[/i][/b] – let the magic begin! ;-)
+I've made a topic that highlights some [b][url=https://forum.colemak.com/topic/2675-share-your-favorite-extend-tricks/]favorite Extend tricks[/url][/b], so feel free to have a look there! For a more thorough overview, I'll go through some shortcut categories below and explain how Extend can help you excel in them.
+
+[b][i]Prestidigitatus[/i][/b] – let the magic begin! ;-)
 
 
 [b][u]MULTIMEDIA KEYS[/u][/b]

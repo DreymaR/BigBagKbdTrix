@@ -5,7 +5,7 @@
 [i] ~ [b][url=http://www.reddit.com/r/Colemak/comments/1dupw9/tarmak_transitional_layouts_for_learning_qwerty/]Lalop[/url][/b][/i]
 
 
-    [img]https://www.dropbox.com/s/o2wpgsnr9gi5uht/Tarmak_SpectralAnimation-45d.gif?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_SpectralAnimation-45d.gif[/img]
 
 
 The Colemak optimized layout changes 17 keys from QWERTY. This is far less drastic than the well-known Dvorak layout with up to 33 changed keys but no benefit over Colemak (although that's hard to prove either way!). Some people feel that it's okay to change everything and that knowing each layout is like knowing a separate language, but at the same time it's a lot more work for an English speaker to learn Japanese than, say, German!
@@ -15,7 +15,7 @@ But even 17 key positions aren't learnt in a jiffy and not everyone has the time
 What if you could change only 4, 7, 10 or 14 keys, each step a progression from the former, gain incrementally better key positions as you go and end up with the typing power of a fully operational Colemak? Using the Tarmak layouts, you can! Please read on, and I'll show you how.
 
 
-    [img]https://www.dropbox.com/s/gld3eluwaq89e8l/Tarmak_KeyChanges.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_KeyChanges.png[/img]
 
 
 [b]NOTE:[/b] This may not be the perfect way for everyone. Some people prefer learning Colemak by diving straight in, the "cold turkey" approach. Some like to do "QWERTY by day, Colemak by night" for a while before making the jump. But some have used Tarmak to get a more gradual learning experience and have liked it a lot. So if you think this might be for you, read on!
@@ -27,41 +27,41 @@ Each of the 4 Tarmak layouts changes 3–4 new keys from the previous step until
 
 This animated image, like the one at the top of this topic, shows the full Tarmak transition from QWERTY to Colemak. The keys moved into place for each Tarmak step are shown in a different color following the rainbow from red via orange, green and blue to violet.
 
-    [img]https://www.dropbox.com/s/xmmmsdadkolzzt4/Tarmak_SpectralAnimation-90d.gif?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_SpectralAnimation-90d.gif[/img]
 
 
 Here I've explained each of the Tarmak "tar lumps" in more detail:
 [quote=Tarmak (Transitional Colemak)] 
     
 [b]1)[/b] The (J)>[b]E[/b]>K>N "most essential" loop, fixing the important E (and N)
-    [img]https://www.dropbox.com/s/9kye4w0v3w582o6/Tarmak1_Spectral_E.png?raw=1[/img]    [i]Tarmak1(E)[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-CA-ISO_Spectral-cpt/Tmk1_RBo_E.png[/img]    [i]Tarmak1(E)[/i]
 
 
 [b]2)[/b] The (J)>G>[b]T[/b]>F loop, bringing the important T into place
-    [img]https://www.dropbox.com/s/43llwse2uamftuf/Tarmak1-2_Spectral_ET.png?raw=1[/img]    [i]Tarmak2(ET)[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_Spectral-cpt/Tmk1-2_RBo_ET.png[/img]    [i]Tarmak2(ET)[/i]
 
 
 [b]3)[/b] The (J)>[b]R[/b]>S>D loop, getting RSD into place – all of which are relatively frequent!
-    [img]https://www.dropbox.com/s/khbh908dpenyt4u/Tarmak1-3_Spectral_ETR.png?raw=1[/img]    [i]Tarmak3(ETR)[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_Spectral-cpt/Tmk1-3_RBo_ETR.png[/img]    [i]Tarmak3(ETR)[/i]
 
 
 [b]4)[/b] The J>Y>[b]O[/b]>;>P loop, getting O in place and finalizing the big loop
-    [img]https://www.dropbox.com/s/97q47x12u9rxgno/Tarmak1-4_Spectral_ETRO.png?raw=1[/img]    [i]Tarmak4(ETRO)[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_Spectral-cpt/Tmk1-4_RBo_ETRO.png[/img]    [i]Tarmak4(ETRO)[/i]
 
 
 [b]5)[/b] The L>U>[b]I[/b] self-contained loop - step 5 is simply the full Colemak!
-    [img]https://www.dropbox.com/s/qnapny1n3bcqu5c/Tarmak1-5_Spectral_ETROI.png?raw=1[/img]    [i]Tarmak5 = Colemak[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_Spectral-cpt/Tmk1-5_RBo_ETROI.png[/img]    [i]Tarmak5 = Colemak[/i]
 [/quote]
 
 
 Here are the spectrally coded Tarmak steps again, together in one Colemak image. Not shown in this figure is how the J hops between temporary positions (QWERTY E, G and R) before finding its place; that's explained above.
 
-    [img]https://www.dropbox.com/s/g5qhyce8azpqgdh/Tarmak-ETROI_Spectral_ANSI.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-ETROI_Spectral_ANSI.png[/img]
 
 The next image shows the Tarmak steps leading to the [b][url=https://forum.colemak.com/post/14801/#p14801]Colemak-DH[/url][/b] ergonomic variant, should you be interested. I like it!
 
-    [img]https://www.dropbox.com/s/0c6raty5tif2znt/Tarmak-ETROI_Spectral_Curl-Z.png?raw=1[/img]
-    [i]This image shows Tarmak-DHk on an ANSI Angle(Z) modded board, leading to Colemak-DHk.[/i]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-ETROI_Spectral_CA-Z-em.png[/img]
+    [i]This image shows Tarmak-DH on an ANSI Angle(Z) modded board, leading to Colemak-DH.[/i]
     [i]On an ISO keyboard you can use a simpler Angle mod without splitting the ZXC keys.)[/i]
 
 
@@ -72,7 +72,7 @@ There have been several positive reports from satisfied Tarmak users.
 The very first Tarmak user was [b][url=https://forum.colemak.com/user/365-ezuk/]Ezuk[/url][/b]. Working as a writer, he gave up going cold turkey because he needed his fingers with him at all times. He used the 3-step 2008 version of Tarmak over a period of several months to ensure full typing fluency and wrote [url=http://www.makeuseof.com/tag/how-i-quickly-mastered-a-superior-keyboard-layout-without-losing-productivity/]a very positive blog review[/url] that got some attention. More recently he's written [url=http://www.makeuseof.com/tag/curious-about-colemak-learn-the-best-keyboard-layout-easily/]an excellent promotion post for the updated Tarmak[/url] with notes on using PortableKeyboardLayout to learn and use the layouts. Highly recommended reading!
 [quote=ezuk][h]It’s Free, Easy To Use, And Won’t Kill Your Productivity[/h]
 
-    [img]https://www.dropbox.com/s/s9oy72mbswufr34/Tarmak_Switch_PKL_Ezuk.png?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_Switch_PKL_Ezuk.png[/img]
 
 Here is why Tarmak is the best way to learn a superior keyboard layout:
 
@@ -102,7 +102,7 @@ Here's [url=https://forum.colemak.com/viewtopic.php?pid=12243#p12243]what user G
 
 As shown in the graph below from the Amphetype program, [url=https://forum.colemak.com/viewtopic.php?id=1710]user Coldmak had a smooth 9-day transition to Colemak[/url]. He obviously worked quite hard for it as shown by the many test points on the graph, but kept his typing speed above 20 words per minute (although he probably rushed the last step a little) and reported a pleasant experience. After that transition, his Colemak typing speed kept rising as you can see in his topic.
 
-    [img]https://www.dropbox.com/s/sz8u7yqwnzs3inh/Tarmak_Switch_Amphetype_Coldmak.jpg?raw=1[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak_Switch_Amphetype_Coldmak.jpg[/img]
 
 
 Similarly, [url=https://forum.colemak.com/viewtopic.php?pid=12558#p12558]user bph found Tarmak very useful[/url]:
@@ -192,7 +192,7 @@ I'd like to say thanks to all the wonderful people of the Colemak forums and els
 
 [b]Materials:[/b]
 • Feel free to use any images from this topic or my EPKL files for learning aids. Just give me credit for them, please.
-• If you need a set of printable/hi-res images like the ones in this post, you may use [url=https://www.dropbox.com/s/ayweu34g8q578eb/Tarmak_Spectral-180d.zip?dl=1]these that I've rendered at twice the normal resolution[/url].
+• If you need a set of printable/hi-res images like the ones in this post, you may use [url=https://github.com/DreymaR/BigBagKbdTrix/raw/master/docs/res/cmk/tarmak/Tarmak_Spectral-180d.zip]these that I've rendered at twice the normal resolution[/url].
 • My EPKL files contain compact help images for the Tarmak steps in different configurations, see below.
 
 [b]Windows:[/b]
