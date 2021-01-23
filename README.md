@@ -21,6 +21,7 @@ TODO/WIP For the BigBag web pages:
 	- Take out everything except the content of the <main> tag into default.html.
 	- Figure out a way to edit some portion of the default.html per page basis - like hightlighting the current page's menu item. Maybe use parameters?
 - Implement SASS/LESS for easier reading of the styles code.
+- Replace forum links with github pages ones.
 - Fix the popup that shows during the first website visit.
 - Rework the 'Platforms' menu visualisation.
 	- Let it open without delay.
@@ -29,8 +30,12 @@ TODO/WIP For the BigBag web pages:
 	- Implement a sort of a 'Under construction' message for the Mac platform.
 - Switch the places of the menu and Platforms icons so that when opening the menu, the icon doesn't have to move all across the screen -> increases animation smoothness.
 - Change the style of spoilers so that they're more visible.
+- Keep original image sizes.
+- Better alignment of images and text around them.
+- Additional padding at the bottom of <code> blocks.
+- Fix class names
 - Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
-	- Put fonts, css and js in the web folder
+	- TODO: Put fonts, css and js in the web/content folder
 	- TODO: Update all content image links to res locations
 	- TODO: Change all res/img links to the old subfolder structure so images are sorted by subject again
   

@@ -412,7 +412,7 @@ main img.smallImg {
     max-width: 400px;
 }
 
-main img:not(.headerImg) + p:not(.left) {
+main img:not(.headerImg) + p.italic {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
