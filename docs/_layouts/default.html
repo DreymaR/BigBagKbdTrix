@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>{{page.title}} - Dreymar's Big Bag Of Kbd Tricks</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link href="content/styles/main.css" rel="stylesheet">
-    <link rel="icon" href="content/res/ico/Cmk-ico64_c4.png">
-</head>
+
+{% include head.html %}
+
 <body>
-    <nav id="navbar">
-        <div id="menuIcon">
-            <div id="hamburger"></div>
-        </div>
-        <div id="platforms">
-            <div id="platformIcons">
-                    <a id="linux" href="#"></a>
-                    <a id="tmk" href="#"></a>
-                    <a id="mac" href="#"></a>
-                    <a id="win" href="#"></a>
-            </div>
-        </div>
-        <div id="menuContainer">
-            <div id="menu">
-                <div id="menuHeader">
-                    <img id="menuLogo" src="content/res/img/w-img/logo-menu.png" alt="Menu Logo">
-                </div>
-                <ul>
-                    <li class="submenu"><a href="key-mappings.html">MAPPINGS</a>
-                        <ul>
-                            <li><a href="colemaked.html">Colemak[eD]</a></li>
-                            <li><a href="extend-layers.html">Extend Layers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="ergo-mods.html">ERGONOMY</a></li>
-                    <li><a href="other-layouts.html">VARIANTS</a></li>
-                    <li><a href="typing-tricks.html">TRICKERY</a></li>
-                    <li><a href="guest-links.html">LINKS</a></li>
-                </ul>
-            </div>
-        </div>
-        <a id="navLogo" href="index.html"><img src="content/res/img/w-img/logo-nav.png" alt="Logo"></a>
-    </nav>
+    {% include navbar.html %}
+
     <main>
+        {% if page.has_alternative_title == null %}
+            <h1>{{ page.title }}</h1>
+        {% endif %}
+
         {{content}}
     </main>
     <script src="scripts/main.js"></script>

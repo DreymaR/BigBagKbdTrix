@@ -1,6 +1,6 @@
 document.getElementById('menuIcon').addEventListener('click', toggleMenu);
 
-let submenus = [].slice.call(document.getElementsByClassName('submenu'));
+let submenus = [].slice.call(document.getElementsByClassName('has-submenu'));
 submenus.forEach(submenu => submenu.addEventListener('click', toggleSubmenu));
 
 let spoilers = [].slice.call(document.getElementsByClassName('spoiler'));

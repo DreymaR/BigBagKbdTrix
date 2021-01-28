@@ -304,6 +304,7 @@ main, #navbar {
     color: #FFF;
     font-family: Raleway-ExtraBold;
     font-size: 40px;
+    text-transform: uppercase;
     transition: left .5s ease;
 }
 
@@ -340,11 +341,11 @@ main, #navbar {
     border-bottom: none;
 }
 
-#menu .submenu {
+#menu .has-submenu {
     position: relative;
 }
 
-#menu .submenu.isActive:before {
+#menu .has-submenu.isActive:before {
     content: '▴';
     position: absolute;
     top: 10px;
@@ -369,25 +370,26 @@ main, #navbar {
     background-color: rgba(0, 0, 0, .7);
 }
 
-.submenu ul {
+.has-submenu ul {
     height: 0;
     overflow: hidden;
     -webkit-transition: height 0.3s ease-in-out;
     transition: height 0.3s ease-in-out;
 }
 
-.submenu ul.show {
+.has-submenu ul.show {
     height: auto;
 }
 
-.submenu ul li {
+.has-submenu ul li {
     margin-bottom: 20px;
     font-family: Raleway;
     font-size: 32px;
     font-weight: bold;
+    text-transform: none;
 }
 
-.submenu ul li:last-child {
+.has-submenu ul li:last-child {
     margin-bottom: 10px
 }
 
@@ -648,21 +650,22 @@ img.left {
         border: none;
     }
 
-    #menu > ul > li:hover {
+    #menu > ul > li:hover,
+    #menu > ul > li.active {
         background-color: #FFF;
         color: #AA77BB;;
     }
 
-    .submenu ul {
+    .has-submenu ul {
         display: none;
     }
 
-    #menu .submenu li {
+    #menu .has-submenu li {
         margin-bottom: 0;
         padding: 10px 15px;
     }
 
-    #menu .submenu li:hover {
+    #menu .has-submenu li:hover {
         background-color: #FFF;
         color: #AA77BB;;
     }
@@ -673,7 +676,7 @@ img.left {
         padding: 17px 20px;
     }
 
-    #menu .submenu:hover ul {
+    #menu .has-submenu:hover ul {
         position: absolute;
         top: 60px;
         display: block;
@@ -683,7 +686,7 @@ img.left {
         background-color: #AA77BB;
     }
 
-    #menu .submenu.isActive:before {
+    #menu .has-submenu.isActive:before {
         content: "";
     }
 

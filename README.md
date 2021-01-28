@@ -17,9 +17,7 @@ TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
-- Implement Jekyll in order to remove duplicating code!
-	- Take out header in a separate 'include'
-	- Figure out a way to edit some portion of the default.html per page basis - like hightlighting the current page's menu item. Maybe use parameters?
+- Implement platform boxes at the appropriate places.
 - Implement SASS/LESS for easier reading of the styles code.
 - Replace forum links with github pages ones.
 - Fix the popup that shows during the first website visit.
@@ -30,10 +28,12 @@ TODO/WIP For the BigBag web pages:
 	- Implement a sort of a 'Under construction' message for the Mac platform.
 - Switch the places of the menu and Platforms icons so that when opening the menu, the icon doesn't have to move all across the screen -> increases animation smoothness.
 - Change the style of spoilers so that they're more visible.
+- Replace image links with local ones.
 - Keep original image sizes.
 - Better alignment of images and text around them.
 - Additional padding at the bottom of 'code' blocks.
 - Fix class names
+- Validate html and css files
 - Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
 	- TODO: Put fonts, css and js in the web/content folder
 	- TODO: Update all content image links to res locations
@@ -43,7 +43,11 @@ DONE
 ----
 - Make a Co browser tab (fav)icon
 	- See https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website
-- Take out everything except the content of the 'main' tag into default.html.
+- Implement Jekyll in order to remove duplicating code!
+	- Take out everything except the content of the 'main' tag into default.html.
+	- Take out header in a separate 'include'
+	- Figure out a way to edit some portion of the default.html per page basis
+
   
 HTML observations
 -----------------

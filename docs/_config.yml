@@ -10,19 +10,20 @@ github_username:  DreymaR
 
 links:
   - title: mappings
-    url: /key-mappings
-  - title: colemaked
-    url: /colemaked
-  - title: extend
-    url: /extend-layers
+    url: /key-mappings.html
+    sub:
+      - title: Colemak[eD]
+        url: /colemaked.html
+      - title: Extend Layers
+        url: /extend-layers.html
   - title: ergonomy
-    url: /ergo-mods
+    url: /ergo-mods.html
   - title: variants
-    url: /other-layouts
+    url: /other-layouts.html
   - title: trickery
-    url: /typing-tricks
+    url: /typing-tricks.html
   - title: links
-    url: /guest-links
+    url: /guest-links.html
 
 
 # Build settings

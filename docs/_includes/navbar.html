@@ -1,0 +1,39 @@
+<nav id="navbar">
+    <div id="menuIcon">
+        <div id="hamburger"></div>
+    </div>
+
+    <div id="platforms">
+        <div id="platformIcons">
+            <a id="linux" href="#"></a>
+            <a id="tmk" href="#"></a>
+            <a id="mac" href="#"></a>
+            <a id="win" href="#"></a>
+        </div>
+    </div>
+
+    <div id="menuContainer">
+        <div id="menu">
+            <div id="menuHeader">
+                <img id="menuLogo" src="content/res/img/w-img/logo-menu.png" alt="Menu Logo">
+            </div>
+            <ul>
+                {% for link in site.links %}
+                    <li class="{% if link.sub %}has-submenu {% endif %}{% if page.url == link.url %}active{% endif %}">
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                        {% if link.sub != null %}
+                            <ul>
+                                {% for sublink in link.sub %}
+                                    <li>
+                                        <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <a id="navLogo" href="index.html"><img src="content/res/img/w-img/logo-nav.png" alt="Logo"></a>
+</nav>
