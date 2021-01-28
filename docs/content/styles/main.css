@@ -1,17 +1,17 @@
 @font-face{
     font-family: Raleway;
-    src: url('font/Raleway-Regular.ttf');
+    src: url('../fonts/Raleway-Regular.ttf');
 }
 
 @font-face{
     font-family: Raleway;
     font-weight: bold;
-    src: url('font/Raleway-SemiBold.ttf');
+    src: url('../fonts/Raleway-SemiBold.ttf');
 }
 
 @font-face{
     font-family: Raleway-ExtraBold;
-    src: url('font/Raleway-ExtraBold.ttf');
+    src: url('../fonts/Raleway-ExtraBold.ttf');
 }
 
 *:not(p) {
@@ -85,7 +85,7 @@ a {
     width: 22px;
     height: 22px;
     font-size: 23;
-    background-image: url('w_img/close.png');
+    background-image: url('..res/img/w-img/close.png');
     background-size: contain
 }
 
@@ -107,15 +107,15 @@ a {
 }
 
 .platform-specific.linux:before {
-    background: #F7F7F7 url(w_img/linux_purple2.svg) no-repeat center / 66%;
+    background: #F7F7F7 url('../res/img/w-img/linux_purple2.svg') no-repeat center / 66%;
 }
 
 .platform-specific.win:before {
-    background: #F7F7F7 url(w_img/win_purple.svg) no-repeat center / 86%;
+    background: #F7F7F7 url('../res/img/w-img/win_purple.svg') no-repeat center / 86%;
 }
 
 .platform-specific.tmk:before {
-    background: #F7F7F7 url(w_img/tmk_purple.svg) no-repeat center / 83%;
+    background: #F7F7F7 url('../res/img/w-img/tmk_purple.svg') no-repeat center / 83%;
 }
 
 #platforms:after, #tutorialPlatform {
@@ -123,24 +123,24 @@ a {
     display: inline-block;
     height: 60px;
     width: 38px;
-    background-image: url("w_img/platforms.png");
+    background-image: url("../res/img/w-img/platforms.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
 }
 
 #platforms.linux:after {
-    background-image: url("w_img/linux_white.svg");
+    background-image: url("../res/img/w-img/linux_white.svg");
     width: 35px;
 }
 
 #platforms.win:after {
-    background-image: url("w_img/win_white.svg");
+    background-image: url("../res/img/w-img/win_white.svg");
     width: 35px;
 }
 
 #platforms.tmk:after {
-    background-image: url("w_img/tmk_white.svg");
+    background-image: url("../res/img/w-img/tmk_white.svg");
     width: 35px;
 }
 
@@ -189,35 +189,35 @@ a {
 }
 
 #platformIcons #linux {
-    background-image: url("w_img/linux_gray.svg");
+    background-image: url("../res/img/w-img/linux_gray.svg");
 }
 
 #platformIcons #tmk {
-    background-image: url("w_img/tmk_gray.svg");
+    background-image: url("../res/img/w-img/tmk_gray.svg");
 }
 
 #platformIcons #mac {
-    background-image: url("w_img/mac_gray.svg");
+    background-image: url("../res/img/w-img/mac_gray.svg");
 }
 
 #platformIcons #win {
-    background-image: url("w_img/win_gray.svg");
+    background-image: url("../res/img/w-img/win_gray.svg");
 }
 
 #platformIcons #linux.isActive {
-    background-image: url("w_img/linux_purple.svg");
+    background-image: url("../res/img/w-img/linux_purple.svg");
 }
 
 #platformIcons #tmk.isActive {
-    background-image: url("w_img/tmk_purple.svg");
+    background-image: url("../res/img/w-img/tmk_purple.svg");
 }
 
 #platformIcons #mac.isActive {
-    background-image: url("w_img/mac_purple.svg");
+    background-image: url("../res/img/w-img/mac_purple.svg");
 }
 
 #platformIcons #win.isActive {
-    background-image: url("w_img/win_purple.svg");
+    background-image: url("../res/img/w-img/win_purple.svg");
 }
 
 main, #navbar {
@@ -410,6 +410,10 @@ main img {
 
 main img.smallImg {
     max-width: 400px;
+}
+
+main img.autoWidth {
+    width: auto;
 }
 
 main img:not(.headerImg) + p.italic {
@@ -697,10 +701,6 @@ img.left {
         height: 48px;
         margin-right: 20px;
         margin-left: 10px;
-    }
-
-    main img.autoWidth {
-        width: auto;
     }
 
     #linksContainer {

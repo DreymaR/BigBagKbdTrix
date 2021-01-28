@@ -1,83 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title> - Dreymar's Bag Of Tricks</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link href="web/main.css" rel="stylesheet">
-    <link rel="icon" href="res/ico/Cmk-ico64_c4.png">
-</head>
-<body>
-    <nav id="navbar">
-        <div id="menuIcon">
-            <div id="hamburger"></div>
-        </div>
-        <div id="platforms">
-            <div id="platformIcons">
-                    <a id="linux" href="#"></a>
-                    <a id="tmk" href="#"></a>
-                    <a id="mac" href="#"></a>
-                    <a id="win" href="#"></a>
-            </div>
-        </div>
-        <div id="menuContainer">
-            <div id="menu">
-                <div id="menuHeader">
-                    <img id="menuLogo" src="web/w_img/logo-menu.png" alt="Menu Logo">
-                </div>
-                <ul>
-                    <li class="submenu"><a href="web/keymappings.html">MAPPINGS</a>
-                        <ul>
-                            <li><a href="web/colemaked.html">Colemak[eD]</a></li>
-                            <li><a href="web/extendlayers.html">Extend Layers</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="web/ergomods.html">ERGONOMY</a></li>
-                    <li><a href="web/otherlayouts.html">VARIANTS</a></li>
-                    <li><a href="web/typingtricks.html">TRICKERY</a></li>
-                    <li><a href="web/guestlinks.html">LINKS</a></li>
-                </ul>
-            </div>
-        </div>
-        <a id="navLogo" href="index.html"><img src="web/w_img/logo-nav.png" alt="Logo"></a>
-    </nav>
-    <main>
-        <h1>THE BIG BAG of THEORY</h1>
+---
+layout: default
+title: Home
+---
 
-        <img class="headerImg" src="res/img/Tarmak-ETROI_Spectral_CAW.png" alt="Tarmak">
-        <p>
-            Since I started using Colemak in early 2007 I've been fiddling with it, trying out ideas from the forum and adding some of my own. Colemak per se is to me only the letter block mappings including the semicolon, and their shifted counterparts. I've always ended up with that intact and it has stood the test of time. If you look up the ergonomic mods below you'll see that I'm somewhat flexible about the geometry – but in reality that's about the physical keyboard design and a better hand position for me. The layout itself stays essentially the same!
-        </p>
+<h1>THE BIG BAG of THEORY</h1>
 
-        <p>And so, <i>voila</i>, here it is!</p>
+<img class="headerImg" src="content/res/img/Tarmak-ETROI_Spectral_CAW.png" alt="Tarmak">
+<p>
+    Since I started using Colemak in early 2007 I've been fiddling with it, trying out ideas from the forum and adding some of my own. Colemak per se is to me only the letter block mappings including the semicolon, and their shifted counterparts. I've always ended up with that intact and it has stood the test of time. If you look up the ergonomic mods below you'll see that I'm somewhat flexible about the geometry – but in reality that's about the physical keyboard design and a better hand position for me. The layout itself stays essentially the same!
+</p>
 
-        <h3>HOWS:</h3>
-        <p>I use my own edition of Farkas Máté's excellent Portable Keyboard Layout – PKL[eD] – to implement the Big Bag for Windows. For Linux, I've hacked up a bunch of modifications to the X.Org XKB files. Then I got me a USB-2-USB "QUICKIE" converter and implemented much of my tricks for that too; they should work for most programmable controllers. I'm pretty proud of it all, I must say! :)</p>
-        <p>An advantage with my implementation is that in most cases you can pick and choose most of the enhancements as modules:</p>
-        <ul>
-            <li> The Angle/Wide ergo mods are models/remaps so they work with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user</li>
-            <li>The Extend layers and their switch key are "options" and should work with nearly any existing layout</li>
-            <li> The locale/phonetic, Mirrored and Tarmak layouts are separate layout variants selectable with various chooser keys as desired
-                    Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.</li>
-        </ul>
+<p>And so, <i>voila</i>, here it is!</p>
 
-        <h3>LASTLY:</h3>
+<h3>HOWS:</h3>
+<p>I use my own edition of Farkas Máté's excellent Portable Keyboard Layout – PKL[eD] – to implement the Big Bag for Windows. For Linux, I've hacked up a bunch of modifications to the X.Org XKB files. Then I got me a USB-2-USB "QUICKIE" converter and implemented much of my tricks for that too; they should work for most programmable controllers. I'm pretty proud of it all, I must say! :)</p>
+<p>An advantage with my implementation is that in most cases you can pick and choose most of the enhancements as modules:</p>
+<ul>
+    <li> The Angle/Wide ergo mods are models/remaps so they work with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user</li>
+    <li>The Extend layers and their switch key are "options" and should work with nearly any existing layout</li>
+    <li> The locale/phonetic, Mirrored and Tarmak layouts are separate layout variants selectable with various chooser keys as desired
+            Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.</li>
+</ul>
 
-        <ul>
-            <li>Best of luck with Colemak and its many marvelous mods! ^_^</li>
-            <li>If you do get stuck, here's a little <a href="https://forum.colemak.com/topic/2157-joking-around/"><b>light entertainment</b></a> to hopefully Shift your mo(o)d. ;-)</li>
-        </ul>
+<h3>LASTLY:</h3>
 
-        <div class="quote">
-            <p><b>Typealong Clackity said:</b><br>
-            Colemak's connected to the ... Curl* mod,<br>
-            The Curl mod's connected to the ... Angle mod,<br>
-            The Wide mod's connected to the ... shoulder bones,<br>
-            And Extend's just wonderful!<br>
-            -------<br>
-            *: DH</p>
-        </div>
-    </main>
-    <script src="web/main.js"></script>
-</body>
-</html>
+<ul>
+    <li>Best of luck with Colemak and its many marvelous mods! ^_^</li>
+    <li>If you do get stuck, here's a little <a href="https://forum.colemak.com/topic/2157-joking-around/"><b>light entertainment</b></a> to hopefully Shift your mo(o)d. ;-)</li>
+</ul>
+
+<div class="quote">
+    <p><b>Typealong Clackity said:</b><br>
+    Colemak's connected to the ... Curl* mod,<br>
+    The Curl mod's connected to the ... Angle mod,<br>
+    The Wide mod's connected to the ... shoulder bones,<br>
+    And Extend's just wonderful!<br>
+    -------<br>
+    *: DH</p>
+</div>

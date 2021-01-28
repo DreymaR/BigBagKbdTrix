@@ -1,0 +1,206 @@
+---
+layout: default
+title: Character/Key Mapping Layers
+---
+
+<h1>
+    Character/Key Mapping Layers
+</h1>
+
+<h2>
+    COLEMAK[eD] - EDITION DREYMAR
+</h2>
+
+<p>
+    See <a href="colemaked.html">the Colemak[eD] page</a> if you're interested.
+</p>
+
+<p>
+    This is my own preferred AltGr mapping layers (modifier lv3-4 in Linux terminology) for the Colemak layout. I've tried to add much functionality while keeping it intuitive. In particular, I want to be able to write different scripts and tech/maths symbols.
+    Since the start, there's been some minor tweaks based on my experience and forum feedback, but it's been stable for a long time now.
+</p>
+
+<p>
+    See my various layout files for comments and explanations, in addition to these design goals:
+</p>
+
+<ul class="dashed">
+    <li>
+        Keeping level 1-2 of Colemak intact! This is what I think of as the Colemak layout <i>per se</i>.
+    </li>
+    <li>
+        Dead keys easily accessible as unshifted AltGr+symbol keys; common ones in good positions.
+    </li>
+    <li>
+        Added letters/quotes allowing many of the major latin scripts to be written correctly.
+    </li>
+    <li>
+        Added symbols/glyphs similar to, e.g., Mac ones - allowing common math/tech/etc typing.
+    </li>
+    <li>
+        The positions of added letters and symbols should as far as possible be easy to remember!
+    </li>
+</ul>
+
+<img src="https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/Cmk-ANSI-eD_96d-FShui.png" />
+<p class="italic">
+    The <b>Colemak [edition DreymaR]</b> layout, using different lv3-4 mappings from Shai's default Colemak.<br> Shown on an ANSI keyboard with dead key emphasis (golden) and "FingerShui" color-coded proposed fingering.
+</p>
+
+<img src="https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/Cmk-ISO-eD-CurlAWide_96d-FShui.png" />
+<p class="italic">
+    <b>Colemak-CAW[eD]</b>, using the Curl(DH)Angle-ISO and Wide(/) ergonomic mods like I do (see <a href="https://forum.colemak.com/post/20411/#p20411">the next post</a>).
+</p>
+
+<h2>
+    EXTEND LAYERS!!!
+</h2>
+
+<p>
+    Extend is like a special Shift key (usually the Caps key) that brings keys and functions close to the home position – as if you had <i>extended</i> your arms by magic.
+</p>
+
+<p>
+    This is <b><a href="https://forum.colemak.com/viewtopic.php?pid=16698#p16698">My Favorite Mod</a></b> next to Colemak itself! The ability to navigate and edit from the home position and its immediate surroundings is extremely powerful. It's
+    like having part of the power of advanced editors like Vim ready in all situations. Plus a fully functional multimedia keyboard without sacrificing compactness. And more, much more.
+</p>
+
+<p>
+    Really, I cannot stress enough <b><a href="https://forum.colemak.com/viewtopic.php?pid=16698#p16698">Just How Powerful Extend Is!!!</a></b> once you understand its workings. It's miles ahead of most other "Fn key" layers, for several reasons
+    including the home row modifiers which lead to an ocean of power chording possibilities. Most newcomers don't seem to get this at once, so I urge you to study my Extend topic a bit for your own sake. I realize that it may seem like much to
+    learn one more thing, but it'll benefit you a lot. Furthermore, Extend can be learnt gradually and is much easier to learn than a new typing layout!
+</p>
+
+<img src="https://www.dropbox.com/s/ycdx41cobrniihm/Extend-ISO-NoMod-Linux_96d-Labels.png?raw=1" />
+<p class="italic">
+    A chart of my <b>Extend</b> mappings (Ext1 – Nav/Edit). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.
+</p>
+
+<p>
+    Here's the same image with symbolic labels like I use in the <b>EPKL</b> program; for more info see the Extend topic and my source files:
+</p>
+
+<div class="spoiler">
+    <p><span>Spoiler:</span></p>
+    <div class="spoilerBody">
+        <img src="https://www.dropbox.com/s/zhei5lgufhqmcc9/Extend-ISO-NoMod-Linux_96d.png?raw=1" />
+        <p class="italic">
+            My <b>Extend</b> mappings (Ext1 – Nav/Edit). Green, navigation; blue/circled, mousing; orange, multimedia; gray, system/misc.
+        </p>
+    </div>
+</div>
+
+<p>
+    The Linux/XKB and Windows/EPKL implementations are almost the same. EPKL couldn't yet support mapping to the shifted multimedia keys. Linux usually has poor support for mouse WheelLeft/Right scroll keys so the XKB mappings have a MouseKeys On/Off key
+    on &lt;LSGT&gt; and a Compose/Multi key on Slash instead.
+</p>
+
+<p>
+    Holding down AltGr with the Extend modifier you get Extend2: A NumPad layer laid out pretty much like a standard one but with the top row moved around to fit existing keys:
+</p>
+
+<img src="https://www.dropbox.com/s/ufv16bnz9qzvzhy/Extend-ISO-NoMod-Ext2_96d.png?raw=1" />
+<p class="italic">
+    Extend NumPad mappings (Ext2). Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.
+</p>
+
+<p>
+    Ideally you can map any modifier to be the Extend "Mod2"/"Mod3" which select between different Extend layers, and only need to hold the Extend key itself after choosing the layer. At the moment though, this works as it should with EPKL and TMK but not
+    XKB.
+</p>
+
+<p>
+    There may be a need for navigating while entering numbers, but on the other hand KeyPad keys rarely use modifiers. Hence, I moved the nav block from its UNEI arrow cross to the WARS cross familiar to gamers. Number row keys 1-6 are mapped to their shifted
+    symbols since these may be needed for numeric input, as are some other keys; the bracket keys cater for the parentheses in this layer which feels logical to me.
+</p>
+
+<p>
+    In the Windows/EPKL implementation there are two more Extend layers; see the (E)PKL topic. One has a set of kaomoji! ☆*:.｡. o(≧▽≦)o .｡.:*☆
+</p>
+
+<p>
+    <b>Tips:</b>
+</p>
+
+
+<li>
+    The backtick/tilde key to the left of 1 can be whatever you want to: An extra Del, Ctrl+A (Select All), Ctrl+W (Close), Ctrl+T (New Tab), Win+T (Taskbar)... 
+</li>
+<li>
+    You can do some really fancy stuff with this! Ext-A/T+4(=Alt/Ctrl+F4) closes programs/tabs, Ext-T+J/H(=Ctrl+PgUp/PgDn) switches tabs... 
+</li>
+<li>
+    Or try this in a browser: Ext-6 for the address bar, then type an URL, then Ext-A+Spc to open it in a new tab (saves Ctrl+T for a new tab). 
+</li>
+<li>
+    Most of these tricks work in many apps under both Windows and Linux these days. Some are application specific. 
+</li>
+<li>
+    My Extend layer doesn't support letters nor the Win/GUI key, which limits the shortcut repertoire somewhat. But even so there's really a lot you can do! (FYI: There are good reasons for the WheelUp/Dn placements and the lack of a Win key, having to do with keyboard implementations.) 
+</li>
+<li>
+    For more info and tricks, see my <b><a href="https://forum.colemak.com/viewtopic.php?pid=16698#p16698">Extend Extra Extreme</a></b> topic.
+</li>
+
+<h2>
+    ENHANCED DEAD KEY MAPPINGS
+</h2>
+
+<p>
+    Some dead keys are almost empty: The doubleacute only caters for ő ű, and ring only caters for å ů ẘ ẙ. There's also a whole iota dead key that only concerns itself with Greek characters. I'm tempted to
+    stuff something good into those cracks even if it's not an entirely logical thing to do (because the name of the dead key wouldn't reflect these extra mappings). If you use up a key mapping on a dead key it really shouldn't sit there taking up
+    keyboard space for the meager purpose of providing 2-3 glyphs!
+</p>
+
+<p>
+    There are 19 dead keys in my Colemak[eD] layout. The common accents are there, together with a currency dead key on AltGr+4 and a Greek phonetic dead key on AltGr+5. Furthermore, some
+    sparsely populated accent keys have been enhanced with extra content, such as superscripts/subscripts on acute/grave, fractions and negations on stroke/bar and ring symbols on ringabove. The most extensively reworked key is the double-acute which
+    used to have only Uu and Oo and now contains a fairly rich set of math/science symbols (think of the double acute as akin to the equals and prime signs)! You really have to see them to believe them – I'll showcase some below but you can see them
+    all using PKL (default Ctrl+Shift+1 for the help images):
+</p>
+
+<p>
+    01) Dot below <br>
+    02) Hook, palatal hook <br>
+    03) Horn, retroflex hook/tail <br>
+    04) Currency:
+</p>
+
+<img class="smallImg" src="https://www.dropbox.com/s/fcrps2y8gxgq3dd/dk04_currency.png?raw=1" />
+<img class="smallImg" src="https://www.dropbox.com/s/0q1zsov1jzt9xa4/dk04sh_currency.png?raw=1" />
+<p>
+    05) Greek (phonetic):
+</p>
+<img class="smallImg" src="https://www.dropbox.com/s/u635qlsqzus8m1x/dk05_greek.png?raw=1" />
+<img class="smallImg" src="https://www.dropbox.com/s/af6f7swvm5w4j24/dk05sh_greek.png?raw=1" />
+<p>
+    06) Circumflex <br>
+    07) Caron <br>
+    08) Ogonek, comma below <br>
+    09) Breve <br>
+    10) Ring above, ring symbols, ligatures <br>
+    11) Macron <br>
+    12) Double-acute, math/science: <br>
+</p>
+<img class="smallImg" src="https://www.dropbox.com/s/7mqklbxtbken7sq/dk12_dblacutesci.png?raw=1" />
+<img class="smallImg" src="https://www.dropbox.com/s/cnqhigzwg94n1vh/dk12sh_dblacutesci.png?raw=1" />
+<p>
+    13) Umlaut/diaeresis <br>
+    14) Tilde <br>
+    15) Acute, superscripts
+</p>
+<img class="smallImg" src="https://www.dropbox.com/s/0dhe2lb23jm3s64/dk15_acute.png?raw=1" /> 
+<img class="smallImg" src="https://www.dropbox.com/s/1ggyh52bratpnt2/dk15sh_acute.png?raw=1" /> 
+16) Grave, subscripts <br>
+17) Cedilla <br>
+18) Dot above <br>
+19) Stroke/bar, fractions
+<img class="smallImg" src="https://www.dropbox.com/s/g5p9q84gzbf12rn/dk19_strokebar.png?raw=1" /> 
+<img class="smallImg" src="https://www.dropbox.com/s/62ydgf3tqk7xq1c/dk19sh_strokebar.png?raw=1" />
+
+
+<p>
+    <b>Note</b> that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed
+    symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '='
+    which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.
+</p>

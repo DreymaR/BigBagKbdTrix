@@ -161,7 +161,7 @@ function drawTutorialScreen() {
     platformIcon.id = 'tutorialPlatform';
 
     let arrow = document.createElement('img');
-    arrow.setAttribute('src', 'w_img/arrow.png');
+    arrow.setAttribute('src', 'w-img/arrow.png');
     arrow.id = 'tutorialArrow';
 
     let text = document.createElement('span');
