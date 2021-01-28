@@ -32,7 +32,7 @@ TODO/WIP For the BigBag web pages:
 - Change the style of spoilers so that they're more visible.
 - Keep original image sizes.
 - Better alignment of images and text around them.
-- Additional padding at the bottom of <code> blocks.
+- Additional padding at the bottom of 'code' blocks.
 - Fix class names
 - Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
 	- TODO: Put fonts, css and js in the web/content folder
@@ -43,7 +43,7 @@ DONE
 ----
 - Make a Co browser tab (fav)icon
 	- See https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website
-- Take out everything except the content of the <main> tag into default.html.
+- Take out everything except the content of the 'main' tag into default.html.
   
 HTML observations
 -----------------
