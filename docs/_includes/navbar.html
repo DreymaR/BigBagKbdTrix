@@ -19,7 +19,8 @@
             </div>
             <ul>
                 {% for link in site.links %}
-                    <li class="{% if link.sub %}has-submenu {% endif %}{% if page.url == link.url %}active{% endif %}">
+                {% assign current_page = "/" | append: link.url %}
+                    <li class="{% if link.sub %}has-submenu {% endif %}{% if page.url == current_page %}active{% endif %}">
                         <a href="{{ link.url }}">{{ link.title }}</a>
                         {% if link.sub != null %}
                             <ul>
