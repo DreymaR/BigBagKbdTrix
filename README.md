@@ -33,6 +33,7 @@ TODO/WIP For the BigBag web pages:
 - Better alignment of images and text around them.
 - Additional padding at the bottom of 'code' blocks.
 - Fix class names
+- Possibly use CSS for the spoilers mechanism and js only for the classes' adding and removing?
 - Validate html and css files
 - Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
 	- TODO: Put fonts, css and js in the web/content folder

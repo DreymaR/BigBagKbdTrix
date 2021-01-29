@@ -13,25 +13,38 @@ let platforms = {
     'win': platformsEl[3]
 }
 
-let platformWisePages = ['ergomods', 'keymappings', 'otherlayouts'];
+let platformWisePages = {
+    'index' : {
+        tmk: 1,
+        win: 1
+    },
+    'ergo-mods' : {
+
+    },
+    'key-mappings' : {
+        linux: 1,
+        tmk: 1
+    },
+    'other-layouts' : {
+        
+    }
+};
 
 document.onload = function () {
-    includeHTML();    /* W3Schools - how to include html */
-
-    /* Marvel95's main code */
     let platform = sessionStorage.getItem('platform');
     if (platform) {
-        platforms[platform].classList.add('isActive');
-        page = getCurrentPageName();
-        if (!(page.includes(platform))) {
-            checkForPlatformPage(platform);
-        }
         document.getElementById('platforms').classList.add(platform);
+
+        let currentPagePath = getCurrentPageName();
+        currentPageName = currentPagePath.substring(0, currentPagePath.indexOf('.'))
+        
+        if (platformWisePages[currentPageName][platform]) {
+            fillPlatformBox(platform);
+        }
     }
     else {
         document.getElementById('platforms').removeAttribute('class');
     }
-
     Object.keys(platforms).forEach(platform => function (){
         platforms[platform].addEventListener('click',
             function () {
@@ -47,47 +60,31 @@ function getCurrentPageName() {
     return page;
 }
 
-function redirect(destination) {
-    if(destination!='ergomods-win.html'){
-        window.location.href = destination;
-    }
-}
-
-function checkForPlatformPage(platform){
-    platformWisePages.forEach(function (platformWisePage) {
-        if (getCurrentPageName().includes(platformWisePage)) {
-            redirect(platformWisePage + '-' + platform + '.html')
+function fillPlatformBox(platform) {
+    var req = new XMLHttpRequest();
+    req.onload = function(){
+        platformBox = document.getElementsByClassName('platform-box')[0];
+        if(platformBox) {
+            platformBox.innerHTML = this.responseText;
+            platformBox.className += ' ' + platform;
         }
-    });
+    };
+    req.open('GET', './platforms/' + currentPageName + '-' + platform + '.html');
+    req.send();
 }
 
 function togglePlatform(platform) {
     let currentPlatform = sessionStorage.getItem('platform');
-    page = getCurrentPageName();
-    
     if (currentPlatform == platform) {
         sessionStorage.removeItem('platform');
-        platforms[platform].classList.remove('isActive');
-        if (getCurrentPageName().includes(platform)) {
-            redirect(page.substring(0, page.indexOf('-')) + '.html');
-        }
         document.getElementById('platforms').removeAttribute('class');
     }
     else {
-        if (currentPlatform) {
-            Object.keys(platforms).forEach(function (platform) {
-                console.log();
-                if (platforms[platform].classList.contains('isActive')) {
-                    platforms[platform].classList.remove('isActive');
-                }
-            });
-        }
         document.getElementById('platforms').removeAttribute('class');        
         document.getElementById('platforms').classList.add(platform);
         sessionStorage.setItem('platform', platform);
-        checkForPlatformPage(platform);
-        platforms[platform].classList.add('isActive');
     }
+    location.reload();
 }
 
 function toggleMenu() {
@@ -193,32 +190,4 @@ function drawTutorialScreen() {
 
 function removeTutorialScreen() {
     document.body.removeChild(tutorialScreen);
-}
-
-/* https://www.w3schools.com/howto/howto_html_include.asp */
-function includeHTML() {
-    var elms, i, elmt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    elms = document.getElementsByTagName("*");
-    for (i = 0; i < elms.length; i++) {
-        elmt = elms[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmt.getAttribute("bb-include-html");
-        if (file) {
-            /* Make an HTTP request using the attribute value as the file name: */
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4) {
-                    if (this.status == 200) {elmt.innerHTML = this.responseText;}
-                    if (this.status == 404) {elmt.innerHTML = "Page not found.";}
-                    /* Remove the attribute, and call this function once more: */
-                    elmt.removeAttribute("bb-include-html");
-                    includeHTML();
-                }
-            }
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            return;
-        }
-    }
 }

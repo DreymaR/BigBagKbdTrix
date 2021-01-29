@@ -11,13 +11,45 @@ title: THE BIG BAG of THEORY
 <p>And so, <i>voila</i>, here it is!</p>
 
 <h3>HOWS:</h3>
+
 <p>I use my own edition of Farkas Máté's excellent Portable Keyboard Layout – PKL[eD] – to implement the Big Bag for Windows. For Linux, I've hacked up a bunch of modifications to the X.Org XKB files. Then I got me a USB-2-USB "QUICKIE" converter and implemented much of my tricks for that too; they should work for most programmable controllers. I'm pretty proud of it all, I must say! :)</p>
 <p>An advantage with my implementation is that in most cases you can pick and choose most of the enhancements as modules:</p>
+
 <ul>
     <li> The Angle/Wide ergo mods are models/remaps so they work with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user</li>
     <li>The Extend layers and their switch key are "options" and should work with nearly any existing layout</li>
     <li> The locale/phonetic, Mirrored and Tarmak layouts are separate layout variants selectable with various chooser keys as desired
             Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.</li>
+</ul>
+
+<div class="platform-box"></div>
+
+<h3>DONE:</h3>
+
+<ul class="disc">
+    <li>Updated Rulemak and Bulmak to 2016 versions (<b>ru/by/ua, bg/rs/mk</b> – although only found in <b>ru</b> and <b>bg</b> so far): <br>
+        East Slavic (Russian/Church/Belarus/Ukraina?) & South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?)</li>
+    <li>Tarmak layouts for Curl-DH modders. The changes are minor, but should be easily accessible for the newcomer.</li>
+    <li>Get the Big Bag implementations up and going on GitHub.</li>
+    <li>Training topic: Alternative fingering. Tricks like sliding in for the NK/KN bigram are useful for the somewhat advanced typist.</li>
+</ul>
+
+
+<h3>
+    TODO:
+</h3>
+
+<ul class="disc">
+    <li>Transition from DHk (the 2017 standard) to DHm (SteveP's original DH mod) as the Colemak-DH standard</li>
+    <li>Present the Big Bag more hypertextually on GitHub web pages (Work-In-Progress)</li>
+    <li>Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?) [done in EPKL]</li>
+    <li>A total of 4 Extend layers: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings – or whatever you like! [done in EPKL]</li>
+    <li>Modifier keys for 4 Extend layers. For instance, Caps+{--, RShift, RAlt, RShift+RAlt}. Holding down Caps maintains the layer state.</li>
+    <li>"Tap dance sequences", using dead keys and/or combines to release strings and things without having to hold modifier chords.</li>
+    <li>Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With <b>wrapman</b> and whoever's interested.)</li>
+    <li>Also an Arabic phonetic layout.</li>
+    <li>Develop and test a <a href="https://forum.colemak.com/topic/2389-vietnamese-colemak/">Vietnamese Colemak</a> (with <b>icedryst</b> and whoever's interested).</li>
+    <li>More locale variants: <b>epo</b> (Esperanto), …? (Any suggestions, or comments on the existing ones?)</li>
 </ul>
 
 <h3>LASTLY:</h3>

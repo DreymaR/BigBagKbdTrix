@@ -1,0 +1,15 @@
+<p>
+    A USB-2-USB device remaps only key strokes, not character input events. So key mods like layout and ergo remappings are possible, but not mods that send glyphs. Your dead keys and AltGr mappings will work as they do without the device, and you may only move their keys around as they are.
+</p>
+
+<p>
+    Sorry, but AltGr/DeadKey glyph mappings such as the powerful Colemak[eD] below are for the most part up to the active layout on the machine you're typing to.
+</p>
+
+<p>
+    In all honesty though, <a href="https://github.com/tmk/tmk_keyboard/wiki/FAQ-Keymap">it is possible to send Unicode</a> with methods such as Windows' Alt+NumPad(####) defined for instance as TMK macros. But since it's platform dependent, memory consuming and clunky, I couldn't do this to create the full Colemak[eD]. Dead key tables and functions would've been even more byte-gobbling, so no.
+</p>
+
+<p>
+    However, I have made a user function that lets you define a few keys as four-level giving OS specific Unicode input using the RAlt key as AltGr for these keys only. I used this to get the Norwegian special letters åæø and their shifted counterparts (on the bracket and ISO LSGT keys) as in Colemak[eD], and it works fine for me. I even added the bullet and dagger glyphs (on the ISO \| key) for good measure. You can find various lists of alt codes to use, such as <a href="https://fsymbols.com/keyboard/windows/alt-codes/list/">this one</a>. Remember that you need to use "KC_P#" where # is the digit. For Mac or Unix you need to change the method, see the unimap_dreymar.c file and ask me if you need help.
+</p>

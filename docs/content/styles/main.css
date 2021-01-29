@@ -89,14 +89,21 @@ a {
     background-size: contain
 }
 
-.platform-specific {
+.platform-box {
+    display: none;
+}
+
+.platform-box:not(:empty) {
+    display: block;
     position: relative;
     margin-top: 15px;
     padding: 0 10px 10px 10px;
     border: 3px solid #AA77BB;
 }
 
-.platform-specific:before {
+.platform-box.linux:before,
+.platform-box.win:before,
+.platform-box.tmk:before {
     content: '';
     display: inline-block;
     width: 35px;
@@ -106,15 +113,15 @@ a {
     left: 10px;
 }
 
-.platform-specific.linux:before {
+.platform-box.linux:before {
     background: #F7F7F7 url('../res/img/w-img/linux_purple2.svg') no-repeat center / 66%;
 }
 
-.platform-specific.win:before {
+.platform-box.win:before {
     background: #F7F7F7 url('../res/img/w-img/win_purple.svg') no-repeat center / 86%;
 }
 
-.platform-specific.tmk:before {
+.platform-box.tmk:before {
     background: #F7F7F7 url('../res/img/w-img/tmk_purple.svg') no-repeat center / 83%;
 }
 
@@ -204,19 +211,19 @@ a {
     background-image: url("../res/img/w-img/win_gray.svg");
 }
 
-#platformIcons #linux.isActive {
+#platforms.linux #platformIcons #linux {
     background-image: url("../res/img/w-img/linux_purple.svg");
 }
 
-#platformIcons #tmk.isActive {
+#platforms.tmk #platformIcons #tmk {
     background-image: url("../res/img/w-img/tmk_purple.svg");
 }
 
-#platformIcons #mac.isActive {
+#platform.mac #platformIcons #mac{
     background-image: url("../res/img/w-img/mac_purple.svg");
 }
 
-#platformIcons #win.isActive {
+#platforms.win #platformIcons #win {
     background-image: url("../res/img/w-img/win_purple.svg");
 }
 
@@ -475,6 +482,21 @@ ul.dashed li:before {
     font-size: 1.2em;
     line-height: .8;
     font-weight: bold;
+}
+
+ol.bracket {
+    counter-reset: list;
+}
+
+ol.bracket > li {
+    list-style: none;
+    position: relative;
+}
+ol.bracket > li:before {
+    counter-increment: list;
+    content: counter(list) ") ";
+    position: absolute;
+    left: -1.4em;
 }
 
 .center {
