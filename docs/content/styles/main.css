@@ -509,7 +509,7 @@ ol.bracket > li:before {
 
 code {
     display: inline-block;
-    max-width: calc(100% - 30px);
+    width: calc(100% - 30px);
     padding: 0 15px;
     overflow: scroll;
     background-color: #67A;    /* #6981B7; */
