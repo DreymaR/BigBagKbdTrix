@@ -88,8 +88,10 @@ function fillPlatformBox(platform) {
                 }
 
                 for (let i=0; i<platformBoxes.length; i++) {
-                    platformBoxes[i].innerHTML = platformContentArr[i];
-                    platformBoxes[i].className += ' ' + platform;
+                    if (platformContentArr[i]) {
+                        platformBoxes[i].innerHTML = platformContentArr[i];
+                        platformBoxes[i].className += ' ' + platform;
+                    }
                 }
             }
 
