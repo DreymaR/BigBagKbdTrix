@@ -435,6 +435,10 @@ main a {
     color: #2371A5;
 }
 
+main ul li ul {
+    padding-left: 15px;
+}
+
 main#linksContainer {
     height: calc(100vh - 110px);
 }

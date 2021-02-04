@@ -1,0 +1,128 @@
+<div class="platform-content">
+    <p>
+        For Linux/xkb, the Angle/Wide mods are implemented as keyboard models. This means that you can use them with any layout including the QWERTY and Dvorak ones, Tarmak and even the Curl(DH) mod and Mirrored Colemak, because those are implemented as layouts. Modularity at your fingertips, again.
+    </p>
+    
+    <img src="https://www.dropbox.com/s/uiy9n0ktq7lhiip/Cmk-ISO-AWide-35_60d_FShui.png?raw=1" alt="">
+    <p class="italic">
+        The AngleWide(Slash) wide ergo mod for PC105/ISO keyboards.
+        </p>
+    
+    <p>
+        I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide(Slash) mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a <a href="https://forum.colemak.com/viewtopic.php?pid=12302#p12302">Wide(Quote) mod</a> as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (at the cost of longer left pinky stretches), should anyone be interested.
+    </p>
+    
+        <img src="https://www.dropbox.com/s/36j55kaeu30wxui/Cmk-ANSI-AWide-ZQu_60d_FShui.png?raw=1" alt="">
+        <p class="italic">
+            The Angle(Z)Wide ergo mod for PC104/ANSI keyboards
+         </p>
+    
+    <p>
+        <b class="italic">HowTo:</b> <br>
+        To use these, you might have to edit a file or so (see below under "Installation") unless your distro supports keyboard choice which Ubuntu used to do but doesn't anymore.
+        Otherwise, 'setxkbmap -model &lt;name&gt;' works on-the-fly. I use my setxkb.sh script; see below.
+    </p>
+    
+    <p>
+        The xkb ergonomic keyboard model mods have names|shortstrings as following (see below for models with Curl):
+    </p>
+    <ul class="disc">
+        <li><b>pc104angle-z | 4a</b> – ANSI/US Angle mod, putting Z in the old B position</li>
+        <li><b>pc104wide-qu | 4w</b> - ANSI/US Wide mod, putting the Quote key in the old Right Bracket position</li>
+        <li><b>pc104aw-zqu | 4aw</b> - ANSI/US AngleWide mod, combining the two mods above</li>
+        <li><b>pc104awing | 4f</b> - ANSI/US A-Wing mod, splitting the bottom row and shifting the others</li>
+        <li><b>pc105angle | 5a</b> - ISO/Euro Angle mod, putting &lt;LSGT&gt;/VK_102 in the old B position</li>
+        <li><b>pc105aw-sl | 5aw</b> - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position</li>
+    </ul>
+</div>
+
+<div class="platform-content">
+    <p class="bold italic">
+        HowTo:
+    </p>
+    
+    <ul class="disc">
+        <li>Note that for now, the Curl(DH) mod isn't 100% modular. You'll get it with the Colemak[eD] mappings for one, as AltGr mappings are entwined with the mod.</li>
+        <li>There are selectable curl-modded layouts under English (the 'us' locale):
+            <ul class="dashed">
+                <li><b>us(cmk_ed_dh)</b> – "English (Colemak[eD], Curl-DH ergo)"</li>
+                <li><b>us(cmk_ed_dhm)</b> – "English (Colemak[eD], Curl-DH-matrix ergo)"</li>
+            </ul>
+        </li>
+        <li>In addition, there are xkb options you can use with setxkbmap -option.
+            <ul class="dashed">
+                <li><b>misc:cmk_curl_dh</b></li>
+                <li><b>misc:cmk_curl_dhm</b><br>
+                    NOTE: These are ideal for most locale layouts, for instance. However, they overwrite and are overwritten by other layouts – even non-Colemak ones!
+                </li>
+            </ul>
+        </li>
+        <li>If you wish a "harder" solution, you can edit the xkb/symbols/colemak file, uncommenting the mod lines you want. <br>
+            These are found in the xkb_symbols "cmk_ed_letters" partial, so they affect all locale variants, Tarmak etc. – but not non-Colemak layouts.</li>
+        <li>Finally, the setxkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
+            <ul class="dashed">
+                <li><b>4ca/4caw</b> – ANSI/US CurlAngle-Z(Wide-Quote)</li>
+                <li><b>4cf</b> – ANSI/US CurlAngleWing(Quote)</li>
+                <li><b>5ca/5caw</b> – ISO/Euro CurlAngle(Wide-Slash)</li>
+                <li>To get the older mod variants (DHk or DvH) you'll have to edit the colemak symbol file, or specify model+option directly.</li>
+            </ul>
+        </li>
+        <li>Note: If you have a system (X11) directory install, you'll need sudo privileges to edit those files. (Make sure you use gksudo or similar if you start a GUI editor.)</li>
+        <li>There are special Tarmak-Curl(DH) layouts; see the Tarmak section below.</li>
+        <li>NOTE: If your locale variant remaps any of the affected keys (mainly D, G, H, M or K) you'll have to look up and edit that locale symbols file.</li>
+    </ul>
+    
+    <p class="bold italic">
+        Example: Editing the symbols/colemak file
+    </p>
+    
+    <ul class="disc">
+        <li>Below I've uncommented a line in the "cmk_ed_letters" section of xkb/symbols/colemak, activating both sides of the Curl(DH) mod.</li>
+        <li>This is useful for non-US layouts and Tarmak steps; otherwise you can just select the English Curl(DH) layouts as explained above.</li>
+    </ul>
+    
+    <pre><code>
+//// Activating the line below will "hard" enable the Cmk-DH = Curl(DHm) mod; see below.
+//    include "colemak(cmk_ed_dh)"
+//// Activating the line below will "hard" enable the old Curl(DHk) mod; see below.
+//    include "colemak(cmk_ed_dhk)"
+//// This is the old Curl(DvH) Colemak ergo mod, keeping V and M in place.
+//    include "colemak(cmk_ed_dvh)"
+    </code></pre>
+    
+    
+    <p class="bold italic">
+        Example: Using a CurlAngleWide "model" with setxkb.sh
+    </p>
+    <ul class="disc">
+        <li>These two examples both activate the PC105-Curl(DH)AngleWide mod.</li>
+        <li>The shortstring line will not change the active layout (apart from the Curl mod); the other line will use the setxkb.sh default layout.</li>
+        <li>This is useful if you don't want to edit the files. Curl affects only the first/main layout, but will mess up any non-Cmk layouts in the GUI.</li>
+    </ul>
+    
+    <pre><code>
+$> ./setxkb.sh "5caw"
+$> ./setxkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
+    </code></pre>
+    
+    <p>
+        Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
+    </p>
+</div>
+
+<div class="platform-content">
+    <p>
+        The fairly optional "Sym" symbol key mod hasn't yet been implemented in my XKB files. If you're interested, it shouldn't be too hard to add yourself.
+    </p>
+    
+    <pre><code>
+  \   7   8   9   0   =
+[   j   l   u   y   '   -
+ ]   h   n   e   i   o   ;
+   /   k   m   ,   .   _____
+    </code></pre>
+    
+    <p class="italic">
+        The "Sym" symbol rotation mod, shown with the Wide(ISO) mod.
+    </p>
+</div>

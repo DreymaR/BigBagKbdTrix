@@ -16,7 +16,9 @@ let platformWisePages = {
         win: 1
     },
     'ergo-mods' : {
-
+        linux: 1,
+        tmk: 1,
+        win: 1
     },
     'key-mappings' : {
         linux: 1,
