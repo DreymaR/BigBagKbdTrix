@@ -1,3 +1,10 @@
+[h]DREYMAR'S BIG BAG of KEYBOARD TRICKS – ÞE OLDE PAGES[/h]
+
+The Big Bag is moving! These pages are probably the most complete version of it still, but as time goes by the focus may well shift to the new snazzy format at:
+[b][url]https://dreymar.colemak.org/[/url][/b]
+It's a lot of work to move such a big bag though, so if you're missing something make sure to look in both places before you despair...
+
+
 [h]THE BIG BAG THEORY[/h]
 
 My mission is to make your keyboard a lot more comfortable and powerful, even if you don't have an expensive programmable board. To this end, I use the Colemak layout with several ergonomic mods and additions that I and others have created over the years, on different OS platforms. These "tricks" are what this Big Bag is about.
@@ -105,7 +112,7 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as it is 
 • A total of 4 Extend layers: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings – or whatever you like! [done in EPKL]
 • Modifier keys for 4 Extend layers. For instance, Caps+{--, RShift, RAlt, RShift+RAlt}. Holding down Caps maintains the layer state.
 • "Tap dance sequences", using dead keys and/or combines to release strings and things without having to hold modifier chords.
-• Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
+• Fix the [url=https://forum.colemak.com/topic/1458-locale-colemak-variants-for-several-countries-the-edreymar-way/#p19971]Hebrew phonetic Colemak[/url] ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
 • Also an Arabic phonetic layout.
 • Develop and test a [url=https://forum.colemak.com/topic/2389-vietnamese-colemak/]Vietnamese Colemak[/url] (with [user]IceDryst[/user] and whoever's interested).
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)

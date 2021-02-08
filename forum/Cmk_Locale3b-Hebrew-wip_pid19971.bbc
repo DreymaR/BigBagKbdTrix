@@ -1,126 +1,167 @@
 [b]Table of proposed and discussed Hebrew Colemak mappings:[/b]
 [i](based on my findings and opinions after some [b][url=https://en.wikipedia.org/wiki/Hebrew_alphabet]Wikipedia[/url][/b] studies etc)[/i]
 [code]
-_   א   fin name        BKSW     comments
+The "BKSW TI" mappings mean: Biblical-SIL, Kansas-Uni, Slackware & Wrapman's Hebmak phonetic layouts; Wikipedia & IPA common translit.
+Final forms and hazaq/dagesh forms are shown when applicable; geresh forms in comments
+
+_   א   fin name        BKSW TI     haz·dag • comments, [IPA]
 --------------------------------------------------------------
-Safe:
-A   א       alef        _aaa     •
-B   ב       bet         bbbb     • (IPA /v/, /b/ is בּ – bet dagesh)
-C   צ   ץ   tsadi       cccc     • kyrillic tse; latin 'ts'
-D   ד       dalet       dddd     •
-G   ג       gimel       gggg     •
-H   ה       he          hhhh     •
-K   כ   ך   kaf         kkkk     •
-L   ל       lamed       llll     •
-M   מ   ם   mem         mmmm     •
-N   נ   ן   nun         nnnn     •
-P   פ   ף   pe          pppp     •
-Q   ק       qof         qqqq     •
-R   ר       resh        rrrr     •
-S   ס       samekh      ssos     •
-T   ת       tav         tttt     •
-X   ח       het         xxxx     • IPA /x/ (or /ħ/); (Gr. eta)
-Z   ז       zayin       zzzz     •
+Safe(ish):
+A?  א       alef/aleph  _aaa '.     אּ       • [ʔ] ʾ stop (see ayin; in non-oriental Heb., א = ע); on y w/ ayin maybe?
+B   ב       bet/vet     bbbb bb     בּ·[b]   • ב vet [v]; בּ bet dagesh [b]
+C   צ   ץ   tsade/tzadi cccc **     -       • [ts]; צ׳ ץ׳ [tʃ] č/ch; kyrillic tse; latin 'ts'
+D   ד       dalet       dddd dd     דּ [dd]  • ד׳ [ð] ḏ/dh
+E?
+F?
+G   ג       gimel       gggg gg     גּ [gg]  • ג׳ [dʒ] ǧ/j; נג [ŋ] ng
+H   ה       he(i)       hhhh hh     הּ [h]   • He w/ mapiq
+I   י       yod/yud     yiii ij     יּ [jj]  • i after vowel & before consonant/break, j otherwise
+J?
+K   כ   ך   kaf/chaf    kkkk ck     ךּ·[k]   • [χ] x/ch/kh/ḵ (see chet)
+L   ל       lamed       llll ll     לּ [ll]  •
+M   מ   ם   mem         mmmm mm     מּ [mm]  •
+N   נ   ן   nun         nnnn nn     נּ [nn]  •
+O?
+P   פ   ף   pe(i)/fei   pppp pp     ףּפ·[p]  • ףפ [f], w/ dagesh [p]; but fei = p in all modern Hebrew!)
+Q   ק       qof/kuf     qqqq qk     קּ [kk]  •
+R   ר       re(i)sh     rrrr rʁ     -       • [ʁ] [ʀ]
+S   ס       samekh      ssos ss     סּ [ss]  • (but see sin/shin)
+T   ת       tav         tttt tt     תּ [tt]  • ת׳ [θ] th
+UV? ו       vav/waw     wvvv vv     וּ [vv]  • וו or ו׳ [w]; [v/w] native/loanwords; Latin U/V/W/Y/O; Gr. F/υ
+W   ש       shin        Owsw *ʃ             • w by shape; kyrillic Ш is LBr in Rulemak; AltGr+j is ʃ in Cmk[eD]
+X   ח       chet/ḥet    xxxx hχ     -       • [χ] x/ħ; (Gr. eta)
+Y   ע       ayin        ?eyy 'ʔ             • ʿ stop (latin O); [ʕ/ʢ] g/ʁ [ancient ghayin was for that too]; on Shift+A?
+Z   ז       zayin       zzzz zz     זּ [zz]  • ז׳ [ʒ] ž
 
-Final forms (we want them both on separate keys and AltGr+letter):
-E  (נ  (ן   nun fin.    NNNe     [KU uses both N and o]
-F  (פ  (ף   pe fin.     PPPf     
-J  (צ  (ץ   tsadi fin.  CCCj
-O  (מ  (ם   mem fin.    MMMo     [Hebrew(il) uses o]
-;  כ  (ך)   kaf fin.    KKK;
+Final forms (maybe we want them both on Shift+letter and separate keys?):
+CJ (צ  (ץ   tsadi fin.  CCCj                •
+MO (מ  (ם   mem fin.    MMMo                • Hebrew(il) uses o
+NE (נ  (ן   nun fin.    NNNe                • KU uses both N and o
+K; כ  (ך)   kaf fin.    KKK;                •
+PF (פ  (ף   pe fin.     PPPf                •
 
-Niqqud (on shift+vowel):
-A   patah (also kamatz? And hataf kamatz?)
-E   tsere (also segol?)
-I   hiriq
-O   holam (two forms – holam male and holam haser)
-U   shuruk/kubutz?
+Niqqud vowels (on AltGr/Shift+vowel? DKs?):
+a    ַ ‎      pata(c)h                        •  ֲ‎ ‎ hataf patah
+A    ָ       kamatz                          •  ֳ‎  hataf kamatz
+e    ֶ       segol (short e)                 •  ֱ  hataf segol (U+05B6; reduced segol U+05B1)
+E    ֵ       tzere/tsere haser (long e)      •    tzere male w/ yod or alef is the same sound
+i    ִ       hiriq                           •  ִי is hiriq male or yud (long). U+05B4 
+o    ֹ ‎      holam (male)                    • 
+O    ֺ      holam (haser)                   • used only with vav in combining or combined (וֹ) form
+u    ֻ       kubutz (short u)                • AltGr(Shift)+U? DK?
+U    ּ       shuruk (long u)                 • same symbol as combining dagesh/mappiq (U+05BC)!
+;?   ְ‎       shva/shewa                      • diacritic for fleeting/reduced (hataf) vowel; ultrashort when doubled; also the sound [ə] or no vowel (Ø)
+**          chatufot/(c)hataf niqqud        • with a schwa, patach/segol/kamatz(/hiriq) (A/E/I/O) become fleeting/reduced or ultrashort (w/ two schwa)
+**          neqqudot                        • separate niqqud used in poetry and children's books; sheva,  ֿ rafe (\?) etc etc
 
 Interesting:
-I   י       yod         yiii     IPA /y/
-U   ט       tet         vy_u     shape; Greek CmkPhon (IPA /θ/)
-V   ו       vav         wvvv     IPA /w/ /v/ /u/ /o/; latin U/W/Y; (Gr. F/υ)
-W   ש       shin        Owsw     shape; (AltGr+j is ʃ in Colemak[eD]; kyrillic Ш is LBr in Rulemak)
-    שׂ       sin         fW_W     IPA /s/ (sin/shin are the same letter with left/right upper dots/niqqud) [on shift+S?]
-    שׁ       shindot     j?_W     IPA /ʃ/
-Y   ע       ayin        ?eyy     (latin O); IPA /ʕ/ (or /ʢ/ /g/ /ʁ/ – although ghayin is for that)
-'   ׳       geresh      ---'     shape
-_   ּ        dagesh      ---*     *:Shift+letter (on beth/kaph/pe, but also gimel/dalet/tav in dialects; also as mappiq on alef/he)
-_   ₪       NewSheqel [on AltGr+4; also AltGr+S?]
-_           gershayim ("quote mark") [on " ?]
-_           meteg/sh'va (long/short vowels in biblical Hebrew)
-_           maqaf (hyphen)?
-_           paseq (line)?
-_           "Hebrew double low line"?
+TU  ט       tet         vy_u tt             • טּ [tt]; u by shape; related to theta; Greek CmkPhon (IPA /θ/ [tˤ]); Shift+T? (Montdor)
+V?  וו      double-waw/VavVav               • [w]; ו׳ (vav geresh) is also used; Yiddish; AltGr+V/W?; DK?
+I?  ײ       yud-yud/YodYod                  • AltGr+yud; Yiddish; YodYod(Patah) on AltGr(Shift)+I; DK?
+X?  ױ‎       vav-yud/VavYod                  • AltGr+chet; Yiddish; on AltGr+Shift+V?; lig. DK?
++S  שׂ       sin         fW_W ss             • sin/shin are the same w/ L/R upper dots/niqqud [on shift+S?]
++W  שׁ       shindot     j?_W *ʃ             • [ʃ] when using diacritics (on Shift+W?)
+'   ׳       geresh      ---' '              • ' by shape; also cantillation/chanting mark  ֜ or  ֝
+"   ״       gershayim   ---" "              • " by shape; also cantillation/chanting mark  ֞ (AltGr+", or DK)
+**   ּ       dagesh/map(p)iq                 • On bet/kaf/pe, but also gimel/dalet/tav in dialects; also as mappiq on alef/he as consonants
+**   ּ       hazaq                           • Turns single consonant into double; gimel/dalet/vav etc.
+4   ₪       NewSheqel                       • On AltGr+4; also AltGr+S? (Euro on AltGr+e?)
+-   ־‎       maqaf (hyphen)                  • hyphen by shape; same function as Latin hyphen
++   ﬩       alternative plus                • to avoid writing a cross :-o
+**          RLM & LRM                       • directional marks (Ctrl+[] is used)
+_   ‗       Hebrew double low line          •
 
-The "BKSW" letter mappings are for the Biblical SIL, KU, Slackware and Wrapman's Hebmak phonetic layouts, resp.
+Old:
+,    ֽ‎       meteg                           • comma by shape; long/short vowels in biblical Hebrew; stress marker (AltGr+,)
+[   ׆       nun hafukha (punctuation)       • [ by shape; a rare glyph from Classical Hebrew
+|   ׀       paseq (separator)               • not on modern keyboard so | is often used; old separator (AltGr+|?)
+:   ׃‎       sof pasuq (period)              • not on modern keyboard so : is often used; old period sign
+
+Same in modern Hebrew as Latin: ,.?!()[]{}-= (but periods may look like diamonds in typefaces). Do we need ’ right quote?
 [/code]
 
 
 [b]The Biblical Hebrew SIL US Standard layout (version 1.5):[/b]
+I like how this board makes room for the vowel niqqud, but for modern Hebrew they're at too common keys. Also, alef/ayin are missing.
     [url]https://studylib.net/doc/18565650/%D7%9C%D7%A1biblical-hebrew--sil--keyboard-manual[/url]
     [img]http://4.bp.blogspot.com/__cXdOf6zZ6A/TAnsBVfvVaI/AAAAAAAACYk/MVw1heKkKoA/s1600/silkbd.png[/img]
 
 
 [b]The Kansas University Hebrew KU Homophonic layout:[/b]
+"The KU homophonic keyboard attempts to reflect sound correspondences when possible"
     [url]https://egarc.ku.edu/installing-hebrew-ku-homophonic-keyboard-windows-7[/url]
     [img]https://egarc.ku.edu/sites/egarc.drupal.ku.edu/files/images/general/keyboards/hebrew/normal.png[/img]
 
 
 [b]Linux XKB 'phonetic' layout (from Slackware il.map):[/b]
+As done in Montdor's "Hebmak": https://github.com/DreymaR/BigBagKbdTrixXKB/pull/13
+Final letters (e.g. kaph, nun, etc.) are typed by 'shift+<letter>'.
 [code]
-AE  [ hebrew_aleph, hebrew_aleph	]
-B   [ hebrew_bet, hebrew_bet		]
-C   [ hebrew_zade, hebrew_finalzade	]
-D   [ hebrew_dalet, hebrew_dalet	]
-FP  [ hebrew_pe, hebrew_finalpe		]
-G   [ hebrew_gimel, hebrew_gimel	]
-H   [ hebrew_he, hebrew_he		]
-IJ  [ hebrew_yod, hebrew_yod		]
-K   [ hebrew_kaph, hebrew_finalkaph	]
-L   [ hebrew_lamed, hebrew_lamed	]
-M   [ hebrew_mem, hebrew_finalmem	]
-N   [ hebrew_nun, hebrew_finalnun	]
-O   [ hebrew_samech, hebrew_samech	]
-Q   [ hebrew_qoph, hebrew_qoph		]
-R   [ hebrew_resh, hebrew_resh		]
-S   [ hebrew_shin, hebrew_shin		]
-T   [ hebrew_taw, hebrew_tet		]
-UVW [ hebrew_waw, hebrew_waw		]
-X   [ hebrew_chet, hebrew_chet		]
-Y   [ hebrew_ayin, hebrew_ayin		]
-Z   [ hebrew_zain, hebrew_zain		]
+A   [ hebrew_aleph  , hebrew_aleph	]
+B   [ hebrew_bet    , hebrew_bet	]
+C   [ hebrew_zade   , hebrew_finalzade	]
+D   [ hebrew_dalet  , hebrew_dalet	]
+EY  [ hebrew_ayin   , hebrew_ayin	]
+FP  [ hebrew_pe     , hebrew_finalpe	]
+G   [ hebrew_gimel  , hebrew_gimel	]
+H   [ hebrew_he     , hebrew_he		]
+IJ  [ hebrew_yod    , hebrew_yod	]
+K   [ hebrew_kaph   , hebrew_finalkaph	]
+L   [ hebrew_lamed  , hebrew_lamed	]
+M   [ hebrew_mem    , hebrew_finalmem	]
+N   [ hebrew_nun    , hebrew_finalnun	]
+Q   [ hebrew_qoph   , hebrew_qoph	]
+R   [ hebrew_resh   , hebrew_resh	]
+S   [ hebrew_samech , hebrew_samech	]
+T   [ hebrew_taw    , hebrew_tet	]   // Tav/Tet
+UVO [ hebrew_waw    , hebrew_waw	]
+W   [ hebrew_shin   , hebrew_shin	]
+X   [ hebrew_chet   , hebrew_chet	]
+Z   [ hebrew_zain   , hebrew_zain	]
 
 =   [ equal, plus, hebrew_doublelowline, hebrew_doublelowline ]
 [/code]
 
 
+[h]Links[/h]
+https://en.wikipedia.org/wiki/Hebrew_keyboard (in particular, look at the niqqud layout based on Linux Lyx?)
+https://en.wikipedia.org/wiki/Romanization_of_Hebrew
+https://en.wikipedia.org/wiki/Unicode_and_HTML_for_the_Hebrew_alphabet
+https://en.wikipedia.org/wiki/Hebrew_punctuation
+https://en.wikipedia.org/wiki/Niqqud
+
+
 [h]Addendum[/h]
-Here are some more thoughts and additions – I've moved them into this post for now:
+Some more thoughts and additions:
 
-• I suggest moving sin to Shift+S? It belongs there phonetically, and that allows us to use Shift+W as shindot.
-   (Of course, sin could additionally be on AltGr+W to make it extra nice.)
-• Gershayim on double quote seems logical?
-• What about combining dagesh on Shift+. ? This would be logical to me. Or for better accessibility, use brackets for maqaf/dagesh!
-• I think qubutz needs to be on Shift+U?!
-• New Shequel should be on AltGr+4.
-• YodYod(Patah) should be on AltGr(Shift)+I
-• Similarly, VavVav on AltGr+V and VavYod on AltGr+Shift+V.
+• The most frequent letters in modern Hebrew, according to https://www.sttmedia.com/characterfrequency-hebrew are:
+    - י (yod 11%), ה (he), ו (vav 10%), ל (lamed 7%), א (alef 6%), ר (resh), ת (tav 5%), ב (bet), מ (mem), ש (shin 4.4%).
+    - Then, ע (ayin 3.2%), ם(m) נ(g) כ(k) ד(d) ח(x) ק(q) פ(p) ס(samekh 2.1%) ז ג צ ט ן ך (0.8%).
 
-• Looking at this [url=https://en.wikipedia.org/wiki/Romanization_of_Hebrew]article on romanization of Hebrew[/url], I realize the importance of geresh. :-)
-• Is there a rationale for your placements of sh'va and the hataf niqqud – and others?
+• One reason to use Latin vowel keys for final forms, is that niqqud aren't always used and these keys are well placed.
+    - The final-form placements suggested are based on physical closeness on QWERTY boards though?
+• I suggest placing sin on Shift+S? It belongs there phonetically, and that allows us to use Shift+W as shindot.
+    - Of course, sin could additionally be on AltGr+W to make it extra nice.
+    - Also, if samekh is rare... should actually sin be on S and samekh on Shift+s?
+• What about combining dagesh on Shift+. ? This would be logical to me.
+• Or for better accessibility, use brackets for geresh and dagesh (and maqaf?)! These are common accents.
+• The FJ and OU keys are still up? But given vav's frequency it might actually merit two keys (VU). Maybe... geresh on O?
+
+• Wrapman: Is there a rationale for your placements of sh'va and the hataf niqqud – and others?
+
+• https://jcuenod.github.io/bibletech/2018/01/01/an-even-better-hebrew-keyboard-layout/ says hatef (short) vowels are nice to include!
 • In the XKB Biblical SIL, there are quite a few other glyphs. I don't know what to make of them without further study; any ideas? Some examples:
 [code]
-	key <AE01> { [ 1,		U0021,		U05BD,		U0597 ] };		//1,			exclamation	meteg		revia
-	key <AE02> { [ 2,		U0598,		U05A2,		U05AE ] };	//2,			zarqa		atn. hafukh	zinor
-	key <AE03> { [ 3,		U05A8,		U0596,		U0599 ] };		//3,			qadma		tipeha		pashta
-	key <AE04> { [ 4,		U059C,		U05A5,		U05A0 ] };		//4,			geresh		merkha		tel. gedola
-	key <AE05> { [ 5,		U059E,		U05A6,		U05A9 ] };		//5,			gershayim		mer. kefula	tel qetana
-	key <AE06> { [ 6,		VoidSymbol,	U05AD,		U059F ] };		//6,			-			dehi			qar. para
-	key <AE07> { [ 7,		U05AC,		U05A3,		U05A1 ] };		//7,			iluy			munah		pazer
-	key <AE08> { [ 8,		U059D,		U059B,		U0595 ] };		//8,			g. muqdam	tevir			zaq. gadol
-	key <AE09> { [ 9,		U0029,		U05A7,		U0593 ] };		//9,			parenth.R		darqa		shalshelet
-	key <AE10> { [ 0,		U0028,		U05AA,		U05AF ] };		//0,			paren.L		yer. ben yomo	masora c.
-	key <AE11> { [ U05BE,		U2013,		U2014,		U05BF ] };	//Maqaf, 		en dash		em dash		rafe
-	key <AE12> { [ U05BC,		VoidSymbol,	U0591,		U25CC ] };	//Dagesh		-			etnahta		mark base
+<AE01> [ 1    ,  U0021,  U05BD,  U0597 ]  //1,      exclamation  meteg       revia
+<AE02> [ 2    ,  U0598,  U05A2,  U05AE ]  //2,      zarqa       atn. hafukh  zinor
+<AE03> [ 3    ,  U05A8,  U0596,  U0599 ]  //3,      qadma        tipeha      pashta
+<AE04> [ 4    ,  U059C,  U05A5,  U05A0 ]  //4,      geresh       merkha      tel. gedola
+<AE05> [ 5    ,  U059E,  U05A6,  U05A9 ]  //5,      gershayim   mer. kefula  tel qetana
+<AE06> [ 6    ,  --   ,  U05AD,  U059F ]  //6,      -            dehi        qar. para
+<AE07> [ 7    ,  U05AC,  U05A3,  U05A1 ]  //7,      iluy         munah       pazer
+<AE08> [ 8    ,  U059D,  U059B,  U0595 ]  //8,      g. muqdam    tevir       zaq. gadol
+<AE09> [ 9    ,  U0029,  U05A7,  U0593 ]  //9,      parenth.R    darqa       shalshelet
+<AE10> [ 0    ,  U0028,  U05AA,  U05AF ]  //0,      paren.L   yer. ben yomo  masora c.
+<AE11> [ U05BE,  U2013,  U2014,  U05BF ]  //Maqaf,  en dash      em dash     rafe
+<AE12> [ U05BC,  --   ,  U0591,  U25CC ]  //Dagesh  -            etnahta     mark base
 [/code]

@@ -3,35 +3,46 @@ layout: default
 title: THE BIG BAG THEORY
 ---
 
-<img class="headerImg" src="content/res/img/Tarmak-ETROI_Spectral_CAW.png" alt="Tarmak">
+<h3>DREYMAR'S BIG BAG of KEYBOARD TRICKS – THE NEW PAGES</h3>
 <p>
-    Since I started using Colemak in early 2007 I've been fiddling with it, trying out ideas from the forum and adding some of my own. Colemak per se is to me only the letter block mappings including the semicolon, and their shifted counterparts. I've always ended up with that intact and it has stood the test of time. If you look up the ergonomic mods below you'll see that I'm somewhat flexible about the geometry – but in reality that's about the physical keyboard design and a better hand position for me. The layout itself stays essentially the same!
+    Welcome to the new BigBag pages! The old ones are still found in the <a href="https://forum.colemak.com/topic/2315-dreymars-big-bag-of-keyboard-tricks-main-topic/"><b>BigBag topic at the Colemak Forum</b></a> as before. Our diligent Doozers are in the process of moving the important bits of it here, but if you're missing anything it may still be found by a stroll around the Forum Colemakum.  ( のvの) c[_]
 </p>
 
-<p>And so, <i>voila</i>, here it is!</p>
+<img class="headerImg" src="content/res/img/Tarmak-ETROI_Spectral_CAW.png" alt="Tarmak">
+<p>
+    Since I started using the <a href="https://colemak.com/">Colemak keyboard layout</a> in early 2007 I've been fiddling with it, trying out ideas from the <a href="https://forum.colemak.com/">Colemak forum</a> and adding some of my own. Colemak <i>per se</i> is to me only the letter block mappings. I've always ended up with that mostly intact and it has stood the test of time: Even though the Colemak-DH mod has a lot of traction these days, it's still just a minor adjustment to vanilla Colemak and I consider them the same basic layout at heart. If you look at the ergonomic mods described here you'll see that I'm somewhat flexible about geometry – but in reality that's about the physical keyboard design and a better hand position. The layout itself stays essentially the same.<br><br>
+    And so, <i>voila</i>, here it is! Have a look inside the Big Bag and see what you'll find!
+</p>
 
 <h3>HOWS:</h3>
 
-<p>I use my own edition of Farkas Máté's excellent Portable Keyboard Layout – PKL[eD] – to implement the Big Bag for Windows. For Linux, I've hacked up a bunch of modifications to the X.Org XKB files. Then I got me a USB-2-USB "QUICKIE" converter and implemented much of my tricks for that too; they should work for most programmable controllers. I'm pretty proud of it all, I must say! :)</p>
-<p>An advantage with my implementation is that in most cases you can pick and choose most of the enhancements as modules:</p>
+<p>
+    I use my own edition of Farkas Máté's excellent Portable Keyboard Layout – EPKL – to implement the Big Bag for Windows. For Linux, I've hacked up a bunch of modifications to the X.Org XKB files. Then I got me a USB-2-USB "QUICKIE" converter and implemented much of my tricks for that too; they should work for most programmable controllers. I'm pretty proud of it all, I must say! :)
+</p>
 
-<ul>
-    <li> The Angle/Wide ergo mods are models/remaps so they work with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user</li>
-    <li>The Extend layers and their switch key are "options" and should work with nearly any existing layout</li>
-    <li> The locale/phonetic, Mirrored and Tarmak layouts are separate layout variants selectable with various chooser keys as desired
-            Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.</li>
+<p>
+    An advantage with my implementation is that in most cases you can pick and choose most of the enhancements as modules:<br>
+<ul class="disc">
+    <li>The Angle/Wide ergo mods are models/remaps so they work with any layout you choose (including QWERTY or Dvorak ones) and may be chosen per user</li>
+    <li>The Extend layers and their switch key are options that should work with nearly any existing layout</li>
+    <li>The locale/phonetic, Mirrored and Tarmak layouts are separate layout variants</li>
 </ul>
+<br>
+    Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.
+</p>
 
 <div class="platform-box"></div>
 
 <h3>DONE:</h3>
 
 <ul class="disc">
+    <li>Get the Big Bag implementations (Win/EPKL, Linux/XKB, Controllers/TMK) up and going as GitHub repositories.</li>
+    <li>Present the Big Bag more hypertextually on GitHub web pages with a colemak.org address (still Work-In-Progress).</li>
     <li>Updated Rulemak and Bulmak to 2016 versions (<b>ru/by/ua, bg/rs/mk</b> – although only found in <b>ru</b> and <b>bg</b> so far): <br>
         East Slavic (Russian/Church/Belarus/Ukraina?) & South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?)</li>
     <li>Tarmak layouts for Curl-DH modders. The changes are minor, but should be easily accessible for the newcomer.</li>
-    <li>Get the Big Bag implementations up and going on GitHub.</li>
     <li>Training topic: Alternative fingering. Tricks like sliding in for the NK/KN bigram are useful for the somewhat advanced typist.</li>
+    <li>Transition from DHk (the 2017 standard) to DHm (SteveP's original DH mod) as the Colemak-DH standard</li>
 </ul>
 
 
@@ -40,14 +51,11 @@ title: THE BIG BAG THEORY
 </h3>
 
 <ul class="disc">
-    <li>Transition from DHk (the 2017 standard) to DHm (SteveP's original DH mod) as the Colemak-DH standard</li>
-    <li>Present the Big Bag more hypertextually on GitHub web pages (Work-In-Progress)</li>
     <li>Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?) [done in EPKL]</li>
     <li>A total of 4 Extend layers: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings – or whatever you like! [done in EPKL]</li>
     <li>Modifier keys for 4 Extend layers. For instance, Caps+{--, RShift, RAlt, RShift+RAlt}. Holding down Caps maintains the layer state.</li>
     <li>"Tap dance sequences", using dead keys and/or combines to release strings and things without having to hold modifier chords.</li>
-    <li>Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With <b>wrapman</b> and whoever's interested.)</li>
-    <li>Also an Arabic phonetic layout.</li>
+    <li>Fix the Hebrew phonetic ("Hebmak") layout, once we agree on how! (With <b>wrapman</b> and whoever's interested.). Also an Arabic phonetic layout.</li>
     <li>Develop and test a <a href="https://forum.colemak.com/topic/2389-vietnamese-colemak/">Vietnamese Colemak</a> (with <b>icedryst</b> and whoever's interested).</li>
     <li>More locale variants: <b>epo</b> (Esperanto), …? (Any suggestions, or comments on the existing ones?)</li>
 </ul>

@@ -1,12 +1,12 @@
 [h]SYM – a symbol key mod for the enthusiasts![/h]
 
-I feel that the semicolon gets a too good position in standard Colemak. It must be a remnant of the insane position it has in QWERTY that puts it inside the "letter block" so to speak, where it doesn't deserve to be. The three symbol keys that do deserve a position among the letters are period, comma and apostrophe/quote, since they occur frequently in text. Next up is the hyphen that's quite common and too far away on the top row.
+I feel that the semicolon gets a too good position in standard Colemak. It must be a remnant of the insane position it has in QWERTY that puts it inside the letter block so to speak, where it doesn't deserve to be. The three symbol keys that do deserve a position among the letters are period, comma and apostrophe/quote, since they occur frequently in text. Next up is the hyphen-minus that's quite common and too far away on the top row.
 
-Furthermore, using the Wide mod moves the right-hand symbol keys around already so I've already broken Shai's principle of leaving them alone in the name of simplicity. The ANSI Wide mod moves the apostrophe up and the /? key to the lower middle, while the ISO Wide mod moves /? up.
+Furthermore, by using the Wide mod I've already broken Shai's principle of leaving the symbol keys alone in the name of simplicity. The ANSI Wide mod moves the apostrophe up and the /? key to the lower middle, while the ISO Wide mod moves /? up; both move the brackets and plus/equals keys.
 
-My current feeling is that a semicolon-slash-apostrophe-hyphen rotation could be quite nice! Trying it out, it seems to make the apostrophe bigrams noticeably more comfy. It;s easier to stretch that pinky out upwards than opening the hand outwards, that;s my clear impression of what;s what.   ¯\_(ツ)_/¯
+My feeling is that a semicolon-slash-apostrophe-hyphen remap could be quite nice! Trying it out, it seems to make the apostrophe bigrams noticeably more comfy. It;s easier to stretch that pinky out upwards than opening the hand outwards, that;s my clear impression of what;s what.   ¯\_(ツ)_/¯
 
-But while we're at that... Let's take a closer look at [url=https://en.wikipedia.org/wiki/Punctuation_of_English#Frequency]punctuation[/url] vs [url=https://en.wikipedia.org/wiki/Letter_frequency]letter[/url] frequencies in English!  (✿◠‿◠)
+But while we're at that... Let's take a closer look at [url=https://en.wikipedia.org/wiki/Punctuation_of_English#Frequency]punctuation[/url] vs [url=https://en.wikipedia.org/wiki/Letter_frequency]letter[/url] frequencies in English!  ( のvの) c[_]
 
 On the [url=https://mdickens.me/typing/letter_frequency.html]McDickens letter frequency page[/url] we see the following relative frequencies for English, after the initial [b]SPC e t a o i n s r h l d c u m[/b]:
 
@@ -32,7 +32,7 @@ Since backslash is handled differently on ISO and ANSI boards, doesn't have a re
  SC    SL     Q     Z    PL    BS
  ;:    /?    qQ    zZ    =+    \|
 .13   .16   .10   .08   .06?   --
-.29   .15   .10   .06   .00   .00    (Note the huge variation in ;: frequency! SteveP reports 0.22+0.07 %.)
+.29   .15   .10   .06   .00   .00    (Note the huge variation in SC frequency! SteveP reports 0.22+0.07 %.)
 1.4   0.6   0.3   0.2   0.9   0.2
 [/code]
 
@@ -114,14 +114,14 @@ The full CurlAngleWideSym mod on an ANSI board, with semicolon on the BS key:
 [/code]
 
 [b][edit 2020-12:][/b]
-The non-Wide mods could benefit from an easier solution: Moving the brackets up! They aren't common at all unless you swap them for the parentheses – in which case they do become more common than at least SC SL PL. So if we stick to moving keys and not touching their state mappings, this should be a nice non-Wide Sym variant both for ISO and ANSI:
+The non-Wide mods could benefit from an easier solution: Lifting the brackets up! They aren't common at all unless you swap them for the parentheses – in which case they do become more common than SC SL PL etc. If, on the other hand, we stick to moving keys and not touching their state mappings, this should be a nice non-Wide Sym variant both for ISO and ANSI:
 [code]
 6   7   8   9   0   [   ]
 j   l   u   y   '   -   =        Sym mod
 h   n   e   i   o   ;   \        w/ bracket lift
 k   m   ,   .   /   _____
 [/code]
-The bracket lift swaps are quite unintrusive too, I feel. Colemak modders like Nyfee have already used them. We're down to three swaps (LB-MN RB-PL SC-QU) instead of cycles, and the Wide and non-Wide variants of the Sym mod become more similar with respect to the most common symbols.
+The bracket lift swaps are quite unintrusive too. Colemak modders like Nyfee have already used them. We're down to three swaps (LB-MN RB-PL SC-QU) instead of cycles, and the Wide and non-Wide variants of the Sym mod become more similar with respect to the most common symbols.
 
 [b][edit 2021-01:][/b]
 Same idea as before, but preserving the plus/equals key next to zero on the number row. The RB key stays in place this way:
@@ -131,4 +131,4 @@ j   l   u   y   '   -   ]        Sym mod
  h   n   e   i   o   ;   \       w/ left bracket lift
    k   m   ,   .   /   _____
 [/code]
- Also, the staggered brackets are simply moved into the middle as they are when the Wide mod is introduced.
+The Wide and non-Wide mods are more consistent this way, and the brackets are in the same relative positions.
