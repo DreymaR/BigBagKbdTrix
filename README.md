@@ -17,21 +17,17 @@ TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
-- Implement platform boxes at the appropriate places.
 - Implement SASS/LESS for easier reading of the styles code.
 - Replace forum links with github pages ones.
-- Fix the popup that shows during the first website visit.
 - Rework the 'Platforms' menu visualisation.
 	- Let it open without delay.
 	- Make it smoother so it doesn't glitch/flicker.
-	- Make the icons smaller.
+	- DONE: Make the icons smaller.
 	- Implement a sort of a 'Under construction' message for the Mac platform.
-- Switch the places of the menu and Platforms icons so that when opening the menu, the icon doesn't have to move all across the screen -> increases animation smoothness.
-- Change the style of spoilers so that they're more visible.
+- Add a smaller 'Platforms' menu to every platform-box.
 - Replace image links with local ones.
 - Keep original image sizes.
 - Better alignment of images and text around them.
-- Smaller logo.
 - Change font to 'Open Sans' for easier-on-the-eyes reading?
 - Additional padding at the bottom of 'code' blocks.
 - Fix class names
@@ -51,6 +47,11 @@ DONE
 	- Take out everything except the content of the 'main' tag into default.html.
 	- Take out header in a separate 'include'
 	- Figure out a way to edit some portion of the default.html per page basis
+- Switch the places of the menu and Platforms icons so that when opening the menu, the icon doesn't have to move all across the screen -> increases animation smoothness.
+- Implement platform boxes at the appropriate places.
+- Fix the popup that shows during the first website visit.
+- Change the style of spoilers so that they're more visible.
+- Smaller logo.
 
   
 HTML observations
@@ -59,7 +60,7 @@ HTML observations
 	- To bypass this, request a non-existing version of the page as that'll break the cache:
 		- https://dreymar.github.io/BigBagKbdTrix/index.html?version=cachebreak
 
-HTML tips from MarVel95, 2019-09-17:
+HTML tips from abrickinthehallway, 2019-09-17:
 ------------------------------------
 ```
 • https://developer.mozilla.org/ - documentation for everything that has to do with HTML and CSS

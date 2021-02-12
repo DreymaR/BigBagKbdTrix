@@ -17,6 +17,15 @@ links:
         url: extend-layers.html
   - title: ergonomy
     url: ergo-mods.html
+    sub:
+      - title: Angle/Wide
+        url: ergo-mods.html#angleWide
+      - title: DH/Curl
+        url: ergo-mods.html#dhCurl
+      - title: Symbols
+        url: ergo-mods.html#symbols
+      - title: Modifiers
+        url: ergo-mods.html#modifiers
   - title: variants
     url: other-layouts.html
   - title: trickery

@@ -135,7 +135,7 @@ a {
     content: "";
     display: inline-block;
     height: 60px;
-    width: 38px;
+    width: 34px;
     background-image: url("../res/img/w-img/platforms.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -198,7 +198,8 @@ a {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #fff;
+    background: #FFF center no-repeat;
+    background-size: 42px;
 }
 
 #platformIcons #linux {
@@ -247,17 +248,17 @@ main, #navbar {
     top: 0;
     z-index: 1;
     width: calc(100% - 40px);
-    height: 65px;
+    height: 60px;
     background-color: #AA77BB;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
 #navLogo {
     display: block;
-    width: 52px;
-    height: 52px;
+    width: 45px;
+    height: 45px;
     position: absolute;
-    right: calc(50% - 25px);
+    right: calc(50% - 21px);
     z-index: -1;
 }
 
@@ -269,7 +270,7 @@ main, #navbar {
 #menuIcon {
     position: absolute;
     right: 30px;
-    width: 40px;
+    width: 30px;
     z-index: 10;
     transition: right .2s ease-in-out;
 }
@@ -281,7 +282,7 @@ main, #navbar {
     border-radius: 3px;
     content: '';
     display: block;
-    height: 5px;
+    height: 4px;
     margin-bottom: 7px;
     transition: all .2s ease-in-out;
 }
@@ -291,7 +292,7 @@ main, #navbar {
 }
 
 #menuIcon.isActive:before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(10px) rotate(135deg);
     background-color: #AA77BB;
 }
 
@@ -548,6 +549,13 @@ code::-webkit-scrollbar {
     margin: 0;
 }
 
+.anchor::before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin: -80px 0 0;
+} 
+
 .spoiler {
     margin: 1em 0;
     padding: 1px 15px;
@@ -639,7 +647,6 @@ img.left {
 
 @media only screen and (min-width: 1100px) {
     #navbar {
-        height: 60px;
         flex-direction: row-reverse;
         justify-content: center;
     }
@@ -654,14 +661,14 @@ img.left {
         content: "PLATFORMS";
         position: absolute;
         top: calc(50% - 10px);
-        margin-left: 45px;
+        margin-left: 41px;
         font-size: 20px;
         font-weight: bold;
         color: #FFF;
     }
 
     #platformIcons {
-        right: 5px;
+        right: 8px;
         left: unset;
     }
 
@@ -758,8 +765,8 @@ img.left {
 
     #navLogo {
         position: unset;
-        width: 48px;
-        height: 48px;
+        width: 43px;
+        height: 43px;
         margin-right: 20px;
         margin-left: 10px;
     }
