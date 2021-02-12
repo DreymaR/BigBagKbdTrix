@@ -5,9 +5,9 @@ submenus.forEach(submenu => submenu.addEventListener('click', toggleSubmenu));
 
 let platformsEl = document.getElementById('platformIcons').children;
 let platforms = {
-    'linux': platformsEl[0],
-    'tmk': platformsEl[1],
-    'win': platformsEl[3]
+    'win': platformsEl[0],
+    'linux': platformsEl[1],
+    'tmk': platformsEl[2]
 }
 
 let platformWisePages = {

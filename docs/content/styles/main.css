@@ -142,19 +142,23 @@ a {
     background-position-y: 50%;
 }
 
+#platforms.linux:after,
+#platforms.win:after,
+#platforms.mac:after {
+    width: 31px;
+    margin-left: 3px;
+}
+
 #platforms.linux:after {
     background-image: url("../res/img/w-img/linux_white.svg");
-    width: 35px;
 }
 
 #platforms.win:after {
     background-image: url("../res/img/w-img/win_white.svg");
-    width: 35px;
 }
 
 #platforms.tmk:after {
     background-image: url("../res/img/w-img/tmk_white.svg");
-    width: 35px;
 }
 
 #platforms {
