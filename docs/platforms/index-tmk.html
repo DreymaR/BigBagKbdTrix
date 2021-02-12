@@ -1,43 +1,52 @@
-<p>
-    This post explains what a <b>QUICKIE USB-2-USB device</b> is, and what I've managed to implement on <b><a href="https://geekhack.org/index.php?topic=69169.0">Hasu's USB to USB keyboard converter</a></b> using his <b><a href="https://github.com/tmk/tmk_keyboard">TMK Keyboard Firmware Collection</a></b> toolkit. If you're eager to get started before reading the details, you may jump directly to the <b><a href="https://forum.colemak.com/post/18407/#p18407">Download and Install</a></b>, <b><a href="https://forum.colemak.com/post/18410/#p18410">Keymap Configuration</a></b> and <b><a href="https://forum.colemak.com/post/18411/#p18411">Device Flashing</a></b> posts below.
-</p>
+<div class="platform-content">
+    <p>
+        This page explains what a <b>QUICKIE USB-2-USB device</b> is, and what I've managed to implement on <b><a href="https://geekhack.org/index.php?topic=69169.0">Hasu's USB to USB keyboard converter</a></b> using his <b><a href="https://github.com/tmk/tmk_keyboard">TMK Keyboard Firmware Collection</a></b> toolkit. If you're eager to get started before reading the details, you may jump directly to the <b><a href="https://forum.colemak.com/post/18407/#p18407">Download and Install</a></b>, <b><a href="https://forum.colemak.com/post/18410/#p18410">Keymap Configuration</a></b> and <b><a href="https://forum.colemak.com/post/18411/#p18411">Device Flashing</a></b> posts below.
+    </p>
+    
+    <img src="https://www.dropbox.com/s/evcoirw5kpmji4d/USB2USB-x3_YangDigi_GeekHack-Topic80421_GadOE.jpg?raw=1" />
+    <p class="italic">
+        <a href="https://geekhack.org/index.php?topic=80421">GeekHack user yangdigi</a>'s comparison of USB-2-USB devices: Arduino Leonardo-type, Hasu's device and his own Pro Micro device. <br>
+        Scale: Hasu's device is about 6 cm (2") long.
+    </p>
+    
+    <p>
+        Look at those beauties, heh. I've decided to call this kind of device a <b>QUICKIE</b> (QWERTY USB In, Colemak Key Input Emulated)! ;-) More proper names are "<b>USB-2-USB</b>" or "<b>USB to USB converter</b>" device, as you may of course use it for non-Colemak layouts (and as my name is silly).
+    </p>
+    
+    <p>
+        This non-OS-specific solution doesn't have the full power of layout installs, but it's very interesting. A USB-to-USB device that plugs between the keyboard and whatever you're connecting your keyboard to, provides an XKB/Win/Mac/what-have-you independent solution that can accommodate many of my tricks! For people having to deal with zealous IT security rules, this may be the only solution short of getting an expensive remappable keyboard. It could let you type Colemak+Extend to, say, a PlayStation or other device where you can't control the layout directly. It could let you pair code using Colemak+Extend while your mate uses QWERTY (poor thing!) on the same computer. And it could be fun to make one yourself if you're adventurous and DIY oriented!
+    </p>
+    
+    <p>
+        The common solution is a microcontroller (such as Atmel's AtMega32 chips; Arduino Teensy 2+ or Pro Micro are good choices) with USB, coupled with a USB Host "shield" (separate little PCB) that lets you plug your keyboard into it. It'll mount itself as a HID keyboard, that is, a run-of-the-mill USB keyboard that almost any device accepts.
+    </p>
+    
+    <p>
+        There are other options, too: You could have a <b><a href="https://geekhack.org/index.php?topic=14618.0">PS/2-USB converter</a></b> instead, or various <b><a href="https://geekhack.org/index.php?topic=72052.0">keyboard controllers</a></b> attached to or built into the keyboard itself! Most of these can use the same "Unimap" layout code, so if you're interested in one of those variants then check it out.
+    </p>
+    
+    <p>
+        There are several possible ways of programming a USB-2-USB device. Essentially you have to:
+    </p>
+    
+    <ol class="bracket">
+        <li>Connect the device in <b>Bootloader</b> mode which means it can be programmed</li>
+        <li>Get some code and compile it for the device, or use a pre-compiled <b>HEX</b> file. There's even an online layout designer for a less techy option.</li>
+        <li><b>Flash</b> the .hex file to the device's static memory</li>
+        <li><b>Reset</b> the device (or just unplug and replug it) to reactivate application mode so it works</li>
+    </ol>
+    
+    <p>
+        An advantage of my TMK-based implementation is that you can pick and choose most of the enhancements as modules:
+    </p>
+    <ul class="disc">
+        <li>The AngleWide mods are keymap types so they work with any layout you choose, including QWERTY or Dvorak</li>
+        <li>The Extend layers and switch keys are options that should work with nearly any existing layout</li>
+        <li>The Curl(DH) mod for Colemak layouts uses a separate switch (together with CurlAngle keymaps)</li>
+        <li>Mirrored Colemak and Tarmak (transitional Colemak) are separate layouts.</li>
+    </ul>
 
-<img src="https://www.dropbox.com/s/evcoirw5kpmji4d/USB2USB-x3_YangDigi_GeekHack-Topic80421_GadOE.jpg?raw=1" />
-<p class="italic">
-    <a href="https://geekhack.org/index.php?topic=80421">GeekHack user yangdigi</a>'s comparison of USB-2-USB devices: Arduino Leonardo-type, Hasu's device and his own Pro Micro device. <br>
-    Scale: Hasu's device is about 6 cm (2") long.
-</p>
-
-<p>
-    Look at those beauties, heh. I've decided to call this kind of device a <b>QUICKIE</b> (QWERTY USB In, Colemak Key Input Emulated)! ;-) More proper names are "<b>USB-2-USB</b>" or "<b>USB to USB converter</b>" device, as you may of course use it for non-Colemak layouts (and as my name is silly).
-</p>
-
-<p>
-    This non-OS-specific solution doesn't have the full power of layout installs, but it's very interesting. A USB-to-USB device that plugs between the keyboard and whatever you're connecting your keyboard to, provides an XKB/Win/Mac/what-have-you independent solution that can accommodate many of my tricks! For people having to deal with zealous IT security rules, this may be the only solution short of getting an expensive remappable keyboard. It could let you type Colemak+Extend to, say, a PlayStation or other device where you can't control the layout directly. It could let you pair code using Colemak+Extend while your mate uses QWERTY (poor thing!) on the same computer. And it could be fun to make one yourself if you're adventurous and DIY oriented!
-</p>
-
-<p>
-    The common solution is a microcontroller (such as Atmel's AtMega32 chips; Arduino Teensy 2+ or Pro Micro are good choices) with USB, coupled with a USB Host "shield" (separate little PCB) that lets you plug your keyboard into it. It'll mount itself as a HID keyboard, that is, a run-of-the-mill USB keyboard that almost any device accepts.
-</p>
-
-<p>
-    There are other options, too: You could have a <b><a href="https://geekhack.org/index.php?topic=14618.0">PS/2-USB converter</a></b> instead, or various <b><a href="https://geekhack.org/index.php?topic=72052.0">keyboard controllers</a></b> attached to or built into the keyboard itself! Most of these can use the same "Unimap" layout code, so if you're interested in one of those variants then check it out.
-</p>
-
-<p>
-    There are several possible ways of programming a USB-2-USB device. Essentially you have to:
-</p>
-
-<ol class="bracket">
-<li><b>1)</b> Connect the device in <b>Bootloader</b> mode which means it can be programmed</li>
-</ol>
-<b>2)</b> Get some code and compile it for the device, or use a pre-compiled <b>HEX</b> file. There's even an online layout designer for a less techy option.
-<b>3)</b> <b>Flash</b> the .hex file to the device's static memory
-<b>4)</b> <b>Reset</b> the device (or just unplug and replug it) to reactivate application mode so it works
-
-An advantage of my TMK-based implementation is that you can pick and choose most of the enhancements as modules:
-• The AngleWide mods are keymap types so they work with any layout you choose, including QWERTY or Dvorak
-• The Extend layers and switch keys are options that should work with nearly any existing layout
-• The Curl(DH) mod for Colemak layouts uses a separate switch (together with CurlAngle keymaps)
-• Mirrored Colemak and Tarmak (transitional Colemak) are separate layouts.
-Freedom of choice through <b>modularity</b> is an ideal in the DreymaR world, as it is in Linux. :-)
+    <p>
+        Freedom of choice through <b>modularity</b> is an ideal in the DreymaR world, as it is in Linux. :-)
+    </p>
+</div>

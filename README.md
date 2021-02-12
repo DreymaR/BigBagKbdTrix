@@ -31,6 +31,8 @@ TODO/WIP For the BigBag web pages:
 - Replace image links with local ones.
 - Keep original image sizes.
 - Better alignment of images and text around them.
+- Smaller logo.
+- Change font to 'Open Sans' for easier-on-the-eyes reading?
 - Additional padding at the bottom of 'code' blocks.
 - Fix class names
 - Possibly use CSS for the spoilers mechanism and js only for the classes' adding and removing?

@@ -13,7 +13,8 @@ let platforms = {
 let platformWisePages = {
     'index' : {
         tmk: 1,
-        win: 1
+        win: 1,
+        linux: 1
     },
     'ergo-mods' : {
         linux: 1,
@@ -36,8 +37,7 @@ document.onload = function () {
         document.getElementById('platforms').classList.add(platform);
 
         let currentPagePath = getCurrentPageName();
-        currentPageName = currentPagePath.substring(0, currentPagePath.indexOf('.'))
-        
+        currentPageName = currentPagePath.substring(0, currentPagePath.indexOf('.'));
         if (platformWisePages[currentPageName][platform]) {
             fillPlatformBox(platform);
         }
@@ -190,11 +190,11 @@ function drawTutorialScreen() {
     platformIcon.id = 'tutorialPlatform';
 
     let arrow = document.createElement('img');
-    arrow.setAttribute('src', 'w-img/arrow.png');
+    arrow.setAttribute('src', 'content/res/img/w-img/arrow.png');
     arrow.id = 'tutorialArrow';
 
     let text = document.createElement('span');
-    text.innerText = 'Click here to toggle the desired platform.';
+    text.innerText = 'Click this button to toggle the desired platform.';
     text.id = 'tutorialText';
 
     let closeDiv = document.createElement('a');
@@ -202,7 +202,7 @@ function drawTutorialScreen() {
 
     let closeText = document.createElement('span');
     closeText.id = 'tutorialCloseText';
-    closeText.innerText = 'Got it';
+    closeText.innerText = 'Got it!';
 
     let closeButton = document.createElement('div');
     closeButton.id = 'tutorialCloseButton';
@@ -217,6 +217,9 @@ function drawTutorialScreen() {
     tutorialScreen.append(closeDiv);
 
     document.body.append(tutorialScreen);
+    setTimeout(function(){
+        tutorialScreen.classList.add('show');
+    }, 0);
     localStorage.setItem('website_visited', true);
 }
 

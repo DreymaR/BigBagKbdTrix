@@ -56,7 +56,7 @@ a {
 
 #tutorialClose {
     display: inline-block;
-    width: 100px;
+    width: 90px;
     height: 38px;
     position: absolute;
     top: 13px;
@@ -71,11 +71,12 @@ a {
     display: inline-block;
     position: absolute;
     top: 5px;
-    right: 6px;
+    right: 10px;
     font-family: Raleway-ExtraBold;
     font-size: 23px;
     font-weight: bold;
     color: #AA77BB;
+    cursor: pointer;
 }
 
 #tutorialCloseButton {
@@ -101,6 +102,7 @@ a {
     border: 3px solid #AA77BB;
 }
 
+[class='platform-box']:before,
 .platform-box.linux:before,
 .platform-box.win:before,
 .platform-box.tmk:before {
@@ -111,6 +113,10 @@ a {
     position: absolute;
     top: -19px;
     left: 10px;
+}
+
+[class='platform-box']:before {
+    background: #F7F7F7 url('../res/img/w-img/platforms_purple.png') no-repeat center / 66%;
 }
 
 .platform-box.linux:before {
@@ -239,9 +245,9 @@ main, #navbar {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
     width: calc(100% - 40px);
     height: 65px;
-    z-index: 1;
     background-color: #AA77BB;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
@@ -365,7 +371,15 @@ main, #navbar {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    -webkit-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+}
+
+#tutorialScreen.show {
+    opacity: 1;
 }
 
 #overlay {
@@ -499,8 +513,7 @@ ol.bracket > li {
 ol.bracket > li:before {
     counter-increment: list;
     content: counter(list) ") ";
-    position: absolute;
-    left: -1.4em;
+    font-weight: bold;
 }
 
 .center {
@@ -528,11 +541,30 @@ code::-webkit-scrollbar {
     margin: 1em 0;
     padding: 15px;
     background-color: #DEDEDE;
-    border-left: 7px solid #AA77BB;
+    border-left: 3px dotted #AA77BB;
 }
 
 .quote p {
     margin: 0;
+}
+
+.spoiler {
+    margin: 1em 0;
+    padding: 1px 15px;
+    background-color: #DEDEDE;
+    border-left: 3px solid #AA77BB;
+}
+
+.spoiler.isActive {
+    padding-bottom: 15px;
+}
+
+.spoiler > p {
+    margin: 5px 0;
+}
+
+.spoiler.isActive > p {
+    margin: 5px 0 15px;
 }
 
 .spoiler > p > span:before {
