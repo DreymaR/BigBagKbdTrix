@@ -1,0 +1,85 @@
+<div class="platform-content">
+    <p>
+        The Tarmak progressions work modularly with the AngleWide ergo mods.
+    </p>
+    
+    <p>
+        If you want to learn the brilliant Colemak-DH variant using a Tarmak progression, that's possible too! You just have to learn a CurlAngle mod before or with the 2nd Tarmak step which also gets tweaked a little so it moves B instead of G. The right-hand swaps (Hmk) should ideally be learnt in conjunction with Tarmak1-Curl because that moves K, but for SteveP's old variant I've deferred the HM swap to the last step. It could go wherever you like as it's separate, so feel free to edit the layout file if you desire.
+    </p>
+    
+    <pre><code>
+    * Tarmak2 - Transitional Colemak (ET)
+    * ,-----------------------------------------------------------.
+    * |     |  q|  w|  F|  r|  G|  y|  u|  i|  o|  p|   |   |     |
+    * |-----------------------------------------------------------|
+    * |      |  a|  s|  d|  T| *J|  h|  N|  E|  l|  ;|   |        |
+    * |-----------------------------------------------------------|
+    * |        |  z|  x|  c|  v|  b|  K|  m|   |   |   |          |
+    * `-----------------------------------------------------------'     
+    
+    * Tarmak2-Curl(DHk) - Transitional Colemak-Curl-DHk (ET)
+    * ,-----------------------------------------------------------.
+    * |     |  q|  w|  F|  r|  B|  y|  u|  i|  o|  p|   |   |     |
+    * |-----------------------------------------------------------|
+    * |      |  a|  s|  d|  T|  g|  K|  N|  E|  l|  ;|   |        |
+    * |-----------------------------------------------------------|
+    * |    |  z|  x|  c| *J|  v|  _|  M|  H|   |   |   |          |
+    * `-----------------------------------------------------------'
+    </code></pre>
+</div>
+
+<div class="platform-content">
+    <p>
+        The QUICKIE only partially supports locales per se, as it only sends key strokes that are then re-coded by your computer's layout settings. My four-level Unicode function remedies this somewhat by allowing some keys to have their AltGr/RAlt states remapped to an OS dependent Unicode input method. So I can set a standard US QWERTY layout on my computer and still have, e.g., the locale ÆæØøÅå letters where I'm used to.
+    </p>
+    
+    <p>
+        Before I made that function however, I used the locale layout installed on Windows. But I found that the default symbol key mappings are non-intuitive since they are quite different from the US ones which I'm used to now. So I've made a "hack" layout for myself that moves several symbol keys to where I feel they are better placed for me.
+    </p>
+    
+    <p>
+        For instance, instead of a [=+] key as on US keyboards, the Norwegian locale has [+?], [0=] etc. I can't sort that out to get the symbol placements I'm used to as a Colemak[eD] typist unless I choose a US locale layout on the computer I'm on – but I still need the Norwegian ÆØÅ letters so that won't work! I had to settle for, e.g., moving the +? key to the US /? key position so at least the question mark is in the right place. Not perfect, but the best I could do.
+    </p>
+</div>
+
+<div class="platform-content">
+    <p>
+        Phonetic layouts for non-latin scripts require a layout with that script installed on the computer or whatever you're typing to. If you select a QWERTY phonetic layout for a script and have a USB-2-USB Colemak keymap active, your resulting layout will be Colemak phonetic. If, however, you want to swap some key positions (for Rulemak/Bulmak for instance), a suitable new keymap must be made and compiled.
+    </p>
+</div>
+
+<div class="platform-content">
+    <p>
+        Mirrored layouts are easily implementable for the USB-2-USB device. I've provided a mirrored Colemak that obeys the Curl mod setting. This will usually be your second layout (layer 1) on top of Colemak, so in my map file it's set by using ACTIVELAYOUT 5 (Colemak) and SECONDLAYOUT 6 (mirrored Colemak).
+    </p>
+
+    <p>
+        If you want a non-Colemak mirrored layout, you're on your own writing one. If you do, please post it below so others can benefit! I haven't yet
+    </p>
+
+    <pre><code>
+Mirrored Colemak (used as switch layout for one-handed typing)
+* ,---.   ,---------------. ,---------------. ,---------------.
+* |  \|   |F12|F11|F10|F9 | |F8 |F7 |F6 |F5 | |F4 |F3 |F2 |F1 |
+* `---'   `---------------' `---------------' `---------------'
+* ,-----------------------------------------------------------.
+* |BSp|  -|  0|  9|  8|  7|  6|  5|  4|  3|  2|  1|  =|     ` |
+* |-----------------------------------------------------------|
+* | Ent |  ;|  Y|  U|  L|  J|  G|  P|  F|  W|  Q|Esc|Cps|   \ |
+* |-----------------------------------------------------------|
+* |    ' |  O|  I|  E|  N|  H|  D|  T|  S|  R|  A|  '|  Enter |
+* |-----------------------------------------------------------|
+* | Shift  |  /|  .|  ,|  M|  K|  B|  V|  C|  X|  Z|    Shift |
+* `-----------------------------------------------------------'
+    </code></pre>
+</div>
+
+<div class="platform-content">
+    <p>
+        Then, you may choose whether the switch key should be a normal Shift-type (switch) or a Caps-type (toggle) modifier. See how I've defined the "FPau" Fn key in my file; it's used as my definition for the Pause key but you can copy that to any other key as well. The normal way would be to set FPau to Shift/switch-type with "ACTION_LAYER_MOMENTARY(1)" (the 'PAUSBEHAVIOR 2' setting), and then replace the desired key in your active (layer0) layout with FPau if you wish to move it. If you go with a toggle modifier, you need to make that key transparent (TRNS) on the mirrored layout, or provide a similar toggle somewhere else or you won't be able to get back!
+    </p>
+
+    <p>
+        Tip: Sticky Shift and Ctrl could be useful for one-handed typing! See the STICKYMODS setting.
+    </p>
+</div>

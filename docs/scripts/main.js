@@ -27,7 +27,9 @@ let platformWisePages = {
         win: 1
     },
     'other-layouts' : {
-        
+        linux: 1,
+        tmk: 1,
+        win: 1
     }
 };
 
@@ -38,7 +40,7 @@ document.onload = function () {
 
         let currentPagePath = getCurrentPageName();
         currentPageName = currentPagePath.substring(0, currentPagePath.indexOf('.'));
-        if (platformWisePages[currentPageName][platform]) {
+        if (!currentPageName || (platformWisePages[currentPageName] && platformWisePages[currentPageName][platform])) {
             fillPlatformBox(platform);
         }
     }
@@ -101,7 +103,12 @@ function fillPlatformBox(platform) {
             spoilers.forEach(spoiler => spoiler.children[0].addEventListener('click', toggleSpoiler));
         }
     };
-    req.open('GET', './platforms/' + currentPageName + '-' + platform + '.html');
+    if(!currentPageName) {
+        req.open('GET', './platforms/' + 'index-' + platform + '.html');
+    }
+    else {
+        req.open('GET', './platforms/' + currentPageName + '-' + platform + '.html');
+    }
     req.send();
 }
 

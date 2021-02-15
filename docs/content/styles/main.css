@@ -450,6 +450,11 @@ main img:not(.headerImg) + p.italic {
     text-align: center;
 }
 
+main img:not(.headerImg).left + p.italic {
+    max-width: unset;
+    text-align: left;
+}
+
 main a {
     color: #2371A5;
 }
