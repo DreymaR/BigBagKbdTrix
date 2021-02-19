@@ -4,7 +4,7 @@ title: Dreymar's Big Bag Of Kbd Tricks
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   A treasure trove of keyboard wisdom. Layout tips, tricks, modifications and additions await in the Big Bag!  Centered around but not limited to the Colemak layout.
-url: "https://dreymar.github.io"
+url: "https://dreymar.github.io"    # url: "https://dreymar.colemak.org"
 github_username:  DreymaR
 
 links:
@@ -31,7 +31,7 @@ links:
   - title: trickery
     url: typing-tricks.html
   - title: links
-    url: yguest-links.html
+    url: guest-links.html
 
 
 # Build settings
