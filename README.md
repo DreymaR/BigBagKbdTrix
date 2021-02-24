@@ -2,9 +2,9 @@
 ## DreymaR's Big Bag of Keyboard Tricks - The Web Pages
 =======================================================
   
-https://dreymar.github.io/BigBagKbdTrix/index.html?version=new
+https://dreymar.colemak.org
   
-https://dreymar.github.io/BigBagKbdTrix/test-page.html?version=new
+https://dreymar.github.io/BigBagKbdTrix/index.html?version=new
   
 TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
 -------------------------------------------------------------------------
