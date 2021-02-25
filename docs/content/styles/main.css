@@ -729,6 +729,11 @@ img.left {
         background-color: #FFF;
         color: #AA77BB;;
     }
+    
+    .has-submenu {
+        min-width: 140px;
+        text-align: center;
+    }
 
     .has-submenu ul {
         display: none;
@@ -737,6 +742,7 @@ img.left {
     #menu .has-submenu li {
         margin-bottom: 0;
         padding: 10px 15px;
+        text-align: left;
     }
 
     #menu .has-submenu li:hover {

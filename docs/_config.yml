@@ -28,6 +28,14 @@ links:
         url: ergo-mods.html#modifiers
   - title: variants
     url: other-layouts.html
+  - title: tarmak
+    sub:
+      - title: Tmk Intro
+        url: tarmak-intro.html
+      - title: Tarmak
+        url: tarmak.html
+      - title: Tarmak-DH
+        url: tarmak-dh.html
   - title: trickery
     url: typing-tricks.html
   - title: links
