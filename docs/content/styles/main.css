@@ -86,7 +86,7 @@ a {
     width: 22px;
     height: 22px;
     font-size: 23;
-    background-image: url('..res/img/w-img/close.png');
+    background-image: url('..img/w-img/close.png');
     background-size: contain
 }
 
@@ -116,19 +116,19 @@ a {
 }
 
 [class='platform-box']:before {
-    background: #F7F7F7 url('../res/img/w-img/platforms_purple.png') no-repeat center / 66%;
+    background: #F7F7F7 url('../img/w-img/platforms_purple.png') no-repeat center / 66%;
 }
 
 .platform-box.linux:before {
-    background: #F7F7F7 url('../res/img/w-img/linux_purple2.svg') no-repeat center / 66%;
+    background: #F7F7F7 url('../img/w-img/linux_purple2.svg') no-repeat center / 66%;
 }
 
 .platform-box.win:before {
-    background: #F7F7F7 url('../res/img/w-img/win_purple.svg') no-repeat center / 86%;
+    background: #F7F7F7 url('../img/w-img/win_purple.svg') no-repeat center / 86%;
 }
 
 .platform-box.tmk:before {
-    background: #F7F7F7 url('../res/img/w-img/tmk_purple.svg') no-repeat center / 83%;
+    background: #F7F7F7 url('../img/w-img/tmk_purple.svg') no-repeat center / 83%;
 }
 
 #platforms:after, #tutorialPlatform {
@@ -136,7 +136,7 @@ a {
     display: inline-block;
     height: 60px;
     width: 34px;
-    background-image: url("../res/img/w-img/platforms.png");
+    background-image: url("../img/w-img/platforms.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
@@ -150,15 +150,15 @@ a {
 }
 
 #platforms.linux:after {
-    background-image: url("../res/img/w-img/linux_white.svg");
+    background-image: url("../img/w-img/linux_white.svg");
 }
 
 #platforms.win:after {
-    background-image: url("../res/img/w-img/win_white.svg");
+    background-image: url("../img/w-img/win_white.svg");
 }
 
 #platforms.tmk:after {
-    background-image: url("../res/img/w-img/tmk_white.svg");
+    background-image: url("../img/w-img/tmk_white.svg");
 }
 
 #platforms {
@@ -207,35 +207,35 @@ a {
 }
 
 #platformIcons #linux {
-    background-image: url("../res/img/w-img/linux_gray.svg");
+    background-image: url("../img/w-img/linux_gray.svg");
 }
 
 #platformIcons #tmk {
-    background-image: url("../res/img/w-img/tmk_gray.svg");
+    background-image: url("../img/w-img/tmk_gray.svg");
 }
 
 #platformIcons #mac {
-    background-image: url("../res/img/w-img/mac_gray.svg");
+    background-image: url("../img/w-img/mac_gray.svg");
 }
 
 #platformIcons #win {
-    background-image: url("../res/img/w-img/win_gray.svg");
+    background-image: url("../img/w-img/win_gray.svg");
 }
 
 #platforms.linux #platformIcons #linux {
-    background-image: url("../res/img/w-img/linux_purple.svg");
+    background-image: url("../img/w-img/linux_purple.svg");
 }
 
 #platforms.tmk #platformIcons #tmk {
-    background-image: url("../res/img/w-img/tmk_purple.svg");
+    background-image: url("../img/w-img/tmk_purple.svg");
 }
 
 #platform.mac #platformIcons #mac{
-    background-image: url("../res/img/w-img/mac_purple.svg");
+    background-image: url("../img/w-img/mac_purple.svg");
 }
 
 #platforms.win #platformIcons #win {
-    background-image: url("../res/img/w-img/win_purple.svg");
+    background-image: url("../img/w-img/win_purple.svg");
 }
 
 main, #navbar {

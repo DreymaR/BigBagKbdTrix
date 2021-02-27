@@ -26,7 +26,6 @@ TODO/WIP For the BigBag web pages:
 	- Implement a sort of a 'Under construction' message for the Mac platform.
 - Add a smaller 'Platforms' menu to every platform-box.
 - Replace image links with local ones.
-- Keep original image sizes.
 - Better alignment of images and text around them.
 - Change font to 'Open Sans' for easier-on-the-eyes reading?
 - Additional padding at the bottom of 'code' blocks.
@@ -52,6 +51,7 @@ DONE
 - Fix the popup that shows during the first website visit.
 - Change the style of spoilers so that they're more visible.
 - Smaller logo.
+- Keep original image sizes.
 
   
 HTML observations
