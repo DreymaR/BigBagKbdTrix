@@ -102,10 +102,10 @@ a {
     border: 3px solid #AA77BB;
 }
 
-[class='platform-box']:before,
-.platform-box.linux:before,
-.platform-box.win:before,
-.platform-box.tmk:before {
+[class='platform-box'] .platform-toggle,
+.platform-box.linux .platform-toggle,
+.platform-box.win .platform-toggle,
+.platform-box .platform-toggle {
     content: '';
     display: inline-block;
     width: 35px;
@@ -115,20 +115,32 @@ a {
     left: 10px;
 }
 
-[class='platform-box']:before {
+[class='platform-box'] .platform-toggle {
     background: #F7F7F7 url('../img/w-img/platforms_purple.png') no-repeat center / 66%;
 }
 
-.platform-box.linux:before {
+.platform-box.linux .platform-toggle {
     background: #F7F7F7 url('../img/w-img/linux_purple2.svg') no-repeat center / 66%;
 }
 
-.platform-box.win:before {
+.platform-box.win .platform-toggle {
     background: #F7F7F7 url('../img/w-img/win_purple.svg') no-repeat center / 86%;
 }
 
-.platform-box.tmk:before {
+.platform-box.tmk .platform-toggle {
     background: #F7F7F7 url('../img/w-img/tmk_purple.svg') no-repeat center / 83%;
+}
+
+.platform-box.win #win {
+    background-image: url(../img/w-img/win_purple.svg);
+}
+
+.platform-box.linux #linux {
+    background-image: url(../img/w-img/linux_purple.svg);
+}
+
+.platform-box.tmk #tmk {
+    background-image: url(../img/w-img/tmk_purple.svg);
 }
 
 #platforms:after, #tutorialPlatform {
@@ -170,22 +182,62 @@ a {
     padding: 0;
 }
 
-#platforms:hover #platformIcons{
+#platforms:hover .platform-picker {
     display: flex;
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
 }
 
-#platformIcons {
+.platform-picker.mini {
+    top: 45px;
+    right: unset;
+    left: -28px;
+    width: 90px;
+    height: 95px;
+    padding: 5px 5px 5px 9px;
+    border-radius: 20px;
+}
+
+.platform-picker.mini:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -11px;
+    left: 30px;
+
+    border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
+    border-bottom: 14px solid #AA77BB;
+}
+
+.platform-box .platform-toggle:hover .platform-picker.mini {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.platform-picker.mini a {
+    width: 40px;
+    height: 40px;
+    background-size: 33px;
+}
+
+.platform-picker.mini :before + a {
+    margin-right: 2px;
+}
+
+.platform-picker {
     opacity: 0;
     visibility: hidden;
     display: none;
     position: absolute;
     left: 0;
-    top: 60px;
-    width: 120px;
-    height: 125px;
-    padding: 5px 5px 5px 15px;
+    top: 59px;
+    width: 100px;
+    height: 105px;
+    padding: 5px 5px 5px 13px;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -197,44 +249,44 @@ a {
     transition: all .2s ease-in-out;
 }
 
-#platformIcons a {
+.platform-picker a {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 43px;
+    height: 43px;
     border-radius: 50%;
     background: #FFF center no-repeat;
-    background-size: 42px;
+    background-size: 36px;
 }
 
-#platformIcons #linux {
+.platform-picker #linux {
     background-image: url("../img/w-img/linux_gray.svg");
 }
 
-#platformIcons #tmk {
+.platform-picker #tmk {
     background-image: url("../img/w-img/tmk_gray.svg");
 }
 
-#platformIcons #mac {
+.platform-picker #mac {
     background-image: url("../img/w-img/mac_gray.svg");
 }
 
-#platformIcons #win {
+.platform-picker #win {
     background-image: url("../img/w-img/win_gray.svg");
 }
 
-#platforms.linux #platformIcons #linux {
+#platforms.linux .platform-picker #linux {
     background-image: url("../img/w-img/linux_purple.svg");
 }
 
-#platforms.tmk #platformIcons #tmk {
+#platforms.tmk .platform-picker #tmk {
     background-image: url("../img/w-img/tmk_purple.svg");
 }
 
-#platform.mac #platformIcons #mac{
+#platform.mac .platform-picker #mac{
     background-image: url("../img/w-img/mac_purple.svg");
 }
 
-#platforms.win #platformIcons #win {
+#platforms.win .platform-picker #win {
     background-image: url("../img/w-img/win_purple.svg");
 }
 
@@ -674,11 +726,6 @@ img.left {
         font-size: 20px;
         font-weight: bold;
         color: #FFF;
-    }
-
-    #platformIcons {
-        right: 8px;
-        left: unset;
     }
 
     #menu {
