@@ -97,6 +97,8 @@ An advantage with my implementations is that in most cases you can pick and choo
 Freedom of choice through modularity is an ideal in the DreymaR world, as it is in Linux.
 
 
+[h]DONE/TODO[/h]
+[spoiler]
 [h]DONE:[/h]
 • Updated Rulemak and Bulmak to 2016 versions ([b]ru/by/ua, bg/rs/mk[/b] – although only found in [b]ru[/b] and [b]bg[/b] so far):
     East Slavic (Russian/Church/Belarus/Ukraina?) & South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?)
@@ -116,6 +118,8 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as it is 
 • Also an Arabic phonetic layout.
 • Develop and test a [url=https://forum.colemak.com/topic/2389-vietnamese-colemak/]Vietnamese Colemak[/url] (with [user]IceDryst[/user] and whoever's interested).
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)
+[/spoiler]
+
 
 
 [h]LASTLY:[/h]
