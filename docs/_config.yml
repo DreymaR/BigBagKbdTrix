@@ -29,6 +29,7 @@ links:
   - title: variants
     url: other-layouts.html
   - title: tarmak
+    url: tarmak-intro.html
     sub:
       - title: Tmk Intro
         url: tarmak-intro.html

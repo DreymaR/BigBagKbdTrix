@@ -33,8 +33,9 @@ let platformWisePages = {
     }
 };
 
+let currentPlatformBoxContent;
+
 document.onload = function () {
-    let currentPlatformBoxContent;
     updatePlatformBoxes();
     Object.keys(platforms).forEach(platform => function (){
         platforms[platform].addEventListener('click',
@@ -81,23 +82,25 @@ function fillPlatformBox(platform) {
                     platformContentArr[platformDiv] = currentPlatformDiv.substring(0, currentPlatformDiv.lastIndexOf('</div>'));
                 }
 
+                let platformBoxesCurrent = [];
+
                 for (let platformBox in platformBoxes ) {
                     if (Object.hasOwnProperty.call(platformBoxes, platformBox)) {
-                        if (platformBoxes[platformBox].classList.value.includes("skip-" + platform)) {
-                            platformBoxes[platformBox].remove();
+                        if (!platformBoxes[platformBox].classList.value.includes("skip-" + platform)) {
+                            platformBoxesCurrent.push(platformBoxes[platformBox]);
                         }
                     }
                 }
 
                 for (let i=0; i<platformBoxes.length; i++) {
                     if (platformContentArr[i]) {
-                        platformBoxes[i].innerHTML = platformContentArr[i];
+                        platformBoxesCurrent[i].innerHTML = platformContentArr[i];
                         Object.keys(platforms).forEach(platform => function(){
-                            if(platformBoxes[i].className.includes(platform)) {
-                                platformBoxes[i].classList.remove(platform);
+                            if(platformBoxesCurrent[i].className.includes(platform)) {
+                                platformBoxesCurrent[i].classList.remove(platform);
                             }
                         }());
-                        platformBoxes[i].className += ' ' + platform;
+                        platformBoxesCurrent[i].className += ' ' + platform;
                     }
                 }
             }
@@ -118,37 +121,42 @@ function fillPlatformBox(platform) {
 }
 
 function appendMiniPlatformPickers() {
-    Array.from(platformBoxes).forEach(platformBox => function(){
-        let platformToggle = document.createElement('div');
-        platformToggle.classList.add('platform-toggle');
-        
-        let platformPicker = document.getElementsByClassName('platform-picker')[0];
-        let miniPlatformPicker = platformPicker.cloneNode(true);
-        miniPlatformPicker.classList.add('mini');
-        platformToggle.appendChild(miniPlatformPicker);
+    let platform = sessionStorage.getItem('platform');
+    if (platform && !currentPlatformBoxContent) {
+        Array.from(platformBoxes).forEach(platformBox => function(){
+            if (!platformBox.className.includes('skip-' + platform)) {
+                let platformToggle = document.createElement('div');
+                platformToggle.classList.add('platform-toggle');
+                
+                let platformPicker = document.getElementsByClassName('platform-picker')[0];
+                let miniPlatformPicker = platformPicker.cloneNode(true);
+                miniPlatformPicker.classList.add('mini');
+                platformToggle.appendChild(miniPlatformPicker);
 
-        platformBox.insertBefore(platformToggle, platformBox.firstChild);
-    }());
-    
-    let platformPickers = document.getElementsByClassName('platform-picker mini');
-    for (let key in platformPickers) {
-        if (Object.hasOwnProperty.call(platformPickers, key)) {
-            let platformPicker = platformPickers[key];
-
-            let platformButtonsEl = platformPicker.children;
-
-            let platformButtons = {
-                'win': platformButtonsEl[0],
-                'linux': platformButtonsEl[1],
-                'tmk': platformButtonsEl[2]
+                platformBox.insertBefore(platformToggle, platformBox.firstChild);
             }
-            Object.keys(platformButtons).forEach(platformButton => function (){
-                platformButtons[platformButton].addEventListener('click',
-                    function () {
-                        togglePlatform(platformButton);
-                    }
-                );
-            }())
+        }());
+        
+        let platformPickers = document.getElementsByClassName('platform-picker mini');
+        for (let key in platformPickers) {
+            if (Object.hasOwnProperty.call(platformPickers, key)) {
+                let platformPicker = platformPickers[key];
+
+                let platformButtonsEl = platformPicker.children;
+
+                let platformButtons = {
+                    'win': platformButtonsEl[0],
+                    'linux': platformButtonsEl[1],
+                    'tmk': platformButtonsEl[2]
+                }
+                Object.keys(platformButtons).forEach(platformButton => function (){
+                    platformButtons[platformButton].addEventListener('click',
+                        function () {
+                            togglePlatform(platformButton);
+                        }
+                    );
+                }())
+            }
         }
     }
 }
@@ -171,12 +179,17 @@ function updatePlatformBoxes() {
         platformBoxes = document.getElementsByClassName('platform-box');
         if (platformBoxes.length) {
             Object.keys(platforms).forEach(platform => function(){
-                if(platformBoxes[0].className.includes(platform)) {
-                    platformBoxes[0].classList.remove(platform);
-                    if (currentPlatformBoxContent) {
-                        platformBoxes[0].innerHTML = currentPlatformBoxContent;
+                Array.from(platformBoxes).forEach(platformBox => {
+                    if (platformBox.classList.contains(platform)) {
+                        platformBox.classList.remove(platform);
+                        if (currentPlatformBoxContent) {
+                            platformBox.innerHTML = currentPlatformBoxContent;
+                        }
+                        else {
+                            platformBox.innerHTML = "";
+                        }
                     }
-                }
+                })
             }());
         }
     }
@@ -210,6 +223,7 @@ function togglePlatform(platform) {
         sessionStorage.setItem('platform', platform);
     }
     
+
     updatePlatformBoxes();
 }
 
