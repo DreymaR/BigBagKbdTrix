@@ -41,7 +41,7 @@ This is the [b]Big Bag of Keyboard Tricks Main Topic[/b], in which I go into det
 
 Since I started using Colemak in early 2007 I've been fiddling with it, trying out ideas from the forum and adding some of my own. Colemak [i]per se[/i] is to me only the letter mappings. I've always ended up with those intact, as Colemak has stood the test of time and experimentation. If you look up the ergonomic mods below you'll see that I'm somewhat flexible about the geometry – but in reality that's about the physical keyboard design and a better hand position for me. The layout itself stays essentially the same!
 
-And so, [i]voila[/i], here it is:
+And so, [i]voila[/i], here it is. Have a look inside the Big Bag and see what you'll find!  ( のvの) c[_]
 
 [h]DREYMAR'S BIG BAG OF KEYBOARD TRICKS[/h]
 
@@ -100,31 +100,30 @@ Freedom of choice through modularity is an ideal in the DreymaR world, as it is 
 [h]DONE/TODO[/h]
 [spoiler]
 [h]DONE:[/h]
+• Get the Big Bag implementations (Win/EPKL, Linux/XKB, Controllers/TMK) up and going as GitHub repositories.
+• Present the Big Bag more hypertextually on GitHub web pages with a colemak.org address (still Work-In-Progress).
 • Updated Rulemak and Bulmak to 2016 versions ([b]ru/by/ua, bg/rs/mk[/b] – although only found in [b]ru[/b] and [b]bg[/b] so far):
     East Slavic (Russian/Church/Belarus/Ukraina?) & South Slavic (Bulgarian/ISO-9/Serbia(Cyrillic)/Macedonia?)
 • Tarmak layouts for Curl-DH modders. The changes are minor, but should be easily accessible for the newcomer.
-• Get the Big Bag implementations up and going on GitHub.
 • Training topic: Alternative fingering. Tricks like sliding in for the NK/KN bigram are useful for the somewhat advanced typist.
+• Transition from DHk (the 2017 standard) to DHm (SteveP's original DH mod) as the Colemak-DH standard
 
 
 [h]TODO:[/h]
-• Transition from DHk (the 2017 standard) to DHm (SteveP's original DH mod) as the Colemak-DH standard
-• Present the Big Bag more hypertextually on GitHub web pages (Work-In-Progress)
 • Dead keys with currency on AltGr+4, Greek on AltGr+5, tech/math stuff on AltGr+= and IPA++ on AltGr+Shift+numbers(?) [done in EPKL]
 • A total of 4 Extend layers: Basic/nav/edit, NumPad++, Coding/etc, Hotstrings – or whatever you like! [done in EPKL]
 • Modifier keys for 4 Extend layers. For instance, Caps+{--, RShift, RAlt, RShift+RAlt}. Holding down Caps maintains the layer state.
 • "Tap dance sequences", using dead keys and/or combines to release strings and things without having to hold modifier chords.
-• Fix the [url=https://forum.colemak.com/topic/1458-locale-colemak-variants-for-several-countries-the-edreymar-way/#p19971]Hebrew phonetic Colemak[/url] ("Hebmak") layout, once we agree on how! (With [user]wrapman[/user] and whoever's interested.)
-• Also an Arabic phonetic layout.
+• Fix the [url=https://forum.colemak.com/topic/1458-locale-colemak-variants-for-several-countries-the-edreymar-way/#p19971]Hebrew phonetic Colemak[/url] ("Hebmak") layout, once we agree on how!.
+• Also an Arabic phonetic Colemak variant, building on the same principles as the Hebrew one.
 • Develop and test a [url=https://forum.colemak.com/topic/2389-vietnamese-colemak/]Vietnamese Colemak[/url] (with [user]IceDryst[/user] and whoever's interested).
 • More locale variants: [b]epo[/b] (Esperanto), …? (Any suggestions, or comments on the existing ones?)
 [/spoiler]
 
 
-
 [h]LASTLY:[/h]
 • Best of luck with Colemak and its many marvelous mods!  ♪～╰(＊°▽°＊)╯～♪
-• If you do get stuck, here's a little [b][url=https://forum.colemak.com/topic/2157-joking-around/]light entertainment[/url][/b] to hopefully Shift your mo(o)d. ;-)
+• If you do get stuck, here's a little [b][url=https://forum.colemak.com/topic/2157-joking-around/]light entertainment[/url][/b] to hopefully Shift your mo(o)d.
 
 [quote="Typealong Clackity"]
 Colemak's connected to the ... Curl* mod,
