@@ -17,6 +17,14 @@ TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
+- Add the Training Topic. Under Trickery, or separately? Update its link on the links page.
+- In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
+	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
+	- Also make platform boxes for the Tarmak implementations part
+- In extend-layers.html, replace the "Head over to" part with proper platform box tips for Extend
+- Make bookmark links for page chapters, and add them to the menus. Example: DK mappings; Variants.
+- Make an imgtxt class with italic and a line break after it? For image subtexts.
+
 - Implement SASS/LESS for easier reading of the styles code.
 - Replace forum links with github pages ones.
 - Rework the 'Platforms' menu visualisation.
@@ -24,8 +32,7 @@ TODO/WIP For the BigBag web pages:
 	- Make it smoother so it doesn't glitch/flicker.
 	- DONE: Make the icons smaller.
 	- Implement a sort of a 'Under construction' message for the Mac platform.
-- Add a smaller 'Platforms' menu to every platform-box.
-- Replace image links with local ones.
+		- Link to the MKBorregaard topic there.
 - Better alignment of images and text around them.
 - Change font to 'Open Sans' for easier-on-the-eyes reading?
 - Additional padding at the bottom of 'code' blocks.
@@ -33,13 +40,11 @@ TODO/WIP For the BigBag web pages:
 - Possibly use CSS for the spoilers mechanism and js only for the classes' adding and removing?
 - Validate html and css files
 - Add link to the git repo?
-- Make one res (img and files) folder from the Dropbox Public one, and one web for the page files
-	- TODO: Put fonts, css and js in the web/content folder
-	- TODO: Update all content image links to res locations
-	- TODO: Change all res/img links to the old subfolder structure so images are sorted by subject again
   
 DONE
 ----
+- Update all content image links to local res/ locs. Replace Dropbox links with res/. Replace res/img/.
+- Add a smaller 'Platforms' menu to every platform-box.
 - Make a Co browser tab (fav)icon
 	- See https://stackoverflow.com/questions/4888377/how-to-add-a-browser-tab-icon-favicon-for-a-website
 - Implement Jekyll in order to remove duplicating code!

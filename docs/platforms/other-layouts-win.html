@@ -1,55 +1,35 @@
 <div class="platform-content">
     <p>
         See below for a download of all four steps plus "Tarmak0" (a.k.a. QWERTY) and "Tarmak5" (a.k.a. Colemak).
-    </p>
-
-    <p>
-    	These transitional layouts were implemented as VirtualKey ones, so any AltGr and dead key mappings you'll get will be the same as on your installed keyboard layout in Windows. The layouts should support Extend mode fully. If you define several of them in your EPKL settings file, you can swiftly change between them should you wish to.
-    </p>
-
-    <p>
+    </p>    <p>
+        These transitional layouts were implemented as VirtualKey ones, so any AltGr and dead key mappings you'll get will be the same as on your installed keyboard layout in Windows. The layouts should support Extend mode fully. If you define several of them in your EPKL settings file, you can swiftly change between them should you wish to.
+    </p>    <p>
         My EPKL settings file comes with lines prepared for Tarmak progressions that you may simply uncomment (commenting out whatever else 'layout =' lines are active there) and start using. You may choose between a progression to vanilla Colemak or to Colemak-DH (see above). Wide mods are not (yet) available for Tarmak, but they may not be that necessary as you can always go Wide after you've reached the goal.
+    </p>    <p>
+        There's a help image for each step, that you can see or hide with the shortcut Ctrl+Shift+1 (configurable in pkl.ini). Holding Shift will show the current and previous steps in different spectral colors.
     </p>
-
-    <p>
-        There's a help image for each step, that you can see or hide with the shortcut Ctrl+Shift+1 (configurable in pkl.ini). Holding Shift will show the current and previous steps in different colors.
-    </p>
-
-   <img class="smallImg left" src="https://www.dropbox.com/s/25jf2k2tki1ua9k/TarmakCurl3_R_Spect.png?raw=1" alt="" />
-    <p class="italic">
-        The help image for the third Tarmak-Curl step. Unshifted version.
-    </p>
+    <img class="smallImg left" src="res/cmk/Tarmak/Tm3-ISO-CA_s0_EPKL.png" alt="" />
+    <img class="smallImg left" src="res/cmk/Tarmak/Tm3-Ortho-C_s1_EPKL.png" alt="" />
+    <p class="italic">EPKL help images for the third Tarmak-Curl(DH) step. Unshifted ISO-CA and shifted Ortho versions.</p>
 </div>
 
 <div class="platform-content">
     <p>
         (Warning: In some cases you'll have to change the PKL files yourself, or ask for help. Check the Layouts\Colemak-eD folder to see which ones exist already.)
-    </p>
-
-    <p>
+    </p>    <p>
         The locale layouts I've provided so far include the "Latin" layouts for French(BeCaFr)/Portuguese(BrPt)/Spanish(EsLat)/Italian(It), "Germanic", Slavic and some others. These are for the most part set up with the CurlAngleWide mod but you could change that in the [eD_info] of the layout – however, the help images would have to be remade to reflect the changes. The locale layouts may work for, say, a US keyboard too, but you'd miss an important key in OEM_102.
-    </p>
-
-        <p>
-            To make your own locale variant you'll want to copy the layout folder for my eD layout over to a new one, renaming it (and putting that new name into your pkl.ini file so the program can choose it!) and then editing the layout.ini file in there.
-        </p>
-
-    <p>
+    </p>    <p>
+        To make your own locale variant you'll want to copy the layout folder for my eD layout over to a new one, renaming it (and putting that new name into your pkl.ini file so the program can choose it!) and then editing the layout.ini file in there.
+    </p>    <p>
         I don't quite recommend the "Keep Local Symbols" variants but if you do wish to keep your symbol keys unmapped it's quite simple to just comment them out in the layout. Sometimes though, there's a base layout that maps these symbols so you'd have to do it in that file instead.
-    </p>
-
-    <p>
+    </p>    <p>
         If you want help images for a locale variant that doesn't have them already, you can use Inkscape (portable or installed) with the PKL[eD] Help Image Generator. Or ask me, if it's a variant others could be interested in.
-    </p>
-
-    <p>
+    </p>    <p>
         The dead key images can for the most part be borrowed from another layout with a compatible board type and ergo mod. A few glyphs may be off but for the most part that won't matter to you. If you need the combining accents released by øØœŒ in my layouts, just add the required letters somewhere in yours.
     </p>
-
     <p>
         Example from my layout file showing Norwegian vs standard ISO mappings:
     </p>
-
     <pre><code>
 SC013 = P    1    p    P    --    π    ¶    ; QWERTY rR
 SC014 = G    5    g    G    --    ŋ    Ŋ    ; QWERTY tT
@@ -57,11 +37,9 @@ SC014 = G    5    g    G    --    ŋ    Ŋ    ; QWERTY tT
 SC015 = OEM_4    1    å    Å    *{Esc}    [    {    ; QWERTY [{ ; Cmk-eD-No
 SC016 = J    5    j    J    --    ʃ    Ʃ    ; QWERTY yY
     </code></pre>
-
     <p>
         Note the following:
     </p>
-
     <ul class="disc">
         <li>The OEM_4 (Left Bracket) key has scan code SC015 so it's in the middle now; this is the Wide ergonomic mod in action</li> 
         <li>The Norwegian Åå letter on LBr is on lv1-2 mappings due to this being my Norwegian locale layout;</li> 
@@ -73,9 +51,7 @@ SC016 = J    5    j    J    --    ʃ    Ʃ    ; QWERTY yY
 <div class="platform-content">
     <p>
         EPKL supports multiple Extend layers. This could be used to get Mirrored Colemak by replacing the Extend mappings, usually the first layer (Ext1). You can't have both at the same time without using additional modifiers unfortunately. And that's too bad since the Mirrored plus Extend combo would be a damn handy thing for one-handed typers!
-    </p>
-
-    <p>
+    </p>    <p>
         If you look into the _eD_Extend.ini file you'll find a Mirror section at the very end. It's still a work-in-progress though; let me know if you want to use it and need help! It may be a better idea to make a mirrored layout and make a modifier for it though, but I'll have to look into that option.
     </p>
 </div>
