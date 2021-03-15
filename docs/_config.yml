@@ -15,19 +15,27 @@ links:
         url: colemaked.html
       - title: Extend Layers
         url: extend-layers.html
+      - title: Dead Keys
+        url: key-mappings.html#deadkeys
   - title: ergonomy
     url: ergo-mods.html
     sub:
       - title: Angle/Wide
-        url: ergo-mods.html#angleWide
+        url: ergo-mods.html#AngleWide
       - title: DH/Curl
-        url: ergo-mods.html#dhCurl
+        url: ergo-mods.html#CurlDH
       - title: Symbols
         url: ergo-mods.html#symbols
       - title: Modifiers
         url: ergo-mods.html#modifiers
   - title: variants
     url: other-layouts.html
+      - title: Locales
+        url: other-layouts.html#locales
+      - title: Scripts
+        url: other-layouts.html#scripts
+      - title: One-Hand
+        url: other-layouts.html#mirror
   - title: tarmak
     url: tarmak-intro.html
     sub:
@@ -37,8 +45,22 @@ links:
         url: tarmak.html
       - title: Tarmak-DH
         url: tarmak-dh.html
+      - title: Tarmak FAQ
+        url: tarmak.html#faq
   - title: trickery
     url: typing-tricks.html
+      - title: Training
+        url: typing-tricks.html#training
+      - title: Screens
+        url: typing-tricks.html#swiping
+      - title: Gaming
+        url: typing-tricks.html#gaming
+      - title: USB-2-USB
+        url: typing-tricks.html#usb2usb
+      - title: Keycaps
+        url: typing-tricks.html#keycaps
+      - title: Images
+        url: typing-tricks.html#images
   - title: links
     url: guest-links.html
 
