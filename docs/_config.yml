@@ -30,6 +30,7 @@ links:
         url: ergo-mods.html#modifiers
   - title: variants
     url: other-layouts.html
+    sub:
       - title: Locales
         url: other-layouts.html#locales
       - title: Scripts
@@ -49,6 +50,7 @@ links:
         url: tarmak.html#faq
   - title: trickery
     url: typing-tricks.html
+    sub:
       - title: Training
         url: typing-tricks.html#training
       - title: Screens
