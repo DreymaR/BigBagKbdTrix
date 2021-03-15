@@ -13,7 +13,7 @@ links:
     sub:
       - title: Colemak[eD]
         url: colemaked.html
-      - title: Extend Layers
+      - title: Extend!!!
         url: extend-layers.html
       - title: Dead Keys
         url: key-mappings.html#deadkeys
@@ -46,7 +46,7 @@ links:
         url: tarmak.html
       - title: Tarmak-DH
         url: tarmak-dh.html
-      - title: Tarmak FAQ
+      - title: Mini-FAQ
         url: tarmak.html#faq
   - title: trickery
     url: typing-tricks.html
