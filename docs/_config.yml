@@ -15,6 +15,8 @@ links:
         url: colemaked.html
       - title: Extend!!!
         url: extend-layers.html
+      - title: Extend2+
+        url: extend-layers.html#ext2plus
       - title: Dead Keys
         url: key-mappings.html#deadkeys
   - title: ergonomy

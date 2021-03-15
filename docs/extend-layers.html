@@ -20,7 +20,7 @@ title: Extend Extra Extreme
 <h2>(Or: Extend is really really neat – and I'll tell you why now.)</h2>
 
 <br><img class="autoWidth left" left src="res/div/Extend/Extend_KeyLogo.png" />
-<h2>... Why?</h2>
+<h2 class="anchor" id="why">... Why?</h2>
 <div class="quote">
     <p>
         Living without Extend at this point would seem like some kind of perverse hell imposed as punishment for terrible crimes committed in numerous past lives.
@@ -38,7 +38,7 @@ title: Extend Extra Extreme
 </p>
 
 <br><img class="autoWidth left" src="res/div/Extend/Extend_KeyLogo.png" />
-<h2>... What?</h2>
+<h2 class="anchor" id="what">... What?</h2>
 <p>
     Oh, sorry. Maybe you don't know or remember exactly what Extend is? If you do, you may skip to the next part now. For those reading on, Extend is like the Fn layer that some laptops have to get the NumPad and maybe some other keys. Some compact "hacker" keyboards such as the <a href="https://en.wikipedia.org/wiki/Happy_Hacking_Keyboard">Happy Hacking Keyboard</a> also sport Fn layers that give easy access to arrows, F# keys and other keys that are missing from the reduced-size keyboard.
 </p>
@@ -151,7 +151,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 </div>
 
 <br><img class="autoWidth left" src="res/div/Extend/Extend_KeyLogo.png" />
-<h2>... When?</h2>
+<h2 class="anchor" id="when">... When?</h2>
 <p>
     As described in an interesting article by <a href="http://xahlee.info/kbd/banish_key_chords.html">Xah Lee</a>, chording isn't always the best answer. To produce single results like a special symbol or a single command, "tap-dance" key sequences are generally better. A good example is the Compose method from Linux that can be trigged by any desired key combination, or by a "leader key" such as a Compose or dead key. The Alt key in Windows lets you access menu items by tapping a letter sequence such as <b>{Alt,f,t}</b> to open a new tab, which is brilliant and can be easily learned by looking at the menus the first times.
 </p><p>
@@ -163,7 +163,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 </p>
 
 <br><img class="autoWidth left" src="res/div/Extend/Extend_KeyLogo.png" />
-<h2>... How?</h2>
+<h2 class="anchor" id="how">... How?</h2>
 <p>
     Head over to the appropriate <b>Big Bag topic (<a href="https://forum.colemak.com/viewtopic.php?id=1438">Linux/XKB</a>, <a href="https://forum.colemak.com/viewtopic.php?id=1467">Windows/PKL</a>, <a href="https://forum.colemak.com/topic/2158-dreymars-big-bag-of-keyboard-tricks-usb2usb-edition/">USB-2-USB</a></b> or <b>mkborregaard's <a href="https://forum.colemak.com/viewtopic.php?id=2020">Mac topic</a>)</b> for resources and instructions on how to use this. In the standard setup, the CapsLock key becomes a "switch" modifier like the Shift key, that you hold down for the Extend mappings. One might also have "latch" (press and release modifier, then press key) or "lock" (like CapsLock) modifiers; for the main Extend layer I don't think that'll be so useful though. Using Linux, if you set two modifiers with the 'level5_switch_lock' behaviour, they'll actually work as a switch alone but a lock if pressed together! The Mac implementation has a separate ExtendLock key.
 </p><p>
@@ -462,7 +462,7 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; &lt;&gt; MultiMedia; € V
 </ul>
 
 
-<h2>APPENDIX: MORE EXTEND – LAYER IT ON</h2>
+<h2 class="anchor" id="ext2plus">MORE EXTEND – LAYER IT ON</h2>
 <p>
     My Extend ideally has four layers – I don't see the need for more but let me know if you do. The <b>Extend2</b> layer holds a NumPad with some useful symbols easily available and the navigation/editing block moved to the left hand:
 </p>
@@ -498,26 +498,23 @@ Extend2: KeyPad overlay with nav block to the left (lv7-8):
 </div>
 
 <p>
-    This is implemented in my Big Bag solutions for Windows(PKL), USB-2-USB(TMK) and Linux(XKB). In the former two you can configure a modifier or two that will modify which Extend layer gets activated by the Extend key; holding down the Extend key alone will maintain that layer.
+    This is implemented in my Big Bag solutions for Windows(EPKL), USB-2-USB(TMK) and Linux(XKB). In the former two you can configure a modifier or two that will modify which Extend layer gets activated by the Extend key; holding down the Extend key alone will maintain that layer.
 </p><p>
     With Linux/XKB it's still a bit hard to access Ext2 as it requires Caps+AltGr (Right Alt) to be held down. There's even a "secret" layer for xkb using Caps+Shift+AltGr (it has some more arrow symbols and stuff), but that's ridiculous so I'll have to construct a better modifier! At the moment, I believe that for instance Alt+Caps (then hold down either Alt or Caps – not necessarily both) and similarly with AltGr and even Alt+AltGr, would be ideal.
-</p><p>
+</p>
+<p>
     On Windows/EPKL, I have string templates including a set of kaomoji text faces in the <b>Extend3</b> layer! L is for Lenny. ( ͡° ͜ʖ ͡°)
 </p>
 
-<img src="res/div/Extend/Extend3-ISO-Angle_Cpt.png" />
-<p class="italic">
-    My kaomoji Extend3 layer, mnemonically arranged for Colemak ISO-Angle.
-</p>
+<br><img src="res/div/Extend/Extend3-ISO-Angle_Cpt.png" />
+<p class="italic">My kaomoji Extend3 layer, mnemonically arranged for Colemak ISO-Angle.</p><br>
 
 <p>
     In EPKL, all four layers are available using combinations of the two specified modifiers (by default RAlt and RShift) with Extend. The Ext3/Ext4 layers are set to be one-shot string layers, so if you press RShift+RAlt+Ext, then hold down Ext and press a home row letter you'll release a "powerstring" then fall back to Ext1 for normal editing. Also, since the Ext1/Ext2 layers are positional they are marked as "hard" layers: They don't change with letter positions and would look the same on Colemak as on, say, Dvorak – but they are affected by ergo mods like AngleWide. The kaomoji layer in Ext3 is "soft" though, since the strings are mnemonically linked to different letters:
 </p>
 
-<img src="res/div/Extend/Extend3-ISO-CAWide_Cpt.png" />
-<p class="italic">
-    My kaomoji Extend layer, mnemonically arranged for Colemak-CAW. Note how both the Curl(DH) and AWide mods move mappings.
-</p>
+<br><img src="res/div/Extend/Extend3-ISO-CAWide_Cpt.png" />
+<p class="italic">My kaomoji Extend layer, mnemonically arranged for Colemak-CAW. Note how both the Curl(DH) and AWide mods move mappings.</p><br>
 
 <p>
     Press RShift+Caps for Extend3, then Caps+D to start a Robot Dance Party in your text!  ♪～└[∵┌]└[･▥･]┘[┐∵]┘～♪
@@ -525,6 +522,23 @@ Extend2: KeyPad overlay with nav block to the left (lv7-8):
     Other ideas for Extend layers include more boilerplate text for coding, hotkey combinations for different programs, a better navigation/mousing layer etc etc. As mentioned above, releasing single strings or commands may just as well be implemented as dead key layers so it's up to the user's tastes.
 </p><p>
     EPKL pro tip: The Autohotkey format lets you mix literal strings with keys. You can for instance write a set of html brackets then position the cursor between them, all in one Extend entry with the * prefix.
+</p>
+
+<h3>Extend-tap</h3>
+<p>
+    This is only implemented in EPKL for Windows yet: Tap the Extend key for a special dead key layer, then another key for a release. As I said in the <a href="extend-layers.html#when">Extend ...When?</a> section, tap sequences are often better than modifier layers when you want to release a single symbol or string.
+</p><p>
+    With Ext-tap, you have a whole lot of possibilities! You can have 4–5 different deadkeys on basic Ext-tap, Shift+Ext-tap, Ctrl+Ext-tap, AltGr+Ext-tap and AltGr+Shift+Ext-tap. With Sticky/OSM mods, you can tap a modifier and then Ext rapidly to avoid chording completely. Then, any letter or symbol may release the dead key so the possiblities are really huge!
+</p><p>
+    For instance, different kaomoji result from tapping <b>{Shift+Ext,<key>}</b> and <b>{Shift+Ext,Shift+<key>}</b>. With a Sticky Shift timer, it actually depends on how fast you hit the key so you can select a "weaker" or "stronger" version with your tap speed! How's that for power?
+</p>
+<pre><code>
+ d( ^◇^)b
+ 
+ (b￣◇￣)b
+</code></pre><br>
+<p>
+    There's a set of symbols/strings on unmodified Ext-tap, command shortcuts on AltGr+Ext-tap and the aforementioned kaomojis on Shift+Ext-tap by default. See the <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/blob/master/Files/_eD_DeadKeys.ini">EPKL DeadKeys file</a> for more ideas. For Linux you could use Compose sequences for this kind of thing, but I haven't done that myself yet.
 </p>
 
 
@@ -538,7 +552,7 @@ Extend2: KeyPad overlay with nav block to the left (lv7-8):
     ~ DreymaR
 </p>
 
-<img src="res/div/Extend/PKL_Cpt_Ext1.png" /><br>
+<img class="smallImg" src="res/div/Extend/PKL_Cpt_Ext1.png" /><br>
 
 <h3 class="italic">SOME RELEVANT LINKS ABOUT SHORTCUTS</h3>
 <p>
