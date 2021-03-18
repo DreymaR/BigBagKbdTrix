@@ -46,11 +46,18 @@ Sophie's tips are in accord with what other expert typists have said. But with t
 
 
 [h]Training with Amphetype[/h]
-[b][url=https://github.com/webiest/amphetype]Amphetype by Tristesse[/url][/b] is a brilliant cross-platform typing trainer. It can be used for leisurely typing texts or for intensive focused training sessions, as you like. It's flexible and informative despite being a one-man project – and it's free. I keep its database in my Dropbox so I can use it from anywhere while keeping track of my texts and progress.
+[b][url=https://gitlab.com/franksh/amphetype]Amphetype[/url][/b] is a brilliant cross-platform typing trainer program written by Frank S. Hestvik, that has recently had a "revival release" with a platform update and some extra features. It'll be exiting to see its further development!
 
-Amphetype hasn't been developed in a long time, but it works without any problems and many people use it to this day. For Windows and Mac users though, running the old Python code may be problematic.
+Amphetype can be used for leisurely typing texts or for intensive focused training sessions, as you like. It's flexible and informative despite being a one-man project – and it's free. I keep its database in my Dropbox so I can use it from anywhere while keeping track of my texts and progress.
+
+There's an older version that I still use:
+[spoiler]
+[b][url=https://github.com/webiest/amphetype]The original Amphetype progam[/url][/b] was released on GitHub and Google Code by Frank S. Hestvik who went by the username [b]Tristesse[/b].
+
+This Amphetype version hasn't been developed since 2009, but it works without any problems and many people use it to this day. For Windows and Mac users though, running the old Python code may be problematic.
 
 You can find a pre-compiled Windows .exe as well as an OSX build at [b][url=https://code.google.com/archive/p/amphetype/downloads]Google Code Archive[/url][/b].
+[/spoiler]
 
 I like using a largish font (Cambria Italic 22) and subtle colors that don't annoy the hell out of me:
 [spoiler]
