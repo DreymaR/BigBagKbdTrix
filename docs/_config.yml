@@ -44,7 +44,7 @@ links:
   - title: tarmak
     url: tarmak-intro.html
     sub:
-      - title: About Tmk
+      - title: Overview
         url: tarmak-intro.html
       - title: Tmk Steps
         url: tarmak.html
