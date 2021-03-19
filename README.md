@@ -4,12 +4,8 @@
   
 https://dreymar.colemak.org
   
-https://dreymar.github.io/BigBagKbdTrix/index.html?version=new
-  
-TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
--------------------------------------------------------------------------
-- Update everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
-	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
+TODO/WIP for the BigBag Forum & web content:
+--------------------------------------------
 - Dictionary: Explain SFB, Curl/Angle/Wide, inward/outward/mixed rolls
 - Make Image2 and Image3 posts for the Image topic (topic 111)
 	- Image2: Keyboard images. State licencing for SVG (CC) vs others (Public Domain)
@@ -17,16 +13,15 @@ TODO/WIP for DreymaR's Big Bag Of Keyboard Tricks content (Forum & html):
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
-- Add the Training Topic. Under Trickery, or separately? Update its link on the links page.
+- A little more air before headings, in the style sheets? And a style for large text, without air.
+- Add the Training Topic. Under Trickery? Update its link on the links page; also on Discord.
 - In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
 	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
 	- Also make platform boxes for the Tarmak implementations part
 - In extend-layers.html, replace the "Head over to" part with proper platform box tips for Extend
-- Make bookmark links for page chapters, and add them to the menus. Example: DK mappings; Variants.
-- Make an imgtxt class with italic and a line break after it? For image subtexts.
-
+- Make an imgtxt class with italic and a line break after it? For image subtexts. Is that doable?
+  
 - Implement SASS/LESS for easier reading of the styles code.
-- Replace forum links with github pages ones.
 - Rework the 'Platforms' menu visualisation.
 	- Let it open without delay.
 	- Make it smoother so it doesn't glitch/flicker.
@@ -43,6 +38,7 @@ TODO/WIP For the BigBag web pages:
   
 DONE
 ----
+- Make bookmark links for page chapters, and add them to the menus. Example: DK mappings; Variants.
 - Update all content image links to local res/ locs. Replace Dropbox links with res/. Replace res/img/.
 - Add a smaller 'Platforms' menu to every platform-box.
 - Make a Co browser tab (fav)icon
@@ -57,7 +53,9 @@ DONE
 - Change the style of spoilers so that they're more visible.
 - Smaller logo.
 - Keep original image sizes.
-
+  
+- Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
+	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
   
 HTML observations
 -----------------
@@ -65,8 +63,8 @@ HTML observations
 	- To bypass this, request a non-existing version of the page as that'll break the cache:
 		- https://dreymar.github.io/BigBagKbdTrix/index.html?version=cachebreak
 
-HTML tips from abrickinthehallway, 2019-09-17:
-------------------------------------
+HTML tips from abrickinthehallway:
+---------------------------------:
 ```
 • https://developer.mozilla.org/ - documentation for everything that has to do with HTML and CSS
 

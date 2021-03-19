@@ -11,6 +11,8 @@ links:
   - title: mappings
     url: key-mappings.html
     sub:
+      - title: Overview
+        url: key-mappings.html
       - title: Colemak[eD]
         url: colemaked.html
       - title: Extend!!!
@@ -42,14 +44,14 @@ links:
   - title: tarmak
     url: tarmak-intro.html
     sub:
-      - title: Tmk Intro
+      - title: About Tmk
         url: tarmak-intro.html
-      - title: Tarmak
+      - title: Tmk Steps
         url: tarmak.html
-      - title: Tarmak-DH
-        url: tarmak-dh.html
+      - title: Tmk-DH
+        url: tarmak.html#tmk-dh
       - title: Mini-FAQ
-        url: tarmak.html#faq
+        url: tarmak-intro.html#faq
   - title: trickery
     url: typing-tricks.html
     sub:
@@ -67,6 +69,9 @@ links:
         url: typing-tricks.html#images
   - title: links
     url: guest-links.html
+    sub:
+      - title: Get Out More
+        url: guest-links.html
 
 
 # Build settings
