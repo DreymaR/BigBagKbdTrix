@@ -511,6 +511,16 @@ main a {
     color: #2371A5;
 }
 
+main ul li {
+    position: relative;
+    padding-left: 15px;
+}
+
+main ul li:before {
+    position: absolute;
+    left: 0;
+}
+
 main ul li ul {
     padding-left: 15px;
 }
