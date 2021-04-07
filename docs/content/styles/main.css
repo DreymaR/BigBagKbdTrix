@@ -94,12 +94,24 @@ a {
     display: none;
 }
 
-.platform-box:not(:empty) {
+.platform-box.win,
+.platform-box.linux,
+.platform-box.tmk {
     display: block;
     position: relative;
     margin-top: 15px;
     padding: 0 10px 10px 10px;
     border: 3px solid #AA77BB;
+}
+
+.platform-box:not(.win):not(.linux):not(.tmk),
+.platform-box.win.skip-win,
+.platform-box.linux.skip-linux,
+.platform-box.tmk.skip-tmk {
+    display: block;
+    position: relative;
+    border:none;
+    border-top: 3px solid #AA77BB;
 }
 
 [class='platform-box'] .platform-toggle,
@@ -115,7 +127,8 @@ a {
     left: 10px;
 }
 
-[class='platform-box'] .platform-toggle {
+[class='platform-box'] .platform-toggle,
+.platform-box:not(.win):not(.linux):not(.tmk) .platform-toggle {
     background: #F7F7F7 url('../img/platforms_purple.png') no-repeat center / 66%;
 }
 
@@ -216,6 +229,7 @@ a {
     display: flex;
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
 
 .platform-picker.mini a {
