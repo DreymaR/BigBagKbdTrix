@@ -130,7 +130,7 @@ function updatePlatformBoxes(newPlatform) {
         }
         setTimeout(function(){
             appendMiniPlatformPickers();
-        }, 20);
+        }, 200);
     }
 }
 
