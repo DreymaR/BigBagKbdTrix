@@ -69,7 +69,7 @@ title: Character/Key Mapping Layers
     </div>
 </div>
 
-<div class="platform-box skip-tmk"></div>
+<div class="platform-box skip-tmk skip-mac"></div>
 
 <p>
     The Linux/XKB and Windows/EPKL implementations are almost the same. EPKL couldn't yet support mapping to the shifted multimedia keys. Linux usually has poor support for mouse WheelLeft/Right scroll keys so the XKB mappings have a MouseKeys On/Off key on &lt;LSGT&gt; and a Compose/Multi key on Slash instead.
@@ -82,7 +82,7 @@ title: Character/Key Mapping Layers
     Extend NumPad mappings (Ext2). Green, navigation; purple, NumPad; sepia, symbols; gray, system/misc.
 </p><br>
 
-<div class="platform-box"></div>
+<div class="platform-box skip-mac"></div>
 
 <p>
     Ideally you can map any modifier to be the Extend "Mod2"/"Mod3" which select between different Extend layers, and only need to hold the Extend key itself after choosing the layer. At the moment though, this works as it should with EPKL and TMK but not XKB.
@@ -164,4 +164,4 @@ title: Character/Key Mapping Layers
     <b>Note</b> that the dead keys are designed to interact in clever ways through chaining: 'Ring' then 'angle' will produce 'arced angle', 'Tilde' with 'equals' will produce 'equal or approximately equal', Stroke with many symbols will produce slashed symbols (e.g., from 'identical to' you get 'not identical to') etc. The sequence you press the dead keys in may matter: Usually, start with the modifier(s) (such as 'stroke' for "not") then the symbol-producing key (such as 'maths' and then '=' which will usually produce '≡' but now gives you '≢' instead). At the moment, the only documentation for all this cleverness is snoping around the PKL layout.ini files, but logic will take you far too.
 </p>
 
-<div class="platform-box skip-win skip-tmk"></div>
+<div class="platform-box skip-win skip-tmk skip-mac"></div>
