@@ -96,7 +96,8 @@ a {
 
 .platform-box.win,
 .platform-box.linux,
-.platform-box.tmk {
+.platform-box.tmk,
+.platform-box.mac {
     display: block;
     position: relative;
     margin-top: 15px;
@@ -104,12 +105,14 @@ a {
     border: 3px solid #AA77BB;
 }
 
-.platform-box:not(.win):not(.linux):not(.tmk),
+.platform-box:not(.win):not(.linux):not(.tmk):not(.mac),
 .platform-box.win.skip-win,
 .platform-box.linux.skip-linux,
-.platform-box.tmk.skip-tmk {
+.platform-box.tmk.skip-tmk,
+.platform-box.mac.skip-mac {
     display: block;
     position: relative;
+    margin-top: 0;
     border:none;
     border-top: 3px solid #AA77BB;
 }
@@ -117,6 +120,7 @@ a {
 [class='platform-box'] .platform-toggle,
 .platform-box.linux .platform-toggle,
 .platform-box.win .platform-toggle,
+.platform-box.mac .platform-toggle,
 .platform-box .platform-toggle {
     content: '';
     display: inline-block;
@@ -128,7 +132,7 @@ a {
 }
 
 [class='platform-box'] .platform-toggle,
-.platform-box:not(.win):not(.linux):not(.tmk) .platform-toggle {
+.platform-box:not(.win):not(.linux):not(.tmk):not(.mac) .platform-toggle {
     background: #F7F7F7 url('../img/platforms_purple.png') no-repeat center / 66%;
 }
 
@@ -144,6 +148,10 @@ a {
     background: #F7F7F7 url('../img/tmk_purple.svg') no-repeat center / 83%;
 }
 
+.platform-box.mac .platform-toggle {
+    background: #F7F7F7 url('../img/mac_purple.svg') no-repeat center / 83%;
+}
+
 .platform-box.win #win {
     background-image: url(../img/win_purple.svg);
 }
@@ -154,6 +162,10 @@ a {
 
 .platform-box.tmk #tmk {
     background-image: url(../img/tmk_purple.svg);
+}
+
+.platform-box.mac #mac {
+    background-image: url(../img/mac_purple.svg);
 }
 
 #platforms:after, #tutorialPlatform {
@@ -168,8 +180,7 @@ a {
 }
 
 #platforms.linux:after,
-#platforms.win:after,
-#platforms.mac:after {
+#platforms.win:after {
     width: 31px;
     margin-left: 3px;
 }
@@ -184,6 +195,11 @@ a {
 
 #platforms.tmk:after {
     background-image: url("../img/tmk_white.svg");
+}
+
+#platforms.mac:after {
+    width: 37px;
+    background-image: url("../img/mac_white.svg");
 }
 
 #platforms {
@@ -288,6 +304,10 @@ a {
     background-image: url("../img/win_gray.svg");
 }
 
+.platform-picker #mac {
+    background-image: url("../img/mac_gray.svg");
+}
+
 #platforms.linux .platform-picker #linux {
     background-image: url("../img/linux_purple.svg");
 }
@@ -296,7 +316,7 @@ a {
     background-image: url("../img/tmk_purple.svg");
 }
 
-#platform.mac .platform-picker #mac{
+#platforms.mac .platform-picker #mac{
     background-image: url("../img/mac_purple.svg");
 }
 

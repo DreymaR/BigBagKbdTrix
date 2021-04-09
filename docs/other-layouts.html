@@ -31,7 +31,7 @@ title: Layout Variants
     Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
 </p>
 
-<div class="platform-box"></div>
+<div class="platform-box skip-mac"></div>
 
 <h2 class="anchor" id="scripts">PHONETIC COLEMAK LAYOUTS FOR NON-LATIN SCRIPTS</h2>
 <p>
@@ -43,7 +43,7 @@ title: Layout Variants
 <br><img src="res/cmk/locale/Cmk-X-phon-gr-awide-sl_mask.png" />
 <p class="italic">The Colemak phonetic layout for Greek, simply moving around the keys of the default (here xkb) Greek layout.</p><br>
 
-<div class="platform-box skip-win"></div>
+<div class="platform-box skip-win skip-mac"></div>
 
 <h2 class="anchor" id="mirror">MIRRORED COLEMAK</h2>
 <p>
@@ -54,13 +54,13 @@ title: Layout Variants
     I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger bigram avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger bigrams when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand variants but then you'd have to learn a new layout).
 </p>
 
-<div class="platform-box skip-linux skip-win"></div>
+<div class="platform-box skip-linux skip-win  skip-mac"></div>
 
 <p>
     You'll want an easily accessible key (such as a thumb key) to switch between normal and mirrored typing. One suggestion is using LAlt for left-handed typing, and RAlt or RWin for right-handed typing. But you may instead use an arm or foot switch set to any other key (maybe an out-of-the-way one like ScrollLock), or a "ghetto switch" made by stripping most keys off a keyboard and placing it on the floor. A more fancy but still cheap switch could be made by soldering the wires from a foot pedal switch (if you have something useable) to the contacts of a key on a cheap keyboard.
 </p>
 
-<div class="platform-box"></div>
+<div class="platform-box skip-mac"></div>
 
 <p>
     Some adventurous souls might want to try the mirrored Colemak as a main layout? Some say it's more similar to Dvorak that way. However, my implementation is meant for one-handed typing. To use it as a standalone layout, you'll want to take out the remapping of special keys.

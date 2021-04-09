@@ -7,14 +7,16 @@ let platformsEl = document.getElementsByClassName('platform-picker')[0].children
 let platforms = {
     'win': platformsEl[0],
     'linux': platformsEl[1],
-    'tmk': platformsEl[2]
+    'tmk': platformsEl[2],
+    'mac': platformsEl[3]
 }
 
 let platformWisePages = {
     'index' : {
         tmk: 1,
         win: 1,
-        linux: 1
+        linux: 1,
+        mac: 1
     },
     'ergo-mods' : {
         linux: 1,
@@ -68,7 +70,6 @@ function fillPlatformBox(platform) {
                         platformBoxes[platformBox].innerHTML = '';
                         if (!platformBoxes[platformBox].classList.value.includes("skip-" + platform)) {
                             platformBoxesCurrent.push(platformBoxes[platformBox]);
-
                         }
                         else {
                             updatePlatformBoxClass(platformBoxes[platformBox], platform);
@@ -117,6 +118,12 @@ function updatePlatformBoxes(newPlatform) {
             if (!currentPageName || (platformWisePages[currentPageName] && platformWisePages[currentPageName][newPlatform])) {
                 fillPlatformBox(newPlatform);
             }
+            else {
+                Array.from(platformBoxes).forEach(platformBox => {
+                    platformBox.innerHTML = "";
+                    updatePlatformBoxClass(platformBox, newPlatform)
+                });
+            }
         }
         else {
             Object.keys(platforms).forEach(platform => function(){
@@ -130,7 +137,7 @@ function updatePlatformBoxes(newPlatform) {
         }
         setTimeout(function(){
             appendMiniPlatformPickers();
-        }, 200);
+        }, 500);
     }
 }
 
@@ -179,7 +186,8 @@ function appendMiniPlatformPickers() {
         let platformButtons = {
             'win': platformButtonsEl[0],
             'linux': platformButtonsEl[1],
-            'tmk': platformButtonsEl[2]
+            'tmk': platformButtonsEl[2],
+            'mac': platformButtonsEl[3]
         }
     
         hookPlatformToggleOnClick(platformButtons);
