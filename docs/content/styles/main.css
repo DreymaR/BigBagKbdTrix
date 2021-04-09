@@ -563,6 +563,17 @@ main#linksContainer {
     height: calc(100vh - 110px);
 }
 
+main .platform-box:last-child {
+    margin-bottom: 50px;
+}
+
+main .platform-box:last-child.win.skip-win,
+main .platform-box:last-child.linux.skip-linux,
+main .platform-box:last-child.tmk.skip-tmk,
+main .platform-box:last-child.mac.skip-mac {
+    margin-bottom: 115px;
+}
+
 p + ul {
     margin-top: -1em;
 }
