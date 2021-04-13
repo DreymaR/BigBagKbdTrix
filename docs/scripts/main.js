@@ -18,17 +18,22 @@ let platformWisePages = {
         linux: 1,
         mac: 1
     },
-    'ergo-mods' : {
+    'layers-main' : {
         linux: 1,
         tmk: 1,
         win: 1
     },
-    'key-mappings' : {
+    'mods-ergo' : {
         linux: 1,
         tmk: 1,
         win: 1
     },
-    'other-layouts' : {
+    'tarmak-intro' : {
+        linux: 1,
+        tmk: 1,
+        win: 1
+    },
+    'variants' : {
         linux: 1,
         tmk: 1,
         win: 1

@@ -9,7 +9,7 @@ title: Layout Variants
 </p><p>
     I took off a bit and made quite a bunch of these, heh! I can make more on request. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.
 </p><p>
-    Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' variants (On a side note, there were only 11 Dvorak layouts in the xkb files last time I looked!):<br>
+    Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' layers (On a side note, there were only 11 Dvorak layouts in the xkb files last time I looked!):<br>
     <b>al at ba be bg br ca cz de dk es fi fr gb gr hr hu il is it latam nl no pl pt ro rs ru se si tr us vi</b>
 </p><p>
     The brackets (lvl3-4) and the LSGT key may hold the most common locale-specific keys.
@@ -17,7 +17,7 @@ title: Layout Variants
 <ul class="disc">
     <li>The oe/aring special letters may well be replaced; these should also be on dead keys.</li>
     <li>Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.</li>
-    <li>See the colemak_template symbols file for more info on local Colemak[eD] variants.</li>
+    <li>See the colemak_template symbols file for more info on local Colemak[eD] layers.</li>
 </ul>
 
 <br><img src="res/cmk/locale/Cmk-eD-usym-aw_Xm.png" />
@@ -28,7 +28,7 @@ title: Layout Variants
 <p class="italic">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant <br>(symbols like local key markings).</p><br>
 
 <p>
-    Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' variants.
+    Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' layers.
 </p>
 
 <div class="platform-box skip-mac"></div>
@@ -37,7 +37,7 @@ title: Layout Variants
 <p>
     See <a href="https://forum.colemak.com/viewtopic.php?pid=10016#p10016">the phonetic subtopic of my Locale topic</a> for more info on these layouts.
 </p><p>
-    For the Greek and Hebrew phonetic variants I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?
+    For the Greek and Hebrew phonetic layers I mostly moved the keys of their default phonetic xkb layouts to a Colemak setup, hardly changing anything else. Ideally, I should be able to define phonetic names for the keys corresponding to Colemak so that other 'phonetic' layouts would work automatically, but I think the XKB way of doing that may be too QWERTY-centric for that to work right now. For Kyrillic, I've used Ghen's excellent Rulemak which under my xkb patch is found under 'Russian (Colemak, phonetic E-Slavic)'. It isn't for Russians only, but that's how xkb likes to sort things. Similarly, for South Slavic there's the Bulgarian (Colemak, phonetic S-Slavic) variant now. Let me know how that works out, please?
 </p>
 
 <br><img src="res/cmk/locale/Cmk-X-phon-gr-awide-sl_mask.png" />
@@ -51,7 +51,7 @@ title: Layout Variants
 </p><p>
     Mirroring for one-handed typing was described by Edgar Matias <i>et al</i> in the 1996 paper <a href="http://edgarmatias.com/papers/hci96/">"One-Handed Touch-Typing on a QWERTY Keyboard"</a>. Dedicated Matias keyboards and various other implementations of the principle are available, but most of them cost money or require technical knowledge.
 </p><p>
-    I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger bigram avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger bigrams when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand variants but then you'd have to learn a new layout).
+    I think the Colemak is a very good layout for this kind of one-handed typing: It scores well on home-row usage, finger load balance and same-finger bigram avoidance, and it doesn't focus overmuch on hand alternation which could lead to same-finger bigrams when mirror-typing (Dvorak has lots of hand alternation; it also has separate right-hand and left-hand layers but then you'd have to learn a new layout).
 </p>
 
 <div class="platform-box skip-linux skip-win  skip-mac"></div>

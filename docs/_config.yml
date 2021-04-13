@@ -8,55 +8,55 @@ url: "https://dreymar.github.io"    # url: "https://dreymar.colemak.org"
 github_username:  DreymaR
 
 links:
-  - title: mappings
-    url: key-mappings.html
+  - title: layers
+    url: layers-main.html
     sub:
       - title: Overview
-        url: key-mappings.html
+        url: layers-main.html
       - title: Colemak[eD]
-        url: colemaked.html
+        url: layers-colemaked.html
       - title: Extend!!!
-        url: extend-layers.html
+        url: layers-extend.html
       - title: Extend2+
-        url: extend-layers.html#ext2plus
+        url: layers-extend.html#ext2plus
       - title: Dead Keys
-        url: key-mappings.html#deadkeys
+        url: layers-main.html#deadkeys
   - title: ergonomy
-    url: ergo-mods.html
+    url: mods-ergo.html
     sub:
       - title: Angle/Wide
-        url: ergo-mods.html#AngleWide
+        url: mods-ergo.html#AngleWide
       - title: DH/Curl
-        url: ergo-mods.html#CurlDH
+        url: mods-ergo.html#CurlDH
       - title: Symbols
-        url: ergo-mods.html#symbols
+        url: mods-ergo.html#symbols
       - title: Modifiers
-        url: ergo-mods.html#modifiers
+        url: mods-ergo.html#modifiers
   - title: variants
-    url: other-layouts.html
+    url: variants.html
     sub:
       - title: Locales
-        url: other-layouts.html#locales
+        url: variants.html#locales
       - title: Scripts
-        url: other-layouts.html#scripts
+        url: variants.html#scripts
       - title: One-Hand
-        url: other-layouts.html#mirror
-  - title: tarmak
-    url: tarmak-intro.html
+        url: variants.html#mirror
+  - title: learning
+    url: learning.html
     sub:
-      - title: Overview
+      - title: Training
+        url: learning.html#training
+      - title: Tarmak
         url: tarmak-intro.html
       - title: Tmk Steps
         url: tarmak.html
       - title: Tmk-DH
         url: tarmak.html#tmk-dh
-      - title: Mini-FAQ
+      - title: Tmk FAQ
         url: tarmak-intro.html#faq
   - title: trickery
     url: typing-tricks.html
     sub:
-      - title: Training
-        url: typing-tricks.html#training
       - title: Screens
         url: typing-tricks.html#swiping
       - title: Gaming

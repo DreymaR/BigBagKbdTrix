@@ -14,7 +14,7 @@ TODO/WIP for the BigBag Forum & web content:
 TODO/WIP For the BigBag web pages:
 ----------------------------------
 - A little more air before headings, in the style sheets? And a style for large text, without air.
-- Add the Training Topic. Under Trickery? Update its link on the links page; also on Discord.
+- Add the Training Topic. Under Learning? Update its link on the links page; also on Discord.
 - In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
 	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
 	- Also make platform boxes for the Tarmak implementations part
