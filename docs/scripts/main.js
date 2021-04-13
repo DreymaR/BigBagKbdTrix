@@ -23,7 +23,7 @@ let platformWisePages = {
         tmk: 1,
         win: 1
     },
-    'mods-ergo' : {
+    'ergo-mods' : {
         linux: 1,
         tmk: 1,
         win: 1

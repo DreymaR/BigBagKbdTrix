@@ -22,16 +22,16 @@ links:
       - title: Dead Keys
         url: layers-main.html#deadkeys
   - title: ergonomy
-    url: mods-ergo.html
+    url: ergo-mods.html
     sub:
       - title: Angle/Wide
-        url: mods-ergo.html#AngleWide
+        url: ergo-mods.html#AngleWide
       - title: DH/Curl
-        url: mods-ergo.html#CurlDH
+        url: ergo-mods.html#CurlDH
       - title: Symbols
-        url: mods-ergo.html#symbols
+        url: ergo-mods.html#symbols
       - title: Modifiers
-        url: mods-ergo.html#modifiers
+        url: ergo-mods.html#modifiers
   - title: variants
     url: variants.html
     sub:
