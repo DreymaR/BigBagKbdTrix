@@ -68,10 +68,10 @@ links:
       - title: Images
         url: typing-tricks.html#images
   - title: links
-    url: guest-links.html
+    url: links-page.html
     sub:
       - title: Get Out More
-        url: guest-links.html
+        url: links-page.html
 
 
 # Build settings
