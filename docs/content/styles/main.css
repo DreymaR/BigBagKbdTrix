@@ -1,17 +1,28 @@
-@font-face{
+@font-face {
     font-family: Raleway;
     src: url('../fonts/Raleway-Regular.ttf');
 }
 
-@font-face{
+@font-face {
     font-family: Raleway;
     font-weight: bold;
     src: url('../fonts/Raleway-SemiBold.ttf');
 }
 
-@font-face{
+@font-face {
     font-family: Raleway-ExtraBold;
     src: url('../fonts/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: bold;
+    src: url('../fonts/OpenSans-Bold.ttf');
 }
 
 *:not(p) {
@@ -20,7 +31,7 @@
 }
 
 body {
-    font-family: 'Open Sans';
+    font-family: OpenSans;
     font-size: 14px;
     background-color: #ECECEC;
     color: #4E4E4E;
@@ -100,8 +111,8 @@ a {
 .platform-box.mac {
     display: block;
     position: relative;
-    margin-top: 15px;
-    padding: 0 10px 10px 10px;
+    margin-top: 16px;
+    padding: 2px 10px 10px 10px;
     border: 3px solid #AA77BB;
 }
 
@@ -112,7 +123,7 @@ a {
 .platform-box.mac.skip-mac {
     display: block;
     position: relative;
-    margin-top: 0;
+    margin-top: 16px;
     border:none;
     border-top: 3px solid #AA77BB;
 }
@@ -359,7 +370,7 @@ main, #navbar {
 
 #menuIcon {
     position: absolute;
-    right: 30px;
+    right: 20px;
     width: 30px;
     z-index: 10;
     transition: right .2s ease-in-out;
@@ -553,7 +564,7 @@ main a {
 
 main ul li {
     position: relative;
-    padding-left: 15px;
+    padding-left: 13px;
 }
 
 main ul li:before {
@@ -611,8 +622,8 @@ ul.disc li:before {
     margin-right: 5px;
     vertical-align: top;
     content: "•";
-    font-size: 1.5em;
-    line-height: .8;
+    font-size: 1.1em;
+    line-height: 1.4;
     font-weight: bold;
 }
 
@@ -660,6 +671,7 @@ code.one-line {
     padding: 5px 10px;
     white-space: nowrap;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 code:not(.one-line)::-webkit-scrollbar {
@@ -690,7 +702,7 @@ code:not(.one-line)::-webkit-scrollbar {
 
 .spoiler {
     margin: 1em 0;
-    padding: 1px 15px;
+    padding: 1px 10px;
     background-color: #DEDEDE;
     border-left: 3px solid #AA77BB;
 }
@@ -709,6 +721,7 @@ code:not(.one-line)::-webkit-scrollbar {
 
 .spoiler > p > span:before {
     content: '▼';
+    margin-right: 3px;
 }
 
 .spoiler .quote {
@@ -798,7 +811,7 @@ img.left {
     #platforms:before {
         content: 'PLATFORMS';
         position: absolute;
-        top: calc(50% - 10px);
+        top: calc(50% - 13px);
         margin-left: 41px;
         font-family: 'Raleway';
         font-size: 20px;
