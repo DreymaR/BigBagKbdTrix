@@ -1,7 +1,9 @@
 document.getElementById('menuIcon').addEventListener('click', toggleMenu);
 
 let submenus = [].slice.call(document.getElementsByClassName('has-submenu'));
-submenus.forEach(submenu => submenu.addEventListener('click', toggleSubmenu));
+submenus.forEach(submenu => function(){
+    submenu.firstElementChild.addEventListener('click', toggleSubmenu)
+}());
 
 let platformsEl = document.getElementsByClassName('platform-picker')[0].children;
 let platforms = {
@@ -238,18 +240,32 @@ function toggleMenu() {
 
 function toggleSubmenu(e) {
     if (window.matchMedia("(max-width: 1100px)").matches) {
-        let submenuParent = this;
+        let submenuParent = this.parentNode;
+        let submenuGrandParent = submenuParent.parentNode;
+        let submenuGrandParentHeight = submenuGrandParent.style.height;
         let submenu = submenuParent.children[1];
+        let cursorRightPos = window.innerWidth - e.offsetX;
+
         if (submenuParent.classList.contains('isActive')) {
+            if(cursorRightPos < 25) {
+                e.preventDefault();
+            }
             submenuParent.classList.remove('isActive');
             submenu.setAttribute('style', '');
+
+            if (submenuGrandParentHeight) {
+                submenuGrandParent.style.height = parseInt(submenuGrandParentHeight, 10) - submenu.scrollHeight + 'px';
+            }
         }
         else {
             e.preventDefault();
             submenuParent.classList.add('isActive');
-
             submenu.style.height = "auto";
             let offset = submenu.offsetHeight;
+
+            if (submenuGrandParentHeight) {
+                submenuGrandParent.style.height = parseInt(submenuGrandParentHeight, 10) + offset + 'px'; 
+            }
 
             submenu.style.height = `0px`;
             setTimeout(() => {

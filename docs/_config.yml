@@ -6,7 +6,6 @@ description: >-                         # This means to ignore newlines until "b
   A treasure trove of keyboard wisdom. Layout tips, tricks, modifications and additions await in the Big Bag!  Centered around but not limited to the Colemak layout.
 url: "https://dreymar.github.io"        # url: "https://dreymar.colemak.org"
 github_username:  DreymaR
-safe: false                             # Necessary to run custom plugins such as alias_generator.rb
 
 links:
   - title: layers
@@ -46,15 +45,18 @@ links:
     url: learning.html
     sub:
       - title: Training
-        url: learning.html#training
+        url: training.html
       - title: Tarmak
         url: tarmak-intro.html
-      - title: Tmk Steps
-        url: tarmak.html
-      - title: Tmk-DH
-        url: tarmak.html#tmk-dh
-      - title: Tmk FAQ
-        url: tarmak-intro.html#faq
+        sub:
+          - title: Overview
+            url: tarmak-intro.html
+          - title: Tmk Steps
+            url: tarmak.html
+          - title: Tmk-DH
+            url: tarmak.html#tmk-dh
+          - title: Mini-FAQ
+            url: tarmak-intro.html#faq
   - title: trickery
     url: typing-tricks.html
     sub:

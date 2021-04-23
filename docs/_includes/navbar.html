@@ -25,8 +25,17 @@
                         {% if link.sub != null %}
                             <ul>
                                 {% for sublink in link.sub %}
-                                    <li>
+                                    <li class="{% if sublink.sub %}has-submenu{% endif %}">
                                         <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                                        {% if sublink.sub != null %}
+                                            <ul>
+                                                {% for subsublink in sublink.sub %}
+                                                    <li>
+                                                        <a href="{{ subsublink.url }}">{{ subsublink.title }}</a>
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        {% endif %}
                                     </li>
                                 {% endfor %}
                             </ul>

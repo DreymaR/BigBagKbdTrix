@@ -20,8 +20,8 @@
 }
 
 body {
-    font-family: Raleway;
-    font-size: 15px;
+    font-family: 'Open Sans';
+    font-size: 14px;
     background-color: #ECECEC;
     color: #4E4E4E;
 }
@@ -432,12 +432,18 @@ main, #navbar {
 }
 
 #menu ul {
-    margin: 8px 25px 0 25px;
+    margin: 0;
     list-style: none;
 }
 
+#menu ul a {
+    display: flex;
+    width: 100%;
+    padding: 12px 25px;
+}
+
 #menu > ul > li {
-    padding: 12px 0;
+    padding: 0;
     border-bottom: 2px dashed #FFF;
 }
 
@@ -454,6 +460,11 @@ main, #navbar {
     position: absolute;
     top: 10px;
     right: 0;
+    pointer-events: none;
+}
+
+#menu .has-submenu.isActive > a {
+    background: #8A4E9D;
 }
 
 #tutorialScreen {
@@ -494,15 +505,10 @@ main, #navbar {
 }
 
 .has-submenu ul li {
-    margin-bottom: 20px;
     font-family: Raleway;
     font-size: 32px;
     font-weight: bold;
     text-transform: none;
-}
-
-.has-submenu ul li:last-child {
-    margin-bottom: 10px
 }
 
 main {
@@ -646,11 +652,17 @@ code {
     width: calc(100% - 30px);
     padding: 0 15px;
     overflow: scroll;
-    background-color: #67A;    /* #6981B7; */
+    background-color: #67A;
     color: #FFF;
 }
 
-code::-webkit-scrollbar {
+code.one-line {
+    padding: 5px 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+code:not(.one-line)::-webkit-scrollbar {
     display: none;
 }
 
@@ -661,8 +673,12 @@ code::-webkit-scrollbar {
     border-left: 3px dotted #AA77BB;
 }
 
-.quote p {
-    margin: 0;
+.quote p:first-child {
+    margin-top: 0;
+}
+
+.quote > p:last-child {
+    margin-bottom: 0;
 }
 
 .anchor::before {
@@ -693,6 +709,12 @@ code::-webkit-scrollbar {
 
 .spoiler > p > span:before {
     content: '▼';
+}
+
+.spoiler .quote {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #CACACA;
 }
 
 .spoiler.isActive > p > span:before {
@@ -774,10 +796,11 @@ img.left {
     }
 
     #platforms:before {
-        content: "PLATFORMS";
+        content: 'PLATFORMS';
         position: absolute;
         top: calc(50% - 10px);
         margin-left: 41px;
+        font-family: 'Raleway';
         font-size: 20px;
         font-weight: bold;
         color: #FFF;
@@ -785,6 +808,10 @@ img.left {
 
     #menu {
         position: unset;
+    }
+
+    #menu ul {
+        margin: 8px 25px 0 25px;
     }
 
     #menuContainer {
@@ -801,6 +828,8 @@ img.left {
 
     #menu ul li a {
         display: block;
+        width: auto;
+        padding: 0;
     }
 
     #menu {
@@ -826,6 +855,10 @@ img.left {
         border: none;
     }
 
+    #menu > ul > li > ul > li {
+        background: #8A4E9D;
+    }
+
     #menu > ul > li:hover,
     #menu > ul > li.active {
         background-color: #FFF;
@@ -833,7 +866,6 @@ img.left {
     }
     
     .has-submenu {
-        min-width: 140px;
         text-align: center;
     }
 
@@ -845,6 +877,7 @@ img.left {
         margin-bottom: 0;
         padding: 10px 15px;
         text-align: left;
+        white-space: nowrap;
     }
 
     #menu .has-submenu li:hover {
@@ -858,14 +891,20 @@ img.left {
         padding: 17px 20px;
     }
 
-    #menu .has-submenu:hover ul {
+    #menu .has-submenu:hover > ul {
         position: absolute;
         top: 60px;
         display: block;
-        width: 100%;
+        width: auto;
         height: auto;
         margin: 0;
+        overflow: visible;
         background-color: #AA77BB;
+    }
+
+    #menu .has-submenu .has-submenu ul {
+        top: 0;
+        left: 100%;
     }
 
     #menu .has-submenu.isActive:before {
