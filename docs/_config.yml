@@ -46,6 +46,21 @@ links:
     sub:
       - title: Training
         url: training.html
+        sub:
+          - title: Tips
+            url: training.html#topTips
+          - title: Amphetype
+            url: training.html#amphetype
+          - title: Type-read
+            url: training.html#typeread
+          - title: Lessons
+            url: training.html#focusedLessons
+          - title: Tarmak
+            url: training.html#tarmak
+          - title: Pangrams
+            url: training.html#pangram
+          - title: Tools
+            url: training.html#monkeytype
       - title: Tarmak
         url: tarmak-intro.html
         sub:
