@@ -760,7 +760,7 @@ code:not(.one-line)::-webkit-scrollbar {
     background-color: #FFF;
     color: #AA77BB;
   }
-  #menu .has-submenu .has-submenu ul {
+  #menu .has-submenu li.has-submenu ul {
     top: 0;
     left: 100%;
   }
