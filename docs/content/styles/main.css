@@ -526,6 +526,10 @@ main, #navbar {
   right: 3px;
 }
 
+#menu .has-submenu .has-submenu.active > a {
+  background: #7C468D;
+}
+
 #overlay {
   position: absolute;
   top: 0;
@@ -899,7 +903,7 @@ code:not(.one-line)::-webkit-scrollbar {
   #menu > ul > li {
     border: none;
   }
-  #menu > ul > li:hover, #menu > ul > li.active {
+  #menu > ul > li:hover, #menu > ul > li.selected {
     background-color: #FFF;
     color: #AA77BB;
   }

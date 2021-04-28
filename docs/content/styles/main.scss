@@ -520,8 +520,14 @@ main, #navbar {
             }
         }
 
-        .has-submenu.active:before {
-            right: 3px;
+        .has-submenu.active {
+            &:before {
+                right: 3px;
+            }
+
+            > a {
+                background: #7C468D;
+            }
         }
     }
 }
@@ -911,7 +917,7 @@ code {
                 border: none;
 
                 &:hover,
-                &.active {
+                &.selected {
                     background-color: #FFF;
                     color: #AA77BB;;
                 }
