@@ -220,16 +220,16 @@ function toggleMenu() {
     if (window.matchMedia("(max-width: 1100px)").matches) {
         let menu = document.getElementById('menu');
         let menuContainer = document.getElementById('menuContainer');
-        if (this.classList.contains('isActive')) {
-            this.classList.remove('isActive');
-            menu.classList.remove('isActive');
+        if (this.classList.contains('active')) {
+            this.classList.remove('active');
+            menu.classList.remove('active');
 
             document.getElementById('menuContainer')
                 .removeChild(document.getElementById('overlay'));
         }
         else {
-            this.classList.add('isActive');
-            menu.classList.add('isActive');
+            this.classList.add('active');
+            menu.classList.add('active');
 
             let overlay = document.createElement("div");
             overlay.id = "overlay";
@@ -246,11 +246,11 @@ function toggleSubmenu(e) {
         let submenu = submenuParent.children[1];
         let cursorRightPos = window.innerWidth - e.offsetX;
 
-        if (submenuParent.classList.contains('isActive')) {
+        if (submenuParent.classList.contains('active')) {
             if(cursorRightPos < 25) {
                 e.preventDefault();
             }
-            submenuParent.classList.remove('isActive');
+            submenuParent.classList.remove('active');
             submenu.setAttribute('style', '');
 
             if (submenuGrandParentHeight) {
@@ -259,7 +259,7 @@ function toggleSubmenu(e) {
         }
         else {
             e.preventDefault();
-            submenuParent.classList.add('isActive');
+            submenuParent.classList.add('active');
             submenu.style.height = "auto";
             let offset = submenu.offsetHeight;
 
@@ -275,15 +275,19 @@ function toggleSubmenu(e) {
     }
 }
 
+function lockScroll() {
+    document.body.classList.toggle('lock-scroll');
+}
+
 function toggleSpoiler() {
     let spoilerBody = this.parentNode.getElementsByClassName("spoilerBody")[0];
-    if (spoilerBody.classList.contains('isActive')) {
-        spoilerBody.classList.remove('isActive');
-        spoilerBody.parentNode.classList.remove('isActive');
+    if (spoilerBody.classList.contains('active')) {
+        spoilerBody.classList.remove('active');
+        spoilerBody.parentNode.classList.remove('active');
     }
     else {
-        spoilerBody.classList.add('isActive');
-        spoilerBody.parentNode.classList.add('isActive');
+        spoilerBody.classList.add('active');
+        spoilerBody.parentNode.classList.add('active');
     }
 }
 
