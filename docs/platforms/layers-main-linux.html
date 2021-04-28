@@ -3,10 +3,15 @@
         HowTo:
     </p>
     <ul class="disc">
-        <li>You can select the various layouts for different locales (see below) that all have my Colemak[eD] mappings, in the standard layout chooser</li>
-        <li>I often type 'colemak' or the language name into the search field to narrow down the search</li>
-        <li>Alternatively, you may use a 'setxkbmap' terminal command such as 'setxkbmap -layout "us(cmk_ed_us)" -v 9'</li>
-        <li>Or see below about my setxkb script for changing XKB settings!</li>
+        <li>
+            You can select the various layouts for different locales (see below) that all have my Colemak[eD] mappings, in the standard layout chooser
+        </li><li>
+            I often type 'colemak' or the language name into the search field to narrow down the search
+        </li><li>
+            Alternatively, you may use a 'setxkbmap' terminal command such as 'setxkbmap -layout "us(cmk_ed_us)" -v 9'
+        </li><li>
+            Or see below about my setxkb script for changing XKB settings!
+        </li>
     </ul>
 </div>
 
@@ -44,13 +49,9 @@ Legend: # Movement; + Modifiers; = GUI edit; * Mouse; <> MultiMedia; € Various
     
     <p>
         The XKB implementation is almost the same as the Windows/EPKL one. You get separate shifted multimedia key mappings which EPKL couldn't support, but not mouse WheelLeft/Right scroll keys as those are generally poorly implemented in Linux. Instead, there's a MouseKeys On/Off key on <LSGT> and a Compose/Multi key on Slash. The Tilde key is customizeable – by default it holds a spare Del but it could be anything you deem useful. Of course, anything is customizeable really!  d( ^◇^)b
-    </p>
-    
-    <p>
+    </p><p>
         <b>MouseKeys:</b> Hitting Caps+<LSGT> (or Shift+NumLock if that's enabled) enables/disables Pointer Mousing; when that's on you may move the mouse pointer with the GD<> keys and use BKM for buttons (or you can use the KeyPad keys as before). My mapped keys go a few pixels at a time so when acceleration is on you may travel quickly around the screen this way. Wheel mousing works but doesn't repeat so you'll have to press many times to scroll a long way.
-    </p>
-    
-    <p>
+    </p><p>
         <b>Multimedia keys:</b> These are mapped to the F keys (++) as intended but XKB/Linux doesn't necessarily link any actions to their key presses although these days most of the usual multimedia keys are configured as expected; this is done in the Shortcuts settings which can be accessed in Unity/Gnome via the Keyboard settings (or dconf-editor/gsettings to org.gnome.desktop.wm.keybindings for the Window Manager ones and ??? for other categories). You could also use xbindkeys, AutoKey or others to bind whatever you want to these keys. Using the Settings > Keyboard panel in Unity/Gnome (gnome-control-center keyboard) doesn't work as expected with the Extend mapped keys, since the hotkey will register as a 'Level 5 shift' keypress when you press your Extend key! The trick is to press the modifier(s) before clicking on the shortcut you want to set! Then when 'New accelerator' is showing you press down the final key. I had to do that for the Calculator and Terminal keys (Lv5+<FK12>) as those shortcuts were disabled by default in my Ubuntu install.
     </p>
 </div>
@@ -84,44 +85,38 @@ KeyPad overlay with nav block to the left (lv7-8):
     
     <p>
         Having to hold down both CapsLock and AltGr while entering numbers is hardly ideal. I'd like to use another key (but there are few to spare) and maybe make it a lock instead of a switch modifier (i.e., one you have to hold down). Unsure about that, really. But at least, here it is. Actually, one might construct a level7 modifier by combining level3 with level5.
-    </p>
-    
-    <p>
+    </p><p>
         If you're cheeky and dexterous enough to press CapsLock+AltGr+Shift at the same time, you're treated to a set of double-arrow symbols of the kind used in mathematical proofs and more (⇖⇑⇗ ⇐⇔⇒ ⇙⇓⇘), laid out like in one of the standard xkb keypad layouts. I thought they might be somewhat handy, but the heavy chording required suits the fact that few need them very often! The single arrows didn't fit in, but at least the four orthogonal ones (←↑↓→) are already there in the lv3-4 Colemak[eD] mappings.
-    </p>
-    
-    <p>
+    </p><p>
         All KeyPad keys are affected by PointerEnable! So if you find the mouse pointer moving around instead of numbers being entered, hit the key to disable pointer mousing (Shift+NumLock or CapsLock+LSGT). Or, you've found an extra way of key mousing! :-)
-    </p>
-    
-    <p>
+    </p><p>
         For more info and tricks, see the Big Bag Mappings and <b>Extend Extra Extreme</a></b> pages.
-    </p>
-    
-    <p>
+    </p><p>
         <b class="italic">HowTo:</b> <br>
         To get the Extend mappings to work in xkb, you need two things:
     </p>
     
     <ul class="disc">
-        <li>Set the 'misc:extend' xkbmap option (see below for setup info), and</li>
-        <li>choose a modifier key to switch to level5; I've added a 'level5:caps_switch_lock' option to use the Caps key.</li>
-        <li>There are others to choose from (lsgt, lalt, lwin and rwin) that were already available in xkb; you could even have more than one if you want!</li>
-        <li>(By using several lv5 switch keys, the switch_lock behavior makes it possible to lock the Extend layer by pressing two modifiers together should you require that.)</li>
-        <li>If you have the 'Options...' settings menu (Gnome has it), these options are under the 'Miscellaneous' and 'Level 5' headings.</li>
+        <li>
+            Set the 'misc:extend' xkbmap option (see below for setup info), and
+        </li><li>
+            choose a modifier key to switch to level5; I've added a 'level5:caps_switch_lock' option to use the Caps key.
+        </li><li>
+            There are others to choose from (lsgt, lalt, lwin and rwin) that were already available in xkb; you could even have more than one if you want!
+        </li><li>
+            (By using several lv5 switch keys, the switch_lock behavior makes it possible to lock the Extend layer by pressing two modifiers together should you require that.)
+        </li><li>
+            If you have the 'Options...' settings menu (Gnome has it), these options are under the 'Miscellaneous' and 'Level 5' headings.
+        </li>
     </ul>
 </div>
 
 <div class="platform-content">
     <p>
         For some reason, the Stroke dead key is still broken in my XKB. Gotta get that fixed at some point (maybe it'll be my first Linux bugfix unless someone beats me to it). Furthermore, I'd like to add more mappings that feel intuitive to me such as superscripts on the acute accent key and subscripts on the grave accent key.
-    </p>
-
-    <p>
+    </p><p>
         Some dead keys are almost empty: The doubleacute only caters for ő ű, and ring only caters for å ů ẘ ẙ. There's also a whole iota dead key that only concerns itself with Greek characters. I'm tempted to stuff something good into those cracks even if it's not an entirely logical thing to do (because the name of the dead key wouldn't reflect these extra mappings). If you use up a key mapping on a dead key it really shouldn't sit there taking up keyboard space for the meager purpose of providing 2-3 glyphs!
-    </p>
-
-    <p>
+    </p><p>
         I think it's about the locales. The big en_US.UTF-8 Compose file has the dead_stroke key defined (and lots of other goodness!) so I should find out how to get that then. Defining my own ~/.XCompose file apparently involves setting the xim input method as the active one instead of a hard-compiled GTK one my Ubuntu must be using now I guess. It's a bit complex it seems... :o I'll be back on this issue when/if I find out more!
     </p>
 </div>

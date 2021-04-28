@@ -1,17 +1,11 @@
 <div class="platform-content">
     <p>
         EPKL has a richly functional Extend implementation. It includes sideways wheel scrolling which the Linux version lacks (it has mousing on/off and a Multi key instead). WheelLeft is mapped to the ISO VK_102 key, so if ANSI board users want it they'll have to put it elsewhere. One might forgo one Esc key and put WheelLeft/Right on the bracket keys for instance.
-    </p>
-    
-    <p>
+    </p><p>
         On the Tilde key I put a handy mouse homing key as a default. It's handy for retrieving or putting away your mouse cursor, or for accessing buttons and menus at the upper-left corner of your current window without touching the actual mouse. Another suggestion is Win+T which is quite convenient for opening the Taskbar which can then be navigated further with Extend-keys. Or whatever you like, of course. :-)
-    </p>
-    
-    <p>
+    </p><p>
         The Extend key is specified in the layout.ini file. To not use it, set its value to 'disabled' – but you'd be missing out big time!
-    </p>
-    
-    <p>
+    </p><p>
         Multi-Extend is available in EPKL: You can set up to two modifiers in the Settings file, which select other Extend layers if held when pressing the Extend key. That layer is then maintained by just holding the Extend key down. Only the first two layers are filled in for now, but you may put whatever you want in there. I put some string examples into Ext3/4 as illustrations. Definitions are found in the Extend File specified in the layout.ini file. Here are the current defaults; they're easily changeable:
     </p>
     
@@ -33,21 +27,13 @@
    <img src="res/div/Extend/Extend3-ISO-Angle_Cpt.png" alt="" />
     <p class="italic">
         My kaomoji Extend3 layer, mnemonically arranged (shown here for Colemak ISO-Angle).
-    </p>
-
-    <p>
+    </p><p>
         <b>Autohotkey code</b> With the * prefix an entry uses the Autohotkey format which lets you mix literal strings with keys. You can for instance write a set of html brackets then position the cursor between them, write then select text and more. See the extend file for examples.
-    </p>
-
-    <p>
+    </p><p>
         <b>One-shot Extend layers</b> is possible through the 'extReturnTo' setting in your Extend .ini file. When an entry is sent from, say, layer 4, EPKL can return to any specified Extend layer. So if you have text strings in that layer you'll be back in editing mode after sending a string, without having to do anything.
-    </p>
-
-    <p>
+    </p><p>
         <b>Soft vs Hard Extend layers</b>: In the extend file you can specify which layers are "hard" or positional and shouldn't change between, say, Colemak and Dvorak but only with positional mods like Angle/Wide. A "soft" layer like the strings/kaomoji one is mnemonic and mappings follow letter positions. L is for Lenny. ( ͡° ͜ʖ ͡°)
-    </p>
-
-    <p>
+    </p><p>
         <b>Tap-Extend</b> is another new Extend functionality. You can set an "Extend Taps" entry with standard Extend syntax; so for instance Backspace will send the Back key. The "Extend time" setting defines a time in ms within which you can release the Extend key and have the entry sent. After this or if you press another key in the meantime, it works as the Extend modifier key like before. Set the time to 0 to disable Tap-Extend.
     </p>
 </div>
