@@ -59,8 +59,10 @@ links:
             url: training.html#tarmak
           - title: Pangrams
             url: training.html#pangram
-          - title: Tools
+          - title: Monkeytype
             url: training.html#monkeytype
+          - title: Links
+            url: training.html#tools
       - title: Tarmak
         url: tarmak-intro.html
         sub:

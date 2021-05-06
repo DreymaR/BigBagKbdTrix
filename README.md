@@ -38,6 +38,7 @@ TODO/WIP For the BigBag web pages:
   
 DONE
 ----
+- Flesh out the Monkeytype learning section: Colors, settings tips
 - Make bookmark links for page chapters, and add them to the menus. Example: DK mappings; Variants.
 - Update all content image links to local res/ locs. Replace Dropbox links with res/. Replace res/img/.
 - Add a smaller 'Platforms' menu to every platform-box.
