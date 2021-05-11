@@ -1,6 +1,6 @@
 [h]LOCALE COLEMAK[eD] VARIANTS[/h]
 
-In the following I describe how to make locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "Lesser/Greater Than" key (LSGT a.k.a. ISO or OEM_102). If more keys than these are needed, the HJKL keys with (Shift+)AltGr (lv3-4) are also available in my layout since they hold nonessential mappings beforehand and are placed together, and in some cases other keys are natural candidates.
+In the following I describe how to make locale layouts for many languages, remapping for the most part the bracket keys (LBr/RBr) and the "Lesser/Greater Than" key (LSGT a.k.a. ISO or OEM_102). If more keys than these are needed, the HJKL keys with (Shift+)AltGr (lv3-4) are also available in my layout since they hold nonessential mappings beforehand and are placed together. In some cases other keys are natural candidates, like T and D.
 
 This is what I call [b]Unified Symbols[/b] or 'US' variants (yes, that's also the name of the United States English layout but then again they're based on that one). I also provide 'Keep Local Symbols' variants where all the non-letter keys behave as locale users are used to – but at the cost of whichever nifty Colemak[eD] mappings were on those keys! This includes all dead keys as I've put those solely on symbol keys.
 
@@ -310,7 +310,7 @@ In both my variants, the Ii is changed to Iı (dotless i) as in the default Turk
     [i]Turkish 'Keep Local Symbols' Colemak[eD][/i]
 
 The '[eD] unified symbols' solution for [b]TR[/b]:
-• Turkish doesn't use QWX and J is rare, but they need to be kept in place because of English etc!
+• Turkish doesn't use QWX and J is rare, but they need to be kept in place because of English etc.
 • The needed special letters are provided directly according to frequencies.
 • An option for a more accessible circumflex dead key is an alternative variant.
 • If you type much English, there's an option for putting İı on LBr so Ii may be left on the I key.

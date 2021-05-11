@@ -13,6 +13,10 @@ TODO/WIP for the BigBag Forum & web content:
   
 TODO/WIP For the BigBag web pages:
 ----------------------------------
+- Locale variants:
+	- Add more of the Forum locale topic
+	- Maybe put the variant stuff in the EPKL repo? That's where often I work with it.
+  
 - A little more air before headings, in the style sheets? And a style for large text, without air.
 - Add the Training Topic. Under Learning? Update its link on the links page; also on Discord.
 - In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
