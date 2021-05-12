@@ -47,6 +47,29 @@ a {
   text-decoration: none;
 }
 
+table {
+  border: 1px solid white;
+  border-collapse: collapse;
+  background: #6677AA;
+  color: white;
+}
+
+table td {
+  width: 50px;
+  padding: 5px;
+  vertical-align: top;
+  border: 1px solid white;
+}
+
+table td p.legend {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.table-container {
+  overflow-y: auto;
+}
+
 #tutorialScreen {
   width: 100%;
   height: 100%;
@@ -693,19 +716,25 @@ ol.bracket > li:before {
   text-align: left;
 }
 
+pre {
+  overflow-y: hidden;
+}
+
 code {
   display: inline-block;
   width: calc(100% - 30px);
-  padding: 0 15px;
-  overflow: scroll;
+  margin-top: -1.0em;
+  padding: 10px 15px;
+  overflow: auto;
   background-color: #67A;
   color: #FFF;
 }
 
 code.one-line {
+  margin-top: 5px;
   padding: 5px 10px;
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
 }
 
@@ -914,6 +943,9 @@ code:not(.one-line)::-webkit-scrollbar {
     display: inline-block;
     height: 25px;
     padding: 17px 20px;
+  }
+  #menu > ul > li.has-submenu > ul > li:hover {
+    color: #8A4E9D;
   }
   #menu .has-submenu {
     text-align: center;
