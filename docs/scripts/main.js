@@ -247,7 +247,7 @@ function toggleSubmenu(e) {
         let cursorRightPos = window.innerWidth - e.offsetX;
 
         if (submenuParent.classList.contains('active')) {
-            if(cursorRightPos < 25) {
+            if(cursorRightPos < 32) {
                 e.preventDefault();
             }
             submenuParent.classList.remove('active');

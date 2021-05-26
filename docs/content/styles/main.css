@@ -35,7 +35,7 @@ body {
   font-family: OpenSans;
   font-size: 14px;
   background-color: #ECECEC;
-  color: #4E4E4E;
+  color: #12212E;
 }
 
 body.lock-scroll {
@@ -512,6 +512,15 @@ main, #navbar {
   list-style: none;
 }
 
+#menu ul li {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 #menu ul a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,6 +544,7 @@ main, #navbar {
 
 #menu .has-submenu.active:before {
   content: '▴';
+  width: 40px;
   position: absolute;
   top: 10px;
   right: 0;
