@@ -31,6 +31,10 @@
   margin: 0;
 }
 
+p {
+  word-break: break-word;
+}
+
 body {
   font-family: OpenSans;
   font-size: 14px;
@@ -277,7 +281,7 @@ table td p.legend {
   background-image: url("../img/linux_purple.svg");
 }
 
-#platforms.tmkafter {
+#platforms.tmk:after {
   background-image: url("../img/tmk_white.svg");
 }
 
@@ -505,6 +509,17 @@ main, #navbar {
   width: 127px;
   height: 127px;
   margin: 12px auto;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#menuLogo img {
+  width: 100%;
+  height: 100%;
 }
 
 #menu ul {
@@ -532,10 +547,6 @@ main, #navbar {
 #menu > ul > li {
   padding: 0;
   border-bottom: 2px dashed #FFF;
-}
-
-#menu > ul > li:last-child {
-  border-bottom: none;
 }
 
 #menu .has-submenu {

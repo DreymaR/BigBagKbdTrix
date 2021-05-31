@@ -1,3 +1,13 @@
+@mixin highlight-remove {
+    -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+}
+
 @font-face {
     font-family: Raleway;
     src: url('../fonts/Raleway-Regular.ttf');
@@ -28,6 +38,10 @@
 *:not(p) {
     padding: 0;
     margin: 0;
+}
+
+p {
+    word-break: break-word;
 }
 
 body {
@@ -292,7 +306,7 @@ table {
     }
 
     &.tmk {
-        &after {
+        &:after {
             background-image: url("../img/tmk_white.svg");
         }
         
@@ -504,6 +518,12 @@ main, #navbar {
         width: 127px;
         height: 127px;
         margin: 12px auto;
+        @include highlight-remove;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
     
     ul {
@@ -511,13 +531,7 @@ main, #navbar {
         list-style: none;
 
         li {
-            -webkit-tap-highlight-color: transparent;
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+            @include highlight-remove;
         }
 
         a {
@@ -530,10 +544,6 @@ main, #navbar {
     > ul > li {
         padding: 0;
         border-bottom: 2px dashed #FFF;
-
-        &:last-child {
-            border-bottom: none;
-        }
     }
     
     .has-submenu {
