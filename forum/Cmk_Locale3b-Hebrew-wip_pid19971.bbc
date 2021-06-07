@@ -57,19 +57,21 @@ M  ם    mem fin.    (מ) MMMo                • U+05dd  Hebrew(il) uses o
 N  ן    nun fin.    (נ) NNNe                • U+05df  KU uses both N and o
 K  ך    kaf fin.    (כ) KKK;                • U+05da
 P  ף    pe fin.     (פ) PPPf                • U+05e3
+[/code]
 
+[code]
 Niqqud vowels (on AltGr/Shift+vowel? DKs? BiblicalHebrew-SIL mappings shown.):
-a    ַ   a   pata(c)h                        • U+05b7   ֲ  U+05b2 hataf (reduced) patah – SIL AltGr+A
-A    ָ   A   kamatz/qamats                   • U+05b8   ֳ  U+05b3 hataf kamatz – SIL AltGr+O
-e    ֶ   e   seg(g)ol (short e)              • U+05b6   ֱ  U+05b1 hataf segol – SIL AltGr+E
+a    ַ   a   pata(c)h                        • U+05b7  ֲ   U+05b2 hataf (reduced) patah – SIL AltGr+A
+A    ָ   A   kamatz/qamats                   • U+05b8  ֳ   U+05b3 hataf kamatz – SIL AltGr+O
+e    ֶ   e   seg(g)ol (short e)              • U+05b6  ֱ   U+05b1 hataf segol – SIL AltGr+E
 E    ֵ   E   tsere/tzere haser (long e)      • U+05b5     tzere male w/ yod or alef is the same sound
-i    ִ   i   hiriq                           • U+05b4   ִי w/ yod is hiriq male/yud (long).
+i    ִ   i   hiriq                           • U+05b4  ִי  w/ yod is hiriq male/yud (long).
 o    ֹ   o   (c)holam (male)                 • U+05b9
-O    ֺ  O   holam (haser)                   • U+05ba   ֺ used only with vav in combining or combined (וֹ) form
+O    וֹ  O   (c)holam (haser)                • U+05ba  וֹ  used only with vav in combining ( ֺ) or combined (וֹ) form
 u    ֻ   u   kubuts/qubutz (short u)         • U+05bb
 U    ּ   =   shuruk (long u)                 • U+05bc     the same symbol as combining dagesh/mappiq! Used with vav.
 ;    ְ   ;   sh(e)va/shewa/schwa             • U+05b0  diacritic for fleeting/reduced (hataf) vowel; ultrashort when doubled; also [ə] or no vowel (Ø)
--    ֿ   _   rafe                            • U+05bf  Yiddish/Ladino; used to be the opposite of dagesh
+-    ֿ   _   rafe/raphe                      • U+05bf  Yiddish/Ladino; used to be the opposite of dagesh
 
 Interesting:
 V?  וו      double-waw/VavVav               • [w]; ו׳ (vav geresh) is also used; Yiddish; AltGr+V/W?; DK?
@@ -79,18 +81,18 @@ X?  ױ       vav-yud/VavYod                  • AltGr+chet; Yiddish; on AltGr+S
 +W  שׁ       shindot     j?_W *ʃ             • [ʃ] when using diacritics (on Shift+W?)
 '   ׳   /   geresh      ---' '              • U+05f3  ' by shape; also cantillation/chanting mark  ֜ or  ֝
 "   ״   :   gershayim   ---" "              • U+05f4  " by shape; also cantillation/chanting mark  ֞ (AltGr+", or DK)
-**   ּ   =   dagesh (kal)/map(p)iq           • U+05bc  On bet/kaf/pe, but also gimel/dalet/tav in dialects; mappiq on alef/he used as consonants
-**   ּ   =   dagesh hazaq/hazak              • U+05bc  Turns single consonant into double; gimel/dalet/vav etc.
+@m  ּ    =   dagesh (kal)/map(p)iq           • U+05bc  On bet/kaf/pe, but also gimel/dalet/tav in dialects; mappiq on alef/he used as consonants
+@h  ּ    =   dagesh hazaq/hazak              • U+05bc  Turns single consonant into double; gimel/dalet/vav etc.
 4   ₪       NewSheqel                       • U+20aa  On AltGr+4; also AltGr+S? (Euro on AltGr+e?)
 -   ־   -   maqaf (hyphen)                  • U+05be  hyphen by shape; same function as Latin hyphen
-+   ﬩       alternative plus                • to avoid writing a cross :-o
++   ﬩       alternative plus                • U+fb29  to avoid writing a cross...
 **          LRM & RLM                       • U+200e/U+200f  directional marks; Ctrl+[] are used elsewhere
 .   ̣        punctum (low)                   • U+0323  period
 '           punctum (high)                  • U+05c4
 _   ‗       Hebrew double low line          • U+2017  ??
 
 Old:
-,    ֽ       meteg                           • U+05bd  comma by shape; long/short vowels in biblical Hebrew; stress marker
+,   ֽ        meteg                           • U+05bd  comma by shape; long/short vowels in biblical Hebrew; stress marker
 |   ׀       paseq (separator)               • U+05c0  not on modern keyboard so | is often used; old separator
 :   ׃   :   sof pasuq (period)              • U+05c3  not on modern keyboard so : is often used; old period sign
 [   ׆       nun hafukha (punctuation)       • U+05c6  [ by shape; a rare glyph from Classical Hebrew
@@ -102,25 +104,6 @@ U+25CC mark base, U+200c zero-width non-joiner, U+200d zero-width joiner and U+0
 
 Also see the [b][url=https://github.com/DreymaR/BigBagKbdTrixPKL/blob/master/Layouts/Colemak/BaseLayout_Cmk-eD-Heb.ini]Colemak-eD-Heb EPKL layout[/url][/b] which is where development of the HebMak layout is accomplished. The base layout file holds many informative comments.
 
-
-[b]A chart of the Niqqud vowels (minus rafe):[/b]
-
-    [img]https://dreymar.colemak.org/res/div/Glyphs/Hebrew/Hebrew_Niqqud_Dec.png[/img]
-
-[code]
-Cholam:         הוֹלָם
-Shva:           שְׁוָא
-Segol:          סֶגוֹל
-Tzere:          צֵירֵה
-Patach:         פַּהָּה
-Qamatz:         קָמַץ
-Shuruq:         שׁוּרֻק
-Qubbutz:        קֻבּוּץ
-Chataf segol:   הֲטַף סֶגוֹל
-Chiriq:         הִירִיק
-Chataf patach:  הֲטַף פַּהָּה
-Chataf qamatz:  הֲטַף קָמַץ
-[/code]
 
 [b]The Biblical Hebrew SIL US Standard layout (version 1.5):[/b]
 I like how this board makes room for the vowel niqqud, but for modern Hebrew they're at too common keys. There are four state layers!
@@ -164,6 +147,28 @@ Z   [ hebrew_zain   , hebrew_zain	]
 
 =   [ equal, plus, hebrew_doublelowline, hebrew_doublelowline ]
 [/code]
+
+
+[h]Niqqud[/h]
+Reference chart of the Niqqud vowels (minus rafe). Note how they figure in their own names.
+    [img]https://dreymar.colemak.org/res/div/Glyphs/Hebrew/Hebrew_Niqqud_Dec.png[/img]
+
+[spoiler]
+[code]
+Cholam:         הוֹלָם
+Shva:           שְׁוָא
+Segol:          סֶגוֹל
+Tzere:          צֵירֵה
+Patach:         פַּהָּה
+Qamatz:         קָמַץ
+Shuruq:         שׁוּרֻק
+Qubbutz:        קֻבּוּץ
+Chataf segol:   הֲטַף סֶגוֹל
+Chiriq:         הִירִיק
+Chataf patach:  הֲטַף פַּהָּה
+Chataf qamatz:  הֲטַף קָמַץ
+[/code]
+[/spoiler]
 
 
 [h]Links[/h]
