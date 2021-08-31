@@ -7,6 +7,7 @@ https://dreymar.colemak.org
 
 TODO/WIP for the BigBag Forum & web content:
 --------------------------------------------
+- Extend(?): Add Compose to the "When" Sequencing section. Contrast Compose to DKs.
 - Dictionary: Explain SFB, Curl/Angle/Wide, inward/outward/mixed rolls
 - Make Image2 and Image3 posts for the Image topic (topic 111)
 	- Image2: Keyboard images. State licencing for SVG (CC) vs others (Public Domain)
