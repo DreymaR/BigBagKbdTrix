@@ -5,27 +5,29 @@
 
 https://dreymar.colemak.org
 
-TODO/WIP for the BigBag Forum & web content:
---------------------------------------------
-- Extend(?): Add Compose to the "When" Sequencing section. Contrast Compose to DKs.
+TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
+----------------------------------------------------------------
+- Locale variants:
+	- Add more of the Forum locale topic
+	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?
+- Compose as its own point, instead of just under Extend?!
+	- Or, add Compose to the "When" Sequencing section of the Extend page.
+	- Contrast Compose to DKs.
+		- DKs: Many, harder to reach them, single trigger. Help images in EPKL. Some positions hard to remember.
+		- Compose: Often longer sequences, but more mnemonic. Can be kept on main layer.
 - Dictionary: Explain SFB, Curl/Angle/Wide, inward/outward/mixed rolls
 - Make Image2 and Image3 posts for the Image topic (topic 111)
 	- Image2: Keyboard images. State licencing for SVG (CC) vs others (Public Domain)
 	- Image3: Interesting designs, fun, logos, icons, etc
-<br>
-
-TODO/WIP For the BigBag web pages:
-----------------------------------
-- Locale variants:
-	- Add more of the Forum locale topic
-	- Maybe put the variant stuff in the EPKL repo? That's where often I work with it.
-
-- A little more air before headings, in the style sheets? And a style for large text, without air.
-- Add the Training Topic. Under Learning? Update its link on the links page; also on Discord.
 - In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
 	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
 	- Also make platform boxes for the Tarmak implementations part
 - In extend-layers.html, replace the "Head over to" part with proper platform box tips for Extend
+<br>
+
+TODO/WIP For the BigBag web page design, mostly for Marvel:
+-----------------------------------------------------------
+- A little more air before headings, in the style sheets? And a style for large text, without air.
 - Make an imgtxt class with italic and a line break after it? For image subtexts. Is that doable?
 
 - Implement SASS/LESS for easier reading of the styles code.
@@ -41,7 +43,6 @@ TODO/WIP For the BigBag web pages:
 - Fix class names
 - Possibly use CSS for the spoilers mechanism and js only for the classes' adding and removing?
 - Validate html and css files
-- Add link to the git repo?
 <br>
 
 DONE
