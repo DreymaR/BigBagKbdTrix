@@ -55,10 +55,12 @@ links:
             url: training.html#typeRead
           - title: Lessons
             url: training.html#focusedLessons
-          - title: Tarmak
-            url: training.html#tarmak
+          - title: N-grams
+            url: training.html#ngrams
           - title: Pangrams
             url: training.html#pangram
+          - title: Tarmak
+            url: training.html#tarmak
           - title: Monkeytype
             url: training.html#monkeytype
           - title: Links

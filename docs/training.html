@@ -297,13 +297,18 @@ the of to and a in is it you that he was for on are with as I his they be at one
 </p>
 
 
-<br><h2 class="anchor" id="grams">BIGRAM, TRIGRAM, N-GRAM TRAINING</h2>
-<p>In a forum post by <a href="https://forum.colemak.com/user/2783-misterw/"><b>misterW</b></a>, he suggests a focus on <b><a href="https://forum.colemak.com/post/19132/#p19132">common and damaging n-grams</a></b>. I quite agree with that!</p>
-
+<br><h2 class="anchor" id="ngrams">BIGRAM, TRIGRAM, N-GRAM... TRAINING</h2>
+<p>
+    <b>N-grams</b> are letter sequences that consitute the building blocks of words and word parts, as it were: Common bigrams like <b><kbd>TH HE IN EN NT</kbd></b>, trigrams like <b><kbd>THE AND THA ENT ING ION</kbd></b>, tetragrams like <b><kbd>THAT THER WITH TION HERE</kbd></b>, pentagrams and so on occur frequently in many English words.
+</p><p>
+    Some n-grams are easy on an optimized layout, while some will prove tricky even using the best of layouts. Training with a focus on <b>common and damaging n-grams</b> is therefore a good idea.
+</p><p>
+    <b><a href="https://www.youtube.com/watch?v=sI-a64EVPPU&t=179s">Youtuber Ben Vallack</a></b> quite agrees with me on this and explains it very nicely, so if you're interested go ahead and watch him say this better than I could. 👍
+</p>
 
 <div class="quote">
     <p>
-        <b>misterW (lightly edited) said:</b> <br>
+        <b><a href="https://forum.colemak.com/post/19132/#p19132">misterW</a> (lightly edited) said:</b> <br>
         Typing is all about grouping chunks of characters together and into your memory. Grab a list of the most common words and n-grams: <b>'the', 'and', 'with', 'that', 'tion', 'ing', 'for'</b>. You want to be typing those extremely fast. Roll your fingers whenever possible. You want to commit these chunks into memory. You could think of it as, "I'm going to become the best in the world at typing the word <i>different</i>."
     </p><p>
         What would you need to do to accomplish that? You need to practice it until it becomes second nature that you don't even have to think about it. Visualization helps. When away from the keyboard, visualize in your mind where the keys are and what fingers you will use to type the word "that" or whatever word you struggle with.
@@ -337,6 +342,41 @@ he the then them they there their they're theirs theme theory therein thermal th
 </p><p>
     There's also a very nice n-gram trainer by RanelPadon (you can find him on the Colemak Discord): <b><a href="https://ranelpadon.github.io/ngram-type/">NGram-Type</a></b>. Simple, neat and recommended.
 </p>
+
+
+<br><h2 class="anchor" id="pangram">PANGRAM LEARNING/TRAINING</h2>
+<p>
+    A <b><a href="https://en.wikipedia.org/wiki/Pangram">pangram</a></b> is a short phrase that contains all letters. Speed typist Sophie at the Colemak Discord used the best-known one about the quick brown fox to learn Colemak! She just typed it over and over until she knew where all the keys are. It's not a bad way of learning a layout I think, as you can do it anywhere without other tools than a simple text box – or in Amphetype or Monkeytype (see below) if you wish.
+</p><p>
+    At higher skill levels, it's probably best to switch your training to the most common words and n-grams as described above. But maybe it's beneficial for the better typists as well to drill the placement of the rarest letters as well now and then, as those may trip you up more easily.
+</p><p>
+    Sophie recommends using a pangram with mostly typical words. The "quick brown fox" one is a good example, as it uses the common word "the" twice and has no really weird words. Here are some fun pangram examples: 
+</p>
+<code class="one-line">
+    The quick brown fox jumps over the lazy dog
+</code><code class="one-line">
+    Pack my box with five dozen liquor jugs
+</code><code class="one-line">
+    Sphinx of black quartz, judge my vow.
+</code><code class="one-line">
+    We promptly judged antique ivory buckles for the next prize.
+</code><code class="one-line">
+    How razorback-jumping frogs can level six piqued gymnasts!
+</code><code class="one-line">
+    That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he’s foiled you again, creating chaos.
+</code>
+<p>
+    That last one is a phonemic pangram, containing the sounds in English rather than its letters. It lacks W and Z but those are the same in QWERTY and Colemak anyway. I think it's a cute spin on the first one!  (✿◠‿◠)
+</p>
+
+<br><code>The razor-toothed piranhas of the genera Serrasalmus and Pygocentrus are the most ferocious freshwater fish in the world. In reality they seldom attack a human.</code>
+<p>
+    This isn't a pangram but close: It's the 160-letter phrase used by <b>The Guinness World Records</b> for their <b><a href="https://www.exideas.com/ME/meetOurChamp.php">SMS speed record</a></b>. Good practice for any keyboard type.
+</p><p>
+    Here's an example of pangram training using Monkeytype, see below. I used the common "The quick brown fox..." phrase which comes up by default on the custom test, pressed "change" then "random" and a suitable word count. Generally though, I mostly do time tests with the English or English Expanded vocabularies.
+</p>
+<img class="left" alt="Pangram Training Monkeytype Custom Random" src="res/div/SpeedTraining/PangramTraining_Monkeytype_CustomRandom.png" />
+<p class="italic">Monkeytype screenshot with custom word pangram training</p><br>
 
 
 <br><h2 class="anchor" id="tarmak">TARMAK LEARNING USING COLEMAK</h2>
@@ -400,41 +440,6 @@ grep '^[qwahzxcvbmenk]*$' google-10000-english-sfw.txt | sed -r '/^.{,1}$/d' | g
 </p><p>
     By the way: I found a little online tool for Tarmak learning/training while using a QWERTY layout. I couldn't get it to work myself but I'll look into it. If you're interested, check out the <a href="https://transitional-colemak.smart0ne.repl.co/"><b>Transition Colemak</b></a> page.
 </p>
-
-
-<br><h2 class="anchor" id="pangram">PANGRAM LEARNING/TRAINING</h2>
-<p>
-    A <b><a href="https://en.wikipedia.org/wiki/Pangram">pangram</a></b> is a short phrase that contains all letters. Speed typist Sophie at the Colemak Discord used the best-known one about the quick brown fox to learn Colemak! She just typed it over and over until she knew where all the keys are. It's not a bad way of learning a layout I think, as you can do it anywhere without other tools than a simple text box – or in Amphetype or Monkeytype (see below) if you wish.
-</p><p>
-    At higher skill levels, it's probably best to switch your training to the most common words and n-grams as described above. But maybe it's beneficial for the better typists as well to drill the placement of the rarest letters as well now and then, as those may trip you up more easily.
-</p><p>
-    Sophie recommends using a pangram with mostly typical words. The "quick brown fox" one is a good example, as it uses the common word "the" twice and has no really weird words. Here are some fun pangram examples: 
-</p>
-<code class="one-line">
-    The quick brown fox jumps over the lazy dog
-</code><code class="one-line">
-    Pack my box with five dozen liquor jugs
-</code><code class="one-line">
-    Sphinx of black quartz, judge my vow.
-</code><code class="one-line">
-    We promptly judged antique ivory buckles for the next prize.
-</code><code class="one-line">
-    How razorback-jumping frogs can level six piqued gymnasts!
-</code><code class="one-line">
-    That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he’s foiled you again, creating chaos.
-</code>
-<p>
-    That last one is a phonemic pangram, containing the sounds in English rather than its letters. It lacks W and Z but those are the same in QWERTY and Colemak anyway. I think it's a cute spin on the first one!  (✿◠‿◠)
-</p>
-
-<br><code>The razor-toothed piranhas of the genera Serrasalmus and Pygocentrus are the most ferocious freshwater fish in the world. In reality they seldom attack a human.</code>
-<p>
-    This isn't a pangram but close: It's the 160-letter phrase used by <b>The Guinness World Records</b> for their <b><a href="https://www.exideas.com/ME/meetOurChamp.php">SMS speed record</a></b>. Good practice for any keyboard type.
-</p><p>
-    Here's an example of pangram training using Monkeytype, see below. I used the common "The quick brown fox..." phrase which comes up by default on the custom test, pressed "change" then "random" and a suitable word count. Generally though, I mostly do time tests with the English or English Expanded vocabularies.
-</p>
-<img class="left" alt="Pangram Training Monkeytype Custom Random" src="res/div/SpeedTraining/PangramTraining_Monkeytype_CustomRandom.png" />
-<p class="italic">Monkeytype screenshot with custom word pangram training</p><br>
 
 
 <br><h2 class="anchor" id="monkeytype">TRAINING WITH MONKEYTYPE</h2>
