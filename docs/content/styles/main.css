@@ -686,13 +686,9 @@ h2 {
 }
 
 h3 {
+  text-transform: uppercase;
   text-decoration: underline;
   margin: 22px 0;
-}
-
-h4 {
-  text-decoration: underline;
-  margin: 4px 0;
 }
 
 ul {
@@ -763,6 +759,18 @@ code.one-line {
   overflow-y: hidden;
 }
 
+code.inline, code.inline-blue {
+  margin-top: 0;
+  width: unset;
+  padding: 0 2px;
+  overflow: unset;
+}
+
+code.inline {
+  color: #12212E;
+  background-color: #DEDEDE;
+}
+
 code:not(.one-line)::-webkit-scrollbar {
   display: none;
 }
@@ -829,6 +837,10 @@ code:not(.one-line)::-webkit-scrollbar {
 
 .spoilerBody.active {
   display: block;
+}
+
+.spoiler code.inline {
+  background-color: #B7B7B7;
 }
 
 .bold {

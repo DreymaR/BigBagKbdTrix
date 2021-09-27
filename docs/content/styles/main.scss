@@ -769,6 +769,19 @@ code {
         overflow-y: hidden;
     }
 
+    &.inline,
+    &.inline-blue {
+        margin-top: 0;
+        width: unset;
+        padding: 0 2px;
+        overflow: unset;
+    }
+
+    &.inline {
+        color: #12212E;
+        background-color: #DEDEDE;
+    }
+
     &:not(.one-line)::-webkit-scrollbar {
         display: none;
     }
@@ -835,6 +848,10 @@ code {
         &.active {
             display: block;
         }
+    }
+
+    code.inline {
+        background-color: #B7B7B7;
     }
 }
 
