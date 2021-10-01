@@ -7,6 +7,27 @@ https://dreymar.colemak.org
 
 TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 ----------------------------------------------------------------
+- Beginner's FAQ (continue the front page one?):
+	- Format them as spoilers? With the question as header: 🤔 ❓ "<question>"  ❓
+	- "Which is better, Vanilla or DH?"
+		- Both have shown 220+ WPM typing test results
+		- Individual preference, typing style (float vs grounding)
+	- "Is DH the same as... (DHm/DHk, the DH mod for ANSI/ISO vs matrix/ortho...)?"
+	- "Would DH work without that pesky confusing Angle mod?"
+		- "Would using one ortho board and another ANSI Angle-modded board make it more confusing?"
+	- "Isn't Workman better than Colemak (vanilla)? Its documentation says so!"
+	- "Wouldn't it be better to swap R and S on Colemak?"
+	- "Which layouts are better than Colemak?"
+		- Depends a lot on modeling and scoring. Individual factors and preferences become important, as with vanilla vs DH.
+		- Diminishing returns, infinite layout pool
+		- More changes from QWERTY, more keys change hands, fewer shortcuts kept
+		- Many layouts claiming superiority have more pinky movement! Also more pinky SFBs even with fewer total SFBs.
+		- Colemak places the quite common `A` and `O` on pinkies, but has little pinky movement to the other rows.
+		- Word of warning about implementation.
+	- How can I get a layout up and running? I downloaded this installer...
+		- Four main ways on Windows: MSKLC, AHK, EPKL, Registry/SharpKeys. Strengths and weaknesses.
+		- On Linux and MacOS, XKB and KMonad. Differences.
+		- Hardware implementation. Programmable board and QUICKIE.
 - Locale variants:
 	- Add more of the Forum locale topic
 	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?

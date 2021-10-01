@@ -686,9 +686,14 @@ h2 {
 }
 
 h3 {
-  text-transform: uppercase;
+/*  text-transform: uppercase; */
   text-decoration: underline;
   margin: 22px 0;
+}
+
+h4 {
+  text-decoration: underline;
+  margin: 4px 0;
 }
 
 ul {
