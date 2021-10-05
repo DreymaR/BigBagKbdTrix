@@ -614,6 +614,10 @@ main {
         height: calc(100vh - 110px);
     }
 
+    p {
+        line-height: 19px;
+    }
+
     img {
         width: auto;
         display: block;
@@ -771,9 +775,11 @@ code {
 
     &.inline,
     &.inline-blue {
-        margin-top: 0;
+        display: inline;
         width: unset;
-        padding: 0 2px;
+        margin-top: 0;
+        padding: 1px 5px;
+        border-radius: 4px;
         overflow: unset;
     }
 
@@ -785,6 +791,14 @@ code {
     &:not(.one-line)::-webkit-scrollbar {
         display: none;
     }
+}
+
+kbd {
+    padding: 0 5px;
+    border-radius: 4px;
+    box-shadow: inset 0 -1px 0 #dedede;
+    background-color: #ededed;
+    border: 1px solid #dedede;
 }
 
 .quote {
@@ -821,8 +835,44 @@ code {
         > p {
             margin: 5px 0 15px;
 
-            > span:before {
+            &:before {
                 content: '▲';
+            }
+        }
+    }
+
+    &.newbspoiler > p {
+        &:before {
+            content: '▲';
+        }
+        
+        > span {
+            padding-left: 146px;
+            position: relative;
+            font-weight: bold;
+
+            &:before {
+                content: 'Newb question:';
+                display: inline-block;
+                width: max-content;
+                height: 20px;
+                padding: 0 0 0 40px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-weight: normal;
+                background: url('../img/wonder.svg') left center no-repeat, url('../img/question.svg') 16px center no-repeat;
+                background-size: contain;
+            }
+
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                vertical-align: bottom;
+                background: url('../img/question.svg') center center no-repeat;
+                background-size: contain;
             }
         }
     }
@@ -830,7 +880,7 @@ code {
      > p {
         margin: 5px 0;
 
-        > span:before {
+        &:before {
             content: '▼';
             margin-right: 3px;
         }

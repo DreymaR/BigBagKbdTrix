@@ -613,6 +613,10 @@ main#linksContainer {
   height: calc(100vh - 110px);
 }
 
+main p {
+  line-height: 19px;
+}
+
 main img {
   width: auto;
   display: block;
@@ -686,14 +690,9 @@ h2 {
 }
 
 h3 {
-/*  text-transform: uppercase; */
+  text-transform: uppercase;
   text-decoration: underline;
   margin: 22px 0;
-}
-
-h4 {
-  text-decoration: underline;
-  margin: 4px 0;
 }
 
 ul {
@@ -765,9 +764,11 @@ code.one-line {
 }
 
 code.inline, code.inline-blue {
-  margin-top: 0;
+  display: inline;
   width: unset;
-  padding: 0 2px;
+  margin-top: 0;
+  padding: 1px 5px;
+  border-radius: 4px;
   overflow: unset;
 }
 
@@ -778,6 +779,15 @@ code.inline {
 
 code:not(.one-line)::-webkit-scrollbar {
   display: none;
+}
+
+kbd {
+  padding: 0 5px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -1px 0 #dedede;
+          box-shadow: inset 0 -1px 0 #dedede;
+  background-color: #ededed;
+  border: 1px solid #dedede;
 }
 
 .quote {
@@ -817,15 +827,51 @@ code:not(.one-line)::-webkit-scrollbar {
   margin: 5px 0 15px;
 }
 
-.spoiler.active > p > span:before {
+.spoiler.active > p:before {
   content: '▲';
+}
+
+.spoiler.newbspoiler > p:before {
+  content: '▲';
+}
+
+.spoiler.newbspoiler > p > span {
+  padding-left: 146px;
+  position: relative;
+  font-weight: bold;
+}
+
+.spoiler.newbspoiler > p > span:before {
+  content: 'Newb question:';
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 20px;
+  padding: 0 0 0 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: normal;
+  background: url("../img/wonder.svg") left center no-repeat, url("../img/question.svg") 16px center no-repeat;
+  background-size: contain;
+}
+
+.spoiler.newbspoiler > p > span:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: bottom;
+  background: url("../img/question.svg") center center no-repeat;
+  background-size: contain;
 }
 
 .spoiler > p {
   margin: 5px 0;
 }
 
-.spoiler > p > span:before {
+.spoiler > p:before {
   content: '▼';
   margin-right: 3px;
 }
