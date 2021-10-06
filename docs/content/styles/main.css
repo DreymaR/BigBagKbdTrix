@@ -690,9 +690,14 @@ h2 {
 }
 
 h3 {
-  text-transform: uppercase;
+/*  text-transform: uppercase; */
   text-decoration: underline;
   margin: 22px 0;
+}
+
+h4 {
+  text-decoration: underline;
+  margin: 4px 0;
 }
 
 ul {
@@ -842,7 +847,7 @@ kbd {
 }
 
 .spoiler.newbspoiler > p > span:before {
-  content: 'Newb question:';
+  content: ' 🤔 ❔ Newb Question:';
   display: inline-block;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -858,7 +863,7 @@ kbd {
 }
 
 .spoiler.newbspoiler > p > span:after {
-  content: '';
+  content: ' ❔';
   display: inline-block;
   width: 20px;
   height: 20px;
