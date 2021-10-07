@@ -690,9 +690,14 @@ h2 {
 }
 
 h3 {
-  text-transform: uppercase;
+/*  text-transform: uppercase; */
   text-decoration: underline;
   margin: 22px 0;
+}
+
+h4 {
+  text-decoration: underline;
+  margin: 4px 0;
 }
 
 ul {
@@ -832,13 +837,13 @@ kbd {
 }
 
 .spoiler.newbspoiler > p > span {
-  padding-left: 146px;
+  padding-left: 80px; /* 146px */
   position: relative;
   font-weight: bold;
 }
 
 .spoiler.newbspoiler > p > span:before {
-  content: '🤔 ❓ Newb question:';
+  content: '🤔 ❓ FAQ:';
   display: inline-block;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -855,8 +860,8 @@ kbd {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-left: 3px;
-  vertical-align: bottom;
+  margin-left: 10px;
+/*  vertical-align: bottom; */
 }
 
 .spoiler > p {
