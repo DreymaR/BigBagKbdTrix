@@ -690,14 +690,9 @@ h2 {
 }
 
 h3 {
-/*  text-transform: uppercase; */
+  text-transform: uppercase;
   text-decoration: underline;
   margin: 22px 0;
-}
-
-h4 {
-  text-decoration: underline;
-  margin: 4px 0;
 }
 
 ul {
@@ -836,10 +831,6 @@ kbd {
   content: '▲';
 }
 
-.spoiler.newbspoiler > p:before {
-  content: '▲';
-}
-
 .spoiler.newbspoiler > p > span {
   padding-left: 146px;
   position: relative;
@@ -847,29 +838,25 @@ kbd {
 }
 
 .spoiler.newbspoiler > p > span:before {
-  content: ' 🤔 ❔ Newb Question:';
+  content: '🤔 ❓ Newb question:';
   display: inline-block;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 20px;
-  padding: 0 0 0 40px;
   position: absolute;
   top: 0;
   left: 0;
   font-weight: normal;
-  background: url("../img/wonder.svg") left center no-repeat, url("../img/question.svg") 16px center no-repeat;
-  background-size: contain;
 }
 
 .spoiler.newbspoiler > p > span:after {
-  content: ' ❔';
+  content: '❓';
   display: inline-block;
   width: 20px;
   height: 20px;
+  margin-left: 3px;
   vertical-align: bottom;
-  background: url("../img/question.svg") center center no-repeat;
-  background-size: contain;
 }
 
 .spoiler > p {

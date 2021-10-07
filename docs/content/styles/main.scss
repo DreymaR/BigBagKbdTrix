@@ -842,37 +842,29 @@ kbd {
     }
 
     &.newbspoiler > p {
-        &:before {
-            content: '▲';
-        }
-        
         > span {
             padding-left: 146px;
             position: relative;
             font-weight: bold;
 
             &:before {
-                content: 'Newb question:';
+                content: '🤔 ❓ Newb question:';
                 display: inline-block;
                 width: max-content;
                 height: 20px;
-                padding: 0 0 0 40px;
                 position: absolute;
                 top: 0;
                 left: 0;
                 font-weight: normal;
-                background: url('../img/wonder.svg') left center no-repeat, url('../img/question.svg') 16px center no-repeat;
-                background-size: contain;
             }
 
             &:after {
-                content: '';
+                content: '❓';
                 display: inline-block;
                 width: 20px;
                 height: 20px;
+                margin-left: 3px;
                 vertical-align: bottom;
-                background: url('../img/question.svg') center center no-repeat;
-                background-size: contain;
             }
         }
     }
