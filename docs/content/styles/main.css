@@ -690,7 +690,6 @@ h2 {
 }
 
 h3 {
-/*  text-transform: uppercase; */
   text-decoration: underline;
   margin: 22px 0;
 }
@@ -837,13 +836,13 @@ kbd {
 }
 
 .spoiler.newbspoiler > p > span {
-  padding-left: 80px; /* 146px */
+  padding-left: 80px;
   position: relative;
   font-weight: bold;
 }
 
 .spoiler.newbspoiler > p > span:before {
-  content: '🤔 ❓ FAQ:';
+  content: '\01F914  \002753  FAQ:';
   display: inline-block;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -856,12 +855,11 @@ kbd {
 }
 
 .spoiler.newbspoiler > p > span:after {
-  content: '❓';
+  content: '\002753';
   display: inline-block;
   width: 20px;
   height: 20px;
   margin-left: 10px;
-/*  vertical-align: bottom; */
 }
 
 .spoiler > p {

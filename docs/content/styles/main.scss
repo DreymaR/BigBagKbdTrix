@@ -697,9 +697,13 @@ h2 {
 }
 
 h3 {
-    text-transform: uppercase;
     text-decoration: underline;
     margin: 22px 0;
+}
+
+h4 {
+    text-decoration: underline;
+    margin: 4px 0;
 }
 
 ul {
@@ -843,12 +847,12 @@ kbd {
 
     &.newbspoiler > p {
         > span {
-            padding-left: 146px;
+            padding-left: 80px;
             position: relative;
             font-weight: bold;
 
             &:before {
-                content: '🤔 ❓ Newb question:';
+                content: '\01F914  \002753  FAQ:';
                 display: inline-block;
                 width: max-content;
                 height: 20px;
@@ -859,12 +863,11 @@ kbd {
             }
 
             &:after {
-                content: '❓';
+                content: '\002753';
                 display: inline-block;
                 width: 20px;
                 height: 20px;
-                margin-left: 3px;
-                vertical-align: bottom;
+                margin-left: 10px;
             }
         }
     }
