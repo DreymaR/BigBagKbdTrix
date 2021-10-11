@@ -722,7 +722,12 @@ ul.dashed li:before {
   font-weight: bold;
 }
 
+ol {
+  padding-left: 15px;
+}
+
 ol.bracket {
+  padding-left: 0;
   counter-reset: list;
 }
 
