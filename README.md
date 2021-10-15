@@ -7,16 +7,28 @@ https://dreymar.colemak.org
 
 TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 ----------------------------------------------------------------
-- Beginner's FAQ (continue the front page one?):
-	- Format them as spoilers? With the question as header: 🤔 ❓ "<question>"  ❓
+- Beginner's FAQ questions:
+	- In the front page FAQ section? Many of them are generic Colemak non-BigBag questions, so make a section on www.colemak.org instead?
+	☑ Format them as spoilers? With the question as header: 🤔 ❓ "<question>"  ❓
 	- "Which is better, Vanilla or DH?"
 		- Both have shown 220+ WPM typing test results
 		- Individual preference, typing style (float vs grounding)
 	- "Is DH the same as... (DHm/DHk, the DH mod for ANSI/ISO vs matrix/ortho...)?"
-	- "Would DH work without that pesky confusing Angle mod?"
+	☑ "Would DH work without that pesky confusing Angle mod?"
 		- "Would using one ortho board and another ANSI Angle-modded board make it more confusing?"
-	- "Isn't Workman better than Colemak (vanilla)? Its documentation says so!"
+	- "Isn't Workman/Norman better than Colemak (vanilla)? Its documentation says so!"
+		- Here's Ben Vallack talking about leaving Workman: https://www.youtube.com/watch?v=WVmJrZF9xwk&t=245s
+	- "I want to tweak Colemak a little to suit my needs!"
+		- Unless you really are an experienced layout designer, be open to the fact that you probably don't know and understand enough to do it well.
+		- On a properly optimized layout it's generally very hard to change even a small thing without breaking something more important.
+		- You should understand some central concepts such as finger strengths, interdependences and speeds, as well as the crucial same-finger bigram.
+		- Read the https://colemak.com/Design_FAQ and the accompanying https://colemak.com/Design first, to learn more.
 	- "Wouldn't it be better to swap R and S on Colemak?"
+	- "My right pinky gets tired! What's wrong?"
+		- Many QWERTY typists hardly use their right hand pinky, as the rare semicolon sits in its home row position and some type P with their ring finger.
+		- These typists may need to build up their finger strength a little to type well on Colemak. Pinky fu!  🥋
+		- There are layouts that deprioritize the pinkies more than Colemak. These generally aren't so good, however.
+		- There are even highly optimized layouts that have heavier pinky load than Colemak.
 	- "Which layouts are better than Colemak?"
 		- Depends a lot on modeling and scoring. Individual factors and preferences become important, as with vanilla vs DH.
 		- Diminishing returns, infinite layout pool
