@@ -24,11 +24,14 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 		- You should understand some central concepts such as finger strengths, interdependences and speeds, as well as the crucial same-finger bigram.
 		- Read the https://colemak.com/Design_FAQ and the accompanying https://colemak.com/Design first, to learn more.
 	- "Wouldn't it be better to swap R and S on Colemak?"
-	- "My right pinky gets tired! What's wrong?"
+	- "My right pinky gets tired! And typing `you` is uncomfortable! What's wrong?"
 		- Many QWERTY typists hardly use their right hand pinky, as the rare semicolon sits in its home row position and some type P with their ring finger.
 		- These typists may need to build up their finger strength a little to type well on Colemak. Pinky fu!  🥋
 		- There are layouts that deprioritize the pinkies more than Colemak. These generally aren't so good, however.
 		- There are even highly optimized layouts that have heavier pinky load than Colemak.
+		- The `you` trigram in particular, isn't so great on Colemak. Trust me, most common n-grams are great.
+			- This one has a so-called `redirect`, which means that it changes direction (RL then LR). That's not so comfortable.
+			- Furthermore, it uses both the weak pinky and the codependent ring finger. You just have to train it!
 	- "Which layouts are better than Colemak?"
 		- Depends a lot on modeling and scoring. Individual factors and preferences become important, as with vanilla vs DH.
 		- Diminishing returns, infinite layout pool
