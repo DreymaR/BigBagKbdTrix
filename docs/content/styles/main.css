@@ -840,13 +840,13 @@ kbd {
   content: '▲';
 }
 
-.spoiler.newbspoiler > p > span {
+.spoiler.newbspoiler > p > span, .spoiler.newbspoiler-inline > p > span {
   padding-left: 80px;
   position: relative;
   font-weight: bold;
 }
 
-.spoiler.newbspoiler > p > span:before {
+.spoiler.newbspoiler > p > span:before, .spoiler.newbspoiler-inline > p > span:before {
   content: '\01F914  \002753  FAQ:';
   display: inline-block;
   width: -webkit-max-content;
@@ -865,6 +865,14 @@ kbd {
   width: 20px;
   height: 20px;
   margin-left: 10px;
+}
+
+.spoiler.newbspoiler-inline > p > span {
+  padding-left: 45px;
+}
+
+.spoiler.newbspoiler-inline > p > span:before {
+  content: '\01F914  \002753';
 }
 
 .spoiler > p {

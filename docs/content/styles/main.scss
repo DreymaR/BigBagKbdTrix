@@ -848,8 +848,8 @@ kbd {
         }
     }
 
-    &.newbspoiler > p {
-        > span {
+    &.newbspoiler, &.newbspoiler-inline {
+        > p > span {
             padding-left: 80px;
             position: relative;
             font-weight: bold;
@@ -864,14 +864,22 @@ kbd {
                 left: 0;
                 font-weight: normal;
             }
+        }
+    }
 
-            &:after {
-                content: '\002753';
-                display: inline-block;
-                width: 20px;
-                height: 20px;
-                margin-left: 10px;
-            }
+    &.newbspoiler > p > span:after {
+        content: '\002753';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    &.newbspoiler-inline > p > span {
+        padding-left: 45px;
+
+        &:before {
+            content: '\01F914  \002753';
         }
     }
     
