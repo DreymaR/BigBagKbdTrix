@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 102 17" style="enable-background:new 0 0 102 17;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#13212E;}
+	.st1{font-family:'OpenSans';}
+	.st2{font-size:7px;}
+	.st3{fill:#99CE82;}
+	.st4{fill:#EDC08B;}
+	.st5{fill:#C2C1C0;}
+	.st6{fill:#81A7D8;}
+</style>
+<text transform="matrix(1 0 0 1 9.6491 6.0508)" class="st0 st1 st2">Navigation</text>
+<circle class="st3" cx="4.3" cy="3.5" r="3.2"/>
+<circle class="st4" cx="66.3" cy="12.6" r="3.2"/>
+<text transform="matrix(1 0 0 1 71.6524 15.0506)" class="st0 st1 st2">Media</text>
+<circle class="st5" cx="4.3" cy="12.6" r="3.2"/>
+<text transform="matrix(1 0 0 1 9.6524 15.0507)" class="st0 st1 st2">System / Misc.</text>
+<circle class="st6" cx="66.3" cy="3.5" r="3.2"/>
+<text transform="matrix(1 0 0 1 71.6491 6.0506)" class="st0 st1 st2">Mousing</text>
+</svg>

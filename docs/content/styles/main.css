@@ -625,27 +625,77 @@ main img {
   margin: 20px auto;
 }
 
-main img.smallImg {
+main img.img-small {
   max-width: 400px;
 }
 
-main img.autoWidth {
+main img.img-auto-width {
   width: auto;
+  max-width: 100%;
 }
 
-main img:not(.headerImg) + p.italic {
+main img.left {
+  margin: 20px 0;
+}
+
+main .img-extend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .img-extend:after {
+  content: '';
+  width: 270px;
+  max-width: 100%;
+  height: 45px;
+  margin-bottom: 20px;
+  background: url("../img/extend-legend-sm.svg") no-repeat center;
+  background-size: contain;
+}
+
+@media screen and (min-width: 950px) {
+  main .img-extend {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .img-extend:after {
+    display: inline-block;
+    width: 135px;
+    height: 90px;
+    margin-bottom: 0;
+    background-image: url("../img/extend-legend.svg");
+  }
+  main .img-extend img {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+main .img:not(.headerImg) + p.italic,
+main .img-extend + p.italic {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-main img:not(.headerImg).left + p.italic {
+main .img:not(.headerImg).left + p.italic,
+main .img-extend.left + p.italic {
   max-width: unset;
   text-align: left;
-}
-
-main img.left {
-  margin: 20px 0;
 }
 
 main a {

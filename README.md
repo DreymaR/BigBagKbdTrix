@@ -78,7 +78,6 @@ TODO/WIP For the BigBag web page design, mostly for Marvel:
 - Additional padding at the bottom of 'code' blocks.
 - Fix class names
 - Possibly use CSS for the spoilers mechanism and js only for the classes' adding and removing?
-- Validate html and css files
 <br>
 
 DONE
@@ -99,6 +98,7 @@ DONE
 - Change the style of spoilers so that they're more visible.
 - Smaller logo.
 - Keep original image sizes.
+- Validate html and css files
 
 - Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
 	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
@@ -124,7 +124,7 @@ HTML tips from abrickinthehallway:
 <div class="quote">
 <b>, <strong> - bold
 <em> - italic
-<img src="content/images/dk12_dblacutesci.png" class="smallImg"> ('alt' attribute is optional - displays when image cannot be displayed)
+<img src="content/images/dk12_dblacutesci.png" class="img-small"> ('alt' attribute is optional - displays when image cannot be displayed)
     <img class="left"....
 ul - unordered list
 ol - ordered list (1,2,3/a,b,c)
