@@ -662,7 +662,7 @@ main {
                 display: inline-block;
                 width: 135px;
                 height: 90px;
-                margin-bottom: 0;
+                margin: 75px 0 0;
                 background-image: url('../img/extend-legend.svg');
             }
 
@@ -670,6 +670,12 @@ main {
                 display: inline-block;
                 margin-right: 20px;
                 margin-left: 20px;
+            }
+        }
+
+        &.img-extend-legend-def:after {
+            @media screen and (min-width: 950px) {
+                margin-top: 0;
             }
         }
     }

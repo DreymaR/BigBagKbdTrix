@@ -66,7 +66,6 @@ TODO/WIP For the BigBag web page design, mostly for Marvel:
 - A little more air before headings, in the style sheets? And a style for large text, without air.
 - Make an imgtxt class with italic and a line break after it? For image subtexts. Is that doable?
 
-- Implement SASS/LESS for easier reading of the styles code.
 - Rework the 'Platforms' menu visualisation.
 	- Let it open without delay.
 	- Make it smoother so it doesn't glitch/flicker.
@@ -74,9 +73,6 @@ TODO/WIP For the BigBag web page design, mostly for Marvel:
 	- Implement a sort of a 'Under construction' message for the Mac platform.
 		- Link to the MKBorregaard topic there.
 - Better alignment of images and text around them.
-- Change font to 'Open Sans' for easier-on-the-eyes reading?
-- Additional padding at the bottom of 'code' blocks.
-- Fix class names
 - Possibly use CSS for the spoilers mechanism and js only for the classes' adding and removing?
 <br>
 
@@ -96,8 +92,12 @@ DONE
 - Implement platform boxes at the appropriate places.
 - Fix the popup that shows during the first website visit.
 - Change the style of spoilers so that they're more visible.
+- Change font to 'Open Sans' for easier-on-the-eyes reading
+- Additional padding at the bottom of 'code' blocks.
 - Smaller logo.
+- Implement SASS/LESS for easier reading of the styles code.
 - Keep original image sizes.
+- Fix class names
 - Validate html and css files
 
 - Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
