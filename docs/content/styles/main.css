@@ -253,9 +253,6 @@ table td p.legend {
 }
 
 #platforms:hover .platform-picker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   visibility: visible;
   opacity: 1;
 }
@@ -301,7 +298,9 @@ table td p.legend {
 .platform-picker {
   opacity: 0;
   visibility: hidden;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   left: 0;
   top: 59px;
@@ -321,8 +320,8 @@ table td p.legend {
   background-color: #AA77BB;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
 
 .platform-picker #linux {
@@ -691,17 +690,21 @@ main .img-extend:after {
   }
 }
 
-main .img:not(.headerImg) + p.italic,
-main .img-extend + p.italic {
+main .img-text {
+  display: inline-block;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 19px;
   text-align: center;
+  font-style: italic;
 }
 
-main .img:not(.headerImg).left + p.italic,
-main .img-extend.left + p.italic {
+main img:not(.img-header).left + .img-text {
   max-width: unset;
   text-align: left;
+}
+
+main > .img-text:last-child {
+  margin-bottom: 14px;
 }
 
 main a {

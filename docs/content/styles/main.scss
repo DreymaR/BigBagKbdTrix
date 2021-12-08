@@ -274,7 +274,6 @@ table {
     }
 
     &:hover .platform-picker {
-        display: flex;
         visibility: visible;
         opacity: 1;
     }
@@ -330,7 +329,7 @@ table {
 .platform-picker {
     opacity: 0;
     visibility: hidden;
-    display: none;
+    display: flex;
     position: absolute;
     left: 0;
     top: 59px;
@@ -344,8 +343,7 @@ table {
     border-bottom-left-radius: 10px;
     background-color: #AA77BB;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
-    
-    transition: all .2s ease-in-out;
+    transition: all .15s ease-in-out;
 
     #linux {
         background-image: url("../img/linux_gray.svg");
@@ -680,18 +678,21 @@ main {
         }
     }
 
-    .img:not(.headerImg),
-    .img-extend {
-        + p.italic {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
+    .img-text {
+        display: inline-block;
+        max-width: 700px;
+        margin: 0 auto 19px;
+        text-align: center;
+        font-style: italic;
+    }
 
-        &.left + p.italic {
-            max-width: unset;
-            text-align: left;
-        }
+    img:not(.img-header).left + .img-text {
+        max-width: unset;
+        text-align: left;
+    }
+
+    > .img-text:last-child {
+        margin-bottom: 14px;
     }
 
     a {
