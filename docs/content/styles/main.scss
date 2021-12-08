@@ -679,9 +679,8 @@ main {
     }
 
     .img-text {
-        display: inline-block;
         max-width: 700px;
-        margin: 0 auto 19px;
+        margin: 0 auto 34px;
         text-align: center;
         font-style: italic;
     }
@@ -737,12 +736,12 @@ h1 {
 }
 
 h2 {
-    margin: 1em 0;
+    margin: 40px 0 20px;
 }
 
 h3 {
     text-decoration: underline;
-    margin: 22px 0;
+    margin: 40px 0 20px;
 }
 
 h4 {
@@ -875,7 +874,7 @@ kbd {
 } 
 
 .spoiler {
-    margin: 1em 0;
+    margin: 14px 0 20px;
     padding: 1px 10px;
     background-color: #DEDEDE;
     border-left: 3px solid #AA77BB;
@@ -942,12 +941,10 @@ kbd {
         background-color: #CACACA;
     }
     
-    &Body {
-        display: none;
-
-        &.active {
-            display: block;
-        }
+    &-body {
+        height: 0px;
+        overflow:hidden;
+        transition:height 0.3s ease-out;
     }
 
     code.inline {
@@ -1109,9 +1106,13 @@ kbd {
             text-align: center;
     
             ul {
-                display: none;
+                visibility: hidden;
+                opacity: 0;
+                width: 0;
+                transition: opacity .15s ease-in-out;
     
                 li {
+                    height: 24px;
                     margin-bottom: 0;
                     padding: 10px 15px;
                     text-align: left;
@@ -1143,7 +1144,8 @@ kbd {
     #menu .has-submenu:hover > ul {
         position: absolute;
         top: 60px;
-        display: block;
+        visibility: visible;
+        opacity: 1;
         width: auto;
         height: auto;
         margin: 0;

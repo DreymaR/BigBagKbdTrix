@@ -37,10 +37,13 @@ links:
     sub:
       - title: Locales
         url: variants.html#locales
+        reload: true
       - title: Scripts
         url: variants.html#scripts
+        reload: true
       - title: One-Hand
         url: variants.html#mirror
+        reload: true
   - title: learning
     url: learning.html
     sub:

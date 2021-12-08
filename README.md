@@ -61,18 +61,6 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 - In extend-layers.html, replace the "Head over to" part with proper platform box tips for Extend
 <br>
 
-TODO/WIP For the BigBag web page design, mostly for abrickinthehallway:
------------------------------------------------------------
-- A little more air before headings, in the style sheets? And a style for large text, without air.
-
-- Rework the 'Platforms' menu visualisation.
-	- Let it open without delay.
-	- Make it smoother so it doesn't glitch/flicker.
-	- DONE: Make the icons smaller.
-	- Implement a sort of a 'Under construction' message for the Mac platform.
-		- Link to the MKBorregaard topic there.
-<br>
-
 DONE
 ----
 - Flesh out the Monkeytype learning section: Colors, settings tips
@@ -91,7 +79,6 @@ DONE
 - Better alignment of images and text around them.
 - Change the style of spoilers so that they're more visible.
 - Change font to 'Open Sans' for easier-on-the-eyes reading.
-- Use CSS for the spoilers mechanism and js only for the classes' adding and removing.
 - Additional padding at the bottom of 'code' blocks.
 - Smaller logo.
 - Implement SASS/LESS for easier reading of the styles code.
@@ -99,6 +86,14 @@ DONE
 - Fix class names
 - Make an imgtxt class with italic and a line break after it? For image subtexts.
 - Validate html and css files
+- Rework the 'Platforms' menu visualisation.
+	- Let it open without delay.
+	- Make it smoother so it doesn't glitch/flicker.
+	- Make the icons smaller.
+	- Implement a sort of a 'Under construction' message for the Mac platform.
+		- Link to the MKBorregaard topic there.
+- A little more air before headings, in the style sheets? And a style for large text, without air.
+
 
 - Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
 	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
@@ -137,7 +132,7 @@ ol - ordered list (1,2,3/a,b,c)
 • For spoilers:
 <div class="spoiler">
     <p><span>Spoiler:</span></p>
-    <div class="spoilerBody">
+    <div class="spoiler-body">
     SPOILER CONTENT HERE
     </div>
 </div>

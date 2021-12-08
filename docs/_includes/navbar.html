@@ -27,7 +27,7 @@
                             <ul>
                                 {% for sublink in link.sub %}
                                     <li class="{% if sublink.sub %}has-submenu{% endif %}">
-                                        <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                                        <a href="{{ sublink.url }}" {% if sublink.reload %}onclick="location.reload()"{% endif %}>{{ sublink.title }}</a>
                                         {% if sublink.sub != null %}
                                             <ul>
                                                 {% for subsublink in sublink.sub %}
