@@ -949,10 +949,11 @@ kbd {
 }
 
 .spoiler-body {
-  height: 0px;
-  overflow: hidden;
-  -webkit-transition: height 0.3s ease-out;
-  transition: height 0.3s ease-out;
+  display: none;
+}
+
+.spoiler-body.active {
+  display: block;
 }
 
 .spoiler code.inline {

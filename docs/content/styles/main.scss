@@ -942,9 +942,11 @@ kbd {
     }
     
     &-body {
-        height: 0px;
-        overflow:hidden;
-        transition:height 0.3s ease-out;
+        display: none;
+
+        &.active {
+            display: block;
+        }
     }
 
     code.inline {

@@ -284,15 +284,10 @@ function toggleSpoiler() {
     if (spoilerBody.classList.contains('active')) {
         spoilerBody.classList.remove('active');
         spoilerBody.parentNode.classList.remove('active');
-
-        spoilerBody.style.height = 0 + 'px';
     }
     else {
         spoilerBody.classList.add('active');
         spoilerBody.parentNode.classList.add('active');
-
-        spoilerHeight = spoilerBody.scrollHeight;
-        spoilerBody.style.height = spoilerHeight + 'px';
     }
 }
 
