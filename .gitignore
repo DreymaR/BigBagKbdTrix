@@ -3,3 +3,7 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+*_tmp*
+*_test*
+* Copy*
+*Shortcut.???
