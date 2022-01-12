@@ -159,7 +159,7 @@ title: THE BIG BAG THEORY
                 There is a tweaked <a href="tarmak.html#tmk-dh">Tarmak progression for Colemak-DH</a> if you want to learn it step-by-step.
             </li>
         </ul>
-    </li><br>
+    </li>
     <div class="spoiler newbspoiler">
         <p><span>"What's best, classical/vanilla Colemak or Colemak-DH?"</span></p>
         <div class="spoiler-body">
@@ -196,7 +196,7 @@ title: THE BIG BAG THEORY
                 I use all of the above mods in conjuction: Colemak with the <b>C</b>url<b>A</b>ngle<b>W</b>ide<b>Sym</b> mods makes my <b>Colemak-CAWS</b>! 💪
             </li>
         </ul>
-    </li><br>
+    </li>
     <div class="spoiler newbspoiler">
         <p><span>"Whoa, that's wayyy too many mods and letters! Confused now!"</span></p>
         <div class="spoiler-body">
@@ -212,7 +212,7 @@ title: THE BIG BAG THEORY
 				On the <a href="ergo-mods.html"><b>Big Bag Ergo-Mods page</b></a> there's much more in-depth info so if/when you feel ready for it, please read on.
 			</p>
         </div>
-    </div>
+    </div><br>
 
     <li><a href="layers-colemaked.html"><b>Colemak[eD]:</b></a>
         <ul class="dashed">
@@ -236,25 +236,69 @@ title: THE BIG BAG THEORY
                 The [eD] mappings and dead keys can of course be used with other layouts too! But some placements may be less intuitive then.
             </li>
         </ul>
-    </li><br>
+    </li>
+    <div class="spoiler newbspoiler">
+        <p><span>"What's the best symbols/coding layer layout?"</span></p>
+        <div class="spoiler-body">
+			<h3>Layer it on!</h3>
+			<p>
+				That's bound to be fairly individual, isn't it? No one size fits all. It matters a lot which languages you use, and also whether you need emojis or technical notation the most – or maybe both?! 👀
+			</p><p>
+				In fact, I strongly distrust layer concepts that try to fit "all the useful" accented letters and/or symbols into one or a couple of layers! (Yes, <a href="https://en.wikipedia.org/wiki/EurKEY">EurKey</a> and others including parts of the default Colemak AltGr layer, I'm looking at you!) Sounds like a neat enough idea at first, but it quickly gets messy and awkward as once you've used up, say, the <kbd>I</kbd> key for the letter <code class="inline">Ïï</code> you have no intuitive position left for the letters <code class="inline">Íí Ìì Îî Ǐǐ</code> etc etc: Of the 19 dead keys in Colemak[eD], 14 or so hold different accent mappings for <code class="inline">Ii</code>. With symbols it's the same pickle as there are many types of symbols and no easy way to map all of them to a layer intuitively. Furthermore, different users don't need the same accents/symbols. So I unhumbly state that one-size-fits-most is a bad concept here.
+			</p><p>
+				Combining an AltGr layer with 19 different dead keys has nevertheless enabled me to provide a huge selection of glyphs at your fingertips, fairly intuitively. It means a few more key presses for the less common accents/symbols, but allows far more intuitive mappings. Once you know where the circumflex dead key is, you'll know where to find <code class="inline">Ââ Êê Îî Ôô Ûû Ŷŷ, Ĉĉ Ĥĥ Ĵĵ</code> etc. And most slashed symbols belong on the Slash dead key, etc.
+			</p><p>
+				For those who use accents and/or special letters in their language, I still very much recommend using one of my locale layout variants! It's so much nicer to have the special letters of your own language in more accessible positions. See below.
+			</p><p>
+				For coding, pretty much the same applies. But in this case, you should also look into harnessing the power of sequences (the Compose method, see below) and power strings if you're on a platform that supports them (such as Windows with the EPKL program). With those you can get not only boilerplate text but cursor movements and selection, for instance to type out a couple of HTML tags and place the cursor in between them with one mapping. Using sequences, you can have even more intuitive – albeit multi-character – triggers for your mappings. Such as <code class="inline">'addr</code> with Compose for your address.
+			</p><p>
+				Best of luck with finding layers and methods that help you do what you want to do, intuitively and powerfully!
+			</p>
+        </div>
+    </div><br>
 
     <li><a href="https://en.wikipedia.org/wiki/Compose_key"><b>Compose:</b></a>
         <ul class="dashed">
             <li>
             </li><li>
-                There is another awesome input method called Compose that I'd like to mention!
+                There is another awesome input method called Compose that bears mentioning!
             </li><li>
                 Defining a key as a Compose key lets you input advanced stuff using sequences, such as <kbd>a</kbd> then <kbd>'</kbd> with <kbd>Compose</kbd> for á.
             </li><li>
                 I didn't stop there though, and realized that pretty much anything can be made with Compose sequences.
             </li><li>
-                Example: It's easier to compose the mnemonic sequence "work" than to figure out where I put a string of glyphs like
+                Example: It's easier to compose the mnemonic sequence "work" than to remember to which key I mapped a string of glyphs like
                 <br>&nbsp; 🕘 🏢 🕔.
             </li><li>
                 The Compose method is native to Linux/XKB, and EPKL for Windows has a powerful and readily modifiable Compose method.
+            </li><li>
+                These days, I'm so much into using and refining different mapping triggers for different purposes. I believe in using a combination of Extend, Compose and dead keys.
+            </li><li>
+                For EPKL on Windows, I've even developed combo keys: The <b>MoDK</b> key is both an Extend modifier on hold and a trigger of different dead keys on tap. And the <b>CodeKey</b> is both a Compose key and, if no composable sequence is recognized, a dead key. These are very very powerful and useful together!
             </li>
         </ul>
-    </li><br>
+    </li>
+    <div class="spoiler newbspoiler">
+        <p><span>"Are you serious, man?! Dead keys, Extend <i>and</i> Compose?!"</span></p>
+        <div class="spoiler-body">
+			<h3>Triggered enough?</h3>
+			<p>
+				It's true, it may seem daunting and maybe overmuch to recommend three different methods of triggering layer mappings. But they each have their own merits:
+			</p>
+			<ul class="dashed">
+				<li>
+					Dead keys are a fast and unintrusive way of releasing single-output mappings that are intuitively linkable to single key/character triggers.
+				</li><li>
+					Extend is a powerful way of doing tasks like navigation/editing or NumPad input, where you want to stay in a layer for multiple key strokes.
+				</li><li>
+					Compose is a way of mapping lots of different things onto one sequence-based "layer". The EPKL Compose table file holds 3000+ entries, some quite complex!
+				</li>
+			</ul>
+			</p><p>
+				So you see, in my world at least there's room and need for all of those. Until recently I didn't have Compose, but I've grown to love it very much. And the combo keys even more! 😻
+			</p>
+        </div>
+    </div><br>
 
     <li><b><a href="variants.html">Locale/script layouts:</a></b>
         <ul class="dashed">
@@ -275,6 +319,7 @@ title: THE BIG BAG THEORY
             </li>
         </ul>
     </li><br>
+    <br>
 
     <li><b><a href="training.html">Typing training:</a></b>
         <ul class="dashed">
