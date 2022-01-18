@@ -43,7 +43,7 @@ let platformWisePages = {
 };
 
 document.onload = function () {
-    togglePlatform(sessionStorage.getItem('platform'), true);
+    togglePlatform(localStorage.getItem('platform'), true);
 
     hookPlatformToggleOnClick(platforms);
     hookSpoilersToggleOnClick([].slice.call(document.getElementsByClassName('spoiler')));
@@ -149,17 +149,17 @@ function updatePlatformBoxes(newPlatform) {
 }
 
 function togglePlatform(platform, isPageReload) {
-    let currentPlatform = sessionStorage.getItem('platform');
+    let currentPlatform = localStorage.getItem('platform');
     let newPlatform;
 
     if (currentPlatform != platform || isPageReload) {
         document.getElementById('platforms').removeAttribute('class');        
         document.getElementById('platforms').classList.add(platform);
-        sessionStorage.setItem('platform', platform);
+        localStorage.setItem('platform', platform);
         newPlatform = platform;
     }
     else {
-        sessionStorage.removeItem('platform');
+        localStorage.removeItem('platform');
         document.getElementById('platforms').removeAttribute('class');
     }
     
