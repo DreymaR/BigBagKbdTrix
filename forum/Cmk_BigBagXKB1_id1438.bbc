@@ -9,7 +9,7 @@ Some less central content may not (yet) have been moved though, so if you're mis
 The XKB/Linux content is not fully present on the new pages, so do read section [b][4][/b] below for guidance. Just be aware that other content here may be outdated.
 
 
-    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-CA-ISO_Spectral-cpt/Tmk-DH1-5_RBo_ETROI.png[/img]
+    [img]https://raw.githubusercontent.com/DreymaR/BigBagKbdTrix/master/docs/res/cmk/tarmak/Tarmak-CA-ISO_Spectral-cpt/TmkDH-ISO1-5_RBo_ETROI.png[/img]
 
 
 [h]DREYMAR'S (XKB): DreymaR's Extensive Yet Modular ARSenal – for X KeyBoarding[/h]
@@ -472,6 +472,8 @@ $> ./setxkb.sh -ad  '~/myxkb/dxkb' 4n us us
 [h][4.2]    XKB CONFIGURATION[/h]
 
 [b][i]Linux GUI settings:[/i][/b]
+The Big Bag for XKB is installed as xkb-data files, and normally activated using either a GUI settings interface or the setxkbmap command – which may be run through my setxkb.sh script. Now, some systems like Wayland use the xkb-data files but don't have a X server as such so there is no setxkbmap command. For these, the files still work but other ways of selecting your layout must be used.
+
 On [b]Ubuntu using Gnome (and what else?)[/b]: If you go to the Layout settings, hit '+' to add a layout and type in 'Colemak' you should see a bunch of additions. The Extend option is found under Options -> Miscellaneous Compatibility Options, and you should choose an appropriate lv5 switch for it (I've added a Caps Lock option). If you can't find it, your distro may not have those options visible in the Settings GUI and you may have to do it the command-line, dconf-editor and/or config file way.
 
 The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shift (named 'pc105angle-lg'), the Angle/Wide-Slash mod described above ('pc105awide-sl') as well as the US/ANSI/PC-104 board ZXCVB shift ('pc104angle-z') and Wide(Quote) mod ('pc104wide-qu'). Unfortunately, the current Ubuntu versions have lost the GUI Settings option to switch keyboard models – which I find very odd.
@@ -512,6 +514,22 @@ XKBVARIANT="cmk_ed_us,colemak"
 XKBOPTIONS="lv5:caps_switch_lock,misc:extend,compose:menu,grp:shifts_toggle"[/code]
 
 Remember that this would need a reboot (or at least 'pkill X' or a trigger command to udevadm?) to kick in. Hope it works for you!
+
+I prefer to just put the setxkb.sh script to write a line to a file that's sourced on startup like ~/.bashrc or ~/.xsession so the layout gets activated persistently.
+
+[b][i]On Wayland:[/i][/b]
+As mentioned, there isn't a setxkbmap command on Wayland so the setxkb.sh script won't work there. I haven't tried it myself, but I've been told this should work.
+
+Add the following to your sway config file at [b]~/.config/sway/config[/b]:
+[code]
+input * {
+  xkb_model pc105
+  xkb_layout us
+  xkb_variant cmk_ed_us
+  xkb_options lv5:caps_switch_lock,misc:extend,compose:menu
+}
+[/code]
+Select model/layout/variant as described above, and any options you like to include.
 
 
 [h][4.3]    XKB NOTES AND TERMS[/h]
