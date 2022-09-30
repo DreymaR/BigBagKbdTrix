@@ -57,25 +57,42 @@ title: Other Board Tricks
     <b><a href="http://store.steampowered.com/app/246580/">The Typing of the Dead: Overkill</a></b> (Steam)
 </p>
 <div class="spoiler">
-    <p><span>Technical tips for TotD 2000:</span></p>
+    <p><span>Technical tips for Typing of the Dead:</span></p>
     <div class="spoiler-body">
+        <h4>TotD 2000</h4>
         <ul class="disc">
             <li>
                 After unpacking the .rar file there's an install.exe and then a setup.bat you should run.
             </li><li>
-                I've gotten it to run on an extended monitor, without changing color depth (on Win 10). – If you have a second monitor and want to play on your main one, disable the other.
+                I've gotten it to run on an extended monitor, without changing color depth (on Win 10). If you have a second monitor and want to play on your main one, disable the other one.
             </li><li>
-                I have to start it up with a standard US or UK layout active, or some keys will be weird. – After that, I can switch to any other Win layout such as the one I've made with MSKLC.
+                I had to start it up with a standard US or UK layout active, or some keys became weird. After that, you can switch to any other Win layout such as my MSKLC Cmk-CAWS.
             </li><li>
-                Locale layouts may struggle as they can have some symbols on AltGr or dead keys.
+                Locale layouts may struggle as they can have some symbols on AltGr or dead keys that US/UK QWERTY have on normal/shifted keys.
             </li><li>
-                EPKL (AHK) works so I can use Extend to navigate etc. I still had to have my installed MSKLC Colemak layout underneath, the game's quirky that way.
+                EPKL (AHK) works so I can use Extend to navigate etc. Using System or VK/SC layouts you can type with it too. I still like to use my installed MSKLC Colemak layout underneath.
             </li><li>
-                The gun sound files (TotD\sound\SE\COMMON\gun#_22.wav [1-5]) can be replaced with ...... typing sound files (TotD\sound\SE\typing\typing#.wav [1-5]) which are far more pleasant.
+                I replaced the gun sound files (TotD\sound\SE\COMMON\gun#_22.wav [1-5]) with typing sounds (TotD\sound\SE\typing\typing#.wav [1-5]) which are far more pleasant.
             </li><li>
                 If it's hard, set it to "Very Easy" in Options. There are other settings there that may help too.
             </li>
-        </ul>
+        </ul><br>
+        <h4>TotD: Overkill</h4>
+        <ul class="disc">
+            <li>
+                On my aging Lenovo laptop, the game simply wouldn't run: It'd barely start before crashing to the desktop.
+            </li><li>
+                Luckily, in the Steam Community I found <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1253363039">a helpful article on resolving the issue</a>.
+            </li><li>
+                What worked for me in the end was simply renaming the game's executable file from 'HOTD_NG.exe' to 'HOTD_NG-safemode.exe'. It works, yay!
+            </li><li>
+                The Steam menu couldn't find the executable after this, but I could just run the .exe manually from its directory or make a link to it.
+            </li><!-- li>
+                To make this method work with the Steam menu, Steam needs to still find the original executable. For this purpose, you can try making a Symlink.<br>
+                Hit the Win key and type 'cmd', then right-click the Command Prompt app and select 'Run as administrator'. This puts you in an "elevated" command prompt.<br>
+                Now enter the command 'mklink HOTD_NG.exe HOTD_NG-safemode.exe' to make the file system see the safemode file as the normal one.<br>
+                [Nope, that didn't work with Steam. Not a symlink, nor a hardlink.]
+            </li -->
     </div>
 </div>
 <p>
