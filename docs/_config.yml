@@ -17,10 +17,10 @@ links:
         url: layers-colemaked.html
       - title: Extend!!!
         url: layers-extend.html
-      - title: Extend2+
-        url: layers-extend.html#ext2plus
       - title: Dead Keys
         url: layers-main.html#deadkeys
+      - title: Sequences
+        url: layers-main.html#sequences
   - title: ergonomy
     url: ergo-mods.html
     sub:

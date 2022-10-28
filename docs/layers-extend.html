@@ -378,31 +378,6 @@ alias: extend-layers.html
 </div>
 
 <br><img class="img-auto-width left" alt="Extend Key Logo" src="res/div/Extend/Extend_KeyLogo.png" />
-<h2 class="anchor" id="when">... When?</h2>
-<p>
-    As described in an interesting article by <a href="http://xahlee.info/kbd/banish_key_chords.html">Xah Lee</a>, chording isn't always the best answer. For one-shot output like a special symbol or a single command, "tap-dance" key sequences are generally better. A good example is the Compose method from Linux that can be trigged by any desired key combination, or by a designated "leader key" such as a Compose or dead key. The Alt key in Windows lets you access menu items by tapping a letter sequence such as <b>{Alt,f,t}</b> to open a new tab, which is brilliant and can be easily learned by looking at the menus the first times.
-</p><p>
-    Even a "tap-dance" of several key strokes can be preferable to chording for many one-shot needs. Holding down keys is more tiring than tapping out a sequence, and the more contorted a chord gets the worse it will be. All tap-dances aren't created equal either, and I much prefer ones that use easily reachable keys and no same-finger bigrams. Tapping the same key several times is not the best of ideas.
-</p><p>
-    Sequences can be more mnemonic than layers. Let's say I want to map the old English letter <a href="https://en.wikipedia.org/wiki/Hwair">Hwair (a /ʍ/ sound like in the Scottish pronounciation of 'who')</a> to my layout for occasional use. With layers I'd have to remember where I had put it and on which layer ... hmmm, tricky. Help images like in the EPKL program can be very helpful there for sure, but only to some extent. If, on the other hand, I implement it as a Compose sequence I could for instance just type 'hwair' and hit a Compose key to get a 'ƕ'. That's much easier to remember, don't you think? But only practical if it's not used all the time. If I were writing a book about Old English, I'd have the letters Ƕƕ Ȣȣ Ȝȝ and Ƿƿ in a handy layer for sure, and from frequent use I'd quickly learn where I'd put them.
-</p><p>
-    Sequences provide for near endless complexity, but chorded layers like Extend let you do many similar operations without trigging them separately each time. So for navigation/editing like selecting the previous word then moving it to the end of the paragraph or, say, for entering numbers, chorded (or modal) layers are perfect.
-</p><p>
-    <b><a href="https://en.wikipedia.org/wiki/Compose_key#Compose_sequences">Compose</a></b> is a wonderful method based on easy-to-remember sequences for one-shot output. Linux users may know and use it with sequences like <kbd>Compose e '</kbd> producing the accented letter <kbd>é</kbd>, and <kbd>Compose 1 2</kbd> producing the symbol <kbd>½</kbd>. You can edit the tables and add pretty much anything though! In the EPKL program for Windows I've added a whole bunch of new sequences for boilerplate text or even emoji sequences such as '<kbd>noevil</kbd>' composing to '🙈 🙉 🙊'. You can even compose a sequence like <kbd>U1f4aa</kbd> to input <i>any</i> Unicode character if you know its code point! 💪
-</p><p>
-    <b><a href="layers-main.html#deadkeys">Dead keys</a></b> can be great for mapping one-shot output like special and accented letters and symbols, without holding a modifier like AltGr down. They're like a short sequence, in that they only use one key to trigger the output. With a battery of DKs you can fit in a whole bunch of symbols on fairly intuitive mappings! On the downside, DK and modifier layers can easily get crowded if, say, there are many symbols based on the same letter, or you want to map symbols that aren't based on letters or numbers. And since you'll likely need many DKs you may have to hold a modifier to access the DK in the first place; all my ≈20 DKs require you to press AltGr first unless you're using a locale variant that has the most needed of them on base layers.
-</p><p>
-    <b>One-shot Extend layers</b> (see below) that return to the main layer after releasing one key, should be good for "power strings" that typically are entered once. They could just as well have been implemented with other sequencing methods instead.
-</p><p>
-    <b>Extend-tap</b> (see below) is a neat way of supercharging your Extend key for both chording and sequencing! The Extend key can be a multi-layer dual-function key that produces different one-shot (dead key) or chording layers based on the shift state at the time of tapping or holding it down. This way it can be a gate to the best of both the chording and sequencing worlds. It isn't available on all platforms though, sorry.
-</p><p>
-    <b>CoDeKey</b> is another supercharged key, only available in EPKL for Windows at the moment. This one is a Compose key if you've entered a recognized Compose sequence beforehand. If not, it becomes a dead key instead and waits for a release key press! I use it quite a lot these days, as a thumb key. With it, I can compose anything I like easily, but also type for instance Period-Space-Shift more easily as <kbd>CoDeKey</kbd> then a home-row key – with other home row keys for other punctuation++.
-</p><p>
-    The best option is to use a mix of chords and sequences suited to your needs. For my Kaomoji needs I first used a one-shot layer on Shift+Extend-hold, but now I've switched to Shift+Extend-tap which doesn't require me to hold down the Extend key and also allows more output diversity than a single Extend layer can. For navigation/edit and NumPad layers, normal Extend still reigns supreme.
-    <br><br>&nbsp; &nbsp;  ∩(◕‿◕｡)∩～♪
-</p>
-
-<br><img class="img-auto-width left" alt="Extend Key Logo" src="res/div/Extend/Extend_KeyLogo.png" />
 <h2 class="anchor" id="how">... How?</h2>
 <p>
     Head over to the appropriate <b>Big Bag topic (<a href="https://forum.colemak.com/viewtopic.php?id=1438">Linux/XKB</a>, <a href="https://forum.colemak.com/viewtopic.php?id=1467">Windows/PKL</a>, <a href="https://forum.colemak.com/topic/2158-dreymars-big-bag-of-keyboard-tricks-usb2usb-edition/">USB-2-USB</a></b> or <b>mkborregaard's <a href="https://forum.colemak.com/viewtopic.php?id=2020">Mac topic</a>)</b> for resources and instructions on how to use this. In the standard setup, the CapsLock key becomes a "switch" modifier like the Shift key, that you hold down for the Extend mappings. One might also have "latch" (press and release modifier, then press key) or "lock" (like CapsLock) modifiers; for the main Extend layer I don't think that'll be so useful though. Using Linux, if you set two modifiers with the 'level5_switch_lock' behaviour, they'll actually work as a switch alone but a lock if pressed together! The Mac implementation has a separate ExtendLock key.
@@ -701,8 +676,25 @@ alias: extend-layers.html
     </li>
 </ul>
 
+<br><img class="img-auto-width left" alt="Extend Key Logo" src="res/div/Extend/Extend_KeyLogo.png" />
+<h2 class="anchor" id="when">... When?</h2>
+<p>
+    Extend, as described, is a wonderful chording modifier – the same basic modifier type as <kbd>Shift</kbd> or <kbd>Ctrl</kbd>, but used for navigation/editing and much more. However, chording isn't always the best answer. For one-shot output like a special symbol or a single command, key sequences are generally better. A good example is the Compose method from Linux that can be trigged by any desired key combination, or by a designated leader key such as a Compose or dead key.
+</p><p>
+    The best option is to use a mix of chords and sequences suited to your needs. An example: For my Kaomoji needs I first used a one-shot layer on Shift+Extend-hold, but now I've switched to Shift+Extend-tap which doesn't require me to hold down the Extend key and also allows more output diversity than a single Extend layer can. For navigation/edit and NumPad layers, normal Extend still reigns supreme.
+</p><p>
+    See the <b><a href="layers-main.html#sequences">Sequencing</a></b> topic for more in-depth info.
+    <br><br>&nbsp; &nbsp;  ∩(◕‿◕｡)∩～♪
+</p>
+<h4>One-Shot Extend</h4><p>
+    <b>One-shot Extend layers</b> that return to the main layer after releasing one key, could be good for "power strings" that typically are entered once. They could just as well have been implemented with other sequencing methods instead, which may be simpler as multi-Extend typically uses chording to access deeper Extend layers. EPKL for Windows supports one-shot Extend layers.
+</p>
+<h4>Extend-Tap</h4><p>
+    <b>Extend-tap</b> (see <a href="layers-extend.html#ext-tap">below</a>) is a neat way of supercharging your Extend key for both chording and sequencing! The Extend key can be a multi-layer dual-function key that produces different one-shot (dead key) or chording layers based on the shift state at the time of tapping or holding it down. This way it can be a gate to the best of both the chording and sequencing worlds. I call such a multi-mode modifier a <b>Mother-of-DeadKeys (MoDK)</b> Extend key. Sadly, this isn't available on all platforms.
+</p>
 
-<h2 class="anchor" id="ext2plus">MORE EXTEND – LAYER IT ON</h2>
+<br><img class="img-auto-width left" alt="Extend Key Logo" src="res/div/Extend/Extend_KeyLogo.png" />
+<h2 class="anchor" id="ext2plus">MORE – LAYER IT ON</h2>
 <p>
     My Extend ideally has four layers – I don't see the need for more but let me know if you do. The <b>Extend2</b> layer holds a NumPad with some useful symbols easily available and the navigation/editing block moved to the left hand:
 </p>
@@ -763,9 +755,10 @@ Extend2: KeyPad overlay with nav block to the left (lv7-8):
     EPKL pro tip: The Autohotkey format lets you mix literal strings with keys. You can for instance write a set of html brackets then position the cursor between them, all in one Extend entry with the * prefix.
 </p>
 
-<h3>EXTEND-TAP</h3>
+<br><img class="img-auto-width left" alt="Extend Key Logo" src="res/div/Extend/Extend_KeyLogo.png" />
+<h2 class="anchor" id="ext-tap">ON TAP</h2>
 <p>
-    This is only implemented in EPKL for Windows yet: Tap the Extend key for a special dead key layer, then another key for a release. As I said in the <a href="layers-extend.html#when">Extend ...When?</a> section, tap sequences are often better than modifier layers when you want to release a single symbol or string.
+    <b>Extend-tap</b> is only implemented in EPKL for Windows yet: Tap the Extend key for a special dead key layer, then another key for a release. As I said in the <a href="layers-extend.html#when">Extend ...When?</a> section, tap sequences are often better than modifier layers when you want to release a single symbol or string.
 </p><p>
     With Ext-tap, you have a whole lot of possibilities! You can have 4–5 different deadkeys on basic Ext-tap, Shift+Ext-tap, Ctrl+Ext-tap, AltGr+Ext-tap and AltGr+Shift+Ext-tap. With Sticky/OSM mods, you can tap a modifier and then Ext rapidly to avoid chording completely. Then, any letter or symbol may release the dead key so the possiblities are really huge!
 </p><p>
