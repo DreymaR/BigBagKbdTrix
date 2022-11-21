@@ -1,3 +1,4 @@
+<!-- Colemak-eD -->
 <div class="platform-content">
     <p>
         A USB-2-USB device remaps only key strokes, not character input events. So key mods like layout and ergo remappings are possible, but not mods that send glyphs. Your dead keys and AltGr mappings will work as they do without the device, and you may only move their keys around as they are.
@@ -16,7 +17,7 @@
     Here's the Extend1 and Extend2 layer charts from my TMK source file:
 </p>
 
-    
+<!-- Extend -->
 <div class="platform-content">
     <div class="spoiler">
         <p><span>TMK Extend1 diagram:</span></p>
@@ -38,6 +39,20 @@
 * |      |     |Ext1 |           Return            |     |     |     |      |
 * `-------------------------------------------------------------------------' 
             </code></pre>       
+        </div>
+    </div>
+
+    <p>
+        To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the <b><a href="https://forum.colemak.com/post/18410/#p18410">Configuration</a></b> post below.
+    </p><p>
+        <b>NOTE: Superstacking Extend modifiers</b> doesn't always work for me. Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Other users didn't have this problem...?
+    </p>
+</div>
+
+<!-- Multi-Extend -->
+    <div class="spoiler">
+        <p><span>TMK Extend2 diagram:</span></p>
+        <div class="spoiler-body">
             <pre><code>
    DreymaR's Extend2 layer:
 * ,----.    ,-------------------. ,-------------------. ,-------------------.
@@ -57,14 +72,9 @@
             </code></pre>
         </div>
     </div>
-    
     <p>
-        To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the <b><a href="https://forum.colemak.com/post/18410/#p18410">Configuration</a></b> post below.
-    </p><p>
         There's a couple of EXT#BIT constants that determine how Extend2 is selected: If EXT2BIT is defined as MOD_BIT(KC_RSFT) for instance, holding Right Shift down while pressing the Extend key will activate Extend2. Holding down Extend alone will maintain that layer. The EXT3BIT and the combination of the two could select Extend3 and Extend4, but I haven't yet implemented these layers as I haven't yet decided on what to put in them. You could add your own if you want to – ask me how.
     </p><p>
         For the NumPad layer, remember that the NumLock state influences what you get. There's a NumLock key easily accessible in the layer.
-    </p><p>
-        <b>NOTE: Superstacking Extend modifiers</b> doesn't always work for me. Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Other users didn't have this problem...?
     </p>
-</div>
+<!-- DeadKeys -->

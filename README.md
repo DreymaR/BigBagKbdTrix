@@ -8,21 +8,19 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 ----------------------------------------------------------------
+- More FAQ's so there's one for everything.
 - Link somewhere to SteveP's layout app?
 	- https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
 - Beginner's FAQ questions:
-	☑ In the front page FAQ section on www.colemak.org, put the generic Colemak questions that aren't BigBag-specific.
-	☑ Format them as spoilers. With the question as header: 🤔 ❓ "<question>"  ❓. No, drop the trailing ❓ as that'll look messy.
-	- See the https://www.colemak.org README for some Colemak beginner questions and answers
+	☑ Format them as spoilers. With the question as header: 🤔 ❓ "<question>".
+	- See the https://www.colemak.org README for some generic Colemak beginner questions and answers
 
 - Locale variants:
 	- Add more of the Forum locale topic
 	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?
-- Compose as its own point, instead of just under Extend?!
-	- Or, add Compose to the "When" Sequencing section of the Extend page.
-	- Contrast Compose to DKs.
-		- DKs: Many, harder to reach them, single trigger. Help images in EPKL. Some positions hard to remember.
-		- Compose: Often longer sequences, but more mnemonic. Can be kept on main layer.
+- Contrast Compose to DKs.
+	- DKs: Many, harder to reach them, single trigger. Help images in EPKL. Some positions hard to remember.
+	- Compose: Often longer sequences, but more mnemonic. Can be kept on main layer.
 - Dictionary: Explain SFB, Curl/Angle/Wide, inward/outward/mixed rolls
 - Make Image2 and Image3 posts for the Image topic (topic 111)
 	- Image2: Keyboard images. State licencing for SVG (CC) vs others (Public Domain)
