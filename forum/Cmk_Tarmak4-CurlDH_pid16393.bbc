@@ -17,7 +17,7 @@ The left-hand "D" mod should be done with Tarmak2 as that's where the G is norma
 
 [b]Implementations[/b]
 [b]Linux/XKB:[/b] Tarmak needs a few tweaks, but nothing major! In the Linux world you can turn on the D(v)bg and Hk/Hm switches separately which makes implementation quite simple requiring only a tweak in step 2. See the symbols/colemak file or the XKB Big Bag topic.
-[Update: You can now select the modified step 2 directly as Tarmak2bk/vm; there's also a Tarmak1k. For the other Tarmak steps, use options or edit the colemak file, and/or select models with the setxkb.sh script.]
+[Update: You can now select the modified step 2 directly as Tarmak2bk/vm; there's also a Tarmak1k. For the other Tarmak steps, use options or edit the colemak file, and/or select models with the setkb.sh script.]
 
 [b]Windows/PKL:[/b] For PKL you'll have to comment/uncomment some lines in the layout.ini file and if your layout doesn't have the necessary lines you can find them in the Colemak-ISO AngleWide file as the Curl mod is a development on the Angle mod and I expect that most Curl modders will also go with the Wide mod!
 

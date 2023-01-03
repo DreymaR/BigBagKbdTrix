@@ -6,7 +6,7 @@
         I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide(Slash) mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a <a href="https://forum.colemak.com/viewtopic.php?pid=12302#p12302">Wide(Quote) mod</a> as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (at the cost of longer left pinky stretches), should anyone be interested.
     </p><p><br>
         <b class="italic">HowTo:</b> <br>
-        To use these, you might have to edit a file or so (see below under "Installation") unless your distro supports keyboard choice which Ubuntu used to do but doesn't anymore. Otherwise, 'setxkbmap -model &lt;name&gt;' works on-the-fly. I use my setxkb.sh script; see below.
+        To use these, you might have to edit a file or so (see below under "Installation") unless your distro supports keyboard choice which Ubuntu used to do but doesn't anymore. Otherwise, 'setxkbmap -model &lt;name&gt;' works on-the-fly. I use my setkb.sh script; see below.
     </p><p>
         The xkb ergonomic keyboard model mods have names|shortstrings as following (see below for models with Curl):
     </p>
@@ -57,7 +57,7 @@
         </li>
         <li>If you wish a "harder" solution, you can edit the xkb/symbols/colemak file, uncommenting the mod lines you want. <br>
             These are found in the xkb_symbols "cmk_ed_letters" partial, so they affect all locale layers, Tarmak etc. – but not non-Colemak layouts.</li>
-        <li>Finally, the setxkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
+        <li>Finally, the setkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
             <ul class="dashed">
                 <li>
                     <b>4ca/4caw</b> – ANSI/US CurlAngle-Z(Wide-Quote)
@@ -98,21 +98,21 @@
     </code></pre>
     
     <p class="bold italic">
-        Example: Using a CurlAngleWide "model" with setxkb.sh
+        Example: Using a CurlAngleWide "model" with setkb.sh
     </p>
     <ul class="disc">
         <li>
             These two examples both activate the PC105-Curl(DH)AngleWide mod.
         </li><li>
-            The shortstring line will not change the active layout (apart from the Curl mod); the other line will use the setxkb.sh default layout.
+            The shortstring line will not change the active layout (apart from the Curl mod); the other line will use the setkb.sh default layout.
         </li><li>
             This is useful if you don't want to edit the files. Curl affects only the first/main layout, but will mess up any non-Cmk layouts in the GUI.
 
         </li>
     </ul>
     <pre><code>
-$> ./setxkb.sh "5caw"
-$> ./setxkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
+$> ./setkb.sh "5caw"
+$> ./setkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
     </code></pre>
     <p>
         Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
