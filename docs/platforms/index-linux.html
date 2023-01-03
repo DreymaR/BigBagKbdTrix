@@ -1,7 +1,38 @@
 <div class="platform-content">
+    <br><h4>Linux/XKB Platform Info</h4>
     <p>
-        I've hacked up a bunch of modifications to the X.Org XKB files. You can check out the <a href="https://forum.colemak.com/viewtopic.php?id=1438"><b>Big Bag (XKB) forum topic</b></a> for more detailed info.
-    </p><p>
-        If you just want to skip to the download (at your own risk), here is the <b><a href="https://github.com/DreymaR/BigBagKbdTrixXKB">Github Big Bag for XKB repository</a></b>. It's got a little documentation and you can run its scripts with a <b>-h</b> tag for help but the main info is still in that Forum topic.
+        I've hacked up a bunch of modifications to the X.Org <a href="https://github.com/freedesktop/xkeyboard-config">xkeyboard-config files</a> found in the xkb-data package, that define keyboard layout related settings for the X server:
     </p>
+	<ul class="disc">
+		<li>
+			Colemak[eD] and several locale/script variants as layout definitions; Unified Symbols (US) and Keep Local Symbols (KS) flavors of these
+		</li><li>
+			The Tarmak transitional layouts and Mirrored Colemak, likewise defined as layouts (found under the US locale)
+		</li><li>
+			Extend, implemented as lvl5–8 layout mappings together with a lvl5 modifier key that can be added to the CapsLock key using an option setting
+		</li><li>
+			Ergonomic mods mostly implemented as keyboard "models", so they may be applied to any layout – not just Colemak!
+		</li><li>
+			Some "soft" ergo mods implemented as xkb options instead; this is the case for the Curl-DH and Sym mods
+		</li><li>
+			There's an install BASH script that writes my modifications to the X11 xkb directory so you may choose them in settings or by commands
+		</li><li>
+			There's a setxkb.sh BASH script that can generate a setxkbmap command to activate one of the BigBag layout combos
+		</li>
+	</ul>
+    <p>
+        You can check out the <a href="https://forum.colemak.com/viewtopic.php?id=1438"><b>Big Bag (XKB) forum topic</b></a> for more detailed info. It's a bit messy and outdated here and there, but Linux users are often clever and adventurous so I hope you manage.
+    </p><p>
+        If you just want to skip to the download (at your own risk), here is the <b><a href="https://github.com/DreymaR/BigBagKbdTrixXKB">Github Big Bag for XKB repository</a></b>. It's got a little documentation and you can run its scripts with a <b>-h</b> tag for help but the main info is still here and in that Forum topic.
+    </p><br>
+    <h4>Notes:</h4>
+	<ul class="disc">
+		<li>
+			The setkxb script can help you activate a BigBag layout. It is not made for activating other layout setups, such as your current default.
+		</li><li>
+			To see what your current setup is, you can for instance run the command 'setxkbmap -v 9' (or whatever verbosity level suits you).
+		</li><li>
+			To get Colemak-DH right, you have to both use the 'misc:cmk_curl_dh' option itself, and an Angle keyboard model if you're on a rowstag keyboard.
+		</li>
+	</ul>
 </div>
