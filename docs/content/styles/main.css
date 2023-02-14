@@ -795,6 +795,9 @@ ol.bracket > li {
 }
 
 ol.bracket > li:before {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: top;
   counter-increment: list;
   content: counter(list) ") ";
   font-weight: bold;
