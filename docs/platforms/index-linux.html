@@ -1,7 +1,9 @@
 <div class="platform-content">
     <br><h4>Linux/XKB Platform Info</h4>
     <p>
-        I've hacked up a bunch of modifications to the X.Org <a href="https://github.com/freedesktop/xkeyboard-config">xkeyboard-config files</a> found in the xkb-data package, that define keyboard layout related settings for the X server:
+        Extend is implemented for Linux in the <a href="https://github.com/DreymaR/BigBagKbdTrixXKB"><b>Big Bag for XKB</b></a> repository on GitHub.
+    </p><p>
+        Briefly, I've hacked up a bunch of modifications to the X.Org <a href="https://github.com/freedesktop/xkeyboard-config">xkeyboard-config files</a> found in the xkb-data package, that define keyboard layout related settings for the X server:
     </p>
 	<ul class="disc">
 		<li>
@@ -23,12 +25,12 @@
     <p>
         You can check out the <a href="https://forum.colemak.com/viewtopic.php?id=1438"><b>Big Bag (XKB) forum topic</b></a> for more detailed info. It's a bit messy and outdated here and there, but Linux users are often clever and adventurous so I hope you manage.
     </p><p>
-        If you just want to skip to the download (at your own risk), here is the <b><a href="https://github.com/DreymaR/BigBagKbdTrixXKB">Github Big Bag for XKB repository</a></b>. It's got a little documentation and you can run its scripts with a <b>-h</b> tag for help but the main info is still here and in that Forum topic.
+        If you just want to skip to the download (at your own risk), here is the GitHub <a href="https://github.com/DreymaR/BigBagKbdTrixXKB"><b>Big Bag for XKB repository</b></a>. It's got a little documentation and you can run its scripts with a <b>-h</b> tag for help but the main info is still here and in that Forum topic.
     </p><br>
     <h4>Notes:</h4>
 	<ul class="disc">
 		<li>
-			The setkxb script can help you activate a BigBag layout. It is not made for activating other layout setups, such as your current default.
+			The setkb script can help you activate a BigBag layout. It is not made for activating other layout setups, such as your current default.
 		</li><li>
 			To see what your current setup is, you can for instance run the command 'setxkbmap -v 9' (or whatever verbosity level suits you).
 		</li><li>

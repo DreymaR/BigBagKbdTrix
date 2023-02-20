@@ -8,13 +8,8 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 ----------------------------------------------------------------
-- More FAQ's so there's one for everything.
 - Link somewhere to SteveP's layout app?
 	- https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
-- Beginner's FAQ questions:
-	☑ Format them as spoilers. With the question as header: 🤔 ❓ "<question>".
-	- See the https://www.colemak.org README for some generic Colemak beginner questions and answers
-
 - Locale variants:
 	- Add more of the Forum locale topic
 	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?
@@ -28,11 +23,13 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 - In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
 	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
 	- Also make platform boxes for the Tarmak implementations part
-- In extend-layers.html, replace the "Head over to" part with proper platform box tips for Extend
 <br>
 
 DONE
 ----
+- More FAQ's so there's one for nearly everything
+	☑ Format them as spoilers. With the question as header: 🤔 ❓ "<question>".
+	- See the https://www.colemak.org README for some generic Colemak beginner questions and answers
 - Flesh out the Monkeytype learning section: Colors, settings tips
 - Make bookmark links for page chapters, and add them to the menus. Example: DK mappings; Variants.
 - Update all content image links to local res/ locs. Replace Dropbox links with res/. Replace res/img/.
