@@ -6,8 +6,15 @@ DreymaR's Big Bag of Keyboard Tricks - The Web Pages
 Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 ----------------------------------------------------------------
 
+
 TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 ----------------------------------------------------------------
+- Some still think that platform selection is non-intuitive. Hmmm...
+	- Could we link to a specific platform box? As in `page.html#anchor?platform=win`.
+
+- Platform box for Sequencing? And Modifiers?
+	- Colemak-eD too?
+
 - Link somewhere to SteveP's layout app?
 	- https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
 - Locale variants:
@@ -24,6 +31,7 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
 	- Also make platform boxes for the Tarmak implementations part
 <br>
+
 
 DONE
 ----
@@ -66,6 +74,64 @@ DONE
 	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
 <br>
 
+
+Jekyll and Ruby for GitHub pages:
+---------------------------------
+Check Linux (Ubuntu), Ruby and Jekyll versions:
+```
+lsb_release -a
+ruby -v && jekyll -v
+```
+
+Install Jekyll with Ruby on Windows WSL Bash using the Brightbox repo, Gem and Bundler:
+```
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-add-repository ppa:brightbox/ruby-ng && sudo apt-get update
+sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-autoreconf
+
+echo 'export GEM_HOME=$HOME/gems/' >> ~/.bashrc && echo 'export PATH="$PATH:$HOME/gems/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+gem update && gem install jekyll bundler && bundler update
+```
+• WSL can be a little stupid as to which Ruby version it uses, so it may be best to be specific as above.
+• Using `apt-get install bundler` on WSL installed an outdated Ruby version (1.9.1) so I guess I shouldn't do that!
+• Turns out it was the WSL Ubuntu that hadn't been updated in ages.
+
+To avoid permission errors on the gem commands (write permission for /var/lib/gems/2.6.0/):
+Using sudo gem seems to work but isn't recommended! Instead, add this to your ~/.bashrc file, as shown above:
+```
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH
+```
+
+Now, go to the web root folder in the BigBagKbdTrix repo (not repo root but docs!) and build with Jekyll:
+```
+source ~/.bashrc
+jekyll build
+jekyll serve --watch
+```
+(This worked for me. I didn't need 'bundle exec' in front of the jekyll commands.)
+
+When you see 'Server running...', you should be able to browse the site locally on 127.0.0.1:
+http://localhost:4000/
+
+Word has it, GitHub Pages don't support Jekyll v4+? So edit your Gemfile for realistic local builds:
+```
+# This will help ensure the proper Jekyll version is running. 
+# gem "jekyll", "~> 4.2.0" 
+...
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and 
+# uncomment the line below. To upgrade, run `bundle update github-pages`. 
+gem "github-pages", group: :jekyll_plugins
+```
+GitHub Pages don't use either Gemfile nor Gemfile.lock, but their own Jekyll settings. So these files are relevant for local builds only.
+```
+gem install github-pages
+```
+I guess that's necessary then?
+
+
 HTML observations
 -----------------
 - The gh-pages may not update immediately because of their CDN cache. So it may take up to 10 min for a push to take.
@@ -73,7 +139,8 @@ HTML observations
 		- https://dreymar.github.io/BigBagKbdTrix/index.html?version=cachebreak
 <br>
 
-HTML tips from abrickinthehallway:
+
+HTML tips from aBrickInTheHallway:
 ---------------------------------:
 ```
 • https://developer.mozilla.org/ - documentation for everything that has to do with HTML and CSS
@@ -81,12 +148,12 @@ HTML tips from abrickinthehallway:
 • tag=element – the most used tags are:
 <p> - paragraph
     <p class="italic">
-<a> - link
+<a href="https://your.url"> - link
     <a class="underlined">
 <div class="quote">
-<b>, <strong> - bold
-<em> - italic
-<img src="content/images/dk12_dblacutesci.png" class="img-small"> ('alt' attribute is optional - displays when image cannot be displayed)
+<b>, <strong>   - bold
+<i>, <em>       - italic
+<img src="content/images/img.png" class="img-small"> ('alt' attribute is optional - displays when image cannot be displayed)
     <img class="left"....
 ul - unordered list
 ol - ordered list (1,2,3/a,b,c)
@@ -96,12 +163,23 @@ ol - ordered list (1,2,3/a,b,c)
 <span> - separates a text so you can style it, for example if you want part of a sentence to be crossed with a line, go
     <span class="linethrough">
 
-• For spoilers:
+• <!-- comment -->
+
+• Spoiler template:
 <div class="spoiler">
     <p><span>Spoiler:</span></p>
     <div class="spoiler-body">
-    SPOILER CONTENT HERE
+        SPOILER CONTENT HERE
     </div>
+</div>
+
+• Platform box template:
+<div class="platform-content">
+    <p>
+        
+    </p><p>
+        
+    </p>
 </div>
 
 • To display the characters '<' and '>', use &lt; and &gt; so that they're not interpreted as parts of a tag
