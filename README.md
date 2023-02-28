@@ -75,63 +75,6 @@ DONE
 <br>
 
 
-Jekyll and Ruby for GitHub pages:
----------------------------------
-Check Linux (Ubuntu), Ruby and Jekyll versions:
-```
-lsb_release -a
-ruby -v && jekyll -v
-```
-
-Install Jekyll with Ruby on Windows WSL Bash using the Brightbox repo, Gem and Bundler:
-```
-sudo apt-get update -y && sudo apt-get upgrade -y
-sudo apt-add-repository ppa:brightbox/ruby-ng && sudo apt-get update
-sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-autoreconf
-
-echo 'export GEM_HOME=$HOME/gems/' >> ~/.bashrc && echo 'export PATH="$PATH:$HOME/gems/bin"' >> ~/.bashrc
-source ~/.bashrc
-
-gem update && gem install jekyll bundler && bundler update
-```
-• WSL can be a little stupid as to which Ruby version it uses, so it may be best to be specific as above.
-• Using `apt-get install bundler` on WSL installed an outdated Ruby version (1.9.1) so I guess I shouldn't do that!
-• Turns out it was the WSL Ubuntu that hadn't been updated in ages.
-
-To avoid permission errors on the gem commands (write permission for /var/lib/gems/2.6.0/):
-Using sudo gem seems to work but isn't recommended! Instead, add this to your ~/.bashrc file, as shown above:
-```
-export GEM_HOME=$HOME/gems
-export PATH=$HOME/gems/bin:$PATH
-```
-
-Now, go to the web root folder in the BigBagKbdTrix repo (not repo root but docs!) and build with Jekyll:
-```
-source ~/.bashrc
-jekyll build
-jekyll serve --watch
-```
-(This worked for me. I didn't need 'bundle exec' in front of the jekyll commands.)
-
-When you see 'Server running...', you should be able to browse the site locally on 127.0.0.1:
-http://localhost:4000/
-
-Word has it, GitHub Pages don't support Jekyll v4+? So edit your Gemfile for realistic local builds:
-```
-# This will help ensure the proper Jekyll version is running. 
-# gem "jekyll", "~> 4.2.0" 
-...
-# If you want to use GitHub Pages, remove the "gem "jekyll"" above and 
-# uncomment the line below. To upgrade, run `bundle update github-pages`. 
-gem "github-pages", group: :jekyll_plugins
-```
-GitHub Pages don't use either Gemfile nor Gemfile.lock, but their own Jekyll settings. So these files are relevant for local builds only.
-```
-gem install github-pages
-```
-I guess that's necessary then?
-
-
 HTML observations
 -----------------
 - The gh-pages may not update immediately because of their CDN cache. So it may take up to 10 min for a push to take.
@@ -140,8 +83,8 @@ HTML observations
 <br>
 
 
-HTML tips from aBrickInTheHallway:
----------------------------------:
+HTML tips from aBrickInTheHallway
+---------------------------------
 ```
 • https://developer.mozilla.org/ - documentation for everything that has to do with HTML and CSS
 
@@ -187,3 +130,67 @@ ol - ordered list (1,2,3/a,b,c)
 • For blocks of code use <pre><code>...</code><pre> and remove all indentation(tabs) left of the code in between these tags 
     because the tabs will be shown as these tags format literally every space, tab and new line.
 ```
+
+
+Jekyll and Ruby for GitHub pages
+--------------------------------
+[Note: This is a copy of my Evernote document "Jekyll and Ruby"]
+
+Check Linux (Ubuntu), Ruby and Jekyll versions:
+```
+lsb_release -a
+jekyll -v && ruby -v
+```
+As of 2023-02, GitHub pages have these dependencies: Jekyll 3.9.3; Ruby 2.7.4
+https://pages.github.com/versions/
+
+Install Jekyll with Ruby on Windows WSL Bash using the Brightbox repo, Gem and Bundler:
+```
+sudo apt-get update -y && sudo apt-get upgrade -y
+sudo apt-add-repository ppa:brightbox/ruby-ng && sudo apt-get update
+sudo apt-get install ruby2.7 ruby2.7-dev build-essential dh-autoreconf
+
+echo 'export GEM_HOME=$HOME/gems/' >> ~/.bashrc && echo 'export PATH="$PATH:$HOME/gems/bin"' >> ~/.bashrc
+source ~/.bashrc
+
+gem update && gem install jekyll bundler && bundler update
+```
+• WSL can be a little stupid as to which Ruby version it uses, so it may be best to be specific as above.
+• Using `apt-get install bundler` on WSL installed an outdated Ruby version (1.9.1) so I guess I shouldn't do that!
+• Turns out it was because the WSL Ubuntu hadn't been updated in ages.
+
+To avoid permission errors on the gem commands (write permission for /var/lib/gems/2.6.0/):
+Using sudo gem seems to work but isn't recommended! Instead, add this to your ~/.bashrc file, as shown above:
+```
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH
+```
+
+Now, go to the web root folder in the BigBagKbdTrix repo (not repo root but docs!) and build with Jekyll:
+```
+source ~/.bashrc
+jekyll build
+jekyll serve --watch
+```
+
+• I didn't need `bundle exec` in front of the jekyll commands.
+• At a later point, there was a version mismatch between the Gemfile (with GitHub Pages settings) and local installs.
+• When that happened, using `bundle exec jekyll` etc worked.
+
+When you see 'Server running...', you should be able to browse the site locally on 127.0.0.1:
+http://localhost:4000/
+
+Word has it, GitHub Pages don't support Jekyll v4+? So edit your Gemfile for realistic local builds:
+```
+# This will help ensure the proper Jekyll version is running. 
+# gem "jekyll", "~> 4.2.0" 
+...
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and 
+# uncomment the line below. To upgrade, run `bundle update github-pages`. 
+gem "github-pages", group: :jekyll_plugins
+```
+GitHub Pages don't use either Gemfile nor Gemfile.lock, but their own Jekyll settings. So these files are relevant for local builds only.
+```
+gem install github-pages
+```
+"A simple Ruby Gem to bootstrap dependencies for setting up and maintaining a local Jekyll environment in sync with GitHub Pages". Sounds useful. I couldn't install it because of some `incompatible library` error, though...
