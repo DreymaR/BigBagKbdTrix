@@ -784,9 +784,11 @@ ol {
         > li {
             list-style: none;
             position: relative;
+            padding-left: 19px;
 
             &:before {
                 display: inline-block;
+                margin-top: -1px;
                 margin-right: 5px;
                 vertical-align: top;
                 counter-increment: list;
