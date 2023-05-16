@@ -9,14 +9,20 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 ----------------------------------------------------------------
-- Some still think that platform selection is non-intuitive. Hmmm...
+- Some still find platform selection non-intuitive. Hmmm...
 	- Could we link to a specific platform box? As in `page.html#anchor?platform=win`.
+	- Make it so that clicking the text `PLATFORMS` shows the how-to screen again (only seen initially now).
 
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
+	- Tarmak `DOWNLOADS` definitely should be boxed.
 
 - Link somewhere to SteveP's layout app?
 	- https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
+
+- Link to the Getreuer writeup on alt layouts? It's a nice read.
+	- https://getreuer.info/posts/keyboards/alt-layouts/index.html
+
 - Locale variants:
 	- Add more of the Forum locale topic
 	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?
@@ -35,6 +41,11 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 
 DONE
 ----
+- More consistent page and anchor naming
+	- A link like layers-extend.html#section-name is easier to use as you don't need to check the source code for it.
+- More consistent file naming
+	- `training > learning-training` too? At least, `tarmak-intro > learning-tarmak` and `tarmak > tarmak-steps`?
+	- May be unwise to change page names too often, though? I may have links lying around in places where I don't think enough about them.
 - More FAQ's so there's one for nearly everything
 	☑ Format them as spoilers. With the question as header: 🤔 ❓ "<question>".
 	- See the https://www.colemak.org README for some generic Colemak beginner questions and answers

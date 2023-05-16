@@ -25,9 +25,9 @@ links:
     url: ergo-mods.html
     sub:
       - title: Angle/Wide
-        url: ergo-mods.html#AngleWide
+        url: ergo-mods.html#angle-wide
       - title: DH/Curl
-        url: ergo-mods.html#CurlDH
+        url: ergo-mods.html#curl-dh
       - title: Symbols
         url: ergo-mods.html#symbols
       - title: Modifiers
@@ -51,15 +51,15 @@ links:
         url: training.html
         sub:
           - title: Tips
-            url: training.html#topTips
+            url: training.html#training-tips
           - title: Amphetype
             url: training.html#amphetype
           - title: Type-read
-            url: training.html#typeRead
+            url: training.html#type-reading
           - title: Lessons
-            url: training.html#focusedLessons
+            url: training.html#focused-lessons
           - title: N-grams
-            url: training.html#ngrams
+            url: training.html#n-grams
           - title: Pangrams
             url: training.html#pangram
           - title: Tarmak
@@ -74,9 +74,9 @@ links:
           - title: Overview
             url: tarmak-intro.html
           - title: Tmk Steps
-            url: tarmak.html
+            url: tarmak-steps.html
           - title: Tmk-DH
-            url: tarmak.html#tmk-dh
+            url: tarmak-steps.html#tmk-dh
           - title: Mini-FAQ
             url: tarmak-intro.html#faq
   - title: trickery
@@ -87,7 +87,7 @@ links:
       - title: Gaming
         url: typing-tricks.html#gaming
       - title: USB-2-USB
-        url: typing-tricks.html#usb2usb
+        url: typing-tricks.html#usb-2-usb
       - title: Keycaps
         url: typing-tricks.html#keycaps
       - title: Images
