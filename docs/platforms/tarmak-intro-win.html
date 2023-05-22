@@ -15,3 +15,21 @@
 </div>
 
 <!-- Download -->
+<div class="platform-content">
+	<p class="bold">Getting Tarmak for Windows:</p>
+	<p>Also see the <a href="/index.html#platform-info">main page platform box</a> for generic implementation info.</p><br>
+	<ul class="disc">
+		<li>
+			See the <b><a href="https://github.com/DreymaR/BigBagKbdTrixPKL">EPiKaL PortableKeyboardLayout</a></b> repo at GitHub as described in the Windows platform boxes of these pages. It runs portably without much fuss. There are layouts for ISO and ANSI(US) keyboards, vanilla or Colemak-DH, and more.
+		</li>    <li>
+			Tarmak steps come with EPKL and can be selected quite easily. In the <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/blob/master/EPKL_Layouts_Default.ini">EPKL_Layouts</a> file there are some commented-out layout lines like this one:
+			<pre><code>
+				;layout = Tarmak\Tmk-VK-Tm1_@K:Tarmak1,Tarmak\Tmk-VK-Tm0_@K:QWERTY
+			</code></pre>
+		</li>    <li>
+			Remove the semicolon from that line (and ideally add one to the uncommented layout line below) then refresh EPKL and you should have Tarmak. You can use one line that cycles through the Tarmak steps on layout switch by menu or hotkey (default Ctrl+Shift+2), or like the one I quoted here that only switches between a Tarmak step and QWERTY. You could easily edit the number 1 in that line to 2, 3, 4 or 5 – which is Colemak but in the same style as the Tarmak steps.
+		</li>    <li>
+			Another and maybe easier way would be to activate just one step at a time, with the EPKL <b>Layouts/Settings</b> dialog.
+		</li>
+	</ul>
+</div>
