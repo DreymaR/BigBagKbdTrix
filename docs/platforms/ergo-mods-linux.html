@@ -36,41 +36,31 @@
         <li>
             Note that for now, the Curl(DH) mod isn't 100% modular. You'll get it with the Colemak[eD] mappings for one, as AltGr mappings are entwined with the mod.
         </li><li>
-            There are selectable curl-modded layouts under English (the 'us' locale):
+            There's a curl-modded layout selectable under US English (the 'us' locale):
             <ul class="dashed">
-                <li>
-                    <b>us(cmk_ed_dh)</b> – "English (Colemak[eD], Curl-DH ergo)"
-                </li><li>
-                    <b>us(cmk_ed_dhm)</b> – "English (Colemak[eD], Curl-DH-matrix ergo)"
-                </li>
-            </ul>
-        </li>
-        <li>In addition, there are xkb options you can use with setxkbmap -option.
-            <ul class="dashed">
-                <li>
-                    <b>misc:cmk_curl_dh</b>
-                </li><li>
-                    <b>misc:cmk_curl_dhm</b><br>
-                    NOTE: These are ideal for most locale layouts, for instance. However, they overwrite and are overwritten by other layouts – even non-Colemak ones!
-                </li>
-            </ul>
-        </li>
-        <li>If you wish a "harder" solution, you can edit the xkb/symbols/colemak file, uncommenting the mod lines you want. <br>
-            These are found in the xkb_symbols "cmk_ed_letters" partial, so they affect all locale layers, Tarmak etc. – but not non-Colemak layouts.</li>
-        <li>Finally, the setkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
-            <ul class="dashed">
-                <li>
-                    <b>4ca/4caw</b> – ANSI/US CurlAngle-Z(Wide-Quote)
-                </li><li>
-                    <b>4cf</b> – ANSI/US CurlAngleWing(Quote)
-                </li><li>
-                    <b>5ca/5caw</b> – ISO/Euro CurlAngle(Wide-Slash)
-                </li><li>
-                    To get the older mod layers (DHk or DvH) you'll have to edit the colemak symbol file, or specify model+option directly.
-                </li>
+                <li><b>us(cmk_ed_dh)</b> – "English (Colemak[eD], Curl-DH ergo)"</li>
             </ul>
         </li><li>
-            Note: If you have a system (X11) directory install, you'll need sudo privileges to edit those files. (Make sure you use gksudo or similar if you start a GUI editor.)
+            In addition, there are xkb options you can use with setxkbmap -option.
+            <ul class="dashed">
+                <li><b>misc:cmk_curl_dh</b></li>
+            </ul>
+        </li><li>
+            NOTE: These are ideal for most locale layouts, for instance. However, they overwrite and are overwritten by other layouts – even non-Colemak ones!
+        </li><li>
+            If you wish a "harder" solution, you can edit the xkb/symbols/colemak file, uncommenting the mod lines you want. <br>
+            These are found in the xkb_symbols "cmk_ed_letters" partial, so they affect all locale layers, Tarmak etc. – but not non-Colemak layouts.
+        </li><li>
+            Finally, the setkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
+            <ul class="dashed">
+                <li><b>4ca/4caw</b> – ANSI/US CurlAngle-Z(Wide-Quote)</li>
+                <li><b>4cf</b> – ANSI/US CurlAngleWing(Quote)</li>
+                <li><b>5ca/5caw</b> – ISO/Euro CurlAngle(Wide-Slash)</li>
+                <li>For deprecated mod variants (DHk or DvH) you'd have to edit the colemak symbol file, or specify model+option directly.</li>
+            </ul>
+        </li><li>
+            Note: If you have a system (X11) directory install, you'll need sudo privileges to edit those files. 
+            (Make sure you use gksudo or similar if you start a GUI editor.)
         </li><li>
             There are special Tarmak-Curl(DH) layouts; see the Tarmak section below.
         </li><li>
@@ -122,15 +112,12 @@ $> ./setkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
 <!-- Sym -->
 <div class="platform-content">
     <p>
-        The fairly optional "Sym" symbol key mod hasn't yet been implemented in my XKB files. If you're interested, it shouldn't be too hard to add yourself.
+        The "Sym" symbol key mod is now implemented in my XKB files, in the symbols/symkeys file. 
+    </p><p>
+        It's not a hard (keyboard model) mod, but selected as an option; this is because it should not affect hard mappings like Extend layers.
+    </p><p>
+        You may choose between non-Wide, Wide-ISO and Wide-ANSI variants.
     </p>
-    <pre><code>
-  \   7   8   9   0   =
-[   j   l   u   y   '   -
- ]   h   n   e   i   o   ;
-   /   k   m   ,   .   _____
-    </code></pre>
-    <p class="italic">The "Sym" symbol rotation mod, shown with the Wide(ISO) mod.</p>
 </div>
 
 <!-- Modifiers -->

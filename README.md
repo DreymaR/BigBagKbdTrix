@@ -15,7 +15,7 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
-	- Tarmak `DOWNLOADS` definitely should be boxed.
+	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
 
 - Link somewhere to SteveP's layout app?
 	- https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
@@ -84,6 +84,43 @@ DONE
 - Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
 	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
 <br>
+
+
+NOTES from symbols/colemak
+--------------------------
+These notes were in the symbols/colemak file, regarding Colemak_eD:
+```
+//  NOTE:
+//  - Missing: U017F long s; chevrons; horizconnector; wynn/yogh; some African
+//       d-tail; turned Cc/Ee++; latin epsilon/gamma (Berber); italic v;
+//  - Rare/dropped: U25CA lozenge (Mac; rare); kra (deprecated Inuktitut & IPA);
+//       union/intersection/includedin; integral (need a science/math deadkey; use esh in a pinch);
+//       numerosign (mostly Cyrillic; use N + masc.); squareroot (unworkable); function (use hook-f);
+//       U1E9E Capital German SS (disputed); U2033/U2032 double-/prime (cheat w/ acute/doubleacute?!)
+//       U2639/U263A/U27E8/27E9 sadface/smilingface/brackets (poorly implemented)
+//  - Oddly placed?: 'notsign'/'division' (placed by shape/association)?
+//  TODO: Compose/deadkeys: ligatures (fi/fl/ij); fractions/superior/subscripts; latin/IPA/currencies
+//  - For Currency: U2044 solidus/shilling; yen
+//  - For IPA/Latin: U026A/028F SmCap-I/Y; U0251/0252 script-a/turned-script-a; U0283 esh
+//       U028A lat-upsilon; U027E r-flap; U0294 glottal stop;  U025C turned open e
+//  TODO: Make dead_stroke (for d/g/h/l/i/u) work!? Missing in compose files?
+//        Also, l-tilde, s/c/j/z/schwa hook?
+//  TODO: Unused dead_keys: iota, voiced_sound, semivoiced_sound
+//        (could enhance them like Colemak user 'ghen' suggests, for keys 3/4/5?):
+//  TODO: A Maths/science dead key? Latin/IPA? Greek? (Currency exists)
+//  TODO: Add superior/subscript # to dead_acute/grave; fractions to slash/stroke!?
+//      NB: This happens in the compose files under X11/locale, of which there are legion. :(
+//      Can one get away with changing only the various iso8859-# ones? Or just en_US.UTF-8 ?
+//      Since this lies outside the xkb folder, I might just post the code and where to paste it?
+//  TODO: For extra dead key mappings, could dead_abovering and dead_doubleacute be augmented?
+//      Make sure dead_hook has rhotic hooks for schwa and turned epsilon!
+//      Similarly with smallcap letters and their turned counterparts?
+//  TODO: Add IPA (broad English?) somewhere. Too few free slots, so it'll have to be by dead_keys.
+//  TODO: Phonetic 'colemak_curl' layouts with Curl-DH (it's best to rewire the whole layout in this case).
+//  DONE: Add Greek, Kyrillic and Hebrew phonetic Colemak layouts (nice for group 'switch' layout).
+//  DONE: Update the Tarmak and Mirrored layouts when Colemak[eD] is changed, using search-replace.
+```
+These notes are fairly old and outdated by now. They still contain some interesting elements.
 
 
 HTML observations
