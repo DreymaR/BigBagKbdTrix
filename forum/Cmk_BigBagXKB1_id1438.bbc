@@ -192,12 +192,13 @@ To use these, you might have to edit a file or so (see below under "Installation
 Otherwise, 'setxkbmap -model <name>' works on-the-fly. I use my setkb.sh script; see below.
 
 The xkb ergonomic keyboard model mods have names|shortstrings as following (see below for models with Curl):
-• [b]pc104angle-z | 4a[/b] – ANSI/US Angle mod, putting Z in the old B position
-• [b]pc104wide-qu | 4w[/b] - ANSI/US Wide mod, putting the Quote key in the old Right Bracket position
-• [b]pc104aw-zqu | 4aw[/b] - ANSI/US AngleWide mod, combining the two mods above
-• [b]pc104awing | 4f[/b] - ANSI/US A-Wing mod, splitting the bottom row and shifting the others
-• [b]pc105angle | 5a[/b] - ISO/Euro Angle mod, putting <LSGT>/VK_102 in the old B position
-• [b]pc105aw-sl | 5aw[/b] - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
+• [b]pc104angle   | 4a[/b] – ANSI/US Angle mod, putting Z in the old B position
+• [b]pc104wide    | 4w[/b] - ANSI/US Wide mod, putting the Quote key in the old Right Bracket position
+• [b]pc104awide  | 4aw[/b] - ANSI/US AngleWide mod, combining the two mods above
+• [b]pc104awing  | 4f[/b] - ANSI/US A-Wing mod, splitting the bottom row and shifting the others
+• [b]pc105angle   | 5a[/b] - ISO/Euro Angle mod, putting <LSGT>/VK_102 in the old B position
+• [b]pc105wide    | 5w[/b] - ISO/Euro Wide mod, putting the Slash key in the old RBr position
+• [b]pc105awide  | 5aw[/b] - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
 
 
 [h][2.2]    COLEMAK-DH ALIAS THE CURL-DH ERGO MOD[/h]
@@ -248,7 +249,7 @@ The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"
 • This is useful if you don't want to edit the files. Curl affects only the first/main layout, but will mess up any non-Cmk layouts in the GUI.
 [code]
 $> ./setkb.sh "5caw"
-$> ./setkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
+$> ./setkb.sh -m pc105awide -o 'misc:cmk_curl_dh'
 [/code]
 
 Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
@@ -256,7 +257,9 @@ Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
 
 [h][2.3]    PLAYING WITH THE SYMS (Work-In-Progress)[/h]
 
-The fairly optional "Sym" symbol key mod hasn't yet been implemented in my XKB files. If you're interested, it shouldn't be too hard to add yourself.
+• The "Sym" symbol key mod is now implemented in my XKB files, in the symbols/symkeys file.
+• It's not a hard (keyboard model) mod, but selected as an option; this is because it should not affect hard mappings like Extend layers.
+• You may choose between non-Wide, Wide-ISO and Wide-ANSI variants.
 
 [code]
   \   7   8   9   0   =
@@ -264,7 +267,7 @@ The fairly optional "Sym" symbol key mod hasn't yet been implemented in my XKB f
  ]   h   n   e   i   o   ;
    /   k   m   ,   .   _____
 [/code]
-    [i]The "Sym" symbol rotation mod, shown with the Wide(ISO) mod.[/i]
+    [i]The "Sym" symbol rotation mod, shown with the Wide(ISO) mod. Apostrophe and hyphen get better positions.[/i]
 
 
 [h][2.4]    MODIFIER MODNESS (Work-In-Progress)[/h]
@@ -453,7 +456,7 @@ $> ./setkb.sh -a "5caw fr us"
 [b](NB: If local-dir setxkbmap works for you!?) Install script usage example: Local default install[/b]
     • Install in the default location (safe, under your home directory, but inaccessible to the GUI)
     • Run setxkbmap too, activating the Croatian "Keep Local Symbols" Colemak[eD] layout
-    • Also, activate the WideAngle ISO board model ('pc105awide-sl')
+    • Also, activate the WideAngle ISO board model ('pc105awide')
     • Since no system files are affected, force no backup with '-n'
 [code]
 $> bash install-dreymar-xmod.sh -n "5w hr ks"
@@ -476,7 +479,7 @@ The Big Bag for XKB is installed as xkb-data files, and normally activated using
 
 On [b]Ubuntu using Gnome (and what else?)[/b]: If you go to the Layout settings, hit '+' to add a layout and type in 'Colemak' you should see a bunch of additions. The Extend option is found under Options -> Miscellaneous Compatibility Options, and you should choose an appropriate lv5 switch for it (I've added a Caps Lock option). If you can't find it, your distro may not have those options visible in the Settings GUI and you may have to do it the command-line, dconf-editor and/or config file way.
 
-The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shift (named 'pc105angle-lg'), the Angle/Wide-Slash mod described above ('pc105awide-sl') as well as the US/ANSI/PC-104 board ZXCVB shift ('pc104angle-z') and Wide(Quote) mod ('pc104wide-qu'). Unfortunately, the current Ubuntu versions have lost the GUI Settings option to switch keyboard models – which I find very odd.
+The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shift (named 'pc105angle'), the Angle/Wide-Slash mod described above ('pc105awide') as well as the US/ANSI/PC-104 board ZXCVB shift ('pc104angle') and Wide(Quote) mod ('pc104wide'). Unfortunately, the current Ubuntu versions have lost the GUI Settings option to switch keyboard models – which I find very odd.
 
 [b][i]Using my setkb script:[/i][/b]
 As seen above, I have a little script that activates layouts and options, allowing a shortstring notation to keep things compact. It's essentially just a wrapper for the setxkbmap command described below. To get more info on it, run it with -h for help or have a peek inside the script!
@@ -489,7 +492,7 @@ The shortstring format can be handy if you want to change layouts by hand. If no
 
 [b][i]Using the setxkbmap command:[/i][/b]
 Start a terminal window and use the setxkbmap command to change your keyboard model, like this:
-[code]$> setxkbmap -model pc105awide-sl -v 9[/code]
+[code]$> setxkbmap -model pc105awide -v 9[/code]
 
 (The '-v 9' is shorthand for '-query -verbose 9' which outputs useful info. You can run setxkbmap with only the '-v 9' switch if you wish.)
 In my download archive there's a couple of shell scripts that do this for you.
@@ -497,7 +500,7 @@ In my download archive there's a couple of shell scripts that do this for you.
 If you have a non-PC104/PC105-compatible keyboard you might have to do it differently; let me know if you run into trouble.
 
 The setxkbmap command can do more - particularly useful for, e.g., [b]non-Gnome[/b] distros or if you like the command line:
-[code]$> setxkbmap -model pc105awide-sl -layout us,no -variant cmk_ed_us,cmk_ed_us \
+[code]$> setxkbmap -model pc105awide -layout us,no -variant cmk_ed_us,cmk_ed_us \
   -option lv5:caps_switch_lock,misc:extend -v 9[/code]
 The above example sets up an AngleWide-Slash keyboard with the standard Colemak[eD] layout for US and Norway (both using 'us' unified variants), Extend mode active and Caps as the Extend key. Thanks to [url=https://forum.colemak.com/viewtopic.php?pid=10084#p10084]Kruppe[/url] for this tip! :)
 
@@ -508,7 +511,7 @@ You may include the variants in parentheses, and if you only set the layouts you
 [b][i]Editing the /etc/default/keyboard file:[/i][/b]
 To make the change persistent between startups, sudo edit the /etc/default/keyboard file. Let's say we want to set up, say, an AngleWide mod, US English Colemak[eD] with group switch to Greek Colemak and an Extend layer with Caps switch (plus standard options like putting Compose on the Menu key and switching groups with both Shift keys):
 [code]#XKBMODEL="pc105"
-XKBMODEL="pc105awide-sl"
+XKBMODEL="pc105awide"
 XKBLAYOUT="us,gr"
 XKBVARIANT="cmk_ed_us,colemak"
 XKBOPTIONS="lv5:caps_switch_lock,misc:extend,compose:menu,grp:shifts_toggle"[/code]

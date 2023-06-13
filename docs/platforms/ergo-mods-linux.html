@@ -12,17 +12,19 @@
     </p>
     <ul class="disc">
         <li>
-            <b>pc104angle-z | 4a</b> – ANSI/US Angle mod, putting Z in the old B position
+            <b>pc104angle   | 4a</b> – ANSI/US Angle mod, putting Z in the old B position
         </li><li>
-            <b>pc104wide-qu | 4w</b> - ANSI/US Wide mod, putting the Quote key in the old Right Bracket position
+            <b>pc104wide    | 4w</b> - ANSI/US Wide mod, putting the Quote key in the old Right Bracket position
         </li><li>
-            <b>pc104aw-zqu | 4aw</b> - ANSI/US AngleWide mod, combining the two mods above
+            <b>pc104awide  | 4aw</b> - ANSI/US AngleWide mod, combining the two mods above
         </li><li>
             <b>pc104awing | 4f</b> - ANSI/US A-Wing mod, splitting the bottom row and shifting the others
         </li><li>
             <b>pc105angle | 5a</b> - ISO/Euro Angle mod, putting &lt;LSGT&gt;/VK_102 in the old B position
         </li><li>
-            <b>pc105aw-sl | 5aw</b> - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
+            <b>pc105wide  | 5w</b> - ISO/Euro Wide mod, putting the Slash key in the old RBr position
+        </li><li>
+            <b>pc105awide | 5aw</b> - ISO/Euro AngleWide mod, including Angle-LG and putting the Slash key in the old RBr position
         </li>
     </ul>
 </div>
@@ -102,7 +104,7 @@
     </ul>
     <pre><code>
 $> ./setkb.sh "5caw"
-$> ./setkb.sh -m pc105aw-sl -o 'misc:cmk_curl_dh'
+$> ./setkb.sh -m pc105awide -o 'misc:cmk_curl_dh'
     </code></pre>
     <p>
         Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
