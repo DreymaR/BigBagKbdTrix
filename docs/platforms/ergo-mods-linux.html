@@ -31,9 +31,7 @@
 
 <!-- Curl-DH -->
 <div class="platform-content">
-    <p class="bold italic">
-        HowTo:
-    </p>
+    <p class="bold italic">HowTo:</p>
     <ul class="disc">
         <li>
             Note that for now, the Curl(DH) mod isn't 100% modular. You'll get it with the Colemak[eD] mappings for one, as AltGr mappings are entwined with the mod.
@@ -43,7 +41,7 @@
                 <li><b>us(cmk_ed_dh)</b> – "English (Colemak[eD], Curl-DH ergo)"</li>
             </ul>
         </li><li>
-            In addition, there are xkb options you can use with setxkbmap -option.
+            In addition, there's an xkb option you can use with setxkbmap -option.
             <ul class="dashed">
                 <li><b>misc:cmk_curl_dh</b></li>
             </ul>
@@ -55,9 +53,9 @@
         </li><li>
             Finally, the setkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
             <ul class="dashed">
-                <li><b>4ca/4caw</b> – ANSI/US CurlAngle-Z(Wide-Quote)</li>
+                <li><b>4ca/4caws</b> – ANSI/US CurlAngle-Z(Wide-Quote) – both Wide and Sym are optional</li>
                 <li><b>4cf</b> – ANSI/US CurlAngleWing(Quote)</li>
-                <li><b>5ca/5caw</b> – ISO/Euro CurlAngle(Wide-Slash)</li>
+                <li><b>5ca/5caws</b> – ISO/Euro CurlAngle(Wide-Slash)</li>
                 <li>For deprecated mod variants (DHk or DvH) you'd have to edit the colemak symbol file, or specify model+option directly.</li>
             </ul>
         </li><li>
@@ -70,9 +68,7 @@
         </li>
     </ul>
     
-    <p class="bold italic">
-        Example: Editing the symbols/colemak file
-    </p>
+    <p class="bold italic">Example: Editing the symbols/colemak file</p>
     <ul class="disc">
         <li>
             Below I've uncommented a line in the "cmk_ed_letters" section of xkb/symbols/colemak, activating both sides of the Curl(DH) mod.
@@ -81,7 +77,7 @@
         </li>
     </ul>
     <pre><code>
-//// Activating the line below will "hard" enable the Cmk-DH = Curl(DHm) mod; see below.
+//// Activating the line below will "hard" enable the Cmk Curl-DH(m) mod; see below.
 //    include "colemak(cmk_ed_dh)"
 //// Activating the line below will "hard" enable the old Curl(DHk) mod; see below.
 //    include "colemak(cmk_ed_dhk)"
@@ -89,9 +85,7 @@
 //    include "colemak(cmk_ed_dvh)"
     </code></pre>
     
-    <p class="bold italic">
-        Example: Using a CurlAngleWide "model" with setkb.sh
-    </p>
+    <p class="bold italic">Example: Using a CurlAngleWide "model" with setkb.sh</p>
     <ul class="disc">
         <li>
             These two examples both activate the PC105-Curl(DH)AngleWide mod.
@@ -114,12 +108,30 @@ $> ./setkb.sh -m pc105awide -o 'misc:cmk_curl_dh'
 <!-- Sym -->
 <div class="platform-content">
     <p>
-        The "Sym" symbol key mod is now implemented in my XKB files, in the symbols/symkeys file. 
+        The "Sym" symbol key mod is implemented in the xkb/symbols/symkeys file. 
     </p><p>
         It's not a hard (keyboard model) mod, but selected as an option; this is because it should not affect hard mappings like Extend layers.
     </p><p>
         You may choose between non-Wide, Wide-ISO and Wide-ANSI variants.
-    </p>
+    </p><br>
+    
+    <p class="bold italic">HowTo:</p>
+    <ul class="disc">
+        <li>
+        </li><li>
+            Appending an 's' to the setkb.sh shortstring will activate the appropriate Sym mod for your configuration.
+            <ul class="dashed">
+                <li><b>$> ./setkb.sh 5caws</b> (for Colemak[eD] ISO-CurlAngleWideSym)</li>
+            </ul>
+        </li><li>
+            In addition, you can can use <b>setxkbmap -option</b> as with the Curl mod:
+            <ul class="dashed">
+                <li><b>misc:sym_non-wide</b> (if you don't use a Wide mod)</li>
+                <li><b>misc:sym_wide-104</b> (if you use the Wide mod for ANSI boards)</li>
+                <li><b>misc:sym_wide-105</b> (if you use the Wide mod for ISO boards)</li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
 <!-- Modifiers -->

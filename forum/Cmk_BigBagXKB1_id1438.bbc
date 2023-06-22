@@ -1,6 +1,6 @@
 [h]DREYMAR'S BIG BAG of KEYBOARD TRICKS – ÞE OLDE PAGES[/h]
 
-[b]The Big Bag has moved![/b] Go find the updated and more wonderfuller Big Bag at [b][url]https://dreymar.colemak.org/[/url][/b] – [b]Now Even Trickier[/b]!
+[b]The Big Bag has moved![/b] Go find the updatedest and more wonderfuller Big Bag at [b][url]https://dreymar.colemak.org/[/url][/b] – [b]Now Even Trickier[/b]!
 
 Instead of separate platform topics, over there you can select a platform icon and get implementation info in handy context boxes.
 
@@ -33,7 +33,7 @@ I also have topics focusing on different implementations of the Big Bag Of Keybo
 [b][2]    [u]Ergonomic Key Remappings[/u][/b]
 [b][2.1][/b] [b]Angle/Wide ergo modifications[/b] to improve wrist angles, hand spacing and right pinky stretch/load effort
 [b][2.2][/b] [b]Colemak-DH[/b] alias the [b]Curl(DH)[/b] ergo mod (deprioritize middle columns without keys changing fingers)
-[b][2.3][/b] [b]Symbol key mods[/b] for the adventurous (better apostrophe and/or hyphen positions; Work-In-Progress)
+[b][2.3][/b] [b]Symbol key mods[/b] for the adventurous (better apostrophe and/or hyphen positions)
 [b][2.4][/b] [b]Modifier modness[/b] for the adventurous (Sticky, One-shot etc; Work-In-Progress)
 
 [b][3]    [u]Layout Variants[/u][/b]
@@ -213,20 +213,19 @@ The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"
 
 [b][i]HowTo:[/i][/b]
 • Note that for now, the Curl(DH) mod isn't 100% modular. You'll get it with the Colemak[eD] mappings for one, as AltGr mappings are entwined with the mod.
-• There are selectable curl-modded layouts under English (the 'us' locale):
+• Also, should you wish to switch to another layout such as QWERTY you'll have to deactivate the curl option (`setxkbmap -option ''` works).
+• There's a selectable curl-modded layout under English (the 'us' locale):
     – [b]us(cmk_ed_dh)[/b] – "English (Colemak[eD], Curl-DH ergo)"
-    – [b]us(cmk_ed_dhm)[/b] – "English (Colemak[eD], Curl-DH-matrix ergo)"
-• In addition, there are xkb options you can use with setxkbmap -option.
+• In addition, there's an xkb option you can use with setxkbmap -option.
     – [b]misc:cmk_curl_dh[/b]
-    – [b]misc:cmk_curl_dhm[/b]
-    NOTE: These are ideal for most locale layouts, for instance. However, they overwrite and are overwritten by other layouts – even non-Colemak ones!
+    NOTE: This is ideal for most locale layouts, for instance. However, they overwrite and are overwritten by other layouts – even non-Colemak ones!
 • If you wish a "harder" solution, you can edit the [i]xkb/symbols/colemak[/i] file, uncommenting the mod lines you want.
     These are found in the xkb_symbols "[i]cmk_ed_letters[/i]" partial, so they affect all locale variants, Tarmak etc. – but not non-Colemak layouts.
 • Finally, the setkb.sh script will accept several Curl-modded keyboard models. It'll reinterpret these as a combo of model and misc option, accordingly.
-    – [b]4ca/4caw[/b] – ANSI/US CurlAngle-Z(Wide-Quote)
+    – [b]4ca(ws)[/b] – ANSI/US CurlAngle-Z(Wide-Quote) (Wide and Sym are both optional)
     – [b]4cf[/b] – ANSI/US CurlAngleWing(Quote)
-    – [b]5ca/5caw[/b] – ISO/Euro CurlAngle(Wide-Slash)
-    – To get the older mod variants (DHk or DvH) you'll have to edit the colemak symbol file, or specify model+option directly.
+    – [b]5ca(ws)[/b] – ISO/Euro CurlAngle(Wide-Slash)
+    – To get the older mod variants (DHk or DvH) you'd have to edit the colemak symbol file, or specify model+option directly.
 • Note: If you have a system (X11) directory install, you'll need sudo privileges to edit those files. (Make sure you use gksudo or similar if you start a GUI editor.)
 • There are special Tarmak-Curl(DH) layouts; see the Tarmak section below.
 • NOTE: If your locale variant remaps any of the affected keys (mainly D, G, H, M or K) you'll have to look up and edit that locale symbols file.
@@ -247,6 +246,7 @@ The Colemak-DH mod depends on using an Angle mod which is easier on an "105-key"
 • These two examples both activate the PC105-Curl(DH)AngleWide mod.
 • The shortstring line will not change the active layout (apart from the Curl mod); the other line will use the setkb.sh default layout.
 • This is useful if you don't want to edit the files. Curl affects only the first/main layout, but will mess up any non-Cmk layouts in the GUI.
+• To add the Sym mod (see below), use the shortstr "5caws", or the options 'misc:cmk_curl_dh,misc:sym_wide-105' in this case.
 [code]
 $> ./setkb.sh "5caw"
 $> ./setkb.sh -m pc105awide -o 'misc:cmk_curl_dh'
@@ -255,9 +255,9 @@ $> ./setkb.sh -m pc105awide -o 'misc:cmk_curl_dh'
 Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
 
 
-[h][2.3]    PLAYING WITH THE SYMS (Work-In-Progress)[/h]
+[h][2.3]    PLAYING WITH THE SYMS[/h]
 
-• The "Sym" symbol key mod is now implemented in my XKB files, in the symbols/symkeys file.
+• The "Sym" symbol key mod is implemented in the xkb/symbols/symkeys file.
 • It's not a hard (keyboard model) mod, but selected as an option; this is because it should not affect hard mappings like Extend layers.
 • You may choose between non-Wide, Wide-ISO and Wide-ANSI variants.
 
@@ -268,6 +268,14 @@ Hope that isn't too complex or arcane! It's really a very nice mod I think. ;-)
    /   k   m   ,   .   _____
 [/code]
     [i]The "Sym" symbol rotation mod, shown with the Wide(ISO) mod. Apostrophe and hyphen get better positions.[/i]
+
+[b][i]HowTo:[/i][/b]
+• Appending an 's' to the setkb.sh shortstring will activate the appropriate Sym mod for your configuration, as an xkb option.
+• In addition, you can can use `setxkbmap -option` as with the Curl mod:
+    – [b]misc:sym_non-wide[/b] (if you don't use a Wide mod)
+    – [b]misc:sym_wide-104[/b] (if you use the Wide(Qu) mod for ANSI boards)
+    – [b]misc:sym_wide-105[/b] (if you use the Wide(Sl) mod for ISO boards)
+• See the Curl section above for more info on setting layout mod options.
 
 
 [h][2.4]    MODIFIER MODNESS (Work-In-Progress)[/h]
@@ -382,7 +390,6 @@ This section tells you how to get and run my Linux/xkb mod files. The next secti
 • To use my scripts, you'll need BASH ([b]B[/b]ourne[b]A[/b]gain[b]SH[/b]ell). Most distros have that now, but if you don't then the command [b]sudo apt-get install bash[/b] will get it.
 • [b]NOTE:[/b] Running setxkbmap on a local directory is a bit tricky. If it cannot activate your layout, use a system install (-o) instead. I'll take a look at it.
 • (The '-d' and '-t' options are only used if your mod dir has an odd path/name. If you're using my files as they came, you won't need to set those.)
-• (You probably won't need the '-g' option either, as the XF86 Cut/Copy/Paste keys aren't used in Extend anymore due to poor implementation; I map to Ctrl+X/C/V instead now.)
 
 
 [b][i]Copying my xkb files:[/i][/b]
@@ -392,7 +399,7 @@ Copying the changed files over the X11 ones (after backing up the old ones) shou
 
 I've made a script ([b]install-dreymar-xmod.sh[/b]) that takes care of business. Using various command line switches (call it with '-?' for instructions and defaults), it can backup, restore, install to a chosen directory or install to the system directory (with the '-o' switch). It can link to my [b]setkb.sh[/b] script to activate the new setup, and run a script to install GTK bindings for the Cut/Copy/Paste keys (but those didn't work anymore in the latest Ubuntu so I replaced them with actual Ctrl+X/C/V entries in the Extend mappings).
 
-There are various ways of making your xkb setup persistently activated. I prefer writing a line in your [b]~/.bashrc[/b] file running the system [b]setxkbmap[/b] command. My [b]setkb.sh[/b] script can do that with the [b]-a[/b] switch.
+There are various ways of making your xkb setup persistently activated. I prefer writing a line in your [b]~/.bashrc[/b] file (or whatever rc file is sourced on your startup) running the system [b]setxkbmap[/b] command. My [b]setkb.sh[/b] script can do that with the [b]-a[/b] switch.
 
 [b]NOTE:[/b] You must use 'bash <script> -<options>' (or './<script> -<options>' with run privileges for the .sh file), not the 'sh' command!
                      (To get run privileges for the .sh scripts in my directory, run the command [b]chmod +x *.sh[/b] in the BigBag directory.)
@@ -406,14 +413,15 @@ My [b]setkb.sh[/b] script may be called with [b]-m[/b](odel),[b] -l[/b](ayout) a
   SetXKB.sh [<kbd> [<loc> <sym]] ShortStr syntax:
   ===============================================
   <kbd> 4/5   - ANSI-104/ISO-105 keyboard model, then...\n"\
-        n/c - Normal/Curl-DH, and optionally...\n"\
-      a/w/f   - Angle/Wide/A-Wing (a.k.a. 'A-Frame')\n"\
+        n/a/c - Normal/Angle/Curl-DH, and optionally...\n"\
+        w/f   - Wide/A-Wing (a.k.a. 'A-Frame'), and...\n"\
+        s     - Sym\n"\
   <loc> Two-letter locale layout code like 'us' for USA, 'gb' for UK etc\n"\
   <sym> 'us'/'ks' for 'Universal' or 'Keep Locale' symbol variants\n\n"\
 
-  Examples: '5a se us': PC105-Angle, Swedish Cmk[eD] 'UnifiedSym'\n"\
-            '4cf gb ks': PC104-Curl(DH)AWing, Eng.(UK) Cmk[eD] 'KeepSym'\n"\
-            '5caw': PC105-Curl(DH)AngleWide, keep current layout/variant\n"
+  Examples: '5a    se us': Angle-ISO, Swedish Cmk[eD] 'UnifiedSym'\n"\
+            '4ca   gb ks': Curl(DH)Angle-ANSI, Eng.(UK) Cmk[eD] 'KeepSym'\n"\
+            '5caws': Curl(DH)AngleWideSym-ISO, keep current layout/variant\n"
 [/code]
 
 
@@ -431,7 +439,7 @@ My [b]setkb.sh[/b] script may be called with [b]-m[/b](odel),[b] -l[/b](ayout) a
 [b]Install script usage example: System install[/b]
     • Force install to the system X11/xkb directory with '-o' (changes will show up in the system settings GUI)
     • (You may get asked for your sudo password, but you don't have to run the script with admin rights)
-    • Just activate the default layout ('5w us us') with '-x'; necessary to get AngleWide as models aren't GUI selectable
+    • Just activate the default layout ('5caws us us') with '-x'; this may be necessary to get Angle/Wide as models aren't GUI selectable
     • (A backup of the xkb dir will automatically be made if no previous backup is found in the system X11 dir; to force a fresh one use '-b')
 [code]
 $> bash install-dreymar-xmod.sh -ox
@@ -447,7 +455,7 @@ $> ./install-dreymar-xmod.sh -r 1
 [b]Setup script usage example: Change model/layout with shortstrings, and write to file[/b]
     • For activating a single layout and model, we use a -s 'model locale eD-variant' shortstring
     • Activate Curl(DH)+PC105-AngleWide ergo mod (implemented as model+option).
-    • Activate a French "UniSym" layout (at the moment, the default layout is my Norwegian Cmk[eD]...).
+    • Activate a French "UniSym" Cmk[eD] layout instead of the default US one.
     • Append the resulting setxkbmap command to your ~/.bashrc file with '-a' so it gets activated on each logon.
 [code]
 $> ./setkb.sh -a "5caw fr us"
@@ -459,7 +467,7 @@ $> ./setkb.sh -a "5caw fr us"
     • Also, activate the WideAngle ISO board model ('pc105awide')
     • Since no system files are affected, force no backup with '-n'
 [code]
-$> bash install-dreymar-xmod.sh -n "5w hr ks"
+$> bash install-dreymar-xmod.sh -n "5aw hr ks"
 [/code]
 
 [b](NB: See above!) Install/setkb script usage example: Local install to a specified path, then activate it manually, also adding a line to ~/.bashrc.[/b]
@@ -475,7 +483,7 @@ $> ./setkb.sh -ad  '~/myxkb/dxkb' 4n us us
 [h][4.2]    XKB CONFIGURATION[/h]
 
 [b][i]Linux GUI settings:[/i][/b]
-The Big Bag for XKB is installed as xkb-data files, and normally activated using either a GUI settings interface or the setxkbmap command – which may be run through my setkb.sh script. Now, some systems like Wayland use the xkb-data files but don't have a X server as such so there is no setxkbmap command. For these, the files still work but other ways of selecting your layout must be used.
+The Big Bag for XKB is installed as xkb-data files, and normally activated using either a GUI settings interface or the setxkbmap command – which may be run through my setkb.sh script. Now, some systems like Wayland use the xkb-data files but don't have a X server as such so there is no setxkbmap command. For these, the files still work but other ways of selecting your layout must be used. See the new BigBag pages and the BigBagXKB repo docs for more info.
 
 On [b]Ubuntu using Gnome (and what else?)[/b]: If you go to the Layout settings, hit '+' to add a layout and type in 'Colemak' you should see a bunch of additions. The Extend option is found under Options -> Miscellaneous Compatibility Options, and you should choose an appropriate lv5 switch for it (I've added a Caps Lock option). If you can't find it, your distro may not have those options visible in the Settings GUI and you may have to do it the command-line, dconf-editor and/or config file way.
 
@@ -485,10 +493,10 @@ The available Angle/Wide ergonomic mods are the Euro/ISO/PC-105 board ZXCVB> shi
 As seen above, I have a little script that activates layouts and options, allowing a shortstring notation to keep things compact. It's essentially just a wrapper for the setxkbmap command described below. To get more info on it, run it with -h for help or have a peek inside the script!
 
 The shortstring format can be handy if you want to change layouts by hand. If not, just don't bother too much with it. A setkb shortstring consists of:
-• [b]KbdModel[/b], such as '4n' for an unmodded PC104(ANSI) keyboard, '4a' for the Angle-Z mod or '5caw' for a PC105(ISO)-CurlAngleWide mod.
+• [b]KbdModel[/b], such as '4n' for an unmodded PC104(ANSI) keyboard, '4a' for the Angle-Z mod or '5caws' for the ISO-CurlAngleWideSym mod.
 • [b]Locale[/b], such as 'us' for USA, 'gb' for Great Britain, 'no' for Norway etc.
 • [b]SymVariant[/b]: It's 'us' for the main Cmk[eD] "Unified Symbols" variants, or 'ks' to "Keep Local Symbols".
-• (Sorry, but there's no way to set XKB options with shortstrings as that'd be too complex.)
+• (Sorry, but there's no way to set/reset other XKB options with shortstrings as I feel that'd get too complex.)
 
 [b][i]Using the setxkbmap command:[/i][/b]
 Start a terminal window and use the setxkbmap command to change your keyboard model, like this:
@@ -518,7 +526,7 @@ XKBOPTIONS="lv5:caps_switch_lock,misc:extend,compose:menu,grp:shifts_toggle"[/co
 
 Remember that this would need a reboot (or at least 'pkill X' or a trigger command to udevadm?) to kick in. Hope it works for you!
 
-I prefer to just put the setkb.sh script to write a line to a file that's sourced on startup like ~/.bashrc or ~/.xsession so the layout gets activated persistently.
+I prefer to just put the setkb.sh script to write a line to a file that's sourced on startup like ~/.bashrc, ~/.xinitrc or ~/.xsession so the layout gets activated persistently.
 
 [b][i]On Wayland:[/i][/b]
 As mentioned, there isn't a setxkbmap command on Wayland so the setkb.sh script won't currently work there. I haven't tried it myself, but I've been told this should work.
@@ -587,13 +595,13 @@ The xkb server can get its settings from several places so how your actual setti
 
 
 [h]DONE:[/h]
-• Made the Extend layer modifiers (A/S/T for Alt/Shift/Ctrl) work with the other keys like they do in my PKL implementation under Windows
+• Made the Extend layer modifiers (A/S/T for Alt/Shift/Ctrl) work with the other keys like they do in my EPKL implementation under Windows
 • Extend Undo/Cut/Copy/Paste, navigation and F-keys work as they should, as does Wheel Scrolling
 • Reviewed the Curl mod solution: Keyboard models are reserved for Angle/Wide mods. This leads to the Curl Extend layer not having Paste on Ext+V.
 • Curl(DH) mods implemented as Options in addition to the US layouts (a bit strange, as they'd mess up non-Colemak layouts, but very useful)
 • More locale variants: [b]al hu ro tr, ba/hr/rs/si[/b]...
 • Updates to the install and setkb scripts. Clearer output, and setkb now supports model-only shortstrings and Curl(DH) "models" (see script -h)
-• Finished updating the Curl(DH) mods
+• Updated Curl(DH) and added Sym mods, as xkb options.
 
 [h]TODO:[/h]
 • Something seems to break key repetition after a while in Ubuntu?!? Not sure it's my fault but...
@@ -605,5 +613,5 @@ The xkb server can get its settings from several places so how your actual setti
 
 
 
-    [img]https://www.dropbox.com/s/ybzpmj95jky3vtl/Cmk-CAW_Unicomp_DreymaR_TN-Ninja_2017-08.png?raw=1[/img]
-    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American/Ninja" caps, splendidly sporting the Colemak-CAW layout.[/i]
+    [img]https://dreymar.colemak.org/res/cmk/hardware/Cmk-CAWS_Unicomp_DreymaR_TN-Ninja.png[/img]
+    [i]My Unicomp SpaceSaver Buckling Spring (IBM Model M ISO type) keyboard with "American/Ninja" caps, splendidly sporting the Colemak-CAWS layout.[/i]
