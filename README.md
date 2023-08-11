@@ -7,21 +7,21 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 ----------------------------------------------------------------
 
 
-TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
-----------------------------------------------------------------
+TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
+-----------------------------------------------------------------------
 - Some still find platform selection non-intuitive. Hmmm...
-	- Could we link to a specific platform box? As in `page.html#anchor?platform=win`.
+	- Could we link to a specific platform box with platform specified? As in `page.html#anchor?platform=win`.
 	- Make it so that clicking the text `PLATFORMS` shows the how-to screen again (only seen initially now).
 
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
 	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
 
-- Link somewhere to SteveP's layout app?
-	- https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
-
-- Link to the Getreuer writeup on alt layouts? It's a nice read.
-	- https://getreuer.info/posts/keyboards/alt-layouts/index.html
+- More likeable links?
+	- SteveP's layout app:  https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
+	- Callum's Nonsense (web): https://callumoakley.net/nonsense/
+	- Callum's Gotta-Go-Fast: https://github.com/callum-oakley/gotta-go-fast
+	- ProfXwing/CSGO's CopyType: https://github.com/ProfXwing/copytype
 
 - Locale variants:
 	- Add more of the Forum locale topic
@@ -41,11 +41,13 @@ TODO/WIP for the BigBag Forum & web content, mostly for DreymaR:
 
 DONE
 ----
+- More likeable links:
+	- Pascal Getreuer's alt layouts guide:  https://getreuer.info/posts/keyboards/alt-layouts/index.html
 - More consistent page and anchor naming
 	- A link like layers-extend.html#section-name is easier to use as you don't need to check the source code for it.
 - More consistent file naming
 	- `training > learning-training` too? At least, `tarmak-intro > learning-tarmak` and `tarmak > tarmak-steps`?
-	- May be unwise to change page names too often, though? I may have links lying around in places where I don't think enough about them.
+	- May be unwise to change page names too often, though? I may have links lying around in places where I don't think much about them.
 - More FAQ's so there's one for nearly everything
 	☑ Format them as spoilers. With the question as header: 🤔 ❓ "<question>".
 	- See the https://www.colemak.org README for some generic Colemak beginner questions and answers
