@@ -167,7 +167,8 @@ table {
     &.win,
     &.linux,
     &.tmk,
-    &.mac {
+    &.mac,
+    &.platform-box-empty {
         display: block;
         position: relative;
         margin-top: 16px;
@@ -175,14 +176,7 @@ table {
         border: 3px solid #AA77BB;
     }
 
-    &:not(.win):not(.linux):not(.tmk):not(.mac),
-    &.win.skip-win,
-    &.linux.skip-linux,
-    &.tmk.skip-tmk,
-    &.mac.skip-mac {
-        display: block;
-        position: relative;
-        margin-top: 16px;
+    &.platform-box-empty {
         border:none;
         border-top: 3px solid #AA77BB;
     }
@@ -715,13 +709,6 @@ main {
 
     .platform-box:last-child {
         margin-bottom: 50px;
-
-        &.win.skip-win,
-        &.linux.skip-linux,
-        &.tmk.skip-tmk,
-        &.mac.skip-mac {
-            margin-bottom: 115px;
-        }
     }
 }
 

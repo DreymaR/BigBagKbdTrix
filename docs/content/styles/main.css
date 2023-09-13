@@ -154,7 +154,7 @@ table td p.legend {
   display: none;
 }
 
-.platform-box.win, .platform-box.linux, .platform-box.tmk, .platform-box.mac {
+.platform-box.win, .platform-box.linux, .platform-box.tmk, .platform-box.mac, .platform-box-empty {
   display: block;
   position: relative;
   margin-top: 16px;
@@ -162,10 +162,7 @@ table td p.legend {
   border: 3px solid #AA77BB;
 }
 
-.platform-box:not(.win):not(.linux):not(.tmk):not(.mac), .platform-box.win.skip-win, .platform-box.linux.skip-linux, .platform-box.tmk.skip-tmk, .platform-box.mac.skip-mac {
-  display: block;
-  position: relative;
-  margin-top: 16px;
+.platform-box.platform-box-empty {
   border: none;
   border-top: 3px solid #AA77BB;
 }
@@ -727,10 +724,6 @@ main ul li ul {
 
 main .platform-box:last-child {
   margin-bottom: 50px;
-}
-
-main .platform-box:last-child.win.skip-win, main .platform-box:last-child.linux.skip-linux, main .platform-box:last-child.tmk.skip-tmk, main .platform-box:last-child.mac.skip-mac {
-  margin-bottom: 115px;
 }
 
 p + ul {
