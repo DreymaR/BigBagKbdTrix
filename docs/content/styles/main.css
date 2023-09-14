@@ -74,7 +74,7 @@ table td p.legend {
   overflow-y: auto;
 }
 
-#tutorialScreen {
+.tutorial-screen {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -87,7 +87,7 @@ table td p.legend {
   transition: opacity 500ms ease-in-out;
 }
 
-#tutorialScreen.show {
+.tutorial-screen.show {
   opacity: 1;
 }
 
@@ -97,6 +97,16 @@ table td p.legend {
   left: 80px;
   width: 64px;
   height: 64px;
+}
+
+#tutorialScreen2 #tutorialArrow {
+  top: 110px;
+  left: 130px;
+}
+
+#tutorialScreen2 #tutorialText {
+  top: 184px;
+  left: 120px;
 }
 
 #tutorialPlatform {
@@ -139,22 +149,7 @@ table td p.legend {
   cursor: pointer;
 }
 
-#tutorialCloseButton {
-  position: absolute;
-  top: 8px;
-  left: 6px;
-  width: 22px;
-  height: 22px;
-  font-size: 23;
-  background-image: url("..img/close.png");
-  background-size: contain;
-}
-
 .platform-box {
-  display: none;
-}
-
-.platform-box.win, .platform-box.linux, .platform-box.tmk, .platform-box.mac, .platform-box-empty {
   display: block;
   position: relative;
   margin-top: 16px;
@@ -162,6 +157,7 @@ table td p.legend {
   border: 3px solid #AA77BB;
 }
 
+div[class="platform-box"],
 .platform-box.platform-box-empty {
   border: none;
   border-top: 3px solid #AA77BB;
@@ -236,6 +232,13 @@ table td p.legend {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 50%;
+}
+
+#tutorialScreen2 #tutorialPlatform {
+  background-image: url("../img/platforms-picker-small.png");
+  width: 118px;
+  height: 175px;
+  left: 0;
 }
 
 #platforms {
@@ -1004,6 +1007,25 @@ kbd {
 }
 
 @media only screen and (min-width: 1100px) {
+  #tutorialPlatform {
+    background-image: url("../img/platforms-large.png");
+    width: 181px;
+    height: 60px;
+  }
+
+  #tutorialScreen2 #tutorialPlatform {
+    background-image: url("../img/platforms-picker.png");
+    width: 181px;
+  }
+
+  #tutorialClose {
+      left: 0;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+
   #navbar {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;

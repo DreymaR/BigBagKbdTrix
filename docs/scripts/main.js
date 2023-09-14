@@ -24,7 +24,23 @@ document.onload = function () {
         platform = localStorage.getItem('platform');
     }
 
+    if (!localStorage.getItem('website_visited')) {
+        drawTutorialScreen();
+    }
+
     togglePlatform(platform, true);
+
+    let platformsElement = document.getElementById('platforms');
+    platformsElement.addEventListener('mouseover', function () {
+        if (!localStorage.getItem('platforms_opened')) {
+            drawTutorialScreen(2);
+        }
+    });
+    platformsElement.addEventListener('touchstart', function () {
+        if (!localStorage.getItem('platforms_opened')) {
+            drawTutorialScreen(2);
+        }
+    });
 
     hookPlatformToggleOnClick(platforms);
     hookSpoilersToggleOnClick([].slice.call(document.getElementsByClassName('spoiler'))); 
@@ -273,15 +289,14 @@ function toggleSpoiler() {
     }
 }
 
-if (window.matchMedia("(max-width: 1100px)").matches) {
-    if (!localStorage.getItem('website_visited')) {
-        drawTutorialScreen();
-    }
-}
-
-function drawTutorialScreen() {
+function drawTutorialScreen(tutorialNumber = 1) {
     let tutorialScreen = document.createElement('div');
-    tutorialScreen.id = 'tutorialScreen';
+    tutorialScreen.className = 'tutorial-screen';
+    if (tutorialNumber == 1) {
+        tutorialScreen.id = 'tutorialScreen1';
+    } else {
+        tutorialScreen.id = 'tutorialScreen2';
+    }
 
     let platformIcon = document.createElement('div');
     platformIcon.id = 'tutorialPlatform';
@@ -291,7 +306,11 @@ function drawTutorialScreen() {
     arrow.id = 'tutorialArrow';
 
     let text = document.createElement('span');
-    text.innerText = 'Click this button to toggle the desired platform.';
+    if (tutorialNumber == 1) {
+        text.innerText = 'Click this button to toggle the desired platform.';
+    } else {
+        text.innerText = 'Choose a platform, and the pink platform boxes on these pages will show relevant content if available.';
+    }
     text.id = 'tutorialText';
 
     let closeDiv = document.createElement('a');
@@ -303,6 +322,14 @@ function drawTutorialScreen() {
 
     let closeButton = document.createElement('div');
     closeButton.id = 'tutorialCloseButton';
+
+    if (tutorialNumber == 1) {
+        updateTutorialPosition(null, [platformIcon, arrow, text]);
+    } else {
+        updateTutorialPosition(null, [platformIcon, arrow, text], 2);
+    }
+
+    window.addEventListener('resize', updateTutorialPosition);
 
     closeDiv.append(closeText);
     closeDiv.append(closeButton);
@@ -317,9 +344,57 @@ function drawTutorialScreen() {
     setTimeout(function(){
         tutorialScreen.classList.add('show');
     }, 0);
-    localStorage.setItem('website_visited', true);
+
+    if (tutorialNumber == 1) {
+        localStorage.setItem('website_visited', true);
+    } else {
+        localStorage.setItem('platforms_opened', true);
+    }
+}
+
+function updateTutorialPosition(event = null, existingTutorialElements = false, tutorialScreen = 1) {
+    let platformsElement = document.getElementById('platforms');
+    let tutorialPlatformIcon, tutorialArrow, tutorialText;
+    let offsetLeftCorrection
+
+    if (tutorialScreen == 1) {
+        offsetLeftCorrection = !existingTutorialElements ? 11 : 30;
+    } else {
+        offsetLeftCorrection = 11;
+    }
+
+    if (!existingTutorialElements) {
+        tutorialPlatformIcon = document.getElementById('tutorialPlatform');
+        tutorialArrow = document.getElementById('tutorialArrow');
+        tutorialText = document.getElementById('tutorialText');
+    } else {
+        tutorialPlatformIcon = existingTutorialElements[0];
+        tutorialArrow = existingTutorialElements[1];
+        tutorialText = existingTutorialElements[2];
+    }
+
+    if (window.innerWidth >= 1100) {
+        if (tutorialPlatformIcon && platformsElement) {
+            tutorialPlatformIconLeft = platformsElement.offsetLeft - offsetLeftCorrection;
+            tutorialPlatformIcon.style.left = tutorialPlatformIconLeft + 'px';
+            tutorialArrow.style.left = tutorialPlatformIconLeft - 80 + 'px';
+            tutorialArrow.style.transform = 'scaleX(-1)';
+            tutorialText.style.left = tutorialPlatformIconLeft - 230 + 'px';
+
+        }
+    } else {
+        tutorialPlatformIcon.style.removeProperty('top');
+        tutorialPlatformIcon.style.removeProperty('left');
+        tutorialArrow.style.removeProperty('top');
+        tutorialArrow.style.removeProperty('left');
+        tutorialArrow.style.removeProperty('transform');
+        tutorialText.style.removeProperty('top');
+        tutorialText.style.removeProperty('left');
+    }
 }
 
 function removeTutorialScreen() {
+    tutorialScreen = document.getElementsByClassName('tutorial-screen')[0];
     document.body.removeChild(tutorialScreen);
+    window.removeEventListener('resize', updateTutorialPosition);
 }

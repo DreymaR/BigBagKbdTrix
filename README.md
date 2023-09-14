@@ -9,10 +9,6 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Some still find platform selection non-intuitive. Hmmm...
-	- Could we link to a specific platform box with platform specified? As in `page.html#anchor?platform=win`.
-	- Make it so that clicking the text `PLATFORMS` shows the how-to screen again (only seen initially now).
-
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
 	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
@@ -40,7 +36,8 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 
 
 DONE
-----
+- Functionality allowing links to a specific platform box with platform specified? As in `page.html#anchor?platform=win`.
+- Make it so that clicking the text `PLATFORMS` shows the how-to screen again (only seen initially now).
 - More likeable links:
 	- Pascal Getreuer's alt layouts guide:  https://getreuer.info/posts/keyboards/alt-layouts/index.html
 - More consistent page and anchor naming
