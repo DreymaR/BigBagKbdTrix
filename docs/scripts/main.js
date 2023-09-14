@@ -14,10 +14,20 @@ let platforms = {
 }
 
 document.onload = function () {
-    togglePlatform(localStorage.getItem('platform'), true);
+    let urlParams = new URLSearchParams(window.location.search);
+    let platform;
+    
+    if (urlParams.has('platform')) {
+        let platformUrlValue = urlParams.get('platform');
+        platform = platformUrlValue;
+    } else {
+        platform = localStorage.getItem('platform');
+    }
+
+    togglePlatform(platform, true);
 
     hookPlatformToggleOnClick(platforms);
-    hookSpoilersToggleOnClick([].slice.call(document.getElementsByClassName('spoiler')));
+    hookSpoilersToggleOnClick([].slice.call(document.getElementsByClassName('spoiler'))); 
 }();
 
 function getCurrentPageName() {
