@@ -68,7 +68,7 @@ function fillPlatformBox(platform) {
                         platformBoxes[i].innerHTML = '';
                         updatePlatformBoxClass(platformBoxes[i], platform);
                 
-                        let platformBoxIdMatch = platformBoxes[i].id.match(/platformBox(.*)/);
+                        let platformBoxIdMatch = platformBoxes[i].id.match(/pfbx-(.*)/);
                         let platformBoxId = platformBoxIdMatch ? platformBoxIdMatch[1] : null;
                 
                         for (let j = 0; j < platformContentArr.length; j++) {                            
@@ -76,7 +76,7 @@ function fillPlatformBox(platform) {
                             let platformContentId;
                             if (i === 0) {
                                 currentPlatformDiv = currentPlatformDiv.substring(0, currentPlatformDiv.lastIndexOf('</div>'));
-                                let platformContentIdMatch = currentPlatformDiv.match(/id="platformContent([^"]*)/);
+                                let platformContentIdMatch = currentPlatformDiv.match(/id="pfct-([^"]*)/);
                                 platformContentId = platformContentIdMatch ? platformContentIdMatch[1] : null;
                                 
                                 currentPlatformDiv = currentPlatformDiv.replace(/id="[^"]*">\s*[^<]*/, '');
@@ -140,9 +140,9 @@ function updatePlatformBoxes(newPlatform) {
                 })
             }());
         }
-        setTimeout(function(){
+        setTimeout(function () {
             appendMiniPlatformPickers();
-        }, 500);
+        }, 600);
     }
 }
 
