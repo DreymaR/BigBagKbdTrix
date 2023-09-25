@@ -9,6 +9,8 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- Update some links with `platform=` syntax?
+
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
 	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
