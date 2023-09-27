@@ -9,8 +9,6 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Update some links with `platform=` syntax?
-
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
 	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
@@ -38,6 +36,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 
 
 DONE
+----
 - Functionality allowing links to a specific platform box with platform specified? As in `page.html#anchor?platform=win`.
 - Make it so that clicking the text `PLATFORMS` shows the how-to screen again (only seen initially now).
 - More likeable links:
@@ -84,6 +83,12 @@ DONE
 
 - Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
 	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
+
+ON HOLD
+-------
+- Update some links with `platform=` syntax?
+	- Maybe not necessary: The plaform files already have the platform selected, and other links are generally generic.
+
 <br>
 
 
