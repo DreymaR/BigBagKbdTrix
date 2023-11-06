@@ -22,27 +22,27 @@
         <p><span>TMK Extend1 diagram:</span></p>
         <div class="spoiler-body">
             <pre><code>
-   DreymaR's Extend1 layer:
-* ,----.    ,-------------------. ,-------------------. ,-------------------.
-* |Caps|    |MPly|MPrv|MNxt|MStp| |Mute|VolD|VolU|MSel| |WHom|WSch|MyCm|Calc|
-* `----'    `-------------------' `-------------------' `-------------------'
-* ,-------------------------------------------------------------------------.
-* | ?? | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10| F11| F12|  Pause |
-* |-------------------------------------------------------------------------|
-* |      |Esc |Wh_U|WBak|WFwd|Ms_U|PgUp|Home| Up |End |Del |Esc |Ins |  App |
-* |-------------------------------------------------------------------------|
-* |*Ext1* |Alt |Wh_D|Shft|Ctrl|Ms_D|PgDn|Left|Down|Rght|BSpc|App |WFav|PScr |
-* |-------------------------------------------------------------------------|
-* |     |Wh_L| ^Z | ^X | ^C | ^V |Btn1|Btn2|Btn3|Ms_L|Ms_R|Wh_R|            |
-* |-------------------------------------------------------------------------|
-* |      |     |Ext1 |           Return            |     |     |     |      |
-* `-------------------------------------------------------------------------' 
+    DreymaR's Extend1 layer:
+    ,----˛    ,-------------------˛ ,-------------------˛ ,-------------------˛
+    |Caps|    |MPly|MPrv|MNxt|MStp| |Mute|VolD|VolU|MSel| |WHom|WSch|MyCm|Calc|
+    `----´    `-------------------´ `-------------------´ `-------------------´
+    ,-------------------------------------------------------------------------˛
+    | ?? | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10| F11| F12|  Pause |
+    |-------------------------------------------------------------------------|
+    |      |Esc |Wh_U|WBak|WFwd|Ms_U|PgUp|Home| Up |End |Del |Esc |Ins |  App |
+    |-------------------------------------------------------------------------|
+    |*Ext1* |Alt |Wh_D|Shft|Ctrl|Ms_D|PgDn|Left|Down|Rght|BSpc|App |WFav|PScr |
+    |-------------------------------------------------------------------------|
+    |     |Wh_L| ^Z | ^X | ^C | ^V |Btn1|Btn2|Btn3|Ms_L|Ms_R|Wh_R|       Ext2 |
+    |-------------------------------------------------------------------------|
+    |      |     |     |           Return            |     |     |     | Ext3 |
+    `-------------------------------------------------------------------------´
             </code></pre>       
         </div>
     </div><br>
 
     <p>
-        To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the <b><a href="https://forum.colemak.com/post/18410/#p18410">Configuration</a></b> post below.
+        To use the Extend layers, define the CAPSBEHAVIOR constant to 1. This'll make CapsLock the Extend modifier. You may change it to another key by editing the active layout or keymap; see the <a href="https://github.com/DreymaR/BigBagKbdTrixTMK/blob/master/docs/README.md"><b>Big Bag for TMK README</b></a>.
     </p><p>
         <b>NOTE: Superstacking Extend modifiers</b> doesn't always work for me. Instead of Ctrl+Shift+Left, pressing Caps+S+T+N gave me ST key strokes. Oddly enough, it works with either Phys-Shift + Extend-Ctrl as well as Phys-RCtrl + Extend-Shift (Shift+Caps+T+N or RCtrl+Caps+S+N work) but not with physical LCtrl. This leads me to believe that the limitation is my keyboards' scan matrix, but it happened on all my boards. Other users didn't have this problem...?
     </p>
@@ -54,21 +54,21 @@
         <p><span>TMK Extend2 diagram:</span></p>
         <div class="spoiler-body">
             <pre><code>
-   DreymaR's Extend2 layer:
-* ,----.    ,-------------------. ,-------------------. ,-------------------.
-* |    |    |MPau|MRwd|MFFd|Ejct| |WRef|BriD|BriU|Slep| |www |Mail|App3|App4|
-* `----'    `-------------------' `-------------------' `-------------------'
-* ,-------------------------------------------------------------------------.
-* | ?? | !  | @  | #  | $  | %  | ^  | P7 | P8 | P9 | P* | P- | =  |        |
-* |-------------------------------------------------------------------------|
-* |      |Home| Up |End |Del |Esc |PgUp| P4 | P5 | P6 | P+ | (  | )  |      |
-* |-------------------------------------------------------------------------|
-* |*Ext2* |Left|Down|Rght|BSpc|NLck|PgDn| P1 | P2 | P3 |PEnt| '  | ,  |     |
-* |-------------------------------------------------------------------------|
-* |     |    | ^Z | ^X | ^C | ^V |Btn1| :  | P0 | P0 | P. | P/ |            |
-* |-------------------------------------------------------------------------|
-* |      |     |     |                             |Ext2 |     |     |      |
-* `-------------------------------------------------------------------------' 
+    DreymaR's Extend2 layer:
+    ,----˛    ,-------------------˛ ,-------------------˛ ,-------------------˛
+    |    |    |MPau|MRwd|MFFd|Ejct| |WRef|BriD|BriU|Slep| |www |Mail|App3|App4|
+    `----´    `-------------------´ `-------------------´ `-------------------´
+    ,-------------------------------------------------------------------------˛
+    | ?? | !  | @  | #  | $  | %  | ^  | P7 | P8 | P9 | P* | P- | =  |        |
+    |-------------------------------------------------------------------------|
+    |      |Home| Up |End |Del |Esc |PgUp| P4 | P5 | P6 | P+ | (  | )  |      |
+    |-------------------------------------------------------------------------|
+    |*Ext2* |Left|Down|Rght|BSpc|NLck|PgDn| P1 | P2 | P3 |PEnt| '  | ,  |     |
+    |-------------------------------------------------------------------------|
+    |     |    | ^Z | ^X | ^C | ^V |Btn1| :  | P0 | P0 | P. | P/ |       Ext2 |
+    |-------------------------------------------------------------------------|
+    |      |     |     |                             |     |     |     | Ext3 |
+    `-------------------------------------------------------------------------´
             </code></pre>
         </div>
     </div>
@@ -78,4 +78,5 @@
         For the NumPad layer, remember that the NumLock state influences what you get. There's a NumLock key easily accessible in the layer.
     </p>
 </div>
+
 <!-- DeadKeys -->

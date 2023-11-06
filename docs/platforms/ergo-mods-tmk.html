@@ -1,25 +1,24 @@
 <!-- Angle/Wide -->
 <div class="platform-content" id="pfct-AngleWide">
     <p>
-        I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide(ISO/Slash) mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a Wide(ANSI/Quote) mod as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (but at other costs such as left pinky stretches; I'm not a fan myself).
-    </p><p>
-        Colemak-DH requires by default a special Angle(Wide) variant in which the V is kept in its original position so that only ZXC and B move; B then gets remapped to D by the mod itself. See below.
+        I've implemented the ZXCVB_ 'Angle' shift for ISO keyboards both separately and as part of the AngleWide-ISO mod that I use myself. For ANSI boards I've made an implementation of the 'Angle(Z)' shift (moving the Z key to the middle) and a Wide-ANSI mod as well as the combination of these. Also the 'A-Wing' mod to get the Angle and right pinky benefits without messing with the Z position (but at other costs such as left pinky stretches; I'm not a fan myself).
     </p><p>
         To use one of these, define the Unimap layout constant in my keymap (.c) file:
     </p>
     
      <pre><code>
-* Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
-* _UNMODDED - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
-* _ISO__A__ (w/ Curl-DH: _ISO_CA__) - ISO/Int Angle (the simple lower left half-row shift)
-* _ISO__AW_ (w/ Curl-DH: _ISO_CAW_) - ISO/Int Angle-Wide(/)
-* _ISO_CAWS                         - ISO/Int Curl-Angle-Wide(/)-Sym (more accessible apostrophe and hyphen/minus)
-* _ANS__A__ (w/ Curl-DH: _ANS_CA__) - ANSI/US Angle(Z)
-* _ANS__AW_ (w/ Curl-DH: _ANS_CAW_) - ANSI/US Angle(Z)-Wide(')
-* _ANSAWING (   Curl-DH:  N/A     ) - ANSI/US A-Wing
-*
-* Select a Curl(DH) or non-Curl ergo model, or plain unmodded Unimap. For Curl(DH), you also need to set CURLMOD.
-* NOTE: These map layouts affect all layouts. So for instance the CAWS map will affect both Colemak and Extend.
+    Edit '_########' in the UNIMAPLAYOUT definiton below to choose ergonomic Curl/Angle/Wide keyboard mods:
+    _NOMODS - Standard Unimap format for all keyboard and converter types (w/o F13-24; this one is without ergo mods)
+    _ISO_A_ - ISO/Int Angle (the simple lower left half-row shift)
+    _ISO_AW - ISO/Int Angle-Wide(/)
+    _ANS_A_ - ANSI/US Angle(Z)
+    _ANS_AW - ANSI/US Angle(Z)-Wide(')
+    _AWINGA - ANSI/US A-Wing Angle (rarely used)
+    
+    Select an ergo modded keymap, or the plain unmodded Unimap. Note that these maps affect all layouts and layers.
+    For Curl(DH), you also need to set CURLMOD. For Sym mods, set SYMBOLKEYS according to keymap.
+    To get, say, the Colemak-CAWS (CurlAngleWideSym) layout on ISO/ANSI, use the _###_AW keymap with
+        ACTIVELAYOUT 5, CURLMOD 1 and SYMBOLKEYS 2/3 settings below. And CAPSBEHAVIOR 1 for Extend, of course!
     </code></pre>
     
      <p>
@@ -34,23 +33,22 @@
     </p>
     
     <pre><code>
-* The CURLMOD options for Colemak and Tarmak layouts are:
-* 0: No Curl - vanilla Colemak/Tarmak
-* 1: The 2017 Curl(DHk) ergo mod, bringing the D and H keys down to comfortable bottom-row positions (QWERTY C/M)
-* 2: SteveP99's original Curl(DHm) ergo mod, bringing D/H down but M to the home row. DH standard since Oct 2020.
+    The CURLMOD options for Colemak and Tarmak layouts are:
+    0: No Curl - "vanilla" Colemak/Tarmak
+    1: SteveP99's original Curl(DHm) ergo mod, bringing D/H down but M to the home row. DH standard since Oct 2020.
 ...
-#define CURLMOD 1
+#define CURLMOD         1                       /* CURL_DH          */
     </code></pre>
     
     <p>
-        This switch only affects Colemak layouts, including the four Tarmak layouts and Mirrored Colemak. Make sure you use a CurlAngle or CurlAngleWide keymap type such as <i>UNIMAP_AWIZXCBV</i> with it (optional for Tarmak1).
+        This switch only affects Colemak layouts, including the four Tarmak layouts and Mirrored Colemak. It also effects a V-B swap for Extend, so the Ctrl+V shortcut is kept.
     </p>
 </div>
 
 <!-- Sym -->
 <div class="platform-content" id="pfct-Sym">
     <p>
-        The "Sym" symbol key mod hasn't been fully implemented in my TMK files. There's a model for CAWS-ISO that may serve as a template if you want another combo. But note that models affect Extend layers and other layouts too! So you may be better off just editing the layout definitions directly instead.
+        The Symbol key mods are selected with the SYMBOLKEYS setting. The Sym mod depends on your keymap, so select the right one depending on your Wide mod and board type.
     </p>
 </div>
 
