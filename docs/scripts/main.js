@@ -24,23 +24,28 @@ document.onload = function () {
         platform = localStorage.getItem('platform');
     }
 
-    if (!localStorage.getItem('website_visited')) {
-        drawTutorialScreen();
-    }
-
     togglePlatform(platform, true);
 
-    let platformsElement = document.getElementById('platforms');
-    platformsElement.addEventListener('mouseover', function () {
-        if (!localStorage.getItem('platforms_opened')) {
-            drawTutorialScreen(2);
+
+    let isTouchscreen = window.matchMedia('(pointer: coarse)').matches;
+    if (isTouchscreen) {
+        if (!localStorage.getItem('website_visited')) {
+            drawTutorialScreen();
         }
-    });
-    platformsElement.addEventListener('touchstart', function () {
-        if (!localStorage.getItem('platforms_opened')) {
-            drawTutorialScreen(2);
-        }
-    });
+
+
+        let platformsElement = document.getElementById('platforms');
+        platformsElement.addEventListener('mouseover', function () {
+            if (!localStorage.getItem('platforms_opened')) {
+                drawTutorialScreen(2);
+            }
+        });
+        platformsElement.addEventListener('touchstart', function () {
+            if (!localStorage.getItem('platforms_opened')) {
+                drawTutorialScreen(2);
+            }
+        });
+    }
 
     hookPlatformToggleOnClick(platforms);
     hookSpoilersToggleOnClick([].slice.call(document.getElementsByClassName('spoiler'))); 
@@ -324,9 +329,9 @@ function drawTutorialScreen(tutorialNumber = 1) {
     closeButton.id = 'tutorialCloseButton';
 
     if (tutorialNumber == 1) {
-        updateTutorialPosition(null, [platformIcon, arrow, text]);
+        updateTutorialPosition(null, [platformIcon, arrow, text, closeDiv]);
     } else {
-        updateTutorialPosition(null, [platformIcon, arrow, text], 2);
+        updateTutorialPosition(null, [platformIcon, arrow, text, closeDiv], 2);
     }
 
     window.addEventListener('resize', updateTutorialPosition);
@@ -367,11 +372,18 @@ function updateTutorialPosition(event = null, existingTutorialElements = false, 
         tutorialPlatformIcon = document.getElementById('tutorialPlatform');
         tutorialArrow = document.getElementById('tutorialArrow');
         tutorialText = document.getElementById('tutorialText');
+        tutorialClose = document.getElementById('tutorialClose');
     } else {
         tutorialPlatformIcon = existingTutorialElements[0];
         tutorialArrow = existingTutorialElements[1];
         tutorialText = existingTutorialElements[2];
+        tutorialClose = existingTutorialElements[3];
     }
+
+    setTimeout(() => {
+        tutorialCloseTop = tutorialText.offsetTop + tutorialText.offsetHeight + 20;
+        tutorialClose.style.top = tutorialCloseTop + 'px';
+    }, 0);
 
     if (window.innerWidth >= 1100) {
         if (tutorialPlatformIcon && platformsElement) {
@@ -380,7 +392,8 @@ function updateTutorialPosition(event = null, existingTutorialElements = false, 
             tutorialArrow.style.left = tutorialPlatformIconLeft - 80 + 'px';
             tutorialArrow.style.transform = 'scaleX(-1)';
             tutorialText.style.left = tutorialPlatformIconLeft - 230 + 'px';
-
+            tutorialCloseLeft = platformsElement.offsetLeft + platformsElement.offsetWidth / 2 - offsetLeftCorrection - 45;
+            tutorialClose.style.left = tutorialCloseLeft + 'px';
         }
     } else {
         tutorialPlatformIcon.style.removeProperty('top');
@@ -390,6 +403,7 @@ function updateTutorialPosition(event = null, existingTutorialElements = false, 
         tutorialArrow.style.removeProperty('transform');
         tutorialText.style.removeProperty('top');
         tutorialText.style.removeProperty('left');
+        tutorialClose.style.removeProperty('left');
     }
 }
 

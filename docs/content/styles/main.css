@@ -109,6 +109,10 @@ table td p.legend {
   left: 120px;
 }
 
+#tutorialScreen2 #tutorialClose {
+  left: 118px;
+}
+
 #tutorialPlatform {
   position: absolute;
   left: 20px;
@@ -130,10 +134,9 @@ table td p.legend {
   height: 38px;
   position: absolute;
   top: 13px;
-  right: 0;
+  left: 68px;
   font-weight: bold;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   background-color: #FFF;
 }
 
@@ -157,10 +160,21 @@ table td p.legend {
   border: 3px solid #AA77BB;
 }
 
-div[class="platform-box"],
-.platform-box.platform-box-empty {
-  border: none;
-  border-top: 3px solid #AA77BB;
+div[class="platform-box"]:after,
+div[class="platform-box platform-box-empty"]:after,
+.platform-box.platform-box-empty.win:after,
+.platform-box.platform-box-empty.linux:after,
+.platform-box.platform-box-empty.tmk:after,
+.platform-box.platform-box-empty.mac:after {
+  content: "No extra info on this topic for the chosen platform.";
+  display: block;
+  margin: 14px 0 0;
+  color: #696969;
+}
+
+div[class="platform-box"]:after,
+div[class="platform-box platform-box-empty"]:after {
+  content: "Select a platform to see more specific info, if available.";
 }
 
 .platform-box[class='platform-box'] .platform-toggle,
@@ -306,7 +320,7 @@ div[class="platform-box"],
   top: 59px;
   width: 100px;
   height: 105px;
-  padding: 5px 5px 5px 13px;
+  padding: 28px 5px 5px 13px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -322,6 +336,21 @@ div[class="platform-box"],
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
+}
+
+.platform-picker:not(.mini):before,
+.platform-picker.mini:after {
+  content: "Choose a platform";
+  position: absolute;
+  top: 8px;
+  margin-left: -5px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.platform-picker.mini:after {
+  margin-left: -8px;
 }
 
 .platform-picker #linux {
@@ -344,17 +373,51 @@ div[class="platform-box"],
   background-image: url("../img/mac_gray.svg");
 }
 
+.platform-picker a {
+  position: relative;
+}
+
+.platform-picker .tooltip {
+  position: absolute;
+  top: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #5b5b5b;
+  color: #F7F7F7;
+  border-radius: 5px;
+  padding: 8px;
+  display: none;
+  z-index: 1;
+}
+
+.platform-picker .tooltip::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #5b5b5b;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.platform-picker a:hover .tooltip {
+  display: block;
+}
+
 .platform-picker.mini {
   top: 45px;
   right: unset;
   left: -28px;
   width: 90px;
   height: 95px;
-  padding: 5px 5px 5px 9px;
+  padding: 28px 8px 5px 14px;
   border-radius: 20px;
 }
 
-.platform-picker.mini :before {
+.platform-picker.mini:before {
   content: '';
   display: block;
   width: 0;
@@ -1016,14 +1079,6 @@ kbd {
   #tutorialScreen2 #tutorialPlatform {
     background-image: url("../img/platforms-picker.png");
     width: 181px;
-  }
-
-  #tutorialClose {
-      left: 0;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
   }
 
   #navbar {
