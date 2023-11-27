@@ -298,6 +298,7 @@ div[class="platform-box platform-box-empty"]:after {
   padding: 8px;
   display: none;
   z-index: 1;
+  user-select: none;
 }
 
 .platform-picker .tooltip::before {
