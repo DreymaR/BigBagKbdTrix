@@ -74,84 +74,6 @@ table td p.legend {
   overflow-y: auto;
 }
 
-.tutorial-screen {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  -webkit-transition: opacity 500ms ease-in-out;
-  transition: opacity 500ms ease-in-out;
-}
-
-.tutorial-screen.show {
-  opacity: 1;
-}
-
-#tutorialArrow {
-  position: absolute;
-  top: 20px;
-  left: 80px;
-  width: 64px;
-  height: 64px;
-}
-
-#tutorialScreen2 #tutorialArrow {
-  top: 110px;
-  left: 130px;
-}
-
-#tutorialScreen2 #tutorialText {
-  top: 184px;
-  left: 120px;
-}
-
-#tutorialScreen2 #tutorialClose {
-  left: 118px;
-}
-
-#tutorialPlatform {
-  position: absolute;
-  left: 20px;
-  top: 0;
-}
-
-#tutorialText {
-  position: absolute;
-  top: 90px;
-  left: 70px;
-  font-family: Raleway;
-  font-size: 23px;
-  color: #FFF;
-}
-
-#tutorialClose {
-  display: inline-block;
-  width: 90px;
-  height: 38px;
-  position: absolute;
-  top: 13px;
-  left: 68px;
-  font-weight: bold;
-  border-radius: 20px;
-  background-color: #FFF;
-}
-
-#tutorialCloseText {
-  display: inline-block;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  font-family: Raleway-ExtraBold;
-  font-size: 23px;
-  font-weight: bold;
-  color: #AA77BB;
-  cursor: pointer;
-}
-
 .platform-box {
   display: block;
   position: relative;
@@ -169,7 +91,8 @@ div[class="platform-box platform-box-empty"]:after,
   content: "No extra info on this topic for the chosen platform.";
   display: block;
   margin: 14px 0 0;
-  color: #696969;
+  color: #919191;
+  user-select: none;
 }
 
 div[class="platform-box"]:after,
@@ -237,24 +160,6 @@ div[class="platform-box platform-box-empty"]:after {
   z-index: 1;
 }
 
-#platforms:after, #tutorialPlatform {
-  content: "";
-  display: inline-block;
-  height: 60px;
-  width: 34px;
-  background-image: url("../img/platforms.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-}
-
-#tutorialScreen2 #tutorialPlatform {
-  background-image: url("../img/platforms-picker-small.png");
-  width: 118px;
-  height: 175px;
-  left: 0;
-}
-
 #platforms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,11 +167,16 @@ div[class="platform-box platform-box-empty"]:after {
 }
 
 #platforms:after {
+  content: "";
+  display: inline-block;
+  height: 60px;
+  width: 34px;
   margin-left: 0;
   padding: 0;
+  background: url(../img/platforms.png) no-repeat 50% / 100%;
 }
 
-#platforms:hover .platform-picker {
+#platforms:hover .platform-picker:not(.hidden) {
   visibility: visible;
   opacity: 1;
 }
@@ -379,7 +289,7 @@ div[class="platform-box platform-box-empty"]:after {
 
 .platform-picker .tooltip {
   position: absolute;
-  top: calc(100% + 15px);
+  top: calc(-100% - 8px);
   left: 50%;
   transform: translateX(-50%);
   background-color: #5b5b5b;
@@ -397,8 +307,8 @@ div[class="platform-box platform-box-empty"]:after {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #5b5b5b;
-  top: -10px;
+  border-top: 10px solid #5b5b5b;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -1064,23 +974,9 @@ kbd {
   h1 {
     font-size: 2rem;
   }
-  #tutorialPlatform {
-    left: 30px;
-  }
 }
 
 @media only screen and (min-width: 1100px) {
-  #tutorialPlatform {
-    background-image: url("../img/platforms-large.png");
-    width: 181px;
-    height: 60px;
-  }
-
-  #tutorialScreen2 #tutorialPlatform {
-    background-image: url("../img/platforms-picker.png");
-    width: 181px;
-  }
-
   #navbar {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -1221,5 +1117,20 @@ kbd {
   }
   #linksContainer {
     height: calc(100vh - 110px);
+  }
+}
+
+@media only screen and (max-width: 1099px) {
+  .platform-picker #win .tooltip,
+  .platform-picker #win .tooltip:before,
+  .platform-picker #linux .tooltip,
+  .platform-picker #linux .tooltip:before {
+    left: 0;
+    transform: unset;
+  }
+
+  .platform-picker #win .tooltip:before,
+  .platform-picker #linux .tooltip:before {
+    left: 10px;
   }
 }

@@ -26,27 +26,6 @@ document.onload = function () {
 
     togglePlatform(platform, true);
 
-
-    let isTouchscreen = window.matchMedia('(pointer: coarse)').matches;
-    if (isTouchscreen) {
-        if (!localStorage.getItem('website_visited')) {
-            drawTutorialScreen();
-        }
-
-
-        let platformsElement = document.getElementById('platforms');
-        platformsElement.addEventListener('mouseover', function () {
-            if (!localStorage.getItem('platforms_opened')) {
-                drawTutorialScreen(2);
-            }
-        });
-        platformsElement.addEventListener('touchstart', function () {
-            if (!localStorage.getItem('platforms_opened')) {
-                drawTutorialScreen(2);
-            }
-        });
-    }
-
     hookPlatformToggleOnClick(platforms);
     hookSpoilersToggleOnClick([].slice.call(document.getElementsByClassName('spoiler'))); 
 }();
@@ -151,13 +130,35 @@ function updatePlatformBoxes(newPlatform) {
     }
 }
 
+function hidePlatformPicker() {
+    let platformPicker = document.getElementsByClassName('platform-picker')[0];
+    let isHidden = platformPicker.classList.contains('hidden');
+
+    if (isHidden) {
+        platformPicker.classList.remove('hidden');
+    } else {
+        platformPicker.classList.add('hidden');
+    }
+}
+
+function resetPlatformPicker() {
+    let platformPicker = document.getElementsByClassName('platform-picker')[0];
+    let isHidden = platformPicker.classList.contains('hidden');
+
+    if (isHidden) {
+        platformPicker.classList.remove('hidden');
+    }
+}
+
 function togglePlatform(platform, isPageReload) {
+    let platforms = document.getElementById('platforms');
+    let platformLinks = document.querySelectorAll('.platform-picker a');
     let currentPlatform = localStorage.getItem('platform');
     let newPlatform;
 
     if (currentPlatform != platform || isPageReload) {
-        document.getElementById('platforms').removeAttribute('class');
-        document.getElementById('platforms').classList.add(platform);
+        platforms.removeAttribute('class');
+        platforms.classList.add(platform);
         localStorage.setItem('platform', platform);
         newPlatform = platform;
     }
@@ -165,6 +166,11 @@ function togglePlatform(platform, isPageReload) {
         localStorage.removeItem('platform');
         document.getElementById('platforms').removeAttribute('class');
     }
+
+    platforms.addEventListener('mouseover', resetPlatformPicker);
+    platformLinks.forEach(function(link) {
+        link.addEventListener('click', hidePlatformPicker);
+    });
 
     updatePlatformBoxes(newPlatform);
 }
@@ -292,123 +298,4 @@ function toggleSpoiler() {
         spoilerBody.classList.add('active');
         spoilerBody.parentNode.classList.add('active');
     }
-}
-
-function drawTutorialScreen(tutorialNumber = 1) {
-    let tutorialScreen = document.createElement('div');
-    tutorialScreen.className = 'tutorial-screen';
-    if (tutorialNumber == 1) {
-        tutorialScreen.id = 'tutorialScreen1';
-    } else {
-        tutorialScreen.id = 'tutorialScreen2';
-    }
-
-    let platformIcon = document.createElement('div');
-    platformIcon.id = 'tutorialPlatform';
-
-    let arrow = document.createElement('img');
-    arrow.setAttribute('src', 'content/img/arrow.png');
-    arrow.id = 'tutorialArrow';
-
-    let text = document.createElement('span');
-    if (tutorialNumber == 1) {
-        text.innerText = 'Click this button to toggle the desired platform.';
-    } else {
-        text.innerText = 'Choose a platform, and the pink platform boxes on these pages will show relevant content if available.';
-    }
-    text.id = 'tutorialText';
-
-    let closeDiv = document.createElement('a');
-    closeDiv.id = 'tutorialClose';
-
-    let closeText = document.createElement('span');
-    closeText.id = 'tutorialCloseText';
-    closeText.innerText = 'Got it!';
-
-    let closeButton = document.createElement('div');
-    closeButton.id = 'tutorialCloseButton';
-
-    if (tutorialNumber == 1) {
-        updateTutorialPosition(null, [platformIcon, arrow, text, closeDiv]);
-    } else {
-        updateTutorialPosition(null, [platformIcon, arrow, text, closeDiv], 2);
-    }
-
-    window.addEventListener('resize', updateTutorialPosition);
-
-    closeDiv.append(closeText);
-    closeDiv.append(closeButton);
-    closeDiv.addEventListener('click', removeTutorialScreen);
-
-    tutorialScreen.append(platformIcon);
-    tutorialScreen.append(arrow);
-    tutorialScreen.append(text);
-    tutorialScreen.append(closeDiv);
-
-    document.body.append(tutorialScreen);
-    setTimeout(function(){
-        tutorialScreen.classList.add('show');
-    }, 0);
-
-    if (tutorialNumber == 1) {
-        localStorage.setItem('website_visited', true);
-    } else {
-        localStorage.setItem('platforms_opened', true);
-    }
-}
-
-function updateTutorialPosition(event = null, existingTutorialElements = false, tutorialScreen = 1) {
-    let platformsElement = document.getElementById('platforms');
-    let tutorialPlatformIcon, tutorialArrow, tutorialText;
-    let offsetLeftCorrection
-
-    if (tutorialScreen == 1) {
-        offsetLeftCorrection = !existingTutorialElements ? 11 : 30;
-    } else {
-        offsetLeftCorrection = 11;
-    }
-
-    if (!existingTutorialElements) {
-        tutorialPlatformIcon = document.getElementById('tutorialPlatform');
-        tutorialArrow = document.getElementById('tutorialArrow');
-        tutorialText = document.getElementById('tutorialText');
-        tutorialClose = document.getElementById('tutorialClose');
-    } else {
-        tutorialPlatformIcon = existingTutorialElements[0];
-        tutorialArrow = existingTutorialElements[1];
-        tutorialText = existingTutorialElements[2];
-        tutorialClose = existingTutorialElements[3];
-    }
-
-    setTimeout(() => {
-        tutorialCloseTop = tutorialText.offsetTop + tutorialText.offsetHeight + 20;
-        tutorialClose.style.top = tutorialCloseTop + 'px';
-    }, 0);
-
-    if (window.innerWidth >= 1100) {
-        if (tutorialPlatformIcon && platformsElement) {
-            tutorialPlatformIconLeft = platformsElement.offsetLeft - offsetLeftCorrection;
-            tutorialPlatformIcon.style.left = tutorialPlatformIconLeft + 'px';
-            tutorialArrow.style.left = tutorialPlatformIconLeft - 80 + 'px';
-            tutorialArrow.style.transform = 'scaleX(-1)';
-            tutorialText.style.left = tutorialPlatformIconLeft - 230 + 'px';
-            tutorialCloseLeft = platformsElement.offsetLeft + platformsElement.offsetWidth / 2 - offsetLeftCorrection - 45;
-            tutorialClose.style.left = tutorialCloseLeft + 'px';
-        }
-    } else {
-        tutorialPlatformIcon.style.removeProperty('top');
-        tutorialPlatformIcon.style.removeProperty('left');
-        tutorialArrow.style.removeProperty('top');
-        tutorialArrow.style.removeProperty('left');
-        tutorialArrow.style.removeProperty('transform');
-        tutorialText.style.removeProperty('top');
-        tutorialText.style.removeProperty('left');
-        tutorialClose.style.removeProperty('left');
-    }
-}
-
-function removeTutorialScreen() {
-    tutorialScreen = document.getElementsByClassName('tutorial-screen')[0];
-    document.body.removeChild(tutorialScreen);
-    window.removeEventListener('resize', updateTutorialPosition);
 }
