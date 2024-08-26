@@ -6,22 +6,32 @@ alias: training.html
 
 <h2 class="anchor" id="locales">LOCALE COLEMAK[eD] VARIANTS</h2>
 <p>
-    See <a href="https://forum.colemak.com/viewtopic.php?id=1458">my Locale Variants forum topic</a> for the various locale solutions. Also, in the <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Colemak">EPKL program's Colemak layout folder</a> there are README files and images describing several of my locale solutions. That may be the best place to look for updates these days.
+    The <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Colemak">Colemak Layout folder for the EPKL program</a> holds README files and images describing several of my locale solutions. That may be the best place to look for updates and info these days. In the Linux/XKB repo, the <a href="https://github.com/DreymaR/BigBagKbdTrixXKB/blob/master/xkb-data_xmod/xkb/symbols/colemak_eD_template">colemak_eD_template</a> file holds some info on my preferred way of making locale Cmk-eD mappings.
 </p><p>
-    I took off a bit and made quite a bunch of these, heh! I can make more on request. It'd be nice with feedback from local users as some design decisions are open to debate and depend on actual usage as well as personal preferences.
+    Also, see the old <a href="https://forum.colemak.com/viewtopic.php?id=1458">Locale Variants forum topic</a> for the original discussions on various locale solutions, and other info.
 </p><p>
-    Here's what I've covered so far, for the most part both with conservative 'keep local symbols' and my preferred 'unified symbols' layers (On a side note, there were only 11 Dvorak layouts in the xkb files last time I looked!):<br>
+    I've made quite a bunch of locale variants! I may make more on informative request. Feedback from local users is appreciated, as some design decisions are open to debate and depend on actual usage as well as personal preferences. Some designs are based mostly on frequency analysis and experience from other languages.
+</p><p>
+    These are the locales I've covered so far, some with a common variant like be/ca/fr for the French-speaking community:<br>
     <b>al at ba be bg br ca cz de dk es fi fr gb gr hr hu il is it latam nl no pl pt ro rs ru se si tr us vi</b>
 </p><p>
-    The brackets (lvl3-4) and the LSGT key may hold the most common locale-specific keys.
+    On a side note: Last time I looked, there were 11 Dvorak locale variants in the xkb-data files. That layout has been around since 1938. So I feel that it's quite nice that the BigBag already sports at least three times that number.
+</p><p>
+    For the most part there are both conservative 'keep local symbols' and my preferred 'unified symbols' layers for each locale. I really must stress that my locale variants are centered around the 'unified' variants! Some locales don't quite make sense as 'ks'-type, but some new users still ask for them.
+</p><p>
+    Here are some design principles for Colemak[eD] locale variants:
 </p>
 <ul class="disc">
     <li>
-        The oe/aring special letters may well be replaced; these should also be on dead keys.
+        The bracket and ISO-LSGT keys are suitable for the most common locale-specific letters.
     </li><li>
-        Furthermore, keys with non-essential mappings (H J K L) are up for grabs if need be.
+        This is especially true when using Angle+Wide ergo mods that bring those keys to the index fingers.
     </li><li>
-        See the colemak_template symbols file for more info on local Colemak[eD] layers.
+        Their default symbols can then be delegated to AltGr (lvl3-4) mappings.
+    </li><li>
+        The oe/aring special letters may well be replaced; these are also found on dead keys.
+    </li><li>
+        Furthermore, keys with non-essential [eD] AltGr mappings (H J K L) are up for grabs as needed.
     </li>
 </ul>
 
@@ -30,7 +40,7 @@ alias: training.html
 <p class="img-text">The Colemak [edition DreymaR] layout, Norwegian+Danish 'Unified Symbols' variant <br>(mostly like the standard Colemak above).</p>
 
 <img alt="Cmk eD No Ksym Xm" src="res/cmk/locale/Cmk-eD-no-ksym_Xm.png" />
-<p class="img-text">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant <br>(symbols like local key markings).</p>
+<p class="img-text">The Colemak [edition DreymaR] layout, Norwegian 'Keep Local Symbols' variant <br>(symbols like local key markings). I prefer the one above.</p>
 
 <p>
     Please note: The 'Local Symbols' variant for a locale uses symbol mappings from the default locale layout (usually a QWERTY one), which are also the ones normally found on physical key markings on keyboards made for that locale. The letter block, however, is the Colemak[eD] one which may lead to some inconsistencies or faults in lv3-4 mappings. For the most consistent and complete set of AltGr mappings, use the 'Unified Symbols' layers.
