@@ -9,6 +9,18 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- Alt-layout writeup?!
+	- Make it the first section under Layers. Update other sections to be more layout inclusive.
+	- Move the links to Getreuer's and the AKL beginner's guides there from the links page, or keep both?
+	- There's so much strongly worded nonsense on Reddit etc... People defend their investments and pet ideas.
+	- Warning against bad choices: Dvorak (unless implementation is king), Workman/Norman, Minimak.
+	- Differences of priority: Ease of learning/implementation (Colemak), rolls (Cmk/etc) vs alternation (Gra/Gal/etc), ...
+	- My suggestion: Colemak is very good for nearly everyone. Decide on Vanilla vs DH.
+	- If really set on going further, try out Gralmak.
+		- Gralmak is good, and has similarities with familiar layouts (row/column assignments, punctuation etc).
+		- Even if you end up wanting even more radical optimization, it can still be a useful stepping-stone.
+		- If after learning Gralmak for a while, you still want to proceed: Go to full Graphite(-HB) or similar.
+
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
 	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
