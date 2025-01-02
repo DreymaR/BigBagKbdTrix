@@ -9,17 +9,47 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Alt-layout writeup?!
+- Alt layout writeup!
 	- Make it the first section under Layers. Update other sections to be more layout inclusive.
 	- Move the links to Getreuer's and the AKL beginner's guides there from the links page, or keep both?
-	- There's so much strongly worded nonsense on Reddit etc... People defend their investments and pet ideas.
-	- Warning against bad choices: Dvorak (unless implementation is king), Workman/Norman, Minimak.
-	- Differences of priority: Ease of learning/implementation (Colemak), rolls (Cmk/etc) vs alternation (Gra/Gal/etc), ...
-	- My suggestion: Colemak is very good for nearly everyone. Decide on Vanilla vs DH.
-	- If really set on going further, try out Gralmak.
-		- Gralmak is good, and has similarities with familiar layouts (row/column assignments, punctuation etc).
+	
+	- There's so much strongly worded nonsense on Reddit etc...! People defend their investments and pet ideas.
+	- I feel like warning against some bad choices: Dvorak (unless implementation is king), Workman/Norman, Minimak.
+		- Too little and too much. I think Colemak's both good and easy to use, but I wouldn't settle for less.
+	- There's an abundance of newer layouts, keeping less QWERTY similarity and using more metrics than Colemak.
+		- The test of time has shown Colemak to be a well-made layout. Lots of work went into its design and testing.
+		- There are only a few of the many newer layouts about which similar claims may be made confidently.
+		- Some think the more metrics the merrier, but at the same time there's still a big need for human assessment.
+	- Differences of priority lead to different ideal choices.
+		- Ease of learning/implementation (Colemak, Tarmak).
+		- Rolls (Cmk/etc) vs alternation (Gra/Gal/etc), ...
+		- To some extent, hardware/software options. For instance, standard implementations vs programmable keyboards.
+		- Languages used, and how much of each. Example: `J` is very rare in English, but not so in Spanish.
+	- My suggestion: Colemak is very good for nearly everyone, as a "sweet spot" of priorities.
+		- I've used it for years and I'm very happy with it. It's remarkably well made and balanced.
+		- Decide on Vanilla vs DH, and whether to add further mods (cmk.org). Most implementations are ready-made.
+		- Compared to other worthy alternatives, Colemak is easy to learn.
+			- It keeps rarely used letters in their old positions, without losing anything important.
+			- It keeps punctuation in old positions, unless you opt for an add-on Sym ergo mod.
+			- It keeps ZXCV in place, which may or may not matter to you; it's a relatively harmless design choice.
+			- The Tarmak transitional layouts allow you to learn Colemak in up to five steps, should you wish to.
+			- If ease of learning and/or implementation matter to you, Colemak is definitely my suggestion.
+		- For its design concessions, Colemak keeps a very nice set of metrics, well suited for most users.
+			- Any issues that newer layouts try to solve, I've found to be either fixable by a little alt-fingering or easy to live with.
+			- Relative to popular newer layouts, Colemak generally has many nice rolls, which feels nice and flowy.
+			- On the downside though, more rolls usually leads to more suboptimal patterns such as redirects/pinballs.
+	- If really set on venturing past Colemak, you could try out Gralmak.
+		- Graphite/Gralmak is new and very good, and has similarities with familiar layouts (row/column assignments, punctuation etc).
 		- Even if you end up wanting even more radical optimization, it can still be a useful stepping-stone.
-		- If after learning Gralmak for a while, you still want to proceed: Go to full Graphite(-HB) or similar.
+		- If after learning Gralmak for a while, you still want to proceed: Go on to full Graphite(-HB) or similar.
+		- On a side note, `YOU` isn't optimal on either: A redirect (QWERTY `O;I`) on Colemak; a lateral stretch (QWERTY `JOP`) on Graphite/Gralmak.
+	- It's actually really hard to assess a new layout fairly, unless you're an expert – and even then.
+		- Every layout has its strong and weak points. You'll feel some good things but ignore some bad ones, and vice versa.
+		- It'll take time to understand a layout's choices. Especially when they affect typing flow, which you won't have at first.
+		- Before you are up to speed, it's not easy to notice what works and what doesn't at your full speed.
+			- Not all of us will ever type really fast! 
+			- If something's mostly noticeable at above, say, 120 WPM and like me you'll probably never get there, what then?
+		- What you know beforehand will influence your experience.
 
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
