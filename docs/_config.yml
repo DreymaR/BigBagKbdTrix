@@ -11,7 +11,7 @@ links:
   - title: layers
     url: layers-main.html
     sub:
-      - title: Overview
+      - title: Main
         url: layers-main.html
       - title: Colemak[eD]
         url: layers-colemaked.html
@@ -52,8 +52,6 @@ links:
         sub:
           - title: Tips
             url: training.html#training-tips
-          - title: Amphetype
-            url: training.html#amphetype
           - title: Type-read
             url: training.html#type-reading
           - title: Lessons
@@ -66,6 +64,8 @@ links:
             url: training.html#tarmak
           - title: Monkeytype
             url: training.html#monkeytype
+          - title: Amphetype
+            url: training.html#amphetype
           - title: Links
             url: training.html#tools
       - title: Tarmak
