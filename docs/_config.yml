@@ -48,7 +48,7 @@ links:
     url: learning.html
     sub:
       - title: Tips
-        url: training.html#training-tips
+        url: training.html
         sub:
           - title: Top
             url: training.html#top-typist-tips
