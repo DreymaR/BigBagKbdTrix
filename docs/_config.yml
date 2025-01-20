@@ -55,14 +55,19 @@ links:
           - title: More
             url: training.html#comfort
       - title: Training
-        url: training.html
+        url: training.html#training
         sub:
+          - title: Burst
+            url: training.html#burst
           - title: Type-read
             url: training.html#type-reading
-          - title: Lessons
+          - title: Focus
             url: training.html#focused-lessons
           - title: N-grams
             url: training.html#n-grams
+      - title: Learning
+        url: training.html#learning
+        sub:
           - title: Pangrams
             url: training.html#pangram
           - title: Tarmak
