@@ -9,9 +9,12 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- Anchor links on the same page only need "#anchor", not the page url.
+
+
 - Training page:
-	- Mention EnterTrained next to CopyType under Type-Reading
-	- Add a section on burst training; mention 15 s MT tests, and BurstType. Emphasize varied training.
+	- Main headings: Tips, Training/Learning, Tools/Links. Reflected in more menu choices, for ease of navigation.
+	- Add a section on burst/raw training? Mention 15 s MT tests, and BurstType. Emphasize varied training.
 
 - Alt layout writeup!
 	- Make it the first section under Layers. Update other sections to be more layout inclusive.

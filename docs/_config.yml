@@ -47,11 +47,16 @@ links:
   - title: learning
     url: learning.html
     sub:
+      - title: Tips
+        url: training.html#training-tips
+        sub:
+          - title: Top
+            url: training.html#top-typist-tips
+          - title: More
+            url: training.html#comfort
       - title: Training
         url: training.html
         sub:
-          - title: Tips
-            url: training.html#training-tips
           - title: Type-read
             url: training.html#type-reading
           - title: Lessons
@@ -62,12 +67,15 @@ links:
             url: training.html#pangram
           - title: Tarmak
             url: training.html#tarmak
+      - title: Tools
+        url: training.html#tools
+        sub:
           - title: Monkeytype
             url: training.html#monkeytype
           - title: Amphetype
             url: training.html#amphetype
           - title: Links
-            url: training.html#tools
+            url: training.html#links
       - title: Tarmak
         url: tarmak-intro.html
         sub:
