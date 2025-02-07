@@ -50,6 +50,16 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- Not all of us will ever type really fast! 
 			- If something's mostly noticeable at above, say, 120 WPM and like me you'll probably never get there, what then?
 		- What you know beforehand will influence your experience.
+	- Casuanoob @ the Cmk Discord dixit (2025-02-01):
+		- Take notes of pain points and annoyances about the layout while getting up to 60 WPM, imo, and make a decision between there and 100.
+		- Personally, I ended up making decision points at 80 WPM.
+		- I feel like if you go much faster, you end up coping with some things to the point where you forget that you actually disliked them.
+			- So maybe not wait until 100, unless you get speed up fast like some people do?
+		- There's definitely some gulf in experience between 60 and 80 WPM where you haven't actually started rolling any keys at all ...
+			- ... so the experience before 60 doesn't actually fully reflect either.
+		- [Note: Since everyone has different base speed and learn at different paces, obviously the numbers here should be adjusted to your situation.]
+			- [Casuanoob's self-stated speeds at this time was between 80 (text with punctuation) and 110 (1-minute MT Eng200 test) WPM.]
+		
 	- I had a Discord chat with Supernova, an interested user. I could use this, more or less! (Edited further here.)
 		
 		Alpha Base, This Is Enterprise. Do You Copy?
