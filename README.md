@@ -108,7 +108,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- Colemak does of course have more redirects than Graphite. Notable examples are YOU, and WAS. More rolls makes for more redirects.
 			- Writing YOU isn't great on either, just a little easier on Graphite. I've heard layout designers say that it's hard to make that word good on a good layout.
 			- Writing PHYSICS is worse on Graphite (yes, I'm a phycisist). Every layout has some words that don't agree well with it.
-			- For some awkward bigrams, alt-fingering helps a lot. Colemak `kn kl` and Graphite `sc sw` are good examples. This takes time to learn well.
+			- For some awkward bigrams, alt-fingering helps a lot. Colemak `kn kl` and Graphite `sc sw ph` are good examples. This takes time to learn well.
 			- You will get used to a number of weakish spots with time and experience, as long as they aren't too common.
 			- If you start overthinking such weak spots though, I believe you won't be able to judge a layout fairly. I think this happens to many.
 			- It won't matter to all, but Colemak is still easier to learn with more QWERTY and shortcut similarities.
@@ -117,7 +117,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			As for Graphite vs the very similar Gallium, I tried both and Gralmak ended up with a sort of mix between them and some Colemak principles.
 			- Like Colemak, I keep the symbol keys unchanged, instead using my Sym mod and special keys. This makes it easier to learn, too.
 			- I prefer J in the middle and apostrophe on the side, like Gallium and Colemak have. This links in with the first point.
-			- The only other difference between Gal and Gra is CV vs WZ. I first wanted to go with Gal to make the SC bigram easier, but now I'm on board with Gra keeping W on top and CV on lower row. 
+			- The only other letter difference between Gal and Gra, is `CV` vs `WZ`. I first wanted to go with Gal to make the `SC` bigram easier, but now I'm on board with Gra keeping `W` on top and `CV` on lower row. 
 			- This is mainly because those are more in line with what we're used to. In the long run, that's not a strong argument, but it makes transitions easier.
 			- The bigrams involved are fine either way, really.
 		
