@@ -9,9 +9,6 @@ Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Anchor links on the same page only need "#anchor", not the page url.
-
-
 - Alt layout writeup!
 	- Make it the first section under Layers. Update other sections to be more layout inclusive.
 	- Move the links to Getreuer's and the AKL beginner's guides there from the links page, or keep both?
@@ -124,6 +121,16 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		There is no undisputed king of keyboard layouts, and there won't be. You get to a point where individual preference and usage patterns start to matter more than objective aspects, and then you can't agree on a one-layout-fits-all. 
 		I believe we're already about there, pretty much. New tech may yet change typing, but as it stands the main barrier to speed is mental load so a really good development should make it simpler, not more complex.
 
+- Include Typecelerate on the Training page? It's focused on identifying and training weaknesses.
+	- https://typecelerate.com
+	- Also make a menu link for Damage Assessment, under which this app goes bears mention.
+
+- Anchor links on the same page only need "#anchor", not the page url.
+
+- Convo w/ A-Brick on figure captions:
+	- I just read a recommendation for figure text. On our BigBag pages, we've just used a <p> under the image, with <i>.
+	- The recommendation was to use <figure><figcaption> instead. Apparently, that makes images more searchable.
+	- I suppose we'll need a little CSS magic then, to make the default italic and suchlike. [A-Brick: I'm gonna get on with it.]
 
 - Platform box for Sequencing? And Modifiers?
 	- Colemak-eD too?
