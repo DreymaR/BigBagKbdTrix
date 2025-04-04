@@ -6,6 +6,11 @@ DreymaR's Big Bag of Keyboard Tricks - The Web Pages
 Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 ----------------------------------------------------------------
 
+Info
+----
+- See notes at the end of this page for more info.
+- Anchor links on the same page only need "#anchor", not the page url.
+
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
@@ -120,12 +125,6 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		
 		There is no undisputed king of keyboard layouts, and there won't be. You get to a point where individual preference and usage patterns start to matter more than objective aspects, and then you can't agree on a one-layout-fits-all. 
 		I believe we're already about there, pretty much. New tech may yet change typing, but as it stands the main barrier to speed is mental load so a really good development should make it simpler, not more complex.
-
-- Include Typecelerate on the Training page? It's focused on identifying and training weaknesses.
-	- https://typecelerate.com
-	- Also make a menu link for Damage Assessment, under which this app goes bears mention.
-
-- Anchor links on the same page only need "#anchor", not the page url.
 
 - Convo w/ A-Brick on figure captions:
 	- I just read a recommendation for figure text. On our BigBag pages, we've just used a <p> under the image, with <i>.
