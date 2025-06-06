@@ -17,6 +17,9 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 - Alt layout writeup!
 	- Make it the first section under Layers. Update other sections to be more layout inclusive.
 	- Move the links to Getreuer's and the AKL beginner's guides there from the links page, or keep both?
+	- Also links to the layout playgrounds, Oxey and Cyanophage? Test those out?
+		- https://oxey.dev/playground/index.html
+		- 
 	
 	- There's an abundance of newer layouts, keeping less QWERTY similarity and using more metrics than Colemak.
 		- The test of time has shown Colemak to be a well-made layout. Lots of work went into its design and testing.
@@ -26,7 +29,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		- Ease of learning/implementation (Colemak, Tarmak).
 		- Rolls (Cmk/etc) vs alternation (Gra/Gal/etc), ...
 		- To some extent, hardware/software options. For instance, standard implementations vs programmable keyboards.
-		- Languages used, and how much of each. Example: `J` is very rare in English, but not so in Spanish.
+		- Languages used, and how much of each. Example: `J` is very rare in English, but not so in Spanish (frequencies?).
 	- My suggestion: Colemak is very good for nearly everyone, as a "sweet spot" of priorities.
 		- I've used it for years and I'm very happy with it. It's remarkably well made and balanced.
 		- Decide on Vanilla vs DH, and whether to add further mods (cmk.org). Most implementations are ready-made.
@@ -41,17 +44,18 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- Relative to popular newer layouts, Colemak generally has many nice rolls, which feels nice and flowy.
 			- On the downside though, more rolls usually leads to more suboptimal patterns such as redirects/pinballs.
 	- If really set on venturing past Colemak, you could try out Gralmak.
-		- Graphite/Gralmak is new and very good, and has similarities with familiar layouts (row/column assignments, punctuation etc).
+		- Graphite/Gralmak is new and very well-optimized, while keeping similarities with familiar layouts (row/column assignments, punctuation etc).
 		- Even if you end up wanting even more radical optimization, it can still be a useful stepping-stone.
 		- If after learning Gralmak for a while, you still want to proceed: Go on to full Graphite(-HB) or similar.
-		- On a side note, `YOU` isn't optimal on either: A redirect (QWERTY `O;I`) on Colemak; a lateral stretch (QWERTY `JOP`) on Graphite/Gralmak.
 	- It's actually really hard to assess a new layout fairly, unless you're an expert – and even then.
 		- Every layout has its strong and weak points. You'll feel some good things but ignore some bad ones, and vice versa.
-		- It'll take time to understand a layout's choices. Especially when they affect typing flow, which you won't have at first.
+		- It'll take time to understand a layout's features. Especially when they affect typing flow, which you won't have at first.
 		- Before you are up to speed, it's not easy to notice what works and what doesn't at your full speed.
-			- Not all of us will ever type really fast! 
+			- Not all of us will ever type really fast! So there's that, too.
 			- If something's mostly noticeable at above, say, 120 WPM and like me you'll probably never get there, what then?
 		- What you know beforehand will influence your experience.
+		- On a side note, `YOU` isn't optimal on either: A redirect (QWERTY `O;I`) on Colemak; a lateral stretch (QWERTY `JOP`) on Graphite/Gralmak.
+		- Another example: The `EU` bigram is an uncomfortable SFB on both, worse on Graphite/Gallium (ring, vs middle finger on Cmk). Luckily not too common.
 	- Casuanoob @ the Cmk Discord dixit (2025-02-01):
 		- Take notes of pain points and annoyances about the layout while getting up to 60 WPM, imo, and make a decision between there and 100.
 		- Personally, I ended up making decision points at 80 WPM.
@@ -64,28 +68,28 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		
 	- I had a Discord chat with Supernova, an interested user. I could use this, more or less! (Edited further here.)
 		
-		Alpha Base, This Is Enterprise. Do You Copy?
-		--------------------------------------------
+		Alpha Base, This Is Enterprise
+		------------------------------
 		Having been an enthusiastic Colemak user for 18 years since 2007, I sometimes get questions like "Why haven't you changed to something newer? There's been a lot of developments, and newer metrics are now taken into account.". 
 		It's a fair question, sure enough. There's always a pot of gold glistening in the distance!
 		
 		Well, to be honest I never saw a compelling reason to "upgrade" from Colemak, beyond the CAWS mod battery and my other tricks and tools. 
 		The perceived benefits seemed uncertain, and sure enough: After a few months, many users had found perceived or real flaws and chased on to the next "soup du jour". 
-		In the eye of that storm, Colemak is still a solid layout – even nearly 20 years after its inception.
+		Resting in the eye of that storm, Colemak is still a solid layout – even nearly 20 years after its inception.
 		
-		I have a feeling that too many users, especially younger ones, easily get caught up in pretty endless goose chases and rabbit hole spelunking, and I don't want to contribute overmuch to that. 
+		I have a feeling that too many users, especially younger ones, easily get caught up in nearly endless goose chases and rabbit hole spelunking, and I don't want to contribute to that. 
 		A layout change is hard work, and if the gains from it are at best minor and at worst uncertain – well, then your time is better spent elsewhere unless you think a change would be major fun.
 		
 		I honestly believe that there's a lot of misinformation out there, from people who don't try stuff out properly and/or guard their investments and/or are otherwise biased and misinformed. 
-		Places like Reddit are especially plagued with strongly worded opinionating, in my impression. You really shouldn't put stock in a newcomer's soap box agenda after trying a layout for, say, one month or three.
+		Places like Reddit, in my impression, are especially plagued with strongly worded opinionating. You really shouldn't put stock in a random person's soap box agenda after trying a layout for, say, a month or three.
 		
-		In the Alt Keyboard Layout Community, there's pretty much a consensus that some layouts are way oversold by their creators and followers. 
+		In the Alt Keyboard Layout Community, there's what amounts to a consensus that some layouts are way oversold by their creators and followers. 
 		Dvorak, Workman, Norman, and, say, Halmak, still attract new users, when there are much better options. Really. For Dvorak, at least it's preinstalled on all OSes; but so is finally Colemak too.
 		
-		At the same time, this could just as well be an argument for never leaving QWERTY in the first place, couldn't it? And I've really enjoyed doing that! 
+		At the same time, this could be used as an argument for never leaving QWERTY in the first place, couldn't it? And I've really enjoyed doing that! 
 		What constitutes too little and too much may be individual, but I do believe that QWERTY and various minimalistic layouts like Minimak are too little.
 		
-		To shine a little light on this confusing subject, I can recommend the two guides I linked to on my links page: Getreuer writes very well, and the AKL intro guide is a great introduction to the field.
+		To shine more light on this confusing subject, I recommend the two intro guides found on my links page. The AKL intro guide is a great introduction to the field, and Pascal Getreuer is well worth a read. I tend to agree with nearly everything they write.
 		
 		Delving Too Greedily
 		--------------------
@@ -94,37 +98,41 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		- The Extend and Extend-tap layers are another excellent addition. I truly believe that you should learn such tools well if you haven't yet, as they will benefit you a whole lot more than chasing base layout perfection could ever do.
 		- Even if you do use Extend or something similar, getting to know its possibilities even better and optimizing your Ext-tap mappings etc is extremely useful. Trust me! I'm still discovering improvements after many happy years of use.
 		
+		There is no undisputed king of keyboard layouts, and there won't be. You get to a point where individual preference and usage patterns start to matter more than objective aspects, and then you can't agree on a one-layout-fits-all. 
+		I believe we're already about there, pretty much. New tech may yet change typing, but as it stands the main barrier to speed is mental load so a really good development should make it simpler, not more complex.
+		
 		Still, what about all these new layouts, huh? Huh?
 			[Box: A Quest For The Gral]
-			Well, finally my curiosity got the better of me, and as a result I'm trying out one of the newer layouts. 
+			Well, finally my curiosity got the better of me, and as a result I did end up trying out one of the newer layouts. 
 			Feels really odd after having typed on Colemak for 18 years, I can tell you! 
-			I'm only around half my Colemak speed on Gralmak (my Graphite variant) yet, but I feel I have an idea of what it's about by now.
+			I'm haven't yet reached my Colemak speed on Gralmak (my Graphite variant), but I feel I have an idea of what it's about by now.
 			
-			So far, my main impression is that both Gralmak and Colemak are good, and I won't be getting any substantial gains from the switch – apart from a satisfied curiosity and the fun and pain(!) of trying something new.
+			So far, my main impression is that both Gralmak and Colemak are good, and I won't be getting any substantial gains from the switch – apart from a satisfied curiosity and the fun and pain of trying something new.
 			
 			Colemak-DH is a good and well thought-out layout. So is Graphite. The latter takes some factors into consideration that weren't yet considered back in 2014. Fine. But I honestly don't feel the differences much (yet?).
 			
 			They both have their stronger and weaker points. Some musings:
-			- Graphite has some amazing n-grams, and more than Colemak it uses all three rows for them without much scissoring.
+			- Graphite has some amazing n-grams, and more than Colemak it uses all three rows without much scissoring.
 			- Colemak has a nice flow to it and some delightful home row rolls, but also some sticky spots here and there.
 			- Colemak does of course have more redirects than Graphite. Notable examples are YOU, and WAS. More rolls makes for more redirects.
 			- Writing YOU isn't great on either, just a little easier on Graphite. I've heard layout designers say that it's hard to make that word good on a good layout.
-			- Writing PHYSICS is worse on Graphite (yes, I'm a phycisist). Every layout has some words that don't agree well with it.
+			- Writing PHYSICS is worse on Graphite. I'm a phycisist, so there's that. Every layout has some words that don't agree well with it.
 			- For some awkward bigrams, alt-fingering helps a lot. Colemak `kn kl` and Graphite `sc sw ph` are good examples. This takes time to learn well.
 			- You will get used to a number of weakish spots with time and experience, as long as they aren't too common.
 			- If you start overthinking such weak spots though, I believe you won't be able to judge a layout fairly. I think this happens to many.
 			- It won't matter to all, but Colemak is still easier to learn with more QWERTY and shortcut similarities.
 			- Colemak keeping ZXCV in place is an asset to some, and so is the Tarmak learning method for gradual learning.
+			- Using the Gralmak variant though, the bottom row goes ZXMCV and that's really no worse than Colemak-DH's ZXCDV.
 			
 			As for Graphite vs the very similar Gallium, I tried both and Gralmak ended up with a sort of mix between them and some Colemak principles.
 			- Like Colemak, I keep the symbol keys unchanged, instead using my Sym mod and special keys. This makes it easier to learn, too.
 			- I prefer J in the middle and apostrophe on the side, like Gallium and Colemak have. This links in with the first point.
-			- The only other letter difference between Gal and Gra, is `CV` vs `WZ`. I first wanted to go with Gal to make the `SC` bigram easier, but now I'm on board with Gra keeping `W` on top and `CV` on lower row. 
+			- The only other letter difference between Gallium and Graphite, is `CV` vs `WZ` on the upper vs lower row.
+			- I first wanted to go with Gal to make the `SC` bigram easier, but now I'm on board with Graphite keeping `W` on top and `CV` on the lower row. 
 			- This is mainly because those are more in line with what we're used to. In the long run, that's not a strong argument, but it makes transitions easier.
+			- For added familiarity and convenience, I put Z back into its corner in Gralmak. This has next to no negative impact on layout quality, and just feels right.
 			- The bigrams involved are fine either way, really.
 		
-		There is no undisputed king of keyboard layouts, and there won't be. You get to a point where individual preference and usage patterns start to matter more than objective aspects, and then you can't agree on a one-layout-fits-all. 
-		I believe we're already about there, pretty much. New tech may yet change typing, but as it stands the main barrier to speed is mental load so a really good development should make it simpler, not more complex.
 
 - Convo w/ A-Brick on figure captions:
 	- I just read a recommendation for figure text. On our BigBag pages, we've just used a <p> under the image, with <i>.
