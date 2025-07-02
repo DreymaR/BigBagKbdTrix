@@ -15,18 +15,29 @@ Info
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
 - Alt layout writeup!
-	- Make it the first section under Layers. Update other sections to be more layout inclusive.
+	- Make it the first section under Layers, "Main layer" or so. Update other sections to be more layout inclusive.
 	- Move the links to Getreuer's and the AKL beginner's guides there from the links page, or keep both?
 	- Also links to the layout playgrounds, Oxey and Cyanophage? Test those out?
 		- https://oxey.dev/playground/index.html
 		- 
 	
+	- Figure showcasing some alt layouts as a table of compact ortho images, EPKL-cpt style. Smaller size, if possible.
+		- Layouts recommended by the AKL Quickstart guide:  Colemak, Colemak-DH, Semimak, Canary, Gallium, Graphite.
+		- ---"---                   Pascal Getreuer guide:           Colemak-DH,          Canary,          Graphite, APTv3, Sturdy.
+		- Add Dvorak for historical reasons, and we have a 3×3 matrix. (Gralmak is saved for later.)
+			- Row 1: Dvorak, Cmk, Cmk-DH
+			- Row 2: Semimak, Canary, APTv3
+			- Row 3: Sturdy, Gallium, Graphite
+	
+	- As this site shows, I've used the Colemak layout for 18 years or so. Before that, I used the Dvorak layout for some years.
+		- People tend to spend a lot of time and effort on finding the right layout for them.
+		- While nearly anything beats the proverbial crap out of QWERTY, it isn't easy to navigate the waters of alt layouts.
 	- There's an abundance of newer layouts, keeping less QWERTY similarity and using more metrics than Colemak.
 		- The test of time has shown Colemak to be a well-made layout. Lots of work went into its design and testing.
 		- There are only a few of the many newer layouts about which similar claims may be made confidently.
 		- Some think the more metrics the merrier, but at the same time there's still a big need for human assessment.
 	- Differences of priority lead to different ideal choices.
-		- Ease of learning/implementation (Colemak, Tarmak).
+		- Ease of learning/implementation. Examples: Colemak, Tarmak, Minimak – but that one's too poorly optimized by far.
 		- Rolls (Cmk/etc) vs alternation (Gra/Gal/etc), ...
 		- To some extent, hardware/software options. For instance, standard implementations vs programmable keyboards.
 		- Languages used, and how much of each. Example: `J` is very rare in English, but not so in Spanish (frequencies?).
@@ -102,14 +113,14 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		I believe we're already about there, pretty much. New tech may yet change typing, but as it stands the main barrier to speed is mental load so a really good development should make it simpler, not more complex.
 		
 		Still, what about all these new layouts, huh? Huh?
-			[Box: A Quest For The Gral]
+			[Box: Quest For The Gral]
 			Well, finally my curiosity got the better of me, and as a result I did end up trying out one of the newer layouts. 
 			Feels really odd after having typed on Colemak for 18 years, I can tell you! 
-			I'm haven't yet reached my Colemak speed on Gralmak (my Graphite variant), but I feel I have an idea of what it's about by now.
+			I've nearly reached my Colemak speed on Gralmak which is my Graphite variant now, so I feel that I have an idea of what it's about.
 			
 			So far, my main impression is that both Gralmak and Colemak are good, and I won't be getting any substantial gains from the switch – apart from a satisfied curiosity and the fun and pain of trying something new.
 			
-			Colemak-DH is a good and well thought-out layout. So is Graphite. The latter takes some factors into consideration that weren't yet considered back in 2014. Fine. But I honestly don't feel the differences much (yet?).
+			Colemak-DH is a good and well thought-out layout. So is Graphite. The latter takes some factors into consideration that weren't yet considered back in 2014. Fine. But I honestly don't feel major quality-of-life differences (yet?).
 			
 			They both have their stronger and weaker points. Some musings:
 			- Graphite has some amazing n-grams, and more than Colemak it uses all three rows without much scissoring.
@@ -124,7 +135,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- Colemak keeping ZXCV in place is an asset to some, and so is the Tarmak learning method for gradual learning.
 			- Using the Gralmak variant though, the bottom row goes ZXMCV and that's really no worse than Colemak-DH's ZXCDV.
 			
-			As for Graphite vs the very similar Gallium, I tried both and Gralmak ended up with a sort of mix between them and some Colemak principles.
+			As for Graphite vs the very similar Gallium, I tried both. Gralmak ended up with a sort of mix between them and some Colemak principles.
 			- Like Colemak, I keep the symbol keys unchanged, instead using my Sym mod and special keys. This makes it easier to learn, too.
 			- I prefer J in the middle and apostrophe on the side, like Gallium and Colemak have. This links in with the first point.
 			- The only other letter difference between Gallium and Graphite, is `CV` vs `WZ` on the upper vs lower row.
@@ -133,6 +144,9 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- For added familiarity and convenience, I put Z back into its corner in Gralmak. This has next to no negative impact on layout quality, and just feels right.
 			- The bigrams involved are fine either way, really.
 		
+
+- MattMc's fun decision tree on Cmk-DH vs Vanilla (with other stuff thrown in):
+	- https://github.com/mattmc3/keyboard-tools/blob/main/advice.md
 
 - Convo w/ A-Brick on figure captions:
 	- I just read a recommendation for figure text. On our BigBag pages, we've just used a <p> under the image, with <i>.
