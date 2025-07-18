@@ -11,9 +11,11 @@ links:
   - title: layers
     url: layers-main.html
     sub:
-      - title: Main
+      - title: Intro
         url: layers-main.html
-      - title: Colemak[eD]
+      - title: Base Layout
+        url: layers-base.html
+      - title: Layout[eD]
         url: layers-colemaked.html
       - title: Extend!!!
         url: layers-extend.html
