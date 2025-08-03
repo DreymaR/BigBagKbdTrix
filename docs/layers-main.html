@@ -5,10 +5,15 @@ title: Character Mapping Layers
 
 <h2 class="anchor" id="base">BASE LAYOUT</h2>
 <p>
-    The <b>Base Layout</b> is your unmodified and shifted layout. 
-    In the narrowest sense, it may be just the main letter block of 10 columns by 3 or 4 rows.
+The <b>Base Layout</b> is your unmodified (and shifted) keyboard layout. 
+    In the narrowest sense, it may be just the main letter block of 3 rows by 2×5 columns.
 </p><p>
     See the section below for a quickish overview, or the <a href="/layers-base.html"><b>Base Layout</b></a> page for a deeper dive.
+</p>
+<br />
+<img class="img-small" alt="The Colemak-DH layout" src="res/div/Layouts/Colemak-DH_Orth-Cpt_EPKL.png" />
+<p class="img-text">
+    The <a href="https://colemak.org/"><b>Colemak(-DH)</b></a> base layout.
 </p>
 
 <h3>Alpha Base, This Is Enterprise</h3>
@@ -49,10 +54,10 @@ title: Character Mapping Layers
         As seen all around these pages, the base layout is only the beginning. 
         Extend, special dead keys and ergo mods are my main thing. And I'm having such a great time of it! 
     </li><li>
-        My thumb keys are a good example: The Repeat key does away with a lot of same-finger load, and 
-          the CoDeKey allows elegant entry of punctuation-plus-space-plus-capitalization and other input.
+        My thumb keys are a good example: The <a href="#repeat"><b>Repeat</b></a> key does away with a lot of same-finger load, and 
+          the <a href="#codekey"><b>CoDeKey</b></a> allows elegant entry of punctuation-plus-space-plus-capitalization and other input.
     </li><li>
-        The Extend and Extend-tap layers are another excellent addition. 
+        The <a href="/layers-extend.html"><b>Extend</b></a> and <a href="/layers-extend.html#ext-tap"><b>Extend-tap</b></a> layers are another excellent addition. 
         I truly believe that you should learn to use such tools well if you haven't yet. 
         They will benefit you a whole lot more than chasing base layout perfection could ever do.
     </li><li>
@@ -69,8 +74,8 @@ title: Character Mapping Layers
 </p><p>
     Far from the only one to state something similar, Getreuer's guide has this recommendation:
 </p>
-<blockquote cite="https://getreuer.info/posts/keyboards/alt-layouts/index.html#which-alt-keyboard-layout-should-i-learn">
-    If you don’t know what to pick, go with Colemak-DH.
+<blockquote>
+    <a href="https://getreuer.info/posts/keyboards/alt-layouts/index.html#which-alt-keyboard-layout-should-i-learn"><b><i>If you don’t know what to pick, go with Colemak-DH.</i></b></a>
 </blockquote>
 <div class="spoiler">
     <p><span>Colemak decision tree (for fun):</span></p>
@@ -266,25 +271,25 @@ title: Character Mapping Layers
     Sequences provide for near endless complexity, but chorded layers like Extend let you do many similar operations without trigging them separately each time. So for navigation/editing like selecting the previous word then moving it to the end of the paragraph or, say, for entering numbers, chorded (or modal) layers are perfect.
 </p><br>
 <h4>Dead keys</h4><p>
-    <a href="/layers-main.html#deadkeys"><b>Dead keys</b></a>, as described above, can be great for mapping one-shot output like special and accented letters and symbols, without holding a modifier like AltGr down. They're the shortest sequences, only using one leader key and one release key to produce output (e.g., the Acute DK <kbd>´</kbd> then <kbd>A</kbd> for '<b>á</b>'). With a battery of DKs you can fit in a whole bunch of symbols on fairly intuitive mappings!
+    <a href="#deadkeys"><b>Dead keys</b></a>, as described above, can be great for mapping one-shot output like special and accented letters and symbols, without holding a modifier like AltGr down. They're the shortest sequences, only using one leader key and one release key to produce output (e.g., the Acute DK <kbd>´</kbd> then <kbd>A</kbd> for '<b>á</b>'). With a battery of DKs you can fit in a whole bunch of symbols on fairly intuitive mappings!
 </p><p>
     On the downside, DK layers like AltGr layers can easily get crowded if, there are many symbols based on the same letter, or you want to map symbols that aren't based on letters or numbers. And since you'll likely need many DKs you may have to hold a modifier to access the DK in the first place; all my ≈20 DKs require you to press AltGr first unless you're using a locale variant that has the most needed of them on base layers. Dead keys are compact, but not very flexible.
 </p>
-<h4>Compose</h4><p>
+<h4 class="anchor" id="compose">Compose</h4><p>
     <a href="https://en.wikipedia.org/wiki/Compose_key#Compose_sequences"><b>Compose</b></a> is a wonderful method based on easy-to-remember sequences for one-shot output. Linux users may know and use it with sequences like <kbd>Compose</kbd><kbd>e</kbd><kbd>'</kbd> producing the accented letter <b>é</b> ("e acute"), and <kbd>Compose</kbd><kbd>1</kbd><kbd>2</kbd> producing the symbol <b>½</b> ("one-half").
 </p><p>
     You can edit the tables and add pretty much anything though! In the EPKL program for Windows I've added a whole bunch of new sequences for boilerplate text or even emoji sequences such as <kbd>'noevil</kbd> composing to '🙈 🙉 🙊'. You can even compose a sequence like <kbd>U1f4aa</kbd> to input <i>any</i> Unicode character if you know its code point! 💪
 </p><p>
     Compose key sequences are similar to dead keys, and in Linux/XKB the same method is used for both. Generally though, DKs are more compact (maybe only two key presses needed) but less flexible, while Compose sequences are very flexible but less compact.
 </p>
-<h4>Repeating</h4><p>
+<h4 class="anchor" id="repeat">Repeating</h4><p>
     <kbd>Repeat</kbd> is a very basic context-dependent key. It simply repeats your previous character – but that's actually really useful. A central principle for improved keyboard layouts is to keep same-finger bigram (SFB) frequency low. According to NotGate who inspired me to try out repeating, there are far more repeated letters than other SFBs in good layouts today: Analysis using an English text corpus shows <a href="https://blogs.sas.com/content/iml/2014/10/03/double-letter-bigrams.html">a 2.5% repeating-letter bigram frequency</a> in total, vs for instance <a href="http://colemakmods.github.io/mod-dh/analyze.html">the 1.7% SFB frequency of Colemak</a>. You can actually benefit from a Repeat key whether your layout is optimized or not.
 </p><p>
     One problem is where to place your Repeat key. I've tried it in the old QWERTY <kbd>B</kbd> position, which is available using the <a href="/ergo-mods.html#angle-wide">ISO-Angle</a> ergo mod. That position has the interesting feature of being useable for both index fingers, but I ended up preferring a thumb key on the non-spacing thumb and I'm loving it. See the <a href="/ergo-mods.html#modifiers">Modifiers</a> section for more info.
 </p><p>
     My Repeat implementation is only in EPKL for Windows yet, but it isn't hard to do it with TMK/QMK controller coding or simple AHK code – see the bottom of <a href="https://notgate.github.io/layout/">NotGate's ISRT page</a> for examples.
 </p>
-<h4>Completion</h4><p>
+<h4 class="anchor" id="complete">Completion</h4><p>
     <kbd>Complete</kbd> is a next-level context dependent key. It adds characters depending on what you just typed. Completion is closely related to Composing: The main difference is that instead of replacing a recognized sequence, you add to it. You could even have the same key be either a Complete or Compose key depending on what you just typed.
 </p><p>
     You could use <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/blob/0a308410c0ebba2de26b5ac16a7464812e3abec5/Files/_eD_Compose.ini#L849">Completion to avoid SFBs</a>: On Colemak, <kbd>S</kbd> then <kbd>Complete</kbd> could become 'SC' and completing <kbd>C</kbd> could become 'CS'; <kbd>U</kbd> for 'UE', etc. Then, you could also <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/blob/0a308410c0ebba2de26b5ac16a7464812e3abec5/Files/_eD_Compose.ini#L880">Complete longer n-grams</a> such as the common 'THE' on <kbd>T</kbd>, 'AND ' on <kbd>A</kbd>, 'ION' (or 'ING') on <kbd>I</kbd>, etc; these are less common than the most common bigrams but they give more "bang for the buck". What to use would depend on your keyboard layout.
@@ -294,7 +299,7 @@ title: Character Mapping Layers
 <h4>Extend-Tap</h4><p>
     <a href="/layers-extend.html#ext-tap"><b>Extend-tap</b></a> is a neat way of supercharging your Extend key for both chording and sequencing in one key! The Extend key can be a multi-layer dual-function key that produces different one-shot (dead key) or chording (modifier) layers based on the shift state at the time of tapping or holding it down. This way it can be a gate to the best of both the chording and sequencing worlds. I call such a multi-mode modifier a <b>Mother-of-DeadKeys (MoDK)</b> Extend key. Sadly, this isn't available on all platforms.
 </p>
-<h4>CoDeKey</h4><p>
+<h4 class="anchor" id="codekey">CoDeKey</h4><p>
     <b>CoDeKey</b> is another supercharged key, only available in EPKL for Windows at the moment. This one is a Compose key if you've entered a recognized Compose sequence beforehand. If not, it becomes a dead key instead and waits for a release key press! I use it quite a lot these days, as a thumb key. With it, I can compose anything I like, but also type for instance Period-Space-Shift more easily as <kbd>CoDeKey</kbd> then a home-row key – with other home row keys for other punctuation. I think it's amazing!
 </p><p>This table holds some CoDeKey dead key mappings that I like a lot. Naturally, you're free to experiment and complement.</p>
 <pre><code>

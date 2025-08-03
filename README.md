@@ -33,7 +33,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- Row 3: Sturdy, Gallium, Graphite
 		- The "title" property provides mouseover alt text for the different layout names.
 		- The "caption" property is a heading. Need to sort out its color (for light/dark themes), though?
-		- Ask Brick for table formatting and CSS help!
+		- Ask Brick for table formatting and CSS help! Also some formatting (indent, auto-b/i, box?) on blockquote.
 	
 	Not Perfect, But Perfect For Me?
 	--------------------------------
