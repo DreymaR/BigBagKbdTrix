@@ -17,7 +17,7 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 - Alt layout writeup!
 	- Make it the first section under Layers, "Base Layout".
 	- Also update other sections to be more layout inclusive.
-	- Move the links to Getreuer's and the AKL beginner's guides there from the links page, or keep both?
+	- Move the links to Getreuer's and the AKL beginner's guides there from the links page? No, keep both.
 	- Link to the layout playgrounds, Oxey and Cyanophage etc – also see below.
 		- https://oxey.dev/playground/  				(Oxey's Playground)
 		- https://cyanophage.github.io/ 				(Cyanophage's analyzer)
@@ -31,7 +31,9 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 			- Row 1: Dvorak, Cmk, Cmk-DH
 			- Row 2: Semimak, Canary, APTv3
 			- Row 3: Sturdy, Gallium, Graphite
-		- Ask Brick if we can have mouseover alt text for the layout names?
+		- The "title" property provides mouseover alt text for the different layout names.
+		- The "caption" property is a heading. Need to sort out its color (for light/dark themes), though?
+		- Ask Brick for table formatting and CSS help!
 	
 	Not Perfect, But Perfect For Me?
 	--------------------------------
@@ -176,33 +178,8 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		- The pendulum swung towards alternation because of redirects on rolly layouts. But there are some quite rolly layouts with lower redirects now.
 		- While it will be interesting to follow further developments, I feel that nothing is conclusive for now.
 		- In sum, I feel fine about sticking with Colemak(-DH) for 18 years. So I'm not going to worry about catching up on even later developments at the moment!
-	
-- Me, chatting with Discord user Supernova (somewhat edited): Maybe useable on the layers-main page?
-	
-	Alpha Base, This Is Enterprise
-	------------------------------
-	Having been an enthusiastic Colemak user for 18 years since 2007, I sometimes get questions like "Why haven't you changed to something newer? There's been a lot of developments, and newer metrics are now taken into account.". 
-	It's a fair question, sure enough. There's always a pot of gold glistening in the distance!
-	
-	Well, to be honest I never saw a compelling reason to "upgrade" from Colemak, beyond the CAWS mod battery and my other tricks and tools. 
-	The perceived benefits seemed uncertain, and sure enough: After a few months, many users had found perceived or real flaws and chased on to the next "soup du jour". 
-	Resting in the eye of that storm, Colemak is still a solid layout – even nearly 20 years after its inception.
-	
-	I have a feeling that too many users, especially younger ones, easily get caught up in nearly endless goose chases and rabbit hole spelunking, and I don't want to contribute to that. 
-	A layout change is hard work, and if the gains from it are at best minor and at worst uncertain – well, then your time is better spent elsewhere unless you think a change would be major fun.
-	
-	I honestly believe that there's a lot of misinformation out there, from people who don't try stuff out properly and/or guard their investments and/or are otherwise biased and misinformed. 
-	Places like Reddit, in my impression, are particularly plagued with strongly worded opinionating. You really shouldn't put stock in a random person's soap box agenda after trying a layout for, say, a month or three.
-	
-	In the Alt Keyboard Layout Community, there's what amounts to a consensus that some layouts are way oversold by their creators and followers. 
-	Dvorak, Workman, Norman, and, say, Halmak, still attract new users, when there are much better options. Really. For Dvorak, at least it's preinstalled on all OSes; but so is finally Colemak too.
-	
-	At the same time, this could be used as an argument for never leaving QWERTY in the first place, couldn't it? And I've really enjoyed doing that! 
-	What constitutes too little and too much may be individual, but I do believe that QWERTY and various minimalistic layouts like Minimak are way too little.
-	
-	To shine more light on this confusing subject, I recommend the two intro guides found on my links page. The AKL intro guide is a great introduction to the field, and Pascal Getreuer is well worth a read. I tend to agree with nearly everything they write.
 
-- MattMc's fun decision tree on Cmk-DH vs Vanilla (with other stuff thrown in):
+- MattMc's fun decision tree on Cmk-DH vs Vanilla (with other stuff thrown in). Show it on the layers-main page.
 	- https://www.reddit.com/r/Colemak/comments/1lnvcgh/my_advice_on_colemak/
 	- https://github.com/mattmc3/keyboard-tools/blob/main/advice.md
 	- Here's a link to the full Mermaid diagram, edited by me:
