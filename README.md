@@ -14,31 +14,12 @@ Info
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Alt layout writeup!
-	- Also update other sections to be more layout inclusive.
-	- Move the links to Getreuer's and the AKL beginner's guides there from the links page? No, keep both.
-	- Link to the layout playgrounds, Oxey and Cyanophage etc – also see below.
-		- https://oxey.dev/playground/  				(Oxey's Playground)
-		- https://cyanophage.github.io/ 				(Cyanophage's analyzer)
-		- https://galileoblues.github.io/Keysolve2/ 	(GalileoBlues' KeySolve2)
-		- https://layouts.wiki/playground/    			(AKL DataBase playground)
-	- Figure showcasing some alt layouts as a table of compact ortho images, EPKL-cpt style. Smaller size, if possible.
-		- Recommended layouts in my fave AKL guides:
-			- The AKL Quickstart guide:  Colemak, Colemak-DH, Semimak, Canary, Gallium, Graphite.
-			- Pascal Getreuer's guide:            Colemak-DH,          Canary,          Graphite, APTv3, Sturdy.
-		- Add Dvorak for historical reasons, and we have a 3×3 matrix. (Gralmak is saved for later on the page.)
-			- Row 1: Dvorak, Cmk, Cmk-DH
-			- Row 2: Semimak, Canary, APTv3
-			- Row 3: Sturdy, Gallium, Graphite
+- Get help from Brick for formatting the image tables on the layers-base page.
+	- Ask Brick for table formatting and CSS help!
+	- Also some formatting (indent, auto-b/i, box?) on blockquotes.
+	- HTML table notes:
 		- The "title" property provides mouseover alt text for the different layout names.
 		- The "caption" property is a heading. Need to sort out its color (for light/dark themes), though?
-		- Ask Brick for table formatting and CSS help! Also some formatting (indent, auto-b/i, box?) on blockquote.
-
-- MattMc's fun decision tree on Cmk-DH vs Vanilla (with other stuff thrown in). Show it on the layers-main page.
-	- https://www.reddit.com/r/Colemak/comments/1lnvcgh/my_advice_on_colemak/
-	- https://github.com/mattmc3/keyboard-tools/blob/main/advice.md
-	- Here's a link to the full Mermaid diagram, edited by me:
-		https://mermaid.live/edit#pako:eNptVFlP20AQ_ivDSlAjOQc5SOxGQZCE46GgFgqiuA9rexKvsHet9Zrghvz37vpokNI8WDve-Y454g0JRIjEJctYrIOISgUPc497HPTv8BBu9W1WRefWy1NUAJUIhcgnvpweYZKlXwPBMxaiZHwFMxFjQl_PqpvfxxXywrKOuK9fPEjKOCRCYsdHpVCC4NWNodOsEoJcSuQKYqpDdVwzzDZzYVSBI4Y76erpS0FDyPI0FVKdfb7ZVui5Zf3M0MAmfo2sjbbm11U86fjTRmyxn_5IOYtj2tS3j7lsDK5pZR5lZhsKysOOkPDIkpYqUgRO39iKKiZ4B0OmdNPOapdX1kvN60-1PizeFfLwwKjs2vlvMDPBOQaGpxkPtFrTD49UuXc8LkALmqEsaaZb3XDLaUJN6zNztG6-JBCIJEWlvbzhwbFHPuDif4w3VWlKQFmHId1RTpgpdNJhU8O21HOgflyUCrOKXfvQbeBClQqzeqy1gq74VrimUgO5gYByyHULMrFUa7NwGqp3MyzPSog4gzVTkdFKcs5U0UzfwMHS2Usaxz4NXo3f70-LHw_Ppe58T_cZs0_CZr3Az1msWnpRa1KodxbSmAZY9e2J8VCsMxsSGtzd28DMYxZJkeDdPaAK2qXeol5AoweX9Xp9Di5LJ_XMItBubLhn8qB68wFX-2nnfibiXGFc7LKITVaShcRVMkebJCgTakKyMXiPqAgT9IirjyGVrx7x-FZjUsp_CZE0MCnyVURc3btMR3kaUoVzRleS7lL0SqKciZwr4g5LBuJuyDtxe47TPh31T0fDYX900nUGNil0yqh90ht2x32n1-_3nfFgsLXJn1Kz2x6PBo7jjMfjbve0P3J6NjF_CSG_VZ-k8su0_Qt6-Hx8
 
 - Convo w/ A-Brick on figure captions:
 	- I just read a recommendation for figure text. On our BigBag pages, we've just used a <p> under the image, with <i>.
@@ -67,21 +48,6 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 	- Callum's Gotta-Go-Fast: https://github.com/callum-oakley/gotta-go-fast
 	- ProfXwing/CSGO's CopyType: https://github.com/ProfXwing/copytype
 
-- Updated online analyzers:
-	- https://oxey.dev/playground/  				(Oxey's Playground)
-	- https://layouts.wiki/     					(AKL DataBase)
-	- https://layouts.wiki/playground/
-	- https://cyanophage.github.io/ 				(Cyanophage's analyzer)
-	- https://galileoblues.github.io/Keysolve2/ 	(GalileoBlues' KeySolve2)
-		Keysolve 2 KeyMap for analyzing layouts without the `/ , .` part mattering:
-		b l d w q j f o u '
-		n r t s g y h a e i
-		z x m c v k p \ [ ]
-		
-		q w f p b j l u y '
-		a r s t g m n e i o
-		z x c d v k h \ [ ]
-
 - Locale variants:
 	- Add more of the Forum locale topic
 	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?
@@ -100,6 +66,32 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 
 DONE
 ----
+- MattMc's fun decision tree on Cmk-DH vs Vanilla (with other stuff thrown in). Show it on the layers-main page.
+	- https://www.reddit.com/r/Colemak/comments/1lnvcgh/my_advice_on_colemak/
+	- https://github.com/mattmc3/keyboard-tools/blob/main/advice.md
+	- Here's a link to the full Mermaid diagram, edited by me:
+		https://mermaid.live/edit#pako:eNptVFlP20AQ_ivDSlAjOQc5SOxGQZCE46GgFgqiuA9rexKvsHet9Zrghvz37vpokNI8WDve-Y454g0JRIjEJctYrIOISgUPc497HPTv8BBu9W1WRefWy1NUAJUIhcgnvpweYZKlXwPBMxaiZHwFMxFjQl_PqpvfxxXywrKOuK9fPEjKOCRCYsdHpVCC4NWNodOsEoJcSuQKYqpDdVwzzDZzYVSBI4Y76erpS0FDyPI0FVKdfb7ZVui5Zf3M0MAmfo2sjbbm11U86fjTRmyxn_5IOYtj2tS3j7lsDK5pZR5lZhsKysOOkPDIkpYqUgRO39iKKiZ4B0OmdNPOapdX1kvN60-1PizeFfLwwKjs2vlvMDPBOQaGpxkPtFrTD49UuXc8LkALmqEsaaZb3XDLaUJN6zNztG6-JBCIJEWlvbzhwbFHPuDif4w3VWlKQFmHId1RTpgpdNJhU8O21HOgflyUCrOKXfvQbeBClQqzeqy1gq74VrimUgO5gYByyHULMrFUa7NwGqp3MyzPSog4gzVTkdFKcs5U0UzfwMHS2Usaxz4NXo3f70-LHw_Ppe58T_cZs0_CZr3Az1msWnpRa1KodxbSmAZY9e2J8VCsMxsSGtzd28DMYxZJkeDdPaAK2qXeol5AoweX9Xp9Di5LJ_XMItBubLhn8qB68wFX-2nnfibiXGFc7LKITVaShcRVMkebJCgTakKyMXiPqAgT9IirjyGVrx7x-FZjUsp_CZE0MCnyVURc3btMR3kaUoVzRleS7lL0SqKciZwr4g5LBuJuyDtxe47TPh31T0fDYX900nUGNil0yqh90ht2x32n1-_3nfFgsLXJn1Kz2x6PBo7jjMfjbve0P3J6NjF_CSG_VZ-k8su0_Qt6-Hx8
+- Alt layout writeup! Also update other sections to be more layout inclusive.
+	- Move the links to Getreuer's and the AKL beginner's guides there from the links page? No, keep both.
+	- Link to the layout playgrounds, Oxey and Cyanophage etc – also see below.
+		- https://oxey.dev/playground/      			(Oxey's Playground)
+		- https://layouts.wiki/playground/  			(AKL DataBase playground)
+		- https://cyanophage.github.io/     			(Cyanophage's analyzer)
+		- https://galileoblues.github.io/Keysolve2/ 	(GalileoBlues' KeySolve2)
+			Keysolve 2 KeyMap trick for analyzing layouts without considering differences in the `/ , .` part:
+			b l d w q j f o u '
+			n r t s g y h a e i
+			z x m c v k p \ [ ]
+			
+			q w f p b j l u y '
+			a r s t g m n e i o
+			z x c d v k h \ [ ]
+	- Figure showcasing some alt layouts as a table of compact ortho images, EPKL-cpt style. Smaller size, if possible.
+		- Recommended layouts in my fave AKL guides:
+			- The AKL Quickstart guide:  Colemak, Colemak-DH, Semimak, Canary, Gallium, Graphite.
+			- Pascal Getreuer's guide:            Colemak-DH,          Canary,          Graphite, APTv3, Sturdy.
+		- Add Dvorak for historical reasons, and we have a 3×3 matrix. Gralmak is saved for later on the page.
+			- Somewhat chronologically: { [Dvorak,Cmk,Cmk-DH], [Semimak,Canary,APTv3], [Sturdy,Gallium,Graphite] }.
 - Functionality allowing links to a specific platform box with platform specified? As in `page.html#anchor?platform=win`.
 - Make it so that clicking the text `PLATFORMS` shows the how-to screen again (only seen initially now).
 - More likeable links:
