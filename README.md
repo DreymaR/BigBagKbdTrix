@@ -14,6 +14,10 @@ Info
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- Link to TypingGym and ZippyWords on the Training page
+	- https://www.typinggym.com/
+	- https://www.zippywords.com/
+
 - Note on the Training page about Keybr? I don't quite like it, although it's very popular for beginners.
 	- It does gamify learning the first letters quite nicely, but after that it seems to go on and on with slow progress and reduced gains?
 		- My recommendation may be to use it for the home row, and then seek other tools to replace or at least complement it?
