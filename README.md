@@ -32,7 +32,6 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 
 - Get help from Brick for formatting the image tables on the layers-base page.
 	- Ask Brick for table formatting and CSS help!
-	- Also some formatting (indent, auto-b/i, box?) on blockquotes.
 	- HTML table notes:
 		- The "title" property provides mouseover alt text for the different layout names.
 		- The "caption" property is a heading. Need to sort out its color (for light/dark themes), though?
@@ -206,7 +205,7 @@ HTML tips from aBrickInTheHallway
     <p class="italic">
 <a href="https://your.url"> - link
     <a class="underlined">
-<div class="quote">
+<blockquote>
 <b>, <strong>   - bold
 <i>, <em>       - italic
 <img src="content/images/img.png" class="img-small"> ('alt' attribute is optional - displays when image cannot be displayed)

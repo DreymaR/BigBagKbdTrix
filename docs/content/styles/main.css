@@ -832,18 +832,18 @@ kbd {
   border: 1px solid #dedede;
 }
 
-.quote {
+blockquote {
   margin: 1em 0;
   padding: 15px;
   background-color: #DEDEDE;
   border-left: 3px dotted #AA77BB;
 }
 
-.quote p:first-child {
+blockquote p:first-child {
   margin-top: 0;
 }
 
-.quote > p:last-child {
+blockquote > p:last-child {
   margin-bottom: 0;
 }
 
@@ -917,7 +917,7 @@ kbd {
   margin-right: 3px;
 }
 
-.spoiler .quote {
+.spoiler blockquote {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #CACACA;
