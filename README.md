@@ -14,27 +14,10 @@ Info
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Link to TypingGym and ZippyWords on the Training page
-	- https://www.typinggym.com/
-	- https://www.zippywords.com/
-
-- Note on the Training page about Keybr? I don't quite like it, although it's very popular for beginners.
-	- It does gamify learning the first letters quite nicely, but after that it seems to go on and on with slow progress and reduced gains?
-		- My recommendation may be to use it for the home row, and then seek other tools to replace or at least complement it?
-	- Tabidots with an insight on why Keybr's progress algorithm is bad, on Reddit:
-	- https://www.reddit.com/r/typing/comments/1lz2h84/comment/n2zxjc6/
-		It's based on your reaction time to the target key. This is especially important for non-home-row keys, because the algorithm will usually generate many words that start with the target key as well (so word + space + pause + word = no bueno). Your accuracy and speed for the rest does not matter.
-		I realized this when I got stuck on P doing Colemak. Now that I've completed all the keys, I feel that this algorithm actually leads to bad habits because I stopped caring about accuracy just to unlock the next key. (And for a while I also got used to the fact the keybr simply ignores errors after the first one and freezes the cursor, so when you make a mistake you aren't "penalized" by having to press Backspace like you are IRL).
-		
-		[Sock_pup alias Nimi who develops Typecelerate commented:]
-		You can cheat the algorithm by carefully approaching the <preceding key><target key> combo and do them very fast. Doing everything else slow won't matter.
-		That should tell you everything pretty much.
-
-- Get help from Brick for formatting the image tables on the layers-base page.
-	- Ask Brick for table formatting and CSS help!
-	- HTML table notes:
-		- The "title" property provides mouseover alt text for the different layout names.
-		- The "caption" property is a heading. Need to sort out its color (for light/dark themes), though?
+- Touch screen: MessagEase alternatives
+	- Android: Griddle
+	- iOS: Keyz by Duncan Adjei
+		- https://apps.apple.com/gb/app/keyz-keyboard/id6753342843
 
 - Convo w/ A-Brick on figure captions:
 	- I just read a recommendation for figure text. On our BigBag pages, we've just used a <p> under the image, with <i>.
@@ -69,6 +52,27 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 
 DONE
 ----
+- Link to TypingGym and ZippyWords on the Training page
+	- https://www.typinggym.com/
+	- https://www.zippywords.com/
+
+- Made a note on the Training page about Keybr. I don't quite like it, although it's very popular for beginners.
+	- It does gamify learning the first letters quite nicely, but after that it seems to go on and on with slow progress and reduced gains?
+		- My recommendation may be to use it for the home row, and then seek other tools to replace or at least complement it?
+	- Tabidots with an insight on why Keybr's progress algorithm is bad, on Reddit:
+	- https://www.reddit.com/r/typing/comments/1lz2h84/comment/n2zxjc6/
+		It's based on your reaction time to the target key. This is especially important for non-home-row keys, because the algorithm will usually generate many words that start with the target key as well (so word + space + pause + word = no bueno). Your accuracy and speed for the rest does not matter.
+		I realized this when I got stuck on P doing Colemak. Now that I've completed all the keys, I feel that this algorithm actually leads to bad habits because I stopped caring about accuracy just to unlock the next key. (And for a while I also got used to the fact the keybr simply ignores errors after the first one and freezes the cursor, so when you make a mistake you aren't "penalized" by having to press Backspace like you are IRL).
+		
+		[Sock_pup alias Nimi who develops Typecelerate commented:]
+		You can cheat the algorithm by carefully approaching the <preceding key><target key> combo and do them very fast. Doing everything else slow won't matter.
+		That should tell you everything pretty much.
+
+- Got help from Brick for formatting (CSS?) the image tables on the layers-base page.
+	- HTML table notes:
+		- The "title" property provides mouseover alt text for the different layout names.
+		- The "caption" property is a heading. Need to sort out its color (for light/dark themes), though?
+
 - MattMc's fun decision tree on Cmk-DH vs Vanilla (with other stuff thrown in). Show it on the layers-main page.
 	- https://www.reddit.com/r/Colemak/comments/1lnvcgh/my_advice_on_colemak/
 	- https://github.com/mattmc3/keyboard-tools/blob/main/advice.md
