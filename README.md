@@ -14,6 +14,20 @@ Info
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- Regarding the 0.25% RL bigram on Graphite-Gallium:
+	- At 0.25%, it's very rare as the 30 most common bigrams in English are all >.65%.
+	- However, being a ring finger SFB makes it a lot worse than more common ones.
+	- Examples of rl in SHAI (206,005 / 81,369,938 words = 0.253%), from cmini:
+		world           (58528)     (top  3 words account for  93,388 = 45% of total RL)
+		early           (23830)     (RLY trigram accounts for  62,305 = 30% of total RL)
+		nearly          (11030)     (top 10 words account for 147,883 = 72% of total RL)
+		(earlier, particularly, girl, girls, clearly, properly, fairly = 27% of total RL)
+		already         (28256 of 32843 = 86% of the low 0.04% LR frequency)
+	- RL is always preceded by a vowel, and with the exception of 'world' and 'girls' succeeded by one.
+	- Seems okay to alt both RL and LR with middle finger on R?
+	- For 'world' though, that makes RLD a middle finger skip-1-gram. Still preferable, or not?
+	- Pro: It's easy to mistype 'world' as 'wordl' when not alting.
+
 - Touch screen: MessagEase alternatives
 	- Android: Griddle
 	- iOS: Keyz by Duncan Adjei
