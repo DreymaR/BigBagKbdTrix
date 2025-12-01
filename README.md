@@ -28,6 +28,20 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 	- For 'world' though, that makes RLD a middle finger skip-1-gram. Still preferable, or not?
 	- Pro: It's easy to mistype 'world' as 'wordl' when not alting.
 
+- Make base layout table images clickable with links:
+	https://en.wikipedia.org/wiki/Dvorak_keyboard_layout
+	https://colemak.com/
+	https://colemakmods.github.io/mod-dh/
+	https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Semimak#the-semimak-layout
+	https://github.com/Apsu/Canary#canary
+	https://github.com/Apsu/APT#aptv3-layout
+	https://oxey.dev/sturdy/
+	https://github.com/GalileoBlues/Gallium#gallium
+	https://github.com/rdavison/graphite-layout#graphite-keyboard-layout
+	
+	https://colemak.org/
+	https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Graphite#gralmak
+
 - Touch screen: MessagEase alternatives
 	- Android: Griddle
 	- iOS: Keyz by Duncan Adjei
