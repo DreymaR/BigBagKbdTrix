@@ -6,41 +6,16 @@ DreymaR's Big Bag of Keyboard Tricks - The Web Pages
 Web pages for [dreymar.colemak.org](https://dreymar.colemak.org)
 ----------------------------------------------------------------
 
-Info
+
+INFO
 ----
-- See notes at the end of this page for more info.
+- See NOTES at the end of this page for more info.
 - Anchor links on the same page only need "#anchor", not the page url.
 
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
-- Regarding the 0.25% RL bigram on Graphite-Gallium:
-	- At 0.25%, it's very rare as the 30 most common bigrams in English are all >.65%.
-	- However, being a ring finger SFB makes it a lot worse than more common ones.
-	- Examples of rl in SHAI (206,005 / 81,369,938 words = 0.253%), from cmini:
-		world           (58528)     (top  3 words account for  93,388 = 45% of total RL)
-		early           (23830)     (RLY trigram accounts for  62,305 = 30% of total RL)
-		nearly          (11030)     (top 10 words account for 147,883 = 72% of total RL)
-		(earlier, particularly, girl, girls, clearly, properly, fairly = 27% of total RL)
-		already         (28256 of 32843 = 86% of the low 0.04% LR frequency)
-	- RL is always preceded by a vowel, and with the exception of 'world' and 'girls' succeeded by one.
-	- Seems okay to alt both RL and LR with middle finger on R?
-	- For 'world' though, that makes RLD a middle finger skip-1-gram. Still preferable, or not?
-	- Pro: It's easy to mistype 'world' as 'wordl' when not alting.
-
-- Make base layout table images clickable with links:
-	https://en.wikipedia.org/wiki/Dvorak_keyboard_layout
-	https://colemak.com/
-	https://colemakmods.github.io/mod-dh/
-	https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Semimak#the-semimak-layout
-	https://github.com/Apsu/Canary#canary
-	https://github.com/Apsu/APT#aptv3-layout
-	https://oxey.dev/sturdy/
-	https://github.com/GalileoBlues/Gallium#gallium
-	https://github.com/rdavison/graphite-layout#graphite-keyboard-layout
-	
-	https://colemak.org/
-	https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Graphite#gralmak
+- Add typegg.io to recommended trainers? It's a racing page, but you can race yourself too.
 
 - Touch screen: MessagEase alternatives
 	- Android: Griddle
@@ -56,12 +31,6 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 	- Colemak-eD too?
 	- Tarmak `DOWNLOADS` definitely should be boxed. But the Mac one doesn't show up?!
 
-- More likeable links?
-	- SteveP's layout app:  https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
-	- Callum's Nonsense (web): https://callumoakley.net/nonsense/
-	- Callum's Gotta-Go-Fast: https://github.com/callum-oakley/gotta-go-fast
-	- ProfXwing/CSGO's CopyType: https://github.com/ProfXwing/copytype
-
 - Locale variants:
 	- Add more of the Forum locale topic
 	- I now put variant stuff in the EPKL repo, as that's where often I work with it. Link from the BBoT?
@@ -75,11 +44,30 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 - In tarmak.html, cannibalize part of the BIG BAG? HALP! section for a main page overview?
 	- The rest of the bag is so easily and clearly accessible from the Tarmak page now
 	- Also make platform boxes for the Tarmak implementations part
-<br>
 
 
 DONE
 ----
+- Made base layout table images clickable with links:
+	https://en.wikipedia.org/wiki/Dvorak_keyboard_layout
+	https://colemak.com/
+	https://colemakmods.github.io/mod-dh/
+	https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Semimak#the-semimak-layout
+	https://github.com/Apsu/Canary#canary
+	https://github.com/Apsu/APT#aptv3-layout
+	https://oxey.dev/sturdy/
+	https://github.com/GalileoBlues/Gallium#gallium
+	https://github.com/rdavison/graphite-layout#graphite-keyboard-layout
+	
+	https://colemak.org/
+	https://github.com/DreymaR/BigBagKbdTrixPKL/tree/master/Layouts/Graphite#gralmak
+
+- More likeable links:
+	- SteveP's layout app:  https://play.google.com/store/apps/details?id=io.github.colemakmods.keyboard_companion
+	- Callum's Nonsense (web): https://callumoakley.net/nonsense/
+	- Callum's Gotta-Go-Fast: https://github.com/callum-oakley/gotta-go-fast
+	- ProfXwing/CSGO's CopyType: https://github.com/ProfXwing/copytype
+
 - Link to TypingGym and ZippyWords on the Training page
 	- https://www.typinggym.com/
 	- https://www.zippywords.com/
@@ -174,12 +162,50 @@ DONE
 - Updated everything to the new DH standard (formerly DHm) from the old DHk. Images, explanations.
 	- 6s & 7s are now resolved as SteveP uses 6-left on staggered boards and 6-right on matrix
 
+
 ON HOLD
 -------
 - Update some links with `platform=` syntax?
 	- Maybe not necessary: The plaform files already have the platform selected, and other links are generally generic.
 
-<br>
+- Regarding the RL bigram on Graphite-Gallium:
+	- At 0.25%, it's very rare as the 30 most common bigrams in English are all >.65%.
+	- However, being a ring finger SFB makes it noticeably worse than more common ones.
+	- Examples of rl in SHAI (206,005 / 81,369,938 words = 0.253%), from cmini:
+		world           (58528)     (top  3 words account for  93,388 = 45% of total RL)
+		early           (23830)     (RLY trigram accounts for  62,305 = 30% of total RL)
+		nearly          (11030)     (top 10 words account for 147,883 = 72% of total RL)
+		(earlier, particularly, girl, girls, clearly, properly, fairly = 27% of total RL)
+		already         (28256 of 32843 = 86% of the low 0.04% LR frequency)
+	- RL is always preceded by a vowel, and with the exception of 'world' and 'girls' succeeded by one.
+	- Seems okay to alt both RL and LR with middle finger on R?
+	- For 'world' though, that makes RLD a middle finger skip-1-gram. Still preferable, or not?
+	- Pro: It's easy to mistype 'world' as 'wordl' when not alting.
+
+
+NOTES
+=====
+
+
+ZIPF'S LAW
+----------
+- I made Miodec a Zipf funbox for MonkeyType that has become popular it seems. Too bad it doesn't allow PBs.
+	https://en.wikipedia.org/wiki/Zipf's_law
+		- Note that the Zipf-Mandelbrot law refines the 1/x relationship of pure Zipf to 1/(x+b) with the fitted b ≈ 2.7
+	https://en.wikipedia.org/wiki/Harmonic_number
+		- Approximating the harmonic numbers, I used this:
+		- H(n) ≈ ln(n) + γ, where γ represents the Euler-Mascheroni constant, approximately equal to 0.57721 56649
+	https://github.com/monkeytypegame/monkeytype/pull/5515
+		- My first formula caused the 1st index to be 57% of actual frequency, and the 2nd index to be bigger than the first one.
+		- The solution currently implemented is to replace ln(n) in the H(n) formula with ln(n+0.5) for a much better fit.
+	
+	export function dreymarIndex(dictLength: number): number {
+	  /*  get random index based on probability distribution of Zipf's law, where PMF is (1/n)/H_N  */
+	  const eug = 0.5772156649015329;                       //  Euler–Mascheroni gamma constant
+	  const H_N = Math.log(dictLength + 0.5) + eug;         //  H_N = ln(n+0.5) + γ ≈ H(N), the Harmonic Number of the dictLength
+	  const r = Math.random();                              //  Randomly select a word
+	  const inverseCDF = Math.exp(r * H_N - eug) - 0.5;     //  inverse of CDF where CDF is H_n/N
+	  return Math.floor(inverseCDF);                    }   //  Was Math.floor( Math.exp( r * H_N * eug ) )
 
 
 NOTES from symbols/colemak
@@ -224,7 +250,6 @@ HTML observations
 - The gh-pages may not update immediately because of their CDN cache. So it may take up to 10 min for a push to take.
 	- To bypass this, request a non-existing version of the page as that'll break the cache:
 		- https://dreymar.github.io/BigBagKbdTrix/index.html?version=cachebreak
-<br>
 
 
 HTML tips from aBrickInTheHallway
