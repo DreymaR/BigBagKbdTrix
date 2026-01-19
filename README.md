@@ -15,7 +15,29 @@ INFO
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- TimVink's Alt Alpha site for trying out new layouts looks good:
+		https://altalpha.timvink.nl/try-layout.html?known=colemak-dh&target=gralmak
+	- It's based on this one:
+		https://keyboard-layout-try-out.pages.dev/
+
+- G Fruit top typing sites:
+	https://discord.com/channels/409502982246236160/409502982246236162/1455386309559586917
+	Burst-Type, Monkeytype, Typecelerate, TypeGG, Typer, Xsentence, ZippyWords
+		https://typegg.io
+		https://typer.io
+		https://xsentence.com
+		https://www.zippywords.com
+	- Check out TypeGG, Typer.io, XSentence
+
 - Add typegg.io to recommended trainers? It's a racing page, but you can race yourself too.
+	- Recommended by 252 WPM, 233-WPM-for-1h! typist XanderEC: 
+		https://www.reddit.com/r/typing/comments/1pmyh5n/233_wpm_for_an_hour_on_monkeytype_1_hour_record/
+		- " It is a new website and has a great community of people who will give you better advice than I could in their discord server 
+			and it makes typing video-game like by giving performance points based on each score which is an easy way to track improvement.
+
+- XanderEC (233 WPM for an hour!) said:
+	> Once you feel yourself not typing at your best and getting fatigued stop practicing it’s okay to only practice in short intervals (5-10 minutes)
+	https://www.reddit.com/r/typing/comments/1pmyh5n/233_wpm_for_an_hour_on_monkeytype_1_hour_record/
 
 - Touch screen: MessagEase alternatives
 	- Android: Griddle
@@ -96,19 +118,24 @@ DONE
 		https://mermaid.live/edit#pako:eNptVFlP20AQ_ivDSlAjOQc5SOxGQZCE46GgFgqiuA9rexKvsHet9Zrghvz37vpokNI8WDve-Y454g0JRIjEJctYrIOISgUPc497HPTv8BBu9W1WRefWy1NUAJUIhcgnvpweYZKlXwPBMxaiZHwFMxFjQl_PqpvfxxXywrKOuK9fPEjKOCRCYsdHpVCC4NWNodOsEoJcSuQKYqpDdVwzzDZzYVSBI4Y76erpS0FDyPI0FVKdfb7ZVui5Zf3M0MAmfo2sjbbm11U86fjTRmyxn_5IOYtj2tS3j7lsDK5pZR5lZhsKysOOkPDIkpYqUgRO39iKKiZ4B0OmdNPOapdX1kvN60-1PizeFfLwwKjs2vlvMDPBOQaGpxkPtFrTD49UuXc8LkALmqEsaaZb3XDLaUJN6zNztG6-JBCIJEWlvbzhwbFHPuDif4w3VWlKQFmHId1RTpgpdNJhU8O21HOgflyUCrOKXfvQbeBClQqzeqy1gq74VrimUgO5gYByyHULMrFUa7NwGqp3MyzPSog4gzVTkdFKcs5U0UzfwMHS2Usaxz4NXo3f70-LHw_Ppe58T_cZs0_CZr3Az1msWnpRa1KodxbSmAZY9e2J8VCsMxsSGtzd28DMYxZJkeDdPaAK2qXeol5AoweX9Xp9Di5LJ_XMItBubLhn8qB68wFX-2nnfibiXGFc7LKITVaShcRVMkebJCgTakKyMXiPqAgT9IirjyGVrx7x-FZjUsp_CZE0MCnyVURc3btMR3kaUoVzRleS7lL0SqKciZwr4g5LBuJuyDtxe47TPh31T0fDYX900nUGNil0yqh90ht2x32n1-_3nfFgsLXJn1Kz2x6PBo7jjMfjbve0P3J6NjF_CSG_VZ-k8su0_Qt6-Hx8
 - Alt layout writeup! Also update other sections to be more layout inclusive.
 	- Move the links to Getreuer's and the AKL beginner's guides there from the links page? No, keep both.
+	- Gralmak!
+			b l d w q  j f o u '
+			n r t s g  y h a e i
+			z x m c v  k p , . /
+			               , . ;
 	- Link to the layout playgrounds, Oxey and Cyanophage etc – also see below.
 		- https://oxey.dev/playground/      			(Oxey's Playground)
 		- https://layouts.wiki/playground/  			(AKL DataBase playground)
 		- https://cyanophage.github.io/     			(Cyanophage's analyzer)
 		- https://galileoblues.github.io/Keysolve2/ 	(GalileoBlues' KeySolve2)
 			Keysolve 2 KeyMap trick for analyzing layouts without considering differences in the `/ , .` part:
-			b l d w q j f o u '
-			n r t s g y h a e i
-			z x m c v k p \ [ ]
+			b l d w q  j f o u '
+			n r t s g  y h a e i
+			z x m c v  k p \ [ ]
 			
-			q w f p b j l u y '
-			a r s t g m n e i o
-			z x c d v k h \ [ ]
+			q w f p b  j l u y '
+			a r s t g  m n e i o
+			z x c d v  k h \ [ ] 
 	- Figure showcasing some alt layouts as a table of compact ortho images, EPKL-cpt style. Smaller size, if possible.
 		- Recommended layouts in my fave AKL guides:
 			- The AKL Quickstart guide:  Colemak, Colemak-DH, Semimak, Canary, Gallium, Graphite.
