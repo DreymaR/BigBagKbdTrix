@@ -55,7 +55,7 @@ title: Character Mapping Layers
         As seen all around these pages, the base layout is only the beginning. 
         Extend, special dead keys and ergo mods are my main thing. And I'm having such a great time of it! 
     </li><li>
-        My thumb keys are a good example: The <a href="#repeat"><b>Repeat</b></a> key does away with a lot of same-finger load, and 
+        My thumb keys are a good example: The <a href="#repeating"><b>Repeat</b></a> key does away with a lot of same-finger load, and 
           the <a href="#codekey"><b>CoDeKey</b></a> allows elegant entry of punctuation-plus-space-plus-capitalization and other input.
     </li><li>
         The <a href="/layers-extend.html"><b>Extend</b></a> and <a href="/layers-extend.html#ext-tap"><b>Extend-tap</b></a> layers are another excellent addition. 
@@ -258,7 +258,7 @@ title: Character Mapping Layers
 
 <div class="platform-box" id="pfbx-DeadKeys"></div><!-- DeadKeys -->
 
-<h2 class="anchor" id="sequences">SEQUENCING</h2>
+<h2 class="anchor" id="sequencing">SEQUENCING</h2>
 <p>
     Modifiers like <kbd>Shift</kbd>, <kbd>Control</kbd> and <kbd>Extend</kbd> are <b>chording modifiers</b>: You hold them down while hitting the keys they modify, to access other layers. Dead keys and sticky/one-shot modifiers are <b>sequencing</b> or <b>leader keys</b> that modify following output. The <kbd>Compose</kbd> key is another sequencing key, that's pressed either before or after typing a sequence that you want translated into specific output.
 </p><p>
@@ -272,7 +272,7 @@ title: Character Mapping Layers
 </p><p>
     Sequences provide for near endless complexity, but chorded layers like Extend let you do many similar operations without trigging them separately each time. So for navigation/editing like selecting the previous word then moving it to the end of the paragraph or, say, for entering numbers, chorded (or modal) layers are perfect.
 </p><br>
-<h4>Dead keys</h4><p>
+<h4 class="anchor" id="dead-keys">Dead keys</h4><p>
     <a href="#deadkeys"><b>Dead keys</b></a>, as described above, can be great for mapping one-shot output like special and accented letters and symbols, without holding a modifier like AltGr down. They're the shortest sequences, only using one leader key and one release key to produce output (e.g., the Acute DK <kbd>´</kbd> then <kbd>A</kbd> for '<b>á</b>'). With a battery of DKs you can fit in a whole bunch of symbols on fairly intuitive mappings!
 </p><p>
     On the downside, DK layers like AltGr layers can easily get crowded if, there are many symbols based on the same letter, or you want to map symbols that aren't based on letters or numbers. And since you'll likely need many DKs you may have to hold a modifier to access the DK in the first place; all my ≈20 DKs require you to press AltGr first unless you're using a locale variant that has the most needed of them on base layers. Dead keys are compact, but not very flexible.
@@ -284,21 +284,21 @@ title: Character Mapping Layers
 </p><p>
     Compose key sequences are similar to dead keys, and in Linux/XKB the same method is used for both. Generally though, DKs are more compact (maybe only two key presses needed) but less flexible, while Compose sequences are very flexible but less compact.
 </p>
-<h4 class="anchor" id="repeat">Repeating</h4><p>
+<h4 class="anchor" id="repeating">Repeating</h4><p>
     <kbd>Repeat</kbd> is a very basic context-dependent key. It simply repeats your previous character – but that's actually really useful. A central principle for improved keyboard layouts is to keep same-finger bigram (SFB) frequency low. According to NotGate who inspired me to try out repeating, there are far more repeated letters than other SFBs in good layouts today: Analysis using an English text corpus shows <a href="https://blogs.sas.com/content/iml/2014/10/03/double-letter-bigrams.html">a 2.5% repeating-letter bigram frequency</a> in total, vs for instance <a href="http://colemakmods.github.io/mod-dh/analyze.html">the 1.7% SFB frequency of Colemak</a>. You can actually benefit from a Repeat key whether your layout is optimized or not.
 </p><p>
     One problem is where to place your Repeat key. I've tried it in the old QWERTY <kbd>B</kbd> position, which is available using the <a href="/ergo-mods.html#angle-wide">ISO-Angle</a> ergo mod. That position has the interesting feature of being useable for both index fingers, but I ended up preferring a thumb key on the non-spacing thumb and I'm loving it. See the <a href="/ergo-mods.html#modifiers">Modifiers</a> section for more info.
 </p><p>
     My Repeat implementation is only in EPKL for Windows yet, but it isn't hard to do it with TMK/QMK controller coding or simple AHK code – see the bottom of <a href="https://notgate.github.io/layout/">NotGate's ISRT page</a> for examples.
 </p>
-<h4 class="anchor" id="complete">Completion</h4><p>
+<h4 class="anchor" id="completion">Completion</h4><p>
     <kbd>Complete</kbd> is a next-level context dependent key. It adds characters depending on what you just typed. Completion is closely related to Composing: The main difference is that instead of replacing a recognized sequence, you add to it. You could even have the same key be either a Complete or Compose key depending on what you just typed.
 </p><p>
     You could use <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/blob/0a308410c0ebba2de26b5ac16a7464812e3abec5/Files/_eD_Compose.ini#L849">Completion to avoid SFBs</a>: On Colemak, <kbd>S</kbd> then <kbd>Complete</kbd> could become 'SC' and completing <kbd>C</kbd> could become 'CS'; <kbd>U</kbd> for 'UE', etc. Then, you could also <a href="https://github.com/DreymaR/BigBagKbdTrixPKL/blob/0a308410c0ebba2de26b5ac16a7464812e3abec5/Files/_eD_Compose.ini#L880">Complete longer n-grams</a> such as the common 'THE' on <kbd>T</kbd>, 'AND ' on <kbd>A</kbd>, 'ION' (or 'ING') on <kbd>I</kbd>, etc; these are less common than the most common bigrams but they give more "bang for the buck". What to use would depend on your keyboard layout.
 </p><p>
     The main issue with Completion, besides finding a good position for it, is that it's hard to learn for normal typing. I haven't tried it much, but remembering that 'SC' is S-then-Complete etc etc when typing fast is probably as much mental effort as learning a new layout. It's almost a baby step towards <a href="https://en.wikipedia.org/wiki/Stenotype">stenotyping</a>, albeit without chording. While potentially fast and efficient, it is hard to learn and use.
 </p>
-<h4>Extend-Tap</h4><p>
+<h4 class="anchor" id="extend-tap">Extend-Tap</h4><p>
     <a href="/layers-extend.html#ext-tap"><b>Extend-tap</b></a> is a neat way of supercharging your Extend key for both chording and sequencing in one key! The Extend key can be a multi-layer dual-function key that produces different one-shot (dead key) or chording (modifier) layers based on the shift state at the time of tapping or holding it down. This way it can be a gate to the best of both the chording and sequencing worlds. I call such a multi-mode modifier a <b>Mother-of-DeadKeys (MoDK)</b> Extend key. Sadly, this isn't available on all platforms.
 </p>
 <h4 class="anchor" id="codekey">CoDeKey</h4><p>
