@@ -15,6 +15,11 @@ INFO
 
 TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 -----------------------------------------------------------------------
+- Check out the USB HID Remapper project? Looks good.
+	https://www.remapper.org/
+	- Can it do Extend properly? It seems to have ample functionality, macros and expressions.
+	- Its setup tool needs the Chrome browser to function?
+
 - TimVink's Alt Alpha site for trying out new layouts looks good:
 		https://altalpha.timvink.nl/try-layout.html?known=colemak-dh&target=gralmak
 	- It's based on this one:
