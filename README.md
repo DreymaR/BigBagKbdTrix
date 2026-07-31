@@ -73,6 +73,42 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 	- Also make platform boxes for the Tarmak implementations part
 
 
+SOME SUPPLEMENTAL SOPHIC SAPIENCE
+---------------------------------
+- More Soph wisdom on Discord, 2026-06-15! Made it a spoiler box full of tips.
+	https://discord.com/channels/409502982246236160/409502982246236162/1516043391438422161
+	
+	To be a bit more specific, the exercise [described above] gets you bursting and planning what fingers to use for the word before you've even begun typing it. 50-60 is still a WPM where you can get away with typing "one letter at a time" as opposed to planning out multiple letters or combinations, which can then become whole words, and eventually, strings of multiple words. This is critical and necessary when you want to exceed, say, 80-100wpm.
+	
+	When I'm typing at my absolute peaks (250ish on a 60 sec test – extreme example but fitting) then I absolutely without question have read four or five words and processed them as a combination of letters that my fingers can just fire out. Takes a couple of years nerding on typing to get like that, but if you "just" want a casual 100-150 WPM then read-and-plan-ahead is still a good skill to have.
+	
+	Ideally, you are working towards a world in which you are fluidly typing a word or two behind what you're consciously thinking. A constant flowing process of information, from brain to screen, your fingers as the medium. But the key to this is you gotta plan the fingers you're gonna use before you type. Bursting is a good little exercise to experience how typing way faster feels for a brief moment.
+	
+	https://discord.com/channels/409502982246236160/409502982246236162/1516044447031365724
+	
+	Although it's good general advice, "focus on accuracy until X%" is kind of a trap. The ideal thing to focus on is remaining calm despite pushing yourself out of your information processing comfort zone.
+	
+	You need to try bursting out mostly whole words. If this leads to bad accuracy that's okay, just slow down a bit next time. Sometimes you can do tests where you're more attentive to accuracy and others where you're going for speed, typing out whole words and accepting some letters getting mixed around.
+	
+	Honestly I'd say anything over 90% acc is fair. Only focusing on accuracy can get people not only falling into a comfort zone of slow speeds, but can also hinder the development of your speedtyping skill as a whole, which heavily involves "just fucking going for it"!
+	
+	I definitely do agree with the advice to try to pick up the accuracy at 50ish WPM, but if someone's having fun trying to process the information way too fast it's still a valid way to improve; I've done it a whole bunch lol! 95% is a good arbitrary number to think you did OK.
+	
+	https://discord.com/channels/409502982246236160/409502982246236162/1516054666734076034
+	
+	Ctrl+Backspace is also a clever way to practice: Not only do you practice to correct at a high speed during typing, but you also get to re-type the word you messed up on again from the beginning, which is another run at practicing it and locking it in the muscle memory bank.
+	
+	https://discord.com/channels/409502982246236160/409502982246236162/1516057227880960061
+	
+	Some final thoughts on the topic: Practicing by not going for high accuracy specifically but rather just raw WPM is not for learning to type like that in an actual scenario. It's a way to experience processing information at a rate that's too fast for you at that current time, i.e. pushing yourself out of your comfort zone. Eventually you'll get good enough that you can type with your muscle memory at this speed.
+	
+	I've found that raw speed and accuracy don't always improve linearly. Sometimes I'd have to practice pushing myself to be fast, regardless of accuracy, then bring my accuracy up to speed.
+	
+	It's a good way to get past any "wall" you might feel you're hitting. When I was getting towards my limits I'd often be specifically pushing either for raw speed or personal bests. (My personal best only had 1 correction and 1 wrong word, at 220wpm.)
+	
+	In speedtyping speed and accuracy are like Yin and Yang: You can't have one without the other; both are equally important. You can, however, improve the skills somewhat separately and the progress of both isn't always linear.
+
+
 DONE
 ----
 - Made base layout table images clickable with links:
