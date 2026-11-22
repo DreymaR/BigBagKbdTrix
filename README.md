@@ -34,6 +34,9 @@ TODO/WIP for the BigBag Forum & web content (mostly for DreymaR's use):
 		https://www.zippywords.com
 	- Check out TypeGG, Typer.io, XSentence
 
+- Typing Game Tryout video (presents a lot of games, including my faves):
+	https://www.youtube.com/watch?v=02PLqrCWSw0
+
 - Add typegg.io to recommended trainers? It's a racing page, but you can race yourself too.
 	- Recommended by 252 WPM, 233-WPM-for-1h! typist XanderEC: 
 		https://www.reddit.com/r/typing/comments/1pmyh5n/233_wpm_for_an_hour_on_monkeytype_1_hour_record/
